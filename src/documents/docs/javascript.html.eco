@@ -1,0 +1,20 @@
+---
+layout: docs
+title: JavaScript
+slug: js
+lead: "Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one."
+---
+
+<div class="bs-docs-section"><%- @partial('docs/js/overview') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/transitions') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/modal') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/dropdowns') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/scrollspy') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/tabs') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/tooltips') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/popovers') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/alerts') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/buttons') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/collapse') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/carousel') %></div>
+<div class="bs-docs-section"><%- @partial('docs/js/affix') %></div>

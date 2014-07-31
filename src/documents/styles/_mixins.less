@@ -1,0 +1,175 @@
+/*mixins*/
+
+/* Micro ClearFix Mixin */
+.clearfix{
+	zoom:1;
+	&:before, &:after{ content:""; display:table; }
+	&:after{ clear: both; }
+}
+
+/*border-radius*/
+.border_radius (@radius: 5px) {  
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.plus {
+	&:after {
+		content:'+';
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		background: #cc0000;
+		color: #fff;
+		font-weight: bold;
+		right: 10px;
+		top: 10px;
+		text-align: center;
+		font-size: 31px;
+		line-height: 27px;
+		.border_radius(4px);
+	}
+}
+
+.minus {
+	&:after{
+		content:'\2013' !important;
+	}
+}
+
+.arrow_down(@color: #ccc, @width: 6px, @height: 6px) {
+	border-style: solid;
+	border-width: @height @width/2 0 @width/2;
+	border-color: @color transparent transparent transparent;
+}
+
+.arrow_top(@color: #ccc, @width: 6px, @height: 6px) {
+	border-style: solid;
+	border-width: 0 @width/2 @height @width/2;
+	border-color: transparent transparent @color transparent;
+}
+
+.btn2 {
+/*
+1 - border
+2 - pressed inner shadow
+3 - gradient
+4 - focus
+*/
+  display: inline-block;
+  border:none;
+  border-radius:5px;
+  padding: 14px 34px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #CC0000;
+  text-shadow: 0 1px 0 #FFF;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  background: #e0e0ed;
+  box-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.2),
+    /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #FFF,
+    /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+  transition: all 0.2s;
+  &:hover {
+    color: #FD0000;
+    background-color: #ECECFB;
+    text-decoration: none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+      /* 3 */ inset 0 2.2em 2.2em -1.1em #FFF,
+      /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+  }
+  &:focus {
+    outline:none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+      /* 3 */ inset 0 1.1em 1.1em -0.6em #FFF,
+      /* 4 */ 0 0 0 3px rgba(0,128,255,0.30);
+  }
+  &:active {
+    outline:none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 1px 2px 3px 0 rgba(0,0,0,0.2),
+      /* 3 */ inset 0 1.1em 1.1em -0.6em #FFF,
+      /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+    transition-duration: 0.1s;
+  }
+  &.disabled {
+    opacity: 0.45;
+    cursor: default;
+    box-shadow: none;
+    &:hover, &:focus, &:active {      
+      background: #e0e0ed;   
+    }
+  }
+}
+
+.btn4act {
+/*
+1 - border
+2 - pressed inner shadow
+3 - gradient
+4 - focus
+*/
+  display: inline-block;
+  border:none;
+  border-radius:5px;
+  padding: 15px 34px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 0 #950000;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  background: #b50000;
+  box-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.2),
+    /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000,
+    /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+  transition: all 0.2s;
+  &:hover {    
+    background-color: #cd0000;
+    text-shadow: 0 1px 0 #be0000;
+    text-decoration: none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+      /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000,
+      /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+  }
+  &:focus {
+    outline:none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 0 0 0 0 rgba(0,0,0,0.0),
+      /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000,
+      /* 4 */ 0 0 0 3px rgba(0,128,255,0.30);
+  }
+  &:active {
+    outline:none;
+    box-shadow:
+      /* 1 */ inset 0 0 0 1px rgba(0,0,0,0.3),
+      /* 2 */ inset 1px 2px 3px 0 rgba(0,0,0,0.2),
+      /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000,
+      /* 4 */ 0 0 0 0 rgba(0,128,255,0.30);
+    transition-duration: 0.1s;
+  }
+  &.disabled {
+    opacity: 0.45;
+    cursor: default;    
+    box-shadow: none;
+    &:hover, &:focus, &:active {      
+      background: #b50000;
+    }
+  }
+}

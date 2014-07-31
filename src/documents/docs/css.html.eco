@@ -1,0 +1,40 @@
+---
+layout: docs
+title: CSS
+slug: css
+lead: "Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system."
+---
+
+<div class="bs-docs-section">
+<%- @partial('docs/css/overview') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/grid') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/type') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/code') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/tables') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/forms') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/buttons') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/images') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/helpers') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/responsive-utilities') %>
+</div>
+<div class="bs-docs-section">
+<%- @partial('docs/css/less') %>
+</div>

@@ -1,0 +1,33 @@
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="<%= @getUrl('/docs') %>" class="navbar-brand">Bootstrap</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li<% if @document.slug == "getting-started" : %> class="active"<% end %>>
+          <a href="<%= @getUrl('/docs/getting-started.html') %>">Getting started</a>
+        </li>
+        <li<% if @document.slug == "css" : %> class="active"<% end %>>
+          <a href="<%= @getUrl('/docs/css.html') %>">CSS</a>
+        </li>
+        <li<% if @document.slug == "components" : %> class="active"<% end %>>
+          <a href="<%= @getUrl('/docs/components.html') %>">Components</a>
+        </li>
+        <li<% if @document.slug == "js" : %> class="active"<% end %>>
+          <a href="<%= @getUrl('/docs/javascript.html') %>">JavaScript</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://expo.getbootstrap.com/">Expo</a></li>
+        <li><a href="http://blog.getbootstrap.com/">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

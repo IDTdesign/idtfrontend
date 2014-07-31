@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- @partial('docs/header') %>
+  </head>
+  <body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <!-- Docs master nav -->
+    <%- @partial('docs/nav/main') %>
+
+    <%- @content %>
+
+    <%- @partial('docs/footer') %>
+
+  </body>
+</html>

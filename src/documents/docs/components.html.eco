@@ -1,0 +1,29 @@
+---
+layout: docs
+title: Components
+slug: components
+lead: "Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more."
+---
+
+
+<div class="bs-docs-section"><%- @partial('docs/components/glyphicons') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/dropdowns') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/button-groups') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/button-dropdowns') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/input-groups') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/navs') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/navbar') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/breadcrumbs') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/pagination') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/labels') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/badges') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/jumbotron') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/page-header') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/thumbnails') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/alerts') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/progress-bars') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/media') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/list-group') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/panels') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/responsive-embed') %></div>
+<div class="bs-docs-section"><%- @partial('docs/components/wells') %></div>

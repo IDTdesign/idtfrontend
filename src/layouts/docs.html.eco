@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- @partial('docs/header') %>
+  </head>
+  <body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <!-- Docs master nav -->
+    <%- @partial('docs/nav/main') %>
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+        <h1><%- @document.title %></h1>
+        <p><%- @document.lead %></p>
+      </div>
+    </div>
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <%- @content %>
+        </div>
+        <div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+            <% if (@document.slug == "getting-started"): %>
+              <%- @partial('docs/nav/getting-started') %>
+            <% else if (@document.slug == "css"): %>
+              <%- @partial('docs/nav/css') %>
+            <% else if (@document.slug == "components"): %>
+              <%- @partial('docs/nav/components') %>
+            <% else if (@document.slug == "js"): %>
+              <%- @partial('docs/nav/javascript') %>
+            <% else if (@document.slug == "customize"): %>
+              <%- @partial('docs/nav/customize') %>
+            <% else if (@document.slug == "about"): %>
+              <%- @partial('docs/nav/about') %>
+            <% else if (@document.slug == "migration"): %>
+              <%- @partial('docs/nav/migration') %>
+            <% end %>
+            </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
+            <% if ((@document.slug == "css") or (@document.slug == "components") or (@document.slug == "js")) : %>
+            <a href="#" class="bs-docs-theme-toggle">
+              Preview theme
+            </a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- @partial('docs/footer') %>
+  </body>
+</html>
