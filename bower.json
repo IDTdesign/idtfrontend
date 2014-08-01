@@ -2,7 +2,6 @@
   "name": "idtdesign-idtfrontend",
   "version": "0.0.0",
   "dependencies": {
-    "normalize.css": "~3.0.1",
     "modernizr": "~2.8.3",
     "bootstrap-less": "~3.2.0"
   }

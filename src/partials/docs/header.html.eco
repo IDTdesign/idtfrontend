@@ -16,12 +16,7 @@
   <link href="data:text/css;charset=utf-8," data-href="<%= @getUrl('/styles/bootstrap-theme.css') %>" rel="stylesheet" id="bs-theme-stylesheet">
 <% end %>
 <link href="<%= @getUrl('/docs/assets/css/highlight.css') %>" rel="stylesheet">
-<style>
-  .highlight {
-
-  }
-</style>
-
+<%- @getBlock('styles').add(@getUrl(@document.styles)).toHTML() %>
 <!-- Documentation extras -->
 <link href="<%= @getUrl('/docs/assets/css/docs.min.css') %>" rel="stylesheet">
 <!--[if lt IE 9]><script src="<%= @getUrl('/docs/assets/js/ie8-responsive-file-warning.js') %>"></script><![endif]-->

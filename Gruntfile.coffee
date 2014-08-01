@@ -18,20 +18,20 @@ module.exports = (grunt) ->
 		concat:
 			bootstrap:
 				src: [
-				  'out/vendor/bootstrap-less/js/transition.js',
-				  'out/vendor/bootstrap-less/js/alert.js',
-				  'out/vendor/bootstrap-less/js/button.js',
-				  'out/vendor/bootstrap-less/js/carousel.js',
-				  'out/vendor/bootstrap-less/js/collapse.js',
-				  'out/vendor/bootstrap-less/js/dropdown.js',
-				  'out/vendor/bootstrap-less/js/modal.js',
-				  'out/vendor/bootstrap-less/js/tooltip.js',
-				  'out/vendor/bootstrap-less/js/popover.js',
-				  'out/vendor/bootstrap-less/js/scrollspy.js',
-				  'out/vendor/bootstrap-less/js/tab.js',
-				  'out/vendor/bootstrap-less/js/affix.js'
+				  'bower_components/bootstrap-less/js/transition.js',
+				  'bower_components/bootstrap-less/js/alert.js',
+				  'bower_components/bootstrap-less/js/button.js',
+				  'bower_components/bootstrap-less/js/carousel.js',
+				  'bower_components/bootstrap-less/js/collapse.js',
+				  'bower_components/bootstrap-less/js/dropdown.js',
+				  'bower_components/bootstrap-less/js/modal.js',
+				  'bower_components/bootstrap-less/js/tooltip.js',
+				  'bower_components/bootstrap-less/js/popover.js',
+				  'bower_components/bootstrap-less/js/scrollspy.js',
+				  'bower_components/bootstrap-less/js/tab.js',
+				  'bower_components/bootstrap-less/js/affix.js'
 				]
-				dest: 'out/vendor/bootstrap-less/js/bootstrap.js'
+				dest: 'out/vendor/bootstrap/js/bootstrap.js'
 
 		# Use Uglify to minify files.
 		uglify:
@@ -39,9 +39,9 @@ module.exports = (grunt) ->
 				preserveComments: 'some'
 			bootstrap:
 				src: '<%= concat.bootstrap.dest %>'
-				dest: 'out/vendor/bootstrap-less/js/bootstrap.min.js'
+				dest: 'out/vendor/bootstrap/js/bootstrap.min.js'
 			modernizr:
-				src: 'out/vendor/modernizr/modernizr.js'
+				src: 'bower_components/modernizr/modernizr.js'
 				dest: 'out/vendor/modernizr/modernizr.min.js'
 
 		# compile less and generate map files
@@ -136,7 +136,10 @@ module.exports = (grunt) ->
 		watch:
 			src:
 				files: ['<%= docpad.files %>']
-				tasks: ['shell:docpad']
+				tasks: [
+					'shell:docpad',
+					'postprocess'
+				]
 			out:
 				files: ['<%= docpad.out %>/**/*']
 				options: 
@@ -163,10 +166,6 @@ module.exports = (grunt) ->
 				'out/vendor/modernizr/test',
 				'out/vendor/modernizr/.*',
 				'out/vendor/modernizr/grunt.js',
-				'out/vendor/normalize.css/.*',
-				'out/vendor/normalize.css/bower.json',
-				'out/vendor/normalize.css/LICENSE.md',
-				'out/vendor/bootstrap-less'
 			]
 
 
@@ -192,7 +191,7 @@ module.exports = (grunt) ->
 
 	# Register our Grunt tasks.
 	grunt.registerTask 'preprocess', [ 'newer:svg2png:src', 'newer:imagemin:src']
-	grunt.registerTask 'postprocess', ['clean:vendorout', 'less', 'autoprefixer:bossout', 'concat:bootstrap', 'uglify:bootstrap']
+	grunt.registerTask 'postprocess', ['clean:vendorout', 'less', 'autoprefixer:bossout', 'concat:bootstrap', 'uglify']
 	grunt.registerTask 'generate', ['clean:out', 'preprocess', 'shell:docpad', 'postprocess']
 	grunt.registerTask 'server', ['connect', 'watch']
 	grunt.registerTask 'run', ['generate', 'server']
