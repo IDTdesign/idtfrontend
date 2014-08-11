@@ -20,11 +20,94 @@
 	<script src="<%= @getUrl('vendor/modernizr/modernizr.min.js') %>"></script>
 </head>
 <body>
+	
+	<header class="allpageheader">
+		<div class="container container-zeroheight noclear">
+			<div class="logo">
+				<a class="logo-link" href="#"><img src="<%= @getUrl('/images/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
+			</div>
+		</div>
+		<div class="allpageheader-navigation">
+		 	<div class="navbar navbar-topline">
+		 		<div class="container">
+			 		<p class="navbar-left navbar-text hidden-xs ">
+			 			<a href="#" class="">$1 FREE TRIAL <span class="hidden-sm">FOR NEW INTERNATIONAL CALLING CUSTOMERS</span></a>
+			 		</p>
+			 		<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">English</a></li>
+								<li><a href="#">Espanol</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">US <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">US</a></li>
+								<li><a href="#">UK</a></li>
+								<li><a href="#">ES</a></li>
+								<li><a href="#">DE</a></li>
+								<li><a href="#">HK</a></li>
+								<li><a href="#">SG</a></li>
+								<li><a href="#">AU</a></li>
+							</ul>
+						</li>
+						<li class="hidden-xs"><a href="#">Sign In</a></li>
+						<li class="hidden-xs"><a href="#">Register</a></li>
+						<li class="visible-xs">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						        <span class="">Menu</span>
+					      	</button>
+						</li>
+					</ul>
+				</div>
+		 	</div>
+		 	<div class="container hidden-xs">
+				<nav class="navbar navbar-bossmain" role="navigation">
+					<ul class="nav nav-pills">
+						<li><a href="#">About</a></li>
+						<li class="dropdown">
+							<a href="#" class="pullin-space">Services</a><!--
+						    --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
+								<span class="btn btn-dropdown btn-xs">
+									<span class="caret"></span>
+								</span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+								<li><a href="#">International Calling</a></li>
+								<li><a href="#">International Cellphone Recharges</a></li>
+								<li><a href="#">Domestic Cellphone Recharges</a></li>
+								<li class="dropdown-header">Additional Services</li>
+								<li><a href="#">Money Transfer</a></li>
+								<li><a href="#">Pre Paid Visa Card</a></li>
+								<li><a href="#">Domestic Bill Payments</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Rates</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">My Account</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-		<%- @content %>
+	<div class="allpagebody">
+		<div class="container">
+			<%- @content %>
+		</div>
+	</div>
+	
+	<footer class="allpagefooter">
+		<div class="container">
+			
+		</div>
+	</footer>
 
 	<!-- DocPad Scripts + Our Own -->
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<%- @getBlock('scripts').add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
 </body>
 </html>

@@ -28,11 +28,14 @@ docpadConfig = {
 				'/styles/bootstrap.css'
 				'/styles/bootstrap-theme.css'
 				'/styles/bossrevolution.css'
+				'/vendor/animate.css/animate.min.css'
 			]
 
 			# The JavaScript files for the site.
 			scripts: [
-				
+				'/vendor/bootstrap/js/bootstrap.min.js'
+				'/vendor/jquery.sticky.js'
+				'/scripts/script.js'
 			]
 
 		# -----------------------------

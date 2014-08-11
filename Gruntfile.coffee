@@ -167,7 +167,15 @@ module.exports = (grunt) ->
 				'out/vendor/modernizr/.*',
 				'out/vendor/modernizr/grunt.js',
 			]
-
+		copy:
+			main:
+				files: [
+					expand: true
+					cwd: 'bower_components/animate.css/'
+					src: 'animate.min.css'
+					dest: 'out/vendor/animate.css/'
+					filter: 'isFile'
+				]
 
 		# generate development
 		shell:
@@ -185,14 +193,16 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-concat'
 	grunt.loadNpmTasks 'grunt-contrib-less'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
+	grunt.loadNpmTasks 'grunt-contrib-copy'
 	grunt.loadNpmTasks 'grunt-autoprefixer'
 	grunt.loadNpmTasks 'grunt-newer'
 	grunt.loadNpmTasks 'grunt-svg2png'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'preprocess', [ 'newer:svg2png:src', 'newer:imagemin:src']
-	grunt.registerTask 'postprocess', ['clean:vendorout', 'less', 'autoprefixer:bossout', 'concat:bootstrap', 'uglify']
+	grunt.registerTask 'preprocess', [ 'svg2png:src', 'newer:imagemin:src']
+	grunt.registerTask 'postprocess', ['clean:vendorout', 'copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
 	grunt.registerTask 'generate', ['clean:out', 'preprocess', 'shell:docpad', 'postprocess']
 	grunt.registerTask 'server', ['connect', 'watch']
 	grunt.registerTask 'run', ['generate', 'server']
+	grunt.registerTask 'development', ['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
 	grunt.registerTask 'default', ['run']

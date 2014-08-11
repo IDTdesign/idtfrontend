@@ -22,7 +22,8 @@
     "grunt-autoprefixer": "^0.8.2",
     "grunt-contrib-imagemin": "^0.7.1",
     "grunt-newer": "^0.7.0",
-    "grunt-svg2png": "^0.2.5"
+    "grunt-svg2png": "^0.2.5",
+    "grunt-contrib-copy": "^0.5.0"
   },
   "devDependencies": {
     "docpad": "~6.69.0",

@@ -1,23 +1,29 @@
 # idtfrontend
 
-Site for idtfrontend, built with [DocPad](http://docpad.org).
+Front-end documentation, built with [DocPad](http://docpad.org).
 
 
 ## Dependencies
 
+* [node.js](http://nodejs.org/)
 * [npm](https://npmjs.org)
 
 
-## Development
+## First run
+
+Clone the repository.
 
 ``` bash
 $ npm install
-$ npm start
+$ bower install
+$ grunt
 ```
+Open http://localhost:7777/docs/
+
+## Development
+
 
 
 ## License
 
-Licensed under the [MIT License](LICENSE.md).
-
-Copyright &copy; 2014 idtdesign
+Copyright &copy; 2014 IDT Corp

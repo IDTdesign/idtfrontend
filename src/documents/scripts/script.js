@@ -23,10 +23,43 @@
 	);*/
 
 	/*if ($(window).width() > 1024) {*/
-		var promo = $('.homepage_promo');
-		promo.css('background-image','url('+promo.find('.homepage_image').attr('data-wide')+')');
+	//	var promo = $('.homepage_promo');
+	//	promo.css('background-image','url('+promo.find('.homepage_image').attr('data-wide')+')');
 	/*}*/
 
-	$(".dial").knob({'readOnly': true, 'fgColor':"#cc0000", 'bgColor':'#9eb7cf'});
+	//$(".dial").knob({'readOnly': true, 'fgColor':"#cc0000", 'bgColor':'#9eb7cf'});
+
+
+
+
+
+
+
+	/* nav-bossmain */
+
+	// $("#topmenu").sticky({topSpacing:0, wrapperClassName: "hold", className:"fixed"});
+
+	// detect scrolling direction
+	// add class to body
+
+	$(function(){
+	    var lastScrollTop = 0, delta = 5;
+	    $(window).scroll(function(event){
+	       var st = $(this).scrollTop();
+	       
+	       if(Math.abs(lastScrollTop - st) <= delta)
+	          return;
+	       
+	       if (st > lastScrollTop){
+	           // downscroll code
+	           $("body").removeClass("scrolltop").addClass("scrolldown");
+	       } else {
+	          // upscroll code
+	          $("body").removeClass("scrolldown").addClass("scrolltop");
+	       }
+	       lastScrollTop = st;
+	    });
+	});
+
 
 }(jQuery));

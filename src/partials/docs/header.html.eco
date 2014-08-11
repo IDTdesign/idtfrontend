@@ -18,7 +18,7 @@
 <link href="<%= @getUrl('/docs/assets/css/highlight.css') %>" rel="stylesheet">
 <%- @getBlock('styles').add(@getUrl(@document.styles)).toHTML() %>
 <!-- Documentation extras -->
-<link href="<%= @getUrl('/docs/assets/css/docs.min.css') %>" rel="stylesheet">
+<link href="<%= @getUrl('/docs/assets/css/docs.css') %>" rel="stylesheet">
 <!--[if lt IE 9]><script src="<%= @getUrl('/docs/assets/js/ie8-responsive-file-warning.js') %>"></script><![endif]-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<%= @getUrl('/docs/assets/js/ie10-viewport-bug-workaround.js') %>"></script>
