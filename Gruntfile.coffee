@@ -100,16 +100,40 @@ module.exports = (grunt) ->
 		svg2png:
 			out:
 				files: [
-					cwd: 'out/images',
+					cwd: 'out/images/',
 					src: ['**/*.svg'],
-					dest: 'out/images'
+					dest: 'out/images/'
 				]
 			src:
 				files: [
-					cwd: 'src/files/images',
+					cwd: 'src/files/images/',
 					src: ['**/*.svg'],
-					dest: 'src/files/images'
+					dest: 'src/files/images/'
 				]
+			icons:
+				files: [
+					expand: false,
+					cwd: 'src/files/icons/svg/',
+					src: ['*.svg'],
+					dest: 'src/files/icons/png/',
+				]
+
+		#create one svg from multiple files
+		svgstore:
+			options:
+				prefix: 'icon-'
+				#formatting:
+				#	indent_size: 2
+				includedemo: true
+				cleanup: ['fill']
+			default:
+				files: 'src/files/icons/svg-defs.svg':['src/files/icons/svg/*.svg']
+
+		#convert content of svg file to string 
+		svg2string:
+			icons:
+				files: ['src/files/icons/svg-icons.js':'src/files/icons/svg-defs.svg']
+
 
 		# optimize images if possible
 		imagemin:
@@ -118,18 +142,18 @@ module.exports = (grunt) ->
 					optimizationLevel: 3,
 				files: [
 					expand: true,
-					cwd: 'out/images',
+					cwd: 'out/images/',
 					src: ['**/*.{png,jpg,gif}']
-					dest: 'out/images'
+					dest: 'out/images/'
 				]
 			src:
 				options:
 					optimizationLevel: 3,
 				files: [
 					expand: true,
-					cwd: 'src/files/images',
+					cwd: 'src/files/images/',
 					src: ['**/*.{png,jpg,gif}']
-					dest: 'src/files/images'
+					dest: 'src/files/images/'
 				]
 
 		# track changes in src dir and regenerate docpad
@@ -160,13 +184,7 @@ module.exports = (grunt) ->
 			options:
 				force: true
 			out: ['<%= docpad.out %>']
-			vendorout: [
-				'out/vendor/modernizr/feature-detects',
-				'out/vendor/modernizr/media',
-				'out/vendor/modernizr/test',
-				'out/vendor/modernizr/.*',
-				'out/vendor/modernizr/grunt.js',
-			]
+
 		copy:
 			main:
 				files: [
@@ -197,12 +215,14 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-autoprefixer'
 	grunt.loadNpmTasks 'grunt-newer'
 	grunt.loadNpmTasks 'grunt-svg2png'
+	grunt.loadNpmTasks 'grunt-svgstore'
+	grunt.loadNpmTasks 'grunt-svg2string'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'preprocess', [ 'svg2png:src', 'newer:imagemin:src']
-	grunt.registerTask 'postprocess', ['clean:vendorout', 'copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
-	grunt.registerTask 'generate', ['clean:out', 'preprocess', 'shell:docpad', 'postprocess']
-	grunt.registerTask 'server', ['connect', 'watch']
-	grunt.registerTask 'run', ['generate', 'server']
-	grunt.registerTask 'development', ['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
-	grunt.registerTask 'default', ['run']
+	grunt.registerTask 'preprocess', 	['newer:svgstore', 'svg2png:icons', 'svg2string', 'svg2png:src', 'newer:imagemin:src']
+	grunt.registerTask 'postprocess', 	['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
+	grunt.registerTask 'generate', 		['clean:out', 'preprocess', 'shell:docpad', 'postprocess']
+	grunt.registerTask 'server', 		['connect', 'watch']
+	grunt.registerTask 'run', 			['generate', 'server']
+	grunt.registerTask 'development', 	['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
+	grunt.registerTask 'default', 		['run']
