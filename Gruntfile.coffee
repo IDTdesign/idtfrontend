@@ -121,7 +121,7 @@ module.exports = (grunt) ->
 		#create one svg from multiple files
 		svgstore:
 			options:
-				prefix: 'icon-'
+				prefix: 'i-'
 				#formatting:
 				#	indent_size: 2
 				includedemo: true
@@ -134,6 +134,33 @@ module.exports = (grunt) ->
 			icons:
 				files: ['src/files/icons/svg-icons.js':'src/files/icons/svg-defs.svg']
 
+		# background-image svg and png sprites
+		'svg-sprites':
+			icons:
+				options:
+					spriteElementPath: 'src/files/icons/svg'
+					spritePath: 'src/files/icons/icons-sprite.svg'
+					cssPath: 'src/documents/styles/_sprite.less'
+					previewPath: 'src/files/icons/'
+					prefix: 'i'
+					cssSvgPrefix: '.svg '
+					cssPngPrefix: '.no-svg '
+					sizes:
+						'': 14
+						large: 28
+					refSize: 14
+					template: 'src/files/icons/templates/stylesheet.hbs'
+		replace:
+			sprites:
+				src: 'src/documents/styles/_sprite.less'
+				dest: 'src/documents/styles/_sprite.less'
+				replacements: [
+					{
+						from: '../../files/icons/',
+						to: '../icons/'
+					}
+				]
+
 
 		# optimize images if possible
 		imagemin:
@@ -143,7 +170,7 @@ module.exports = (grunt) ->
 				files: [
 					expand: true,
 					cwd: 'out/images/',
-					src: ['**/*.{png,jpg,gif}']
+					src: ['**/*.{png,jpg,gif}'],
 					dest: 'out/images/'
 				]
 			src:
@@ -152,7 +179,7 @@ module.exports = (grunt) ->
 				files: [
 					expand: true,
 					cwd: 'src/files/images/',
-					src: ['**/*.{png,jpg,gif}']
+					src: ['**/*.{png,jpg,gif}'],
 					dest: 'src/files/images/'
 				]
 
@@ -217,11 +244,15 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-svg2png'
 	grunt.loadNpmTasks 'grunt-svgstore'
 	grunt.loadNpmTasks 'grunt-svg2string'
+	grunt.loadNpmTasks 'grunt-dr-svg-sprites'
+	grunt.loadNpmTasks 'grunt-text-replace'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'preprocess', 	['newer:svgstore', 'svg2png:icons', 'svg2string', 'svg2png:src', 'newer:imagemin:src']
+	grunt.registerTask 'makesprites',	['svgstore', 'svg2string', 'svg-sprites', 'replace:sprites']
+	grunt.registerTask 'optimizeimg',	['svg2png:src', 'newer:imagemin:src']
+	grunt.registerTask 'preprocess', 	['makesprites', 'optimizeimg']
 	grunt.registerTask 'postprocess', 	['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
-	grunt.registerTask 'generate', 		['clean:out', 'preprocess', 'shell:docpad', 'postprocess']
+	grunt.registerTask 'generate', 		['clean:out', 'shell:docpad', 'postprocess']
 	grunt.registerTask 'server', 		['connect', 'watch']
 	grunt.registerTask 'run', 			['generate', 'server']
 	grunt.registerTask 'development', 	['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']

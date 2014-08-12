@@ -1,16 +1,13 @@
 /* icon system */
 
+
+/* for inline-svg icons by default use the color of the text */
 .icon {
 	display: inline-block;
-	width: 14px;
-	height: 14px;
-	fill: currentColor;
-	background-color: #eee;
+	fill: currentColor; /* 1 */
 }
 
-/* test */
-.icon-adn {
-	width: 28px;
-	height: 28px;
-	fill: #9c0001;
+/* remove background-image from svg tags when supporting inline-svg */
+.svg svg.icon {
+	background-image: none;
 }

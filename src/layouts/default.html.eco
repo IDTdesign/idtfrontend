@@ -4,6 +4,8 @@
 	<!-- Rendered with Eco -->
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-TextLayoutMetrics" content="snap-vertical" />
+	<meta http-equiv="X-UA-CSSOMElementFloatMetrics" content="false" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Site Properities -->
@@ -22,7 +24,9 @@
 </head>
 <body>
 	<div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
-	<script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
+	<script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;
+		if (typeof(document.msCSSOMElementFloatMetrics) != "undefined") document.msCSSOMElementFloatMetrics = 0;
+	</script>
 
 	<header class="allpageheader">
 		<div class="container container-zeroheight noclear">
