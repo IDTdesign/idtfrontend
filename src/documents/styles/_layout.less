@@ -1,11 +1,38 @@
 /* layout */
 
+html,
+body {
+  height: 100%;
+}
+
 @media (max-width: 480px) {
 	
 	/* fix min width of the page to 480px */
 
-	html, body {
+	/*html,
+	body {
 		min-width: 480px;
-	}
+	}*/
 	
 }
+
+/* offcanvas menu */
+.allpage {
+	position: relative;
+	left: 0;
+	z-index: 2;
+	min-height: 100%;
+	background: #FFF;
+	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-menu {
+	z-index: 1;
+}
+
+/* increasing specifity for allpage--header*/
+.canvas-sliding,
+.canvas-sliding.allpage--header.allpage--header {
+	transition-timing-function: ease-in-out;
+}
+/* offcanvas menu end */

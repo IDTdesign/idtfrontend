@@ -29,7 +29,8 @@ module.exports = (grunt) ->
 				  'bower_components/bootstrap-less/js/popover.js',
 				  'bower_components/bootstrap-less/js/scrollspy.js',
 				  'bower_components/bootstrap-less/js/tab.js',
-				  'bower_components/bootstrap-less/js/affix.js'
+				  'bower_components/bootstrap-less/js/affix.js',
+				  'bower_components/jasny-bootstrap/js/offcanvas.js'
 				]
 				dest: 'out/vendor/bootstrap/js/bootstrap.js'
 

@@ -23,25 +23,33 @@
 	.allpage--header {
 		position: fixed;
 		width: 100%;
-		min-width: 480px; /* 1 */
+		/*min-width: 480px;*/ /* 1 */
+		transition: all 0.3s ease-in-out;
+	}
+
+	.scrolldown .allpage--header {
+		transition-timing-function: ease-in;
+	}
+
+	.scrolltop .allpage--header {
+		transition-timing-function: ease-out;
 	}
 
 	/* hiding and revealing nav behind the screen */
 	.no-csstransforms3d .scrolldown .allpage--header {
 		top: -@header-xs-height;
-		transition: top .3s ease-in;
 	}
+
 	.no-csstransforms3d .scrolltop .allpage--header {
 		top: 0;
-		transition: top .3s ease-out;
-	}	
+	}
+
 	.csstransforms3d .scrolldown .allpage--header {
         transform: translate3d(0, -@header-xs-height, 0);
-        transition: transform .3s ease-in;
 	}
+
 	.csstransforms3d .scrolltop .allpage--header {
         transform: translate3d(0, 0em, 0);
-        transition: transform .3s ease-out;
 	}
 }
 
@@ -369,7 +377,9 @@
 			margin: 0 -100% 0 0;
 		}
 	}
-
+	.dropdown:hover .caret {
+		transform: rotate(-180deg);
+	}
 }
 /* navbar themes end */
 

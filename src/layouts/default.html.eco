@@ -25,8 +25,18 @@
 <body>
 	<div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
 	<script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
+	
+	<nav class="offcanvas-menu navmenu navmenu-default navmenu-fixed-right" role="navigation">
+		<ul class="nav navmenu-nav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Rates</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">My Account</a></li>
+		</ul>
+	</nav>
 
-	<div class="allpage">
+	<div class="allpage page-canvas">
 		<header class="allpage--header">
 			<div class="container container-zeroheight noclear">
 				<div class="logo">
@@ -62,7 +72,7 @@
 							<li class="hidden-xs"><a href="#">Sign In</a></li>
 							<li class="hidden-xs"><a href="#">Register</a></li>
 							<li class="visible-xs">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
 							        <span class="">Menu</span>
 						      	</button>
 							</li>
@@ -99,7 +109,7 @@
 				</div>
 			</div>
 		</header>
-		
+
 		<div class="allpagebody">
 			<div class="container">
 				<%- @content %>
