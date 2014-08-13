@@ -10,12 +10,50 @@
 }
 /* container end */
 
+
+/* mobile header */
+
+/* header is fixed only on extra-small width */
+
+@header-xs-height: 119px;
+
+@media (max-width: @screen-xs-max) {
+
+	/* 1 - minimum width is equal to the layout min-width limit */
+	.allpage--header {
+		position: fixed;
+		width: 100%;
+		min-width: 480px; /* 1 */
+	}
+
+	/* hiding and revealing nav behind the screen */
+	.no-csstransforms3d .scrolldown .allpage--header {
+		top: -@header-xs-height;
+		transition: top .3s ease-in;
+	}
+	.no-csstransforms3d .scrolltop .allpage--header {
+		top: 0;
+		transition: top .3s ease-out;
+	}	
+	.csstransforms3d .scrolldown .allpage--header {
+        transform: translate3d(0, -@header-xs-height, 0);
+        transition: transform .3s ease-in;
+	}
+	.csstransforms3d .scrolltop .allpage--header {
+        transform: translate3d(0, 0em, 0);
+        transition: transform .3s ease-out;
+	}
+}
+
+/* mobile header end */
+
+
 /* logo */
 
 @logowidth: 100px;
 @logoheight: 140px;
 @logo-xs-width: 85px;
-@logo-xs-height: 119px;
+@logo-xs-height: @header-xs-height;
 @logo-hover-shift: 10px;
 
 .logo {
@@ -49,7 +87,7 @@
 	width: inherit;
 	height: inherit;
 }
-.allpageheader-navigation .container {
+.allpage--header-navigation .container {
 	padding-left: (15px + @logowidth + 20px);
 }
 
@@ -59,29 +97,33 @@
 
 
 /* navbar themes */
+
+/* navbar-topline */
 @navbar-bg: rgba(0, 0, 0, 0.75);
 @navbar-bg2: #333;
 @navbar-bg3: #b31212;
+@topline-textsize: 12px;
+@topline-textcolor: #FFF;
 
 .navbar-topline {
 	margin-bottom: 0;
 	border: none;
 	min-height: 0;
-	color: #FFF;
+	color:@topline-textcolor;
 	background-color: @navbar-bg;
 	border-radius: 0;
 	transition: all 0.5s ease-in-out;
 
 	a {
-		color: #FFF;
+		color: @topline-textcolor;
 	}
 
 	.navbar-nav > li > a {
-		font-size: 12px;
+		font-size: @topline-textsize;
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: none;
-		color: #FFF;
+		color: @topline-textcolor;
 	}
 
 	.nav > .active > a,
@@ -97,14 +139,14 @@
 	}
 
 	.navbar-text {
-		font-size: 12px;
+		font-size: @topline-textsize;
 		font-weight: bold;
-		line-height: 1.7;
 		text-transform: uppercase;
+		line-height: 1.7;
 	}
 
 	.dropdown-menu {
-		color: #FFF;
+		color: @topline-textcolor;
 	}
 
 	/* dropdown theme */
@@ -113,9 +155,9 @@
 		padding: 10px 0;
 		border-width: 0;
 		border-radius: 0 0 2px 2px;
-		color: #FFF;
+		color: @topline-textcolor;
 		background-color: @navbar-bg2;
-		font-size: 12px;
+		font-size: @topline-textsize;
 	}
 
 	.dropdown-menu > li > a {
@@ -187,6 +229,8 @@
 	}
 }
 
+/* navbar-topline end */
+
 /* navbar-bossmain */
 
 @mainmenu-bg: #9c0001;
@@ -244,10 +288,9 @@
 		margin-left: 0;
 	}
 	
-}
 
-/* dropdown */
-.navbar-bossmain {
+
+	/* dropdown */
 
 	.dropdown:hover > a {
 		background-color: @mainmenu-bg;
@@ -330,39 +373,7 @@
 }
 /* navbar themes end */
 
-
-/* caret rotation */
-.dropdown-toggle .caret {
-	transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
-	margin-top: -2px;
-}
-
-.navbar-bossmain .dropdown:hover > .dropdown-toggle .caret,
-.navbar-bossmain .dropdown.open > .dropdown-toggle .caret,
-.navbar-topline .dropdown.open > .dropdown-toggle .caret {
-	transform: rotate(-180deg);
-}
-
-/* caret rotation end */
-
-/* nav transitions */
-.nav > li > a:link,
-.nav > li > a:visited,
-.dropdown-menu > li > a:link,
-.dropdown-menu > li > a:visited {
-	transition: all 0.3s;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus,
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-	transition: all 0;
-}
-
-/* nav transitions end */
-
-
+/* TO-DO: move to base layer as a separate module */
 /* pullin overlay object */
 .pullin-object {
 	position: relative;
@@ -381,38 +392,3 @@
 	bottom: 0;
 }
 /* pullin overlay object end */
-
-
-/* mobile header */
-
-/* header is fixed only on extra-small width */
-
-@media (max-width: @screen-xs-max) {
-
-	/* 1 - minimum width is equal to the layout min-width limit */
-	.allpageheader {
-		position: fixed;
-		width: 100%;
-		min-width: 480px; /* 1 */
-	}
-
-	/* hiding and revealing nav behind the screen */
-	.no-csstransforms3d .scrolldown .allpageheader {
-		top: -@logo-xs-height;
-		transition: top .3s ease-in;
-	}
-	.no-csstransforms3d .scrolltop .allpageheader {
-		top: 0;
-		transition: top .3s ease-out;
-	}	
-	.csstransforms3d .scrolldown .allpageheader {
-        transform: translate3d(0, -@logo-xs-height, 0);
-        transition: transform .3s ease-in;
-	}
-	.csstransforms3d .scrolltop .allpageheader {
-        transform: translate3d(0, 0em, 0);
-        transition: transform .3s ease-out;
-	}
-}
-
-/* mobile header end */
