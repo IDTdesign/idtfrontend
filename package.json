@@ -26,7 +26,11 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^0.7.0",
     "grunt-shell": "^0.7.0",
-    "grunt-svg2png": "^0.2.5"
+    "grunt-svg2png": "^0.2.5",
+    "grunt-svg2string": "^0.1.2",
+    "grunt-svgstore": "^0.3.1",
+    "grunt-dr-svg-sprites": "^0.9.9",
+    "grunt-text-replace": "^0.3.12"
   },
   "devDependencies": {
     "docpad": "~6.69.0",
