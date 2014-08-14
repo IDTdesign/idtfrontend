@@ -1,0 +1,214 @@
+/* mediablock */
+/* horizontal layout by default */
+
+/* 1 - delete space between inline-blocks */
+.mediablock {
+    font-size: 0; /* 1 */
+}
+
+/* 1 - restore default font-size */
+.mediablock--primary,
+.mediablock--secondary {
+    font-size: @font-size-larger; /* 1 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* sizes */
+
+.mediablock-3-to-1 .mediablock--primary {
+    width: 75%;
+}
+
+.mediablock-3-to-1 .mediablock--secondary {
+    width: 25%;
+}
+
+.mediablock-2-to-1 .mediablock--primary {
+    width: 66.66%;
+}
+
+.mediablock-2-to-1 .mediablock--secondary {
+    width: 33.33%;
+}
+
+/* sizes end */
+
+
+/* in column: primary above secondary */
+@media (max-width: @screen-xs-max) {
+
+    .mediablock .mediablock--primary,
+    .mediablock .mediablock--secondary {
+        display: block;
+        width: auto;
+
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .mediablock-sm-vertical .mediablock--primary,
+    .mediablock .mediablock--secondary {
+        display: block;
+        width: auto;
+
+    }
+}
+
+/* secondary on left, primary on right */
+.mediablock-rtl {
+    direction: rtl;
+}
+
+.mediablock-rtl > .mediablock--primary,
+.mediablock-rtl > .mediablock--secondary {
+    direction: ltr;
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-rtl {
+        direction: ltr;
+    }
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+    .mediablock-default.mediablock-rtl > .mediablock--primary {
+        padding-left: 80px;
+        padding-right: 120px;
+    }
+
+    .mediablock-default.mediablock-rtl > .mediablock--secondary {
+        padding-left: 120px;
+        padding-right: 80px;
+    }
+
+}
+
+
+
+/* paddings */
+
+/* default paddings */
+.mediablock-default .mediablock--primary,
+.mediablock-default .mediablock--secondary {
+    padding: 80px;
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-default .mediablock--primary,
+    .mediablock-default .mediablock--secondary {
+        padding: 40px;
+    }
+    
+    .mediablock-default .mediablock--primary {
+        padding-bottom: 20px;
+    }
+
+    .mediablock-default .mediablock--secondary {
+        padding-top: 20px;
+    }
+
+}
+
+@media (min-width: @screen-lg-min) {
+    
+    .mediablock-default .mediablock--primary {
+        padding-left: 120px;
+    }
+
+    .mediablock-default .mediablock--secondary {
+        padding-right: 120px;
+    }
+
+}
+
+
+.mediablock-tight .mediablock--primary {
+    padding: 40px 20px 40px 60px;
+}
+.mediablock-tight .mediablock--secondary {
+    padding: 40px 60px 40px 20px;
+}
+
+.mediablock-tight.mediablock-rtl .mediablock--primary {
+    padding-right: 60px;
+    padding-left: 20px;
+}
+.mediablock-tight.mediablock-rtl .mediablock--secondary {
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+/* paddings end */
+
+
+/* alternative coloring */
+.mediablock-alt {
+    background-color: #ebf0f5;
+
+    h3 {
+    color: #004C8D;
+    }
+
+}
+
+/*  mediablock-hasarrow option */
+
+@mediablock-arrow-w: 20px;
+@mediablock-arrow-h: 60px;
+@mediablock-arrowcolor: #f5f8fa;
+
+@mediablock-arrow-half-h: (floor(@mediablock-arrow-h / 2));
+@mediablock-arrow-shift:  (floor(@mediablock-arrow-w / 2));
+
+.mediablock-hasarrow .mediablock--secondary {
+    position: relative;
+}
+
+.mediablock-hasarrow .mediablock--secondary:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.mediablock-hasarrow .mediablock--secondary:before {
+    top: 50%;
+    left: 0;
+    margin: -@mediablock-arrow-half-h 0 0 -@mediablock-arrow-shift;
+    border-right-color: @mediablock-arrowcolor;
+    border-width: @mediablock-arrow-half-h @mediablock-arrow-w @mediablock-arrow-half-h 0;
+}
+
+.mediablock-hasarrow.mediablock-rtl .mediablock--secondary:before {
+    left: auto;
+    right: 0;
+    margin: -@mediablock-arrow-half-h -@mediablock-arrow-shift 0 0;
+    border-left-color: @mediablock-arrowcolor;
+    border-width: @mediablock-arrow-half-h 0 @mediablock-arrow-half-h @mediablock-arrow-w;
+}
+
+@media (max-width: @screen-xs-max) {
+    .mediablock-hasarrow .mediablock--secondary:before {
+        content: none;
+    }
+}
+
+/*  mediablock-hasarrow option end */
+
+/* mediablock end */
+
+
+/* wrapper */
+.wrapper-default {
+    padding: 40px;
+}
+
+.img-fullwidth {
+    width: 100%;
+}
