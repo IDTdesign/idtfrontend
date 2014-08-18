@@ -1,0 +1,289 @@
+// @TODO: Create a header for the files with name of the module and details.
+
+/* navbar modification: default state */
+// @TODO: Create a default state styles if it's necessary.
+/* default state end */
+
+/* navbar modification: navbar-topline */
+@navbar-bg-dark: #333;
+@navbar-bg-red: #b31212;
+@navbar-offset: 135px;
+@topline-textsize: 12px;
+@topline-textcolor: #fff;
+
+.navbar-topline {
+    margin-bottom: 0;
+    padding-left: @navbar-offset;
+    border: none;
+    min-height: 0;
+    color: @topline-textcolor;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+
+    .navbar--text {
+        padding-top: 15px;
+        font-size: @topline-textsize;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.7;
+
+        a {color: @topline-textcolor;}
+    }
+
+    .navbar--list {
+        &.navbar--list-position-right {
+            float: right;
+        }
+
+        .navbar--item {
+            &.active,
+            &.open {
+                .navbar--link {
+                    background-color: @navbar-bg-dark;
+                }
+            }
+        }
+
+        .navbar--link {
+            color: @topline-textcolor;
+            font-size: @topline-textsize;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: none;
+            background-color: transparent;
+
+            &:hover,
+            &:focus {
+                background-color: @navbar-bg-dark;
+            }
+        }
+    }
+
+    /* dropdown menu and items */
+    .navbar--submenu {
+        margin: 0;
+        padding: 10px 0;
+        border-width: 0;
+        border-radius: 0 0 2px 2px;
+        color: @topline-textcolor;
+        background-color: @navbar-bg-dark;
+        font-size: @topline-textsize;
+
+        .navbar--submenulink {
+            padding: 5px 15px;
+            font-weight: bold;
+            color: inherit;
+
+            &:hover,
+            &:focus {
+                background: #000;
+                color: inherit;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+
+    .navbar-topline .navbar--list-position-right .navbar--submenu {
+        left: 0;
+        right: auto;
+    }
+
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .navbar-topline {
+        .navbar--list {
+            margin: 12.5px -15px;
+
+            .navbar--item {
+                float: left;
+            }
+
+            &.navbar--list-position-right {
+                float: right;
+            }
+        }
+
+        .navbar--submenu {
+            left: auto;
+            right: 0;
+
+            .open & {
+                position: absolute;
+                float: left;
+                width: auto;
+                background-color: @navbar-bg-dark;
+            }
+        }
+
+        .navbar-toggle {
+            margin: 0 15px 0;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #c00;
+            border-radius: 3px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover,
+            &:focus {
+                background-color: #e10000;
+                transition: all 0;
+            }
+        }
+    }
+}
+/* navbar-topline end */
+
+/* navbar modification: navbar-bossmain */
+@mainmenu-bg: #9c0001;
+@mainmenu-radius: 3px;
+@mainmenu-textcolor: #fff;
+
+.navbar-bossmain {
+    margin: 40px 0 20px @navbar-offset;
+    border: none;
+    background-color: rgba(225, 0, 0, 0.9);
+    color: @mainmenu-textcolor;
+
+    .navbar--list {
+        &.nav-pills {
+            li + li {
+                margin-left: 0;
+            }
+        }
+
+        .navbar--item {
+            &:first-child {
+                .navbar--link {
+                    border-radius: @mainmenu-radius 0 0 @mainmenu-radius;
+                }
+            }
+
+            &:last-child {
+                .navbar--link {
+                    border-radius: 0 @mainmenu-radius @mainmenu-radius 0;
+                }
+            }
+
+            &.active,
+            &.open,
+            &:hover {
+                .navbar--link {
+                    background-color: @mainmenu-bg;
+                    color: @mainmenu-textcolor;
+                }
+            }
+
+            /* dropdown */
+            /* 1 - required for pulled in overlay button */
+            /* 2 - placeholder space for pulled in button */
+            &.dropdown {
+                .pullin-space {
+                    display: inline-block; /* 1 */
+                    padding-right: 35px; /* 2 */
+                }
+
+                .btn-dropdown {
+                    border-width: 0;
+                    color: inherit;
+
+                    &:hover {
+                        color: inherit;
+                        background-color: rgba(225, 0, 0, 1);
+                    }
+                }
+
+                .dropdown-header {
+                    overflow: hidden;
+                    padding: 5px 25px;
+                    color: #e4b9ba;
+
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        height: 1px;
+                        vertical-align: middle;
+                        border-bottom: 1px #c05d5d solid;
+                    }
+
+                    &:before {
+                        left: -0.5em;
+                        margin: 0 0 0 -100%;
+                    }
+
+                    &:after {
+                        left: 0.5em;
+                        margin: 0 -100% 0 0;
+                    }
+                }
+
+                &:hover {
+                    .navbar--submenu {
+                        display: block;
+                    }
+
+                    .btn-dropdown {
+                        background: #ce1616;
+                    }
+
+                    .caret {
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+
+        .navbar--link {
+            padding: 15px 25px;
+            border-radius: 0;
+            color: @mainmenu-textcolor;
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+
+            &:link,
+            &:visited {
+                color: @mainmenu-textcolor;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: @mainmenu-bg;
+                color: @mainmenu-textcolor;
+            }
+        }
+    }
+
+    /* dropdown menu and items */
+    .navbar--submenu {
+        margin: 0;
+        padding: 10px 0;
+        border-width: 0;
+        border-radius: 0 0 @mainmenu-radius @mainmenu-radius;
+        color: @mainmenu-textcolor;
+        background-color: @mainmenu-bg;
+        font-size: 12px;
+
+        .navbar--submenulink {
+            padding: 5px 25px;
+            color: @mainmenu-textcolor;
+            font-size: 12px;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                background: #bd1915;
+                color: inherit;
+            }
+        }
+    }
+}
+/* navbar-bossmain end */
