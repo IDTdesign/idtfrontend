@@ -6,6 +6,17 @@
     background:#FFF;
 }
 
+@media (max-width: @screen-xs-max ) {
+
+    /* compensate containers paddings */
+    .island {
+        margin: 0 -((@grid-gutter-width / 2));
+        border-radius: 0;
+        border-top: 7px solid #ebf0f5;
+    }
+
+}
+
 .island-default {
     padding: 20px;
 }
@@ -35,4 +46,20 @@
         margin: 0 -100% 0 0;
     }
 }
+
+@media (max-width: @screen-xs-max ) {
+
+    .island--title {
+        border-bottom: 1px solid #ebf0f5;
+        padding-bottom: (@line-height-computed / 2);
+
+        &:before,
+        &:after {
+            content: none;
+        }
+
+    }
+
+}
+
 /* island end */
