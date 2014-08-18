@@ -229,4 +229,32 @@
 
 .img-fullwidth {
     width: 100%;
+    border-radius: inherit;
 }
+
+
+/* columns-block */
+
+.columns-block {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.columns-block > * {
+    display: table-cell;
+}
+
+@media (max-width: @screen-xs-max) {
+    .columns-block,
+    .columns-block > * {
+        display: block;
+    }
+}
+
+.columns-block-gutter > * {
+    padding: (@grid-gutter-width / 2);
+}
+
+
+/* columns-block end */

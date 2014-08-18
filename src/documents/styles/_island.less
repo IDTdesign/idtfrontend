@@ -17,9 +17,6 @@
 
 }
 
-.island-default {
-    padding: 20px;
-}
 
 .island--title {
     padding-top: 40px;
@@ -58,6 +55,35 @@
             content: none;
         }
 
+    }
+
+}
+
+/* default theme */
+
+.island-default {
+    padding: 20px 60px;
+}
+
+.island-default .island--title {
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+.island-default > .island--title:first-child {
+    margin-top: -20px;
+}
+
+@media (max-width: @screen-xs-max ) {
+
+    .island-default {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .island-default .island--title {
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
 }
