@@ -11,7 +11,7 @@ title: "Download App"
 </section>
 
 <article class="island">
-    <div class="mediablock mediablock-2-to-1 mediablock-sm-vertical">
+    <div class="mediablock mediablock-equalized mediablock-2-to-1 mediablock-sm-vertical">
         <div class="mediablock--primary">
             <a href="#"><img class="img-fullwidth" src="<%= @getUrl(@document.basename+"/app-videa-preview.jpg") %>" alt="watch a video"></a>
         </div>

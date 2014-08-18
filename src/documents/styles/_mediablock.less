@@ -15,6 +15,24 @@
     width: 50%;
 }
 
+
+/* equalized by height */
+.mediablock-equalized {
+    display: table;
+}
+
+.mediablock--primary,
+.mediablock--secondary {
+    display: table-cell;
+}
+
+
+.mediablock-equalized,
+.mediablock-equalized .mediablock--primary,
+.mediablock-equalized .mediablock--secondary {
+    border-radius: inherit;
+}
+
 /* sizes */
 
 .mediablock-3-to-1 .mediablock--primary {
@@ -49,7 +67,7 @@
 
 @media (max-width: @screen-sm-max) {
     .mediablock-sm-vertical .mediablock--primary,
-    .mediablock .mediablock--secondary {
+    .mediablock-sm-vertical .mediablock--secondary {
         display: block;
         width: auto;
 
