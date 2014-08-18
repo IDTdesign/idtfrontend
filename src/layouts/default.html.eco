@@ -41,7 +41,7 @@
             <div class="allpage--headerbg"></div>
             <div class="container">
                 <div class="logo">
-                    <a class="logo--link" href="#"><img src="<%= @getUrl('/images/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
+                    <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/images/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
                 </div>
 
                 <nav class="navbar navbar-topline">
@@ -49,33 +49,33 @@
                         <a href="#">$1 FREE TRIAL <span class="hidden-sm">FOR NEW INTERNATIONAL CALLING CUSTOMERS</span></a>
                     </p>
                     <ul class="nav navbar-nav navbar--list navbar--list-position-right">
-                       <li class="navbar--item dropdown">
-                           <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></a>
-                           <ul class="navbar--submenu dropdown-menu" role="menu">
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">English</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
-                           </ul>
-                       </li>
-                       <li class="navbar--item dropdown">
-                           <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown">US <span class="caret"></span></a>
-                           <ul class="navbar--submenu dropdown-menu" role="menu">
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">US</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">UK</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">ES</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">DE</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">HK</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">SG</a></li>
-                               <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">AU</a></li>
-                           </ul>
-                       </li>
-                       <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Sign In</a></li>
-                       <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
-                       <li class="navbar--item visible-xs">
-                       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
-                               <span class="">Menu</span>
-                             </button>
-                       </li>
-                   </ul>
+                        <li class="navbar--item dropdown">
+                            <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></a>
+                            <ul class="navbar--submenu dropdown-menu" role="menu">
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">English</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar--item dropdown">
+                            <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown">US <span class="caret"></span></a>
+                            <ul class="navbar--submenu dropdown-menu" role="menu">
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">US</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">UK</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">ES</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">DE</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">HK</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">SG</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">AU</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Sign In</a></li>
+                        <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
+                        <li class="navbar--item visible-xs">
+                        	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
+                            	<span class="">Menu</span>
+                            </button>
+                        </li>
+                    </ul>
                 </nav>
 
                 <nav class="navbar navbar-bossmain hidden-xs" role="navigation">

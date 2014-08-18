@@ -4,13 +4,13 @@
 	$('footer h4, .mobile_menu h4').click(function(){
 		$(this).parent().toggleClass('active');
 	})
-	$('header nav, .mobile_menu .close').click(function(){
+	/*$('header nav, .mobile_menu .close').click(function(){
 		if ($(window).width() < 920) {
 			$('body').toggleClass('show_menu');
 
 			return false;
 		}
-	});
+	});*/
 	/*$('.dropdown').click(function(){
 		$(this).toggleClass('open');
 		return false;
