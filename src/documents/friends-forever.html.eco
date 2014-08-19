@@ -3,14 +3,6 @@ layout: "default"
 title: "Friends Forever"
 ---
 
-<section class="">
-    <h1>Friends Forever</h1>
-    <h4>Calling From Home For Free Forever</h4>
-    <p>Invite your friends to <strong>Boss Revolution</strong> and earn <strong>FREE</strong> minutes. <strong>FOREVER.</strong></p>
-    <p><a href="" class="btn btn-default">Share The Love</a></p>
-</section>
-
-
 <style>
     .island-fiends-forever-1 {
         text-align: right;
@@ -28,19 +20,38 @@ title: "Friends Forever"
         padding: 180px 60px 40px 630px;
     }
     
+    @media (max-width: 991px) {
+        .island-fiends-forever-2 {
+            padding: 450px 60px 40px 60px;
+            background-color: #fff;
+            text-align: center;
+        }
+    }
+
 </style>
+
+
+<section class="">
+    <h1>Friends Forever</h1>
+    <h4>Calling From Home For Free Forever</h4>
+    <p>Invite your friends to <strong>Boss Revolution</strong> and earn <strong>FREE</strong> minutes. <strong>FOREVER.</strong></p>
+    <p><a href="" class="btn btn-default">Share The Love</a></p>
+</section>
+
+
 <article class="island island-fiends-forever-1">
-    <img src="<%= @getUrl(@document.basename+"/ff-calling-home-for-free-forever.jpg") %>" alt="">
+    <img src="<%= @getUrl(@document.basename+"/ff-calling-home-for-free-forever.jpg") %>" alt="Imagine calling home for free FOREVER!">
 </article>
 
 <article class="island island-default">
 
     <h2 class="island--title">Win-Win</h2>
     
-    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-win-win.jpg") %>" alt=""></p>
-    <div class="columns-block columns-block-gutter lead text-center">
-        <p>You refer your friends and they get <strong>$1&nbsp;FREE</strong> in International Calls.</p>
-        <p>When your friends love the service and top&nbsp;up online... You get <strong>10% of&nbsp;the Top&nbsp;Up Amount. FREE.</strong></p>
+    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-win-win.jpg") %>" alt="Win-Win"></p>
+    <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
+        <p>You refer your friends and they get <strong class="brand-color">$1&nbsp;FREE</strong> in International Calls.</p>
+        <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-1.png") %>" alt=""></p>
+        <p>When your friends love the service and top&nbsp;up online... You get <strong class="brand-color">10% of&nbsp;the Top&nbsp;Up Amount. FREE.</strong></p>
     </div>
 
 </article>
@@ -49,10 +60,11 @@ title: "Friends Forever"
 
     <h2 class="island--title">Benefits</h2>
     
-    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-benefits.png") %>" alt=""></p>
-    <div class="columns-block columns-block-gutter lead text-center">
-        <p>Every time they buy online... <strong>YOU&nbsp;EARN MINUTES!</strong></p>
-        <p>And your minutes never expire... <strong>THEY&nbsp;ARE FOREVER!</strong></p>
+    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-benefits.png") %>" alt="Benefits"></p>
+    <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
+        <p>Every time they buy online... <strong class="brand-color">YOU&nbsp;EARN MINUTES!</strong></p>
+        <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-2.png") %>" alt=""></p>
+        <p>And your minutes never expire... <strong class="brand-color">THEY&nbsp;ARE FOREVER!</strong></p>
     </div>
 
 </article>
@@ -62,18 +74,19 @@ title: "Friends Forever"
     <h2 class="island--title">Earn</h2>
     <p class="lead text-center">Let's Put It This Way:</p>
     
-    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-earn.png") %>" alt=""></p>
-    <div class="columns-block columns-block-gutter lead text-center">
-        <p>If your friends tops up <strong>$20</strong> a month online for International Calls, <strong>$2&nbsp;BONUS</strong> goes directly into your account.</p>
-        <p>So, if you have <strong>10 FRIENDS</strong> and each tops up <strong>$20</strong> per month, that makes a total of <strong>$200</strong> per month.</p>
-        <p>You Get a <strong>$20&nbsp;BONUS. EACH&nbsp;MONTH. FREE.</strong></p>
+    <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-earn.png") %>" alt="Earn"></p>
+    <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
+        <p>If your friends tops up <strong class="brand-color-alt">$20</strong> a month online for International Calls, <strong class="brand-color">$2&nbsp;BONUS</strong> goes directly into your account.</p>
+        <p>So, if you have <strong class="brand-color">10&nbsp;FRIENDS</strong> and each tops up <strong class="brand-color-alt">$20</strong> per month, that makes a total of <strong class="brand-color-alt">$200</strong> per month.</p>
+        <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-3.png") %>" alt=""></p>
+        <p>You Get a <strong class="brand-color">$20&nbsp;BONUS. EACH&nbsp;MONTH. FREE.</strong></p>
     </div>
 
 </article>
 
 <article class="island island-fiends-forever-2">
 
-    <p class="lead">Invite your friends to <strong>Boss&nbsp;Revolution</strong> and earn <strong>FREE</strong> minutes. <strong>FOREVER.</strong></p>
+    <p class="lead">Invite your friends to <strong class="brand-color">Boss&nbsp;Revolution</strong> and earn <strong class="brand-color">FREE</strong> minutes. <strong class="brand-color">FOREVER.</strong></p>
     
     <p><a href="" class="btn btn-default">Share The Love</a></p>
 
