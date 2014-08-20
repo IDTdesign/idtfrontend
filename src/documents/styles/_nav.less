@@ -379,4 +379,24 @@
 
 }
 
+@media (max-width: @screen-xs-max) {
+
+    /* 1 - to override inline style added by script */
+    .fixed-local-nav {
+        height: auto !important; /* 1 */
+    }
+    
+    .fixed-local-nav .local-nav {
+        position: static !important; /* 1 */
+    }
+
+    .local-nav {
+        text-align: center;
+        
+        .nav--item {
+            display: inline-block;
+        }
+
+    }
+}
 /* local navigation end */
