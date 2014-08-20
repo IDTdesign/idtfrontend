@@ -34,7 +34,9 @@ docpadConfig = {
 			# The JavaScript files for the site.
 			scripts: [
 				'/vendor/bootstrap/js/bootstrap.min.js'
-				'/vendor/jquery.sticky.js'
+                '/vendor/sticky/jquery.sticky.min.js'
+				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
+                '/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
 				'/scripts/script.js'
 			]
 

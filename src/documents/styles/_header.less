@@ -1,7 +1,11 @@
-@header-bg-dark: rgba(0, 0, 0, 0.75);
+@header-bg-dark: rgba(0, 0, 0, 0.5);
 @header-bg-red: #b31212;
 
 .allpage--header {
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+
      .allpage--headerbg {
          position: absolute;
          z-index: 0;
@@ -23,7 +27,6 @@
 
     /* 1 - minimum width is equal to the layout min-width limit */
     .allpage--header {
-        width: 100%;
         height: @header-xs-height;
         /*min-width: 480px;*/ /* 1 */
         transition: all 0.3s ease-in-out;
@@ -85,3 +88,29 @@
 }
 
 /* pullin overlay object end */
+
+
+/* header-promo */
+.header-promo {
+
+}
+
+.header-promo--inner {
+	position: relative;
+	z-index: 4;
+}
+
+.header-promo--box {
+	position: absolute;
+	bottom: 40px;
+	width: 40%;
+	padding: 40px 40px;
+	background-color: rgba(0, 0, 0, 0.45);
+	border-radius: 5px;
+	color: #FFF;
+
+	h1 {
+		color: inherit;
+	}
+}
+/* header-promo end */

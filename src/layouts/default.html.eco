@@ -22,7 +22,7 @@
     <script src="<%= @getUrl('/vendor/modernizr/modernizr.min.js') %>"></script>
     <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".local-nav" data-offset="80">
     <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
     <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
 
@@ -108,9 +108,7 @@
         </header>
 
         <div class="allpage--body">
-            <div class="container">
-                <%- @content %>
-            </div>
+            <%- @content %>
         </div>
 
         <footer class="allpage--footer">

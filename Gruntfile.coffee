@@ -44,6 +44,9 @@ module.exports = (grunt) ->
 			modernizr:
 				src: 'bower_components/modernizr/modernizr.js'
 				dest: 'out/vendor/modernizr/modernizr.min.js'
+			sticky:
+				src: 'bower_components/sticky/jquery.sticky.js'
+				dest: 'out/vendor/sticky/jquery.sticky.min.js'
 
 		# compile less and generate map files
 		less:
@@ -216,11 +219,9 @@ module.exports = (grunt) ->
 		copy:
 			main:
 				files: [
-					expand: true
-					cwd: 'bower_components/animate.css/'
-					src: 'animate.min.css'
-					dest: 'out/vendor/animate.css/'
-					filter: 'isFile'
+					'out/vendor/animate.css/animate.min.css':'bower_components/animate.css/animate.min.css',
+					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
+					'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
 				]
 
 		# generate development

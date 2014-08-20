@@ -61,5 +61,8 @@
 	    });
 	});
 
+	// local navigation
+	$(".local-nav").sticky({topSpacing:0, wrapperClassName: "hold", className:"fixed-local-nav"}).localScroll();
+
 
 }(jQuery));

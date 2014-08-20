@@ -3,114 +3,135 @@ layout: "default"
 title: "Download App"
 ---
 
-<section class="">
-    <h1>International Calling Made Even Easier with our Mobile App</h1>
-    <p>Our free, award-winning app makes calling with Boss Revolution simpler than ever before. Download the app today and international calling will be one tap away.</p>
-    <p><a href="" class="btn btn-appstore"></a><a href="" class="btn btn-gplay"></a></p>
-    <footer class=""></footer>
-</section>
-
-<article class="island">
-    <div class="mediablock mediablock-equalized mediablock-2-to-1 mediablock-sm-vertical">
-        <div class="mediablock--primary">
-            <a href="#"><img class="img-fullwidth" src="<%= @getUrl(@document.basename+"/app-videa-preview.jpg") %>" alt="watch a video"></a>
-        </div>
-        <div class="mediablock--secondary wrapper-default">
-            <h2>Discover All the Great Features of our Calling App</h2>
-            <p>Affordable and high quality international calling is even easier with our FREE international calling app.</p>
-            <ul class="nav">
-                <li class="nav--item"><a href="" class="nav--link">Same Low International Rrates</a></li>
-                <li class="nav--item"><a href="" class="nav--link">One Tap Dialing</a></li>
-                <li class="nav--item"><a href="" class="nav--link">Great Call Quality</a></li>
-            </ul>
-        </div>
+<header class="header-promo">
+    <div class="container header-promo--inner">
+        <img src="<%= @getUrl(@document.basename+"/downloadapp.jpg") %>" alt="">
+        <section class="header-promo--box">
+            <h1>International Calling Made Even Easier with our Mobile App</h1>
+            <p>Our free, award-winning app makes calling with Boss Revolution simpler than ever before. Download the app today and international calling will be one tap away.</p>
+            <p><a href="" class="btn btn-appstore"></a><a href="" class="btn btn-gplay"></a></p>
+            <footer class=""></footer>
+        </section>
     </div>
-</article>
+</header>
 
-<article class="island">
+<nav class="local-nav">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav--item"><a href="#free-app" class="nav--link">Free App</a></li>
+            <li class="nav--item"><a href="#one-tap-dialing" class="nav--link">One-Tap Dialing</a></li>
+            <li class="nav--item"><a href="#easy-to-fund" class="nav--link">Easy to Fund</a></li>
+            <li class="nav--item"><a href="#bilingual" class="nav--link">Bilingual</a></li>
+            <li class="nav--item"><a href="#high-quality-connections" class="nav--link">High Quality Connections</a></li>
+            <li class="nav--item"><a href="#international-mobile-top-up" class="nav--link">International Mobile Top Up</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <h2 class="island--title">Mobile App Features</h2>
 
-    <section class="mediablock mediablock-default mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-free-app.png") %>" alt="Free App">
+<div class="container">
+    <article class="island">
+        <div class="mediablock mediablock-equalized mediablock-2-to-1 mediablock-sm-vertical">
+            <div class="mediablock--primary">
+                <a href="#"><img class="img-fullwidth" src="<%= @getUrl(@document.basename+"/app-videa-preview.jpg") %>" alt="watch a video"></a>
+            </div>
+            <div class="mediablock--secondary wrapper-default">
+                <h2>Discover All the Great Features of our Calling App</h2>
+                <p>Affordable and high quality international calling is even easier with our FREE international calling app.</p>
+                <ul class="nav">
+                    <li class="nav--item"><a href="" class="nav--link">Same Low International Rrates</a></li>
+                    <li class="nav--item"><a href="" class="nav--link">One Tap Dialing</a></li>
+                    <li class="nav--item"><a href="" class="nav--link">Great Call Quality</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="mediablock--secondary">
-            <h3>Free App</h3>
-            <p>As always with Boss Revolution, there are no hidden fees, and you can use our app knowing that you’re saving with great international calling rates.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <style scoped>
-                .custom-app-dialing  {
-                    margin-top: -50%;
-                }
-                @media (max-width: 992px) {
+    </article>
+    
+    <article class="island">
+    
+        <h2 class="island--title">Mobile App Features</h2>
+    
+        <section class="mediablock mediablock-default mediablock-hasarrow" id="free-app">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-free-app.png") %>" alt="Free App">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>Free App</h3>
+                <p>As always with Boss Revolution, there are no hidden fees, and you can use our app knowing that you’re saving with great international calling rates.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow" id="one-tap-dialing">
+            <div class="mediablock--primary text-center">
+                <style scoped>
                     .custom-app-dialing  {
-                        margin-top: 0;
+                        margin-top: -50%;
                     }
-                }
-            </style>
-            <img class="custom-app-dialing" src="<%= @getUrl(@document.basename+"/app-dialing.png") %>" alt="One-Tap Dialing" style="margin-right:-30%;">
-        </div>
-        <div class="mediablock--secondary">
-            <h3>One-Tap Dialing</h3>
-            <p>Set up a Favorites list in the app with your most frequently dialed international numbers. When you want to talk to your Favorite, simply tap on your Favorite number and talk away.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-default mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-easy-to-fund.png") %>" alt="Easy to Fund">
-        </div>
-        <div class="mediablock--secondary">
-            <h3>Easy to Fund</h3>
-            <p>You can add funds to your account balance in the Android app with a credit card, debit card, or Boss Revolution Recharge card, or by using cash at the thousands of participating Boss Revolution retailers nationwide.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-bilingual.png") %>" alt="Bilingual">
-        </div>
-        <div class="mediablock--secondary">
-            <h3>Bilingual</h3>
-            <p>App is available in English and Spanish for your convenience.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-default mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-quality.png") %>" alt="High Quality Connections">
-        </div>
-        <div class="mediablock--secondary">
-            <h3>High Quality Connections</h3>
-            <p>You can choose to use your mobile minutes, Wi-Fi or your data plan to connect your superior quality international calls. Wi-Fi is a great alternative when you are traveling and want to talk but don’t want to be charged roaming fees by your mobile carrier.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-international.png") %>" alt="International Mobile Top Up">
-        </div>
-        <div class="mediablock--secondary">
-            <h3>International Mobile Top Up</h3>
-            <p>Easily add airtime to loved ones’ mobile phones around the world right from the app.</p>
-        </div>
-    </section>
-
-    <section class="mediablock mediablock-tight mediablock-2-to-1">
-        <div class="mediablock--primary text-center">
-            <img src="<%= @getUrl(@document.basename+"/app-screens.png") %>" alt="BossRevolution Free App screenshots">
-        </div>
-        <div class="mediablock--secondary">
-            <p>
-                <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" class="btn btn-appstore">AppStore</a>
-                <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" class="btn btn-gplay">Google Play</a>
-            </p>
-        </div>
-    </section>
-
-</article>
+                    @media (max-width: 992px) {
+                        .custom-app-dialing  {
+                            margin-top: 0;
+                        }
+                    }
+                </style>
+                <img class="custom-app-dialing" src="<%= @getUrl(@document.basename+"/app-dialing.png") %>" alt="One-Tap Dialing" style="margin-right:-30%;">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>One-Tap Dialing</h3>
+                <p>Set up a Favorites list in the app with your most frequently dialed international numbers. When you want to talk to your Favorite, simply tap on your Favorite number and talk away.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-default mediablock-hasarrow" id="easy-to-fund">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-easy-to-fund.png") %>" alt="Easy to Fund">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>Easy to Fund</h3>
+                <p>You can add funds to your account balance in the Android app with a credit card, debit card, or Boss Revolution Recharge card, or by using cash at the thousands of participating Boss Revolution retailers nationwide.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow" id="bilingual">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-bilingual.png") %>" alt="Bilingual">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>Bilingual</h3>
+                <p>App is available in English and Spanish for your convenience.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-default mediablock-hasarrow" id="high-quality-connections">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-quality.png") %>" alt="High Quality Connections">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>High Quality Connections</h3>
+                <p>You can choose to use your mobile minutes, Wi-Fi or your data plan to connect your superior quality international calls. Wi-Fi is a great alternative when you are traveling and want to talk but don’t want to be charged roaming fees by your mobile carrier.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-default mediablock-alt mediablock-rtl mediablock-hasarrow" id="international-mobile-top-up">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-international.png") %>" alt="International Mobile Top Up">
+            </div>
+            <div class="mediablock--secondary">
+                <h3>International Mobile Top Up</h3>
+                <p>Easily add airtime to loved ones’ mobile phones around the world right from the app.</p>
+            </div>
+        </section>
+    
+        <section class="mediablock mediablock-tight mediablock-2-to-1">
+            <div class="mediablock--primary text-center">
+                <img src="<%= @getUrl(@document.basename+"/app-screens.png") %>" alt="BossRevolution Free App screenshots">
+            </div>
+            <div class="mediablock--secondary">
+                <p>
+                    <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" class="btn btn-appstore">AppStore</a>
+                    <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" class="btn btn-gplay">Google Play</a>
+                </p>
+            </div>
+        </section>
+    
+    </article>
+</div>
