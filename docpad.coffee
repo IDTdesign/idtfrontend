@@ -9,7 +9,7 @@ docpadConfig = {
 			title: "idtfrontend"
 
 			# The production url of our website.
-			url: "http://localhost:7777"
+			url: ""
 
 			# The website description (for SEO).
 			description: """

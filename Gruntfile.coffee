@@ -205,7 +205,7 @@ module.exports = (grunt) ->
 			server:
 				options:
 					port: 7777
-					hostname: 'localhost'
+					hostname: '*'
 					base: '<%= docpad.out %>'
 					livereload: true
 					# open: true
