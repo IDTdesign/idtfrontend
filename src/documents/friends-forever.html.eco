@@ -35,7 +35,7 @@ title: "Friends Forever"
     <h1>Friends Forever</h1>
     <h4>Calling From Home For Free Forever</h4>
     <p>Invite your friends to <strong>Boss Revolution</strong> and earn <strong>FREE</strong> minutes. <strong>FOREVER.</strong></p>
-    <p><a href="" class="btn btn-default">Share The Love</a></p>
+    <p><a href="" class="btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" class="i i-friends-forever"><use xlink:href="#i-friends-forever"></use></svg> Share The Love</a></p>
 </section>
 
 
@@ -88,6 +88,6 @@ title: "Friends Forever"
 
     <p class="lead">Invite your friends to <strong class="brand-color">Boss&nbsp;Revolution</strong> and earn <strong class="brand-color">FREE</strong> minutes. <strong class="brand-color">FOREVER.</strong></p>
     
-    <p><a href="" class="btn btn-default">Share The Love</a></p>
+    <p><a href="" class="btn btn-default"> <svg xmlns="http://www.w3.org/2000/svg" class="i i-friends-forever"><use xlink:href="#i-friends-forever"></use></svg> Share The Love</a></p>
 
 </article>

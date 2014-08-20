@@ -2,12 +2,20 @@
 
 
 /* for inline-svg icons by default use the color of the text */
-.icon {
+.i {
 	display: inline-block;
+    vertical-align: middle;
 	fill: currentColor; /* 1 */
 }
 
 /* remove background-image from svg tags when supporting inline-svg */
-.svg svg.icon {
+.svg svg.i {
 	background-image: none;
+}
+
+.btn .i {
+    fill: #FFF;
+}
+.color-1 {
+    fill: #F00;
 }
