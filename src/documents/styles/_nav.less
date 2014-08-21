@@ -81,6 +81,11 @@
             }
         }
     }
+
+    .i-menu {
+        vertical-align: text-top;
+    }
+
 }
 
 @media (min-width: @screen-sm-min) {
@@ -252,6 +257,7 @@
             font-weight: bold;
             text-align: left;
             text-transform: uppercase;
+            white-space: nowrap;
 
             &:link,
             &:visited {
@@ -298,13 +304,15 @@
     }
     .dropdown-menu .navbar--submenu .navbar--submenulink {
         padding-left: 35px;
+        color: #eea5a5;
         text-transform: none;
         font-weight: normal;
     }
 
 }
 
-@media (max-width: @screen-sm-max) {
+/* uncomment if main menu doesn't fit one line on small screens */
+/*@media (max-width: @screen-sm-max) {
 
     .navbar-bossmain {
 
@@ -320,7 +328,7 @@
 
     }
 
-}
+}*/
 
 /* navbar-bossmain end */
 
@@ -435,3 +443,155 @@
     }
 }
 /* local navigation end */
+
+/* offscreen menu */
+
+.navmenu-accordeon {
+    border-color: #eee;
+    
+    .navmenu--item {
+        border-bottom: 2px solid #f3f3f3;
+    }
+
+    .navmenu--link {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: @brand-primary-bright;
+        }
+    }
+
+    .open .navmenu--link,
+    .open .navmenu--link:hover,
+    .open .navmenu--link:focus {
+        background-color: transparent;
+    }
+    
+    .open > .navmenu--submenu {
+        background-color: #f8f8f8;
+        box-shadow: inset 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .pullin-space {
+        padding-right: 56px;
+        z-index: 0;
+    }
+
+    .navmenu--submenu {
+        padding: 0;
+    }
+
+    .navmenu--submenuitem {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .navmenu--submenuitem:last-child {
+        border-bottom: none;
+    }
+
+    .divider {
+        margin: -1px 0 0;
+        background-color: #ccc;
+    }
+
+    .navmenu--submenulink {
+        display: block;
+        padding: 10px 25px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        &:hover,
+        &:focus {
+            background-image: none;
+            background-color: rgba(0,0,0,0.05);
+            color: @brand-primary-bright;
+        }
+
+    }
+
+    .navmenu--submenu > .navmenu--submenuitem:first-child .navmenu--submenulink {
+        padding-top: 25px;
+    }
+
+    .navmenu--submenu > .navmenu--submenuitem:last-child .navmenu--submenulink {
+        padding-bottom: 25px;
+    }
+
+    .navmenu--third-level {
+        padding: 0;
+        
+        .navmenu--submenuitem {
+            border: none;
+        }
+        
+        .navmenu--submenulink {
+            padding: 5px 25px 5px 35px;
+            text-transform: none;
+            font-weight: normal;
+            color: #696969;
+        }
+
+    }
+
+
+    /* Firefox has a bug when .btn-toggler is not clickable when .pullin-object has width:0 and height:0 */
+    .pullin-object {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        right: 10px;
+        top: 9px;
+
+        .btn-toggler {
+            right: 0;
+            bottom: 0;
+        }
+
+    }
+
+}
+
+.btn-toggler {
+    display: inline-block;
+    border-width: 0;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background-color: @brand-primary-bright;
+    color: #FFF;
+
+    &:hover,
+    &:focus {
+        background-color: @brand-primary-dark;
+    }
+
+    .i {
+        width: 16px;
+        height: 16px;
+        vertical-align: top;
+        display: block;
+        pointer-events: none;
+    }
+}
+
+.btn-toggler .btn-toggler--when-opened {
+    display: none;
+}
+
+/* when dropdown open */
+.open .btn-toggler--when-closed {
+    display: none;
+}
+.open .btn-toggler--when-opened {
+    display: block;
+}
+/* offscreen menu end */
