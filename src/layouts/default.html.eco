@@ -80,9 +80,8 @@
 
                 <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
                     <ul class="nav nav-pills navbar--list">
-                        <li class="navbar--item"><a href="#" class="navbar--link">About</a></li>
                         <li class="navbar--item dropdown">
-                            <a href="#" class="navbar--link pullin-space">Services</a><!--
+                            <a href="services.html" class="navbar--link pullin-space">Services</a><!--
                             --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
                                 <span class="btn btn-dropdown btn-xs">
                                     <span class="caret"></span>
@@ -90,18 +89,65 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">International Calling</a></li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">International Cellphone Recharges</a></li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Domestic Cellphone Recharges</a></li>
+                                <li class="navbar--submenuitem"><a href="services/international-calling.html" class="navbar--submenulink">International Calling</a></li>
+                                <li class="navbar--submenuitem"><a href="services/call-me.html" class="navbar--submenulink">Call Me</a></li>
+                                <li class="navbar--submenuitem"><a href="services/international-mobile-top-up.html" class="navbar--submenulink">International Mobile Top Up</a></li>
                                 <li class="navbar--submenuitem dropdown-header">Additional Services</li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Money Transfer</a></li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Pre Paid Visa Card</a></li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Domestic Bill Payments</a></li>
+                                <li class="navbar--submenuitem"><a href="services/domestic-mobile-top-up.html" class="navbar--submenulink">Domestic Mobile Top Up</a></li>
+                                <li class="navbar--submenuitem"><a href="services/money-transfer.html" class="navbar--submenulink">Money Transfer</a></li>
+                                <li class="navbar--submenuitem"><a href="services/bill-pay.html" class="navbar--submenulink">Bill Pay</a></li>
                             </ul>
                         </li>
-                        <li class="navbar--item"><a href="#" class="navbar--link">Rates</a></li>
-                        <li class="navbar--item"><a href="#" class="navbar--link">Support</a></li>
-                        <li class="navbar--item"><a href="#" class="navbar--link">My Account</a></li>
+                        <li class="navbar--item"><a href="rates.html" class="navbar--link">Rates</a></li>
+                        <li class="navbar--item"><a href="support.html" class="navbar--link">Support</a></li>
+                        <li class="navbar--item dropdown"><a href="add-funds.html" class="navbar--link pullin-space">Add Funds</a><!--
+                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownFunds" data-toggle="dropdown">
+                                <span class="btn btn-dropdown btn-xs">
+                                    <span class="caret"></span>
+                                </span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownFunds">
+                                <li class="navbar--submenuitem"><a href="add-funds/imtu-hard-card.html" class="navbar--submenulink">IMTU Hard Card</a></li>
+                                <li class="navbar--submenuitem"><a href="add-funds/calling-hard-card.html" class="navbar--submenulink">Calling Hard Card</a></li>
+                                <li class="navbar--submenuitem"><a href="add-funds/credit-debit.html" class="navbar--submenulink">Credit&thinsp;/&thinsp;Debit</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar--item dropdown"><a href="my-account.html" class="navbar--link pullin-space">My Account</a><!--
+                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
+                                <span class="btn btn-dropdown btn-xs">
+                                    <span class="caret"></span>
+                                </span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
+                                <li class="navbar--submenuitem"><a href="my-account/personal-profile.html" class="navbar--submenulink">Personal Profile</a></li>
+                                <li class="navbar--submenuitem"><a href="my-account/payment-option.html" class="navbar--submenulink">Payment Options</a></li>
+                                <li class="navbar--submeitem divider"></li>
+                                <li class="navbar--submenuitem"><a href="my-account/international-calling.html" class="navbar--submenulink">International Calling</a>
+                                    <ul class="navbar--submenu">
+                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/add-funds.html" class="navbar--submenulink">Add Funds</a></li>
+                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
+                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/call-history.html" class="navbar--submenulink">Call History</a></li>
+                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/unlimited-plans.html" class="navbar--submenulink">Unlimited Plans</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar--submenuitem"><a href="my-account/call-me.html" class="navbar--submenulink">Call Me</a></li>
+                                <li class="navbar--submenuitem"><a href="my-account/international-mobile-top-up.html" class="navbar--submenulink">International Mobile Top Up</a>
+                                    <ul class="navbar--submenu">
+                                        <li class="navbar--submenuitem"><a href="my-account/international-mobile-top-up/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar--submenuitem"><a href="my-account/domestic-mobile-top-up.html" class="navbar--submenulink">Domestic Mobile Top Up</a>
+                                    <ul class="navbar--submenu">
+                                        <li class="navbar--submenuitem"><a href="my-account/domestic-mobile-top-up/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar--submenuitem"><a href="my-account/friends-forever.html" class="navbar--submenulink">Friends Forever</a></li>
+                                <li class="navbar--submeitem divider"></li>
+                                <li class="navbar--submenuitem"><a href="my-account/logout.html" class="navbar--submenulink">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
