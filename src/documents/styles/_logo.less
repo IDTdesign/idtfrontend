@@ -2,7 +2,9 @@
 @logowidth: 100px;
 @logoheight: 140px;
 @logo-xs-width: 85px;
+@logo-xxs-width: 60px;
 @logo-xs-height: @header-xs-height;
+@logo-xxs-height: 95px;
 @logo-hover-shift: 10px;
 
 .logo {
@@ -33,6 +35,16 @@
         margin-top: -25px;
         width: @logo-xs-width;
         height: (@logo-xs-height + @logo-hover-shift);
+    }
+
+}
+
+@media (max-width: @screen-xxs) {
+
+    .logo {
+        margin-top: -15px;
+        width: @logo-xxs-width;
+        height: @logo-xxs-height;
     }
 
 }
