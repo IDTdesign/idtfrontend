@@ -86,6 +86,10 @@
         vertical-align: text-top;
     }
 
+    .flag {
+        margin-right: 5px;
+    }
+
 }
 
 @media (min-width: @screen-sm-min) {
@@ -176,10 +180,16 @@
                     border-radius: @mainmenu-radius 0 0 @mainmenu-radius;
                 }
             }
-
+            
+            &:hover .navbar--link,
+            &.open:first-child .navbar--link {
+                border-bottom-left-radius: 0;
+            }
+            
+            /* 1 - commented, because menu is not justified */
             &:last-child {
                 .navbar--link {
-                    border-radius: 0 @mainmenu-radius @mainmenu-radius 0;
+                    /* border-radius: 0 @mainmenu-radius @mainmenu-radius 0; */ /* 1 */
                 }
             }
 
