@@ -101,7 +101,7 @@
 
     .navbar-topline {
         .navbar--list {
-            margin: 12.5px -15px;
+            margin: 12.5px 0;
 
             .navbar--item {
                 float: left;
@@ -125,12 +125,14 @@
         }
 
         .navbar-toggle {
-            margin: 0 15px 0;
+            margin: 0 5px 0;
             padding: 10px;
             font-size: 12px;
+            line-height: 16px;
             font-weight: bold;
             text-transform: uppercase;
             background-color: #c00;
+            color: #FFF;
             border-radius: 3px;
             transition: all 0.5s ease-in-out;
 
@@ -138,6 +140,12 @@
             &:focus {
                 background-color: #e10000;
                 transition: all 0;
+            }
+            
+            /* 1 - SVG icon sometimes don't receive clicks */
+            .i {
+                pointer-events:none; /* 1 */
+                vertical-align: text-top;
             }
         }
     }
@@ -451,7 +459,13 @@
     
     .navmenu--item {
         border-bottom: 2px solid #f3f3f3;
+
+        &.open {
+            border-bottom: none;
+        }
+
     }
+
 
     .navmenu--link {
         display: inline-block;
@@ -461,11 +475,13 @@
         font-weight: bold;
         text-transform: uppercase;
         color: #000;
+        transition: color 0.2s;
 
         &:hover,
         &:focus {
             background-color: transparent;
             color: @brand-primary-bright;
+            transition-duration: 0;
         }
     }
 
@@ -560,6 +576,34 @@
 
 }
 
+.navbar-close {
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding: 10px 25px;
+    border: none;
+    border-bottom: 2px solid #f3f3f3;
+    color: @brand-primary-bright;
+    background: transparent;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    
+    &:hover,
+    &:focus {
+        color: @brand-primary-dark;
+        transition-duration: 0;
+    }
+
+    .i {
+        width: 10px;
+        height: 10px;
+        vertical-align: baseline;
+    }
+}
+
 .btn-toggler {
     display: inline-block;
     border-width: 0;
@@ -568,10 +612,12 @@
     padding: 10px;
     background-color: @brand-primary-bright;
     color: #FFF;
+    transition: background-color 0.2s;
 
     &:hover,
     &:focus {
         background-color: @brand-primary-dark;
+        transition-duration: 0;
     }
 
     .i {

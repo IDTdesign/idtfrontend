@@ -27,7 +27,10 @@
     <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
 
     <nav class="offcanvas-menu navmenu navmenu-accordeon navmenu-fixed-right" role="navigation">
-
+        <button type="button" class="navbar-close" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i-close"><use xlink:href="#i-close"></use></svg>
+            Close
+        </button>
         <ul class="nav navmenu-nav">
             <li class="navmenu--item dropdown"><a href="my-account.html" class="navmenu--link pullin-space">My Account</a><!--
                 --><button type="button" class="pullin-object dropdown-toggle" id="mobileAccount" data-toggle="dropdown">
@@ -86,6 +89,9 @@
             <li class="navmenu--item"><a href="rates.html" class="navmenu--link">Rates</a></li>
             <li class="navmenu--item"><a href="support.html" class="navmenu--link">Support</a></li>
         </ul>
+        <div class="offscreen-promo">
+            <a href="#" class="offscreen-promo--link"><img class="offscreen-promo--link-icon" src="<%= @getUrl('images/1S-free-for-calling-100x100.png') %>" alt="$1 Free Trial"><strong>$1 Free Trial</strong> for New International Calling Customers</a>
+        </div>
     </nav>
 
     <div class="allpage page-canvas">
@@ -123,6 +129,11 @@
                         <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Sign In</a></li>
                         <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
                         <li class="navbar--item visible-xs">
+                            <a class="navbar-toggle" href="login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i-key"><use xlink:href="#i-key"></use></svg>
+                                <span class="sr-only">Sign In or Register</span>
+                            </a>
+                        </li>                        <li class="navbar--item visible-xs">
                         	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
                             	<svg xmlns="http://www.w3.org/2000/svg" class="i i-menu"><use xlink:href="#i-menu"></use></svg>
                                 Menu
