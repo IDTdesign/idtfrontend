@@ -33,7 +33,7 @@
         </button>
         <%- @partial('site/offscreenmenu') %>
         <div class="offscreen-promo">
-            <a href="#" class="offscreen-promo--link"><img class="offscreen-promo--link-icon" src="<%= @getUrl('images/1S-free-for-calling-100x100.png') %>" alt="$1 Free Trial"><strong>$1 Free Trial</strong> for New International Calling Customers</a>
+            <a href="#" class="offscreen-promo--link"><img class="offscreen-promo--link-icon" src="<%= @getUrl('img/1S-free-for-calling-100x100.png') %>" alt="$1 Free Trial"><strong>$1 Free Trial</strong> for New International Calling Customers</a>
         </div>
     </nav>
 
@@ -42,7 +42,7 @@
             <div class="allpage--headerbg"></div>
             <div class="container">
                 <div class="logo">
-                    <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/images/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
+                    <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
                 </div>
 
                 <nav class="navbar navbar-topline">
