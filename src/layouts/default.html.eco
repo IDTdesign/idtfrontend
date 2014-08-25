@@ -31,64 +31,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="i i-close"><use xlink:href="#i-close"></use></svg>
             Close
         </button>
-        <ul class="nav navmenu-nav">
-            <li class="navmenu--item dropdown"><a href="my-account.html" class="navmenu--link pullin-space">My Account</a><!--
-                --><button type="button" class="pullin-object dropdown-toggle" id="mobileAccount" data-toggle="dropdown">
-                    <span class="btn btn-toggler">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i-plus"><use xlink:href="#i-plus"></use></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i-minus"><use xlink:href="#i-minus"></use></svg>
-                    </span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="navmenu--submenu dropdown-menu navmenu-nav" role="menu" aria-labelledby="mobileAccount" role="menu">
-                    <li class="navmenu--submenuitem"><a href="my-account/personal-profile.html" class="navmenu--submenulink">Personal Profile</a></li>
-                    <li class="navmenu--submenuitem"><a href="my-account/payment-option.html" class="navmenu--submenulink">Payment Options</a></li>
-                    <li class="navmenu--submeitem divider"></li>
-                    <li class="navmenu--submenuitem"><a href="my-account/international-calling.html" class="navmenu--submenulink">International Calling</a>
-                        <ul class="navmenu--third-level navmenu-nav">
-                            <li class="navmenu--submenuitem"><a href="my-account/international-calling/add-funds.html" class="navmenu--submenulink">Add Funds</a></li>
-                            <li class="navmenu--submenuitem"><a href="my-account/international-calling/redeem-card.html" class="navmenu--submenulink">Redeem Card</a></li>
-                            <li class="navmenu--submenuitem"><a href="my-account/international-calling/call-history.html" class="navmenu--submenulink">Call History</a></li>
-                            <li class="navmenu--submenuitem"><a href="my-account/international-calling/unlimited-plans.html" class="navmenu--submenulink">Unlimited Plans</a></li>
-                        </ul>
-                    </li>
-                    <li class="navmenu--submenuitem"><a href="my-account/call-me.html" class="navmenu--submenulink">Call Me</a></li>
-                    <li class="navmenu--submenuitem"><a href="my-account/international-mobile-top-up.html" class="navmenu--submenulink">International Mobile Top Up</a>
-                        <ul class="navmenu--third-level navmenu-nav">
-                            <li class="navmenu--submenuitem"><a href="my-account/international-mobile-top-up/redeem-card.html" class="navmenu--submenulink">Redeem Card</a></li>
-                        </ul>
-                    </li>
-                    <li class="navmenu--submenuitem"><a href="my-account/domestic-mobile-top-up.html" class="navmenu--submenulink">Domestic Mobile Top Up</a>
-                        <ul class="navmenu--third-level navmenu-nav">
-                            <li class="navmenu--submenuitem"><a href="my-account/domestic-mobile-top-up/redeem-card.html" class="navmenu--submenulink">Redeem Card</a></li>
-                        </ul>
-                    </li>
-                    <li class="navmenu--submenuitem"><a href="my-account/friends-forever.html" class="navmenu--submenulink">Friends Forever</a></li>
-                    <li class="navmenu--submeitem divider"></li>
-                    <li class="navmenu--submenuitem"><a href="my-account/logout.html" class="navmenu--submenulink">Logout</a></li>
-                </ul>
-            </li>
-            <li class="navmenu--item dropdown">
-                <a href="services.html" class="navmenu--link pullin-space">Services</a><!--
-                --><button type="button" class="pullin-object dropdown-toggle" id="mobileServices" data-toggle="dropdown">
-                    <span class="btn btn-toggler">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i-plus"><use xlink:href="#i-plus"></use></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i-minus"><use xlink:href="#i-minus"></use></svg>
-                    </span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="navmenu--submenu dropdown-menu navmenu-nav" role="menu" aria-labelledby="mobileServices" role="menu">
-                    <li class="navmenu--submenuitem"><a href="services/international-calling.html" class="navmenu--submenulink">International Calling</a></li>
-                    <li class="navmenu--submenuitem"><a href="services/call-me.html" class="navmenu--submenulink">Call Me</a></li>
-                    <li class="navmenu--submenuitem"><a href="services/international-mobile-top-up.html" class="navmenu--submenulink">International Mobile Top Up</a></li>
-                    <li class="navmenu--submenuitem"><a href="services/domestic-mobile-top-up.html" class="navmenu--submenulink">Domestic Mobile Top Up</a></li>
-                    <li class="navmenu--submenuitem"><a href="services/money-transfer.html" class="navmenu--submenulink">Money Transfer</a></li>
-                    <li class="navmenu--submenuitem"><a href="services/bill-pay.html" class="navmenu--submenulink">Bill Pay</a></li>
-                </ul>
-            </li>
-            <li class="navmenu--item"><a href="rates.html" class="navmenu--link">Rates</a></li>
-            <li class="navmenu--item"><a href="support.html" class="navmenu--link">Support</a></li>
-        </ul>
+        <%- @partial('site/offscreenmenu') %>
         <div class="offscreen-promo">
             <a href="#" class="offscreen-promo--link"><img class="offscreen-promo--link-icon" src="<%= @getUrl('images/1S-free-for-calling-100x100.png') %>" alt="$1 Free Trial"><strong>$1 Free Trial</strong> for New International Calling Customers</a>
         </div>
@@ -118,7 +61,7 @@
                             <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown"><span class="flag flag-us"></span> US <span class="caret"></span></a>
                             <ul class="navbar--submenu dropdown-menu" role="menu">
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-uk"></span> UK</a></li>
+                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-gb"></span> UK</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-es"></span> ES</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-de"></span> DE</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-hk"></span> HK</a></li>
@@ -133,7 +76,8 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="i i-key"><use xlink:href="#i-key"></use></svg>
                                 <span class="sr-only">Sign In or Register</span>
                             </a>
-                        </li>                        <li class="navbar--item visible-xs">
+                        </li>
+                        <li class="navbar--item visible-xs">
                         	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
                             	<svg xmlns="http://www.w3.org/2000/svg" class="i i-menu"><use xlink:href="#i-menu"></use></svg>
                                 Menu
@@ -143,62 +87,7 @@
                 </nav>
 
                 <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
-                    <ul class="nav nav-pills navbar--list">
-                        <li class="navbar--item dropdown">
-                            <a href="services.html" class="navbar--link pullin-space">Services</a><!--
-                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
-                                <span class="btn btn-dropdown btn-xs">
-                                    <span class="caret"></span>
-                                </span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
-                                <li class="navbar--submenuitem"><a href="services/international-calling.html" class="navbar--submenulink">International Calling</a></li>
-                                <li class="navbar--submenuitem"><a href="services/call-me.html" class="navbar--submenulink">Call Me</a></li>
-                                <li class="navbar--submenuitem"><a href="services/international-mobile-top-up.html" class="navbar--submenulink">International Mobile Top Up</a></li>
-                                <li class="navbar--submenuitem"><a href="services/domestic-mobile-top-up.html" class="navbar--submenulink">Domestic Mobile Top Up</a></li>
-                                <li class="navbar--submenuitem"><a href="services/money-transfer.html" class="navbar--submenulink">Money Transfer</a></li>
-                                <li class="navbar--submenuitem"><a href="services/bill-pay.html" class="navbar--submenulink">Bill Pay</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar--item"><a href="rates.html" class="navbar--link">Rates</a></li>
-                        <li class="navbar--item"><a href="support.html" class="navbar--link">Support</a></li>
-                        <li class="navbar--item dropdown"><a href="my-account.html" class="navbar--link pullin-space">My Account</a><!--
-                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
-                                <span class="btn btn-dropdown btn-xs">
-                                    <span class="caret"></span>
-                                </span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
-                                <li class="navbar--submenuitem"><a href="my-account/personal-profile.html" class="navbar--submenulink">Personal Profile</a></li>
-                                <li class="navbar--submenuitem"><a href="my-account/payment-option.html" class="navbar--submenulink">Payment Options</a></li>
-                                <li class="navbar--submeitem divider"></li>
-                                <li class="navbar--submenuitem"><a href="my-account/international-calling.html" class="navbar--submenulink">International Calling</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/add-funds.html" class="navbar--submenulink">Add Funds</a></li>
-                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
-                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/call-history.html" class="navbar--submenulink">Call History</a></li>
-                                        <li class="navbar--submenuitem"><a href="my-account/international-calling/unlimited-plans.html" class="navbar--submenulink">Unlimited Plans</a></li>
-                                    </ul>
-                                </li>
-                                <li class="navbar--submenuitem"><a href="my-account/call-me.html" class="navbar--submenulink">Call Me</a></li>
-                                <li class="navbar--submenuitem"><a href="my-account/international-mobile-top-up.html" class="navbar--submenulink">International Mobile Top Up</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem"><a href="my-account/international-mobile-top-up/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
-                                    </ul>
-                                </li>
-                                <li class="navbar--submenuitem"><a href="my-account/domestic-mobile-top-up.html" class="navbar--submenulink">Domestic Mobile Top Up</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem"><a href="my-account/domestic-mobile-top-up/redeem-card.html" class="navbar--submenulink">Redeem Card</a></li>
-                                    </ul>
-                                </li>
-                                <li class="navbar--submenuitem"><a href="my-account/friends-forever.html" class="navbar--submenulink">Friends Forever</a></li>
-                                <li class="navbar--submeitem divider"></li>
-                                <li class="navbar--submenuitem"><a href="my-account/logout.html" class="navbar--submenulink">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <%- @partial('site/mainmenu') %>
                 </nav>
             </div>
         </header>

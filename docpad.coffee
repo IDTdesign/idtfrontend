@@ -34,9 +34,9 @@ docpadConfig = {
 			# The JavaScript files for the site.
 			scripts: [
 				'/vendor/bootstrap/js/bootstrap.min.js'
-                '/vendor/sticky/jquery.sticky.min.js'
+				'/vendor/sticky/jquery.sticky.min.js'
 				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
-                '/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
+				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
 				'/scripts/script.js'
 			]
 
@@ -63,6 +63,11 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+			
+		isActive: (s) ->
+			# current links in navigation
+			if s == @document.url
+				"active"
 
 	plugins:
 		ghpages:
