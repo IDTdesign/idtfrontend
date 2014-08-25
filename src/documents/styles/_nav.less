@@ -104,6 +104,8 @@
 @media (max-width: @screen-xs-max) {
 
     .navbar-topline {
+        padding-left: 100px;
+
         .navbar--list {
             margin: 12.5px 0;
 
@@ -154,6 +156,15 @@
         }
     }
 }
+
+@media (max-width: @screen-xxs) {
+
+    .navbar-topline {
+        padding-left: 75px;
+    }
+
+}
+
 /* navbar-topline end */
 
 /* navbar modification: navbar-bossmain */
@@ -356,6 +367,17 @@
 .local-nav {
     background: #FFF;
 
+    .nav-justified {
+        display: table;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+
+    }
+
+
     .nav--item {
         border-bottom: solid 8px transparent;
         vertical-align: middle;
@@ -443,7 +465,8 @@
 @media (max-width: @screen-xs-max) {
 
     /* 1 - to override inline style added by script */
-    .fixed-local-nav {
+    .fixed-local-nav,
+    .hold {
         height: auto !important; /* 1 */
     }
     
@@ -453,7 +476,11 @@
 
     .local-nav {
         text-align: center;
-        
+
+        .nav-justified {
+            display: block;
+        }
+
         .nav--item {
             display: inline-block;
         }

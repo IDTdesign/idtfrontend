@@ -69,7 +69,7 @@
         className:"fixed-local-nav"
     })
     .localScroll({
-        offset:-80,
+        offset:-70,
         duration:500
     });
 

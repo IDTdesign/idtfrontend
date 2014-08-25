@@ -31,6 +31,16 @@ body {
 	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.allpage--body > .container:first-child {
+    padding-top: 160px;
+}
+
+@media (max-width: @screen-xs-max) {
+    .allpage--body > .container:first-child {
+        padding-top: 65px;
+    }
+}
+
 .offcanvas-menu {
 	z-index: 1;
 }
