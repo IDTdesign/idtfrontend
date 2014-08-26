@@ -22,7 +22,11 @@ Open http://localhost:7777/docs/
 
 ## Development
 
+``` bash
+grunt makesprites
 
+```
+ to create sprite for icons
 
 ## License
 
