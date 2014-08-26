@@ -50,17 +50,19 @@
                         <a href="#">$1 FREE TRIAL <span class="hidden-sm">FOR NEW INTERNATIONAL CALLING CUSTOMERS</span></a>
                     </p>
                     <ul class="nav navbar-nav navbar--list navbar--list-position-right">
-                        <li class="navbar--item dropdown hidden-xxs">
-                            <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></a>
+                        <li class="navbar--item">
+                            <a class="navbar--link dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span> US</span>
+                                <span class="visible-xxs">ENG</span>
+                                <span class="caret"></span>
+                            </a>
                             <ul class="navbar--submenu dropdown-menu" role="menu">
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">English</a></li>
+                                <li class="dropdown-header">Language:</li>
+                                <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink">English</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar--item dropdown hidden-xxs">
-                            <a href="#" class="navbar--link dropdown-toggle" data-toggle="dropdown"><span class="flag flag-us"></span> US <span class="caret"></span></a>
-                            <ul class="navbar--submenu dropdown-menu" role="menu">
-                                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Region:</li>
+                                <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-gb"></span> UK</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-es"></span> ES</a></li>
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-de"></span> DE</a></li>

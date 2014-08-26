@@ -68,9 +68,13 @@
         color: @topline-textcolor;
         background-color: @navbar-bg-dark;
         font-size: @topline-textsize;
+        
+        .navbar--submenulink,
+        .dropdown-header {
+            padding: 5px 15px;
+        }
 
         .navbar--submenulink {
-            padding: 5px 15px;
             font-weight: bold;
             color: inherit;
 
@@ -80,6 +84,15 @@
                 color: inherit;
             }
         }
+    }
+
+    .navbar--submenu > .active > .navbar--submenulink,
+    .navbar--submenu > .active > .navbar--submenulink:hover,
+    .navbar--submenu > .active > .navbar--submenulink:focus {
+        background-image: url(../icons/svg/checkmark.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        pointer-events: none;
     }
 
     .i-menu {
@@ -118,16 +131,16 @@
             }
         }
 
-        .navbar--submenu {
-            left: auto;
-            right: 0;
-        }
-
         .open .navbar--submenu {
             position: absolute;
             float: left;
             width: auto;
             background-color: @navbar-bg-dark;
+        }
+
+        .navbar-nav .open .dropdown-menu .navbar--submenulink,
+        .navbar-nav .open .dropdown-menu .dropdown-header {
+            padding-left: 15px;
         }
 
         .navbar-toggle {
