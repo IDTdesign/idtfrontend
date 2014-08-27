@@ -62,6 +62,7 @@
     /* dropdown menu and items */
     .navbar--submenu {
         margin: 0;
+        width: 100%;
         padding: 10px 0;
         border-width: 0;
         border-radius: 0 0 2px 2px;
@@ -110,6 +111,7 @@
     .navbar-topline .navbar--list-position-right .navbar--submenu {
         left: 0;
         right: auto;
+        z-index: (@zindex-dropdown + 1);
     }
 
 }
@@ -134,7 +136,7 @@
         .open .navbar--submenu {
             position: absolute;
             float: left;
-            width: auto;
+            width: 100%;
             background-color: @navbar-bg-dark;
         }
 
@@ -568,6 +570,10 @@
         background-color: #ccc;
     }
 
+    .dropdown-header {
+        padding: 10px 25px;
+    }
+
     .navmenu--submenulink {
         display: block;
         padding: 10px 25px;
@@ -584,11 +590,12 @@
 
     }
 
-    .navmenu--submenu > .navmenu--submenuitem:first-child .navmenu--submenulink {
+    .navmenu--submenuitem.dropdown-header:first-child,
+    .navmenu--submenuitem:first-child > .navmenu--submenulink {
         padding-top: 25px;
     }
 
-    .navmenu--submenu > .navmenu--submenuitem:last-child .navmenu--submenulink {
+    .navmenu--submenuitem:last-child > .navmenu--submenulink {
         padding-bottom: 25px;
     }
 
@@ -599,7 +606,8 @@
             border: none;
         }
         
-        .navmenu--submenulink {
+        /* increased specifity. TODO: refactor this selectors */
+        .navmenu--submenulink.navmenu--submenulink {
             padding: 5px 25px 5px 35px;
             text-transform: none;
             font-weight: normal;
