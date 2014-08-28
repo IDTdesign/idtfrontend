@@ -3,8 +3,8 @@
                 <a href="<%= @getUrl('/my-account.html') %>" class="navmenu--link pullin-space">My Account</a><!--
                 --><button type="button" class="pullin-object dropdown-toggle" id="mobileAccount" data-toggle="dropdown">
                     <span class="btn btn-toggler">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i-plus"><use xlink:href="#i-plus"></use></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i-minus"><use xlink:href="#i-minus"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
                     </span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -29,8 +29,8 @@
                 <a href="<%= @getUrl('/services.html') %>" class="navmenu--link pullin-space">Services</a><!--
                 --><button type="button" class="pullin-object dropdown-toggle" id="mobileServices" data-toggle="dropdown">
                     <span class="btn btn-toggler">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i-plus"><use xlink:href="#i-plus"></use></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i-minus"><use xlink:href="#i-minus"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
                     </span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>

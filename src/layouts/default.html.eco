@@ -28,7 +28,7 @@
 
     <nav class="offcanvas-menu navmenu navmenu-accordeon navmenu-fixed-right" role="navigation">
         <button type="button" class="navbar-close" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i-close"><use xlink:href="#i-close"></use></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--close"><use xlink:href="#i--close"></use></svg>
             Close
         </button>
         <%- @partial('site/offscreenmenu') %>
