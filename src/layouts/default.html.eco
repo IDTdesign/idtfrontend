@@ -75,13 +75,13 @@
                         <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
                         <li class="navbar--item visible-xs">
                             <a class="navbar-toggle" href="login.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i-key"><use xlink:href="#i-key"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--key"><use xlink:href="#i--key"></use></svg>
                                 <span class="sr-only">Sign In or Register</span>
                             </a>
                         </li>
                         <li class="navbar--item visible-xs">
                         	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
-                            	<svg xmlns="http://www.w3.org/2000/svg" class="i i-menu"><use xlink:href="#i-menu"></use></svg>
+                            	<svg xmlns="http://www.w3.org/2000/svg" class="i i--menu"><use xlink:href="#i--menu"></use></svg>
                                 Menu
                             </button>
                         </li>

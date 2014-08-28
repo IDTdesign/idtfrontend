@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <%- @partial('docs/header') %>
+    <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
   </head>
   <body>
+    <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
     <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     <!-- Docs master nav -->
     <%- @partial('docs/nav/main') %>

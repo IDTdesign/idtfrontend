@@ -676,7 +676,7 @@ body {
 
 h1[id] {
   padding-top: 20px;
-  margin-top: 0;
+  /*margin-top: 0;*/
 }
 
 
@@ -1516,3 +1516,24 @@ h1[id] {
     display: block;
   }
 }
+
+
+/* preview */
+.demo-list {
+    width: 100%;
+}
+.demo-preview,
+.demo-name,
+.demo-var {
+    padding: 15px 25px;
+    border-bottom: 1px solid #EEE;
+}
+.demo-preview {
+    color: #000;
+}
+.demo-preview .i {
+    width: 50px;
+    height: 50px;
+    fill: black !important;
+}
+/* preview end */

@@ -125,7 +125,7 @@ module.exports = (grunt) ->
 		#create one svg from multiple files
 		svgstore:
 			options:
-				prefix: 'i-'
+				prefix: 'i--'
 				#formatting:
 				#	indent_size: 2
 				includedemo: true
@@ -146,13 +146,13 @@ module.exports = (grunt) ->
 					spritePath: 'src/files/icons/icons-sprite.svg'
 					cssPath: 'src/documents/styles/_sprite.less'
 					previewPath: 'src/files/icons/'
-					prefix: 'i'
+					prefix: 'i-'
 					cssSvgPrefix: '.svg '
 					cssPngPrefix: '.no-svg '
 					sizes:
-						'': 14
-						large: 28
-					refSize: 14
+						'': 16
+						large: 32
+					refSize: 16
 					template: 'src/files/icons/templates/stylesheet.hbs'
 		replace:
 			sprites:
