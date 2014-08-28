@@ -176,6 +176,94 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
     </tr>
 </table>
 
+## Services as background
+
+<table class="demo-list">
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-large">
+                <span class="i i--inter-calling-large"></span>
+            </div>
+        </td>
+        <td class="demo-name">International Calling</td>
+        <td class="demo-var"><code>i--inter-calling</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-large">
+                <span class="i i--call-me-large"></span>
+            </div>
+        </td>
+        <td class="demo-name">Call Me</td>
+        <td class="demo-var"><code>i--call-me</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-large">
+                <span class="i i--inter-airtime-top-up-large"></span>
+            </div>
+        </td>
+        <td class="demo-name">International Mobile Top Up</td>
+        <td class="demo-var"><code>i--inter-airtime-top-up</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-large">
+                <span class="i i--domestic-airtime-top-up-large"></span>
+            </div>
+        </td>
+        <td class="demo-name">Domestec Mobile Top Up</td>
+        <td class="demo-var"><code>i--domestic-airtime-top-up</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <span class="i i--money-transfer"></span>
+            </div>
+        </td>
+        <td class="demo-name">Money Transfer</td>
+        <td class="demo-var"><code>i--money-transfer</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <span class="i i--visa-virtual"></span>
+            </div>
+        </td>
+        <td class="demo-name">Visa<sup>&reg;</sup> Virtual</td>
+        <td class="demo-var"><code>i--visa-virtual</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <span class="i i--prepaid-visa-card">
+                    <use xlink:href="#i--prepaid-visa-card"></use>
+                </span>
+            </div>
+        </td>
+        <td class="demo-name">Prepaid Visa<sup>&reg;</sup> Card</td>
+        <td class="demo-var"><code>i--prepaid-visa-card</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <span class="i i--bill-pay"></span>
+            </div>
+        </td>
+        <td class="demo-name">Bill Pay</td>
+        <td class="demo-var"><code>i--bill-pay</code></td>
+    </tr>
+    <tr>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <span class="i i--friends-forever"></span>
+            </div>
+        </td>
+        <td class="demo-name">Friends Forever</td>
+        <td class="demo-var"><code>i--friends-forever</code></td>
+    </tr>
+</table>
+
 ## Service Features
 
 <table class="demo-list">

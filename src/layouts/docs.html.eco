@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <%- @partial('docs/header') %>
+    <script src="<%= @getUrl('/vendor/modernizr/modernizr.min.js') %>"></script>
     <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
   </head>
   <body>

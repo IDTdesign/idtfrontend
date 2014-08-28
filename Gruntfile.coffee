@@ -127,7 +127,7 @@ module.exports = (grunt) ->
 			options:
 				prefix: 'i--'
 				#formatting:
-				#	indent_size: 2
+				#   indent_size: 2
 				includedemo: true
 				cleanup: ['fill']
 			default:
@@ -150,9 +150,11 @@ module.exports = (grunt) ->
 					cssSvgPrefix: '.svg '
 					cssPngPrefix: '.no-svg '
 					sizes:
-						'': 16
-						large: 32
-					refSize: 16
+						'': 33
+						xsmall: 16
+						small: 25
+						large: 51
+					refSize: 33
 					template: 'src/files/icons/templates/stylesheet.hbs'
 		replace:
 			sprites:
@@ -250,12 +252,12 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-text-replace'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'makesprites',	['svgstore', 'svg2string', 'svg-sprites', 'replace:sprites']
-	grunt.registerTask 'optimizeimg',	['svg2png:src', 'newer:imagemin:src']
-	grunt.registerTask 'preprocess', 	['makesprites', 'optimizeimg']
-	grunt.registerTask 'postprocess', 	['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
-	grunt.registerTask 'generate', 		['clean:out', 'shell:docpad', 'postprocess']
-	grunt.registerTask 'server', 		['connect', 'watch']
-	grunt.registerTask 'run', 			['generate', 'server']
-	grunt.registerTask 'development', 	['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
-	grunt.registerTask 'default', 		['run']
+	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'svg-sprites', 'replace:sprites']
+	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
+	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
+	grunt.registerTask 'postprocess',   ['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
+	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'postprocess']
+	grunt.registerTask 'server',        ['connect', 'watch']
+	grunt.registerTask 'run',           ['generate', 'server']
+	grunt.registerTask 'development',   ['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
+	grunt.registerTask 'default',       ['run']
