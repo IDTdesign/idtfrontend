@@ -99,63 +99,77 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
-                <use xlink:href="#i--inter-airtime-top-up"></use>
-            </svg>
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                    <use xlink:href="#i--inter-airtime-top-up"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">International Mobile Top Up</td>
         <td class="demo-var"><code>i--inter-airtime-top-up</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
-                <use xlink:href="#i--domestic-airtime-top-up"></use>
-            </svg>
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                    <use xlink:href="#i--domestic-airtime-top-up"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Domestec Mobile Top Up</td>
         <td class="demo-var"><code>i--domestic-airtime-top-up</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
-                <use xlink:href="#i--money-transfer"></use>
-            </svg>
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                    <use xlink:href="#i--money-transfer"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Money Transfer</td>
         <td class="demo-var"><code>i--money-transfer</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
-                <use xlink:href="#i--visa-virtual"></use>
-            </svg>
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
+                    <use xlink:href="#i--visa-virtual"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Visa<sup>&reg;</sup> Virtual</td>
         <td class="demo-var"><code>i--visa-virtual</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--prepaid-visa-card">
-                <use xlink:href="#i--prepaid-visa-card"></use>
-            </svg>
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--prepaid-visa-card">
+                    <use xlink:href="#i--prepaid-visa-card"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Prepaid Visa<sup>&reg;</sup> Card</td>
         <td class="demo-var"><code>i--prepaid-visa-card</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
-                <use xlink:href="#i--bill-pay"></use>
-            </svg>
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
+                    <use xlink:href="#i--bill-pay"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Bill Pay</td>
         <td class="demo-var"><code>i--bill-pay</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
-                <use xlink:href="#i--friends-forever"></use>
-            </svg>
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
+                    <use xlink:href="#i--friends-forever"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Friends Forever</td>
         <td class="demo-var"><code>i--friends-forever</code></td>
@@ -253,36 +267,44 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
 <table class="demo-list">
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--terms-conditions">
-                <use xlink:href="#i--terms-conditions"></use>
-            </svg>
+            <div class="plate plate-default plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--terms-conditions">
+                    <use xlink:href="#i--terms-conditions"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Terms &amp; Conditions</td>
         <td class="demo-var"><code>i--terms-conditions</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--privacy-policy">
-                <use xlink:href="#i--privacy-policy"></use>
-            </svg>
+            <div class="plate plate-default plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--privacy-policy">
+                    <use xlink:href="#i--privacy-policy"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Privacy Policy</td>
         <td class="demo-var"><code>i--privacy-policy</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--faqs">
-                <use xlink:href="#i--faqs"></use>
-            </svg>
+            <div class="plate plate-default plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--faqs">
+                    <use xlink:href="#i--faqs"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Frequently Asked Questions</td>
         <td class="demo-var"><code>i--faqs</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--download-the-app">
-                <use xlink:href="#i--download-the-app"></use>
-            </svg>
+            <div class="plate plate-default plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--download-the-app">
+                    <use xlink:href="#i--download-the-app"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Download the App</td>
         <td class="demo-var"><code>i--download-the-app</code></td>
@@ -294,74 +316,221 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
 <table class="demo-list">
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number">
-                <use xlink:href="#i--phone-number"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number">
+                    <use xlink:href="#i--phone-number"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Phone Number</td>
         <td class="demo-var"><code>i--phone-number</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim">
-                <use xlink:href="#i--unlim"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim">
+                    <use xlink:href="#i--unlim"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Unlimited Plan</td>
         <td class="demo-var"><code>i--unlim</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions">
-                <use xlink:href="#i--recent-transactions"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions">
+                    <use xlink:href="#i--recent-transactions"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Recent Transactions</td>
         <td class="demo-var"><code>i--recent-transactions</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance">
-                <use xlink:href="#i--balance"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance">
+                    <use xlink:href="#i--balance"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Balance</td>
         <td class="demo-var"><code>i--balance</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--time">
-                <use xlink:href="#i--time"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--time">
+                    <use xlink:href="#i--time"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Time</td>
         <td class="demo-var"><code>i--time</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up">
-                <use xlink:href="#i--number-to-top-up"></use>
-            </svg>
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up">
+                    <use xlink:href="#i--number-to-top-up"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Number to Top Up</td>
         <td class="demo-var"><code>i--number-to-top-up</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history">
-                <use xlink:href="#i--call-history"></use>
-            </svg>
+            <div class="plate plate-alt-highlight plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history">
+                    <use xlink:href="#i--call-history"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Call History</td>
         <td class="demo-var"><code>i--call-history</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card">
-                <use xlink:href="#i--redeem-br-card"></use>
-            </svg>
+            <div class="plate plate-alt-highlight plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card">
+                    <use xlink:href="#i--redeem-br-card"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Redeem BR Card</td>
         <td class="demo-var"><code>i--redeem-br-card</code></td>
+    </tr>
+</table>
+
+# Icon plate
+
+<table class="demo-list">
+    <tr>
+        <th class="demo-var"><code>.plate</code> + style [ + size ]</th>
+        <th class="demo-var"><code>.plate-large</code></th>
+        <th class="demo-var">default</th>
+        <th class="demo-var"><code>.plate-small</code></th>
+    </tr>
+    <tr>
+        <th class="demo-var"><code>.plate-default</code></th>
+        <td class="demo-preview">
+            <div class="plate plate-default plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-default">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-default plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="demo-var"><code>.plate-default-inset</code></th>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-default-inset plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="demo-var"><code>.plate-alt</code></th>
+        <td class="demo-preview">
+            <div class="plate plate-alt plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-alt">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-alt plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th class="demo-var"><code>.plate-alt-highlight</code></th>
+        <td class="demo-preview">
+            <div class="plate plate-alt-highlight plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-alt-highlight">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-alt-highlight plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+    </tr>
+    <tr style="background-color: #EBF0F5;">
+        <td class="demo-preview"><code>.plate-white</code></td>
+        <td class="demo-preview">
+            <div class="plate plate-white plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <th class="demo-preview">
+            <div class="plate plate-white plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </th>
     </tr>
 </table>

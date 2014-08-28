@@ -22,30 +22,32 @@
 
 .plate {
     border-radius: @border-radius-base;
+    width: 57px;
+    height: 57px;
+    padding: 12px;
+    text-align: center;
+
+    .i {
+        width: 33px;
+        height: 33px;
+        vertical-align: top;
+    }
+
 }
 
 .plate-default {
     color: #FFF;
     background-color: @brand-primary;
-    width: 57px;
-    height: 57px;
-    padding: ;
-    text-align: center;
-
-    .i {
-        width: 55px;
-        height: 55px;
-        vertical-align: top;
-    }
 }
 
 .plate-default-inset {
     color: #FFF;
     background-color: @brand-primary;
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25);
+    background-image:linear-gradient(rgb(157,0,0) 0%, rgb(204,0,0) 100%);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
 
     .i {
-        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
     }
 }
 
@@ -68,16 +70,22 @@
     width: 79px;
     height: 79px;
     padding: 14px;
+    border-radius: @border-radius-large;
 
     .i {
         width: 51px;
-        height: 51px;
-        vertical-align: top;        
+        height: 51px;      
     }
 }
 
 .plate-small {
     width: 45px;
     height: 45px;
+    padding: 10px;
+
+    .i {
+        width: 25px;
+        height: 25px;
+    }
 }
 /* plate end */
