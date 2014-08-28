@@ -77,18 +77,22 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
 <table class="demo-list">
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
-                <use xlink:href="#i--inter-calling"></use>
-            </svg>
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">International Calling</td>
         <td class="demo-var"><code>i--inter-calling</code></td>
     </tr>
     <tr>
         <td class="demo-preview">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
-                <use xlink:href="#i--call-me"></use>
-            </svg>
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                    <use xlink:href="#i--call-me"></use>
+                </svg>
+            </div>
         </td>
         <td class="demo-name">Call Me</td>
         <td class="demo-var"><code>i--call-me</code></td>
