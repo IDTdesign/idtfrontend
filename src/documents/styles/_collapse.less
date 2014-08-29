@@ -1,0 +1,45 @@
+//
+// Tabs + Collapse
+// --------------------------------------------------
+
+@media (max-width: @screen-xs-max) {
+    
+    /* 1 - show all tabs on small screens */
+    .tab-content-xs-accordeon {
+        > .tab-pane {
+            display: block; /* 1 */
+            opacity: 1;
+        }
+    }
+
+}
+
+@media (min-width: @screen-sm) {
+    
+    /* 1 - show collapsed panels on larger screens */
+    .tab-content-xs-accordeon .collapse {
+        display: block; /* 1 */
+        height: auto !important;
+    }
+
+}
+
+.collapse-trigger {
+    border-top: 4px solid @brand-alt-highlight;
+    border-bottom: 1px solid @brand-alt-highlight;
+    background: #fff;
+
+    .collapse-trigger--title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .collapse-trigger--link {
+        padding: @line-height-computed 20px;
+        font-size: @font-size-base;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+    }
+}

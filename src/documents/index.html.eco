@@ -7,8 +7,9 @@ title: "idtfrontend"
     <article class="island island-default">
         <h1 class="island--title">Pages</h1>
         <ul>
-            <li><a href="<%= @getUrl('download-app.html') %>">download-app.html</a></li>
-            <li><a href="<%= @getUrl('friends-forever.html') %>">friends-forever.html</a></li>
+            <li><a href="<%= @getUrl('/download-app.html') %>">download-app.html</a></li>
+            <li><a href="<%= @getUrl('/friends-forever.html') %>">friends-forever.html</a></li>
+            <li><a href="<%= @getUrl('/my-account/tabs.html') %>">/my-account/tabs.html</a></li>
         </ul>
     </article>
 </div>

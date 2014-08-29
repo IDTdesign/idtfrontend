@@ -662,6 +662,8 @@
     }
 }
 
+
+/* TODO: Move to _collapse.less */
 .btn-toggler {
     display: inline-block;
     border-width: 0;
@@ -698,4 +700,126 @@
 .open .btn-toggler--when-opened {
     display: block;
 }
+
+/* when uncollapsed */
+[data-toggle="collapse"]:not(.collapsed) .btn-toggler--when-closed {
+    display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .btn-toggler--when-opened {
+    display: block;
+}
 /* offscreen menu end */
+
+
+/* tabs modification */
+.island--title + .nav-tabs-sections {
+    margin-top: (@line-height-computed * 2);
+}
+
+.nav-tabs-sections {
+    border-bottom: 5px solid @brand-alt-highlight;
+    
+    > li {
+        border-top: 3px solid transparent;
+    }
+
+    > li > a {
+        border-top: 1px solid @brand-alt-highlight;
+        color: @brand-primary;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            background-color: @brand-alt-highlight-bright;
+        }
+    }
+
+    .i {
+        width: 33px;
+        height: 33px;
+    }
+    
+    .icon-txt--text {
+        padding: 0 5px;
+        white-space: nowrap;
+    }
+    
+    .active {
+        border-top: 3px solid @brand-alt-dark;
+
+        > a {
+            color: @brand-alt-dark;
+            border-top-color: @brand-alt-dark;
+            background-color: @brand-alt-highlight;
+        }
+    }
+}
+
+@media (min-width: @screen-lg-min) {
+    .nav-tabs-sections.nav-justified {
+        display: table;
+        table-layout: fixed;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+}
+
+/* tabs modification end */
+
+/* nav panel */
+.nav-pane {
+    display: table;
+    width: 100%;
+    padding: (@line-height-computed / 2) 0;
+    background-color: @brand-alt-highlight-bright;
+
+    &:before,
+    &:after {
+        content: none;
+    }
+    
+    > li {
+        display: table-cell;
+        width: 1%;
+
+        > a {
+            color: @gray-alt-bright;
+            font-size: (@font-size-base - 1px);
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus {
+                color: @brand-alt-dark;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .nav-pane {
+        display: block;
+    
+        > li {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+    .nav-pane > li > a {
+        white-space: nowrap;
+    }
+
+}
+
+
