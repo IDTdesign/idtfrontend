@@ -138,7 +138,7 @@ scripts: ['/scripts/jqgrid_init.js']
                 </section>
 
 
-                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
                         <section class="island island-square-top island-condenced">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
@@ -223,7 +223,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </ul>
                 </section>
 
-                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
                         <section class="island island-square-top island-condenced">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
@@ -285,7 +285,7 @@ scripts: ['/scripts/jqgrid_init.js']
             </header>
             <div id="inter-mobile-top-up-content" class="panel-collapse collapse">
 
-                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
                         <section class="island island-square-top island-condenced">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
@@ -347,7 +347,7 @@ scripts: ['/scripts/jqgrid_init.js']
             </header>
             <div id="domestic-mobile-top-up-content" class="panel-collapse collapse">
 
-                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
                         <section class="island island-square-top island-condenced">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.

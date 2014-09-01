@@ -28,31 +28,31 @@
 
 
 .mediablock-equalized,
-.mediablock-equalized .mediablock--primary,
-.mediablock-equalized .mediablock--secondary {
+.mediablock-equalized > .mediablock--primary,
+.mediablock-equalized > .mediablock--secondary {
     border-radius: inherit;
 }
 
 /* sizes */
 
-.mediablock-3-to-1 .mediablock--primary     { width: 75%; }
-.mediablock-3-to-1 .mediablock--secondary   { width: 25%; }
+.mediablock-3-to-1 > .mediablock--primary     { width: 75%; }
+.mediablock-3-to-1 > .mediablock--secondary   { width: 25%; }
 
-.mediablock-2-to-1 .mediablock--primary     { width: 66.66%; }
-.mediablock-2-to-1 .mediablock--secondary   { width: 33.33%; }
+.mediablock-2-to-1 > .mediablock--primary     { width: 66.66%; }
+.mediablock-2-to-1 > .mediablock--secondary   { width: 33.33%; }
 
-.mediablock-3-to-2 .mediablock--primary     { width: 60%; }
-.mediablock-3-to-2 .mediablock--secondary   { width: 40%; }
+.mediablock-3-to-2 > .mediablock--primary     { width: 60%; }
+.mediablock-3-to-2 > .mediablock--secondary   { width: 40%; }
 
 
-.mediablock-1-to-3 .mediablock--primary     { width: 25%; }
-.mediablock-1-to-3 .mediablock--secondary   { width: 75%; }
+.mediablock-1-to-3 > .mediablock--primary     { width: 25%; }
+.mediablock-1-to-3 > .mediablock--secondary   { width: 75%; }
 
-.mediablock-1-to-2 .mediablock--primary     { width: 33.33%; }
-.mediablock-1-to-2 .mediablock--secondary   { width: 66.66%; }
+.mediablock-1-to-2 > .mediablock--primary     { width: 33.33%; }
+.mediablock-1-to-2 > .mediablock--secondary   { width: 66.66%; }
 
-.mediablock-2-to-3 .mediablock--primary     { width: 40%; }
-.mediablock-2-to-3 .mediablock--secondary   { width: 60%; }
+.mediablock-2-to-3 > .mediablock--primary     { width: 40%; }
+.mediablock-2-to-3 > .mediablock--secondary   { width: 60%; }
 
 /* sizes end */
 
@@ -60,8 +60,8 @@
 /* in column: primary above secondary */
 @media (max-width: @screen-xs-max) {
 
-    .mediablock .mediablock--primary,
-    .mediablock .mediablock--secondary {
+    .mediablock > .mediablock--primary,
+    .mediablock > .mediablock--secondary {
         display: block;
         width: auto;
 
@@ -69,8 +69,8 @@
 }
 
 @media (max-width: @screen-sm-max) {
-    .mediablock-sm-vertical .mediablock--primary,
-    .mediablock-sm-vertical .mediablock--secondary {
+    .mediablock-sm-vertical > .mediablock--primary,
+    .mediablock-sm-vertical > .mediablock--secondary {
         display: block;
         width: auto;
 
@@ -114,23 +114,23 @@
 /* paddings */
 
 /* default paddings */
-.mediablock-default .mediablock--primary,
-.mediablock-default .mediablock--secondary {
+.mediablock-default > .mediablock--primary,
+.mediablock-default > .mediablock--secondary {
     padding: 80px;
 }
 
 @media (max-width: @screen-xs-max) {
 
-    .mediablock-default .mediablock--primary,
-    .mediablock-default .mediablock--secondary {
+    .mediablock-default > .mediablock--primary,
+    .mediablock-default > .mediablock--secondary {
         padding: 40px;
     }
     
-    .mediablock-default .mediablock--primary {
+    .mediablock-default > .mediablock--primary {
         padding-bottom: 20px;
     }
 
-    .mediablock-default .mediablock--secondary {
+    .mediablock-default > .mediablock--secondary {
         padding-top: 20px;
     }
 
@@ -138,29 +138,29 @@
 
 @media (min-width: @screen-lg-min) {
     
-    .mediablock-default .mediablock--primary {
+    .mediablock-default > .mediablock--primary {
         padding-left: 120px;
     }
 
-    .mediablock-default .mediablock--secondary {
+    .mediablock-default > .mediablock--secondary {
         padding-right: 120px;
     }
 
 }
 
 
-.mediablock-tight .mediablock--primary {
+.mediablock-tight > .mediablock--primary {
     padding: 40px 20px 40px 60px;
 }
-.mediablock-tight .mediablock--secondary {
+.mediablock-tight > .mediablock--secondary {
     padding: 40px 60px 40px 20px;
 }
 
-.mediablock-tight.mediablock-rtl .mediablock--primary {
+.mediablock-tight.mediablock-rtl > .mediablock--primary {
     padding-right: 60px;
     padding-left: 20px;
 }
-.mediablock-tight.mediablock-rtl .mediablock--secondary {
+.mediablock-tight.mediablock-rtl > .mediablock--secondary {
     padding-left: 60px;
     padding-right: 20px;
 }
@@ -169,28 +169,43 @@
 
 .mediablock-tiny-spacing {
 
-    .mediablock--primary,
-    .mediablock--secondary {
+    > .mediablock--primary,
+    > .mediablock--secondary {
         vertical-align: top;
         padding: 6px 0;
     }
 
-    .mediablock--primary {
+    > .mediablock--primary {
         padding-right: 3px;
     }
-    .mediablock--secondary {
+
+    > .mediablock--secondary {
         padding-left: 3px;
+    }
+
+}
+
+
+@media (max-width: @screen-sm-max) {
+    
+    /* 1 - maybe need to refactor that */
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--primary,
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--secondary {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--primary {
+        padding-bottom: 0;
     }
 
 }
 
 @media (max-width: @screen-xs-max) {
 
-    .mediablock-tiny-spacing .mediablock--primary,
-    .mediablock-tiny-spacing .mediablock--secondary {
+    .mediablock-tiny-spacing > .mediablock--primary,
+    .mediablock-tiny-spacing > .mediablock--secondary {
         padding: 0;
     }
-
 }
 
 /* paddings end */
@@ -215,18 +230,18 @@
 @mediablock-arrow-half-h: (floor(@mediablock-arrow-h / 2));
 @mediablock-arrow-shift:  (floor(@mediablock-arrow-w / 2));
 
-.mediablock-hasarrow .mediablock--secondary {
+.mediablock-hasarrow > .mediablock--secondary {
     position: relative;
 }
 
-.mediablock-hasarrow .mediablock--secondary:before {
+.mediablock-hasarrow > .mediablock--secondary:before {
     content: '';
     position: absolute;
     border-style: solid;
     border-color: transparent;
 }
 
-.mediablock-hasarrow .mediablock--secondary:before {
+.mediablock-hasarrow > .mediablock--secondary:before {
     top: 50%;
     left: 0;
     margin: -@mediablock-arrow-half-h 0 0 -@mediablock-arrow-shift;
@@ -234,7 +249,7 @@
     border-width: @mediablock-arrow-half-h @mediablock-arrow-w @mediablock-arrow-half-h 0;
 }
 
-.mediablock-hasarrow.mediablock-rtl .mediablock--secondary:before {
+.mediablock-hasarrow.mediablock-rtl > .mediablock--secondary:before {
     left: auto;
     right: 0;
     margin: -@mediablock-arrow-half-h -@mediablock-arrow-shift 0 0;
@@ -243,7 +258,7 @@
 }
 
 @media (max-width: @screen-xs-max) {
-    .mediablock-hasarrow .mediablock--secondary:before {
+    .mediablock-hasarrow > .mediablock--secondary:before {
         content: none;
     }
 }
