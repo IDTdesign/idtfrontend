@@ -30,8 +30,8 @@
 	vertical-align: bottom;
 }
 .ui-jqgrid .ui-jqgrid-htable th, .ui-jqgrid tr.jqgrow td {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 5px;
+	padding-right: 0px;
 }
 .ui-jqgrid .ui-jqgrid-htable th:first-child, .ui-jqgrid tr.jqgrow td:first-child{
 	padding-left: 0;
@@ -85,6 +85,9 @@
 }
 .ui-widget-content .ui-state-highlight{
 	background: none;
+}
+th[id*=amount]{
+	text-align: right!important;
 }
 td[aria-describedby*=amount]{
 	font-weight: bold!important;

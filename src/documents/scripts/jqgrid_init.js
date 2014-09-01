@@ -24,10 +24,10 @@ $(function () {
         datatype: "local",
         colNames: ["Date", "Service Name & TransType", "Amount", ""],
         colModel: [
-            { name: "date", width: 100, fixed: true, resizable: false, align: "left", sortable: false },
+            { name: "date", width: 70, fixed: true, resizable: false, align: "left", sortable: false },
             { name: "serviceName", formatter: serviceConcat, align: "left", sortable: false },
-            { name: "amount", width: 80, fixed: true, resizable: false, align: "right", sortable: false },
-            { name: "action", width: 100, fixed: true, resizable: false, align: "right", formatter: addAction, sortable: false},
+            { name: "amount", width: 70, fixed: true, resizable: false, align: "right", sortable: false },
+            { name: "action", width: 80, fixed: true, resizable: false, align: "right", formatter: addAction, sortable: false},
         ],
         pager: "#pager",
         rowNum: 10,
