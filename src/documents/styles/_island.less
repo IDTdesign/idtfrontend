@@ -111,5 +111,25 @@
     background-color: transparent;
 }
 
+.island-square-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.island-condenced {
+    margin: 0 auto;
+    padding: 30px;
+
+    .island--title {
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: @line-height-computed;
+        line-height: 1.1;
+    }
+}
+
+.island-condenced + .island-condenced {
+    margin-top: 6px;
+}
 
 /* island end */

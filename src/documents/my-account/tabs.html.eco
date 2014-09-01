@@ -4,7 +4,32 @@ title: "idtfrontend"
 scripts: ['/scripts/jqgrid_init.js']
 ---
 
+
+
 <div class="container">
+<style>
+
+    .transactions-grid {
+        margin-bottom: 10px;
+    }
+    .i--recent-transactions,
+    .i--balance {
+        fill: #fff;
+        height: 45px;
+    }
+    .learn-more {
+        font-size: 16px;    /*@brand-alt*/
+        color: #006CD8;
+    }
+    .learn-more:hover {
+        color: #1E90FF;     /*@brand-alt-bright*/
+        text-decoration: none;
+    }
+    .transaction-type {
+        color: #878787;
+        font-size: 14px;
+    }
+</style>
     <article class="island">
         <h1 class="island--title">Manage Your Services</h1>
 
@@ -70,7 +95,8 @@ scripts: ['/scripts/jqgrid_init.js']
             </header>
                 
             <div id="inter-calling-content" class="panel-collapse collapse in">
-                <section class="island">
+
+                <section class="island island-connected">
                     <ul class="nav nav-pane">
                         <li>
                             <a href="#" class="icon-txt">
@@ -110,6 +136,43 @@ scripts: ['/scripts/jqgrid_init.js']
                         </li>
                     </ul>
                 </section>
+
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                    <div class="mediablock--primary">
+                        <section class="island island-square-top island-condenced">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+                        </section>
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>        
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                        <section class="island island-condenced">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                        </section>
+                    </div>
+                </div>
+
+
             </div>
         </article><!--/inter-calling-->
 
@@ -136,7 +199,8 @@ scripts: ['/scripts/jqgrid_init.js']
                 </h3>
             </header>
             <div id="call-me-content" class="panel-collapse collapse">
-                <section class="island">
+
+                <section class="island island-connected">
                     <ul class="nav nav-pane">
                         <li>
                             <a href="#" class="icon-txt">
@@ -158,6 +222,42 @@ scripts: ['/scripts/jqgrid_init.js']
                         </li>
                     </ul>
                 </section>
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                    <div class="mediablock--primary">
+                        <section class="island island-square-top island-condenced">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+                        </section>
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>        
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                </section>
+
             </div>
         </article><!--/call-me-->
 
@@ -184,9 +284,42 @@ scripts: ['/scripts/jqgrid_init.js']
                 </h3>
             </header>
             <div id="inter-mobile-top-up-content" class="panel-collapse collapse">
-                <section class="island island-default">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus perspiciatis voluptas explicabo rerum illum officia natus, recusandae mollitia, ea tempore, reiciendis ipsa architecto alias nihil exercitationem animi illo, qui corrupti!</p>
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                    <div class="mediablock--primary">
+                        <section class="island island-square-top island-condenced">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+                        </section>
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>        
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
                 </section>
+
             </div>
         </article><!--/inter-mobile-top-up-->
 
@@ -213,124 +346,51 @@ scripts: ['/scripts/jqgrid_init.js']
                 </h3>
             </header>
             <div id="domestic-mobile-top-up-content" class="panel-collapse collapse">
-                <section class="island island-default">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus perspiciatis voluptas explicabo rerum illum officia natus, recusandae mollitia, ea tempore, reiciendis ipsa architecto alias nihil exercitationem animi illo, qui corrupti!</p>
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing">
+                    <div class="mediablock--primary">
+                        <section class="island island-square-top island-condenced">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+                        </section>
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>        
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
                 </section>
+
             </div>
         </article><!--/domestic-mobile-top-up-->
 
     </div><!--/tab-content-->
 
 
-<style>
-    .allpage--body{
-        background: url(my-account-bg.png) no-repeat top center;
-    }
-    .mediablock-equalized.mediablock-has-island{
-        width: 100%;
-        border-spacing: 5px;
-    }
-    .mediablock-has-island > div .island{
-        margin-right: -5px;
-    }
-    .mediablock-has-island > div:first-child .island{
-        margin-left: -5px;
-        margin-right: 0;
-    }
-    @media screen and (max-width: 767px){
-        .mediablock-has-island > div .island, 
-        .mediablock-has-island > div:first-child .island{
-            margin-left: -15px;
-            margin-right: -15px;
-        }
-        .mediablock-has-island > div .island-top-square{
-            border-radius: 4px;
-        }
-        .mediablock-has-island > div:first-child .island-top-square{
-            border-radius: 0 0 4px 4px;
-        }
-
-    }
-    .mediablock-has-island > .mediablock--primary,
-    .mediablock-has-island > .mediablock--secondary{
-        vertical-align: top;
-    }
-    .mediablock .island{
-        padding: 30px;
-        position: relative;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    .mediablock .island h2{
-        margin-top: 0;
-        color: #720000; /*@brand-primary-dark*/
-        margin-bottom: 20px;
-    }
-    .mediablock .island h2 span{
-        display: inline-block;
-        line-height: .8;
-    }
-    .mediablock .island h2 .plate{
-        margin-right: 10px;
-    }
-    .transactions-grid{
-        margin-bottom: 10px;
-    }
-    .i--recent-transactions, .i--balance{
-        fill: #fff;
-        height: 45px;
-    }
-    .island-top-square{
-        border-radius: 0 0 4px 4px;
-    }
-    .learn-more{
-        font-size: 16px;    /*@brand-alt*/
-        color: #006CD8;
-    }
-    .learn-more:hover{
-        color: #1E90FF;     /*@brand-alt-bright*/
-        text-decoration: none;
-    }
-    .island .learn-more{
-        float: right;
-        padding-top: 8px;
-    }
-    .transaction-type{
-        color: #878787;
-        font-size: 14px;
-    }
-</style>
 
 
-    <section class="mediablock mediablock-equalized mediablock-3-to-2 mediablock-has-island">
-        <div class="mediablock--secondary">
-            <section class="island island-top-square">
-                &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
-            </section>
-        </div>
-        <div class="mediablock--primary">
-            <section class="island island-top-square">
-                <h2>
-                    <span class="plate plate-alt plate-small">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
-                    </span>
-                    <span>Resent Transactions</span>
-                </h2>
-                <div class="transactions-grid">
-                    <table id="testGrid"></table>
-                </div>        
-                <footer>
-                    <button class="btn btn-flat-bordered col-md-7">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
-                         Call History
-                    </button>
-                    <a href="#" class="learn-more">See All Transactions&raquo;</a>
-                    <div style="clear: both"></div>
-                </footer>
-            </section>
-            <section class="island">
-                &nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
-            </section>
-        </div>
-    </section>
+
+
+
   </div><!--/container-->

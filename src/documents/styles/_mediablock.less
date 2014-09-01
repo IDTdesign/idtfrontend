@@ -35,29 +35,25 @@
 
 /* sizes */
 
-.mediablock-3-to-1 .mediablock--primary {
-    width: 75%;
-}
+.mediablock-3-to-1 .mediablock--primary     { width: 75%; }
+.mediablock-3-to-1 .mediablock--secondary   { width: 25%; }
 
-.mediablock-3-to-1 .mediablock--secondary {
-    width: 25%;
-}
+.mediablock-2-to-1 .mediablock--primary     { width: 66.66%; }
+.mediablock-2-to-1 .mediablock--secondary   { width: 33.33%; }
 
-.mediablock-2-to-1 .mediablock--primary {
-    width: 66.66%;
-}
+.mediablock-3-to-2 .mediablock--primary     { width: 60%; }
+.mediablock-3-to-2 .mediablock--secondary   { width: 40%; }
 
-.mediablock-2-to-1 .mediablock--secondary {
-    width: 33.33%;
-}
 
-.mediablock-3-to-2 .mediablock--primary{
-	width: 60%;
-}
+.mediablock-1-to-3 .mediablock--primary     { width: 25%; }
+.mediablock-1-to-3 .mediablock--secondary   { width: 75%; }
 
-.mediablock-3-to-2 .mediablock--secondary{
-	width: 40%;
-}
+.mediablock-1-to-2 .mediablock--primary     { width: 33.33%; }
+.mediablock-1-to-2 .mediablock--secondary   { width: 66.66%; }
+
+.mediablock-2-to-3 .mediablock--primary     { width: 40%; }
+.mediablock-2-to-3 .mediablock--secondary   { width: 60%; }
+
 /* sizes end */
 
 
@@ -167,6 +163,34 @@
 .mediablock-tight.mediablock-rtl .mediablock--secondary {
     padding-left: 60px;
     padding-right: 20px;
+}
+
+
+
+.mediablock-tiny-spacing {
+
+    .mediablock--primary,
+    .mediablock--secondary {
+        vertical-align: top;
+        padding: 6px 0;
+    }
+
+    .mediablock--primary {
+        padding-right: 3px;
+    }
+    .mediablock--secondary {
+        padding-left: 3px;
+    }
+
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-tiny-spacing .mediablock--primary,
+    .mediablock-tiny-spacing .mediablock--secondary {
+        padding: 0;
+    }
+
 }
 
 /* paddings end */
