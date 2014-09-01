@@ -1,6 +1,7 @@
 ---
 layout: "default"
 title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
 ---
 
 <div class="container">

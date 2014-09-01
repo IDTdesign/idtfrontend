@@ -29,6 +29,8 @@ docpadConfig = {
 				'/styles/bootstrap-theme.css'
 				'/styles/bossrevolution.css'
 				'/vendor/animate.css/animate.min.css'
+				'/vendor/jqgrid/css/ui.jqgrid.css'
+				'/styles/jqgrid/ui-jqgrid-boss.css'
 			]
 
 			# The JavaScript files for the site.
@@ -37,6 +39,8 @@ docpadConfig = {
 				'/vendor/sticky/jquery.sticky.min.js'
 				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
 				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
+				'/vendor/jqgrid/js/i18n/grid.locale-en.js'
+				'/vendor/jqgrid/js/minified/jquery.jqGrid.min.js'
 				'/scripts/script.js'
 			]
 
