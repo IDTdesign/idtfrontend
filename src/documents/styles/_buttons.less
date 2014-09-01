@@ -28,4 +28,25 @@
 .svg .btn-gplay:active {
     background: url(../img/btn-gplay.svg);
 }
+.btn-flat-bordered{
+    background-color: @brand-alt-highlight-bright;
+    border-color: @brand-alt-highlight;
+    color: @gray-alt;
+    height: 45px;
+    text-align: left;
+    .i {
+        margin-right: 10px;
+        fill: @brand-alt-dark;
+    }
+    &:hover{
+        background-color: transparent;
+    }
+    &:active, &:focus, &:visited{
+        background-color: transparent;
+        border-color: @brand-alt-highlight; 
+        .i{
+            fill: @gray-dark;
+        }
+    }
+}
 /* buttons end */
