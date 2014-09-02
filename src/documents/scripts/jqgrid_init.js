@@ -10,13 +10,6 @@ var testData = [
 
 ];
 
-jQuery(document).ready(function($) {
-    $("#testGrid").bind('jqGridAfterLoadComplete', function(event) {
-        containerWidth = $(this).parents(".container").width();
-        gridParentSectionWidth = $(this).parents("section").width();
-    });
-});
-
 //  GRID INIT
 $(function () {
     $("#testGrid").jqGrid({
@@ -56,14 +49,22 @@ $(window).bind('resize', function () {
 
 //  TEMP. FOR CURRENT GRID (Resent Transactions) ONLY
 function resizeGrid(grid){
-    if($(document).width() < 768){
-        var currentWidth = grid.parents(".container").width()
-        grid.setGridWidth(currentWidth-50);
-    } else if($(document).width() < 992) {
-        var currentWidth = grid.parents(".container").width() * (gridParentSectionWidth/containerWidth) // UNSAFE VARIABLE
-        grid.setGridWidth(currentWidth);
-    }  else if($(document).width() > 991){
-        var currentWidth = grid.parents(".container").width() * (gridParentSectionWidth/containerWidth)
-        grid.setGridWidth(currentWidth);
+    var docWidth = window.innerWidth;
+    var currentWidth;
+    if(docWidth < 1200){
+        if(docWidth > 991){
+            currentWidth = grid.parents(".container").width();
+            grid.setGridWidth(currentWidth * 0.6 - 63);
+        }        
+        if(docWidth < 992 && docWidth > 767){
+            currentWidth = grid.parents(".container").width();
+            grid.setGridWidth(currentWidth-60);
+        } else if(docWidth < 768){
+            currentWidth = grid.parents(".container").width();
+            grid.setGridWidth(currentWidth - 30);
+        } 
+    } else {
+            currentWidth = grid.parents(".container").width();
+            grid.setGridWidth(currentWidth*0.6 - 63);
     }
 }
