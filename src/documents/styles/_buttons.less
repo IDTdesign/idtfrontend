@@ -28,23 +28,71 @@
 .svg .btn-gplay:active {
     background: url(../img/btn-gplay.svg);
 }
-.btn-flat-bordered{
-    background-color: @brand-alt-highlight-bright;
+
+.btn-default {
+
+}
+
+.btn-primary {
+
+}
+
+.btn-success {
+    
+}
+
+
+/* alternative buttons */
+
+.btn-bordered {
+    font-weight: bold;
+    background-color: #fff;
     border-color: @brand-alt-highlight;
     color: @gray-alt;
-    height: 45px;
-    text-align: left;
+
     .i {
         margin-right: 10px;
         fill: @brand-alt-dark;
     }
-    &:hover{
+
+    &:link {
+        color: @gray-alt;
+    }
+
+    &:hover {
         background-color: transparent;
     }
-    &:active, &:focus, &:visited{
+
+
+}
+
+.btn-flat {
+
+}
+
+.btn-flat-bordered {
+    font-weight: bold;
+    background-color: @brand-alt-highlight-bright;
+    border-color: @brand-alt-highlight;
+    color: @gray-alt;
+    text-align: left;
+
+    .i {
+        margin-right: 10px;
+        fill: @brand-alt-dark;
+    }
+
+    &:hover {
+        background-color: #FFF;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
         background-color: transparent;
         border-color: @brand-alt-highlight; 
-        .i{
+        
+        .i {
             fill: @gray-dark;
         }
     }

@@ -101,7 +101,6 @@
 
     > .i,
     > .icon-txt--i,
-    > .plate,
     > .icon-txt--text {
         display: table-cell;
         vertical-align: middle;
@@ -112,11 +111,31 @@
         padding-left: 5px;
     }
     
-    > .icon-txt--i + .icon-txt--text,
-    > .plate + .icon-txt--text {
+    > .icon-txt--i + .icon-txt--text {
         padding-left: 10px;
     }
 
+}
+
+.icon-block {
+    display: table;
+    width: 100%;
+    margin-bottom: @line-height-computed;
+
+    > .icon-block--i,
+    > .icon-block--text {
+        display: table-cell;
+        vertical-align: top;
+        text-align: left;
+    }
+    
+    > .icon-block--i {
+        width: 1%;
+    }
+
+    > .icon-block--text {
+        padding-left: 20px;
+    }
 }
 
 /* bootstrap specifity override */

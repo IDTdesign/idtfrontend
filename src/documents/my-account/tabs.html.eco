@@ -17,14 +17,6 @@ scripts: ['/scripts/jqgrid_init.js']
         fill: #fff;
         height: 45px;
     }
-    .learn-more {
-        font-size: 16px;    /*@brand-alt*/
-        color: #006CD8;
-    }
-    .learn-more:hover {
-        color: #1E90FF;     /*@brand-alt-bright*/
-        text-decoration: none;
-    }
     .transaction-type {
         color: #878787;
         font-size: 14px;
@@ -140,9 +132,118 @@ scripts: ['/scripts/jqgrid_init.js']
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
-                        <section class="island island-square-top island-condenced">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+
+                        <section class="island island-square-top island-condenced island-alt">
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim"><use xlink:href="#i--unlim"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">Unlimited Plan</strong>
+                                    <br>
+                                    <span class="sub-header">to Argentina</span></span>
+                                </div>
+                            </div>
+                            <div class="popover top popover-static">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your plan expires on June 30</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Renew Now</a>
+                            </p>
+
+                            <p class="icon-block">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-calling-auto-renew">Auto Renewal is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+                            
+                            <h3 class="mimic">Call Anywhere in the World with BOSS Relovution</h3>
+
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">$7.00 Balance</strong>
+                                    <br>
+                                    <a href="#" class="learn-more">Add Funds »</a>
+                                </div>
+                            </div>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
                         </section>
+
+                        <section class="island island-square-top island-condenced island-alt">
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">$7.00 Balance</strong>
+                                    <br>
+                                    for International Calling
+                                </div>
+                            </div>
+                            <p class="x">That is equal</p>
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--time"><use xlink:href="#i--time"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">25 minutes</strong>
+                                    <br>
+                                    <span class="sub-header">to Argentina</span></span>
+                                </div>
+                            </div>
+                            <div class="popover top popover-static">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your have low balance</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Recharge Now</a>
+                            </p>
+
+                            <p class="icon-block">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-calling-auto-recharge" id="inter-calling-auto-recharge">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-calling-auto-recharge">Auto Recharge is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+                            
+                            <h3 class="mimic">Get Unlimited Calling for a Low Monthly Price</h3>
+                            
+                            <p>
+                                <a href="#" class="learn-more">Learn more »</a>
+                                <br> about BOSS Revolution Unlimited Plans
+                            </p>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
+                        </section>
+
                     </div>
                     <div class="mediablock--secondary">
                         <section class="island island-square-top island-condenced">
@@ -166,8 +267,8 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <div style="clear: both"></div>
                             </footer>
                         </section>
-                        <section class="island island-condenced">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                        <section class="island island-condenced island-alt-bordered">
+                            <h3 class="mimic">Lorem ipsum dolor sit amet! <small><a href="#" class="learn-more">Auto Recharge »</a></small></h3>
                         </section>
                     </div>
                 </div>
@@ -225,9 +326,55 @@ scripts: ['/scripts/jqgrid_init.js']
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
-                        <section class="island island-square-top island-condenced">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+
+                        <section class="island island-square-top island-condenced island-alt">
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number"><use xlink:href="#i--phone-number"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">55 55 555 1234</strong>
+                                    <br>
+                                    Phone Number
+                                </div>
+                            </div>
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <span class="flag flag-mx"></span>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    Monterrey / Mexico
+                                </div>
+                            </div>
+                            <div class="popover top popover-static">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your plan expires on June 1</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Renew Now</a>
+                            </p>
+
+                            <p class="icon-block">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-call-me-auto-renew" id="inter-call-me-auto-renew">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-call-me-auto-renew">Auto Renewal is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
                         </section>
+
                     </div>
                     <div class="mediablock--secondary">
                         <section class="island island-square-top island-condenced">
@@ -254,8 +401,11 @@ scripts: ['/scripts/jqgrid_init.js']
                     </div>
                 </div>
 
-                <section class="island island-condenced">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                <section class="island island-condenced island-alt-bordered">
+                
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                
                 </section>
 
             </div>
@@ -287,9 +437,25 @@ scripts: ['/scripts/jqgrid_init.js']
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
-                        <section class="island island-square-top island-condenced">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+
+                        <section class="island island-square-top island-condenced island-alt">
+                            <h3 class="mimic">Send Airtime to the Mobile Phones of Your Family and Friends Abroad</h3>
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <label for="" class="h3 prominent">International Recipient Phone Number</label>
+                                    <br>
+                                    <input type="text" placeholder="Enter Phone Number">
+                                    <br>
+                                    <button class="btn btn-primary">Send a Top Up</button>
+                                </div>
+                            </div>
                         </section>
+
                     </div>
                     <div class="mediablock--secondary">
                         <section class="island island-square-top island-condenced">
@@ -305,10 +471,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <table id="testGrid"></table>
                             </div>        
                             <footer>
-                                <button class="btn btn-flat-bordered pull-left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
-                                     Call History
-                                </button>
                                 <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
                                 <div style="clear: both"></div>
                             </footer>
@@ -316,8 +478,9 @@ scripts: ['/scripts/jqgrid_init.js']
                     </div>
                 </div>
 
-                <section class="island island-condenced">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
                 </section>
 
             </div>
@@ -349,9 +512,25 @@ scripts: ['/scripts/jqgrid_init.js']
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
-                        <section class="island island-square-top island-condenced">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi dignissimos eum inventore eaque hic expedita aperiam dolores provident quasi accusamus, error, voluptates minima aliquam ipsa dolor consequatur cupiditate laborum laudantium quae perspiciatis! Optio qui esse ratione, ipsam libero quos aliquid laudantium quisquam, cum quae dolorem illum, nemo hic impedit.
+
+                        <section class="island island-square-top island-condenced island-alt">
+                            <h3 class="mimic">Top Up Your Domestic Mobile Phone Airtime</h3>
+                            <div class="icon-block">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <label for="" class="h3 prominent">Mobile Phone Number to Top Up</label>
+                                    <br>
+                                    <input type="text" placeholder="Enter Phone Number">
+                                    <br>
+                                    <button class="btn btn-primary">Top Up Now</button>
+                                </div>
+                            </div>
                         </section>
+
                     </div>
                     <div class="mediablock--secondary">
                         <section class="island island-square-top island-condenced">
@@ -367,10 +546,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <table id="testGrid"></table>
                             </div>        
                             <footer>
-                                <button class="btn btn-flat-bordered pull-left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
-                                     Call History
-                                </button>
                                 <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
                                 <div style="clear: both"></div>
                             </footer>
@@ -378,8 +553,9 @@ scripts: ['/scripts/jqgrid_init.js']
                     </div>
                 </div>
 
-                <section class="island island-condenced">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci repellendus amet cumque culpa fugiat molestias ex neque quia omnis! Excepturi aliquid quis error illo.
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
                 </section>
 
             </div>
