@@ -69,7 +69,7 @@
         color: @topline-textcolor;
         background-color: @navbar-bg-dark;
         font-size: @topline-textsize;
-        
+
         .navbar--submenulink,
         .dropdown-header {
             padding: 5px 15px;
@@ -162,7 +162,7 @@
                 background-color: #e10000;
                 transition: all 0;
             }
-            
+
             /* 1 - SVG icon sometimes don't receive clicks */
             .i {
                 pointer-events:none; /* 1 */
@@ -206,12 +206,12 @@
                     border-radius: @mainmenu-radius 0 0 @mainmenu-radius;
                 }
             }
-            
+
             &:hover .navbar--link,
             &.open:first-child .navbar--link {
                 border-bottom-left-radius: 0;
             }
-            
+
             /* 1 - commented, because menu is not justified */
             &:last-child {
                 .navbar--link {
@@ -238,6 +238,8 @@
                 }
 
                 .btn-dropdown {
+                    padding: 1px 4px;
+                    border-radius: 2px;
                     border-width: 0;
                     color: inherit;
 
@@ -414,7 +416,7 @@
         text-transform: uppercase;
         font-weight: bold;
         color: #000;
-        
+
         &:hover,
         &:focus {
             background-color: transparent;
@@ -450,7 +452,7 @@
 
 @media (max-width: @screen-sm-max) {
     .local-nav {
-        
+
         .nav--item {
             border-bottom-width: 3px;
         }
@@ -484,7 +486,7 @@
     .hold {
         height: auto !important; /* 1 */
     }
-    
+
     .fixed-local-nav .local-nav {
         position: static !important; /* 1 */
     }
@@ -508,7 +510,7 @@
 
 .navmenu-accordeon {
     border-color: #eee;
-    
+
     .navmenu--item {
         border-bottom: 2px solid #f3f3f3;
 
@@ -542,7 +544,7 @@
     .open .navmenu--link:focus {
         background-color: transparent;
     }
-    
+
     .open > .navmenu--submenu {
         background-color: #f8f8f8;
         box-shadow: inset 0 3px 8px rgba(0,0,0,0.1);
@@ -580,7 +582,7 @@
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
-        
+
         &:hover,
         &:focus {
             background-image: none;
@@ -601,11 +603,11 @@
 
     .navmenu--third-level {
         padding: 0;
-        
+
         .navmenu--submenuitem {
             border: none;
         }
-        
+
         /* increased specifity. TODO: refactor this selectors */
         .navmenu--submenulink.navmenu--submenulink {
             padding: 5px 25px 5px 35px;
@@ -648,7 +650,7 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.2s;
-    
+
     &:hover,
     &:focus {
         color: @brand-primary-dark;
@@ -718,7 +720,7 @@
 
 .nav-tabs-sections {
     border-bottom: 5px solid @brand-alt-highlight;
-    
+
     > li {
         border-top: 3px solid transparent;
     }
@@ -739,12 +741,12 @@
         width: 33px;
         height: 33px;
     }
-    
+
     .icon-txt--text {
         padding: 0 5px;
         white-space: nowrap;
     }
-    
+
     .active {
         border-top: 3px solid @brand-alt-dark;
 
@@ -781,7 +783,7 @@
     &:after {
         content: none;
     }
-    
+
     > li {
         display: table-cell;
         width: 1%;
@@ -805,7 +807,7 @@
 
     .nav-pane {
         display: block;
-    
+
         > li {
             display: inline-block;
             width: auto;

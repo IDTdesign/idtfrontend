@@ -1,5 +1,207 @@
 /* buttons */
 
+/*
+    1 - border
+    2 - pressed inner shadow
+    3 - gradient
+    4 - focus
+*/
+/* btn default shadows state */
+@btn-default-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0 ,0 ,0 , 0.2),
+    /* 2 */ inset 0 0 0 0 rgba(0 ,0 ,0 , 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #fff,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-default-hover-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #fff,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-default-focus-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #fff,
+    /* 4 */ 0 0 0 3px rgba(0, 128, 255 , 0.3);
+@btn-default-active-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 1px 2px 3px 0 rgba(0, 0, 0, 0.2),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #fff,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+
+/* btn primary shadows state */
+@btn-primary-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-primary-hover-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-primary-focus-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000,
+    /* 4 */ 0 0 0 3px rgba(0, 128, 255, 0.3);
+@btn-primary-active-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 1px 2px 3px 0 rgba(0, 0, 0, 0.2),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+
+/* btn success shadows state */
+@btn-success-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.2),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #63ba11,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-success-hover-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 2.2em 2.2em -1.1em #72db14,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+@btn-success-focus-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #63ba11,
+    /* 4 */ 0 0 0 3px rgba(0, 128, 255, 0.3);
+@btn-success-active-shadow:
+    /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    /* 2 */ inset 1px 2px 3px 0 rgba(0, 0, 0, 0.2),
+    /* 3 */ inset 0 1.1em 1.1em -0.6em #63ba11,
+    /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 34px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+
+    &.btn-default {
+        .box-shadow(@btn-default-shadow);
+        background: #e0e0ed;
+        transition: all 0.2s;
+        color: #c00;
+        text-shadow: 0 1px 0 #FFF;
+
+        &:hover {
+            .box-shadow(@btn-default-hover-shadow);
+            background-color: #ECECFB;
+            color: #FD0000;
+            text-decoration: none;
+        }
+
+        &:focus {
+            .box-shadow(@btn-default-focus-shadow);
+            outline:none;
+        }
+
+        &:active {
+            .box-shadow(@btn-default-active-shadow);
+            outline:none;
+            transition-duration: 0.1s;
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 0.5;
+            cursor: default;
+            .box-shadow(none);
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: #e0e0ed;
+            }
+        }
+    }
+
+    &.btn-primary {
+        background: #b50000;
+        color: #fff;
+        text-shadow: 0 1px 0 #950000;
+        .box-shadow(@btn-primary-shadow);
+
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #cd0000;
+            text-shadow: 0 1px 0 #be0000;
+            text-decoration: none;
+            .box-shadow(@btn-primary-hover-shadow);
+        }
+
+        &:focus {
+            .box-shadow(@btn-primary-focus-shadow);
+            outline:none;
+        }
+
+        &:active {
+            .box-shadow(@btn-primary-active-shadow);
+            outline:none;
+            transition-duration: 0.1s;
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 0.5;
+            cursor: default;
+            .box-shadow(none);
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: #b50000;
+            }
+        }
+    }
+
+    &.btn-success {
+        .box-shadow(@btn-success-shadow);
+        background: #4d871d;
+        transition: all 0.2s;
+        color: #fff;
+        text-shadow: 0 1px 0 #4a8714;
+
+        &:hover {
+            background-color: #529c0e;
+            text-shadow: 0 1px 0 #529c0e;
+            text-decoration: none;
+            .box-shadow(@btn-success-hover-shadow);
+        }
+
+        &:focus {
+            outline:none;
+            .box-shadow(@btn-success-focus-shadow);
+        }
+
+        &:active {
+            .box-shadow(@btn-success-active-shadow);
+            outline:none;
+            transition-duration: 0.1s;
+        }
+
+        &.disabled,
+        &[disabled] {
+            opacity: 0.5;
+            cursor: default;
+            .box-shadow(none);
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: #4d871d;
+            }
+        }
+    }
+}
+
 .btn-appstore,
 .btn-gplay {
     display: inline-block;
@@ -12,23 +214,28 @@
     background-position: 50% 50%;
     text-indent: 150%;
 }
+
 .no-svg .btn-appstore,
 .no-svg .btn-appstore:active {
     background: url(../img/btn-appstore.png);
 }
+
 .no-svg .btn-gplay,
 .no-svg .btn-gplay:active {
     background: url(../img/btn-gplay.png);
 }
+
 .svg .btn-appstore,
 .svg .btn-appstore:active {
     background: url(../img/btn-appstore.svg);
 }
+
 .svg .btn-gplay,
 .svg .btn-gplay:active {
     background: url(../img/btn-gplay.svg);
 }
-.btn-flat-bordered{
+
+.btn-flat-bordered {
     background-color: @brand-alt-highlight-bright;
     border-color: @brand-alt-highlight;
     color: @gray-alt;
@@ -38,15 +245,16 @@
         margin-right: 10px;
         fill: @brand-alt-dark;
     }
-    &:hover{
+    &:hover {
         background-color: transparent;
     }
-    &:active, &:focus, &:visited{
+    &:active, &:focus, &:visited {
         background-color: transparent;
-        border-color: @brand-alt-highlight; 
-        .i{
+        border-color: @brand-alt-highlight;
+        .i {
             fill: @gray-dark;
         }
     }
 }
+
 /* buttons end */
