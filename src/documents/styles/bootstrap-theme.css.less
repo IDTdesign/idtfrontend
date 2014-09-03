@@ -329,14 +329,56 @@
 // Popovers
 // --------------------------------------------------
 
+.popover {
+    text-align: center;
+
+    p:only-child {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
 .popover-static {
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .popover-static.top {
     margin-top: 0;
     margin-bottom: 12px;
+}
+
+/* color styles */
+.popover-warning {
+    border-color: darken(@brand-primary-highlight, 3%);
+    background-color: @brand-primary-highlight;
+    color: @brand-primary;
+    
+    &.top > .arrow {
+        border-top-color: inherit;
+    }    
+    &.top > .arrow:after {
+        border-top-color: @brand-primary-highlight;
+    }
+    &.bottom > .arrow {
+        border-bottom-color: inherit;
+    }    
+    &.bottom > .arrow:after {
+        border-bottom-color: @brand-primary-highlight;
+    }
+    &.left > .arrow {
+        border-left-color: inherit;
+    }    
+    &.left > .arrow:after {
+        border-left-color: @brand-primary-highlight;
+    }
+    &.right > .arrow {
+        border-right-color: inherit;
+    }    
+    &.right > .arrow:after {
+        border-right-color: @brand-primary-highlight;
+    }
 }

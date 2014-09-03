@@ -146,7 +146,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                     <span class="sub-header">to Argentina</span></span>
                                 </div>
                             </div>
-                            <div class="popover top popover-static">
+                            <div class="popover top popover-static popover-warning">
                                 <div class="arrow"></div>
                                 <div class="popover-content">
                                     <p>Your plan expires on June 30</p>
@@ -212,7 +212,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                     <span class="sub-header">to Argentina</span></span>
                                 </div>
                             </div>
-                            <div class="popover top popover-static">
+                            <div class="popover top popover-static  popover-warning">
                                 <div class="arrow"></div>
                                 <div class="popover-content">
                                     <p>Your have low balance</p>
@@ -350,7 +350,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                     Monterrey / Mexico
                                 </div>
                             </div>
-                            <div class="popover top popover-static">
+                            <div class="popover top popover-static  popover-warning">
                                 <div class="arrow"></div>
                                 <div class="popover-content">
                                     <p>Your plan expires on June 1</p>
