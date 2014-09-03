@@ -37,6 +37,7 @@ docpadConfig = {
 				'/vendor/sticky/jquery.sticky.min.js'
 				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
 				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
+				'/scripts/forms.js'
 				'/scripts/script.js'
 			]
 
@@ -63,7 +64,7 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
-			
+
 		isActive: (s) ->
 			# current links in navigation
 			if s == @document.url
