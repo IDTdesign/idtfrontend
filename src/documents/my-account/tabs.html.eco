@@ -447,10 +447,10 @@ scripts: ['/scripts/jqgrid_init.js']
                                     </span>
                                 </div>
                                 <div class="icon-block--text">
-                                    <label for="" class="h3 prominent">International Recipient Phone Number</label>
-                                    <br>
-                                    <input type="text" placeholder="Enter Phone Number">
-                                    <br>
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">International Recipient Phone Number</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
                                     <button class="btn btn-primary">Send a Top Up</button>
                                 </div>
                             </div>
@@ -487,7 +487,6 @@ scripts: ['/scripts/jqgrid_init.js']
         </article><!--/inter-mobile-top-up-->
 
 
-
         <article class="tab-pane fade" id="domestic-mobile-top-up">
             <header class="collapse-trigger visible-xs">
                 <h3 class="collapse-trigger--title">
@@ -522,10 +521,10 @@ scripts: ['/scripts/jqgrid_init.js']
                                     </span>
                                 </div>
                                 <div class="icon-block--text">
-                                    <label for="" class="h3 prominent">Mobile Phone Number to Top Up</label>
-                                    <br>
-                                    <input type="text" placeholder="Enter Phone Number">
-                                    <br>
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">Mobile Phone Number to Top Up</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
                                     <button class="btn btn-primary">Top Up Now</button>
                                 </div>
                             </div>
