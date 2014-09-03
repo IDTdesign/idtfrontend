@@ -41,6 +41,7 @@ docpadConfig = {
 				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
 				'/vendor/jqgrid/js/i18n/grid.locale-en.js'
 				'/vendor/jqgrid/js/minified/jquery.jqGrid.min.js'
+				'/scripts/forms.js'
 				'/scripts/script.js'
 			]
 
@@ -67,7 +68,7 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
-			
+
 		isActive: (s) ->
 			# current links in navigation
 			if s == @document.url

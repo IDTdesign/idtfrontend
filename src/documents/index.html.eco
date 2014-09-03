@@ -10,6 +10,7 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/download-app.html') %>">download-app.html</a></li>
             <li><a href="<%= @getUrl('/friends-forever.html') %>">friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/my-account/tabs.html') %>">/my-account/tabs.html</a></li>
+            <li><a href="<%= @getUrl('/forms.html') %>">forms.html</a></li>
         </ul>
     </article>
 </div>

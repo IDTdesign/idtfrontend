@@ -30,7 +30,9 @@ module.exports = (grunt) ->
 				  'bower_components/bootstrap-less/js/scrollspy.js',
 				  'bower_components/bootstrap-less/js/tab.js',
 				  'bower_components/bootstrap-less/js/affix.js',
-				  'bower_components/jasny-bootstrap/js/offcanvas.js'
+				  'bower_components/jasny-bootstrap/js/offcanvas.js',
+				  'bower_components/jasny-bootstrap/js/inputmask.js',
+				  'bower_components/bootstrapValidator/dist/js/bootstrapValidator.js'
 				]
 				dest: 'out/vendor/bootstrap/js/bootstrap.js'
 
@@ -100,7 +102,7 @@ module.exports = (grunt) ->
 					map: true
 				src: 'out/styles/bossrevolution.css'
 
-		# rasterize all SVG files in "img" and its subdirectories to "img/png"        
+		# rasterize all SVG files in "img" and its subdirectories to "img/png"
 		svg2png:
 			out:
 				files: [
@@ -133,7 +135,7 @@ module.exports = (grunt) ->
 			default:
 				files: 'src/files/icons/svg-defs.svg':['src/files/icons/svg/*.svg']
 
-		#convert content of svg file to string 
+		#convert content of svg file to string
 		svg2string:
 			icons:
 				files: ['src/files/icons/svg-icons.js':'src/files/icons/svg-defs.svg']
@@ -199,7 +201,7 @@ module.exports = (grunt) ->
 				]
 			out:
 				files: ['<%= docpad.out %>/**/*']
-				options: 
+				options:
 					livereload: true
 
 		# start server
