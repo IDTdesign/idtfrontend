@@ -68,6 +68,13 @@ title: "Forms"
 
                     <div class="form-group">
                         <div class="col-lg-8">
+                            <label class="control-label">Disabled Form</label>
+                            <input type="text" class="form-control" name="disabledForm" placeholder="" disabled />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-8">
                             <label class="control-label">Date of birth</label>
                             <input type="text" class="form-control form-control-date" name="birthday" placeholder="YYYY/MM/DD" />
                         </div>
@@ -82,15 +89,15 @@ title: "Forms"
 
                     <div class="form-group">
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-default btn-lg">Default Button</button>
+                            <button type="submit" class="btn btn-default">Default Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-primary btn-lg">Primary Button</button>
+                            <button type="submit" class="btn btn-primary">Primary Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-success btn-lg">Success Button</button>
+                            <button type="submit" class="btn btn-success">Success Button</button>
                         </div>
                     </div>
                 </form>

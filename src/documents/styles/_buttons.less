@@ -73,6 +73,7 @@
     /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
 
 .btn {
+    min-width: 180px;
     font-weight: bold;
 }
 
@@ -80,15 +81,15 @@
     .box-shadow(@btn-default-shadow);
     background: #e0e0ed;
     border: none;
-    color: #c00;
-    text-shadow: 0 1px 0 #FFF;
+    color: @brand-primary-btn-dark;
+    text-shadow: 0 1px 0 #fff;
     text-transform: uppercase;
-    transition: all 0.2s;
+    .transition(all 0.2s);
 
     &:hover {
         .box-shadow(@btn-default-hover-shadow);
         background-color: #ECECFB;
-        color: #FD0000;
+        color: @brand-primary-btn;
         text-decoration: none;
     }
 
@@ -100,7 +101,7 @@
     &:active {
         .box-shadow(@btn-default-active-shadow);
         outline:none;
-        transition-duration: 0.1s;
+        .transition-duration(0.1s);
     }
 
     &.disabled,
@@ -119,12 +120,12 @@
 
 .btn-primary {
     .box-shadow(@btn-primary-shadow);
-    background: #b50000;
+    background: #a10000;
     border: none;
     color: #fff;
     text-shadow: 0 1px 0 #950000;
     text-transform: uppercase;
-    transition: all 0.2s;
+    .transition(all 0.2s);
 
     &:hover {
         background-color: #cd0000;
@@ -134,14 +135,17 @@
     }
 
     &:focus {
+        background-color: #a10000;
+        border: none;
         .box-shadow(@btn-primary-focus-shadow);
+        text-shadow: none;
         outline:none;
     }
 
     &:active {
         .box-shadow(@btn-primary-active-shadow);
         outline:none;
-        transition-duration: 0.1s;
+        .transition-duration(0.1s);
     }
 
     &.disabled,
@@ -165,7 +169,7 @@
     color: #fff;
     text-shadow: 0 1px 0 #4a8714;
     text-transform: uppercase;
-    transition: all 0.2s;
+    .transition(all 0.2s);
 
     &:hover {
         background-color: #529c0e;
@@ -175,6 +179,8 @@
     }
 
     &:focus {
+        background-color: #4d871d;
+        border: none;
         outline:none;
         .box-shadow(@btn-success-focus-shadow);
     }
@@ -182,7 +188,8 @@
     &:active {
         .box-shadow(@btn-success-active-shadow);
         outline:none;
-        transition-duration: 0.1s;
+        text-shadow: none;
+        .transition-duration(0.1s);
     }
 
     &.disabled,
@@ -200,13 +207,16 @@
 }
 
 .btn-lg {
-    .button-size(@padding-btn-large-vertical; @padding-btn-large-horizontal; @font-btn-size-large; @line-height-large; @border-radius-large);
+    .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+    min-width: inherit;
 }
 .btn-sm {
     .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+    min-width: inherit;
 }
 .btn-xs {
-    .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+    .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-xs-small; @line-height-small; @border-radius-small);
+    min-width: inherit;
 }
 
 .btn-appstore,
@@ -224,22 +234,22 @@
 
 .no-svg .btn-appstore,
 .no-svg .btn-appstore:active {
-    background: url(../img/btn-appstore.png);
+    background: url("../img/btn-appstore.png");
 }
 
 .no-svg .btn-gplay,
 .no-svg .btn-gplay:active {
-    background: url(../img/btn-gplay.png);
+    background: url("../img/btn-gplay.png");
 }
 
 .svg .btn-appstore,
 .svg .btn-appstore:active {
-    background: url(../img/btn-appstore.svg);
+    background: url("../img/btn-appstore.svg");
 }
 
 .svg .btn-gplay,
 .svg .btn-gplay:active {
-    background: url(../img/btn-gplay.svg);
+    background: url("../img/btn-gplay.svg");
 }
 
 /* alternative buttons */

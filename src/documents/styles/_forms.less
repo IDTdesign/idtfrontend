@@ -1,10 +1,5 @@
 /* Forms */
 
-/* 1 - labels not bold by default (bootstrap override) */
-label {
-    font-weight: inherit; /* 1 */
-}
-
 .forms {
     margin: @line-height-computed auto; //20px auto
     border-radius: @border-radius-large;
@@ -72,6 +67,11 @@ label {
 
 /* default theme */
 
+/* 1 - labels not bold by default (bootstrap override) */
+label {
+    font-weight: inherit; /* 1 */
+}
+
 /* default field */
 .forms-default .form-control,
 .form-control-default {
@@ -95,6 +95,11 @@ label {
             /* 1 */ inset 0 0 0 0 rgba(0, 0, 0, 0.15),
             /* 2 */ 0 0 0 3px rgba(0, 128, 255, 0.3);
         .box-shadow(@form-control-focus-shadow);
+    }
+
+    &.disabled,
+    &[disabled] {
+        border-color: @gray-light;
     }
 }
 
@@ -149,7 +154,7 @@ label {
     height: 21px;
     margin: -4px 8px 0 -20px;
     background-color: #fff;
-    border: 1px #a7abab solid;
+    border: 1px #a7a7a7 solid;
     .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, .15));
     font-family: 'Glyphicons Halflings';
     font-style: normal;
@@ -205,13 +210,11 @@ label {
     top: -1px;
     left: 0;
     margin-left: -21px;
-    border: 1px #a7abab solid;
+    border: 1px #a7a7a7 solid;
     border-radius: 50%;
     .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, .15));
     background-color: #fff;
-    -webkit-transition: border 0.15s ease-in-out;
-    -o-transition: border 0.15s ease-in-out;
-    transition: border 0.15s ease-in-out;
+    .transition(border 0.15s ease-in-out);
 }
 
 .radio label:after {
@@ -225,14 +228,8 @@ label {
     margin-left: -20px;
     border-radius: 50%;
     background-color: @brand-primary-btn-dark;
-    -webkit-transform: scale(0, 0);
-    -ms-transform: scale(0, 0);
-    -o-transform: scale(0, 0);
-    transform: scale(0, 0);
-    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
-    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
-    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
-    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    .scale(0, 0);
+    .transition(-webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33));
 }
 
 .radio input[type="radio"] {
@@ -251,10 +248,7 @@ label {
 }
 
 .radio input[type="radio"]:checked + label:after {
-    -webkit-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
+    .scale(1, 1);
 }
 
 .radio input[type="radio"]:disabled + label {
