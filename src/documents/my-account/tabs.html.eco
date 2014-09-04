@@ -134,7 +134,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     <div class="mediablock--primary">
 
                         <section class="island island-square-top island-condenced island-alt">
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim"><use xlink:href="#i--unlim"></use></svg>
@@ -142,7 +142,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </div>
                                 <div class="icon-block--text">
                                     <strong class="h2 prominent">Unlimited Plan</strong>
-                                    <br>
                                     <span class="sub-header">to Argentina</span></span>
                                 </div>
                             </div>
@@ -156,7 +155,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <a href="#" class="btn btn-primary">Renew Now</a>
                             </p>
 
-                            <p class="icon-block">
+                            <p class="icon-block icon-block-default">
                                 <span class="icon-block--i">
                                     <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
                                 </span>
@@ -168,7 +167,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             
                             <h3 class="mimic">Call Anywhere in the World with BOSS Relovution</h3>
 
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
@@ -176,7 +175,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </div>
                                 <div class="icon-block--text">
                                     <strong class="h2 prominent">$7.00 Balance</strong>
-                                    <br>
                                     <a href="#" class="learn-more">Add Funds »</a>
                                 </div>
                             </div>
@@ -187,7 +185,7 @@ scripts: ['/scripts/jqgrid_init.js']
                         </section>
 
                         <section class="island island-square-top island-condenced island-alt">
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
@@ -195,12 +193,11 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </div>
                                 <div class="icon-block--text">
                                     <strong class="h2 prominent">$7.00 Balance</strong>
-                                    <br>
                                     for International Calling
                                 </div>
                             </div>
                             <p class="x">That is equal</p>
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--time"><use xlink:href="#i--time"></use></svg>
@@ -208,7 +205,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </div>
                                 <div class="icon-block--text">
                                     <strong class="h2 prominent">25 minutes</strong>
-                                    <br>
                                     <span class="sub-header">to Argentina</span></span>
                                 </div>
                             </div>
@@ -222,7 +218,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <a href="#" class="btn btn-primary">Recharge Now</a>
                             </p>
 
-                            <p class="icon-block">
+                            <p class="icon-block icon-block-default">
                                 <span class="icon-block--i">
                                     <input type="checkbox" name="inter-calling-auto-recharge" id="inter-calling-auto-recharge">
                                 </span>
@@ -328,7 +324,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     <div class="mediablock--primary">
 
                         <section class="island island-square-top island-condenced island-alt">
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number"><use xlink:href="#i--phone-number"></use></svg>
@@ -336,11 +332,10 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </div>
                                 <div class="icon-block--text">
                                     <strong class="h2 prominent">55 55 555 1234</strong>
-                                    <br>
                                     Phone Number
                                 </div>
                             </div>
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <span class="flag flag-mx"></span>
@@ -360,7 +355,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                 <a href="#" class="btn btn-primary">Renew Now</a>
                             </p>
 
-                            <p class="icon-block">
+                            <p class="icon-block icon-block-default">
                                 <span class="icon-block--i">
                                     <input type="checkbox" name="inter-call-me-auto-renew" id="inter-call-me-auto-renew">
                                 </span>
@@ -440,7 +435,7 @@ scripts: ['/scripts/jqgrid_init.js']
 
                         <section class="island island-square-top island-condenced island-alt">
                             <h3 class="mimic">Send Airtime to the Mobile Phones of Your Family and Friends Abroad</h3>
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
@@ -514,7 +509,7 @@ scripts: ['/scripts/jqgrid_init.js']
 
                         <section class="island island-square-top island-condenced island-alt">
                             <h3 class="mimic">Top Up Your Domestic Mobile Phone Airtime</h3>
-                            <div class="icon-block">
+                            <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>

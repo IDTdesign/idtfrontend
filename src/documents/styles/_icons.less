@@ -117,10 +117,25 @@
 
 }
 
+/* bootstrap specifity override */
+.nav > li > a.icon-txt {
+    display: table;
+    width: 100%;
+}
+
+.island--title.icon-txt {
+    width: 100%;
+
+    .icon-txt--i {
+        width: 1%;
+    }
+}
+
+/* icon with other content */
+
 .icon-block {
     display: table;
     width: 100%;
-    margin-bottom: @line-height-computed;
 
     > .icon-block--i,
     > .icon-block--text {
@@ -134,21 +149,31 @@
     }
 
     > .icon-block--text {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 }
 
-/* bootstrap specifity override */
-.nav > li > a.icon-txt {
-    display: table;
-    width: 100%;
-}
+.icon-block-default {
+    margin-bottom: @line-height-computed;
 
-.island--title.icon-txt {
-    width: 100%;
+    /* 1 - width of the medium .plate with icon */
+    > .icon-block--i {
+        width: 45px; /* 1 */
+    }
 
-    .icon-txt--i {
-        width: 1%;
+    > .icon-block--text {
+        padding-left: 20px;
+    }
+    
+    /* 1 - visual compensation of line-height in --text block */
+    > .icon-block--text > .h2:first-child {
+        display: block;
+        margin-top: -5px; /* 1 */
+        margin-bottom: 0;
+    }
+    
+    > .icon-block--text > .h3:first-child {
+        margin-top: -4px; /* 1 */
     }
 }
 

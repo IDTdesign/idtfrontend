@@ -34,6 +34,34 @@
     border-radius: inherit;
 }
 
+@media (min-width: @screen-sm-min) {
+
+    /* equlized with flex */
+    .flexbox .mediablock-equalized {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .flexbox .mediablock-equalized > .mediablock--primary,
+    .flexbox .mediablock-equalized > .mediablock--secondary {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flexbox .mediablock-equalized > .mediablock--primary > *,
+    .flexbox .mediablock-equalized > .mediablock--secondary > * {
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .flexbox .mediablock-equalized > .mediablock--primary > *:last-child,
+    .flexbox .mediablock-equalized > .mediablock--secondary > *:last-child {
+        flex-grow: 1;
+    }
+}
+
 /* sizes */
 
 .mediablock-3-to-1 > .mediablock--primary     { width: 75%; }
@@ -62,19 +90,22 @@
 @media (max-width: @screen-xs-max) {
 
     .mediablock > .mediablock--primary,
-    .mediablock > .mediablock--secondary {
+    .mediablock > .mediablock--secondary,
+    .flexbox .mediablock-sm-vertical > .mediablock--primary,
+    .flexbox .mediablock-sm-vertical > .mediablock--secondary {
         display: block;
         width: auto;
-
     }
 }
 
 @media (max-width: @screen-sm-max) {
+    .flexbox .mediablock-sm-vertical,
     .mediablock-sm-vertical > .mediablock--primary,
-    .mediablock-sm-vertical > .mediablock--secondary {
+    .mediablock-sm-vertical > .mediablock--secondary,
+    .flexbox .mediablock-sm-vertical > .mediablock--primary,
+    .flexbox .mediablock-sm-vertical > .mediablock--secondary  {
         display: block;
         width: auto;
-
     }
 }
 
