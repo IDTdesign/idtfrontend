@@ -13,4 +13,13 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/forms.html') %>">forms.html</a></li>
         </ul>
     </article>
+    <article class="island island-default">
+        <h1 class="island--title">Documentation</h1>
+        <ul>
+            <li><a href="<%= @getUrl('/docs/index.html') %>">Bootstrap</a></li>
+            <li><a href="<%= @getUrl('/docs/typography.html') %>">Typography</a></li>
+            <li><a href="<%= @getUrl('/docs/icons.html') %>">Icons</a></li>
+            <li><a href="<%= @getUrl('/forms.html') %>">forms.html</a></li>
+        </ul>
+    </article>
 </div>
