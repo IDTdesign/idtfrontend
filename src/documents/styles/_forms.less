@@ -194,15 +194,15 @@ label {
     margin-right: 4px;
 }
 
-.checkbox input[type="checkbox"]:checked + label:before {
+.checkbox input[type="checkbox"]:checked ~ label:before {
     content: "\e013";
 }
 
-.checkbox input[type="checkbox"]:disabled + label {
+.checkbox input[type="checkbox"]:disabled ~ label {
     cursor: not-allowed;
 }
 
-.checkbox input[type="checkbox"]:disabled + label:before {
+.checkbox input[type="checkbox"]:disabled ~ label:before {
     background-color: #ebebeb;
     opacity: 0.65;
     cursor: not-allowed;
@@ -265,15 +265,15 @@ label {
     margin-right: 4px;
 }
 
-.radio input[type="radio"]:checked + label:after {
+.radio input[type="radio"]:checked ~ label:after {
     .scale(1, 1);
 }
 
-.radio input[type="radio"]:disabled + label {
+.radio input[type="radio"]:disabled ~ label {
     opacity: 0.65;
 }
 
-.radio input[type="radio"]:disabled + label:before {
+.radio input[type="radio"]:disabled ~ label:before {
     background-color: #ebebeb;
     cursor: not-allowed;
 }
