@@ -127,6 +127,20 @@ label {
     .has-error {
         .form-control-validation-custom(@brand-primary-btn-dark; @brand-primary-bright; @brand-primary-btn);
     }
+
+    .form-control-feedback {
+        width: 28px;
+        height: 28px;
+        font-size: 1.2em;
+        line-height: 28px;
+
+        &.glyphicon-ok,
+        &.glyphicon-remove,
+        &.glyphicon-refresh {
+            top: 44px;
+            right: 20px;
+        }
+    }
 }
 
 @media (max-width: @screen-xs-max ) {
