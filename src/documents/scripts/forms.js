@@ -1,6 +1,11 @@
 (function ($) {
     $('#forms--example').bootstrapValidator({
         live: 'disabled',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
         fields: {
             firstname: {
                 message: 'The username is not valid',
