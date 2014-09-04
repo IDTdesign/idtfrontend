@@ -53,19 +53,16 @@ title: "Forms"
                             <label class="control-label">Gender</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <label>
-                                <input type="radio" name="gender" value="male" /> Male
-                            </label>
+                            <input type="radio" name="gender" id="gender-male" value="male" />
+                            <label for="gender-male">Male</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <label>
-                                <input type="radio" name="gender" value="female" /> Female
-                            </label>
+                            <input type="radio" name="gender" id="gender-female" value="female" />
+                            <label for="gender-female">Female</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <label>
-                                <input type="radio" name="gender" value="other" /> Other
-                            </label>
+                            <input type="radio" name="gender" id="gender-other" value="other" />
+                            <label for="gender-other">Other</label>
                         </div>
                     </div>
 
@@ -78,24 +75,22 @@ title: "Forms"
 
                     <div class="form-group">
                         <div class="checkbox col-lg-8">
-                            <label>
-                                <input type="checkbox" name="rss" />
-                                Do you want to receive news?
-                            </label>
+                            <input type="checkbox" id="rss" name="rss" />
+                            <label for="rss">Do you want to receive news?</label>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-default">Default Button</button>
+                            <button type="submit" class="btn btn-default btn-lg">Default Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-primary">Primary Button</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Primary Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-success">Success Button</button>
+                            <button type="submit" class="btn btn-success btn-lg">Success Button</button>
                         </div>
                     </div>
                 </form>

@@ -20,9 +20,8 @@
       <p class="help-block">Example block-level help text here.</p>
     </div>
     <div class="checkbox">
-      <label>
-        <input type="checkbox"> Check me out
-      </label>
+	  <input type="checkbox" id="bs-example-01">
+      <label for="bs-example-01">Check me out</label>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
@@ -44,10 +43,9 @@
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
+	  <input type="checkbox" id="bs-example-01">
+      <label for="bs-example-01">Check me out</label>
+    </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 ```
@@ -88,10 +86,9 @@
       <label class="sr-only" for="exampleInputPassword2">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
     </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox"> Remember me
-      </label>
+	<div class="checkbox">
+	  <input type="checkbox" id="bs-example-02">
+      <label for="bs-example-02">Remember me</label>
     </div>
     <button type="submit" class="btn btn-default">Sign in</button>
   </form>
@@ -108,9 +105,8 @@
     <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
   </div>
   <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
-    </label>
+	  <input type="checkbox" id="bs-example-02">
+	  <label for="bs-example-02">Remember me</label>
   </div>
   <button type="submit" class="btn btn-default">Sign in</button>
 </form>
@@ -138,10 +134,9 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <div class="checkbox">
-          <label>
-            <input type="checkbox"> Remember me
-          </label>
-        </div>
+		  <input type="checkbox" id="bs-example-03">
+		  <label for="bs-example-03">Remember me</label>
+		</div>
       </div>
     </div>
     <div class="form-group">
@@ -169,10 +164,9 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <div class="checkbox">
-        <label>
-          <input type="checkbox"> Remember me
-        </label>
-      </div>
+		<input type="checkbox" id="bs-example-03">
+		<label for="bs-example-03">Remember me</label>
+	  </div>
     </div>
   </div>
   <div class="form-group">
@@ -236,34 +230,30 @@
 
 <div class="bs-example">
   <form role="form">
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" value="">
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-    <div class="checkbox disabled">
-      <label>
-        <input type="checkbox" value="" disabled>
-        Option two is disabled
-      </label>
-    </div>
+	<div class="checkbox">
+	  <input type="checkbox" id="bs-example-04">
+	  <label for="bs-example-04">Option one is this and that&mdash;be sure to include why it's great</label>
+	</div>
+	<div class="checkbox disabled">
+	  <input type="checkbox" id="bs-example-05" disabled>
+	  <label for="bs-example-05">Option two is disabled</label>
+	</div>
     <br>
     <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+	  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      <label for="optionsRadios1">
         Option one is this and that&mdash;be sure to include why it's great
       </label>
     </div>
     <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+	  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      <label for="optionsRadios2">
         Option two can be something else and selecting it will deselect option one
       </label>
     </div>
     <div class="radio disabled">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+	  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+      <label for="optionsRadios3">
         Option three is disabled
       </label>
     </div>
@@ -272,34 +262,30 @@
 
 ```html
 <div class="checkbox">
-  <label>
-    <input type="checkbox" value="">
-    Option one is this and that&mdash;be sure to include why it's great
-  </label>
-  </div>
-  <div class="checkbox disabled">
-  <label>
-    <input type="checkbox" value="" disabled>
-    Option two is disabled
-  </label>
+  <input type="checkbox" id="bs-example-04">
+  <label for="bs-example-04">Option one is this and that&mdash;be sure to include why it's great</label>
+</div>
+<div class="checkbox disabled">
+  <input type="checkbox" id="bs-example-05" disabled>
+  <label for="bs-example-05">Option two is disabled</label>
 </div>
 
 <div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-    Option one is this and that&mdash;be sure to include why it's great
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  <label for="optionsRadios1">
+	Option one is this and that&mdash;be sure to include why it's great
   </label>
-  </div>
-  <div class="radio">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-    Option two can be something else and selecting it will deselect option one
+</div>
+<div class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  <label for="optionsRadios2">
+	Option two can be something else and selecting it will deselect option one
   </label>
-  </div>
-  <div class="radio disabled">
-  <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-    Option three is disabled
+</div>
+<div class="radio disabled">
+  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+  <label for="optionsRadios3">
+	Option three is disabled
   </label>
 </div>
 ```
@@ -310,50 +296,62 @@
 
 <div class="bs-example">
   <form role="form">
-    <label class="checkbox-inline">
-      <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-    </label>
+    <div class="checkbox checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox1" value="option1" checked>
+	  <label for="inlineCheckbox1">1</label>
+    </div>
+    <div class="checkbox checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox2" value="option2">
+	  <label for="inlineCheckbox2">2</label>
+    </div>
+    <div class="checkbox checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox3" value="option3">
+	  <label for="inlineCheckbox3">3</label>
+    </div>
   </form>
   <br>
   <form role="form">
-    <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-    </label>
+    <div class="radio radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+	  <label for="inlineRadio1">1</label>
+    </div>
+    <div class="radio radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+	  <label for="inlineRadio2">2</label>
+    </div>
+    <div class="radio radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+	  <label for="inlineRadio3">3</label>
+    </div>
   </form>
 </div>
 
 ```html
-<label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-</label>
-<label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-</label>
-<label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-</label>
+<div class="checkbox checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1" checked>
+  <label for="inlineCheckbox1">1</label>
+</div>
+<div class="checkbox checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2">
+  <label for="inlineCheckbox2">2</label>
+</div>
+<div class="checkbox checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3">
+  <label for="inlineCheckbox3">3</label>
+</div>
 
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-</label>
+<div class="radio radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+  <label for="inlineRadio1">1</label>
+</div>
+<div class="radio radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label for="inlineRadio2">2</label>
+</div>
+<div class="radio radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label for="inlineRadio3">3</label>
+</div>
 ```
 
 <h3>Selects</h3>
@@ -495,9 +493,8 @@
         </select>
       </div>
       <div class="checkbox">
-        <label>
-          <input type="checkbox"> Can't check this
-        </label>
+	    <input type="checkbox" id="disabledCheckbox1">
+        <label for="disabledCheckbox1">Can't check this</label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </fieldset>
@@ -518,10 +515,9 @@
       </select>
     </div>
     <div class="checkbox">
-      <label>
-        <input type="checkbox"> Can't check this
-      </label>
-    </div>
+	  <input type="checkbox" id="disabledCheckbox1">
+	  <label for="disabledCheckbox1">Can't check this</label>
+	</div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>

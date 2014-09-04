@@ -1,6 +1,6 @@
 /* buttons */
 
-/*
+/* buttons styles by shadows:
     1 - border
     2 - pressed inner shadow
     3 - gradient
@@ -73,133 +73,140 @@
     /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
 
 .btn {
-    display: inline-block;
-    border: none;
-    border-radius: 5px;
-    padding: 14px 34px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1em;
     font-weight: bold;
-    line-height: 1.2;
+}
 
-    &.btn-default {
-        .box-shadow(@btn-default-shadow);
-        background: #e0e0ed;
-        transition: all 0.2s;
-        color: #c00;
-        text-shadow: 0 1px 0 #FFF;
+.btn-default {
+    .box-shadow(@btn-default-shadow);
+    background: #e0e0ed;
+    border: none;
+    color: #c00;
+    text-shadow: 0 1px 0 #FFF;
+    text-transform: uppercase;
+    transition: all 0.2s;
 
-        &:hover {
-            .box-shadow(@btn-default-hover-shadow);
-            background-color: #ECECFB;
-            color: #FD0000;
-            text-decoration: none;
-        }
-
-        &:focus {
-            .box-shadow(@btn-default-focus-shadow);
-            outline:none;
-        }
-
-        &:active {
-            .box-shadow(@btn-default-active-shadow);
-            outline:none;
-            transition-duration: 0.1s;
-        }
-
-        &.disabled,
-        &[disabled] {
-            opacity: 0.5;
-            cursor: default;
-            .box-shadow(none);
-
-            &:hover,
-            &:focus,
-            &:active {
-                background: #e0e0ed;
-            }
-        }
+    &:hover {
+        .box-shadow(@btn-default-hover-shadow);
+        background-color: #ECECFB;
+        color: #FD0000;
+        text-decoration: none;
     }
 
-    &.btn-primary {
-        background: #b50000;
-        color: #fff;
-        text-shadow: 0 1px 0 #950000;
-        .box-shadow(@btn-primary-shadow);
-
-        transition: all 0.2s;
-
-        &:hover {
-            background-color: #cd0000;
-            text-shadow: 0 1px 0 #be0000;
-            text-decoration: none;
-            .box-shadow(@btn-primary-hover-shadow);
-        }
-
-        &:focus {
-            .box-shadow(@btn-primary-focus-shadow);
-            outline:none;
-        }
-
-        &:active {
-            .box-shadow(@btn-primary-active-shadow);
-            outline:none;
-            transition-duration: 0.1s;
-        }
-
-        &.disabled,
-        &[disabled] {
-            opacity: 0.5;
-            cursor: default;
-            .box-shadow(none);
-
-            &:hover,
-            &:focus,
-            &:active {
-                background: #b50000;
-            }
-        }
+    &:focus {
+        .box-shadow(@btn-default-focus-shadow);
+        outline:none;
     }
 
-    &.btn-success {
-        .box-shadow(@btn-success-shadow);
-        background: #4d871d;
-        transition: all 0.2s;
-        color: #fff;
-        text-shadow: 0 1px 0 #4a8714;
+    &:active {
+        .box-shadow(@btn-default-active-shadow);
+        outline:none;
+        transition-duration: 0.1s;
+    }
 
-        &:hover {
-            background-color: #529c0e;
-            text-shadow: 0 1px 0 #529c0e;
-            text-decoration: none;
-            .box-shadow(@btn-success-hover-shadow);
-        }
+    &.disabled,
+    &[disabled] {
+        opacity: 0.5;
+        cursor: default;
+        .box-shadow(none);
 
-        &:focus {
-            outline:none;
-            .box-shadow(@btn-success-focus-shadow);
-        }
-
+        &:hover,
+        &:focus,
         &:active {
-            .box-shadow(@btn-success-active-shadow);
-            outline:none;
-            transition-duration: 0.1s;
-        }
-
-        &.disabled,
-        &[disabled] {
-            opacity: 0.5;
-            cursor: default;
-            .box-shadow(none);
-
-            &:hover,
-            &:focus,
-            &:active {
-                background: #4d871d;
-            }
+            background: #e0e0ed;
         }
     }
+}
+
+.btn-primary {
+    .box-shadow(@btn-primary-shadow);
+    background: #b50000;
+    border: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #950000;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #cd0000;
+        text-shadow: 0 1px 0 #be0000;
+        text-decoration: none;
+        .box-shadow(@btn-primary-hover-shadow);
+    }
+
+    &:focus {
+        .box-shadow(@btn-primary-focus-shadow);
+        outline:none;
+    }
+
+    &:active {
+        .box-shadow(@btn-primary-active-shadow);
+        outline:none;
+        transition-duration: 0.1s;
+    }
+
+    &.disabled,
+    &[disabled] {
+        opacity: 0.5;
+        cursor: default;
+        .box-shadow(none);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: #b50000;
+        }
+    }
+}
+
+.btn-success {
+    .box-shadow(@btn-success-shadow);
+    background: #4d871d;
+    border: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #4a8714;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #529c0e;
+        text-shadow: 0 1px 0 #529c0e;
+        text-decoration: none;
+        .box-shadow(@btn-success-hover-shadow);
+    }
+
+    &:focus {
+        outline:none;
+        .box-shadow(@btn-success-focus-shadow);
+    }
+
+    &:active {
+        .box-shadow(@btn-success-active-shadow);
+        outline:none;
+        transition-duration: 0.1s;
+    }
+
+    &.disabled,
+    &[disabled] {
+        opacity: 0.5;
+        cursor: default;
+        .box-shadow(none);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: #4d871d;
+        }
+    }
+}
+
+.btn-lg {
+    .button-size(@padding-btn-large-vertical; @padding-btn-large-horizontal; @font-btn-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm {
+    .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-xs {
+    .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
 }
 
 .btn-appstore,
@@ -255,8 +262,6 @@
     &:hover {
         background-color: transparent;
     }
-
-
 }
 
 .btn-flat {
@@ -275,7 +280,6 @@
         fill: @brand-alt-dark;
     }
 
-
     &:hover {
         background-color: #FFF;
     }
@@ -284,12 +288,10 @@
     &:focus,
     &:visited {
         background-color: transparent;
-        border-color: @brand-alt-highlight; 
-        
+        border-color: @brand-alt-highlight;
+
         .i {
             fill: @gray-dark;
         }
     }
 }
-
-/* buttons end */
