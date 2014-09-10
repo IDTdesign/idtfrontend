@@ -10,7 +10,7 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/download-app.html') %>">download-app.html</a></li>
             <li><a href="<%= @getUrl('/friends-forever.html') %>">friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/my-account/tabs.html') %>">/my-account/tabs.html</a></li>
-            <li><a href="<%= @getUrl('/forms.html') %>">forms.html</a></li>
+            <li><a href="<%= @getUrl('/international-calling.html') %>">/international-calling.html (IMTU.st1)</a></li>
         </ul>
     </article>
     <article class="island island-default">
@@ -19,7 +19,7 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/docs/index.html') %>">Bootstrap</a></li>
             <li><a href="<%= @getUrl('/docs/typography.html') %>">Typography</a></li>
             <li><a href="<%= @getUrl('/docs/icons.html') %>">Icons</a></li>
-            <li><a href="<%= @getUrl('/forms.html') %>">forms.html</a></li>
+            <li><a href="<%= @getUrl('/forms.html') %>">Forms Example</a></li>
         </ul>
     </article>
 </div>

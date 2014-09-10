@@ -1,0 +1,112 @@
+---
+layout: "default"
+title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<div class="container"></div>
+
+<nav class="local-nav">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav--item"><a href="#benefits" class="nav--link">Benefits</a></li>
+            <li class="nav--item"><a href="#how" class="nav--link">How Does It Work?</a></li>
+            <li class="nav--item"><a href="#redeem" class="nav--link">Redeem a BR Card</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <article class="island island-default" id="benefits">
+        <h2 class="island--title">Benefits</h2>
+        <div class="benefits benefits-type-services">
+            <div class="benefits--block">
+                <h3>Simple to Use</h3>
+                <p>Make international calls without having to dial a pin -- just dial your access number from a registered phone and we’ll automatically recognize the number and you’re ready to start calling. And with our award-winning calling app, you can easily make calls with one-tap dialing.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="benefits--block">
+                <h3>Reliable</h3>
+                <p>Our state-of-the-art technology routes millions of international minutes daily, so you can be sure that you’ll have superior voice quality regardless of the phone you’re calling from.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="benefits--block">
+                <h3>Affordable</h3>
+                <p>Our low rates come with no monthly or additional fees, so you can save money with competitive rates and not have to worry about any surprises or hidden charges.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="island island-default" id="how">
+        <h2 class="island--title">How Does It Work?</h2>
+        <div class="how-works">
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-01.png") %>" alt="Enter your one's phone number">
+                <h3>Enter your one's phone number</h3>
+                <p>Enter the international mobile number you'd like to recharge, starting with the country code.</p>
+            </div>
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-02.png") %>" alt="Confirm the Carrier">
+                <h3>Confirm the Carrier</h3>
+                <p>Confirm your loved one's phone carrier is correct or update to the appropriorate carrier.</p>
+            </div>
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-03.png") %>" alt="Choose an Amount">
+                <h3>Choose an Amount</h3>
+                <p>Select the amount that you'd like to send to this phone number.</p>
+            </div>
+        </div>
+        <div class="forms forms-gray form-horizontal">
+            <form>
+                <div class="col-lg-8 col-lg-offset-2 col-xs-12">
+                    <h3>Enter an International Mobile Phone Number, Beginning with Country Code, to Get Started:</h3>
+                    <div class="form-group">
+                        <div class="col-lg-6 col-xs-6">
+                            <input type="tel" class="form-control form-control-default" name="phone" placeholder="(+1) (123) (456) (7890)" />
+                        </div>
+                        <div class="col-lg-6 col-xs-6">
+                            <button type="submit" class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+
+    <article class="island island-default" id="redeem">
+        <h2 class="island--title">Redeem a Carrier Top Up Card</h2>
+        <div class="redeem">
+            <div class="forms forms-gray form-horizontal">
+                <form>
+                    <div class="form-group">
+                        <p>Your Activation Code is fonund on the back of your Boss Revolution Card.</p>
+                        <div class="col-lg-7 col-xs-7">
+                            <label for="code">Enter the Activation Code</label>
+                            <input type="text" class="form-control form-control-default" name="code" placeholder="12345678" />
+                        </div>
+                        <div class="col-lg-5 col-xs-5">
+                            <label>&nbsp;</label>
+                            <button type="submit" class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</div><!--/container-->

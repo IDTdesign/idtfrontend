@@ -12,21 +12,26 @@ h1, .h1 {
     margin-bottom: 0.4em;
     color: @brand-primary-dark;
 }
+
 h2, .h2 {
     margin-top: 2em;
     margin-bottom: 0.5em;
 }
+
 h3, .h3 {
     margin-top: 2em;
     margin-bottom: 0.57143em;
     color: @brand-primary;
 }
+
 h4, .h4 {
     margin-bottom: 0.66666em;
 }
+
 h5, .h5 {
     margin-bottom: 0.8em;
 }
+
 h6, .h6 {
     margin-bottom: 1em;
 }
@@ -58,7 +63,7 @@ h6:first-child,
 .h4:first-child,
 .h5:first-child,
 .h6:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 p {
@@ -145,7 +150,7 @@ ol:not([class]) {
 }
 ol:not([class]) li:before {
     direction: rtl;
-    content: "." counter(olist); 
+    content: "." counter(olist);
     counter-increment: olist;
     display: inline-block;
     float: left;
@@ -173,14 +178,14 @@ ol:not([class]) ol {
     counter-reset: olist2;
 }
 ol:not([class]) ol:not([class]) > li:before {
-    content: "." counter(olist) "." counter(olist2); 
+    content: "." counter(olist) "." counter(olist2);
     counter-increment: olist2;
 }
 ol:not([class]) ol:not([class]) ol:not([class]) {
     counter-reset: olist3;
 }
 ol:not([class]) ol:not([class]) ol:not([class]) > li:before {
-    content: "." counter(olist) "." counter(olist2) "." counter(olist3); 
+    content: "." counter(olist) "." counter(olist2) "." counter(olist3);
     counter-increment: olist3;
 }
 

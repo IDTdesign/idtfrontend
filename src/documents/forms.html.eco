@@ -4,14 +4,14 @@ title: "Forms"
 ---
 
 <div class="container">
-    <article class="forms forms-default">
-        <h1 class="forms--title">Forms Examples</h1>
+    <article class="island">
+        <h1 class="island--title">Forms Examples</h1>
 
-        <div class="row">
+        <div class="forms forms-default form-horizontal row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Sign up</h2>
 
-                <form id="forms--example" class="form-horizontal">
+                <form id="forms--example">
                     <div class="form-group required">
                         <div class="col-lg-5">
                             <label class="control-label">First Name</label>

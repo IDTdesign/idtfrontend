@@ -4,11 +4,8 @@ title: "idtfrontend"
 scripts: ['/scripts/jqgrid_init.js']
 ---
 
-
-
 <div class="container">
 <style>
-
     .transactions-grid {
         margin-bottom: 10px;
     }
@@ -85,7 +82,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </a>
                 </h3>
             </header>
-                
+
             <div id="inter-calling-content" class="panel-collapse collapse in">
 
                 <section class="island island-connected">
@@ -164,7 +161,7 @@ scripts: ['/scripts/jqgrid_init.js']
                                     <a href="#" class="learn-more">Configure »</a>
                                 </span>
                             </p>
-                            
+
                             <h3 class="mimic">Call Anywhere in the World with BOSS Relovution</h3>
 
                             <div class="icon-block icon-block-default">
@@ -227,9 +224,9 @@ scripts: ['/scripts/jqgrid_init.js']
                                     <a href="#" class="learn-more">Configure »</a>
                                 </span>
                             </p>
-                            
+
                             <h3 class="mimic">Get Unlimited Calling for a Low Monthly Price</h3>
-                            
+
                             <p>
                                 <a href="#" class="learn-more">Learn more »</a>
                                 <br> about BOSS Revolution Unlimited Plans
@@ -253,7 +250,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </h2>
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
-                            </div>        
+                            </div>
                             <footer>
                                 <button class="btn btn-flat-bordered pull-left">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
@@ -383,7 +380,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </h2>
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
-                            </div>        
+                            </div>
                             <footer>
                                 <button class="btn btn-flat-bordered pull-left">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
@@ -397,10 +394,10 @@ scripts: ['/scripts/jqgrid_init.js']
                 </div>
 
                 <section class="island island-condenced island-alt-bordered">
-                
+
                     <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
-                
+
                 </section>
 
             </div>
@@ -464,7 +461,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </h2>
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
-                            </div>        
+                            </div>
                             <footer>
                                 <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
                                 <div style="clear: both"></div>
@@ -538,7 +535,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </h2>
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
-                            </div>        
+                            </div>
                             <footer>
                                 <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
                                 <div style="clear: both"></div>
