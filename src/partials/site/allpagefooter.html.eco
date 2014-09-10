@@ -1,0 +1,208 @@
+        <footer class="allpage--footer">
+            <div class="footer-promo">
+                <div class="container">
+                    <!-- content for tablet and desktop -->
+                    <div class="hidden-xs">
+                        <p class="columns-block">
+                            <a href="<%= @getUrl('/friends-forever.html') %>" class="footer-promo--title">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever-large"><use xlink:href="#i--friends-forever"></use></svg>
+                                Friends Forever
+                            </a>
+                            <a href="<%= @getUrl('/download-app.html') %>" class="footer-promo--title">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--download-the-app-large"><use xlink:href="#i--download-the-app"></use></svg>
+                                Download App
+                            </a>
+                        </p>
+                    </div>
+                    <!-- /content for tablet and desktop -->
+                    <!-- content for phone -->
+                    <div class="visible-xs">
+                        <p class="text-center">
+                            <a href="<%= @getUrl('/friends-forever.html') %>" class="footer-promo--title">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever-large"><use xlink:href="#i--friends-forever"></use></svg>
+                                Friends Forever
+                            </a>
+                        </p>
+                        <hr class="footer-promo--separator">
+                        <p>
+                            <a href="<%= @getUrl('/download-app.html') %>" class="h3 text-center footer-promo--link">Download Our App and Get $1 Free</a>
+                        </p>
+                        <p>
+                            <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
+                            <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" target="_blank" class="btn btn-gplay"></a>
+                        </p>
+                    </div>
+                    <!-- /content for phone -->
+                </div>
+            </div>
+            <nav class="footer-main">
+                <div class="container">
+                    
+                    <div class="mediablock mediablock-sm-vertical mediablock-2-to-3">
+                        <div class="mediablock--primary">
+                            <!-- content for tablet and desktop -->
+                            <div class="footer-contacts hidden-xs">
+                                <p>Send email to
+                                    <a href="http://us.qa.boss.idt.net/mailto:support@bossrevolution.com?subject=Support" class="footer-contacts--email">support@bossrevolution.com</a>
+                                </p>
+                                
+                                <p>Call Customer Assistance
+                                    <a href="tel:18008710135" class="footer-contacts--tel">1-800-871-0135</a>
+                                    
+                                </p>
+                                <p><small>24 hours a day, 7 Days a Week</small></p>
+                            </div>
+                            <!-- /content for tablet and desktop -->
+                            <!-- content for phone -->
+                            <div class="footer-contacts visible-xs">
+                                <h3 class="text-center">Help and Support</h3>
+                                
+                                <p>
+                                    <a href="tel:18008710135" class="btn btn-support">
+                                        <small class="btn-support--small">Call Customer Assistance</small>
+                                        <span class="btn-support--key">1-800-871-0135</span>
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="http://us.qa.boss.idt.net/mailto:support@bossrevolution.com?subject=Support" class="btn btn-support">
+                                        <span class="btn-support--key">Send email to support</span>
+                                    </a>
+                                </p>
+                                <p class="text-center"><small>24 hours a day, 7 Days a Week</small></p>
+                            </div>
+                            <!-- /content for phone -->
+                        </div>
+                        <div class="mediablock--secondary">
+                            
+                            <div class="columns-block footer-collapse">
+                                
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">Products</h4>
+                                    <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a href="#footer-nav-products" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                                Products
+                                                <span class="dropdown-toggle pull-right">
+                                                    <span class="btn btn-toggler">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Panel</span>
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </header>
+                                    <div id="footer-nav-products" class="panel-collapse collapse">
+                                        <ul class="nav nav-stacked">
+                                            <li><a href="<%= @getUrl('/services/international-calling.html') %>">International Calling</a></li>
+                                            <li><a href="<%= @getUrl('/services/call-me.html') %>">Call Me</a></li>
+                                            <li><a href="<%= @getUrl('/services/international-mobile-top-up.html') %>">International Mobile Top Up</a></li>
+                                            <li><a href="<%= @getUrl('/services/domestic-mobile-top-up.html') %>">Domestic Mobile Top Up</a></li>
+                                            <li><a href="<%= @getUrl('/services/money-transfer.html') %>">Money Transfer</a></li>
+                                            <li><a href="<%= @getUrl('/services/bill-pay.html') %>">Bill Pay</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">About</h4>
+                                    <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a href="#footer-nav-about" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                                About
+                                                <span class="dropdown-toggle pull-right">
+                                                    <span class="btn btn-toggler">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Panel</span>
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </header>
+                                    <div id="footer-nav-about" class="panel-collapse collapse">
+                                        <ul class="nav nav-stacked">
+                                            <li><a href="<%= @getUrl('/faq.html') %>">FAQs</a></li>
+                                            <li><a href="<%= @getUrl('/about.html') %>">About Boss Revolution</a></li>
+                                            <li><a href="<%= @getUrl('/services.html') %>">Services</a></li>
+                                            <li><a href="<%= @getUrl('/become-a-reseller.html') %>">Become a Reseller</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">Social</h4>
+                                    <div class="footer-social">
+                                        <ul class="nav nav-stacked">
+                                            <li>
+                                                <a href="http://facebook.com">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-fb"><use xlink:href="#i--social-fb"></use></svg>
+                                                    <span class="hidden-xs">Facebook</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://youtube.com">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-yt"><use xlink:href="#i--social-yt"></use></svg>
+                                                    <span class="hidden-xs">Youtube</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://twitter.com">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-tw"><use xlink:href="#i--social-tw"></use></svg>
+                                                    <span class="hidden-xs">Twitter</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://pinterest.com">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-pn"><use xlink:href="#i--social-pn"></use></svg>
+                                                    <span class="hidden-xs">Pinterest</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="footer-legal">
+
+                <div class="container">
+                    <div class="footer-collapse">
+                        <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                            <h4 class="collapse-trigger--title">
+                                <a href="#footer-legal-content" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                    Legal information
+                                    <span class="dropdown-toggle pull-right">
+                                        <span class="btn btn-toggler">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                                        </span>
+                                        <span class="sr-only">Toggle Panel</span>
+                                    </span>
+                                </a>
+                            </h4>
+                        </header>
+                        <div id="footer-legal-content" class="panel-collapse collapse">
+                            
+                            <nav class="navbar legal-nav">
+                                <p class="navbar-text navbar-left">© BOSS Revolution 2014</p>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="<%= @getUrl('/terms-and-conditions.html') %>">Terms and Conditions</a></li>
+                                    <li><a href="<%= @getUrl('/privacy-policy.html') %>">Privacy Policy</a></li>
+                                </ul>
+                            </nav>
+                        
+                            <p class="footer-legal--text">
+                                Legal lorem ipsum Styff es Simplemente el Texto de relleno de las imprentas y Archivos de texto. Lorem Ipsum ha Sido el Texto de relleno Estándar de las Industrias desde el Año 1500, desconocido sin CUANDO TOMO Una Impresora de cocina pisos y codificados párrafo HACER UN Libro de Muestras de pisos.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
