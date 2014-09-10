@@ -19,7 +19,7 @@ title: "Friends Forever"
         min-height:417px;
         padding: 180px 60px 40px 630px;
     }
-    
+
     @media (max-width: 991px) {
         .island-fiends-forever-2 {
             padding: 450px 60px 40px 60px;
@@ -52,43 +52,42 @@ title: "Friends Forever"
     </div>
 </nav>
 
-
 <div class="container">
     <article class="island island-fiends-forever-1">
         <img src="<%= @getUrl(@document.basename+"/ff-calling-home-for-free-forever.jpg") %>" alt="Imagine calling home for free FOREVER!">
     </article>
-    
+
     <article class="island island-default" id="win-win">
-    
+
         <h2 class="island--title">Win-Win</h2>
-        
+
         <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-win-win.jpg") %>" alt="Win-Win"></p>
         <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
             <p>You refer your friends and they get <strong class="brand-color">$1&nbsp;FREE</strong> in International Calls.</p>
             <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-1.png") %>" alt=""></p>
             <p>When your friends love the service and top&nbsp;up online... You get <strong class="brand-color">10% of&nbsp;the Top&nbsp;Up Amount. FREE.</strong></p>
         </div>
-    
+
     </article>
-    
+
     <article class="island island-default" id="benefits">
-    
+
         <h2 class="island--title">Benefits</h2>
-        
+
         <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-benefits.png") %>" alt="Benefits"></p>
         <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
             <p>Every time they buy online... <strong class="brand-color">YOU&nbsp;EARN MINUTES!</strong></p>
             <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-2.png") %>" alt=""></p>
             <p>And your minutes never expire... <strong class="brand-color">THEY&nbsp;ARE FOREVER!</strong></p>
         </div>
-    
+
     </article>
-    
+
     <article class="island island-default" id="earn">
-    
+
         <h2 class="island--title">Earn</h2>
         <p class="lead text-center">Let's Put It This Way:</p>
-        
+
         <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-earn.png") %>" alt="Earn"></p>
         <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
             <p>If your friends tops up <strong class="brand-color-alt">$20</strong> a month online for International Calls, <strong class="brand-color">$2&nbsp;BONUS</strong> goes directly into your account.</p>
@@ -96,14 +95,14 @@ title: "Friends Forever"
             <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-3.png") %>" alt=""></p>
             <p>You Get a <strong class="brand-color">$20&nbsp;BONUS. EACH&nbsp;MONTH. FREE.</strong></p>
         </div>
-    
+
     </article>
-    
+
     <article class="island island-fiends-forever-2">
-    
+
         <p class="lead">Invite your friends to <strong class="brand-color">Boss&nbsp;Revolution</strong> and earn <strong class="brand-color">FREE</strong> minutes. <strong class="brand-color">FOREVER.</strong></p>
-        
+
         <p><a href="" class="btn btn-primary"> Share The Love</a></p>
-    
+
     </article>
 </div>
