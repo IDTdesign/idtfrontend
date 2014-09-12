@@ -22,4 +22,49 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/forms.html') %>">Forms Example</a></li>
         </ul>
     </article>
+
+    <article class="island island-default">
+        <h1 class="island--title">$1 FREE for Calling</h1>
+        <h3 class="mimic">Join Us Now and Get $1 Free Trial for New International Calling Customers</h3>
+        <p class="lead">Nam diam lacus, ullamcorper ut sapien eu, dapibus convallis diam. Phasellus tristique tortor tellus, vel fermentum eros placerat sit amet. viverra a sed tincidunt, aliquet et!</p>
+        <div class="island island-default island-alt">
+            <div class="form-section form-inline text-center" >
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputCountry">Select Country</label>
+                    <input type="text" class="form-control-default" id="exampleInputCountry" placeholder="Select Country" value="India">
+                </div>
+                <button type="submit" class="btn btn-primary">Check Rates</button>
+            </div>
+
+            <div class="form-section">
+
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li class="active"><a href="#rates" role="tab" data-toggle="tab">Rates</a></li>
+                    <li><a href="#plans" role="tab" data-toggle="tab">Plans</a></li>
+                </ul>
+                
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="rates">
+                        <table class="table table-dotted-nowrap lead">
+                            <tr><td><span class="value">India           </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">55min</span></td></tr>
+                            <tr><td><span class="value">India Cellular  </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">55min</span></td></tr>
+                            <tr><td><span class="value">India Cellular  </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">55min</span></td></tr>
+                            <tr><td><span class="value">India Cellular  </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">55min</span></td></tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="plans">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section text-center">
+                <button class="btn btn-default">REDEEM A BR CARD</button>
+                <button class="btn btn-primary">GET A FREE TRIAL</button>
+            </div>
+
+            <p class="form-section text-center"><a href="#" class="learn-more">or learn more about services for India »</a></p>
+        </div>
+    </article>
+
 </div>
