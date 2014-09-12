@@ -42,7 +42,7 @@ $(function () {
         colNames: ["Invitation Sent To", "Send Date", "Credit Earned", "Status"],
         colModel: [
             { name: "name", align: "left", formatter: sentTo, sortable: false },
-            { name: "sendDate", width: 100, fixed: true, resizable: false, align: "left", sortable: false },
+            { name: "sendDate", width: 100, align: "left", sortable: false },
             { name: "earned", width: 90, fixed: true, resizable: false, align: "right", sortable: false },
             { name: "status", width: 120, fixed: true, resizable: false, align: "left", formatter: formatStatus, sortable: false},
         ],
