@@ -306,6 +306,41 @@
     }
 }
 
+/* btn group */
+.btn-group {
+    .clearfix;
+
+    .btn {
+        width: auto;
+        min-width: inherit;
+        font-size: (@font-size-base + 4);
+        line-height: 21px;
+
+        &.btn-default {
+            &.active {
+                background: #a10000;
+                border: none;
+                .box-shadow(@btn-primary-active-shadow);
+                color: #fff;
+                text-shadow: 0 1px 0 #950000;
+                outline:none;
+            }
+        }
+    }
+
+    &.btn-group-block {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    &.btn-group-count-3 {
+        .btn {
+            width: 33.3%;
+        }
+    }
+}
 
 /* footer support buttons */
 .btn-support {

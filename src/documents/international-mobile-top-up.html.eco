@@ -8,7 +8,7 @@ scripts: ['/scripts/jqgrid_init.js']
     <article class="island island-default">
         <div class="imtu forms">
             <form>
-                <h1 class="island--title island--title_type_h1">International <br /> Mobile Top Up</h1>
+                <h1 class="island--title island--title-size-large">International <br /> Mobile Top Up</h1>
                 <p class="explanatory">Loremus ipsumus brassmani relvolutna etc netil</p>
                 <div class="imtu--block imtu--block-details">
                 <h2 class="island--title">Enter Your Mobile Top Up Details</h2>
@@ -83,11 +83,53 @@ scripts: ['/scripts/jqgrid_init.js']
                     </div>
                 </div>
 
-                <!-- <div class="imtu--block imtu--block-amount">
+                <div class="imtu--block imtu--block-amount">
                     <h2 class="island--title">Select an Amount to Send</h2>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="forms-gray">
+                            <div class="form-group">
+                                <label class="control-label">Select an Amount:</label>
+                                <div class="btn-group btn-group-block btn-group-count-3" data-toggle="buttons">
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="amount" value="5" /> $5
+                                    </label>
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="amount" value="10" /> $10
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="amount" value="15" /> $15
+                                    </label>
+                                </div>
+                                <select class="form-control form-control-default">
+                                    <option selected="selected" disabled="disabled">Another Amounts</option>
+                                    <option>$25</option>
+                                    <option>$50</option>
+                                    <option>$75</option>
+                                    <option>$100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="dest-currency col-lg-offset-2">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <div class="plate plate-alt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                                            <use xlink:href="#i--money-transfer"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h4">Destination Currency:</strong>
+                                    <span class="curr">859.39 INR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="imtu--block imtu--block-payment">
+                <!-- <div class="imtu--block imtu--block-payment">
                     <h2 class="island--title">Select a Payment Type</h2>
                 </div> -->
 
