@@ -1,0 +1,144 @@
+---
+layout: "default"
+title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<div class="container">
+    <article class="island island-default">
+        <div class="imtu forms">
+            <form>
+                <h1 class="island--title island--title_type_h1">International <br /> Mobile Top Up</h1>
+                <p class="explanatory">Loremus ipsumus brassmani relvolutna etc netil</p>
+                <div class="imtu--block imtu--block-details">
+                <h2 class="island--title">Enter Your Mobile Top Up Details</h2>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="forms-gray">
+                            <div class="form-group">
+                                <div class="checkbox checkbox-size-big">
+                                    <input type="checkbox" id="redeem" name="redeem" />
+                                    <label for="redeem">Redeem a Top Up Card</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-10 col-xs-10">
+                                        <label class="control-label">Recipient Phone Number</label>
+                                        <div class="phone-number">(501) 456 4657 <span class="phone-number--country">India</span></div>
+                                    </div>
+                                    <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-01.png") %>" alt="" /></div>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <div class="row">
+                                    <div class="col-lg-10 col-xs-10">
+                                        <label class="control-label">Select a Carrier</label>
+                                        <select class="form-control form-control-default">
+                                          <option>BSNL</option>
+                                          <option>SNL</option>
+                                          <option>SBNL</option>
+                                          <option>NL</option>
+                                          <option>BS</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-02.png") %>" alt="" /></div>
+                                </div>
+                                <p class="help-block"><strong>Carrier Restrictions Apply.</strong> Disclaimer and ipsum dolor sit, and other interesting things. <a href="#">View Details</a></p>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox checkbox-size-small">
+                                    <input type="checkbox" id="sms-alerts" name="sms-alerts" />
+                                    <label for="sms-alerts"><strong>Allow Boss Revolution</strong> to send SMS alerts related to this carrier and country.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="spec-offer text-center">
+                            <h5>Special Offer:</h5>
+                            <span>$1 Bonus for India Top Ups on Thanksgiving!</span>
+                            <div class="form-group row">
+                                <div class="col-lg-6 col-xs-6">
+                                    <div class="spec-offer--valid">Valid <br /> 11/26/2014-11/28/2014</div>
+                                </div>
+                                <div class="col-lg-6 col-xs-6">
+                                    <button type="submit" class="btn btn-primary btn-block">Top Up Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spec-offer">
+                            <a class="spec-offer--link pull-right" href="#">Offer Conditions</a>
+                            <h5>Special Offer</h5>
+                            <div class="spec-offer--block">
+                                <img src="<%= @getUrl("/services/specc-offer-img-01.png") %>" alt="" />
+                                BSNL Top Ups <br /> to India
+                            </div>
+                            <div class="spec-offer--block">
+                                <img src="<%= @getUrl("/services/specc-offer-img-02.png") %>" alt="" />
+                                <strong>DOUBLE +5 minutes Free</strong> <br /> to call the US & Canada
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="imtu--block imtu--block-amount">
+                    <h2 class="island--title">Select an Amount to Send</h2>
+                </div>
+
+                <div class="imtu--block imtu--block-payment">
+                    <h2 class="island--title">Select a Payment Type</h2>
+                </div> -->
+
+                <div class="imtu--block imtu--block-order">
+                    <h2 class="island--title">Submit Your Order</h2>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="forms-gray">
+                            <div class="form-group row">
+                                <div class="col-lg-8 col-xs-8">
+                                    <label class="control-label control-label-size-big">Apply a promo code</label>
+                                    <input type="text" class="form-control form-control-default" name="promo" placeholder="" />
+                                </div>
+                                <div class="col-lg-4 col-xs-4">
+                                    <label class="control-label control-label-size-big">&nbsp;</label>
+                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                </div>
+                            </div>
+                            <hr class="separator separator-white" />
+                            <div class="form-group">
+                                <p class="help-block"><a href="#">Terms and Conditions:</a> Legal information ipsum dolor common figure html text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="forms-gray">
+                            <div class="order-summary">
+                                <h3>Order Summary</h3>
+                                <div class="order-summary--field">
+                                    <h5>Purchase Amount</h5>
+                                    <span>$10.00</span>
+                                    <strong>Amount Selected</strong>
+                                </div>
+                                <div class="order-summary--field">
+                                    <h5>Credit Applied</h5>
+                                    <span>$1.00</span>
+                                    <strong>Free Trial Applied</strong>
+                                </div>
+                                <div class="order-summary--total">
+                                    <h5>TOTAL FUNDS:</h5>
+                                    <span>$11.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imtu--block">
+                    <div class="col-lg-6 col-lg-offset-6 col-xs-6 col-xs-offset-6">
+                        <button type="submit" class="btn btn-success btn-block">Finish</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+</div><!--/container-->

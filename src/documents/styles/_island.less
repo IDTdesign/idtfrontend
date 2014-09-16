@@ -65,6 +65,36 @@
 
 }
 
+.island--title_type_h1 {
+    font-size: (@font-size-h1 * 2);
+    line-height: 1;
+
+    &:before,
+    &:after {
+        content: none;
+        display: none;
+    }
+}
+
+@media (max-width: @screen-xs-max ) {
+
+    .island--title_type_h1 {
+        border-bottom: none;
+    }
+
+}
+
+.explanatory {
+    font-size: @font-size-h2;
+    line-height: 1;
+    text-align: center;
+
+    + .island--title {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
 /* default theme */
 
 .island-default {

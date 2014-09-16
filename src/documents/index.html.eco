@@ -11,6 +11,7 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/friends-forever.html') %>">friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/my-account/tabs.html') %>">/my-account/tabs.html</a></li>
             <li><a href="<%= @getUrl('/international-calling.html') %>">/international-calling.html (IMTU.st1)</a></li>
+            <li><a href="<%= @getUrl('/international-mobile-top-up.html') %>">/international-mobile-top-up.html (IMTU.st2)</a></li>
         </ul>
     </article>
     <article class="island island-default">

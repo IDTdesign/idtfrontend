@@ -1,7 +1,36 @@
 /* Forms */
 .forms {
     .clearfix;
-    padding-top: 15px; //@TODO: check if this real nedded?
+    padding-top: 15px; //@TODO: check if this real needed?
+
+    .separator {
+        .clearfix;
+        margin: 0 -30px;
+        padding: 20px 0;
+        height: 10px;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 100%;
+        }
+
+        &.separator-white {
+            &:after {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-md-min) {
+
+    .separator {
+        display: none;
+        visibility: hidden;
+    }
+
 }
 
 /* default theme */
@@ -9,6 +38,13 @@
 /* 1 - labels not bold by default (bootstrap override) */
 label {
     font-weight: inherit; /* 1 */
+}
+
+/* help block */
+.help-block {
+    color: #000;
+    font-size: @font-size-small;
+    line-height: 1.2;
 }
 
 /* default field */
@@ -114,11 +150,12 @@ label {
     background-color: #fff;
     border: 1px #a7a7a7 solid;
     .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, .15));
+    color: @brand-primary-btn-dark;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
-    color: @brand-primary-btn-dark;
     font-weight: bold;
     text-align: center;
+    font-size: @font-size-base;
     line-height: 18px;
     vertical-align: middle;
 }
@@ -146,6 +183,26 @@ label {
     background-color: #ebebeb;
     opacity: 0.65;
     cursor: not-allowed;
+}
+
+.checkbox-size-big {
+    label {
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
+.checkbox-size-small {
+    label {
+        font-size: @font-size-small;
+
+        &:before {
+            height: 16px;
+            width: 16px;
+            font-size: 11px;
+            line-height: 14px;
+        }
+    }
 }
 
 /* customization for radio */
@@ -234,9 +291,15 @@ label {
     }
 }
 
+.control-label-size-big {
+    font-size: 21px;
+    font-weight: bold;
+}
+
 /* forms-gray */
 .forms-gray {
     padding: 30px 30px 15px;
+    margin: 0 0 @line-height-computed;
     background-color: @brand-alt-highlight;
     border-radius: 5px;
 
@@ -251,4 +314,12 @@ label {
         text-align: center;
         line-height: 1.25em;
     }
+}
+
+/* forms-pink */
+.forms-pink {
+    padding: 30px 30px 15px;
+    margin: 0 0 @line-height-computed;
+    background-color: @brand-primary-highlight;
+    border-radius: 5px;
 }

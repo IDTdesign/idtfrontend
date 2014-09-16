@@ -92,7 +92,7 @@ body {
 .benefits {
     margin: @line-height-computed auto; //20px auto
     border-radius: @border-radius-large;
-    background:#FFF;
+    background: #fff;
 }
 
 .benefits-type-services {
@@ -269,4 +269,164 @@ body {
         background-position: 50% 0;
     }
 
+}
+
+/* imtu blocks */
+.imtu--block {
+    .clearfix;
+    margin: @line-height-computed 0;
+
+    h2 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+.imtu--block-details {
+    .forms-gray {
+        padding: @line-height-computed;
+    }
+
+    .form-group {
+        vertical-align: bottom;
+
+        .control-label {
+            color: @gray-dark;
+            font-size: @font-size-base;
+            font-weight: bold;
+        }
+
+        .phone-number {
+            color: @brand-alt-dark;
+            font-size: (@font-size-large + 10);
+            font-weight: normal;
+            line-height: 1.2;
+        }
+
+        .phone-number--country {
+            display: block;
+            color: #000;
+            font-size: (@font-size-large + 4);
+        }
+
+        img {
+            vertical-align: bottom;
+            margin-top: 26px;
+            border: 1px transparent solid;
+            border-radius: 50%;
+        }
+    }
+
+    .spec-offer {
+        padding: 15px 20px;
+        margin: 0 0 @line-height-computed;
+        background-color: @brand-primary-highlight;
+        border-radius: 5px;
+        color: #000;
+        font-size: @font-size-h3;
+        line-height: 1.2;
+
+        h5 {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            font-size: @font-size-h2;
+            line-height: 1.25;
+        }
+
+        .spec-offer--valid {
+            color: @brand-primary;
+            font-size: @font-size-larger;
+        }
+
+        .spec-offer--link {
+            font-size: @font-size-larger;
+            margin-top: 8px;
+        }
+
+        .spec-offer--block {
+            .clearfix;
+            padding: 5px 0;
+            margin: 0;
+            color: @gray-dark;
+            font-size: @font-size-larger;
+            line-height: @line-height-base;
+
+            img {
+                float: left;
+                width: 45px;
+                height: 45px;
+                margin: 0 15px 0 0;
+                background-color: #fff;
+                border-radius: 5px;
+            }
+
+            strong {
+                color: #000;
+            }
+        }
+
+        .form-group {
+            padding-top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.imtu--block-order {
+    .order-summary {
+        h3 {
+            margin: -15px 0 10px;
+            font-size: @font-size-h2;
+            text-align: left;
+        }
+
+        .order-summary--field {
+            .clearfix;
+            margin: 0 0 14px;
+            font-size: @font-size-larger;
+            line-height: @line-height-computed;
+            border-bottom: 1px #000 dotted;
+
+            h5 {
+                padding: 0;
+                margin: 0;
+                color: #000;
+                font-size: @font-size-larger;
+            }
+
+            > span {
+                float: right;
+                background-color: #ebf0f5;
+                position: relative;
+                bottom: -4px;
+            }
+
+            > strong {
+                display: block;
+                float: left;
+                background-color: #ebf0f5;
+                position: relative;
+                bottom: -4px;
+            }
+        }
+
+        .order-summary--total {
+            .clearfix;
+            padding: 10px 0 0;
+            color: @secondary;
+            font-size: @font-size-h3;
+            font-weight: bold;
+            text-align: right;
+
+            h5 {
+                padding: 0;
+                margin: 0;
+                float: left;
+                font-size: @font-size-h3;
+                line-height: @line-height-base;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
