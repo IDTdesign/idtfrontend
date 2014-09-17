@@ -63,6 +63,7 @@
     .navbar--submenu {
         margin: 0;
         width: 100%;
+        min-width: 120px;
         padding: 10px 0;
         border-width: 0;
         border-radius: 0 0 2px 2px;
@@ -112,6 +113,7 @@
         left: 0;
         right: auto;
         z-index: (@zindex-dropdown + 1);
+        min-width: 120px;
     }
 
 }
@@ -357,8 +359,8 @@
 
 }
 
-/* uncomment if main menu doesn't fit one line on small screens */
-/*@media (max-width: @screen-sm-max) {
+/* apply if main menu doesn't fit one line on small screens */
+@media (max-width: @screen-sm-max) {
 
     .navbar-bossmain {
 
@@ -374,7 +376,7 @@
 
     }
 
-}*/
+}
 
 /* navbar-bossmain end */
 

@@ -19,6 +19,7 @@
     text-transform: uppercase;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 
+    /*
     &:link,
     &:visited {
         text-decoration: none;
@@ -31,6 +32,7 @@
         color: #FFF;
         background-color: @brand-primary-bright;
     }
+    */
 
     .i {
         width: 36px;
@@ -39,6 +41,7 @@
         vertical-align: middle;
     }
 }
+
 
 .footer-promo--link {
     color: #FFF;
@@ -61,22 +64,15 @@
     border-top: 1px solid @brand-primary-bright;
 }
 
-@media (max-width: @screen-xs-max) {
+@media (max-width: @screen-sm-max) {
 
     .footer-promo {
        border-bottom: 1px solid @brand-primary-btn-dark;
-       padding-top: 25px;
-       padding-bottom: 25px;
 
         .footer-promo--title {
             display: block;
-            padding: 10px 25px;
-            border-radius: @border-radius-base;
             font-size: @font-size-large;
-            text-shadow: none;
             line-height: 1.4;
-            background: #FFF;
-            color: @brand-primary;
 
             .i {
                 width: 20px;
@@ -84,6 +80,10 @@
                 margin-right: 10px;
                 fill: @brand-primary;
             }
+        }
+
+        .footer-promo--title + .footer-promo--title {
+            padding-top: 0;
         }
     }
 }
@@ -148,7 +148,8 @@
     }
 
     .footer-contacts--email,
-    .footer-contacts--tel {
+    .footer-contacts--tel,
+    .footer-contacts--chat {
         color: #FFF;
         display: block;
 
@@ -160,9 +161,26 @@
     }
 
     .footer-contacts--tel {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 1;
     }
+
+    .footer-contacts--chat {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .icon-block--i {
+        width: 33px;
+
+        .i {
+            width: 33px;
+        }
+    }
+}
+
+.footer-contacts--details {
+    padding-left: 53px;
 }
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
@@ -171,15 +189,26 @@
         display: table;
         width: 100%;
         table-layout: fixed;
-        padding: 0 0 25px;
-        margin: 0 0 25px;
-        border-bottom: 1px solid @brand-primary;
 
-        > p {
+        .footer-contacts--item {
             display: table-cell;
-            width: 50%;
             vertical-align: top;
         }
+
+        .icon-block--i {
+            display: block;
+        }
+
+        .icon-block--text {
+            display: block;
+            padding-left: 0px;
+        }
+    }
+
+    .footer-contacts--details {
+        padding: 0 33% 25px;
+        margin: 0 0 25px;
+        border-bottom: 1px solid @brand-primary;
     }
 }
 
