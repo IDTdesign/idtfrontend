@@ -346,7 +346,7 @@ body {
 
         .spec-offer--block {
             .clearfix;
-            padding: 5px 0;
+            padding: 6px 0;
             margin: 0;
             color: @gray-dark;
             font-size: @font-size-larger;
@@ -394,7 +394,7 @@ body {
 
         .order-summary--field {
             .clearfix;
-            margin: 0 0 14px;
+            margin: 0 0 16px;
             font-size: @font-size-larger;
             line-height: @line-height-computed;
             border-bottom: 1px #000 dotted;
@@ -437,6 +437,63 @@ body {
                 font-size: @font-size-h3;
                 line-height: @line-height-base;
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.imtu--block-payment {
+    .payment-type {
+        .tab-content {
+            margin: 0 -60px;
+            padding: 40px 60px;
+            background-color: @brand-alt-highlight;
+        }
+    }
+
+    .payment-type--card {
+        margin: -25px 0;
+
+        table {
+            width: 100%;
+
+            tr {
+                border-width: 0 0 2px;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+
+            th {
+                padding: @line-height-computed 0;
+                color: @brand-primary-dark;
+                font-size: @font-size-h3;
+            }
+
+            td {
+                padding: @line-height-computed 0;
+                font-size: @font-size-larger;
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .fake-radio-checked {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .card {
+            img {
+                float: left;
+                margin: 5px 15px 15px 0;
+            }
+
+            strong {
+                font-size: @font-size-large;
             }
         }
     }

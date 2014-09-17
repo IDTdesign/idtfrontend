@@ -11,73 +11,75 @@ scripts: ['/scripts/jqgrid_init.js']
                 <h1 class="island--title island--title-size-large">International <br /> Mobile Top Up</h1>
                 <p class="explanatory">Loremus ipsumus brassmani relvolutna etc netil</p>
                 <div class="imtu--block imtu--block-details">
-                <h2 class="island--title">Enter Your Mobile Top Up Details</h2>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="forms-gray">
-                            <div class="form-group">
-                                <div class="checkbox checkbox-size-big">
-                                    <input type="checkbox" id="redeem" name="redeem" />
-                                    <label for="redeem">Redeem a Top Up Card</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-10 col-xs-10">
-                                        <label class="control-label">Recipient Phone Number</label>
-                                        <div class="phone-number">(501) 456 4657 <span class="phone-number--country">India</span></div>
+                    <h2 class="island--title">Enter Your Mobile Top Up Details</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="forms-gray">
+                                <div class="form-group">
+                                    <div class="checkbox checkbox-size-big">
+                                        <input type="checkbox" id="redeem" name="redeem" />
+                                        <label for="redeem">Redeem a Top Up Card</label>
                                     </div>
-                                    <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-01.png") %>" alt="" /></div>
                                 </div>
-                            </div>
-                            <div class="form-group required">
-                                <div class="row">
-                                    <div class="col-lg-10 col-xs-10">
-                                        <label class="control-label">Select a Carrier</label>
-                                        <select class="form-control form-control-default">
-                                          <option>BSNL</option>
-                                          <option>SNL</option>
-                                          <option>SBNL</option>
-                                          <option>NL</option>
-                                          <option>BS</option>
-                                        </select>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-xs-10">
+                                            <label class="control-label">Recipient Phone Number</label>
+                                            <div class="phone-number">(501) 456 4657 <span class="phone-number--country">India</span></div>
+                                        </div>
+                                        <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-01.png") %>" alt="" /></div>
                                     </div>
-                                    <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-02.png") %>" alt="" /></div>
                                 </div>
-                                <p class="help-block"><strong>Carrier Restrictions Apply.</strong> Disclaimer and ipsum dolor sit, and other interesting things. <a href="#">View Details</a></p>
-                            </div>
-                            <div class="form-group">
-                                <div class="checkbox checkbox-size-small">
-                                    <input type="checkbox" id="sms-alerts" name="sms-alerts" />
-                                    <label for="sms-alerts"><strong>Allow Boss Revolution</strong> to send SMS alerts related to this carrier and country.</label>
+                                <div class="form-group required">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-xs-10">
+                                            <label class="control-label">Select a Carrier</label>
+                                            <select class="form-control form-control-default">
+                                              <option>BSNL</option>
+                                              <option>SNL</option>
+                                              <option>SBNL</option>
+                                              <option>NL</option>
+                                              <option>BS</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-02.png") %>" alt="" /></div>
+                                    </div>
+                                    <p class="help-block"><strong>Carrier Restrictions Apply.</strong> Disclaimer and ipsum dolor sit, and other interesting things. <a href="#">View Details</a></p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="spec-offer text-center">
-                            <h5>Special Offer:</h5>
-                            <span>$1 Bonus for India Top Ups on Thanksgiving!</span>
-                            <div class="form-group row">
-                                <div class="col-lg-6 col-xs-6">
-                                    <div class="spec-offer--valid">Valid <br /> 11/26/2014-11/28/2014</div>
-                                </div>
-                                <div class="col-lg-6 col-xs-6">
-                                    <button type="submit" class="btn btn-primary btn-block">Top Up Now</button>
+                                <div class="form-group">
+                                    <div class="checkbox checkbox-size-small">
+                                        <input type="checkbox" id="sms-alerts" name="sms-alerts" />
+                                        <label for="sms-alerts"><strong>Allow Boss Revolution</strong> to send SMS alerts <br /> related to this carrier and country.</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="spec-offer">
-                            <a class="spec-offer--link pull-right" href="#">Offer Conditions</a>
-                            <h5>Special Offer</h5>
-                            <div class="spec-offer--block">
-                                <img src="<%= @getUrl("/services/specc-offer-img-01.png") %>" alt="" />
-                                BSNL Top Ups <br /> to India
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="spec-offer text-center">
+                                <h5>Special Offer:</h5>
+                                <span>$1 Bonus for India Top Ups on Thanksgiving!</span>
+                                <div class="form-group row">
+                                    <div class="col-lg-6 col-xs-6">
+                                        <div class="spec-offer--valid">Valid <br /> 11/26/2014-11/28/2014</div>
+                                    </div>
+                                    <div class="col-lg-6 col-xs-6">
+                                        <button type="submit" class="btn btn-primary btn-block">Top Up Now</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="spec-offer--block">
-                                <img src="<%= @getUrl("/services/specc-offer-img-02.png") %>" alt="" />
-                                <strong>DOUBLE +5 minutes Free</strong> <br /> to call the US & Canada
+
+                            <div class="spec-offer">
+                                <a class="spec-offer--link pull-right" href="#">Offer Conditions</a>
+                                <h5>Special Offer</h5>
+                                <div class="spec-offer--block">
+                                    <img src="<%= @getUrl("/services/specc-offer-img-01.png") %>" alt="" />
+                                    BSNL Top Ups <br /> to India
+                                </div>
+                                <div class="spec-offer--block">
+                                    <img src="<%= @getUrl("/services/specc-offer-img-02.png") %>" alt="" />
+                                    <strong>DOUBLE +5 minutes Free</strong> <br /> to call the US & Canada
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,99 +87,169 @@ scripts: ['/scripts/jqgrid_init.js']
 
                 <div class="imtu--block imtu--block-amount">
                     <h2 class="island--title">Select an Amount to Send</h2>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="forms-gray">
-                            <div class="form-group">
-                                <label class="control-label">Select an Amount:</label>
-                                <div class="btn-group btn-group-block btn-group-count-3" data-toggle="buttons">
-                                    <label class="btn btn-default">
-                                        <input type="radio" name="amount" value="5" /> $5
-                                    </label>
-                                    <label class="btn btn-default active">
-                                        <input type="radio" name="amount" value="10" /> $10
-                                    </label>
-                                    <label class="btn btn-default">
-                                        <input type="radio" name="amount" value="15" /> $15
-                                    </label>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="forms-gray">
+                                <div class="form-group">
+                                    <label class="control-label">Select an Amount:</label>
+                                    <div class="btn-group btn-group-block btn-group-count-3" data-toggle="buttons">
+                                        <label class="btn btn-default">
+                                            <input type="radio" name="amount" value="5" /> $5
+                                        </label>
+                                        <label class="btn btn-default active">
+                                            <input type="radio" name="amount" value="10" /> $10
+                                        </label>
+                                        <label class="btn btn-default">
+                                            <input type="radio" name="amount" value="15" /> $15
+                                        </label>
+                                    </div>
+                                    <select class="form-control form-control-default">
+                                        <option selected="selected" disabled="disabled">Another Amounts</option>
+                                        <option>$25</option>
+                                        <option>$50</option>
+                                        <option>$75</option>
+                                        <option>$100</option>
+                                    </select>
                                 </div>
-                                <select class="form-control form-control-default">
-                                    <option selected="selected" disabled="disabled">Another Amounts</option>
-                                    <option>$25</option>
-                                    <option>$50</option>
-                                    <option>$75</option>
-                                    <option>$100</option>
-                                </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="dest-currency col-lg-offset-2">
-                            <div class="icon-block icon-block-default">
-                                <div class="icon-block--i">
-                                    <div class="plate plate-alt">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
-                                            <use xlink:href="#i--money-transfer"></use>
-                                        </svg>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="dest-currency col-lg-offset-2">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <div class="plate plate-alt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                                                <use xlink:href="#i--money-transfer"></use>
+                                            </svg>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="icon-block--text">
-                                    <strong class="h4">Destination Currency:</strong>
-                                    <span class="curr">859.39 INR</span>
+                                    <div class="icon-block--text">
+                                        <strong class="h4">Destination Currency:</strong>
+                                        <span class="curr">859.39 INR</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="imtu--block imtu--block-payment">
+                <div class="imtu--block imtu--block-payment">
                     <h2 class="island--title">Select a Payment Type</h2>
-                </div> -->
-
-                <div class="imtu--block imtu--block-order">
-                    <h2 class="island--title">Submit Your Order</h2>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="forms-gray">
-                            <div class="form-group row">
-                                <div class="col-lg-8 col-xs-8">
-                                    <label class="control-label control-label-size-big">Apply a promo code</label>
-                                    <input type="text" class="form-control form-control-default" name="promo" placeholder="" />
-                                </div>
-                                <div class="col-lg-4 col-xs-4">
-                                    <label class="control-label control-label-size-big">&nbsp;</label>
-                                    <button type="submit" class="btn btn-primary">Apply</button>
+                    <div class="payment-type">
+                        <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                            <li class="active"><a href="#pay-type-card" role="tab" data-toggle="tab">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
+                                    <use xlink:href="#i--visa-virtual"></use>
+                                </svg>
+                                Pay by Credit Card</a>
+                            </li>
+                            <li><a href="#pay-type-check" role="tab" data-toggle="tab">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
+                                    <use xlink:href="#i--bill-pay"></use>
+                                </svg>
+                                Pay by Check</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="pay-type-card">
+                                <div class="payment-type--card">
+                                    <table>
+                                        <tr>
+                                            <th colspan="2">Credit Card Information</th>
+                                            <th>Billing Information</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fake-radio fake-radio-checked">
+                                                    <span>&nbsp;</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card card-visa">
+                                                    <img src="<%= @getUrl("/services/imtu-card-visa.png") %>" alt="" />
+                                                    <strong>**** **** **** 4759</strong>
+                                                    <p>Expiration: 01/2014</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card card-info">
+                                                    <strong>Gabriella Estevez</strong>
+                                                    <p>22 Cortland st. apt 23</p>
+                                                    <p>New York, NY 11216</p>
+                                                    <p>United States</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fake-radio">
+                                                    <span>&nbsp;</span>
+                                                </div>
+                                            </td>
+                                            <td>or <a href="#">Add a New Card</a></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
-                            <hr class="separator separator-white" />
-                            <div class="form-group">
-                                <p class="help-block"><a href="#">Terms and Conditions:</a> Legal information ipsum dolor common figure html text.</p>
+                            <div  class="tab-pane" id="pay-type-check">
+                                <div class="payment-type--check">
+                                    <h2>Pay by Check</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="forms-gray">
-                            <div class="order-summary">
-                                <h3>Order Summary</h3>
-                                <div class="order-summary--field">
-                                    <h5>Purchase Amount</h5>
-                                    <span>$10.00</span>
-                                    <strong>Amount Selected</strong>
+                </div>
+
+                <div class="imtu--block imtu--block-order">
+                    <h2 class="island--title">Submit Your Order</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="forms-gray">
+                                <div class="form-group row">
+                                    <div class="col-lg-8 col-xs-8">
+                                        <label class="control-label control-label-size-big">Apply a promo code</label>
+                                        <input type="text" class="form-control form-control-default" name="promo" placeholder="" />
+                                    </div>
+                                    <div class="col-lg-4 col-xs-4">
+                                        <label class="control-label control-label-size-big">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary">Apply</button>
+                                    </div>
                                 </div>
-                                <div class="order-summary--field">
-                                    <h5>Credit Applied</h5>
-                                    <span>$1.00</span>
-                                    <strong>Free Trial Applied</strong>
+                                <hr class="separator separator-white" />
+                                <div class="form-group">
+                                    <p class="help-block"><a href="#">Terms and Conditions:</a> Legal information ipsum dolor common figure html text.</p>
                                 </div>
-                                <div class="order-summary--total">
-                                    <h5>TOTAL FUNDS:</h5>
-                                    <span>$11.00</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="forms-gray">
+                                <div class="order-summary">
+                                    <h3>Order Summary</h3>
+                                    <div class="order-summary--field">
+                                        <h5>Purchase Amount</h5>
+                                        <span>$10.00</span>
+                                        <strong>Amount Selected</strong>
+                                    </div>
+                                    <div class="order-summary--field">
+                                        <h5>Credit Applied</h5>
+                                        <span>$1.00</span>
+                                        <strong>Free Trial Applied</strong>
+                                    </div>
+                                    <div class="order-summary--total">
+                                        <h5>TOTAL FUNDS:</h5>
+                                        <span>$11.00</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="imtu--block">
-                    <div class="col-lg-6 col-lg-offset-6 col-xs-6 col-xs-offset-6">
-                        <button type="submit" class="btn btn-success btn-block">Finish</button>
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-6 col-xs-6 col-xs-offset-6">
+                            <button type="submit" class="btn btn-success btn-block">Finish</button>
+                        </div>
                     </div>
                 </div>
             </form>

@@ -770,6 +770,113 @@
     }
 }
 
+.nav-tabs-custom {
+    border: none;
+    padding-bottom: 25px;
+    margin: 0 -15px;
+
+    > li {
+        border: none;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        float: left;
+
+        a {
+            display: block;
+            height: 60px;
+            padding: 20px;
+            margin: 0 15px;
+            position: relative;
+            z-index: 1;
+            border: none;
+            border-radius: @border-radius-base;
+            background-color: @brand-alt-highlight;
+            color: @gray-dark;
+            font-size: @font-size-larger;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+            .transition(none);
+            outline: none;
+
+            .i {
+                color: @gray-dark;
+                float: left;
+            }
+
+            &:hover {
+                border: none;
+                color: @brand-primary-btn-dark;
+
+                .i {
+                    color: @brand-primary-btn-dark;
+                }
+            }
+
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                margin-left: -18px;
+                border-style: solid;
+                border-width: 17px 18px 0 18px;
+                border-color: #9d0000 transparent transparent transparent;
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                z-index: 2;
+            }
+
+            &:before {
+                border-color: #fff transparent transparent transparent;
+                bottom: -41px;
+            }
+        }
+
+        &.active {
+            a {
+                .btn-primary;
+                border: none;
+                padding: 20px;
+                .transition(none);
+
+                .i {
+                    color: #fff;
+                }
+
+                &:after,
+                &:before {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border: none;
+
+                    &:after {
+                        border-color: #cd0000 transparent transparent transparent;
+                    }
+                }
+
+                &:focus {
+                    color: #fff;
+                    border: none;
+                    .box-shadow(@btn-primary-hover-shadow);
+
+                    &:after {
+                        border-color: #a10000 transparent transparent transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* tabs modification end */
 
 /* nav panel */

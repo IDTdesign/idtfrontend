@@ -42,6 +42,7 @@ label {
 
 /* help block */
 .help-block {
+    margin-top: 10px;
     color: #000;
     font-size: @font-size-small;
     line-height: 1.2;
@@ -273,6 +274,32 @@ label {
 .radio input[type="radio"]:disabled ~ label:before {
     background-color: #ebebeb;
     cursor: not-allowed;
+}
+
+/* fake radio */
+.fake-radio {
+    width: 21px;
+    height: 21px;
+    padding: 4px;
+    position: relative;
+    border: 1px #a7a7a7 solid;
+    border-radius: 50%;
+    .box-shadow(inset 1px 1px 2px 0 rgba(0, 0, 0, .15));
+    background-color: #fff;
+
+    span {
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    &.fake-radio-checked {
+        span {
+            background-color: @brand-primary-btn-dark;
+        }
+    }
 }
 
 /* asterix on label for required fileds */
