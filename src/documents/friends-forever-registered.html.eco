@@ -112,7 +112,7 @@ td[aria-describedby*=earned] {
                 </div>
                 <div class="dyad dyad-reverse dyad-default-h dyad-1-2 dyad-sm-vertical">
                     <div class="dyad--first">
-                        <div class="form-group">
+                        <div class="form-group nowrap">
                             <a href="#" class="btn btn-transp">
                                 <i class="glyphicon glyphicon-eye-open"></i>
                                 <span>Preview</span>
