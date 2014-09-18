@@ -78,6 +78,9 @@
                     <li class="navmenu--submenuitem <%- @isActive('/services/bill-pay.html') %>">
                         <a href="<%= @getUrl('/services/bill-pay.html') %>" class="navmenu--submenulink">Bill Pay</a>
                     </li>
+                    <li class="navmenu--submenuitem <%- @isActive('/services/bill-pay.html') %>">
+                        <a href="<%= @getUrl('/services/friends-forever.html') %>" class="navmenu--submenulink">Friends Forever</a>
+                    </li>
                 </ul>
             </li>
             <li class="navmenu--item <%- @isActive('/rates.html') %>">

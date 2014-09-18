@@ -112,7 +112,7 @@
                                             <li><a href="<%= @getUrl('/services/domestic-mobile-top-up.html') %>">Domestic Mobile Top Up</a></li>
                                             <li><a href="<%= @getUrl('/services/money-transfer.html') %>">Money Transfer</a></li>
                                             <li><a href="<%= @getUrl('/services/bill-pay.html') %>">Bill Pay</a></li>
-                                            <li><a href="<%= @getUrl('/friends-forever.html') %>">Friends Forever</a></li>
+                                            <li><a href="<%= @getUrl('/services/friends-forever.html') %>">Friends Forever</a></li>
                                         </ul>
                                     </div>
                                 </nav>

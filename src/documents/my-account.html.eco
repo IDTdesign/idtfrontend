@@ -1,0 +1,563 @@
+---
+layout: "default"
+title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<div class="container">
+<style>
+    .transactions-grid {
+        margin-bottom: 10px;
+    }
+    .i--recent-transactions,
+    .i--balance {
+        fill: #fff;
+        height: 45px;
+    }
+    .transaction-type {
+        color: #878787;
+        font-size: 14px;
+    }
+</style>
+    <article class="island">
+        <h1 class="island--title">Manage Your Services</h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-justified nav-tabs-sections hidden-xs" role="tablist">
+            <li class="active">
+                <a href="#inter-calling" class="icon-txt" role="tab" data-toggle="tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                        <use xlink:href="#i--inter-calling"></use>
+                    </svg>
+                    <span class="icon-txt--text">International <br> Calling</span>
+                </a>
+            </li>
+            <li>
+                <a href="#call-me" class="icon-txt" role="tab" data-toggle="tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                        <use xlink:href="#i--call-me"></use>
+                    </svg>
+                    <span class="icon-txt--text">Call Me <br> Services</span>
+                </a>
+            </li>
+            <li>
+                <a href="#inter-mobile-top-up" class="icon-txt" role="tab" data-toggle="tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                        <use xlink:href="#i--inter-airtime-top-up"></use>
+                    </svg>
+                    <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                </a>
+            </li>
+            <li>
+                <a href="#domestic-mobile-top-up" class="icon-txt" role="tab" data-toggle="tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                        <use xlink:href="#i--domestic-airtime-top-up"></use>
+                    </svg>
+                    <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                </a>
+            </li>
+        </ul>
+    </article>
+
+    <!-- Tab panes -->
+    <div class="tab-content tab-content-xs-accordeon island island-connected island-transparent">
+
+        <article class="tab-pane fade in active" id="inter-calling">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#inter-calling-content" class="collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                                <use xlink:href="#i--inter-calling"></use>
+                            </svg>
+                            <span class="icon-txt--text">International <br> Calling</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+
+            <div id="inter-calling-content" class="panel-collapse collapse in">
+
+                <section class="island island-connected">
+                    <ul class="nav nav-pane">
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                <span class="icon-txt--text">Quick Call</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--speed-dial"><use xlink:href="#i--speed-dial"></use></svg>
+                                <span class="icon-txt--text">Speed Dial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--move-service"><use xlink:href="#i--move-service"></use></svg>
+                                <span class="icon-txt--text">Move Service</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--security-code"><use xlink:href="#i--security-code"></use></svg>
+                                <span class="icon-txt--text">Security Code</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--print-virtual-card"><use xlink:href="#i--print-virtual-card"></use></svg>
+                                <span class="icon-txt--text">Print Virtual Card</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--add-numbers"><use xlink:href="#i--add-numbers"></use></svg>
+                                <span class="icon-txt--text">Add Numbers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim"><use xlink:href="#i--unlim"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">Unlimited Plan</strong>
+                                    <span class="sub-header">to Argentina</span></span>
+                                </div>
+                            </div>
+                            <div class="popover top popover-static popover-warning">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your plan expires on June 30</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Renew Now</a>
+                            </p>
+
+                            <p class="icon-block icon-block-default">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-calling-auto-renew">Auto Renewal is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+
+                            <h3 class="mimic">Call Anywhere in the World with BOSS Relovution</h3>
+
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">$7.00 Balance</strong>
+                                    <a href="#" class="learn-more">Add Funds »</a>
+                                </div>
+                            </div>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
+                        </section>
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">$7.00 Balance</strong>
+                                    for International Calling
+                                </div>
+                            </div>
+                            <p class="x">That is equal</p>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--time"><use xlink:href="#i--time"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">25 minutes</strong>
+                                    <span class="sub-header">to Argentina</span></span>
+                                </div>
+                            </div>
+                            <div class="popover top popover-static  popover-warning">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your have low balance</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Recharge Now</a>
+                            </p>
+
+                            <p class="icon-block icon-block-default">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-calling-auto-recharge" id="inter-calling-auto-recharge">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-calling-auto-recharge">Auto Recharge is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+
+                            <h3 class="mimic">Get Unlimited Calling for a Low Monthly Price</h3>
+
+                            <p>
+                                <a href="#" class="learn-more">Learn more »</a>
+                                <br> about BOSS Revolution Unlimited Plans
+                            </p>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                        <section class="island island-condenced island-alt-bordered">
+                            <h3 class="mimic">Lorem ipsum dolor sit amet! <small><a href="#" class="learn-more">Auto Recharge »</a></small></h3>
+                        </section>
+                    </div>
+                </div>
+
+
+            </div>
+        </article><!--/inter-calling-->
+
+
+
+        <article class="tab-pane fade" id="call-me">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#call-me-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                                <use xlink:href="#i--call-me"></use>
+                            </svg>
+                            <span class="icon-txt--text">Call Me <br> Services</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="call-me-content" class="panel-collapse collapse">
+
+                <section class="island island-connected">
+                    <ul class="nav nav-pane">
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
+                                <span class="icon-txt--text">Change U.S. Phone Number</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
+                                <span class="icon-txt--text">Change Notification Number</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--share-your-number"><use xlink:href="#i--share-your-number"></use></svg>
+                                <span class="icon-txt--text">Share Your Number</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number"><use xlink:href="#i--phone-number"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">55 55 555 1234</strong>
+                                    Phone Number
+                                </div>
+                            </div>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <span class="flag flag-mx"></span>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    Monterrey / Mexico
+                                </div>
+                            </div>
+                            <div class="popover top popover-static  popover-warning">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your plan expires on June 1</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Renew Now</a>
+                            </p>
+
+                            <p class="icon-block icon-block-default">
+                                <span class="icon-block--i">
+                                    <input type="checkbox" name="inter-call-me-auto-renew" id="inter-call-me-auto-renew">
+                                </span>
+                                <span class="icon-block--text">
+                                    <label for="inter-call-me-auto-renew">Auto Renewal is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer>
+                                <button class="btn btn-flat-bordered pull-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </button>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced island-alt-bordered">
+
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+
+                </section>
+
+            </div>
+        </article><!--/call-me-->
+
+
+
+        <article class="tab-pane fade" id="inter-mobile-top-up">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#inter-mobile-top-up-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                                <use xlink:href="#i--inter-airtime-top-up"></use>
+                            </svg>
+                            <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="inter-mobile-top-up-content" class="panel-collapse collapse">
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <h3 class="mimic">Send Airtime to the Mobile Phones of Your Family and Friends Abroad</h3>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">International Recipient Phone Number</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
+                                    <button class="btn btn-primary">Send a Top Up</button>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                </section>
+
+            </div>
+        </article><!--/inter-mobile-top-up-->
+
+
+        <article class="tab-pane fade" id="domestic-mobile-top-up">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#domestic-mobile-top-up-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                                <use xlink:href="#i--domestic-airtime-top-up"></use>
+                            </svg>
+                            <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="domestic-mobile-top-up-content" class="panel-collapse collapse">
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <h3 class="mimic">Top Up Your Domestic Mobile Phone Airtime</h3>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">Mobile Phone Number to Top Up</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
+                                    <button class="btn btn-primary">Top Up Now</button>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer>
+                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                <div style="clear: both"></div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                </section>
+
+            </div>
+        </article><!--/domestic-mobile-top-up-->
+
+    </div><!--/tab-content-->
+
+
+
+
+
+
+
+  </div><!--/container-->

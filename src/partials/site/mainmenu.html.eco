@@ -51,6 +51,9 @@
                                 <li class="navbar--submenuitem <%- @isActive('/services/bill-pay.html') %>">
                                     <a href="<%= @getUrl('/services/bill-pay.html') %>" class="navbar--submenulink">Bill Pay</a>
                                 </li>
+                                <li class="navbar--submenuitem <%- @isActive('/services/bill-pay.html') %>">
+                                    <a href="<%= @getUrl('/services/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="navbar--item <%- @isActive('/rates.html') %>">
