@@ -48,6 +48,11 @@
         left: 0.5em;
         margin: 0 -100% 0 0;
     }
+
+    > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -98,7 +103,7 @@
 /* default theme */
 
 .island-default {
-    padding: 20px 60px;
+    padding: 40px 60px;
 }
 
 .island-default .island--title {
@@ -107,7 +112,7 @@
 }
 
 .island-default > .island--title:first-child {
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -162,6 +167,10 @@
 }
 
 .island-alt {
+    background-color: @brand-alt-highlight;
+}
+
+.island-alt-bright {
     background-color: @brand-alt-highlight-bright;
 }
 
@@ -171,3 +180,30 @@
 }
 
 /* island end */
+
+.island--header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #000;
+
+    .island--title {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+        font-size: 70px;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+
+    .lead {
+        font-size: 30px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}

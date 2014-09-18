@@ -131,14 +131,17 @@ module.exports = (grunt) ->
 				#formatting:
 				#   indent_size: 2
 				includedemo: true
-				cleanup: ['fill']
 			default:
+				options:
+					cleanup: ['fill']
 				files: 'src/files/icons/svg-defs.svg':['src/files/icons/svg/*.svg']
+			colored:
+				files: 'src/files/icons/svg-defs-colored.svg':['src/files/icons/svg-color/*.svg']
 
 		#convert content of svg file to string
 		svg2string:
 			icons:
-				files: ['src/files/icons/svg-icons.js':'src/files/icons/svg-defs.svg']
+				files: 'src/files/icons/svg-icons.js':['src/files/icons/svg-defs.svg','src/files/icons/svg-defs-colored.svg']
 
 		# background-image svg and png sprites
 		'svg-sprites':
@@ -158,6 +161,7 @@ module.exports = (grunt) ->
 						large: 51
 					refSize: 33
 					template: 'src/files/icons/templates/stylesheet.hbs'
+
 		replace:
 			sprites:
 				src: 'src/documents/styles/_sprite.less'

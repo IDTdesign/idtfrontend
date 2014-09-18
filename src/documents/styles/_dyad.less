@@ -1,0 +1,133 @@
+
+
+@media (min-width: @screen-sm-min) {
+
+    /* equlized with flex */
+    .dyad {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+    }
+    
+    .dyad-reverse {
+        flex-direction: row-reverse;
+    }
+    
+
+
+    /* default size */
+
+    /* 1 - trick to make content wrap */
+    .dyad--first,
+    .dyad--second {
+        flex-grow: 1;
+        width: 0; /* 1 */
+    }
+
+    /* sizes */
+
+    .dyad-3-1 > .dyad--first    { flex-grow: 3; }
+    .dyad-3-1 > .dyad--second   { flex-grow: 1; }
+
+    .dyad-2-1 > .dyad--first    { flex-grow: 2; }
+    .dyad-2-1 > .dyad--second   { flex-grow: 1; }
+
+    .dyad-3-2 > .dyad--first    { flex-grow: 3; }
+    .dyad-3-2 > .dyad--second   { flex-grow: 2; }
+
+    .dyad-1-3 > .dyad--first    { flex-grow: 1; }
+    .dyad-1-3 > .dyad--second   { flex-grow: 3; }
+
+    .dyad-1-2 > .dyad--first    { flex-grow: 1; }
+    .dyad-1-2 > .dyad--second   { flex-grow: 2; }
+
+    .dyad-2-3 > .dyad--first    { flex-grow: 2; }
+    .dyad-2-3 > .dyad--second   { flex-grow: 3; }
+}
+
+
+
+/* dyad--stretch modifier to make inner content fill the height */
+@media (min-width: @screen-sm-min) {
+    .dyad--stretch {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dyad--stretch > * {
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .dyad--stretch > *:last-child {
+        flex-grow: 1;
+    }
+}
+
+/* default padding */
+.dyad-default {
+
+    > .dyad--first,
+    > .dyad--second {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .dyad-default {
+
+        > .dyad--first,
+        > .dyad--second {
+            padding: 20px;
+        }
+    }
+}
+
+/* only horizontal padding */
+
+@media (min-width: @screen-sm-min) {
+    .dyad-default-h {
+
+        > .dyad--first,
+        > .dyad--second {
+            padding: 0 20px;
+        }
+    }
+}
+
+/* spacing only between parts */
+@media (min-width: @screen-sm-min) {
+    .dyad-gap-default:not(.dyad-reverse) {
+        
+        .dyad--first {
+            padding-right: 20px;
+        }
+
+        .dyad--second {
+            padding-left: 20px;
+        }
+    }
+
+    .dyad-gap-default.dyad-reverse {
+        
+        .dyad--first {
+            padding-left: 20px;
+        }
+
+        .dyad--second {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .dyad-sm-vertical {
+        display: block;
+
+        .dyad--first,
+        .dyad--second {
+            width: auto;
+        }
+    }
+}

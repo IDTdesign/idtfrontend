@@ -306,6 +306,36 @@
     }
 }
 
+.btn-transp {
+    color: @gray-dark;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: @brand-alt;
+    }
+}
+
+.btn-transp-primary {
+    color: @brand-primary;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: @brand-primary-bright;
+    }
+}
+
+.btn-transp,
+.btn-transp-primary {
+    
+    &:active {
+        box-shadow: none;
+    }
+}
+
 /* btn group */
 .btn-group {
     .clearfix;
@@ -372,3 +402,16 @@
 }
 
 /* footer support buttons end */
+
+
+/* social share buttons */
+.btn-share {
+    display: inline-block;
+    margin: 3px;
+
+    .i {
+        width: 57px;
+        height: 57px;    
+    }
+}
+/* social share buttons end */

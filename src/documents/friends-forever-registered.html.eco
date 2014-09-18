@@ -6,182 +6,93 @@ scripts: ['/scripts/jqgrid_init.js']
 
 <div class="container">
 <style>
-
-.mediablock > .mediablock--full{
-    padding: 40px;
-}
-.x-large{
-    font-size: 70px;
-    margin: 20px 0 5px;
-}
-.x-large + .sub-header{
-    font-size: 30px;
-    color: #000;
-}
-.sub-header a{
-    font-weight: bold;
-}
-/*  MEDIABLOCKS */;
-.mediablock-alt h2{
-    color: #004C8D;
-}
-.mediablock-condenced{
-    padding: 40px 50px 0;
-}
-.mediablock-condenced h2{
-    padding: 0;
-    margin-bottom: 25px;
-}
-.mediablock-condenced .mediablock--primary, .mediablock-condenced .mediablock--secondary{
-    vertical-align: top;
-}
-@media (max-width: 767px){
-    .mediablock-condenced{
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-@media (max-width: 991px){
-    .mediablock-condenced{
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .mediablock-condenced > .mediablock--primary, .mediablock-condenced > .mediablock--secondary{
-        display: block;
-        width: auto;
-    }
-    .mediablock-condenced > .header-group h2{
-        margin: 0;
-    }
-}
-
-/*************/
-.actions-row{
-    margin-top: 15px;
-}
-.actions-row a{
-    color: #444;
-    font-weight: bold;
-    font-size: 14px;
-    display: inline-block;
-    text-transform: uppercase;
-    margin-right: 30px;
-}
-.actions-row a:last-child{
-    margin-right: 0;
-}
-.actions-row .clear-all{
-    color: #DF0000;
-}
-.actions-row .i{
-    height: 17px;
-}
-.island--sub-header{
-    font-size: 16px;
-    margin: 0 auto;   
-    text-align: center;     
-}
-.share-row a{
-    display: inline-block;
-    margin-right: 7px;
-}
-.form-expanded{
-    padding: 0;
-}
-.form-negative{
-    margin-top: -37px;
-}
-/*HEADER GROUP*/
-.header-group{
-    font-size: 16px;
-    text-align: center;
-}
-.header-group h2{
-    overflow: hidden;
-    line-height: 1.3;
-    text-align: center;
-    color: #720000;
-    margin: 0px -50px 0 -50px;
-    position: relative;
-}
-.header-group h2:before{
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    border-bottom: 2px solid #ddd;
-}
-.header-group h2 span{
-    position: relative;
-    z-index: 5;
-    background-color: #fff;
-    padding: 0 30px;
-    display: inline-block;                 
-}
-.icon-txt > .text-right{
-    text-align: right;
-}
 /* GRID UNIQUE STYLE */
-.ui-jqgrid .ui-jqgrid-htable th:last-child, .ui-jqgrid tr.jqgrow td:last-child{
+.ui-jqgrid .ui-jqgrid-htable th:last-child,
+.ui-jqgrid tr.jqgrow td:last-child {
     padding-left: 20px;
 }
-.success, .pending{
+
+.success,
+.pending {
     font-size: 14px;
     font-weight: bold;
 }
-.success{
+
+.success {
     color: #4C861D;
 }
-.pending{
+
+.pending {
     color: #006CD8;
 }
-td[aria-describedby*=earned]{
+
+td[aria-describedby*=earned] {
     font-weight: bold !important;
 }
-.phone-num{
+
+.phone-num {
     color: #878787;
     font-size: 14px;
 }
+
+/* specifity boost */
+.custom-frinds-forever-tip.custom-frinds-forever-tip {
+    padding-top: 55px;
+}
 </style>
     <article class="island">
-        <section class="mediablock">
-            <div class="mediablock--full text-center">
-                <div class="plate plate-default plate-large">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
-                        <use xlink:href="#i--friends-forever"></use>
-                    </svg>
-                </div>
-                <h1 class="x-large">Friends Forever</h1>
-                <span class="sub-header text-capitalize">Earn free call time to call home <a href="#call">for free forever</a></span>
+        <header class="island-default island--header">
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
+                    <use xlink:href="#i--friends-forever"></use>
+                </svg>
             </div>
-        </section>
-        <section class="mediablock mediablock-alt mediablock-2-to-1 mediablock-condenced">
-            <h2 class="text-center">Invite Your Friends to Join Boss Revolution</h2>
-            <div class="mediablock--primary">
-                <div class="island island-transparent island-condenced">
-                    <div class="forms forms-default form-horizontal form-expanded form-negative">
-                        <form id="forms--example" novalidate="novalidate" class="bv-form">
+            <h1 class="island--title">Friends Forever</h1>
+            <p class="lead text-capitalize">Earn free call time to call home <a href="#call">for free forever</a></p>
+        </header>
+        <section class="island-default island-alt">
+            <h2 class="brand-alt text-center">Invite Your Friends to Join Boss Revolution</h2>
+            <form id="forms--example" novalidate="novalidate" class="bv-form">
+                <div class="dyad dyad-reverse dyad-default dyad-1-2 dyad-sm-vertical">
+                    <aside class="dyad--first custom-frinds-forever-tip">
+                        <p>
+                            <span class="plate plate-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--horn"><use xlink:href="#i--horn"></use></svg>
+                            </span>
+                        </p>
+                        <p class="description">Your invitation is valid for 14 days. Follow up with your friends to make sure they sign up.</p>
+                    </aside>
+                    <div class="dyad--second">
+                        <div class="forms forms-default form-horizontal form-expanded">
                             <div class="form-group required has-feedback">
-                                <div class="col-lg-5">
+                                <div class="col-sm-5 col-md-5 col-lg-5">
                                     <label class="control-label">First Name</label>
-                                    <input type="text" class="form-control" name="firstname" placeholder="First Name" data-bv-field="firstname"><i class="form-control-feedback" data-bv-icon-for="firstname" style="display: none;"></i>
-                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username is required and cannot be empty</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username must be more than 2 and less than 30 characters long</small><small class="help-block" data-bv-validator="regexp" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of alphabetical and number</small><small class="help-block" data-bv-validator="different" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username and password cannot be the same as each other</small></div>
-                                <div class="col-lg-7">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name" data-bv-field="firstname">
+                                    <i class="form-control-feedback" data-bv-icon-for="firstname" style="display: none;"></i>
+                                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username is required and cannot be empty</small>
+                                    <small class="help-block" data-bv-validator="stringLength" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username must be more than 2 and less than 30 characters long</small>
+                                    <small class="help-block" data-bv-validator="regexp" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of alphabetical and number</small>
+                                    <small class="help-block" data-bv-validator="different" data-bv-for="firstname" data-bv-result="NOT_VALIDATED" style="display: none;">The username and password cannot be the same as each other</small>
+                                </div>
+                                <div class="col-sm-7 col-md-7 col-lg-7">
                                     <label class="control-label">Last Name</label>
-                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name" data-bv-field="lastname"><i class="form-control-feedback" data-bv-icon-for="lastname" style="display: none;"></i>
-                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname is required and cannot be empty</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname must be more than 2 and less than 30 characters long</small><small class="help-block" data-bv-validator="regexp" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname can only consist of alphabetical and number</small><small class="help-block" data-bv-validator="different" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname and password cannot be the same as each other</small></div>
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name" data-bv-field="lastname">
+                                    <i class="form-control-feedback" data-bv-icon-for="lastname" style="display: none;"></i>
+                                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname is required and cannot be empty</small>
+                                    <small class="help-block" data-bv-validator="stringLength" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname must be more than 2 and less than 30 characters long</small>
+                                    <small class="help-block" data-bv-validator="regexp" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname can only consist of alphabetical and number</small>
+                                    <small class="help-block" data-bv-validator="different" data-bv-for="lastname" data-bv-result="NOT_VALIDATED" style="display: none;">The lastname and password cannot be the same as each other</small>
+                                </div>
                             </div>    
                             <div class="form-group has-feedback">
-                                <div class="col-lg-3">
+                                <div class="col-sm-3 col-md-4 col-lg-3">
                                     <label class="control-label">Delivery Type</label>
                                 </div>
-                                <div class="radio col-lg-2">
-                                    <input type="radio" name="delivery-type" id="type-sms" value="SMS" data-bv-field="delivery-type">
+                                <div class="radio col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="delivery-type" checked="checked" id="type-sms" value="SMS" data-bv-field="delivery-type">
                                     <label for="type-sms">SMS</label>
                                 </div>
-                                <div class="radio col-lg-2">
+                                <div class="radio col-sm-2 col-md-2 col-lg-2">
                                     <input type="radio" name="delivery-type" id="type-email" value="Email" data-bv-field="delivery-type">
                                     <label for="type-email">Email</label>
                                 </div>
@@ -190,142 +101,118 @@ td[aria-describedby*=earned]{
                             <div class="form-group has-feedback">
                                 <div class="col-lg-12">
                                     <label class="control-label">Phone Number eg. +1 917 455 4987</label>
-                                    <input type="tel" class="form-control" name="phone" placeholder="(+1) (123) (456) (7890)" data-bv-field="phone"><i class="form-control-feedback" data-bv-icon-for="phone" style="display: none;"></i>
-                                <small class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">The phone must be less than 11 characters long</small><small class="help-block" data-bv-validator="regexp" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of number</small></div>
+                                    <input type="tel" class="form-control" name="phone" placeholder="(+1) (123) (456) (7890)" data-bv-field="phone">
+                                    <i class="form-control-feedback" data-bv-icon-for="phone" style="display: none;"></i>
+                                    <small class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">The phone must be less than 11 characters long</small>
+                                    <small class="help-block" data-bv-validator="regexp" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of number</small>
+                                </div>
                             </div>
-                            <div class="form-group has-feedback"></div>
+                        </div><!-- div.form-->
+                    </div>    
+                </div>
+                <div class="dyad dyad-reverse dyad-default-h dyad-1-2 dyad-sm-vertical">
+                    <div class="dyad--first">
+                        <div class="form-group">
+                            <a href="#" class="btn btn-transp">
+                                <i class="glyphicon glyphicon-eye-open"></i>
+                                <span>Preview</span>
+                            </a>
+                            <a href="#" class="btn btn-transp-primary">
+                                <i class="glyphicon glyphicon-remove"></i>
+                                <span>Clear all</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dyad--second">
+                        <div class="forms forms-default form-horizontal form-expanded">
                             <div class="form-group">
                                 <div class="col-sm-12 text-right">
                                     <button type="submit" class="btn btn-primary">SEND INVITE</button>
                                 </div>
                             </div>
-                        </form>
-                    </div>  <!-- div.form-->          
-                </div>  <!-- island -->
-            </div>
-            <div class="mediablock--secondary">
-                <section class="island island-transparent island-condenced">
-                    <div class="icon-block icon-block-default">
-                        <div class="icon-block--i">
-                            <span class="plate plate-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--horn"><use xlink:href="#i--horn"></use></svg>
-                            </span>
-                        </div>
-                        <div class="icon-block--text">
-                            <!--strong class="h2 prominent">25 minutes</strong>
-                            <span class="sub-header">to Argentina</span-->
                         </div>
                     </div>
-                     <span class="description">Your invitation is valid for 14 days. Follow up with your friends to make sure they sign up.</span>
-                     <div class="actions-row">
-                        <a href="http://facebook.com">
-                            <i class="glyphicon glyphicon-eye-open"></i>
-                            <span>Preview</span>
-                        </a>
-                        <a href="http://facebook.com" class="clear-all">
-                            <i class="glyphicon glyphicon-remove"></i>
-                            <span>Clear all</span>
-                        </a>
-                     </div>
-                </section>
-            </div>
+                </div>
+            </form>
         </section>
-        <section class="mediablock mediablock-2-to-1 mediablock-condenced">
-            <div class="header-group">
-                <h2><span>Invite Your Friends via Facebook, <br/>Twitter or Your Own Email</span></h2>
-                <span>When your friends sign up with Boss Revolution through this link, <br/>you’ll be eligible to start earning calling rewards.</span>
-            </div>
-            <div class="mediablock--primary">
-                <div class="island island-transparent island-condenced">
+
+        <section class="island-default">
+            <h2 class="island--title"><span>Invite Your Friends via Facebook, <br/>Twitter or Your Own Email</span></h2>
+            <p class="lead text-center">When your friends sign up with Boss Revolution through this link, <br/>you’ll be eligible to start earning calling rewards.</p>
+            <div class="dyad dyad-reverse dyad-default dyad-1-2">
+                <aside class="dyad--first">
+                    <p>
+                        <span class="plate plate-alt-highlight">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever"><use xlink:href="#i--friends-forever"></use></svg>
+                        </span>
+                    </p>
+                    <p class="description">Don’t gorget to tell your friends how much money you’re saving and how easy Boss Revolution is to use.</p>
+                </aside>
+                <div class="dyad--second">
                     <div class="forms forms-default form-horizontal form-expanded">
                         <form id="forms--example" novalidate="novalidate" class="bv-form">
                             <div class="share-row">
-                                    <span class="plate plate-white plate-large">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--share-fb">
-                                            <use xlink:href="#i--share-fb"></use>
-                                        </svg>
-                                    </span>
-                                <a href="#">
-                                    <span class="plate plate-alt-highlight">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
-                                            <use xlink:href="#i--friends-forever"></use>
-                                        </svg>
-                                    </span>
+                                <a href="#" class="btn-share">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--share-fb">
+                                        <use xlink:href="#i--share-fb"></use>
+                                    </svg>
                                 </a>
-                                <a href="#">
-                                    <span class="plate plate-alt-highlight">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever">
-                                            <use xlink:href="#i--friends-forever"></use>
-                                        </svg>
-                                    </span>
+                                <a href="#" class="btn-share">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--share-tw">
+                                        <use xlink:href="#i--share-tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-share">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--share-gplus">
+                                        <use xlink:href="#i--share-gplus"></use>
+                                    </svg>
                                 </a>
                             </div>
-                            <div class="form-group required has-feedback">
+                            <div class="form-group has-feedback">
                                 <div class="col-lg-12">
                                     <label class="control-label">Just copy / paste / post the link below</label>
-                                    <input type="text" class="form-control" name="link" placeholder="your link" data-bv-field="link" value="http://brraf.com/?3186019773"><i class="form-control-feedback" data-bv-icon-for="link" style="display: none;"></i>
-                                <small class="help-block" data-bv-validator="stringLength" data-bv-for="link" data-bv-result="NOT_VALIDATED" style="display: none;">Custom message.</small><small class="help-block" data-bv-validator="regexp" data-bv-for="link" data-bv-result="NOT_VALIDATED" style="display: none;">Custom message again.</small></div>
+                                    <input type="text" class="form-control" name="link" placeholder="your link" data-bv-field="link" value="http://brraf.com/?3186019773">
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div> <!-- mediablock-primary -->
-            <div class="mediablock--secondary">
-                <section class="island island-transparent island-condenced">
-                    <div class="icon-block icon-block-default">
-                        <div class="icon-block--i">
-                            <span class="plate plate-alt-highlight">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever"><use xlink:href="#i--friends-forever"></use></svg>
-                            </span>
-                        </div>
-                        <div class="icon-block--text">
-                            <!--strong class="h2 prominent">25 minutes</strong>
-                            <span class="sub-header">to Argentina</span-->
-                        </div>
-                    </div>
-                     <span class="description">Don’t gorget to tell your freinds how much money you’re saving and how easy Boss Revolution is to use.</span>
-                 </section>
             </div>
         </section>
     </article>
-    <article class="island">
-        <section class="mediablock mediablock-2-to-1 mediablock-condenced">
-            <div class="header-group">
-                <h2><span>My Referrals</span></h2>
-                <span>These are your friends that have been sent an invitation.</span>
-            </div>
-             <div class="mediablock--primary">
-                <div class="island island-transparent island-condenced">
-                    <h2 class="island--title icon-txt">
-                        <span class="icon-txt--i">
-                            <span class="plate plate-alt plate-small">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-referals"><use xlink:href="#i--recent-referals"></use></svg>
-                            </span>
+    <article class="island island-default">
+        <h2 class="island--title"><span>My Referrals</span></h2>
+        <p class="lead text-center">These are your friends that have been sent an invitation.</p>
+        <section class="dyad dyad-reverse dyad-default dyad-1-2 dyad-sm-vertical">
+            <aside class="dyad--first">
+                <div class="icon-block icon-block-default">
+                    <div class="icon-block--i">
+                        <span class="plate plate-alt plate-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
                         </span>
-                        <span class="icon-txt--text">Resent Referrals</span>
-                        <span class="icon-txt--text text-right">
-                            <button class="btn btn-default btn-sm">Show All</button>
-                        </span>
-                    </h2>
-                    <table id="referralsGrid"></table>
-                </div>
-            </div> <!-- mediablock-primary -->
-            <div class="mediablock--secondary">
-                <section class="island island-transparent island-condenced">
-                    <div class="icon-block icon-block-default">
-                        <div class="icon-block--i">
-                            <span class="plate plate-alt plate-small">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
-                            </span>
-                        </div>
-                        <div class="icon-block--text">
-                            <strong class="h2 prominent">$5.00 Rewards</strong>
-                            <span class="sub-header">Your Total Calling Balance</span>
-                        </div>
                     </div>
-                     <span class="description small">Your invitation is valid for 14 days. If you don’t see your invitaion, it could be that your friend is already an existing Boss Revolution customer or has a pending invitation already extended to him. Follow up with your friends to try Boss Revolution.</span>
-                 </section>
+                    <div class="icon-block--text">
+                        <strong class="h3 prominent">$5.00 Rewards</strong>
+                        <p class="sub-header">Your Total Calling Balance</p>
+                    </div>
+                </div>
+                <p class="description small">Your invitation is valid for 14 days. If you don’t see your invitaion, it could be that your friend is already an existing Boss Revolution customer or has a pending invitation already extended to him. Follow up with your friends to try Boss Revolution.</p>
+            </aside>
+             <div class="dyad--second">
+                <h2 class="icon-block icon-block-vmiddle brand">
+                    <span class="icon-block--i">
+                        <span class="plate plate-alt plate-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-referals"><use xlink:href="#i--recent-referals"></use></svg>
+                        </span>
+                    </span>
+                    <span class="icon-block--text">Resent Referrals</span>
+                    <span class="icon-block--text text-right">
+                        <button class="btn btn-default btn-sm">Show All</button>
+                    </span>
+                </h2>
+                <table id="referralsGrid"></table>
             </div>
         </section>
     </article>
 </div><!--/container-->
+
