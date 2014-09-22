@@ -19,6 +19,74 @@ scripts: ['/scripts/jqgrid_init.js']
         font-size: 14px;
     }
 </style>
+
+    <div class="mediablock mediablock-equalized mediablock-3-to-2 mediablock-tiny-spacing mediablock-sm-vertical">
+        <div class="mediablock--primary">
+            <div class="island island-condenced">
+                <h3>My account</h3>
+                <h4>Hi Gabriella!</h4>
+                <div class="media">
+                    <div class="pull-left">
+                        <img class="media-object" src="http://dummyimage.com/150x150/AAA/fff" alt="Gabriela Estevez">
+                    </div>
+                    <dl class="media-body">
+                        <dt>Name</dt>
+                        <dd>
+                            Gabriela Estevez
+                        </dd>
+                        <dt>Email</dt>
+                        <dd>
+                            gabriela.estevez@hotmail.com
+                        </dd>
+                        <dt>International Calling Access Number</dt>
+                        <dd>
+                            (201) 204-1125
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="island island-condenced island-connected island-square-top island-alt">
+                <div class="icon-block icon-block-vmiddle">
+                    <div class="icon-block--i gauge">
+                        <div class="progress_line">
+                            <div style="display: inline; width: 60px; height: 60px;"><canvas width="60" height="60"></canvas><input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; text-align: center; color: rgb(204, 0, 0); padding: 0px; -webkit-appearance: none; background: none;"></div>
+                        </div>
+                    </div>
+                    <p class="icon-block--text">Your Profile is 30% Complete</p>
+                    <p class="icon-block--text text-right">
+                        <a href="#" class="btn btn-default">Edit profile</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mediablock--secondary">
+            <div class="island island-condenced bonus_block">
+                <table class="promo-eq">
+                    <tbody>
+                        <tr>
+                            <td class="promo-eq--item">
+                                <img src="<%= @getUrl('/Content/img/flags/argentina.png') %>" width="64" alt="Ag">
+                            </td>
+                            <td class="promo-eq--sep">+</td>
+                            <td class="promo-eq--item">
+                                <img src="<%= @getUrl('/Content/img/card/card-movistar-80.png') %>" width="64" alt="Movistar">
+                            </td>
+                            <td class="promo-eq--sep">=</td>
+                            <td class="promo-eq--item">
+                                <div class="promo-eq--result">
+                                    <span class="h2">2x</span><br><small>minutes</small>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Double Minutes for Argentina Movistar Top Ups This Month!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed ornare non diam eget elemen bibendum adipiscing <br> <a href="#" class="learn-more">Top Up Now »</a></p>
+                <p><em><small>Lorem Ipsum and dorum and also etce. <a href="#">Terms and Conditions</a></small></em></p>
+            </div>
+        </div>
+    </div>
+
     <article class="island">
         <h1 class="island--title">Manage Your Services</h1>
 
@@ -175,62 +243,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                     <a href="#" class="learn-more">Add Funds »</a>
                                 </div>
                             </div>
-
-                            <p><a href="#" class="btn btn-bordered">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
-                            </a></p>
-                        </section>
-
-                        <section class="island island-square-top island-condenced island-alt-bright">
-                            <div class="icon-block icon-block-default">
-                                <div class="icon-block--i">
-                                    <span class="plate plate-alt plate-small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="icon-block--text">
-                                    <strong class="h2 prominent">$7.00 Balance</strong>
-                                    for International Calling
-                                </div>
-                            </div>
-                            <p class="x">That is equal</p>
-                            <div class="icon-block icon-block-default">
-                                <div class="icon-block--i">
-                                    <span class="plate plate-alt plate-small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--time"><use xlink:href="#i--time"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="icon-block--text">
-                                    <strong class="h2 prominent">25 minutes</strong>
-                                    <span class="sub-header">to Argentina</span></span>
-                                </div>
-                            </div>
-                            <div class="popover top popover-static  popover-warning">
-                                <div class="arrow"></div>
-                                <div class="popover-content">
-                                    <p>Your have low balance</p>
-                                </div>
-                            </div>
-                            <p class="text-center">
-                                <a href="#" class="btn btn-primary">Recharge Now</a>
-                            </p>
-
-                            <p class="icon-block icon-block-default">
-                                <span class="icon-block--i">
-                                    <input type="checkbox" name="inter-calling-auto-recharge" id="inter-calling-auto-recharge">
-                                </span>
-                                <span class="icon-block--text">
-                                    <label for="inter-calling-auto-recharge">Auto Recharge is OFF.</label>
-                                    <a href="#" class="learn-more">Configure »</a>
-                                </span>
-                            </p>
-
-                            <h3 class="mimic">Get Unlimited Calling for a Low Monthly Price</h3>
-
-                            <p>
-                                <a href="#" class="learn-more">Learn more »</a>
-                                <br> about BOSS Revolution Unlimited Plans
-                            </p>
 
                             <p><a href="#" class="btn btn-bordered">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
