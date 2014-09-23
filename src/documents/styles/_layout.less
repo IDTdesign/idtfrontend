@@ -92,7 +92,7 @@ body {
 .benefits {
     margin: @line-height-computed auto; //20px auto
     border-radius: @border-radius-large;
-    background: #fff;
+    //background: #fff;
 }
 
 .benefits-type-services {
@@ -105,14 +105,11 @@ body {
         width: 33.33%;
         height: 100%;
         padding: 55px 35px 25px;
-        background-color: #e8eff5;
-        border: ((@grid-gutter-width / 2)) #fff solid;
+        background-color: fade(@paper, 20%);
+        background-clip: padding-box;
+        border: ((@grid-gutter-width / 2)) transparent solid;
         border-radius: (((@grid-gutter-width / 2)) + 5);
         position: relative;
-
-        h3 {
-            color: #000;
-        }
 
         a {
             font-weight: bold;
