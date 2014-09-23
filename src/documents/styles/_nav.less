@@ -392,6 +392,7 @@
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
+            transition: none;
 
             &:hover,
             &:focus {
@@ -450,7 +451,7 @@
 /* local navigation */
 
 .local-nav {
-    background: #FFF;
+    background: @paper;
 
     .nav-justified {
         display: table;
@@ -483,7 +484,7 @@
         padding: 25px 20px 20px;
         text-transform: uppercase;
         font-weight: bold;
-        color: #000;
+        color: @ink;
 
         &:hover,
         &:focus {
@@ -505,7 +506,7 @@
     z-index: @zindex-navbar;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(87, 87, 87, 1);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
 
     .nav--item {
