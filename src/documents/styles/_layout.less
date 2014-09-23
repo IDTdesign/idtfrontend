@@ -288,13 +288,13 @@ body {
         vertical-align: bottom;
 
         .control-label {
-            color: @gray-dark;
+            //color: @gray-dark;
             font-size: @font-size-base;
             font-weight: bold;
         }
 
         .phone-number {
-            color: @brand-alt-dark;
+            //color: @brand-alt-dark;
             font-size: (@font-size-large + 10);
             font-weight: normal;
             line-height: 1.2;
@@ -302,7 +302,7 @@ body {
 
         .phone-number--country {
             display: block;
-            color: #000;
+            //color: #000;
             font-size: (@font-size-large + 4);
         }
 
@@ -317,9 +317,10 @@ body {
     .spec-offer {
         padding: 15px 20px;
         margin: 0 0 @line-height-computed;
-        background-color: @brand-primary-highlight;
+        //background-color: @brand-primary-highlight;
+        background: fade(@ink, 20%);
         border-radius: 5px;
-        color: #000;
+        //color: #000;
         font-size: @font-size-h3;
         line-height: 1.2;
 
@@ -332,7 +333,7 @@ body {
         }
 
         .spec-offer--valid {
-            color: @brand-primary;
+            //color: @brand-primary;
             font-size: @font-size-larger;
         }
 
@@ -345,7 +346,7 @@ body {
             .clearfix;
             padding: 6px 0;
             margin: 0;
-            color: @gray-dark;
+            //color: @gray-dark;
             font-size: @font-size-larger;
             line-height: @line-height-base;
 
@@ -356,10 +357,6 @@ body {
                 margin: 0 15px 0 0;
                 background-color: #fff;
                 border-radius: 5px;
-            }
-
-            strong {
-                color: #000;
             }
         }
 
@@ -374,7 +371,7 @@ body {
     .dest-currency {
         .curr {
             display: block;
-            color: @brand-alt-dark;
+            color: @brand-alt-highlight;
             font-size: @font-size-h2;
             line-height: 1.2;
         }
@@ -394,18 +391,18 @@ body {
             margin: 0 0 16px;
             font-size: @font-size-larger;
             line-height: @line-height-computed;
-            border-bottom: 1px #000 dotted;
+            //border-bottom: 1px #000 dotted;
 
             h5 {
                 padding: 0;
                 margin: 0;
-                color: #000;
+                //color: #000;
                 font-size: @font-size-larger;
             }
 
             > span {
                 float: right;
-                background-color: #ebf0f5;
+                //background-color: #ebf0f5;
                 position: relative;
                 bottom: -4px;
             }
@@ -413,7 +410,7 @@ body {
             > strong {
                 display: block;
                 float: left;
-                background-color: #ebf0f5;
+                //background-color: #ebf0f5;
                 position: relative;
                 bottom: -4px;
             }
@@ -444,7 +441,8 @@ body {
         .tab-content {
             margin: 0 -60px;
             padding: 40px 60px;
-            background-color: @brand-alt-highlight;
+            //background-color: @brand-alt-highlight;
+            background-color: fade(@paper, 20%);
         }
     }
 
@@ -464,7 +462,7 @@ body {
 
             th {
                 padding: @line-height-computed 0;
-                color: @brand-primary-dark;
+                //color: @brand-primary-dark;
                 font-size: @font-size-h3;
             }
 
