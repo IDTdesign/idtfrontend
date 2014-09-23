@@ -256,21 +256,25 @@
 
 .btn-bordered {
     font-weight: bold;
-    background-color: #fff;
-    border-color: @brand-alt-highlight;
-    color: @gray-alt;
+    //background-color: #fff;
+    //background-color: #9d9d9d;
+    border-color: #808285;
+    color: @ink;
 
     .i {
         margin-right: 10px;
-        fill: @brand-alt-dark;
+        //fill: @brand-alt-dark;
+        fill: @brand-alt-highlight;
     }
 
     &:link {
-        color: @gray-alt;
+        //color: @gray-alt;
+        color: @ink;
     }
 
     &:hover {
-        background-color: transparent;
+        //background-color: transparent;
+        border-color: @ink;
     }
 }
 
@@ -280,28 +284,32 @@
 
 .btn-flat-bordered {
     font-weight: bold;
-    background-color: @brand-alt-highlight-bright;
-    border-color: @brand-alt-highlight;
-    color: @gray-alt;
+    //background-color: @brand-alt-highlight-bright;
+    background-color: #696969;
+    border-color: #808285;
+    color: @ink;
     text-align: left;
 
     .i {
         margin-right: 10px;
-        fill: @brand-alt-dark;
+        fill: @brand-alt-highlight-bright;
     }
 
     &:hover {
-        background-color: #FFF;
+        //background-color: #FFF;
+        border-color: @ink;
+        color: @ink;
     }
 
     &:active,
     &:focus,
     &:visited {
-        background-color: transparent;
-        border-color: @brand-alt-highlight;
+        //background-color: transparent;
+        //border-color: @brand-alt-highlight;
 
         .i {
-            fill: @gray-dark;
+            //fill: @gray-dark;
+            fill: @brand-alt-highlight
         }
     }
 }
