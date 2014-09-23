@@ -128,7 +128,7 @@ scripts: ['/scripts/jqgrid_init.js']
     </article>
 
     <!-- Tab panes -->
-    <div class="tab-content tab-content-xs-accordeon island island-connected island-transparent">
+    <div class="tab-content tab-content-xs-accordeon island-connected island-transparent">
 
         <article class="tab-pane fade in active" id="inter-calling">
             <header class="collapse-trigger visible-xs">

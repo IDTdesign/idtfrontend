@@ -2,9 +2,10 @@
 
 /* footer promo */
 .footer-promo {
-    border-bottom: 1px solid #FFF;
-    background-color: @brand-primary;
-    color: #FFF;
+    //border-bottom: 1px solid @ink;
+    //background-color: @brand-primary;
+    background-color: @paper;
+    color: @ink;
     text-align: center;
 }
 
@@ -12,7 +13,7 @@
     display: inline-block;
     margin: 0 10px;
     padding: 25px 30px;
-    color: #FFF;
+    color: @ink;
     font-size: @font-size-h3;
     line-height: 40px;
     font-weight: bold;
@@ -44,7 +45,7 @@
 
 
 .footer-promo--link {
-    color: #FFF;
+    color: @ink;
     text-transform: uppercase;
     font-size: @font-size-h3;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -67,7 +68,7 @@
 @media (max-width: @screen-sm-max) {
 
     .footer-promo {
-       border-bottom: 1px solid @brand-primary-btn-dark;
+        //border-bottom: 1px solid @brand-primary-btn-dark;
 
         .footer-promo--title {
             display: block;
@@ -94,10 +95,11 @@
 
 .footer-main {
     padding: 25px 0;
-    border-bottom: 1px solid #FFF;
-    color: #FFF;
-    background-color: @brand-primary-dark;
-    background-image: linear-gradient( to top, (darken(@brand-primary-dark, 10%)), (darken(@brand-primary, 5%)) );
+    //border-bottom: 1px solid @ink;
+    color: @ink;
+    //background-color: @brand-primary-dark;
+    //background-image: linear-gradient( to top, (darken(@brand-primary-dark, 10%)), (darken(@brand-primary, 5%)) );
+    background: @paper;
 
     .mediablock--primary,
     .mediablock--secondary {
@@ -113,7 +115,7 @@
             display: inline-block;
             padding: 0;
             font-size: (@font-size-base - 1px);
-            color: @brand-primary-highlight-dark;
+            color: @brand-alt-highlight;
 
             &:hover {
                 background: none;
@@ -144,19 +146,19 @@
 .footer-contacts {
 
     h3 {
-        color: #FFF;
+        color: @ink;
     }
 
     .footer-contacts--email,
     .footer-contacts--tel,
     .footer-contacts--chat {
-        color: #FFF;
+        color: @ink;
         display: block;
 
         &:hover,
         &:focus,
         &:active {
-            color: @brand-primary-highlight-dark;
+            color: @ink;
         }
     }
 
@@ -208,7 +210,7 @@
     .footer-contacts--details {
         padding: 0 33% 25px;
         margin: 0 0 25px;
-        border-bottom: 1px solid @brand-primary;
+        //border-bottom: 1px solid @brand-primary;
     }
 }
 
@@ -276,7 +278,7 @@
 /* legal info */
 .footer-legal {
     padding: 25px 0 35px;
-    background-color: #000;
+    background-color: @paper;
     color: @gray-alt-highlight-bright;
     font-size: @font-size-small;
 
@@ -292,7 +294,7 @@
     .nav > li > a {
         padding-top: 0;
         padding-bottom: 0;
-        color: #FFF;
+        color: @ink;
         text-shadow: none;
 
         &:hover {
@@ -389,13 +391,13 @@
                 
                 a:link .i,
                 a:visited .i {
-                    fill: #FFF;
+                    fill: @ink;
                 }
 
                 a:hover,
                 a:focus,
                 a:active {
-                    background-color: #fff;
+                    background-color: @ink;
                 }
 
                 a:hover .i,

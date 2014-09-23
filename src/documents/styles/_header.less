@@ -1,21 +1,27 @@
-@header-bg-dark: rgba(0, 0, 0, 0.5);
-@header-bg-red: #b31212;
+@header-bg-dark: #b00009;
+@header-bg-red: #b00009;
 
 .allpage--header {
 	width: 100%;
 	position: absolute;
 	z-index: 5;
 
-     .allpage--headerbg {
-         position: absolute;
-         z-index: 0;
-         top: 0;
-         left: 0;
-         right: 0;
-         width: 100%;
-         height: 50px;
-         background-color: @header-bg-dark;
-         transition: all 0.5s ease-in-out;
+    .allpage--headerbg,
+    .allpage--headerbg2 {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 50px;
+        background-color: @header-bg-dark;
+        transition: all 0.5s ease-in-out;
+    }
+    .allpage--headerbg2 {
+        top: 50px;
+        height: 60px;
+        background: @paper;
     }
 }
 
@@ -35,6 +41,9 @@
         .allpage--headerbg {
             height: 65px;
             background-color: @header-bg-red;
+        }
+        .allpage--headerbg2 {
+            display: none;
         }
     }
 

@@ -40,6 +40,7 @@
     <div class="allpage page-canvas">
         <header class="allpage--header">
             <div class="allpage--headerbg"></div>
+            <div class="allpage--headerbg2"></div>
             <div class="container">
                 <div class="logo">
                     <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
