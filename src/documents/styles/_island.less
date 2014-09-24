@@ -40,10 +40,12 @@
         vertical-align: middle;
         border-bottom: 2px solid @brand-alt-highlight;
     }
+
     &:before {
         left: -0.5em;
         margin: 0 0 0 -100%;
     }
+
     &:after {
         left: 0.5em;
         margin: 0 -100% 0 0;
@@ -63,6 +65,16 @@
 
     }
 
+}
+
+.island--title-blue {
+    color: @brand-alt-dark;
+    padding-bottom: @line-height-computed;
+
+    &:before,
+    &:after {
+        content: none;
+    }
 }
 
 .island--title-size-large {
@@ -133,6 +145,10 @@
 
 .island + .island-connected {
     margin-top: -@line-height-computed;
+}
+
+.island-connected + .island {
+    margin-top: 6px;
 }
 
 /* modifications with transparent bg */

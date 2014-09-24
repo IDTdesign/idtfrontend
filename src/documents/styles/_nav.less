@@ -770,7 +770,7 @@
     }
 }
 
-.nav-tabs-custom {
+.nav-tabs-payment {
     border: none;
     padding-bottom: 25px;
     margin: 0 -15px;
@@ -790,14 +790,14 @@
             position: relative;
             z-index: 1;
             border: none;
+            border-top: 2px transparent solid;
             border-radius: @border-radius-base;
-            background-color: @brand-alt-highlight;
+            background-color: #fff;
             color: @gray-dark;
             font-size: @font-size-larger;
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
-            text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
             .transition(none);
             outline: none;
 
@@ -808,6 +808,8 @@
 
             &:hover {
                 border: none;
+                border-top: 2px transparent solid;
+                background-color: #fff;
                 color: @brand-primary-btn-dark;
 
                 .i {
@@ -825,7 +827,7 @@
                 margin-left: -18px;
                 border-style: solid;
                 border-width: 17px 18px 0 18px;
-                border-color: #9d0000 transparent transparent transparent;
+                border-color: #fff transparent transparent transparent;
                 position: absolute;
                 bottom: -16px;
                 left: 50%;
@@ -833,8 +835,84 @@
             }
 
             &:before {
+                border-color: @brand-alt-highlight transparent transparent transparent;
+                bottom: -42px;
+            }
+        }
+
+        &.active {
+            a {
+                border: none;
+                border-top: 2px @brand-primary-btn-dark solid;
+                padding: 20px;
+                color: @brand-primary-btn-dark;
+                .transition(none);
+
+                .i {
+                    color: @brand-primary-btn-dark;
+                }
+
+                &:after,
+                &:before {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    color: @brand-primary-btn-dark;
+                    border: none;
+                    border-top: 2px @brand-primary-btn-dark solid;
+
+                    &:after {
+                        border-color: #fff transparent transparent transparent;
+                    }
+                }
+
+                &:focus {
+                    color: #fff;
+                    border: none;
+
+                    &:after {
+                        border-color: #fff transparent transparent transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-tabs-payment-red {
+
+    > li {
+
+        a {
+            border: none;
+            border-radius: @border-radius-base;
+            background-color: @brand-alt-highlight;
+            color: @gray-dark;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+            .transition(none);
+
+            .i {
+                color: @gray-dark;
+            }
+
+            &:hover {
+                border: none;
+                background-color: @brand-alt-highlight;
+                color: @brand-primary-btn-dark;
+
+                .i {
+                    color: @brand-primary-btn-dark;
+                }
+            }
+
+            &:after,
+            &:before {
+                border-color: #9d0000 transparent transparent transparent;
+            }
+
+            &:before {
                 border-color: #fff transparent transparent transparent;
-                bottom: -41px;
             }
         }
 
@@ -847,11 +925,6 @@
 
                 .i {
                     color: #fff;
-                }
-
-                &:after,
-                &:before {
-                    opacity: 1;
                 }
 
                 &:hover {
@@ -883,7 +956,6 @@
 .nav-pane {
     display: table;
     width: 100%;
-    padding: (@line-height-computed / 2) 0;
     background-color: @brand-alt-highlight-bright;
 
     &:before,
@@ -900,11 +972,21 @@
             font-size: (@font-size-base - 1px);
             font-weight: bold;
             text-transform: uppercase;
+            border-bottom: 2px @brand-alt-highlight-bright solid;
 
             &:hover,
             &:focus {
                 color: @brand-alt-dark;
                 background-color: transparent;
+                border-bottom-color: @brand-alt-highlight-bright;
+            }
+        }
+
+        &.active {
+            > a {
+                color: @brand-alt-dark;
+                background-color: @brand-alt-highlight;
+                border-bottom-color: @brand-alt-dark;
             }
         }
     }

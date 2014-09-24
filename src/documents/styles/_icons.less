@@ -173,14 +173,18 @@
     }
 
     /* 1 - visual compensation of line-height in --text block */
-    > .icon-block--text > .h2:first-child {
+    > .icon-block--text > strong:first-child {
         display: block;
         margin-top: -5px; /* 1 */
         margin-bottom: 0;
     }
 
-    /* custom rule for my-account page */
     > .icon-block--text .h3:first-child {
+        margin-top: 0;
+    }
+
+    /* custom rule for my-account page */
+    > .icon-block--text label.h3:first-child {
         margin-top: -4px; /* 1 */
     }
 }

@@ -180,7 +180,6 @@ body {
 }
 
 /* how it works */
-
 .how-works {
     .clearfix;
     margin: @line-height-computed 0;
@@ -243,6 +242,83 @@ body {
                 left: 15px;
             }
         }
+    }
+}
+
+/* Payments type */
+.payment-type {
+    .clearfix;
+    margin: 0 -60px;
+    padding: 30px 60px;
+
+    &.payment-type-bg-gray {
+        background-color: @brand-alt-highlight;
+    }
+
+    .tab-content {
+        margin: 0;
+        padding: 30px;
+        border-radius: @border-radius-base;
+        background-color: #fff;
+    }
+
+    .payment-type--title {
+        margin-bottom: (@line-height-computed + 10);
+        color: @brand-alt-dark;
+        text-align: center;
+        font-size: @font-size-h2;
+    }
+
+    .payment-type--card {
+        margin: -25px 0;
+
+        table {
+            width: 100%;
+
+            tr {
+                border-width: 0 0 2px;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+
+            th {
+                padding: @line-height-computed 0;
+                color: @brand-primary-dark;
+                font-size: @font-size-h3;
+            }
+
+            td {
+                padding: @line-height-computed 0;
+                font-size: @font-size-larger;
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .fake-radio-checked {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .card {
+            img {
+                float: left;
+                margin: 5px 15px 15px 0;
+            }
+
+            strong {
+                font-size: @font-size-large;
+            }
+        }
+    }
+
+    .payment-type--bottom {
+        padding-top: 30px;
+        text-align: center;
     }
 }
 
@@ -444,57 +520,122 @@ body {
 
 .imtu--block-payment {
     .payment-type {
+        padding-top: 0;
+
         .tab-content {
             margin: 0 -60px;
             padding: 40px 60px;
             background-color: @brand-alt-highlight;
+            border-radius: 0;
+        }
+    }
+}
+
+/* call me plan */
+.call-me-plan {
+    .clearfix;
+    padding: 0 @line-height-computed;
+
+    .call-me-plan--phones {
+        width: 270px;
+        float: right;
+
+        .h3 {
+            color: @brand-alt-dark;
         }
     }
 
-    .payment-type--card {
-        margin: -25px 0;
+    .call-me-plan--details {
+        float: left;
+    }
 
-        table {
-            width: 100%;
-
-            tr {
-                border-width: 0 0 2px;
-
-                &:last-child {
-                    border: 0;
-                }
-            }
-
-            th {
-                padding: @line-height-computed 0;
-                color: @brand-primary-dark;
-                font-size: @font-size-h3;
-            }
-
-            td {
-                padding: @line-height-computed 0;
-                font-size: @font-size-larger;
-
-                p {
-                    padding: 0;
-                    margin: 0;
-                }
-
-                .fake-radio-checked {
-                    margin-top: 5px;
-                }
-            }
+    .call-me-plan--country {
+        .icon-block--text {
+            color: @gray;
+            vertical-align: middle;
+            text-transform: uppercase;
         }
+    }
+}
 
-        .card {
-            img {
-                float: left;
-                margin: 5px 15px 15px 0;
-            }
+.plan-dates {
+    .clearfix;
+    padding: @line-height-computed;
+
+    .plan-dates--old {
+        display: inline-block;
+        width: 350px;
+        margin-right: 20px;
+        padding-top: 10px;
+
+        .icon-block--text {
+            text-align: center;
 
             strong {
-                font-size: @font-size-large;
+                display: block;
+                height: 45px;
+                margin: 0 0 5px;
+                border-radius: @border-radius-base;
+                background-color: @brand-alt-highlight;
+                color: @brand-alt-dark;
+                font-size: @font-size-h3;
+                line-height: 42px;
+                text-align: center;
+
+                &:first-child {
+                    margin: 0 0 5px;
+                }
             }
         }
     }
+
+    .plan-dates--new {
+        display: inline-block;
+        width: 350px;
+        padding-top: 10px;
+
+        .icon-block--text {
+            text-align: center;
+
+            strong {
+                display: block;
+                height: 45px;
+                margin: 0 0 5px;
+                border-radius: @border-radius-base;
+                background-color: @brand-primary-highlight-medium;
+                color: @brand-primary;
+                font-size: @font-size-h3;
+                line-height: 42px;
+                text-align: center;
+
+                &:first-child {
+                    margin: 0 0 5px;
+                }
+            }
+        }
+    }
+}
+
+.plan-payments {
+    .plan-payments--card {
+        padding: 0 @line-height-computed;
+        margin-bottom: (@line-height-computed + 10);
+
+        .plan-payments--card-number {
+            width: 270px;
+            float: right;
+            margin-left: 40px;
+
+            .icon-block--text {
+                strong {
+                    color: @brand-alt-dark;
+                }
+            }
+        }
+    }
+}
+
+.plan-button {
+    padding: @line-height-computed;
+    text-align: center;
 }
