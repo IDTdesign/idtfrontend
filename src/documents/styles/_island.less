@@ -3,7 +3,7 @@
 .island {
     margin: @line-height-computed auto; //20px auto
     border-radius: @border-radius-large;
-    background:#FFF;
+    background: @paper;
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -28,7 +28,8 @@
     overflow: hidden;
     line-height: 1.3;
     text-align: center;
-    color: @brand-primary-dark;
+    //color: @brand-primary-dark;
+    color: @ink;
 
     &:before,
     &:after {
@@ -38,7 +39,7 @@
         width: 100%;
         height: 1px;
         vertical-align: middle;
-        border-bottom: 2px solid @brand-alt-highlight;
+        border-bottom: 2px solid (fade(@brand-alt-highlight, 20%));
     }
 
     &:before {
@@ -49,6 +50,11 @@
     &:after {
         left: 0.5em;
         margin: 0 -100% 0 0;
+    }
+
+    > span {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
@@ -110,7 +116,7 @@
 /* default theme */
 
 .island-default {
-    padding: 20px 60px;
+    padding: 40px 60px;
 }
 
 .island-default .island--title {
@@ -119,7 +125,7 @@
 }
 
 .island-default > .island--title:first-child {
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -178,12 +184,55 @@
 }
 
 .island-alt {
-    background-color: @brand-alt-highlight-bright;
+    //background-color: @brand-alt-highlight;
+    background-color: fade(@paper, 70%);
+}
+
+.island .island-alt {
+    background-color: fade(@paper, 20%);
+}
+
+.island-alt-bright {
+    //background-color: @brand-alt-highlight-bright;
+    background-color: fade(@paper, 60%);
+}
+
+.island .island-alt-bright {
+    background-color: fade(@paper, 20%);
 }
 
 .island-alt-bordered {
-    background-color: @brand-alt-highlight-bright;
-    border: 10px solid #FFF;
+    //background-color: @brand-alt-highlight-bright;
+    //border: 10px solid #FFF;
+    background-color: fade(@paper, 60%);
+    border: 10px solid fade(@paper, 10%);
 }
 
 /* island end */
+
+.island--header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    //color: @ink;
+
+    .island--title {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+        font-size: 70px;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+
+    .lead {
+        font-size: 30px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}

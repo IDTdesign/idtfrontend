@@ -24,7 +24,7 @@
 </head>
 <body data-spy="scroll" data-target=".local-nav" data-offset="80">
     <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
-    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS + SVG_SVG_DEFS_COLORED;</script>
 
     <nav class="offcanvas-menu navmenu navmenu-accordeon navmenu-fixed-right" role="navigation">
         <button type="button" class="navbar-close" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
@@ -40,6 +40,7 @@
     <div class="allpage page-canvas">
         <header class="allpage--header">
             <div class="allpage--headerbg"></div>
+            <div class="allpage--headerbg2"></div>
             <div class="container">
                 <div class="logo">
                     <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
@@ -52,7 +53,7 @@
                     <ul class="nav navbar-nav navbar--list navbar--list-position-right">
                         <li class="navbar--item">
                             <a class="navbar--link dropdown-toggle" href="#" data-toggle="dropdown">
-                                <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span> US</span>
+                                <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span></span>
                                 <span class="visible-xxs">ENG</span>
                                 <span class="caret"></span>
                             </a>
@@ -71,12 +72,12 @@
                                 <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-au"></span> AU</a></li>
                             </ul>
                         </li>
-                        <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Sign In</a></li>
+                        <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Login</a></li>
                         <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
                         <li class="navbar--item visible-xs">
                             <a class="navbar-toggle" href="login.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="i i--key"><use xlink:href="#i--key"></use></svg>
-                                <span class="sr-only">Sign In or Register</span>
+                                <span class="sr-only">Login or Register</span>
                             </a>
                         </li>
                         <li class="navbar--item visible-xs">

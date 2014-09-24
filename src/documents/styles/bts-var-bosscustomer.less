@@ -7,8 +7,12 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
+@ink: #FFF; //white
+@paper: rgba(0, 0, 0, 0.5); //transparent gray
+
+
 @gray-darker:            #222222; // Almost Black
-@gray-dark:              #444444; // Dark Gray
+@gray-dark:              #4c4c4c; // Dark Gray
 @gray:                   #999999; // Pearly Light Gray
 @gray-light:             #CCCCCC; // Bright Tele Gray
 @gray-lighter:           #EEEEEE; // Smoky White Neutral
@@ -56,12 +60,12 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @ink;
 
-//** Global textual link color.
-@link-color:            @brand-alt;
-//** Link hover color set via `darken()` function.
-@link-hover-color:      @brand-alt-bright;
+//** Global textual link color. //@brand-alt
+@link-color:            lighten(@brand-alt-bright, 20%);
+//** Link hover color set via `darken()` function. //@brand-alt-bright
+@link-hover-color:      @brand-info ;
 
 
 //== Typography

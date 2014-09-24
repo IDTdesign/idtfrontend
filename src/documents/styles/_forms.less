@@ -18,7 +18,7 @@
 
         &.separator-white {
             &:after {
-                background-color: #fff;
+                //background-color: #fff;
             }
         }
     }
@@ -48,7 +48,7 @@ label {
 /* help block */
 .help-block {
     margin-top: 10px;
-    color: #000;
+    //color: #000;
     font-size: @font-size-small;
     line-height: 1.2;
 }
@@ -140,6 +140,10 @@ label {
             margin-right: -20px;
         }
     }
+}
+
+.form-expanded {
+    padding: 0;
 }
 
 /* customization for checkboxes */
@@ -332,7 +336,7 @@ label {
 .forms-gray {
     padding: 30px 30px 15px;
     margin: 0 0 @line-height-computed;
-    background-color: @brand-alt-highlight;
+    background-color: fade(@paper, 20%);
     border-radius: 5px;
 
     .form-control, .btn {
@@ -342,7 +346,7 @@ label {
 
     h3 {
         margin-bottom: 1em;
-        color: @gray-dark;
+        //color: @gray-dark;
         text-align: center;
         line-height: 1.25em;
     }
@@ -352,6 +356,6 @@ label {
 .forms-pink {
     padding: 30px 30px 15px;
     margin: 0 0 @line-height-computed;
-    background-color: @brand-primary-highlight;
+    background-color: fade(@paper, 20%);
     border-radius: 5px;
 }

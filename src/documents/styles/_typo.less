@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
     margin-top: 2.5em;
     margin-bottom: 0.4em;
-    color: @brand-primary-dark;
+    //color: @brand-primary-dark;
+    color: @ink;
 }
 
 h2, .h2 {
@@ -21,7 +22,8 @@ h2, .h2 {
 h3, .h3 {
     margin-top: 2em;
     margin-bottom: 0.57143em;
-    color: @brand-primary;
+    //color: @brand-primary;
+    color: @ink;
 }
 
 h4, .h4 {
@@ -261,8 +263,13 @@ table:not([class]) thead td {
 }
 
 /* typo classes */
-
+.lead-2 {
+    font-size: @font-size-larger;
+}
+/*
 .prominent {
+    //color: #000;
+    color: @ink;
     color: #000;
 
     small {
@@ -270,6 +277,16 @@ table:not([class]) thead td {
     }
 }
 
+.brand {
+    //color: @brand-primary-dark;
+    color: @ink;
+}
+
+.brand-alt {
+    //color: @brand-alt-dark;
+    color: @ink;
+}
+*/
 .learn-more {
     text-decoration: none;
     font-weight: bold;
@@ -281,4 +298,8 @@ table:not([class]) thead td {
 
 .mimic {
     color: inherit;
+}
+
+.nowrap {
+    white-space: nowrap;
 }

@@ -2,37 +2,16 @@
             <div class="footer-promo">
                 <div class="container">
                     <!-- content for tablet and desktop -->
-                    <div class="hidden-xs">
-                        <p class="columns-block">
-                            <a href="<%= @getUrl('/friends-forever.html') %>" class="footer-promo--title">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever-large"><use xlink:href="#i--friends-forever"></use></svg>
-                                Friends Forever
-                            </a>
-                            <a href="<%= @getUrl('/download-app.html') %>" class="footer-promo--title">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--download-the-app-large"><use xlink:href="#i--download-the-app"></use></svg>
-                                Download App
-                            </a>
+                    <div class="text-center">
+                        <p class="footer-promo--title h3">
+                            Download Our App and Get $1 Free
                         </p>
-                    </div>
-                    <!-- /content for tablet and desktop -->
-                    <!-- content for phone -->
-                    <div class="visible-xs">
-                        <p class="text-center">
-                            <a href="<%= @getUrl('/friends-forever.html') %>" class="footer-promo--title">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--friends-forever-large"><use xlink:href="#i--friends-forever"></use></svg>
-                                Friends Forever
-                            </a>
-                        </p>
-                        <hr class="footer-promo--separator">
-                        <p>
-                            <a href="<%= @getUrl('/download-app.html') %>" class="h3 text-center footer-promo--link">Download Our App and Get $1 Free</a>
-                        </p>
-                        <p>
+                        <p class="footer-promo--title">
                             <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
                             <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" target="_blank" class="btn btn-gplay"></a>
                         </p>
                     </div>
-                    <!-- /content for phone -->
+                    <!-- /content for tablet and desktop -->
                 </div>
             </div>
             <nav class="footer-main">
@@ -41,16 +20,44 @@
                     <div class="mediablock mediablock-sm-vertical mediablock-2-to-3">
                         <div class="mediablock--primary">
                             <!-- content for tablet and desktop -->
-                            <div class="footer-contacts hidden-xs">
-                                <p>Send email to
-                                    <a href="http://us.qa.boss.idt.net/mailto:support@bossrevolution.com?subject=Support" class="footer-contacts--email">support@bossrevolution.com</a>
-                                </p>
-                                
-                                <p>Call Customer Assistance
-                                    <a href="tel:18008710135" class="footer-contacts--tel">1-800-871-0135</a>
-                                    
-                                </p>
-                                <p><small>24 hours a day, 7 Days a Week</small></p>
+                            <div class="hidden-xs">
+                                <div class="footer-contacts ">
+                                    <div class="footer-contacts--item">
+                                        <div class="icon-block icon-block-default">
+                                            <p class="icon-block--i">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--email-large"><use xlink:href="#i--email"></use></svg>
+                                            </p>
+                                            <p class="icon-block--text">
+                                                Send email to
+                                                <a href="http://us.qa.boss.idt.net/mailto:support@bossrevolution.com?subject=Support" class="footer-contacts--email">support@bossrevolution.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-contacts--item">
+                                        <div class="icon-block icon-block-default">
+                                            <p class="icon-block--i">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number-large"><use xlink:href="#i--phone-number"></use></svg>
+                                            </p>
+                                            <p class="icon-block--text">
+                                                Call Customer Assistance
+                                                <span class="footer-contacts--tel">1-800-871-0135</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-contacts--item">
+                                        <div class="icon-block icon-block-default">
+                                            <p class="icon-block--i">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--chat-large"><use xlink:href="#i--chat"></use></svg>
+                                            </p>
+                                            <p class="icon-block--text">
+                                                <a href="#" class="footer-contacts--chat">Chat now</a> with a Customer Service agent
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-contacts--details">
+                                    <p><small>24 hours a day, 7 Days a Week</small></p>
+                                </div>
                             </div>
                             <!-- /content for tablet and desktop -->
                             <!-- content for phone -->
@@ -64,8 +71,13 @@
                                     </a>
                                 </p>
                                 <p>
-                                    <a href="http://us.qa.boss.idt.net/mailto:support@bossrevolution.com?subject=Support" class="btn btn-support">
+                                    <a href="mailto:support@bossrevolution.com?subject=Support" class="btn btn-support">
                                         <span class="btn-support--key">Send email to support</span>
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#" class="btn btn-support">
+                                        <span class="btn-support--key">Chat now</span><small class="btn-support--small">with a Customer Service agent</small>
                                     </a>
                                 </p>
                                 <p class="text-center"><small>24 hours a day, 7 Days a Week</small></p>
@@ -77,11 +89,11 @@
                             <div class="columns-block footer-collapse">
                                 
                                 <nav class="footer-nav">
-                                    <h4 class="footer-nav--title hidden-xs">Products</h4>
-                                    <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                    <h4 class="footer-nav--title hidden-xs">Services</h4>
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
                                         <h4 class="collapse-trigger--title">
                                             <a href="#footer-nav-products" class="collapse-trigger--link collapsed" data-toggle="collapse">
-                                                Products
+                                                Services
                                                 <span class="dropdown-toggle pull-right">
                                                     <span class="btn btn-toggler">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
@@ -91,7 +103,7 @@
                                                 </span>
                                             </a>
                                         </h4>
-                                    </header>
+                                    </div>
                                     <div id="footer-nav-products" class="panel-collapse collapse">
                                         <ul class="nav nav-stacked">
                                             <li><a href="<%= @getUrl('/services/international-calling.html') %>">International Calling</a></li>
@@ -100,13 +112,14 @@
                                             <li><a href="<%= @getUrl('/services/domestic-mobile-top-up.html') %>">Domestic Mobile Top Up</a></li>
                                             <li><a href="<%= @getUrl('/services/money-transfer.html') %>">Money Transfer</a></li>
                                             <li><a href="<%= @getUrl('/services/bill-pay.html') %>">Bill Pay</a></li>
+                                            <li><a href="<%= @getUrl('/services/friends-forever.html') %>">Friends Forever</a></li>
                                         </ul>
                                     </div>
                                 </nav>
 
                                 <nav class="footer-nav">
                                     <h4 class="footer-nav--title hidden-xs">About</h4>
-                                    <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
                                         <h4 class="collapse-trigger--title">
                                             <a href="#footer-nav-about" class="collapse-trigger--link collapsed" data-toggle="collapse">
                                                 About
@@ -119,19 +132,19 @@
                                                 </span>
                                             </a>
                                         </h4>
-                                    </header>
+                                    </div>
                                     <div id="footer-nav-about" class="panel-collapse collapse">
                                         <ul class="nav nav-stacked">
-                                            <li><a href="<%= @getUrl('/faq.html') %>">FAQs</a></li>
                                             <li><a href="<%= @getUrl('/about.html') %>">About Boss Revolution</a></li>
                                             <li><a href="<%= @getUrl('/services.html') %>">Services</a></li>
+                                            <li><a href="<%= @getUrl('/faq.html') %>">FAQs</a></li>
                                             <li><a href="<%= @getUrl('/become-a-reseller.html') %>">Become a Reseller</a></li>
                                         </ul>
                                     </div>
                                 </nav>
 
                                 <nav class="footer-nav">
-                                    <h4 class="footer-nav--title hidden-xs">Social</h4>
+                                    <h4 class="footer-nav--title hidden-xs">Connect With Us</h4>
                                     <div class="footer-social">
                                         <ul class="nav nav-stacked">
                                             <li>
@@ -143,7 +156,7 @@
                                             <li>
                                                 <a href="http://youtube.com">
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-yt"><use xlink:href="#i--social-yt"></use></svg>
-                                                    <span class="hidden-xs">Youtube</span>
+                                                    <span class="hidden-xs">YouTube</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -173,7 +186,7 @@
 
                 <div class="container">
                     <div class="footer-collapse">
-                        <header class="collapse-trigger collapse-trigger-inverse visible-xs">
+                        <div class="collapse-trigger collapse-trigger-inverse visible-xs">
                             <h4 class="collapse-trigger--title">
                                 <a href="#footer-legal-content" class="collapse-trigger--link collapsed" data-toggle="collapse">
                                     Legal information
@@ -186,7 +199,7 @@
                                     </span>
                                 </a>
                             </h4>
-                        </header>
+                        </div>
                         <div id="footer-legal-content" class="panel-collapse collapse">
                             
                             <nav class="navbar legal-nav">

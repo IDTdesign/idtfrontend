@@ -71,16 +71,23 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="dropdown-header">Additional Services</li>
                     <li class="navmenu--submenuitem <%- @isActive('/services/money-transfer.html') %>">
                         <a href="<%= @getUrl('/services/money-transfer.html') %>" class="navmenu--submenulink">Money Transfer</a>
                     </li>
                     <li class="navmenu--submenuitem <%- @isActive('/services/bill-pay.html') %>">
                         <a href="<%= @getUrl('/services/bill-pay.html') %>" class="navmenu--submenulink">Bill Pay</a>
                     </li>
+                    <li class="navmenu--submenuitem <%- @isActive('/services/bill-pay.html') %>">
+                        <a href="<%= @getUrl('/services/friends-forever.html') %>" class="navmenu--submenulink">Friends Forever</a>
+                    </li>
                 </ul>
             </li>
             <li class="navmenu--item <%- @isActive('/rates.html') %>">
                 <a href="<%= @getUrl('/rates.html') %>" class="navmenu--link">Rates</a>
+            </li>
+            <li class="navmenu--item <%- @isActive('/rates.html') %>">
+                <a href="<%= @getUrl('/download-app.html') %>" class="navmenu--link">Mobile App</a>
             </li>
             <li class="navmenu--item <%- @isActive('/support.html') %>">
                 <a href="<%= @getUrl('/support.html') %>" class="navmenu--link">Support</a>

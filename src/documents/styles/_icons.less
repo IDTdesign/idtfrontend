@@ -2,12 +2,22 @@
 @import "_flags.less";
 
 
+
 /* for inline-svg icons by default use the color of the text */
 .i {
 	display: inline-block;
     vertical-align: middle;
 	fill: currentColor; /* 1 */
+
+    [fill] {
+        fill: currentColor; /* 1 */
+    }
 }
+
+.i-colored [fill] {
+    fill: inherit;
+}
+
 
 /* 1 - remove background-image from svg tags when supporting inline-svg */
 /* 2 - fix event bubbling */
@@ -76,6 +86,11 @@
 .plate-white {
     color: @brand-alt-dark;
     background-color: #fff;
+}
+
+.plate-transp {
+    color: #FFF;
+    background-color: rgba(0,0,0,0.25);
 }
 
 .plate-large {
@@ -158,6 +173,10 @@
     > .icon-block--text {
         padding-left: 10px;
     }
+
+    .text-right {
+        text-align: right;
+    }
 }
 
 .icon-block-default {
@@ -188,5 +207,11 @@
         margin-top: -4px; /* 1 */
     }
 }
+.icon-block-vmiddle {
 
+    > .icon-block--i,
+    > .icon-block--text {
+        vertical-align: middle;
+    }
+}
 /* icon with text end */
