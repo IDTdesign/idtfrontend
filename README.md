@@ -22,11 +22,24 @@ Open http://localhost:7777/docs/
 
 ## Development
 
+### Prepare sprites
+
 ``` bash
 grunt makesprites
 
 ```
- to create sprite for icons
+to create sprite for icons
+
+### Local compiling
+
+``` bash
+docpad run --env static
+grunt development
+
+```
+
+Open console and run `docpad run --env static` to compile site.
+While running docpad open another console instance and run `grunt development` to create less files and to do other postprocessing.
 
 ## License
 

@@ -22,14 +22,14 @@ scripts: ['/scripts/jqgrid_init.js']
 
     <div class="mediablock mediablock-equalized mediablock-3-to-2 mediablock-tiny-spacing mediablock-sm-vertical">
         <div class="mediablock--primary">
-            <div class="island island-condenced">
-                <h3>My account</h3>
+            <div class="island island-condenced island-square-bottom">
+                <h1>My account</h1>
                 <h4>Hi Gabriella!</h4>
-                <div class="media">
-                    <div class="pull-left">
+                <div class="media userprofile">
+                    <div class="pull-left userprofile--image">
                         <img class="media-object" src="http://dummyimage.com/150x150/AAA/fff" alt="Gabriela Estevez">
                     </div>
-                    <dl class="media-body">
+                    <dl class="media-body userprofile--data">
                         <dt>Name</dt>
                         <dd>
                             Gabriela Estevez

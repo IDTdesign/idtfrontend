@@ -60,7 +60,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bossrevolution.css.map'
 					sourceMapFilename: 'out/styles/bossrevolution.css.map'
 				files:
-					'out/styles/bossrevolution.css': 'src/documents/styles/bossrevolution.css.less'
+					'out/styles/bossrevolution.css': 'src/files/styles/bossrevolution.css.less'
 			compileBootstrap:
 				options:
 					strictMath: true
@@ -69,7 +69,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bootstrap.css.map'
 					sourceMapFilename: 'out/styles/bootstrap.css.map'
 				files:
-					'out/styles/bootstrap.css': 'src/documents/styles/bootstrap.css.less'
+					'out/styles/bootstrap.css': 'src/files/styles/bootstrap.css.less'
 			compileBsTheme:
 				options:
 					strictMath: true
@@ -78,7 +78,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bootstrap-theme.css.map'
 					sourceMapFilename: 'out/styles/bootstrap-theme.css.map'
 				files:
-					'out/styles/bootstrap-theme.css': 'src/documents/styles/bootstrap-theme.css.less'
+					'out/styles/bootstrap-theme.css': 'src/files/styles/bootstrap-theme.css.less'
 
 		# add vendor prefixes
 		autoprefixer:
@@ -96,7 +96,7 @@ module.exports = (grunt) ->
 			bosssrc:
 				options:
 					map: true
-				src: 'src/documents/styles/*.less'
+				src: 'src/files/styles/*.less'
 			bossout:
 				options:
 					map: true
@@ -149,7 +149,7 @@ module.exports = (grunt) ->
 				options:
 					spriteElementPath: 'src/files/icons/svg'
 					spritePath: 'src/files/icons/icons-sprite.svg'
-					cssPath: 'src/documents/styles/_sprite.less'
+					cssPath: 'src/files/styles/_sprite.less'
 					previewPath: 'src/files/icons/'
 					prefix: 'i-'
 					cssSvgPrefix: '.svg '
@@ -207,6 +207,11 @@ module.exports = (grunt) ->
 				files: ['<%= docpad.out %>/**/*']
 				options:
 					livereload: true
+			less:
+				files: ['./src/files/styles/**/*.*']
+				tasks: [
+					'less'
+				]
 
 		# start server
 		connect:
@@ -269,7 +274,7 @@ module.exports = (grunt) ->
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
 	grunt.registerTask 'postprocess',   ['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'postprocess']
-	grunt.registerTask 'server',        ['connect', 'watch']
+	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run',           ['generate', 'server']
-	grunt.registerTask 'development',   ['clean:out', 'preprocess', 'shell:docpad', 'postprocess', 'connect', 'watch:less', 'watch:out']
+	grunt.registerTask 'development',   ['postprocess', 'watch:less']
 	grunt.registerTask 'default',       ['run']

@@ -146,7 +146,8 @@
 .island-connected {
     margin-top: 0;
     margin-bottom: 0;
-    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .island + .island-connected {
@@ -157,6 +158,10 @@
     margin-top: 6px;
 }
 
+.island + .island-connected.island-condenced {
+    margin-top: 0;
+}
+
 /* modifications with transparent bg */
 .island-transparent {
     background-color: transparent;
@@ -165,6 +170,11 @@
 .island-square-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.island-square-bottom {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .island-condenced {
