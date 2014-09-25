@@ -269,7 +269,6 @@ scripts: ['/scripts/jqgrid_init.js']
                                      Call History
                                 </button>
                                 <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
                             </footer>
                         </section>
                         <section class="island island-condenced island-alt-bordered">
@@ -304,10 +303,16 @@ scripts: ['/scripts/jqgrid_init.js']
                     </a>
                 </h3>
             </header>
-            <div id="call-me-content" class="panel-collapse collapse">
+            <div id="call-me-content" class="panel-collapse collapse collapse-xs-opened">
 
                 <section class="island island-connected">
                     <ul class="nav nav-pane">
+                        <li class="active">
+                            <a href="#" class="icon-txt">
+                                <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                <span class="icon-txt--text">Renewal</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="#" class="icon-txt">
                                 <svg class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
@@ -329,86 +334,193 @@ scripts: ['/scripts/jqgrid_init.js']
                     </ul>
                 </section>
 
-                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
-                    <div class="mediablock--primary">
-
-                        <section class="island island-square-top island-condenced island-alt-bright">
+                <section class="island island-default island-square-top">
+                    <h2 class="island--title island--title-alt h4">Renew your current Call Me plan for an additional 30 days</h2>
+                    <div class="call-me-plan">
+                        <div class="call-me-plan--phones">
                             <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
-                                    <span class="plate plate-alt plate-small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number"><use xlink:href="#i--phone-number"></use></svg>
+                                    <span class="plate plate-alt-highlight plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
                                     </span>
                                 </div>
                                 <div class="icon-block--text">
-                                    <strong class="h2 prominent">55 55 555 1234</strong>
-                                    Phone Number
+                                    <strong class="h3">862 216 9846</strong>
+                                    U.S. Forwarding Number
                                 </div>
                             </div>
+
                             <div class="icon-block icon-block-default">
                                 <div class="icon-block--i">
-                                    <span class="plate plate-alt plate-small">
-                                        <span class="flag flag-mx"></span>
+                                    <span class="plate plate-alt-highlight plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
                                     </span>
                                 </div>
                                 <div class="icon-block--text">
-                                    Monterrey / Mexico
+                                    <strong class="h3">862 289 6549</strong>
+                                    Notification Number
                                 </div>
                             </div>
-                            <div class="popover top popover-static  popover-warning">
-                                <div class="arrow"></div>
-                                <div class="popover-content">
-                                    <p>Your plan expires on June 1</p>
+                        </div>
+                        <div class="call-me-plan--details">
+                            <div class="call-me-plan--country">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <img src="<%= @getUrl('/Content/img/flags/mexico.png') %>" width="45" alt="Me" />
+                                    </div>
+                                    <div class="icon-block--text">
+                                        MONTERREY / MEXICO
+                                    </div>
                                 </div>
                             </div>
-                            <p class="text-center">
-                                <a href="#" class="btn btn-primary">Renew Now</a>
-                            </p>
-
-                            <p class="icon-block icon-block-default">
-                                <span class="icon-block--i">
-                                    <input type="checkbox" name="inter-call-me-auto-renew" id="inter-call-me-auto-renew">
-                                </span>
-                                <span class="icon-block--text">
-                                    <label for="inter-call-me-auto-renew">Auto Renewal is OFF.</label>
-                                    <a href="#" class="learn-more">Configure »</a>
-                                </span>
-                            </p>
-
-                            <p><a href="#" class="btn btn-bordered">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
-                            </a></p>
-                        </section>
-
+                            <div class="call-me-plan--tariff">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <span class="plate plate-alt plate-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer"><use xlink:href="#i--money-transfer"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="icon-block--text">
+                                        <strong class="h2 prominent">$9.99 <small>/month</small></strong>
+                                        Plan cost
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mediablock--secondary">
-                        <section class="island island-square-top island-condenced">
-                            <h2 class="island--title icon-txt">
-                                <span class="icon-txt--i">
+
+                    <div class="plan-dates">
+                        <h3 class="h2 text-center mimic">Your Plan Expiration Date</h3>
+                        <div class="plan-dates--old">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
                                     <span class="plate plate-alt plate-small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--local-time"><use xlink:href="#i--local-time"></use></svg>
                                     </span>
-                                </span>
-                                <span class="icon-txt--text">Resent Transactions</span>
-                            </h2>
-                            <div class="transactions-grid">
-                                <table id="testGrid"></table>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="">September 2, 2014</strong>
+                                    Old date
+                                </div>
                             </div>
-                            <footer>
-                                <button class="btn btn-flat-bordered pull-left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
-                                     Call History
-                                </button>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
-                            </footer>
-                        </section>
+                        </div>
+                        <div class="plan-dates--new">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="">October 2, 2014</strong>
+                                    New date
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <section class="island island-condenced island-alt-bordered">
+                    <div class="plan-payments">
+                        <div class="plan-payments--card">
+                            <div class="plan-payments--card-number">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <span class="plate plate-alt-highlight plate-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual"><use xlink:href="#i--visa-virtual"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="icon-block--text">
+                                        <strong class="h3">6759</strong>
+                                        Last 4 digits of card number
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The card you have on file will be used to purchase your <strong>Call Me</strong> plan.</p>
+                            <button class="update-card collapsed" data-toggle="collapse" data-target="#update-card">
+                                Update Card
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--expand">
+                                    <use xlink:href="#i--expand"></use>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--collapse">
+                                    <use xlink:href="#i--collapse"></use>
+                                </svg>
+                            </button>
+                        </div>
 
-                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                        <div id="update-card" class="collapse">
+                            <div class="payment-type payment-type-bg-gray">
+                                <h2 class="payment-type--title">Select a Payment Type</h2>
+                                <ul class="nav nav-tabs nav-tabs-payment" role="tablist">
+                                    <li class="active"><a href="#pay-type-card" role="tab" data-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
+                                            <use xlink:href="#i--visa-virtual"></use>
+                                        </svg>
+                                        Pay by Credit Card</a>
+                                    </li>
+                                    <li><a href="#pay-type-check" role="tab" data-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
+                                            <use xlink:href="#i--bill-pay"></use>
+                                        </svg>
+                                        Pay by Check</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="pay-type-card">
+                                        <div class="payment-type--card">
+                                            <table>
+                                                <tr>
+                                                    <th colspan="2">Credit Card Information</th>
+                                                    <th>Billing Information</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fake-radio fake-radio-checked">
+                                                            <span>&nbsp;</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="card card-visa">
+                                                            <img src="<%= @getUrl('/Content/img/card/card-br_online_visa.gif') %>" alt="Visa" />
+                                                            <strong>**** **** **** 4759</strong>
+                                                            <p>Expiration: 01/2014</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="card card-info">
+                                                            <strong>Gabriella Estevez</strong>
+                                                            <p>22 Cortland st. apt 23</p>
+                                                            <p>New York, NY 11216</p>
+                                                            <p>United States</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fake-radio">
+                                                            <span>&nbsp;</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>or <a href="#">Add a New Card</a></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div  class="tab-pane" id="pay-type-check">
+                                        <div class="payment-type--check">
+                                            <h2>Pay by Check</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-type--bottom">
+                                    <a href="#" class="btn btn-default">Update</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-button">
+                        <a href="#" class="btn btn-primary">Renew My Plan</a>
+                    </div>
 
                 </section>
 

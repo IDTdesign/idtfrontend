@@ -27,7 +27,11 @@ scripts: ['/scripts/jqgrid_init.js']
                                             <label class="control-label">Recipient Phone Number</label>
                                             <div class="phone-number">(501) 456 4657 <span class="phone-number--country">India</span></div>
                                         </div>
-                                        <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-01.png") %>" alt="" /></div>
+                                        <div class="col-lg-2 col-xs-2">
+                                            <div class="plate plate-img plate-rounded">
+                                                <img src="<%= @getUrl('/Content/img/flags/india.png') %>" alt="In" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group required">
@@ -42,7 +46,11 @@ scripts: ['/scripts/jqgrid_init.js']
                                               <option>BS</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-2 col-xs-2"><img src="<%= @getUrl("/services/imtu-form-control-value-02.png") %>" alt="" /></div>
+                                        <div class="col-lg-2 col-xs-2">
+                                            <div class="plate plate-img plate-rounded">
+                                                <img src="<%= @getUrl('/Content/img/card/card-bsnl.gif') %>" alt="" />
+                                            </div>
+                                        </div>
                                     </div>
                                     <p class="help-block"><strong>Carrier Restrictions Apply.</strong> Disclaimer and ipsum dolor sit, and other interesting things. <a href="#">View Details</a></p>
                                 </div>

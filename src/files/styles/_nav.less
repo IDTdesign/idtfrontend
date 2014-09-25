@@ -796,6 +796,8 @@
     }
 
     > li > a {
+        padding-top: @line-height-computed;
+        padding-bottom: @line-height-computed;
         //border-top: 1px solid @brand-alt-highlight;
         border-top: 1px solid fade(@brand-alt-highlight,10%);
         //color: @brand-primary;
@@ -867,6 +869,7 @@
             position: relative;
             z-index: 1;
             border: none;
+            border-top: 2px transparent solid;
             border-radius: @border-radius-base;
             background-color: #fff;
             color: @gray-dark;
@@ -911,7 +914,8 @@
             }
 
             &:before {
-                border-color: @brand-alt-highlight transparent transparent transparent;
+                //border-color: @brand-alt-highlight transparent transparent transparent;
+                border-color: #4b423e transparent transparent transparent;
                 bottom: -42px;
             }
         }
@@ -1032,7 +1036,6 @@
 .nav-pane {
     display: table;
     width: 100%;
-    padding: (@line-height-computed / 2) 0;
     //background-color: @brand-alt-highlight-bright;
     background-color: fade(@brand-alt-highlight-bright,20%);
 
@@ -1045,27 +1048,40 @@
         display: table-cell;
         width: 1%;
 
+        &:first-child {
+            a {
+                border-radius: 0 0 0 @border-radius-base;
+            }
+        }
+        &:last-child {
+            a {
+                border-radius: 0 0 @border-radius-base 0;
+            }
+        }
+
         > a {
             //color: @gray-alt-bright;
+            padding-top: @line-height-computed;
+            padding-bottom: @line-height-computed;
             color: @link-color;
             font-size: (@font-size-base - 1px);
             font-weight: bold;
             text-transform: uppercase;
-            border-bottom: 2px @brand-alt-highlight-bright solid;
+            border-bottom: 2px transparent solid;
 
             &:hover,
             &:focus {
                 //color: @brand-alt-dark;
                 color: @link-hover-color;
                 background-color: transparent;
-                border-bottom-color: @brand-alt-highlight-bright;
+                border-bottom-color: transparent;
             }
         }
 
         &.active {
             > a {
                 color: @brand-alt-dark;
-                background-color: @brand-alt-highlight;
+                background-color: rgba(235, 240, 245, 0.8);
                 border-bottom-color: @brand-alt-dark;
             }
         }
@@ -1080,6 +1096,17 @@
         > li {
             display: inline-block;
             width: auto;
+
+            &:first-child {
+                a {
+                    border-radius: 0;
+                }
+            }
+            &:last-child {
+                a {
+                    border-radius: 0;
+                }
+            }
         }
     }
 

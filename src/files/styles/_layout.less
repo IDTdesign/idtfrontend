@@ -246,9 +246,11 @@ body {
     .clearfix;
     margin: 0 -60px;
     padding: 30px 60px;
+    color: @gray-dark;
 
     &.payment-type-bg-gray {
-        background-color: @brand-alt-highlight;
+        //background-color: @brand-alt-highlight;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .tab-content {
@@ -260,7 +262,8 @@ body {
 
     .payment-type--title {
         margin-bottom: (@line-height-computed + 10);
-        color: @brand-alt-dark;
+        //color: @brand-alt-dark;
+        color: @ink;
         text-align: center;
         font-size: @font-size-h2;
     }
@@ -281,7 +284,8 @@ body {
 
             th {
                 padding: @line-height-computed 0;
-                color: @ink;
+                //color: @ink;
+                color: @gray-dark;
                 font-size: @font-size-h3;
             }
 
@@ -304,6 +308,7 @@ body {
             img {
                 float: left;
                 margin: 5px 15px 15px 0;
+                border-radius: @border-radius-base;
             }
 
             strong {
@@ -381,11 +386,18 @@ body {
             font-size: (@font-size-large + 4);
         }
 
-        img {
-            vertical-align: bottom;
-            margin-top: 26px;
-            border: 1px transparent solid;
-            border-radius: 50%;
+        .plate {
+            display: table-cell;
+            width: 47px;
+            height: 47px;
+            vertical-align: middle;
+            position: relative;
+            top: 26px;
+
+            img {
+                display: inline-block;
+                width: 100%;
+            }
         }
     }
 
@@ -514,6 +526,7 @@ body {
 .imtu--block-payment {
     .payment-type {
         padding-top: 0;
+        color: @ink;
 
         .tab-content {
             margin: 0 -60px;
@@ -521,6 +534,14 @@ body {
             //background-color: @brand-alt-highlight;
             background-color: fade(@paper, 20%);
             border-radius: 0;
+        }
+
+        .payment-type--card {
+            table {
+                th {
+                    color: @ink;
+                }
+            }
         }
     }
 }
@@ -535,7 +556,7 @@ body {
         float: right;
 
         .h3 {
-            color: @brand-alt-dark;
+            color: @brand-alt-highlight;
         }
     }
 
@@ -572,11 +593,6 @@ body {
                 border-radius: @border-radius-base;
                 background-color: @brand-alt-highlight;
                 color: @brand-alt-dark;
-            }
-
-            th {
-                padding: @line-height-computed 0;
-                //color: @brand-primary-dark;
                 font-size: @font-size-h3;
                 line-height: 42px;
                 text-align: center;
@@ -616,9 +632,12 @@ body {
 }
 
 .plan-payments {
+
     .plan-payments--card {
         padding: 0 @line-height-computed;
         margin-bottom: (@line-height-computed + 10);
+
+        p {margin-bottom: 5px;}
 
         .plan-payments--card-number {
             width: 270px;
@@ -627,9 +646,38 @@ body {
 
             .icon-block--text {
                 strong {
-                    color: @brand-alt-dark;
+                    color: @brand-alt-highlight;
                 }
             }
+        }
+    }
+
+    .update-card {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        color: @link-color;
+        font-size: @font-size-larger;
+        font-weight: bold;
+        outline: none;
+
+        &:hover {
+            color: @link-hover-color;
+        }
+
+        .i {
+            height: 21px;
+            width: 21px;
+            float: right;
+            margin-left: 5px;
+
+            &.i--collapse {display: block;}
+            &.i--expand {display: none;}
+        }
+
+        &.collapsed {
+            .i--collapse {display: none;}
+            .i--expand {display: block;}
         }
     }
 }
