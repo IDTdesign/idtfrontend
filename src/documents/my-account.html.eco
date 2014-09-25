@@ -49,12 +49,12 @@ scripts: ['/scripts/jqgrid_init.js']
                 <div class="icon-block icon-block-vmiddle icon-block-xxs-vertical">
                     <div class="icon-block--i gauge">
                         <div class="progress_line">
-                            <div style="display: inline; width: 60px; height: 60px;"><canvas width="60" height="60"></canvas><input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; text-align: center; color: rgb(204, 0, 0); padding: 0px; -webkit-appearance: none; background: none;"></div>
+                            <input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial">
                         </div>
                     </div>
                     <p class="icon-block--text">Your Profile is 30% Complete</p>
                     <p class="icon-block--text text-right">
-                        <a href="#" class="btn btn-default">Edit profile</a>
+                        <a href="<%= @getUrl('/my-account/update-profile.html') %>" class="btn btn-default">Edit profile</a>
                     </p>
                 </div>
             </div>
@@ -151,7 +151,7 @@ scripts: ['/scripts/jqgrid_init.js']
                 </h3>
             </header>
 
-            <div id="inter-calling-content" class="panel-collapse collapse in">
+            <div id="inter-calling-content" class="panel-collapse collapse in collapse-xs-opened">
 
                 <section class="island island-connected">
                     <ul class="nav nav-pane">
@@ -549,7 +549,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </a>
                 </h3>
             </header>
-            <div id="inter-mobile-top-up-content" class="panel-collapse collapse">
+            <div id="inter-mobile-top-up-content" class="panel-collapse collapse collapse-xs-opened">
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
@@ -623,7 +623,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </a>
                 </h3>
             </header>
-            <div id="domestic-mobile-top-up-content" class="panel-collapse collapse">
+            <div id="domestic-mobile-top-up-content" class="panel-collapse collapse collapse-xs-opened">
 
                 <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
                     <div class="mediablock--primary">
