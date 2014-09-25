@@ -43,6 +43,13 @@
 
     .dyad-2-3 > .dyad--first    { flex-grow: 2; }
     .dyad-2-3 > .dyad--second   { flex-grow: 3; }
+
+    .dyad-auto > .dyad--first,
+    .dyad-auto > .dyad--second {
+        flex-grow: 0;
+        width: auto;
+    }
+
 }
 
 
@@ -100,23 +107,47 @@
 @media (min-width: @screen-sm-min) {
     .dyad-gap-default:not(.dyad-reverse) {
         
-        .dyad--first {
+        & > .dyad--first {
             padding-right: 20px;
         }
 
-        .dyad--second {
+        & > .dyad--second {
             padding-left: 20px;
         }
     }
 
     .dyad-gap-default.dyad-reverse {
         
-        .dyad--first {
+        & > .dyad--first {
             padding-left: 20px;
         }
 
-        .dyad--second {
+        & > .dyad--second {
             padding-right: 20px;
+        }
+    }
+}
+/* spacing only between parts */
+@media (min-width: @screen-sm-min) {
+    .dyad-gap-small:not(.dyad-reverse) {
+        
+        & > .dyad--first {
+            padding-right: 10px;
+        }
+
+        & > .dyad--second {
+            padding-left: 10px;
+        }
+    }
+
+    .dyad-gap-small.dyad-reverse {
+        
+        & > .dyad--first {
+            padding-left: 10px;
+        }
+
+        & > .dyad--second {
+            padding-right: 10px;
         }
     }
 }
@@ -125,9 +156,22 @@
     .dyad-sm-vertical {
         display: block;
 
-        .dyad--first,
-        .dyad--second {
+        & > .dyad--first,
+        & > .dyad--second {
             width: auto;
         }
+
+        /* 1 - remove padding from dyad-gap-* */
+        &[class*="dyad-gap"] > .dyad--first,
+        &[class*="dyad-gap"] > .dyad--second {
+            padding-left: 0; /* 1 */
+            padding-right: 0; /* 1 */
+        }
+        
+        &.dyad-gap-default > .dyad--first {padding-bottom: 20px;}
+        &.dyad-gap-default > .dyad--second {padding-top: 20px;}
+
+        &.dyad-gap-small > .dyad--first {padding-bottom: 10px;}
+        &.dyad-gap-small > .dyad--second {padding-top: 10px;}
     }
 }
