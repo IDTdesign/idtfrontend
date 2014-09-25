@@ -20,33 +20,33 @@ scripts: ['/scripts/jqgrid_init.js']
     }
 </style>
 
-    <div class="mediablock mediablock-equalized mediablock-3-to-2 mediablock-tiny-spacing mediablock-sm-vertical">
-        <div class="mediablock--primary">
+    <div class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
+        <div class="dyad--first dyad--stretch">
             <div class="island island-condenced island-square-bottom">
                 <h1>My account</h1>
                 <h4>Hi Gabriella!</h4>
-                <div class="media userprofile">
-                    <div class="pull-left userprofile--image">
+                <div class="dyad dyad-auto dyad-gap-small userprofile">
+                    <div class="dyad--first userprofile--image">
                         <img class="media-object" src="http://dummyimage.com/150x150/AAA/fff" alt="Gabriela Estevez">
                     </div>
-                    <dl class="media-body userprofile--data">
-                        <dt>Name</dt>
-                        <dd>
+                    <dl class="dyad--second userprofile--data">
+                        <dt class="data--label">Name</dt>
+                        <dd class="data--value">
                             Gabriela Estevez
                         </dd>
-                        <dt>Email</dt>
-                        <dd>
+                        <dt class="data--label">Email</dt>
+                        <dd class="data--value">
                             gabriela.estevez@hotmail.com
                         </dd>
-                        <dt>International Calling Access Number</dt>
-                        <dd>
+                        <dt class="data--label">International Calling Access Number</dt>
+                        <dd class="data--value">
                             (201) 204-1125
                         </dd>
                     </dl>
                 </div>
             </div>
             <div class="island island-condenced island-connected island-square-top island-alt">
-                <div class="icon-block icon-block-vmiddle">
+                <div class="icon-block icon-block-vmiddle icon-block-xxs-vertical">
                     <div class="icon-block--i gauge">
                         <div class="progress_line">
                             <div style="display: inline; width: 60px; height: 60px;"><canvas width="60" height="60"></canvas><input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; text-align: center; color: rgb(204, 0, 0); padding: 0px; -webkit-appearance: none; background: none;"></div>
@@ -59,7 +59,7 @@ scripts: ['/scripts/jqgrid_init.js']
                 </div>
             </div>
         </div>
-        <div class="mediablock--secondary">
+        <div class="dyad--second dyad--stretch">
             <div class="island island-condenced bonus_block">
                 <table class="promo-eq">
                     <tbody>
