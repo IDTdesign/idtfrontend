@@ -334,7 +334,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </ul>
                 </section>
 
-                <section class="island island-default island-square-top">
+                <section class="island island-square-top">
                     <h2 class="island--title island--title-alt h4">Renew your current Call Me plan for an additional 30 days</h2>
                     <div class="call-me-plan">
                         <div class="call-me-plan--phones">
