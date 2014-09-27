@@ -645,4 +645,28 @@ Both inline SVG and background-image icons has PNG degradation for browsers that
             </div>
         </th>
     </tr>
+    <tr style="background-image: url('../../img/bg-small.jpg')">
+        <td class="demo-preview"><code>.plate-transp-white</code></td>
+        <td class="demo-preview">
+            <div class="plate plate-transp-white plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <td class="demo-preview">
+            <div class="plate plate-transp-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </td>
+        <th class="demo-preview">
+            <div class="plate plate-transp-white plate-small">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                    <use xlink:href="#i--inter-calling"></use>
+                </svg>
+            </div>
+        </th>
+    </tr>
 </table>
