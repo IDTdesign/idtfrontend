@@ -6,6 +6,14 @@
 
     /* 1 - show all tabs on small screens */
     .tab-content-xs-accordeon {
+        margin-left: -((@grid-gutter-width / 2));
+        margin-right: -((@grid-gutter-width / 2));
+
+        .island {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         > .tab-pane {
             display: block; /* 1 */
             opacity: 1;
@@ -41,6 +49,13 @@
         font-weight: bold;
         display: block;
         text-decoration: none;
+        color: @brand-primary-bright;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: @brand-primary-dark;
+        }
     }
 }
 

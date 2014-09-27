@@ -38,6 +38,15 @@ h6, .h6 {
     margin-bottom: 1em;
 }
 
+@media (max-width: @screen-xs-max) {
+    h1, .h1 {
+        color: @brand-primary-dark;
+    }
+    h3, .h3 {
+        color: @brand-primary;
+    }
+}
+
 /* double headers */
 h1 + h2,
 h2 + h3,
@@ -265,27 +274,28 @@ table:not([class]) thead td {
 .lead-2 {
     font-size: @font-size-larger;
 }
-/*
-.prominent {
-    //color: #000;
-    color: @ink;
-    color: #000;
-
-    small {
+@media (max-width: @screen-xs-max) {
+    .prominent {
+        //color: #000;
+        color: @ink;
         color: #000;
+
+        small {
+            color: #000;
+        }
+    }
+
+    .brand {
+        //color: @brand-primary-dark;
+        color: @ink;
+    }
+
+    .brand-alt {
+        //color: @brand-alt-dark;
+        color: @ink;
     }
 }
 
-.brand {
-    //color: @brand-primary-dark;
-    color: @ink;
-}
-
-.brand-alt {
-    //color: @brand-alt-dark;
-    color: @ink;
-}
-*/
 .learn-more {
     text-decoration: none;
     font-weight: bold;
