@@ -39,3 +39,126 @@
         line-height: 1;
     }
 }
+
+.promotions {
+    background-color: @brand-primary-btn-dark;
+    color: @ink;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-size: @font-size-larger;
+    
+    .item {
+        min-height: 215px;
+        padding: 40px 80px 70px;
+
+        @media (max-width: @screen-xs-max) {
+            padding: 20px 40px 70px;
+        }
+    }
+}
+
+.promo-meetboss {
+    position: relative;
+    margin-bottom: -@line-height-computed;
+    background-color: fade(@paper, 35%);
+    color: @ink;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+    .item {
+        min-height: 215px;
+        padding: 100px 80px 70px;
+
+        @media (max-width: @screen-xs-max) {
+            padding: 100px 40px 70px;
+        }
+    }
+
+    .carousel-default .carousel-indicators li.active {
+        background-color: @brand-primary-btn-dark;
+    }
+}
+
+.promo-meetboss--cta {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    height: 0;
+}
+
+.carousel-default {
+    
+    .carousel-control {
+        background-image: none;
+
+        .i {
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            width: 50px;
+            height: 50px;
+
+            @media (max-width: @screen-xs-max) {
+                width: 25px;
+                height: 25px;
+                margin-top: -12px;
+            }
+        }
+
+    }
+
+    .carousel-control.left {
+        text-align: left;
+
+        .i {
+            left: 0;
+        }
+    }
+
+    .carousel-control.right {
+        text-align: right;
+
+        .i {
+            right: 0;
+        }
+    }
+
+    .carousel-indicators li {
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+        border-width: 4px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.5);
+        border-color: transparent;
+
+        &.active {
+            margin: 5px;
+            background-color: #fff;
+            background-clip: content-box;
+            border-color: rgba(255,255,255,0.5);
+        }
+    }
+}
+
+.home-slider-promo {
+    max-width: 500px;
+    margin: auto;
+
+    .dyad--first,
+    .dyad--second {
+        margin: auto;
+    }
+
+}
+
+@media (max-width: @screen-xs-max) {
+    .home-slider-promo {
+
+        .dyad--first,
+        .dyad--second {
+            padding-bottom: 10px;
+        }
+    }
+}

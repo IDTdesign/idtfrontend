@@ -1,0 +1,110 @@
+---
+layout: "default"
+title: "Homepage"
+---
+
+<header class="header-promo">
+    <div class="container header-promo--inner">
+        <img src="<%= @getUrl("/download-app/downloadapp.jpg") %>" alt="">
+        <section class="header-promo--box">
+            <h1>International Calling Made Even Easier with our Mobile App</h1>
+            <p>Our free, award-winning app makes calling with Boss Revolution simpler than ever before. Download the app today and international calling will be one tap away.</p>
+            <p>
+                <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
+                <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" target="_blank" class="btn btn-gplay"></a>
+            </p>
+            <footer class=""></footer>
+        </section>
+    </div>
+</header>
+<div class="promotions">
+    <div class="container">
+        <div id="promotions-main" class="carousel carousel-default  slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#promotions-main" data-slide-to="0" class="active"></li>
+                <li data-target="#promotions-main" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="home-slider-promo dyad dyad-2-1">
+                        <div class="dyad--first">
+                            <div class="dyad dyad-reverse">
+                                <div class="dyad--first text-center">
+                                    <a href="#"><img src="<%= @getUrl("/img/1S-free-for-calling-100x100.png") %>" alt="Get Free Dollar"></a>
+                                </div>
+                                <div class="dyad--second text-left">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dyad--second text-center">
+                            <a href="#" class="btn btn-default">Get Free Dollar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="home-slider-promo dyad dyad-2-1">
+                        <div class="dyad--first">
+                            <div class="dyad dyad-reverse">
+                                <div class="dyad--first text-center">
+                                    <a href="#"><img src="<%= @getUrl("/img/valentines-day.png") %>" alt="Valentines Day"></a>
+                                </div>
+                                <div class="dyad--second text-left">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dyad--second text-center">
+                            <a href="#" class="btn btn-default">Valentines Day</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#promotions-main" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#promotions-main" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="promo-meetboss">
+    <div class="container">
+        <p class="promo-meetboss--cta"><a href="<%= @getUrl("/about.html") %>" class="btn btn-primary btn-lg">Meet BOSS Revolution</a></p>
+        <div id="meetboss" class="carousel carousel-default  slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#meetboss" data-slide-to="0" class="active"></li>
+                <li data-target="#meetboss" data-slide-to="1"></li>
+                <li data-target="#meetboss" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h3 class="text-center">Boss Revolution is trusted by 1,000,000 customers daily.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">We connect XXXX minutes of phone calls a day.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">Our suite of products connects friends and families in XX countries.</h3>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#meetboss" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>        
+    </div>
+</div>
