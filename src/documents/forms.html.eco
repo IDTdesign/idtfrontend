@@ -88,6 +88,26 @@ title: "Forms"
                     </div>
 
                     <div class="form-group">
+                        <div class="col-lg-8">
+                            <label class="control-label">Select example</label>
+                            <select class="form-control">
+                              <option>Value example 1</option>
+                              <option>Value example 2</option>
+                              <option>Value example 3</option>
+                              <option>Value example 4</option>
+                              <option>Value example 5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-8">
+                            <label class="control-label">Textarea example</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <div class="col-lg-4">
                             <button type="submit" class="btn btn-default">Default Button</button>
                         </div>

@@ -45,6 +45,11 @@ label {
     max-width: 100%; /* 1 */
 }
 
+/* rewrite "color: inherit" (normalize override) */
+button, input, optgroup, select, textarea {
+    color: @gray-dark;
+}
+
 /* help block */
 .help-block {
     margin-top: 10px;
@@ -83,6 +88,11 @@ label {
     &[disabled] {
         border-color: @gray-light;
     }
+}
+
+.forms-default textarea.form-control,
+textarea.form-control-default {
+    height: auto;
 }
 
 .forms-default {
