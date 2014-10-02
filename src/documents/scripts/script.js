@@ -68,5 +68,31 @@
         duration:500
     });
 
+    // blur default settings
+    if ($(window).width() > 1300) {
+
+        var img = $('.blur'),
+            params = {};
+
+            params.callBack = function () {
+                $('canvas').addClass('visible')
+            }
+           
+            if (img.data('gradient_width')) {
+                params.gradient_width = img.data('gradient_width');
+            }
+            if (img.data('blur_width')) {
+                params.blur_width = img.data('blur_width');
+            }
+            if (img.data('blur_radius')) {
+                params.blur_radius = img.data('blur_radius');
+            }
+            if (img.data('vertical_gradient')) {
+                params.vertical_gradient = img.data('vertical_gradient');
+            }
+            $(img).alfablur(params);       
+    } else {
+        $('.blur').attr('src', $('.blur').data('src'));     
+    }
 
 }(jQuery));

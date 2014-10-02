@@ -41,6 +41,8 @@ docpadConfig = {
 				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
 				'/vendor/jqgrid/js/i18n/grid.locale-en.js'
 				'/vendor/jqgrid/js/minified/jquery.jqGrid.min.js'
+				'/vendor/alfablur/StackBlur.js'
+				'/vendor/alfablur/alfablur.js'
 				'/scripts/forms.js'
 				'/scripts/script.js'
 			]
