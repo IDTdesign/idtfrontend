@@ -126,7 +126,7 @@ td[aria-describedby*=earned] {
                     <div class="dyad--second">
                         <div class="forms forms-default form-horizontal form-expanded">
                             <div class="form-group">
-                                <div class="col-sm-12 text-right">
+                                <div class="col-sm-12 text-right text-center-xs">
                                     <button type="submit" class="btn btn-primary">SEND INVITE</button>
                                 </div>
                             </div>

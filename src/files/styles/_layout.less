@@ -46,7 +46,9 @@ body {
 @media (max-width: @screen-xs-max) {
 
     .allpage {
-        background: #FFF;
+        background-attachment: scroll;
+        background-size: 200% auto;
+        background-position: 50% 0;
     }
 
     .allpage--body > .container:first-child {
@@ -57,6 +59,12 @@ body {
 
 .allpage--footer {
     margin-top: @line-height-computed;
+}
+
+@media (max-width: @screen-xs-max) {
+    .allpage--footer {
+        margin-top: 0;
+    }
 }
 
 .offcanvas-menu {

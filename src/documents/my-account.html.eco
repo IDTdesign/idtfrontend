@@ -87,7 +87,7 @@ scripts: ['/scripts/jqgrid_init.js']
         </div>
     </div>
 
-    <article class="island">
+    <article class="island clearfix">
         <h1 class="island--title">Manage Your Services</h1>
 
         <!-- Nav tabs -->
@@ -263,12 +263,12 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <button class="btn btn-flat-bordered pull-left">
+                            <footer class="text-center-xs">
+                                <a href="#" class="btn btn-flat-bordered">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
                                      Call History
-                                </button>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                </a>
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                         <section class="island island-condenced island-alt-bordered">
@@ -586,9 +586,8 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                     </div>
@@ -660,9 +659,8 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                     </div>

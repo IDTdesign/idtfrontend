@@ -1098,13 +1098,24 @@
             display: inline-block;
             width: auto;
 
-            a {
-                color: @gray-alt-bright;
+            //a {
+            //    color: @gray-alt-bright;
+            //
+            //    &:hover,
+            //    &:focus {
+            //        color: @brand-alt-dark;
+            //    }
+            //}
 
-                &:hover,
-                &:focus {
-                    color: @brand-alt-dark;
-                }
+            a {
+                padding-top: (@line-height-computed / 2);
+                padding-bottom: (@line-height-computed / 2);
+                font-size: @font-size-small;
+            }
+
+            .i {
+                width: 12.5px;
+                height: 12.5px;
             }
 
             &:first-child {
