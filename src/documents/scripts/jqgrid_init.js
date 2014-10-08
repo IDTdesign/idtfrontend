@@ -12,7 +12,13 @@ var refData = [
     {name: {fullName: "Rosy Blinder", phone: "973-438-2951"}, sendDate: "5/23/14", earned: "$1.00", status: "Signed up"},
     {name: {fullName: "Rivka Cogan", phone: "917-973-5983"}, sendDate: "5/20/14", earned: "$2.00", status: "Pending"}
 ]
-
+//  CALLING HISTORY GRID DATA
+var callingData = [
+    {number: "1", date: "9/9/14 6:38 AM", from: "", dialedNumber: "01170999564547", minutes: "00:06", callAmount: "0.04"},
+    {number: "2", date: "12/10/14 6:40 AM", from: "", dialedNumber: "011654419564512", minutes: "00:06", callAmount: "0.04"},
+    {number: "3", date: "11/9/14 8:38 AM", from: "", dialedNumber: "011709743645471", minutes: "00:03", callAmount: "0.02"},
+    {number: "4", date: "9/8/14 1:28 AM", from: "", dialedNumber: "011219995646577", minutes: "00:03", callAmount: "0.02"}
+]
 //  GRID INIT
 $(function () {
     $("#testGrid").jqGrid({
@@ -45,6 +51,29 @@ $(function () {
             { name: "sendDate", width: 100, align: "left", sortable: false },
             { name: "earned", width: 90, fixed: true, resizable: false, align: "right", sortable: false },
             { name: "status", width: 120, fixed: true, resizable: false, align: "left", formatter: formatStatus, sortable: false},
+        ],
+        pager: "#pager",
+        rowNum: 10,
+        rowList: [10, 20, 30],
+        viewrecords: true,
+        autowidth: true,
+        height: '100%'
+    }); 
+}); 
+
+// CALL HISTORY GRID INIT
+$(function () {
+    $("#callHistoryGrid").jqGrid({
+        data: callingData,
+        datatype: "local",
+        colNames: ["#", "Date", "From", "Dialed #", "Minutes", "Amount"],
+        colModel: [
+            { name: "number", width: 30, fixed: true, resizable: false, align: "left", sortable: false },
+            { name: "date", width: 130, fixed: true, resizable: false, align: "left", sortable: false },
+            { name: "from", align: "left", sortable: false },
+            { name: "dialedNumber", align: "left", sortable: false},
+            { name: "minutes", width: 60, fixed: true, resizable: false, align: "left", sortable: false },
+            { name: "callAmount", width: 60, fixed: true, resizable: false, align: "left", sortable: false }
         ],
         pager: "#pager",
         rowNum: 10,
@@ -94,7 +123,11 @@ $(window).bind('resize', function () {
 function resizeGrid(grid){
     var currWidth;
     grid.css('position', 'absolute');
-    currWidth = grid.parents(".island").width();
+    if(grid.attr('id') === 'referralsGrid'){
+        currWidth = grid.parents(".dyad--second").width();
+    } else {
+        currWidth = grid.parents(".island").width();
+    }
     grid.css('position', 'static');
     grid.setGridWidth(currWidth);
 }

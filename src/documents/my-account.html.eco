@@ -15,7 +15,7 @@ scripts: ['/scripts/jqgrid_init.js']
         height: 45px;
     }
     .transaction-type {
-        color: #878787;
+        color: #BEBEBE;
         font-size: 14px;
     }
 </style>

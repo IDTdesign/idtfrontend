@@ -1,0 +1,19 @@
+---
+layout: "default"
+title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<div class="container">
+<style>
+/* GRID UNIQUE STYLE */
+td[aria-describedby*=earned] {
+    font-weight: bold !important;
+}
+</style>
+    <article class="island island-default">
+        <h2 class="island--title"><span>Calling History</span></h2>
+        <table id="callHistoryGrid"></table>
+    </article>
+</div><!--/container-->
+

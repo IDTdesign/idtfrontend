@@ -11,7 +11,7 @@
 	border-bottom-color: inherit;
 	border-bottom-style: solid;
 	font-size: 16px;
-	color: #444444;
+	color: #fff;
 }
 .ui-jqgrid .ui-jqgrid-btable {
 	table-layout: fixed;
@@ -51,7 +51,7 @@
 .ui-jqgrid tr.ui-row-ltr td{
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(235, 240, 245, 0.2);;
 	white-space: normal;
 }
 .ui-jqgrid tr.ui-row-ltr:last-child td{
@@ -64,10 +64,10 @@
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 	border-top: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(235, 240, 245, 0.2);;
 	background: none;
 	font-weight: normal;
-	color: #444444;
+	color: #fff;
 	font-size: 13px;
 	font-weight: bold;
 }
@@ -78,10 +78,10 @@
 	height: auto;
 }
 .ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-hover.ui-state-highlight{
-	background: #F8FAFC;
+	background: rgba(255, 255, 255, 0.1);
 }
 .ui-widget-content th.ui-state-hover{
-	background: #fff;
+	background: transparent;
 }
 .ui-widget-content .ui-state-highlight{
 	background: none;

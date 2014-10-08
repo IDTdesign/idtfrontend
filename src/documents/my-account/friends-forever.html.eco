@@ -19,11 +19,11 @@ scripts: ['/scripts/jqgrid_init.js']
 }
 
 .success {
-    color: #4C861D;
+    color: #82B459;
 }
 
 .pending {
-    color: #006CD8;
+    color: #83C1FF;
 }
 
 td[aria-describedby*=earned] {
@@ -31,7 +31,7 @@ td[aria-describedby*=earned] {
 }
 
 .phone-num {
-    color: #878787;
+    color: #BEBEBE;
     font-size: 14px;
 }
 
