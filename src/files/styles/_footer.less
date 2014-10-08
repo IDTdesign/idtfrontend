@@ -237,8 +237,12 @@
         background: @brand-primary-dark;
     }
 
-    .footer-contacts {
-        padding: 25px 0;
+    .footer-contacts-xs {
+       margin: 0 -((@grid-gutter-width / 2));
+
+       .panel-collapse {
+            padding: 25px;
+       }
     }
 
     .footer-collapse {

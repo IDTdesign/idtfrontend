@@ -54,7 +54,7 @@
                         <li class="navbar--item">
                             <a class="navbar--link dropdown-toggle" href="#" data-toggle="dropdown">
                                 <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span></span>
-                                <span class="visible-xxs">ENG</span>
+                                <span class="visible-xxs"><span class="flag flag-us"></span> EN</span>
                                 <span class="caret"></span>
                             </a>
                             <ul class="navbar--submenu dropdown-menu" role="menu">
@@ -81,10 +81,7 @@
                             </a>
                         </li>
                         <li class="navbar--item visible-xs">
-                        	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
-                            	<svg xmlns="http://www.w3.org/2000/svg" class="i i--menu"><use xlink:href="#i--menu"></use></svg>
-                                Menu
-                            </button>
+                        	<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">Menu</button>
                         </li>
                     </ul>
                 </nav>

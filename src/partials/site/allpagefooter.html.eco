@@ -61,26 +61,43 @@
                             </div>
                             <!-- /content for tablet and desktop -->
                             <!-- content for phone -->
-                            <div class="footer-contacts visible-xs">
-                                <h3 class="text-center">Help and Support</h3>
-                                
-                                <p>
-                                    <a href="tel:18008710135" class="btn btn-support">
-                                        <small class="btn-support--small">Call Customer Assistance</small>
-                                        <span class="btn-support--key">1-800-871-0135</span>
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="mailto:support@bossrevolution.com?subject=Support" class="btn btn-support">
-                                        <span class="btn-support--key">Send email to support</span>
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#" class="btn btn-support">
-                                        <span class="btn-support--key">Chat now</span><small class="btn-support--small">with a Customer Service agent</small>
-                                    </a>
-                                </p>
-                                <p class="text-center"><small>24 hours a day, 7 Days a Week</small></p>
+                            <div class="footer-contacts-xs visible-xs">
+                                <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                    <h4 class="collapse-trigger--title">
+                                        <a href="#footer-needhelp" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                            Need Help?
+                                            <span class="dropdown-toggle pull-right">
+                                                <span class="btn btn-toggler">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                                                </span>
+                                                <span class="sr-only">Toggle Panel</span>
+                                            </span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="footer-needhelp" class="panel-collapse collapse">
+                                    <p>
+                                        <a href="tel:18008710135" class="btn btn-support icon-txt icon-txt-default">
+                                            <span class="icon-txt--i">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone-number-large"><use xlink:href="#i--phone-number"></use></svg>
+                                            </span>
+                                            <span class="icon-txt--text btn-support--key">
+                                                CALL 1-800-871-0135
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="mailto:support@bossrevolution.com?subject=Support" class="btn btn-support icon-txt icon-txt-default">
+                                            <span class="icon-txt--i">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--email-large"><use xlink:href="#i--email"></use></svg>
+                                            </span>
+                                            <span class="icon-txt--text btn-support--key">
+                                                SEND AN EMAIL
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                             <!-- /content for phone -->
                         </div>

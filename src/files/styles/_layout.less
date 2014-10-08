@@ -52,23 +52,24 @@ body {
     }
 
     .allpage--body > .container:first-child {
-        padding-top: 65px;
+        padding-top: 50px;
     }
 
 }
 
-.allpage--footer {
-    margin-top: @line-height-computed;
-}
-
-@media (max-width: @screen-xs-max) {
+@media (min-width: @screen-md-min) {
     .allpage--footer {
-        margin-top: 0;
+        margin-top: @line-height-computed;
     }
 }
 
 .offcanvas-menu {
     z-index: 1;
+    opacity: 0;
+}
+
+.offcanvas-menu.in {
+    opacity: 1;
 }
 
 /* increasing specifity for allpage--header*/

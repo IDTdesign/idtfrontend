@@ -51,7 +51,7 @@
         padding: 40px 80px 70px;
 
         @media (max-width: @screen-xs-max) {
-            padding: 20px 40px 70px;
+            padding: 10px 40px 60px;
         }
     }
 }
@@ -76,14 +76,29 @@
     }
 }
 
-.promo-meetboss--cta {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    height: 0;
+@media (min-width: @screen-md-min) {
+    .promo-meetboss {
+        margin-bottom: -@line-height-computed;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .promo-meetboss--cta {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .promo-meetboss--cta {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 20px;
+        width: 100%;
+        text-align: center;
+        height: 0;
+    }
 }
 
 .home-slider-promo {
