@@ -253,7 +253,7 @@ body {
 .payment-type {
     .clearfix;
     padding: 30px 60px;
-    color: @gray-dark;
+    color: @ink;
 
     &.payment-type-bg-gray {
         //background-color: @brand-alt-highlight;
@@ -264,7 +264,7 @@ body {
         margin: 0;
         padding: 30px;
         border-radius: @border-radius-base;
-        background-color: #fff;
+        background-color: fade(@ink,10%);
     }
 
     .payment-type--title {
@@ -291,8 +291,8 @@ body {
 
             th {
                 padding: @line-height-computed 0;
-                //color: @ink;
-                color: @gray-dark;
+                color: @ink;
+                //color: @gray-dark;
                 font-size: @font-size-h3;
             }
 
@@ -540,16 +540,16 @@ body {
 
 .imtu--block-payment {
     .payment-type {
-        padding-top: 0;
-        /*margin: 0 -60px;*/
+        //padding-top: 0;
+        margin: 0 -60px;
         color: @ink;
 
         .tab-content {
-            margin: 0 -60px;
+            //margin: 0 -60px;
             padding: 40px 60px;
             //background-color: @brand-alt-highlight;
             background-color: fade(@paper, 20%);
-            border-radius: 0;
+            //border-radius: 0;
         }
 
         .payment-type--card {
@@ -596,7 +596,7 @@ body {
 
     .call-me-plan--country {
         .icon-block--text {
-            color: @gray;
+            color: @ink;
             vertical-align: middle;
             text-transform: uppercase;
         }

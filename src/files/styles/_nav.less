@@ -793,7 +793,7 @@
 
 .nav-tabs-sections {
     //border-bottom: 5px solid @brand-alt-highlight;
-    border-bottom: 5px solid fade(@brand-alt-highlight,10%);
+    //border-bottom: 5px solid fade(@paper,20%);
 
     > li {
         border-top: 3px solid transparent;
@@ -805,14 +805,16 @@
         //border-top: 1px solid @brand-alt-highlight;
         border-top: 1px solid fade(@brand-alt-highlight,10%);
         //color: @brand-primary;
-        color: @brand-primary-highlight;
+        color: @ink;
         text-transform: uppercase;
         font-weight: bold;
 
         &:hover,
         &:focus {
             //background-color: @brand-alt-highlight-bright;
-            background-color: fade(@brand-alt-highlight-bright,10%);
+            //background-color: fade(@brand-alt-highlight-bright,10%);
+            background-color: fade(@paper,5%);
+            color: @link-color;
         }
     }
 
@@ -822,21 +824,22 @@
     }
 
     .icon-txt--text {
-        padding: 0 5px;
+        padding: 0 0 0 15px;
         white-space: nowrap;
     }
 
     .active {
         //border-top: 3px solid @brand-alt-dark;
-        border-top: 3px solid fade(@brand-alt-highlight,80%);
+        //border-top: 3px solid fade(@brand-alt-highlight-bright,80%);
+        border-top: 3px solid @brand-alt;
 
         > a {
             //color: @brand-alt-dark;
             //border-top-color: @brand-alt-dark;
             //color: @brand-alt-dark;
-            color: @brand-alt-highlight;
-            border-top-color: fade(@brand-alt-highlight,80%);
-            background-color: fade(@brand-alt-highlight-bright,15%);
+            color: @ink;
+            border-top-color: @brand-alt;
+            background-color: fade(@paper,20%);
         }
     }
 }
@@ -1041,7 +1044,7 @@
     display: table;
     width: 100%;
     //background-color: @brand-alt-highlight-bright;
-    background-color: fade(@brand-alt-highlight-bright,20%);
+    background-color: fade(@paper,20%);
 
     &:before,
     &:after {
@@ -1052,7 +1055,7 @@
         display: table-cell;
         width: 1%;
 
-        &:first-child {
+/*        &:first-child {
             a {
                 border-radius: 0 0 0 @border-radius-base;
             }
@@ -1062,16 +1065,17 @@
                 border-radius: 0 0 @border-radius-base 0;
             }
         }
-
+*/
         > a {
             //color: @gray-alt-bright;
             padding-top: @line-height-computed;
-            padding-bottom: @line-height-computed;
+            padding-bottom: (@line-height-computed - 3px);
             color: @ink;
             font-size: (@font-size-base - 1px);
             font-weight: bold;
             text-transform: uppercase;
-            border-bottom: 2px transparent solid;
+            border-bottom: 3px transparent solid;
+            text-align: center;
 
             &:hover,
             &:focus {
@@ -1080,13 +1084,38 @@
                 background-color: transparent;
                 border-bottom-color: transparent;
             }
+
+            &:after {
+                content: "";
+                display: block;
+                opacity: 1;
+                width: 1px;
+                height: 20px;
+                background-color: fade(@ink,10%); 
+                //margin-left: -18px;
+                //border-style: solid;
+                //border-width: 17px 18px 0 18px;
+                //border-color: #fff transparent transparent transparent;
+                position: absolute;
+                bottom: 18px;
+                left: 0;
+                z-index: 2;
+            }
+
+            
+        }
+
+        &:first-child > a:after {
+            opacity: 0;
         }
 
         &.active {
             > a {
-                color: @brand-alt-dark;
-                background-color: rgba(235, 240, 245, 0.8);
-                border-bottom-color: @brand-alt-dark;
+                //color: @brand-alt-dark;
+                color: @ink;
+                //background-color: rgba(235, 240, 245, 0.8);
+                //background-color: fade(@paper,10%);
+                border-bottom-color: @brand-alt;
             }
         }
     }
