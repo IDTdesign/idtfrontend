@@ -15,7 +15,7 @@ scripts: ['/scripts/jqgrid_init.js']
         height: 45px;
     }
     .transaction-type {
-        color: #BEBEBE;
+        color: #AAA;
         font-size: 14px;
     }
 </style>
@@ -241,9 +241,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </p>
 
                             <p class="icon-block icon-block-default">
-                                <span class="icon-block--i">
-                                    <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
-                                </span>
+                                <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
                                 <span class="icon-block--text">
                                     <label for="inter-calling-auto-renew">Auto Renewal is OFF.</label>
                                     <a href="#" class="learn-more">Configure »</a>
