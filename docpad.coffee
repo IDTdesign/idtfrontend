@@ -42,7 +42,8 @@ docpadConfig = {
 				'/vendor/jqgrid/js/i18n/grid.locale-en.js'
 				'/vendor/jqgrid/js/minified/jquery.jqGrid.min.js'
 				'/vendor/alfablur/StackBlur.js'
-				'/vendor/alfablur/alfablur.js'
+                '/vendor/alfablur/alfablur.js'
+				'/vendor/bowser/bowser.min.js'
 				'/scripts/forms.js'
 				'/scripts/script.js'
 			]

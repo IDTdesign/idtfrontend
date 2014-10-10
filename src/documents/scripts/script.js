@@ -1,26 +1,6 @@
 /* Your scripts go here */
 (function ($) {
     //$('.homepage_promo').alfablur({"gradiend_with" : 0,"blur_width": 30,"blur_radius": 100});
-    $('footer h4, .mobile_menu h4').click(function(){
-        $(this).parent().toggleClass('active');
-    });
-    /*$('header nav, .mobile_menu .close').click(function(){
-        if ($(window).width() < 920) {
-            $('body').toggleClass('show_menu');
-
-            return false;
-        }
-    });*/
-    /*$('.dropdown').click(function(){
-        $(this).toggleClass('open');
-        return false;
-    });
-    $('.dropdown').hover(
-        function(){},
-        function(){
-            $(this).removeClass('open');
-        }
-    );*/
 
     /*if ($(window).width() > 1024) {*/
     //  var promo = $('.homepage_promo');
@@ -67,6 +47,13 @@
         offset:-70,
         duration:500
     });
+
+    // detecting ios and android to hide unnecessary appstore buttons
+    if (bowser.android) {
+        $("html").addClass("android");
+    } else if (bowser.ios) {
+        $("html").addClass("ios");
+    }
 
     // blur default settings
     if ($(window).width() > 1300) {

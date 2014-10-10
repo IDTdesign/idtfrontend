@@ -218,6 +218,7 @@
     min-width: inherit;
 }
 
+/* mobile store buttons */
 .btn-appstore,
 .btn-gplay {
     display: inline-block;
@@ -250,6 +251,15 @@
 .svg .btn-gplay,
 .svg .btn-gplay:active {
     background: url("../img/btn-gplay.svg");
+}
+
+/* hide buttons depending of mobile os */
+.android .btn-appstore {
+    display: none;
+}
+
+.ios .btn-gplay {
+    display: none;
 }
 
 /* alternative buttons */
