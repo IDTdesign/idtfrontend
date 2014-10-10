@@ -124,7 +124,7 @@
         padding-left: 100px;
 
         .navbar--list {
-            margin: 12.5px -5px 12.5px 0;
+            margin: 5px -5px 5px 0;
 
             .navbar--item {
                 float: left;
@@ -608,13 +608,13 @@
         }
     }
 
-    .open .navmenu--link,
-    .open .navmenu--link:hover,
-    .open .navmenu--link:focus {
+    .navmenu--node .navmenu--link,
+    .navmenu--node .navmenu--link:hover,
+    .navmenu--node .navmenu--link:focus {
         background-color: transparent;
     }
 
-    .open > .navmenu--submenu {
+    .navmenu--node > .navmenu--submenu {
         background-color: #f8f8f8;
         box-shadow: inset 0 3px 8px rgba(0,0,0,0.1);
     }
@@ -626,6 +626,7 @@
 
     .navmenu--submenu {
         padding: 0;
+        margin-bottom: 0;
     }
 
     .navmenu--submenuitem {
@@ -643,6 +644,7 @@
 
     .dropdown-header {
         padding: 10px 25px;
+        color: #888;
     }
 
     .navmenu--submenulink {
@@ -651,6 +653,7 @@
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
+        color: @gray-dark;
 
         &:hover,
         &:focus {
@@ -709,7 +712,7 @@
 .navbar-close {
     display: block;
     width: 100%;
-    height: 65px;
+    height: 50px;
     padding: 10px 25px;
     border: none;
     border-bottom: 2px solid #f3f3f3;
