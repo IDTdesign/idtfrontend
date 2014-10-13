@@ -87,6 +87,36 @@ body {
 }
 /* sticky footer end */
 
+.svg-list {
+    padding: 0;
+    margin: 0 30px;
+    list-style: none;
+
+    .svg-list--item {
+        display: block;
+        margin: 0;
+        padding:  20px 0 20px 62px;
+        position: relative;
+        list-style: none;
+        color: @ink;
+        font-size: 30px;
+        line-height: 1.25;
+        font-weight: bold;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-image: url("../icons/icons-sprite.svg");
+            background-position: -3894px 0;
+            position: absolute;
+            top: 26px;
+            left: 0;
+        }
+    }
+}
+
 /* benefits */
 .benefits {
     margin: @line-height-computed auto; //20px auto
@@ -136,6 +166,35 @@ body {
     }
 }
 
+.benefits-type-visa-account {
+    .clearfix;
+    margin: 0 -((@grid-gutter-width / 2));
+    display: table;
+
+    .benefits--block {
+        display: table-cell;
+        width: 33.33%;
+        height: 100%;
+        padding: 25px 15px 25px 25px;
+        background-color: fade(@paper, 20%);
+        background-clip: padding-box;
+        border: ((@grid-gutter-width / 2)) transparent solid;
+        border-radius: (((@grid-gutter-width / 2)) + 5);
+        position: relative;
+
+        .plate {
+            float: left;
+        }
+
+        h3 {
+            margin: 10px 0 0 100px;
+            font-size: 24px;
+            line-height: 1.25;
+            text-transform: uppercase;
+        }
+    }
+}
+
 @media (max-width: @screen-xs-max) {
 
     /* 1 - compensate containers paddings */
@@ -173,6 +232,23 @@ body {
         }
     }
 
+    .benefits-type-visa-account {
+        width: 100%;
+        border: none;
+        margin: 0;
+
+        .benefits--block {
+            .clearfix;
+            width: 100%;
+            display: block;
+            padding: 20px;
+
+            h3 {
+                margin-top: 24px;
+            }
+        }
+    }
+
 }
 
 /* how it works */
@@ -193,11 +269,11 @@ body {
             width: 34px;
             height: 34px;
             border-radius: 50%;
-            background-color: @brand-primary-highlight-medium;
+            background-color: @ink;
             position: absolute;
             top: 0;
             left: 15px;
-            color: @brand-primary-dark;
+            color: @gray-dark;
             font-size: 21px;
             line-height: 30px;
             text-align: center;
@@ -215,9 +291,27 @@ body {
             content: "3";
         }
 
-        h3 {
+        &:nth-child(4):after {
+            content: "4";
+        }
+
+        h3, .h3, h4, .h4 {
             margin-top: @line-height-computed;
-            color: #000;
+            font-size: 21px;
+            line-height: 1.25;
+        }
+    }
+
+    &.how-works-4-blocks {
+        .how-works--block {
+            width: 25%;
+        }
+    }
+
+    &.how-works-number-centered {
+        .how-works--block:after {
+            left: 50%;
+            margin-left: -17px;
         }
     }
 }
@@ -234,8 +328,36 @@ body {
             border-radius: 5px;
 
             &:after {
-                top: 15px;
-                left: 15px;
+                width: 24px;
+                height: 24px;
+                top: 10px;
+                left: 10px;
+                background-color: @brand-primary-bright;
+                color: @ink;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        &.how-works-4-blocks {
+            .how-works--block {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: @line-height-computed;
+                border: 1px solid @brand-alt-highlight;
+                border-radius: 5px;
+
+                &:after {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 0;
+                    top: 10px;
+                    left: 10px;
+                    background-color: @brand-primary-bright;
+                    color: @ink;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
             }
         }
     }
@@ -734,4 +856,95 @@ body {
 .plan-button {
     padding: @line-height-computed;
     text-align: center;
+}
+
+.visa-virtual-carousel {
+    .item {
+        .clearfix;
+        min-height: 215px;
+        padding: 40px 80px 100px;
+
+        .item--title,
+        .item--text {
+            margin-left: 310px;
+        }
+
+        @media (max-width: @screen-xs-max) {
+            padding: 20px 40px 70px;
+
+            .item--title {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .item--text  {
+                margin-left: 0;
+            }
+
+            .plate {
+                display: block;
+                height: auto;
+                padding: 10px;
+                float: none;
+                margin: auto;
+
+                &.plate-size-double {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .carousel-control {
+        width: 10%;
+        color: @brand-alt-bright;
+    }
+
+    .carousel-indicators.carousel-indicators {
+        > li {
+            &.active {
+                background-color: @brand-primary-bright;
+                border-color: transparent;
+                border-width: 5px;
+                box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+            }
+        }
+
+        @media (max-width: @screen-xs-max) {
+            > li {
+                border-color: rgba(0, 0, 0, .5);;
+
+                &.active {
+                    background-color: @brand-primary-bright;
+                    border-color: transparent;
+                    border-width: 5px;
+                    box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
+                }
+            }
+        }
+    }
+
+    .plate {
+        width: 260px;
+        height: 260px;
+        padding: 60px;
+        margin: 0 50px 0 0;
+        float: left;
+
+        &.plate-size-double {
+            width: 420px;
+            padding: 60px 20px;
+
+            .i--plus {
+                height: 130px;
+                font-size: 72px;
+                line-height: 100px;
+            }
+        }
+
+        .i {
+            width: 121px;
+            height: 121px;
+        }
+    }
 }

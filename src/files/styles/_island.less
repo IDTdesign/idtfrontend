@@ -4,6 +4,7 @@
     margin: @line-height-computed auto; //20px auto
     border-radius: @border-radius-large;
     background: @paper;
+    position: relative;
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -162,6 +163,22 @@
 
 }
 
+.island-absolute-bottom {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.island-absolute-top {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 /* connected to previous, no margin between */
 .island-connected {
     margin-top: 0;
@@ -190,11 +207,13 @@
 .island-square-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    margin-top: 0;
 }
 
 .island-square-bottom {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    margin-bottom: 0;
 }
 
 .island-condenced {
@@ -207,6 +226,10 @@
         padding-top: 0;
         margin-bottom: @line-height-computed;
         line-height: 1.1;
+    }
+
+    &.island-header {
+        margin: -30px -30px 0;
     }
 }
 
@@ -230,6 +253,22 @@
 
 .island .island-alt-bright {
     background-color: fade(@paper, 20%);
+}
+
+.island-alt-blue {
+    background-color: @brand-alt;
+
+    .island--title {
+        margin-bottom: 0;
+    }
+}
+
+.island-dark-red {
+    background-color: @brand-primary;
+
+    .island--title {
+        margin-bottom: 0;
+    }
 }
 
 .island-alt-bordered {
@@ -258,6 +297,34 @@
         background-color: @brand-alt-highlight-bright;
         border: 10px solid #FFF;
     }
+
+    .island-alt-blue {
+        background-color: @brand-alt;
+
+        .island--title {
+            margin-bottom: 0;
+            border: none;
+            color: @ink;
+        }
+    }
+
+    .island-dark-red {
+        background-color: @brand-primary;
+
+        .island--title {
+            margin-bottom: 0;
+            border: none;
+            color: @ink;
+        }
+    }
+
+    .island-absolute-top,
+    .island-absolute-bottom {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
 }
 
 /* island end */
@@ -277,6 +344,14 @@
         &:before,
         &:after {
             content: none;
+        }
+
+        &.island--title-smaller {
+            font-size: 56px;
+        }
+
+        &.island--title-small {
+            font-size: 30px;
         }
     }
 

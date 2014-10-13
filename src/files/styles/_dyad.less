@@ -1,4 +1,4 @@
-
+/* dyad */
 
 @media (min-width: @screen-sm-min) {
 
@@ -8,12 +8,14 @@
         flex-flow: row nowrap;
         align-items: stretch;
     }
-    
+
     .dyad-reverse {
         flex-direction: row-reverse;
     }
-    
 
+    .dyad--item-bottom {
+        align-self: flex-end;
+    }
 
     /* default size */
 
@@ -25,7 +27,6 @@
     }
 
     /* sizes */
-
     .dyad-3-1 > .dyad--first    { flex-grow: 3; }
     .dyad-3-1 > .dyad--second   { flex-grow: 1; }
 
@@ -51,8 +52,6 @@
     }
 
 }
-
-
 
 /* dyad--stretch modifier to make inner content fill the height */
 @media (min-width: @screen-sm-min) {
@@ -106,7 +105,7 @@
 /* spacing only between parts */
 @media (min-width: @screen-sm-min) {
     .dyad-gap-default:not(.dyad-reverse) {
-        
+
         & > .dyad--first {
             padding-right: 20px;
         }
@@ -117,7 +116,7 @@
     }
 
     .dyad-gap-default.dyad-reverse {
-        
+
         & > .dyad--first {
             padding-left: 20px;
         }
@@ -130,7 +129,7 @@
 /* spacing only between parts */
 @media (min-width: @screen-sm-min) {
     .dyad-gap-small:not(.dyad-reverse) {
-        
+
         & > .dyad--first {
             padding-right: 10px;
         }
@@ -141,7 +140,7 @@
     }
 
     .dyad-gap-small.dyad-reverse {
-        
+
         & > .dyad--first {
             padding-left: 10px;
         }
@@ -167,7 +166,7 @@
             padding-left: 0; /* 1 */
             padding-right: 0; /* 1 */
         }
-        
+
         &.dyad-gap-default > .dyad--first {padding-bottom: 20px;}
         &.dyad-gap-default > .dyad--second {padding-top: 20px;}
 

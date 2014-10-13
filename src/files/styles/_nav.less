@@ -1031,6 +1031,43 @@
     }
 }
 
+.nav-with-icons {
+    padding: 0 20px;
+    margin: 10px 0;
+
+    .nav--list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav--item {
+        display: block;
+    }
+
+    .nav--link {
+        display: block;
+        padding: 10px 15px;
+        border-radius: @border-radius-base;
+        color: @ink;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &.active {
+            background-color: #fff;
+            color: @gray-dark;
+            text-decoration: none;
+        }
+
+        .i {
+            color: @brand-primary-bright;
+            margin-right: 10px;
+        }
+    }
+}
+
 /* tabs modification end */
 
 /* nav panel */

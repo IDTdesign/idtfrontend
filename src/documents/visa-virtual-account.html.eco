@@ -1,0 +1,195 @@
+---
+layout: "default"
+title: "Visa Virtual Account"
+---
+
+<div class="container">
+    <article class="island island-transparent">
+        <section class="island--header">
+            <div class="plate plate-default-inset plate-large">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
+                    <use xlink:href="#i--visa-virtual"></use>
+                </svg>
+            </div>
+            <h1 class="island--title island--title-smaller">Boss Revolution Visa<sup>®</sup> Virtual</h1>
+        </section>
+        <!--<section class="island-default">
+            <h2 class="island--title">Benefits</h2>
+            <div class="benefits benefits-type-visa-account">
+                <div class="benefits--block">
+                    <div class="plate plate-large plate-default-inset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--purchase">
+                            <use xlink:href="#i--purchase"></use>
+                        </svg>
+                    </div>
+                    <h3>Make Purchases</h3>
+                </div>
+                <div class="benefits--block">
+                    <div class="plate plate-large plate-default-inset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--bills">
+                            <use xlink:href="#i--bills"></use>
+                        </svg>
+                    </div>
+                    <h3>Pay your bills online</h3>
+                </div>
+                <div class="benefits--block">
+                    <div class="plate plate-large plate-default-inset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--gift">
+                            <use xlink:href="#i--gift"></use>
+                        </svg>
+                    </div>
+                    <h3>Use it or gift it</h3>
+                </div>
+            </div>
+        </section>-->
+    </article>
+
+    <article class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
+        <div class="dyad--first dyad--stretch">
+            <div class="island">
+                <div class="island island-condenced island-transparent">
+                    <ul class="svg-list">
+                        <li class="svg-list--item">No Bank Account, No Credit Check</li>
+                        <li class="svg-list--item">So Easy to Get, Easy to Use</li>
+                        <li class="svg-list--item">Fast And Secure Electronic Delivery</li>
+                        <li class="svg-list--item">Non-reloadable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dyad--second dyad--stretch">
+            <div class="island island-square-bottom">
+                <div class="island island-condenced island-square-bottom island-dark-red">
+                    <h3 class="island--title island--title-small">Already have an account?</h3>
+                </div>
+                <div class="island island-transparent">
+                    <nav class="nav nav-with-icons">
+                        <ul class="nav--list">
+                            <li class="nav--item">
+                                <a href="#" class="nav--link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg>
+                                    <span>Redeem it now</span>
+                                </a>
+                            </li>
+                            <li class="nav--item">
+                                <a href="#" class="nav--link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    <span>See Account History</span>
+                                </a>
+                            </li>
+                            <li class="nav--item">
+                                <a href="#" class="nav--link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    <span>Check Account Balance</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="island island-square-top island-alt dyad--item-bottom">
+                <nav class="nav nav-with-icons">
+                    <ul class="nav--list">
+                        <li class="nav--item">
+                            <a href="#" class="nav--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--terms-conditions"><use xlink:href="#i--terms-conditions"></use></svg>
+                                <span>Terms and Conditions</span>
+                            </a>
+                        </li>
+                        <li class="nav--item">
+                            <a href="#" class="nav--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--faqs"><use xlink:href="#i--faqs"></use></svg>
+                                <span>FAQ’s</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </article>
+
+    <article class="island visa-virtual-carousel">
+        <h2 class="island--title">Visa® Virtual Account Benefits</h2>
+        <div id="visa-virtual" class="carousel carousel-default  slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#visa-virtual" data-slide-to="0" class="active"></li>
+                <li data-target="#visa-virtual" data-slide-to="1"></li>
+                <li data-target="#visa-virtual" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="plate plate-white plate-icon-red plate-size-double">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--purchases">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--purchases"></use>
+                        </svg>
+                        <span class="i--plus">+</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--bills">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bills"></use>
+                        </svg>
+                    </div>
+                    <h3 class="item--title">Purchase or Payments Online, by Mail or Phone</h3>
+                    <p class="item--text">You can use the Boss Revolution Visa Virtual Account to shop or pay your bills online, by mail or over the phone - everywhere Visa debit cards are accepted in the United States and District of Columbia. You can even use it to recharge your Boss Revolution account online or over the phone</p>
+                </div>
+                <div class="item">
+                    <div class="plate plate-white plate-icon-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--gift">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                        </svg>
+                    </div>
+                    <h3 class="item--title">It’s also a perfect gift</h3>
+                    <p class="item--text">Take the guesswork out of finding the right gift. Let family and friends use the Boss Revolution Visa® Virtual Account you send them to buy what they really want - and they’ll know that it came from you. <br />
+                       Did you wait until the last minute? We’ll deliver the account information electronically to the recipient, making the Boss Revolution Visa Virtual Account the perfect last minute gift.</p>
+                </div>
+                <div class="item">
+                    <div class="plate plate-white plate-icon-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--secure">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--secure"></use>
+                        </svg>
+                    </div>
+                    <h3 class="item--title">It’s Secure</h3>
+                    <p class="item--text">The account must be registered by the recipient prior to use. It only takes a few minutes to register and get all the account information electronically. For your protection, a link will be sent in the confirmation SMS and email to a secure registration page. Once registered, the account is ready for immediate use.</p>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#visa-virtual" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#visa-virtual" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </article>
+
+    <article class="island">
+        <h2 class="island--title">How It Work</h2>
+        <section class="how-works how-works-4-blocks how-works-number-centered">
+            <div class="how-works--block">
+                <h3>Purchase a non-reloadable Visa Virtual Account at a Boss Revolution retailer</h3>
+                <p>There is a $1.95 one-time load fee. There are no other transaction fees on the account.</p>
+            </div>
+            <div class="how-works--block">
+                <h3>Provide your information and the recipient information to the retailer</h3>
+                <p>Provide mobile number, email address.</p>
+            </div>
+            <div class="how-works--block">
+                <h3>Specify the account balance</h3>
+                <p>You can load the account with any amount between $20 and $200.</p>
+            </div>
+            <div class="how-works--block">
+                <h3>The account information will be delivered to the recipient electronically</h3>
+                <p>An SMS and email will be sent to the recipient to tell them how to register.</p>
+            </div>
+        </section>
+    </article>
+
+    <article class="island island-default">
+        <div class="notice">
+            <b>Note:</b> Advertised minutes based on single, non-payphone call from the United States to a landline phone in the chosen country destination using local access. Advertised rates are based on calls from the United States to a landline phone in the chosen country destination using local access. Rates shown are live rates and are subject to change without notice (except where an expiration date is provided). Listed destinations are for landlines except where noted. <br> <b>Important:</b> when calling from a cell phone DO NOT PRESS "SEND" after entering the destination number as this might result in additional charges from your wireless provider. Your wireless carrier may assess roaming or long distance charges when calling a local access number - please check the details of your plan with your provider.
+        </div>
+    </article>
+</div>
