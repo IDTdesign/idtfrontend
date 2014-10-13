@@ -234,7 +234,8 @@ module.exports = (grunt) ->
 				files: [
 					'out/vendor/animate.css/animate.min.css':'bower_components/animate.css/animate.min.css',
 					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
-					'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js',
+                    'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js',
+					'out/vendor/bowser/bowser.min.js':'bower_components/bowser/bowser.min.js',
 					{
 					cwd: 'bower_components/jqgrid',
 					src: '**/*',

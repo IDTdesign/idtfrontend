@@ -46,21 +46,30 @@ body {
 @media (max-width: @screen-xs-max) {
 
     .allpage {
-        background: #FFF;
+        background-attachment: scroll;
+        background-size: 200% auto;
+        background-position: 50% 0;
     }
 
     .allpage--body > .container:first-child {
-        padding-top: 65px;
+        padding-top: 50px;
     }
 
 }
 
-.allpage--footer {
-    margin-top: @line-height-computed;
+@media (min-width: @screen-md-min) {
+    .allpage--footer {
+        margin-top: @line-height-computed;
+    }
 }
 
 .offcanvas-menu {
     z-index: 1;
+    opacity: 0;
+}
+
+.offcanvas-menu.in {
+    opacity: 1;
 }
 
 /* increasing specifity for allpage--header*/
@@ -263,17 +272,33 @@ body {
         position: relative;
         text-align: center;
 
+        //&:after {
+        //    content: "";
+        //    display: block;
+        //    width: 34px;
+        //    height: 34px;
+        //    border-radius: 50%;
+        //    background-color: @brand-primary-highlight-medium;
+        //    position: absolute;
+        //    top: 0;
+        //    left: 15px;
+        //    color: @brand-primary-dark;
+        //    font-size: 21px;
+        //    line-height: 30px;
+        //    text-align: center;
+        //}
+
         &:after {
             content: "";
             display: block;
             width: 34px;
             height: 34px;
             border-radius: 50%;
-            background-color: @ink;
+            background-color: @brand-primary-highlight-medium;
             position: absolute;
             top: 0;
             left: 15px;
-            color: @gray-dark;
+            color: @brand-primary-dark;
             font-size: 21px;
             line-height: 30px;
             text-align: center;
@@ -367,7 +392,7 @@ body {
 .payment-type {
     .clearfix;
     padding: 30px 60px;
-    color: @gray-dark;
+    color: @ink;
 
     &.payment-type-bg-gray {
         //background-color: @brand-alt-highlight;
@@ -378,7 +403,7 @@ body {
         margin: 0;
         padding: 30px;
         border-radius: @border-radius-base;
-        background-color: #fff;
+        background-color: fade(@ink,10%);
     }
 
     .payment-type--title {
@@ -405,8 +430,8 @@ body {
 
             th {
                 padding: @line-height-computed 0;
-                //color: @ink;
-                color: @gray-dark;
+                color: @ink;
+                //color: @gray-dark;
                 font-size: @font-size-h3;
             }
 
@@ -654,16 +679,16 @@ body {
 
 .imtu--block-payment {
     .payment-type {
-        padding-top: 0;
-        /*margin: 0 -60px;*/
+        //padding-top: 0;
+        margin: 0 -60px;
         color: @ink;
 
         .tab-content {
-            margin: 0 -60px;
+            //margin: 0 -60px;
             padding: 40px 60px;
             //background-color: @brand-alt-highlight;
             background-color: fade(@paper, 20%);
-            border-radius: 0;
+            //border-radius: 0;
         }
 
         .payment-type--card {
@@ -710,7 +735,7 @@ body {
 
     .call-me-plan--country {
         .icon-block--text {
-            color: @gray;
+            color: @ink;
             vertical-align: middle;
             text-transform: uppercase;
         }

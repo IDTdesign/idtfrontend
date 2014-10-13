@@ -18,6 +18,7 @@ title: "Friends Forever"
         background-position: 0 0;
         min-height:417px;
         padding: 180px 60px 40px 630px;
+        color: #333;
     }
 
     @media (max-width: 991px) {

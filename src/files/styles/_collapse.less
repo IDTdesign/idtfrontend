@@ -33,9 +33,10 @@
 }
 
 .collapse-trigger {
-    border-top: 4px solid @brand-alt-highlight;
-    border-bottom: 1px solid @brand-alt-highlight;
-    background: #fff;
+    border-top: 4px solid fade(@brand-alt-highlight,20%);
+    border-bottom: 1px solid fade(@brand-alt-highlight,20%);
+    //background: #fff;
+    background: @paper;
 
     .collapse-trigger--title {
         margin: 0;
@@ -49,12 +50,13 @@
         font-weight: bold;
         display: block;
         text-decoration: none;
-        color: @brand-primary-bright;
+        //color: @brand-primary-bright;
 
         &:hover,
         &:focus,
         &:active {
-            color: @brand-primary-dark;
+            //color: @brand-primary-dark;
+            color: @ink;
         }
     }
 }
@@ -68,6 +70,12 @@
     .collapse-trigger--link {
         color: #FFF;
         text-transform: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #FFF;
+        }
     }
 
     .dropdown-toggle {

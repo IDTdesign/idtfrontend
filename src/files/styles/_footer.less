@@ -118,7 +118,9 @@
             font-size: (@font-size-base - 1px);
             color: @brand-alt-highlight;
 
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 background: none;
                 text-decoration: underline;
             }
@@ -235,8 +237,12 @@
         background: @brand-primary-dark;
     }
 
-    .footer-contacts {
-        padding: 25px 0;
+    .footer-contacts-xs {
+       margin: 0 -((@grid-gutter-width / 2));
+
+       .panel-collapse {
+            padding: 25px;
+       }
     }
 
     .footer-collapse {
@@ -244,7 +250,7 @@
         margin-right: -((@grid-gutter-width / 2));
     }
     
-    .panel-collapse {
+    .footer-collapse .panel-collapse {
         background: @brand-alt-highlight-bright;
         color: @gray-darker;
     }
@@ -412,5 +418,10 @@
 }
 /* social mobile end */
 
+
+/* live chat banner */
+.livechat {
+    margin: 20px auto;
+}
 
 /* footer end */

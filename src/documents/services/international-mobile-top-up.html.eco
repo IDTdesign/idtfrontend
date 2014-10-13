@@ -146,14 +146,14 @@ scripts: ['/scripts/jqgrid_init.js']
                     <div class="payment-type">
                         <ul class="nav nav-tabs nav-tabs-payment nav-tabs-payment-red" role="tablist">
                             <li class="active"><a href="#pay-type-card" role="tab" data-toggle="tab">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
-                                    <use xlink:href="#i--visa-virtual"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-credit-card">
+                                    <use xlink:href="#i--payment-by-credit-card"></use>
                                 </svg>
                                 Pay by Credit Card</a>
                             </li>
                             <li><a href="#pay-type-check" role="tab" data-toggle="tab">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
-                                    <use xlink:href="#i--bill-pay"></use>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-check">
+                                    <use xlink:href="#i--payment-by-check"></use>
                                 </svg>
                                 Pay by Check</a>
                             </li>

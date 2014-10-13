@@ -15,7 +15,7 @@ scripts: ['/scripts/jqgrid_init.js']
         height: 45px;
     }
     .transaction-type {
-        color: #878787;
+        color: #AAA;
         font-size: 14px;
     }
 </style>
@@ -45,7 +45,7 @@ scripts: ['/scripts/jqgrid_init.js']
                     </dl>
                 </div>
             </div>
-            <div class="island island-condenced island-connected island-square-top island-alt">
+            <div class="island island-condenced island-connected island-square-top island-alt-bright">
                 <div class="icon-block icon-block-vmiddle icon-block-xxs-vertical">
                     <div class="icon-block--i gauge">
                         <div class="progress_line">
@@ -87,41 +87,49 @@ scripts: ['/scripts/jqgrid_init.js']
         </div>
     </div>
 
-    <article class="island">
+    <article class="island clearfix island-square-bottom">
         <h1 class="island--title">Manage Your Services</h1>
 
         <!-- Nav tabs -->
         <ul class="nav nav-justified nav-tabs-sections hidden-xs" role="tablist">
             <li class="active">
-                <a href="#inter-calling" class="icon-txt" role="tab" data-toggle="tab">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
-                        <use xlink:href="#i--inter-calling"></use>
-                    </svg>
-                    <span class="icon-txt--text">International <br> Calling</span>
+                <a href="#inter-calling" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                            <use xlink:href="#i--inter-calling"></use>
+                        </svg>
+                        <span class="icon-txt--text">International <br> Calling</span>
+                    </span>
                 </a>
             </li>
             <li>
-                <a href="#call-me" class="icon-txt" role="tab" data-toggle="tab">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
-                        <use xlink:href="#i--call-me"></use>
-                    </svg>
-                    <span class="icon-txt--text">Call Me <br> Services</span>
+                <a href="#call-me" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                            <use xlink:href="#i--call-me"></use>
+                        </svg>
+                        <span class="icon-txt--text">Call Me <br> Services</span>
+                    </span>
                 </a>
             </li>
             <li>
-                <a href="#inter-mobile-top-up" class="icon-txt" role="tab" data-toggle="tab">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
-                        <use xlink:href="#i--inter-airtime-top-up"></use>
-                    </svg>
-                    <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                <a href="#inter-mobile-top-up" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                            <use xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                        <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                    </span>
                 </a>
             </li>
             <li>
-                <a href="#domestic-mobile-top-up" class="icon-txt" role="tab" data-toggle="tab">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
-                        <use xlink:href="#i--domestic-airtime-top-up"></use>
-                    </svg>
-                    <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                <a href="#domestic-mobile-top-up" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                            <use xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                        <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                    </span>
                 </a>
             </li>
         </ul>
@@ -153,42 +161,54 @@ scripts: ['/scripts/jqgrid_init.js']
 
             <div id="inter-calling-content" class="panel-collapse collapse in collapse-xs-opened">
 
-                <section class="island island-connected">
+                <section class="island island-connected island-square-bottom island-square-top">
                     <ul class="nav nav-pane">
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
-                                <span class="icon-txt--text">Quick Call</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                    <span class="icon-txt--text">Quick Call</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--speed-dial"><use xlink:href="#i--speed-dial"></use></svg>
-                                <span class="icon-txt--text">Speed Dial</span>
+                            <a href="#">
+                                <span class="icon-txt">                            
+                                    <svg class="i i--speed-dial"><use xlink:href="#i--speed-dial"></use></svg>
+                                    <span class="icon-txt--text">Speed Dial</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--move-service"><use xlink:href="#i--move-service"></use></svg>
-                                <span class="icon-txt--text">Move Service</span>
+                            <a href="#">
+                                <span class="icon-txt">                        
+                                    <svg class="i i--move-service"><use xlink:href="#i--move-service"></use></svg>
+                                    <span class="icon-txt--text">Move Service</span>
+                                </span>    
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--security-code"><use xlink:href="#i--security-code"></use></svg>
-                                <span class="icon-txt--text">Security Code</span>
+                            <a href="#">
+                                <span class="icon-txt">                                
+                                    <svg class="i i--security-code"><use xlink:href="#i--security-code"></use></svg>
+                                    <span class="icon-txt--text">Security Code</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--print-virtual-card"><use xlink:href="#i--print-virtual-card"></use></svg>
-                                <span class="icon-txt--text">Print Virtual Card</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--print-virtual-card"><use xlink:href="#i--print-virtual-card"></use></svg>
+                                    <span class="icon-txt--text">Print Virtual Card</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--add-numbers"><use xlink:href="#i--add-numbers"></use></svg>
-                                <span class="icon-txt--text">Add Numbers</span>
+                            <a href="#">
+                                <span class="icon-txt">                           
+                                    <svg class="i i--add-numbers"><use xlink:href="#i--add-numbers"></use></svg>
+                                    <span class="icon-txt--text">Add Numbers</span>
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -221,9 +241,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             </p>
 
                             <p class="icon-block icon-block-default">
-                                <span class="icon-block--i">
-                                    <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
-                                </span>
+                                <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
                                 <span class="icon-block--text">
                                     <label for="inter-calling-auto-renew">Auto Renewal is OFF.</label>
                                     <a href="#" class="learn-more">Configure »</a>
@@ -263,12 +281,12 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <button class="btn btn-flat-bordered pull-left">
+                            <footer class="text-center-xs">
+                                <a href="#" class="btn btn-flat-bordered">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
                                      Call History
-                                </button>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
+                                </a>
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                         <section class="island island-condenced island-alt-bordered">
@@ -305,37 +323,45 @@ scripts: ['/scripts/jqgrid_init.js']
             </header>
             <div id="call-me-content" class="panel-collapse collapse collapse-xs-opened">
 
-                <section class="island island-connected">
+                <section class="island island-connected island-square-bottom island-square-top">
                     <ul class="nav nav-pane">
                         <li class="active">
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
-                                <span class="icon-txt--text">Renewal</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                    <span class="icon-txt--text">Renewal</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
-                                <span class="icon-txt--text">Change U.S. Phone Number</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
+                                    <span class="icon-txt--text">Change U.S. Phone Number</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
-                                <span class="icon-txt--text">Change Notification Number</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
+                                    <span class="icon-txt--text">Change Notification Number</span>
+                                </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="icon-txt">
-                                <svg class="i i--share-your-number"><use xlink:href="#i--share-your-number"></use></svg>
-                                <span class="icon-txt--text">Share Your Number</span>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--share-your-number"><use xlink:href="#i--share-your-number"></use></svg>
+                                    <span class="icon-txt--text">Share Your Number</span>
+                                </span>
                             </a>
                         </li>
                     </ul>
                 </section>
 
-                <section class="island island-square-top">
-                    <h2 class="island--title island--title-alt h4">Renew your current Call Me plan for an additional 30 days</h2>
+                <section class="island island-square-top island-alt-bright">
+                    <h2 class="island--title island--title-alt h3">Renew your current Call Me plan for an additional 30 days</h2>
                     <div class="call-me-plan">
                         <div class="call-me-plan--phones">
                             <div class="icon-block icon-block-default">
@@ -449,16 +475,16 @@ scripts: ['/scripts/jqgrid_init.js']
                         <div id="update-card" class="collapse">
                             <div class="payment-type payment-type-bg-gray">
                                 <h2 class="payment-type--title">Select a Payment Type</h2>
-                                <ul class="nav nav-tabs nav-tabs-payment" role="tablist">
+                                <ul class="nav nav-tabs nav-tabs-payment nav-tabs-payment-red" role="tablist">
                                     <li class="active"><a href="#pay-type-card" role="tab" data-toggle="tab">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
-                                            <use xlink:href="#i--visa-virtual"></use>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-credit-card">
+                                            <use xlink:href="#i--payment-by-credit-card"></use>
                                         </svg>
                                         Pay by Credit Card</a>
                                     </li>
                                     <li><a href="#pay-type-check" role="tab" data-toggle="tab">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--bill-pay">
-                                            <use xlink:href="#i--bill-pay"></use>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-check">
+                                            <use xlink:href="#i--payment-by-check"></use>
                                         </svg>
                                         Pay by Check</a>
                                     </li>
@@ -586,9 +612,8 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                     </div>
@@ -660,9 +685,8 @@ scripts: ['/scripts/jqgrid_init.js']
                             <div class="transactions-grid">
                                 <table id="testGrid"></table>
                             </div>
-                            <footer>
-                                <a href="#" class="pull-right learn-more">See All Transactions &raquo;</a>
-                                <div style="clear: both"></div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
                             </footer>
                         </section>
                     </div>

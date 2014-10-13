@@ -1,14 +1,14 @@
-        <ul class="nav navmenu-nav">
-            <li class="navmenu--item <%- @isActive('/my-account.html') %> dropdown">
+        <ul class="nav navmenu-nav" id="mobile-nav">
+            <li class="navmenu--item navmenu--node <%- @isActive('/my-account.html') %>">
                 <a href="<%= @getUrl('/my-account.html') %>" class="navmenu--link pullin-space">My Account</a><!--
-                --><button type="button" class="pullin-object dropdown-toggle" id="mobileAccount" data-toggle="dropdown">
+                --><button type="button" class="pullin-object dropdown-toggle collapsed" id="mobileAccount" data-toggle="collapse" data-parent="#mobile-nav" data-target="#mob-my-account">
                     <span class="btn btn-toggler">
                         <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
                     </span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
-                <ul class="navmenu--submenu dropdown-menu navmenu-nav" role="menu" aria-labelledby="mobileAccount" role="menu">
+                <ul class="navmenu--submenu collapse-menu navmenu-nav collapse" id="mob-my-account" role="menu" aria-labelledby="mobileAccount">
                     <li class="navmenu--submenuitem dropdown-header">Welcome, Username!</li>
                     <li class="navmenu--submenuitem <%- @isActive('/my-account/personal-profile.html') %>">
                         <a href="<%= @getUrl('/my-account/personal-profile.html') %>" class="navmenu--submenulink">Personal Profile</a>
@@ -25,16 +25,16 @@
                     </li>
                 </ul>
             </li>
-            <li class="navmenu--item dropdown <%- @isActive('/services.html') %>">
+            <li class="navmenu--item navmenu--node <%- @isActive('/services.html') %>">
                 <a href="<%= @getUrl('/services.html') %>" class="navmenu--link pullin-space">Services</a><!--
-                --><button type="button" class="pullin-object dropdown-toggle" id="mobileServices" data-toggle="dropdown">
+                --><button type="button" class="pullin-object dropdown-toggle collapsed" id="mobileServices" data-toggle="collapse" data-parent="#mobile-nav" data-target="#mob-services">
                     <span class="btn btn-toggler">
                         <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
                     </span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
-                <ul class="navmenu--submenu dropdown-menu navmenu-nav" role="menu" aria-labelledby="mobileServices" role="menu">
+                <ul class="navmenu--submenu navmenu-nav collapse" id="mob-services" role="menu" aria-labelledby="mobileServices">
                     <li class="navmenu--submenuitem <%- @isActive('/services/international-calling.html') %>">
                         <a href="<%= @getUrl('/services/international-calling.html') %>" class="navmenu--submenulink">International Calling</a>
                         <ul class="navmenu--third-level navmenu-nav">

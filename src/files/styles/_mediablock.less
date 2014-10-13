@@ -177,6 +177,7 @@
 .mediablock-tight > .mediablock--primary {
     padding: 40px 20px 40px 60px;
 }
+
 .mediablock-tight > .mediablock--secondary {
     padding: 40px 60px 40px 20px;
 }
@@ -185,9 +186,20 @@
     padding-right: 60px;
     padding-left: 20px;
 }
+
 .mediablock-tight.mediablock-rtl > .mediablock--secondary {
     padding-left: 60px;
     padding-right: 20px;
+}
+
+@media (max-width: @screen-sm-max) {
+
+    .mediablock-tight > .mediablock--primary,
+    .mediablock-tight > .mediablock--secondary,
+    .mediablock-tight.mediablock-rtl > .mediablock--primary,
+    .mediablock-tight.mediablock-rtl > .mediablock--secondary {
+        padding: 20px;
+    }
 }
 
 .mediablock-tiny-spacing {
@@ -237,11 +249,11 @@
     background-color: fade(@paper, 20%);
 }
 
-@media (max-width: @screen-xs-max) {
-    .mediablock-alt {
-        background-color: @brand-alt-highlight;
-    }
-}
+//@media (max-width: @screen-xs-max) {
+//    .mediablock-alt {
+//        background-color: @brand-alt-highlight;
+//    }
+//}
 
 /*  mediablock-hasarrow option */
 

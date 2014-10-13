@@ -51,14 +51,13 @@
         padding: 40px 80px 70px;
 
         @media (max-width: @screen-xs-max) {
-            padding: 20px 40px 70px;
+            padding: 10px 40px 60px;
         }
     }
 }
 
 .promo-meetboss {
     position: relative;
-    margin-bottom: -@line-height-computed;
     background-color: fade(@paper, 35%);
     color: @ink;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -77,68 +76,29 @@
     }
 }
 
-.promo-meetboss--cta {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    height: 0;
+@media (min-width: @screen-md-min) {
+    .promo-meetboss {
+        margin-bottom: -@line-height-computed;
+    }
 }
 
-.carousel-default {
-    
-    .carousel-control {
-        background-image: none;
-
-        .i {
-            position: absolute;
-            top: 50%;
-            margin-top: -25px;
-            width: 50px;
-            height: 50px;
-
-            @media (max-width: @screen-xs-max) {
-                width: 25px;
-                height: 25px;
-                margin-top: -12px;
-            }
-        }
-
+@media (max-width: @screen-xs-max) {
+    .promo-meetboss--cta {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
     }
+}
 
-    .carousel-control.left {
-        text-align: left;
-
-        .i {
-            left: 0;
-        }
-    }
-
-    .carousel-control.right {
-        text-align: right;
-
-        .i {
-            right: 0;
-        }
-    }
-
-    .carousel-indicators li {
-        margin: 5px;
-        width: 25px;
-        height: 25px;
-        border-width: 4px;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.5);
-        border-color: transparent;
-
-        &.active {
-            margin: 5px;
-            background-color: #fff;
-            background-clip: content-box;
-            border-color: rgba(255,255,255,0.5);
-        }
+@media (min-width: @screen-sm-min) {
+    .promo-meetboss--cta {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 20px;
+        width: 100%;
+        text-align: center;
+        height: 0;
     }
 }
 

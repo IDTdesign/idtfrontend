@@ -5,7 +5,11 @@ slug: basic
 lead: "SVG icon sprite"
 styles: ['/styles/bootstrap-theme.css','/styles/bossrevolution.css']
 ---
-
+<style type="text/css">
+body{
+color: #666;
+}
+</style>
 # Icon System
 
 ## Usage
