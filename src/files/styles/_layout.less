@@ -124,6 +124,10 @@ body {
             left: 0;
         }
     }
+
+    @media (max-width: @screen-sm) {
+        margin: 0;
+    }
 }
 
 /* benefits */
@@ -272,33 +276,17 @@ body {
         position: relative;
         text-align: center;
 
-        //&:after {
-        //    content: "";
-        //    display: block;
-        //    width: 34px;
-        //    height: 34px;
-        //    border-radius: 50%;
-        //    background-color: @brand-primary-highlight-medium;
-        //    position: absolute;
-        //    top: 0;
-        //    left: 15px;
-        //    color: @brand-primary-dark;
-        //    font-size: 21px;
-        //    line-height: 30px;
-        //    text-align: center;
-        //}
-
         &:after {
             content: "";
             display: block;
             width: 34px;
             height: 34px;
             border-radius: 50%;
-            background-color: @brand-primary-highlight-medium;
+            background-color: @ink;
             position: absolute;
             top: 0;
             left: 15px;
-            color: @brand-primary-dark;
+            color: @gray-dark;
             font-size: 21px;
             line-height: 30px;
             text-align: center;
@@ -344,6 +332,8 @@ body {
 @media (max-width: @screen-xs-max) {
     .how-works {
         margin-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
 
         .how-works--block {
             width: 100%;

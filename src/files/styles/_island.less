@@ -163,6 +163,11 @@
 
 }
 
+.island-no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .island-absolute-bottom {
     margin: 0;
     position: absolute;
@@ -211,13 +216,11 @@
 .island-square-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    margin-top: 0;
 }
 
 .island-square-bottom {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    margin-bottom: 0;
 }
 
 .island-condenced {
@@ -264,6 +267,8 @@
 
     .island--title {
         margin-bottom: 0;
+        border: none;
+        color: @ink;
     }
 }
 
@@ -272,6 +277,8 @@
 
     .island--title {
         margin-bottom: 0;
+        border: none;
+        color: @ink;
     }
 }
 
@@ -280,6 +287,16 @@
     //border: 10px solid #FFF;
     background-color: fade(@paper, 50%);
     border: 15px solid fade(@ink, 10%);
+}
+
+@media (max-width: @screen-xs-max) {
+    .island-absolute-top,
+    .island-absolute-bottom {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
 }
 
 //@media (max-width: @screen-xs-max) {
@@ -302,49 +319,6 @@
 //        border: 10px solid #FFF;
 //    }
 //}
-
-    .island .island-alt {
-        background-color: @brand-alt-highlight;
-    }
-
-    .island-alt-bright,
-    .island .island-alt-bright {
-        background-color: @brand-alt-highlight-bright;
-    }
-
-    .island-alt-bordered {
-        background-color: @brand-alt-highlight-bright;
-        border: 10px solid #FFF;
-    }
-
-    .island-alt-blue {
-        background-color: @brand-alt;
-
-        .island--title {
-            margin-bottom: 0;
-            border: none;
-            color: @ink;
-        }
-    }
-
-    .island-dark-red {
-        background-color: @brand-primary;
-
-        .island--title {
-            margin-bottom: 0;
-            border: none;
-            color: @ink;
-        }
-    }
-
-    .island-absolute-top,
-    .island-absolute-bottom {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-    }
-}
 
 /* island end */
 

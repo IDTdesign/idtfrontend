@@ -46,7 +46,7 @@ title: "Visa Virtual Account"
 
     <article class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
         <div class="dyad--first dyad--stretch">
-            <div class="island">
+            <div class="island island-no-margin">
                 <div class="island island-condenced island-transparent">
                     <ul class="svg-list">
                         <li class="svg-list--item">No Bank Account, No Credit Check</li>
@@ -58,7 +58,7 @@ title: "Visa Virtual Account"
             </div>
         </div>
         <div class="dyad--second dyad--stretch">
-            <div class="island island-square-bottom">
+            <div class="island island-square-bottom island-no-margin">
                 <div class="island island-condenced island-square-bottom island-dark-red">
                     <h3 class="island--title island--title-small">Already have an account?</h3>
                 </div>
@@ -88,7 +88,7 @@ title: "Visa Virtual Account"
                 </div>
             </div>
 
-            <div class="island island-square-top island-alt dyad--item-bottom">
+            <div class="dyad--item-bottom island island-square-top island-alt island-no-margin">
                 <nav class="nav nav-with-icons">
                     <ul class="nav--list">
                         <li class="nav--item">
