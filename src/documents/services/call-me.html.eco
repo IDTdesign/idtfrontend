@@ -1,0 +1,138 @@
+---
+layout: "default"
+title: "idtfrontend"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<div class="container"></div>
+
+<nav class="local-nav">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav--item"><a href="#benefits" class="nav--link">Benefits</a></li>
+            <li class="nav--item"><a href="#how" class="nav--link">How Does It Work?</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <article class="island island-default" id="benefits">
+        <h2 class="island--title">Benefits</h2>
+        <div class="benefits benefits-type-services">
+            <div class="benefits--block">
+                <h3>Simple to Use</h3>
+                <p>Make international calls without having to dial a pin -- just dial your access number from a registered phone and we’ll automatically recognize the number and you’re ready to start calling. And with our award-winning calling app, you can easily make calls with one-tap dialing.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="benefits--block">
+                <h3>Reliable</h3>
+                <p>Our state-of-the-art technology routes millions of international minutes daily, so you can be sure that you’ll have superior voice quality regardless of the phone you’re calling from.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="benefits--block">
+                <h3>Affordable</h3>
+                <p>Our low rates come with no monthly or additional fees, so you can save money with competitive rates and not have to worry about any surprises or hidden charges.</p>
+                <a href="#">Learn more »</a>
+                <div class="plate plate-default-inset-revert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                        <use xlink:href="#i--valid"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="island island-default" id="how">
+        <h2 class="island--title">How Does It Work?</h2>
+        <div class="how-works how-works-number-centered">
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-01.png") %>" alt="Select a country and city">
+                <h3>Select a country and city</h3>
+                <p>for your local Call Me phone number</p>
+            </div>
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-04.png") %>" alt="Select the U.S. phone number">
+                <h3>Select the U.S. phone number</h3>
+                <p>that will receive Call Me calls</p>
+            </div>
+            <div class="how-works--block">
+                <img src="<%= @getUrl("/services/how-it-works-05.png") %>" alt="Share your Call Me number">
+                <h3>Share your Call Me number</h3>
+                <p>with friends and family and receive their calls</p>
+            </div>
+        </div>
+        <form>
+            <div class="forms forms-gray form-horizontal">
+                <h3>Enter a Destination Country and Select a City to Get Started:</h3>
+                <div class="form-group">
+                    <div class="col-lg-5 col-lg-offset-1 col-xs-6">
+                        <input type="text" class="form-control" name="destination" placeholder="Enter destination..." />
+                    </div>
+                    <div class="col-lg-5 col-xs-6">
+                        <select class="form-control">
+                            <option>Select a value...</option>
+                            <option>Value example 1</option>
+                            <option>Value example 2</option>
+                            <option>Value example 3</option>
+                            <option>Value example 4</option>
+                            <option>Value example 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="call-me-plan call-me-plan-condenced">
+                <span class="call-me-plan--name">Call Me Plan</span>
+                <span class="call-me-plan--price">$9.99 <small>/ month</small></span>
+            </div>
+
+            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Get Started</button></div>
+        </form>
+    </article>
+
+    <article class="island island-default">
+        <h2 class="island--title">Discover Boss Revolution Services</h2>
+
+        <div class="forms forms-default form-horizontal">
+            <form>
+                <div class="form-group">
+                    <div class="col-lg-5">
+                        <select class="form-control">
+                          <option>Select a value...</option>
+                          <option>Value example 1</option>
+                          <option>Value example 2</option>
+                          <option>Value example 3</option>
+                          <option>Value example 4</option>
+                          <option>Value example 5</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" name="destination" placeholder="Enter destination..." />
+                    </div>
+
+                    <div class="col-lg-2">
+                        <button type="submit" class="btn btn-primary btn-block">GO</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+
+    <article class="island island-default">
+        <div class="notice">
+            <b>Note:</b> Advertised minutes based on single, non-payphone call from the United States to a landline phone in the chosen country destination using local access. Advertised rates are based on calls from the United States to a landline phone in the chosen country destination using local access. Rates shown are live rates and are subject to change without notice (except where an expiration date is provided). Listed destinations are for landlines except where noted. <br> <b>Important:</b> when calling from a cell phone DO NOT PRESS "SEND" after entering the destination number as this might result in additional charges from your wireless provider. Your wireless carrier may assess roaming or long distance charges when calling a local access number - please check the details of your plan with your provider.
+        </div>
+    </article>
+
+</div><!--/container-->

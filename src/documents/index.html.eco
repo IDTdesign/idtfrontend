@@ -14,6 +14,7 @@ title: "idtfrontend"
 			<li><a href="<%= @getUrl('/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/my-account/calling-history.html') %>">/my-account/calling-history.html</a></li>
             <li><a href="<%= @getUrl('/my-account.html') %>">/my-account.html</a></li>
+            <li><a href="<%= @getUrl('/services/call-me.html') %>">/services/call-me.html</a></li>
             <li><a href="<%= @getUrl('/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
             <li><a href="<%= @getUrl('/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
             <li><a href="<%= @getUrl('/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>

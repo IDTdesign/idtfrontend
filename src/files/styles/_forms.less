@@ -91,19 +91,22 @@ button, input, optgroup, select, textarea {
 }
 
 .forms-default textarea.form-control,
+.forms-gray textarea.form-control,
 textarea.form-control-default {
     height: auto;
 }
 
 .forms-default {
-    padding: 20px 60px;
-
     label {
         font-weight: bold;
     }
 
     .btn {
         min-width: 175px;
+
+        &.btn-block {
+            min-width: inherit;
+        }
     }
 
     .forms--title {
@@ -142,8 +145,8 @@ textarea.form-control-default {
 @media (max-width: @screen-xs-max ) {
 
     .forms-default {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
 
         &.row {
             margin-left: 0;
@@ -362,7 +365,13 @@ textarea.form-control-default {
     background-color: fade(@paper, 20%);
     border-radius: 5px;
 
-    .form-control, .btn {
+    .form-control {
+        width: 100%;
+        height: 45px;
+        padding: ((@padding-base-vertical)-8) ((@padding-base-horizontal)-8);
+    }
+
+    .btn {
         width: 100%;
         height: 45px;
     }
