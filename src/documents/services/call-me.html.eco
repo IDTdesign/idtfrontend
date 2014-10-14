@@ -122,7 +122,7 @@ scripts: ['/scripts/jqgrid_init.js']
                         <div class="form-group">
                             <div class="call-me-plan call-me-plan-condenced">
                                 <span class="call-me-plan--name">Call Me Plan</span>
-                                <span class="call-me-plan--price"><span id="planCostLabel">$9.99</span><small>&thsp;/&thsp;month</small></span>
+                                <span class="call-me-plan--price"><span id="planCostLabel">$9.99</span><small>&thinsp;/&thinsp;month</small></span>
                             </div>
                         </div>
                     </div>
