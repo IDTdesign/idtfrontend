@@ -72,31 +72,69 @@ scripts: ['/scripts/jqgrid_init.js']
             </div>
         </div>
         <form>
-            <div class="forms forms-gray form-horizontal">
+            <div class="forms forms-gray">
                 <h3>Enter a Destination Country and Select a City to Get Started:</h3>
-                <div class="form-group">
-                    <div class="col-lg-5 col-lg-offset-1 col-xs-6">
-                        <input type="text" class="form-control" name="destination" placeholder="Enter destination..." />
+                <div class="row">
+                    <div class="col-sm-6 col-md-5 col-md-offset-1">
+                        <div class="form-group">
+                            <label for="" class="control-label">Country</label>
+                            <select name="" id="" class="form-control form-control-default" placeholder="">
+                                <option value="">Select Country...</option>
+                                <option value="MX">Mexico</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-lg-5 col-xs-6">
-                        <select class="form-control">
-                            <option>Select a value...</option>
-                            <option>Value example 1</option>
-                            <option>Value example 2</option>
-                            <option>Value example 3</option>
-                            <option>Value example 4</option>
-                            <option>Value example 5</option>
-                        </select>
+                    <div class="col-sm-6 col-md-5">
+                        <div class="form-group">
+                            <label for="" class="control-label">City</label>
+                            <select name="" id="" class="form-control form-control-default" placeholder="">
+                                <option value="">Select City...</option>
+                                <option value="MX~BOSSUSDLMX01~12269~999">AGUASCALIENTES 449</option>
+                                <option value="MX~BOSSUSDLMX01~12271~999">CELAYA 461</option>
+                                <option value="MX~BOSSUSDLMX01~19120~999">Cuernavaca 777</option>
+                                <option value="MX~BOSSUSDLMX01~19121~999">Culiacán 667</option>
+                                <option value="MX~BOSSUSDLMX01~19122~999">Distrito Federal 55</option>
+                                <option value="MX~BOSSUSDLMX01~19123~999">Durango 618</option>
+                                <option value="MX~BOSSUSDLMX01~19124~999">Guadalajara 33</option>
+                                <option value="MX~BOSSUSDLMX01~12224~999">GUADALAJARA  33</option>
+                                <option value="MX~BOSSUSDLMX01~12272~999">IRAPUATO 462</option>
+                                <option value="MX~BOSSUSDLMX01~12273~999">LEON 477</option>
+                                <option value="MX~BOSSUSDLMX01~19125~999">Mazatlán 669</option>
+                                <option value="MX~BOSSUSDLMX01~12223~999">Mexico City 55</option>
+                                <option value="MX~BOSSUSDLMX01~12225~999">MONTERREY  81</option>
+                                <option value="MX~BOSSUSDLMX01~12274~999">NUEVO LAREDO 867</option>
+                                <option value="MX~BOSSUSDLMX01~12268~999">PUEBLA 222</option>
+                                <option value="MX~BOSSUSDLMX01~12495~999">QUERETARO 442</option>
+                                <option value="MX~BOSSUSDLMX01~19141~999">Querétaro 442</option>
+                                <option value="MX~BOSSUSDLMX01~19142~999">Reynosa 899</option>
+                                <option value="MX~BOSSUSDLMX01~12275~999">SALTILLO 844</option>
+                                <option value="MX~BOSSUSDLMX01~19143~999">Tepic 311</option>
+                                <option value="MX~BOSSUSDLMX01~19144~999">Tijuana 664</option>
+                                <option value="MX~BOSSUSDLMX01~12494~999">TOLUCA 722</option>
+                                <option value="MX~BOSSUSDLMX01~19145~999">Torreón 871</option>
+                                <option value="MX~BOSSUSDLMX01~17818~999">VERACRUZ 229</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="form-group">
+                            <div class="call-me-plan call-me-plan-condenced">
+                                <span class="call-me-plan--name">Call Me Plan</span>
+                                <span class="call-me-plan--price"><span id="planCostLabel">$9.99</span><small>&thsp;/&thsp;month</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Get Started</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="call-me-plan call-me-plan-condenced">
-                <span class="call-me-plan--name">Call Me Plan</span>
-                <span class="call-me-plan--price">$9.99 <small>/ month</small></span>
-            </div>
-
-            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Get Started</button></div>
         </form>
     </article>
 
