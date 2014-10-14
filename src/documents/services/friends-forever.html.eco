@@ -6,26 +6,43 @@ title: "Friends Forever"
 <style>
     .island-fiends-forever-1 {
         text-align: right;
-        background-color: #ecf3fd;
+        padding-left: 5%;
+        padding-top: 5%;
     }
     .island-fiends-forever-1 img {
         border-radius: inherit;
     }
     .island-fiends-forever-2 {
-        background-image: url(<%= @getUrl(@document.basename+"/ff-call-to-action-bg.jpg") %>);
-        background-color: #ecf3fd;
+        background-image: url(<%= @getUrl(@document.basename+"/ff-call-to-action-bg.png") %>);
         background-repeat: no-repeat;
-        background-position: 0 0;
-        min-height:417px;
-        padding: 180px 60px 40px 630px;
-        color: #333;
+        background-position: 0 bottom;
+        min-height: 430px;
+        padding: 180px 45px 40px 0;
+        padding-left: 76%;
+        color: #fff;
     }
-
+    .island .text-center {
+        margin-top: 35px;
+    }
     @media (max-width: 991px) {
         .island-fiends-forever-2 {
-            padding: 450px 60px 40px 60px;
-            background-color: #fff;
+            padding: 40px 60px 0 60px;
+            padding-bottom: 45%;
             text-align: center;
+            min-height: 100%;
+            background-size: 95% auto;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .island-fiends-forever-2 {
+            min-height: 396px;
+            background-size: 90% auto;
+        }
+    }
+    @media (max-width: 768px) {
+        .island-fiends-forever-2 {
+            border-bottom: 7px solid rgba(235, 240, 245, 0.1);
+
         }
     }
 
@@ -55,14 +72,14 @@ title: "Friends Forever"
 
 <div class="container">
     <article class="island island-fiends-forever-1">
-        <img src="<%= @getUrl(@document.basename+"/ff-calling-home-for-free-forever.jpg") %>" alt="Imagine calling home for free FOREVER!">
+        <img src="<%= @getUrl(@document.basename+"/ff-calling-home-for-free-forever.png") %>" alt="Imagine calling home for free FOREVER!">
     </article>
 
     <article class="island island-default" id="win-win">
 
         <h2 class="island--title">Win-Win</h2>
 
-        <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-win-win.jpg") %>" alt="Win-Win"></p>
+        <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-win-win.png") %>" alt="Win-Win"></p>
         <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
             <p>You refer your friends and they get <strong class="brand-color">$1&nbsp;FREE</strong> in International Calls.</p>
             <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-1.png") %>" alt=""></p>
