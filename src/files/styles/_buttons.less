@@ -349,7 +349,7 @@
 
 .btn-transp,
 .btn-transp-primary {
-    
+
     &:active {
         box-shadow: none;
     }
@@ -434,7 +434,40 @@
 
     .i {
         width: 57px;
-        height: 57px;    
+        height: 57px;
     }
 }
 /* social share buttons end */
+
+/* collapse trigger */
+.collapse-trigger {
+    &.collapse-trigger-arrows {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        color: @link-color;
+        font-size: @font-size-larger;
+        font-weight: bold;
+        outline: none;
+
+        &:hover {
+            color: @link-hover-color;
+        }
+
+        .i {
+            height: 21px;
+            width: 21px;
+            float: right;
+            margin-left: 5px;
+
+            &.i--collapse {display: block;}
+            &.i--expand {display: none;}
+        }
+
+        &.collapsed {
+            .i--collapse {display: none;}
+            .i--expand {display: block;}
+        }
+    }
+}
+/* collapse trigger end*/

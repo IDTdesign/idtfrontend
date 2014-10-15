@@ -743,13 +743,7 @@ body {
         }
     }
 
-    .call-me-plan--name {
-        float: left;
-        font-size: 21px;
-        line-height: 1.25;
-        font-weight: bold;
-    }
-
+    .call-me-plan--name,
     .call-me-plan--price {
         font-size: 21px;
         line-height: 1.25;
@@ -763,7 +757,6 @@ body {
 
     &.call-me-plan-condenced {
         padding: 20px 0;
-        text-align: right;
     }
 }
 
@@ -773,6 +766,124 @@ body {
         padding: @line-height-computed;
     }
 
+}
+
+.call-me-countries {
+    .clearfix;
+    padding: 0;
+    margin: 40px -60px -40px;
+
+    .collapse-trigger {
+        margin-bottom: 20px;
+    }
+
+    .call-me-countries--list-wrapper {
+        h4 {
+            padding: 8px;
+            margin: 0 0 20px;
+            background-color: fade(@ink, 20%);
+            text-align: center;
+        }
+
+        .call-me-countries--list {
+            column-count: 4;
+            column-gap: 20px;
+            column-width: auto;
+            min-height: 551px;
+            height: auto;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+
+            @media (max-width: @screen-md-min) {
+                column-count: 3;
+                min-height: 620px;
+            }
+
+            @media (max-width: @screen-md-min) {
+                column-count: 3;
+                min-height: 775px;
+            }
+
+            @media (max-width: @screen-sm-min) {
+                column-count: 2;
+                min-height: 880px;
+
+                ul > li > ul {
+                    display: none;
+                }
+            }
+
+            @media (max-width: @screen-xs-min) {
+                column-count: 1;
+                min-height: inherit;
+            }
+
+            ul {
+                display: inline-block;
+                width: 100%;
+                padding: 0 0 0 20px;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    font-size: 15px;
+                    line-height: 1.25;
+
+                    ul {
+                        padding: 0 0 0 50px;
+                        display: inline-block;
+                        width: 100%;
+
+                        li {
+                            display: inline-block;
+                            width: 100%;
+                            list-style: none;
+                            line-height: 1.1;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*.call-me-countries--list {
+            display: block;
+            width: 100%;
+            margin: 20px 0 0;
+            padding: 0;
+            font-size: 1px;
+            line-height: 0;
+            list-style: none;
+            text-align: justify;
+            text-align-last: justify;
+            vertical-align: top;
+
+            &:after {
+                content: " ";
+                width: 100%;
+                display: inline-block;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+
+            > li {
+                width: 24.9%;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                font-size: 15px;
+                line-height: 1.5;
+                vertical-align: top;
+            }
+        }*/
+    }
 }
 
 .plan-dates {
