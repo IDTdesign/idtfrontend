@@ -444,7 +444,37 @@
     &.collapse-trigger-arrows {
         background: transparent;
         border: 0;
-        padding: 0;
+        padding: 0 20px;
+        color: @link-color;
+        font-size: @font-size-larger;
+        font-weight: bold;
+        outline: none;
+
+        &:hover {
+            color: @link-hover-color;
+        }
+
+        .i {
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            float: none;
+            margin-left: 5px;
+
+            &.i--collapse {display: inline-block;}
+            &.i--expand {display: none;}
+        }
+
+        &.collapsed {
+            .i--collapse {display: none;}
+            .i--expand {display: inline-block;}
+        }
+    }
+
+    &.collapse-trigger-cross {
+        background: transparent;
+        border: 0;
+        padding: 0 20px;
         color: @link-color;
         font-size: @font-size-larger;
         font-weight: bold;
@@ -457,16 +487,7 @@
         .i {
             height: 21px;
             width: 21px;
-            float: right;
-            margin-left: 5px;
-
-            &.i--collapse {display: block;}
-            &.i--expand {display: none;}
-        }
-
-        &.collapsed {
-            .i--collapse {display: none;}
-            .i--expand {display: block;}
+            vertical-align: text-bottom;
         }
     }
 }

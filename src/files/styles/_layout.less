@@ -773,8 +773,12 @@ body {
     padding: 0;
     margin: 40px -60px -40px;
 
-    .collapse-trigger {
+    .collapse-trigger-arrows {
         margin-bottom: 20px;
+    }
+
+    @media (max-width: @screen-sm-min) {
+        margin: 20px -20px -20px;
     }
 
     .call-me-countries--list-wrapper {
@@ -786,103 +790,69 @@ body {
         }
 
         .call-me-countries--list {
-            column-count: 4;
-            column-gap: 20px;
-            column-width: auto;
-            min-height: 551px;
+            columns: 4 20px;
             height: auto;
             width: 100%;
             padding: 0;
-            margin: 0;
+            margin: 0 0 20px;
             overflow: auto;
 
-            @media (max-width: @screen-md-min) {
-                column-count: 3;
-                min-height: 620px;
-            }
-
-            @media (max-width: @screen-md-min) {
-                column-count: 3;
-                min-height: 775px;
-            }
-
-            @media (max-width: @screen-sm-min) {
-                column-count: 2;
-                min-height: 880px;
-
-                ul > li > ul {
-                    display: none;
-                }
-            }
-
-            @media (max-width: @screen-xs-min) {
-                column-count: 1;
-                min-height: inherit;
-            }
-
-            ul {
-                display: inline-block;
-                width: 100%;
+            .flags-list {
                 padding: 0 0 0 20px;
                 margin: 0;
 
                 li {
-                    display: inline-block;
-                    width: 100%;
+                    display: list-item;
                     padding: 0;
                     margin: 0;
                     list-style: none;
                     font-size: 15px;
-                    line-height: 1.25;
+                    line-height: 1.5;
+                    font-weight: bold;
+
+                    .flag {
+                        vertical-align: baseline;
+                    }
 
                     ul {
                         padding: 0 0 0 50px;
-                        display: inline-block;
-                        width: 100%;
 
                         li {
-                            display: inline-block;
-                            width: 100%;
+                            display: list-item;
                             list-style: none;
-                            line-height: 1.1;
+                            line-height: 1.25;
+                            font-weight: normal;
                         }
                     }
                 }
             }
+
+            @media (max-width: @screen-md-min) {
+                column-count: 3;
+            }
+
+            @media (max-width: @screen-md-min) {
+                column-count: 3;
+            }
+
+            @media (max-width: @screen-sm-min) {
+                column-count: 2;
+
+                .flags-list {
+                    > li > ul {
+                        display: none;
+                    }
+                }
+            }
+
+            @media (max-width: @screen-xs-min) {
+                column-count: 2;
+            }
+
+            @media (max-width: @screen-xxs) {
+                column-count: 1;
+            }
         }
-
-        /*.call-me-countries--list {
-            display: block;
-            width: 100%;
-            margin: 20px 0 0;
-            padding: 0;
-            font-size: 1px;
-            line-height: 0;
-            list-style: none;
-            text-align: justify;
-            text-align-last: justify;
-            vertical-align: top;
-
-            &:after {
-                content: " ";
-                width: 100%;
-                display: inline-block;
-                height: 0;
-                overflow: hidden;
-                visibility: hidden;
-            }
-
-            > li {
-                width: 24.9%;
-                display: inline-block;
-                padding: 0;
-                margin: 0;
-                list-style: none;
-                font-size: 15px;
-                line-height: 1.5;
-                vertical-align: top;
-            }
-        }*/
     }
 }
 
