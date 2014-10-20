@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>404 error!</title>
+
+		<style>
+			@font-face {
+			    font-family: 'Tex Gyre Heros';
+			    src: url('../fonts/texgyreheros-regular-webfont.eot');
+			    src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+			         url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+			         url('../fonts/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+			    font-weight: 500;
+			    font-style: normal;
+			}
+			@font-face {
+			    font-family: 'Tex Gyre Heros';
+			    src: url('../fonts/texgyreheros-bold-webfont.eot');
+			    src: url('../fonts/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/texgyreheros-bold-webfont.woff') format('woff'),
+			         url('../fonts/texgyreheros-bold-webfont.ttf') format('truetype'),
+			         url('../fonts/texgyreheros-bold-webfont.svg#texgyreherosbold') format('svg');
+			    font-weight: 700;
+			    font-style: normal;
+			}
+			html, body {
+				height: 100%;
+			}
+			body {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				font-family: 'Tex Gyre Heros';
+				font-size: 62.5%;
+				background-position: 50% 50%;
+				background-attachment: fixed;
+				background-image: url(bg-d3.jpg), none;
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-color: #EEE;
+				color: #FFF;
+			}
+			.island {
+				box-sizing: border-box;
+				width: 80%;
+				max-width: 1200px;
+				margin: 50px auto;
+				padding-top: 60px;
+				padding-bottom: 40px;
+				padding-left: 3%;
+				padding-right: 3%;
+			    text-align: center;
+				background-color: rgba(0, 0, 0, 0.4);
+			    border-radius: 8px;
+			}
+			.logo {
+				display: inline-block;
+				height: 170px;
+				margin: 0 auto;
+				padding-left: 155px;
+				text-align: left;
+				line-height: 0.65;
+				background: url('logo.png') no-repeat 0 0;
+				background-size: contain;
+			}
+			h1 {
+				display: inline-block;
+				margin: 0;
+				font-size: 4.3em;
+				font-weight: normal;
+				text-transform: uppercase;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.25);		
+			}
+			.huge {
+				font-size: 3.3em;
+				font-weight: bold;
+				text-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+			}
+			h3 {
+				position: relative;
+				top: 21px;
+				margin: 0;
+				font-size: 4.3em;
+				line-height: 1.14;
+				text-transform: uppercase;
+				color: #5D5650;
+			}
+			h3 span {
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px; 
+				background-color: #FFF;
+			}
+			h2 {
+				margin: 15px 0 0;
+				font-size: 5.4em;
+				font-weight: bold;
+			}
+			p {	
+				margin: 15px auto;
+				font-size: 22px;	
+			}
+			p span {
+				display: block;
+			}
+			.divider {
+				width: 430px;
+				height: 2px;
+				margin: 34px auto 26px;
+				background-color: rgba(255,255,255,0.25); 
+			}
+			.divider + p {
+				margin-bottom: 25px;
+			}
+			h2 + p{
+				margin: 0;
+				margin-bottom: 20px;
+				font-size: 27px;
+			}
+		 	.footer {
+		 		margin-top: 20px;
+		 		margin-bottom: 0;
+		 		font-size: 17px;
+		 	}
+			.btn,
+			a {
+				text-decoration: none;		
+				color: #84c2ff;
+			}
+			a:hover {
+				color: #a9d4ff;
+			}
+			.btn {
+				display: inline-block;
+				padding: 9px 13px;
+				font-size: 14px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.42857143;
+				vertical-align: middle;
+				border: none;
+				border-radius: 5px;
+				text-transform: uppercase;
+				color: #FFF;
+				-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000, /* 4 */ 0 0 0 0 #0080ff;
+				box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000, /* 4 */ 0 0 0 0 #0080ff;
+				background: #a10000;
+				text-shadow: 0 1px 0 #950000;
+				-o-transition: all 0.2s;
+				transition: all 0.2s;
+				cursor: pointer;
+				white-space: nowrap;
+				-webkit-user-select: none;
+			}
+			.btn:hover {
+				text-decoration: none;
+				text-shadow: 0 1px 0 #be0000;
+				background-color: #cd0000;
+				-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000, /* 4 */ 0 0 0 0 #0080ff;
+				box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000, /* 4 */ 0 0 0 0 #0080ff;
+				color: #FFF;
+			}
+			.links p {
+				margin: 0 0;
+			}
+			.links p a {
+				margin: 3px 3px 0 0;
+			}
+			.primary {
+				color: #cc0000;
+			}
+			.primary:hover {
+				color: #fd0000;
+			}
+			@media (max-width: 910px) {
+				body {
+					font-size: 42.5%;
+				}
+				.logo{
+					height: 120px;
+					margin: 0 auto;
+					padding-left: 110px;
+					line-height: 0.67;
+					background-size: contain;
+				}
+				h1, .huge {
+					text-shadow: 1px 1px 3px rgba(0,0,0,0.25);		
+				}
+				h3 {
+					top: 14px;
+					line-height: 1.3;
+				}
+				h2 {
+					font-size: 6em;
+				}
+				.divider {
+					width: 95%;
+				}
+				p span {
+					display: inline;
+				}
+				.footer span {
+					display: block;
+				}
+			}
+			@media (max-width: 768px) {
+				.island {
+					width: 100%;
+					height: 100%;
+				    margin: 0;
+					padding-top: 40px;
+					padding-bottom: 40px;
+				    border-radius: 0;
+					overflow:auto;
+				}
+			}
+			@media (max-width: 500px) {
+				body {
+					font-size: 22.5%;
+				}
+				.logo{
+					height: 80px;
+					margin: 0 auto;
+					padding-left: 71px;
+					line-height: 0.77;
+					background-size: contain;
+				}
+				h1, .huge {
+					text-shadow: 1px 1px 3px rgba(0,0,0,0.25);		
+				}
+				h1,
+				h3 {
+					font-size: 4.7em;
+				}
+				h3 {
+					top: 11px;
+					line-height: 1.3;
+				}
+				h3 span {
+					padding: 1px 5px; 
+				}
+				h2 {
+					font-size: 9em;
+				}
+				h2 + p {
+					font-size: 6.8em;
+				}
+				.btn {
+					white-space: normal;
+				}
+			}
+			@media (max-width: 450px) {
+				.footer span {
+					display: inline;
+				}
+			}
+			@media (max-width: 271px) {
+				body {
+					font-size: 17.5%;
+				}
+				.island {
+					padding-top: 10px;
+				}
+				.logo {
+					height: auto;
+					padding-top: 73px;
+					padding-left: 0;
+					line-height: 0.9;
+					text-align: center;
+					background-size: 50px auto;
+					background-position: top center; 
+				}
+				p {
+					font-size: 6.8em;
+				}
+				h3 {
+					top: 4px; 
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<article class="island">
+			<div class="logo">
+				<h1><span class="huge">404</span> error!</h1>
+				<h3><span>page not found</span></h3>
+			</div>
+			<h2>We're sorry...</h2>
+			<p>The page you are looking for cannot be found.</p>
+			<p><span>If you are a Boss Revolution customer </span><span>and would like to log in to the account center, <a href="#">click here.</a></span></p>
+			<p class="divider"></p>	
+			<p><span>Please visit the Boss Revolution <a href="#">home page</a> </span><span>or follow the links below for more information about our services:</span></p>
+			<div class="links">
+				<p><a class="btn" href="#">international calling</a><a class="btn" href="#">call me</a></p>
+				<p><a class="btn" href="#">international mobile top up</a><a class="btn" href="#">domestic mobile top up</a></p>
+				<p><a class="btn" href="#">mobile app for android and iphone</a></p>
+			</div>
+			<p class="footer"><span>If you can’t find what you’re looking for, </span><span>please review our <a class="primary" href="#">FAQs</a> or <a class="primary" href="#">Contact Us</a> for help.</span></p>
+		</article>
+	</body>
+</html>

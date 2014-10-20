@@ -18,7 +18,8 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
             <li><a href="<%= @getUrl('/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
             <li><a href="<%= @getUrl('/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
-        </ul>
+            <li><a href="<%= @getUrl('/404-error/404-error.html') %>">/404-error/404-error.html</a></li>
+            </ul>
     </article>
     <article class="island island-default">
         <h1 class="island--title">Documentation</h1>
