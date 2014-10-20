@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "idtfrontend"
+title: "idtfrontend - index"
 ---
 
 <div class="container">
@@ -11,10 +11,11 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/download-app.html') %>">download-app.html</a></li>
             <li><a href="<%= @getUrl('/one-dollar-free.html') %>">one-dollar-free.html</a></li>
             <li><a href="<%= @getUrl('/services/friends-forever.html') %>">services/friends-forever.html</a></li>
-			<li><a href="<%= @getUrl('/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
+            <li><a href="<%= @getUrl('/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/my-account/calling-history.html') %>">/my-account/calling-history.html</a></li>
             <li><a href="<%= @getUrl('/my-account.html') %>">/my-account.html</a></li>
             <li><a href="<%= @getUrl('/services/call-me.html') %>">/services/call-me.html</a></li>
+            <li><a href="<%= @getUrl('/services/call-me-promo.html') %>">/services/call-me-promo.html</a></li>
             <li><a href="<%= @getUrl('/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
             <li><a href="<%= @getUrl('/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
             <li><a href="<%= @getUrl('/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
@@ -29,5 +30,4 @@ title: "idtfrontend"
             <li><a href="<%= @getUrl('/forms.html') %>">Forms Example</a></li>
         </ul>
     </article>
-
 </div>
