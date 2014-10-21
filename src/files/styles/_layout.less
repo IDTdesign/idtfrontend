@@ -82,10 +82,18 @@ a {
 
 .top-offset {
     margin-top: @grid-gutter-width;
+
+    @media (max-width: @screen-sm-min) {
+        margin-top: ((@grid-gutter-width) /2);
+    }
 }
 
 .bottom-offset {
     margin-bottom: @grid-gutter-width;
+
+    @media (max-width: @screen-sm-min) {
+        margin-bottom: ((@grid-gutter-width) /2);
+    }
 }
 
 .offcanvas-menu {
@@ -880,7 +888,7 @@ a {
     }
 
     &.call-me-plan-condenced {
-        padding: 20px 0;
+        padding: 20px 0 0;
     }
 }
 

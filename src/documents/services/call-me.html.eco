@@ -125,7 +125,7 @@ scripts: ['/scripts/jqgrid_init.js']
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row top-offset">
                     <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
                         <div class="form-group">
                             <button class="btn btn-primary" type="submit">Get Started</button>
