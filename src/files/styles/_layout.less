@@ -63,6 +63,14 @@ body {
     }
 }
 
+.top-offset {
+    margin-top: @grid-gutter-width;
+}
+
+.bottom-offset {
+    margin-bottom: @grid-gutter-width;
+}
+
 .offcanvas-menu {
     z-index: 1;
     opacity: 0;
@@ -127,6 +135,54 @@ body {
 
     @media (max-width: @screen-sm) {
         margin: 0;
+    }
+}
+
+/* banners */
+.banners {
+    .clearfix;
+    display: table;
+    margin-top: (-(@grid-gutter-width / 2));
+    margin-bottom: (-(@grid-gutter-width / 2));
+
+    .banners--block {
+        display: table-cell;
+        height: 100%;
+        width: 33.33%;
+        padding: @grid-gutter-width;
+        background: @paper;
+        background-clip: padding-box;
+        border: ((@grid-gutter-width / 2)) transparent solid;
+        border-radius: (((@grid-gutter-width / 2)) + 5);
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    @media (max-width: @screen-md-min) {
+        display: block;
+        margin: 0;
+
+        .banners--block {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: @border-radius-large;
+            margin-bottom: (@grid-gutter-width / 2);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: @screen-xs-max) {
+        margin: 0;
+
+        .banners--block {
+            border-radius: 0;
+            margin: 0;
+            border-bottom: 7px solid fade(@brand-alt-highlight, 10%);
+        }
     }
 }
 
@@ -705,7 +761,6 @@ body {
 
 @media (max-width: @screen-md-min) {
 
-
     .imtu--block-payment {
         .payment-type {
             .tab-content {
@@ -715,6 +770,53 @@ body {
         }
     }
 
+}
+
+/* more items */
+.more-items {
+    .clearfix;
+    display: table;
+    margin: @line-height-computed -((@grid-gutter-width / 2));
+
+    .more-items--block {
+        display: table-cell;
+        height: 100%;
+        width: 33.33%;
+        padding: @grid-gutter-width;
+        background: fade(@paper, 20%);
+        background-clip: padding-box;
+        border: ((@grid-gutter-width / 2)) transparent solid;
+        border-radius: (((@grid-gutter-width / 2)) + 5);
+
+        .more-items--link {
+            display: block;
+
+            h3, .h3 {
+                margin: @line-height-computed 0;
+            }
+
+            &:hover,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-md-min) {
+
+    .more-items {
+        border: none;
+        margin: 0;
+
+        .more-items--block {
+            display: block;
+            margin-bottom: @line-height-computed;
+            width: auto;
+            border: none;
+            border-radius: @border-radius-base;
+        }
+    }
 }
 
 /* call me plan */
