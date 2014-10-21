@@ -1,0 +1,32 @@
+.comment {
+	padding: 20px;
+	text-align: center;
+}
+
+.comment-userpic {
+	display: inline-block;
+	border-radius: 100%;
+	border: 8px solid #FFF;
+}
+
+.comment-body {
+	margin: 0;
+	border: none;
+	text-align: center;
+	font-size: (@font-size-large * 1.5);
+	line-height: 1.2;
+}
+.comment-author {
+	display: block;
+	padding: 10px;
+}
+
+.comment-author-name {
+	font-size: @font-size-large;
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	.comment-body {
+		font-size: @font-size-large;
+	}
+}

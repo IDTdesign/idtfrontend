@@ -1,0 +1,87 @@
+---
+layout: default
+title: About
+---
+
+
+<div class="container">
+    
+    <article class="island">
+        <div class="dyad dyad-2-1 dyad-sm-vertical">
+            <div class="dyad--first">
+                <img class="img-fullwidth" src="<%= @getUrl(@document.basename+"/_r3_c2.jpg") %>">
+            </div>
+            <div class="dyad--second island-default">
+                <h2>Bridging the Distance With Friends &amp; Family Abroad</h2>
+                <p class="lead">Pellentesque luctus suscipit metus et facilisis. Pellentesque habitant morbi and tristique senectus et netus et males mes.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="island">
+        <div class="dyad dyad-reverse dyad-2-1">
+            <div class="dyad--first custom-about-br-1 text-center-xs">
+                <img src="<%= @getUrl(@document.basename+"/_r5_c3.png") %>" >
+            </div>
+            <div class="dyad--second island-default">
+                <h2>Providing Domestic and International Services to Meet Your Communication and Financial Needs</h2>
+                <p class="lead">Pellentesque luctus suscipit metus et facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="island">
+        <div class="dyad dyad-reverse dyad-2-1 dyad-sm-vertical">
+            <div class="dyad--first">
+                <img class="img-fullwidth" src="<%= @getUrl(@document.basename+"/_r7_c3.jpg") %>">
+            </div>
+            <div class="dyad--second island-default">
+                <h2>Sold By Over 35,000 Retailers</h2>
+                <p class="lead">Pellentesque luctus suscipit metus et facilisis. Pellentesque habitant morbi and tristique senectus et netus et males mes. </p>
+            </div>
+        </div>
+    </article>
+
+    <article class="island">
+        <div class="dyad dyad-2-1">
+            <div class="dyad--first custom-about-br-2 text-center-xs">
+                <img src="<%= @getUrl(@document.basename+"/_r9_c2.png") %>">
+            </div>
+            <div class="dyad--second island-default">
+                <h2>Join the Millions of Customers Connecting Across Over 160 Countries Daily</h2>
+                <p class="lead">Pellentesque luctus suscipit metus et facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. </p>
+            </div>
+        </div>
+    </article>
+
+    <article class="testimonials island island-default">
+        <h2 class="island--title"><span>What Customers Are Saying <br> About Boss Revolution</span></h2>
+        <div class="columns-block">
+            <div class="comment">
+                <img class="comment-userpic" src="<%= @getUrl(@document.basename+"/customer1.png") %>">
+                <blockquote class="comment-body">
+                    <p>&ldquo;It helped me bring my family together&rdquo;</p>
+                </blockquote>
+                <cite class="comment-author"><span class="comment-author-name">— Marisol Gomez,</span> <br><em class="comment-author-sub">Boss Revolution customer</em></cite>
+            </div>
+            <div class="comment">
+                <img class="comment-userpic" src="<%= @getUrl(@document.basename+"/customer3.png") %>">
+                <blockquote class="comment-body">
+                    <p>&ldquo;Boss Revolution is the best&rdquo;</p>
+                </blockquote>
+                <cite class="comment-author"><span class="comment-author-name">— James Door,</span> <br><em class="comment-author-sub">Boss Revolution customer</em></cite>
+            </div>
+            <div class="comment">
+                <img class="comment-userpic" src="<%= @getUrl(@document.basename+"/customer2.png") %>">
+                <blockquote class="comment-body">
+                    <p>&ldquo;I’ve tried a lot of serviecs, and Boss Revolution is number one&rdquo;</p>
+                </blockquote>
+                <cite class="comment-author"><span class="comment-author-name">— Marcelo Martin,</span> <br><em class="comment-author-sub">Boss Revolution customer</em></cite>
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+

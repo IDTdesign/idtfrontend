@@ -21,6 +21,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
             <li><a href="<%= @getUrl('/404-error/404-error.html') %>">/404-error/404-error.html</a></li>
             <li><a href="<%= @getUrl('/Oops/Oops.html') %>">/Oops/Oops.html</a></li>
+            <li><a href="<%= @getUrl('/about.html') %>">about.html</a></li>
             </ul>
     </article>
     <article class="island island-default">
