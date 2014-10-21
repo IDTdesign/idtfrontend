@@ -51,6 +51,10 @@
             border-color: rgba(255,255,255,0.5);
         }
     }
+
+    .carousel-inner > .item {
+        padding: 20px 80px 70px;
+    }
 }
 
 .carousel-inner > .item > img,
@@ -61,6 +65,38 @@
 @media (max-width: @screen-xs-max) {
     .carousel-indicators {
         bottom: 0;
+    }
+}
+
+.carousel-indicators-content {
+    position: static;
+    margin-left: 0;
+    width: auto;
+    background: fade(@paper, 20%);
+    padding: 5px 0;
+
+    &.carousel-indicators li {
+        width: auto;
+        height: auto;
+        border: none;
+        background: none;
+        text-indent: 0;
+        color: fade(@ink, 50%);
+
+        &:hover,
+        &:focus,
+        &.active {
+            background: none;
+            border: none;
+            color: @ink;
+        }
+    }
+
+    li:not(:last-child):after {
+        content: '|';
+        display: inline-block;
+        margin: 0 0 0 15px;
+        color: fade(@ink, 50%);
     }
 }
 

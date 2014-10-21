@@ -395,13 +395,19 @@
             font-weight: bold;
             text-transform: uppercase;
             transition: none;
-
+            
             &:hover,
             &:focus {
                 background: #bd1915;
                 color: @mainmenu-textcolor;
             }
         }
+
+        .active > .navbar--submenulink {
+            background: #bd1915;
+            color: @mainmenu-textcolor;
+        }
+
         > .navbar--submenuitem:last-child > .navbar--submenulink {
             border-radius: 0 0 @mainmenu-radius @mainmenu-radius;
             border-bottom: none;

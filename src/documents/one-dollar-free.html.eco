@@ -49,4 +49,104 @@ title: "idtfrontend"
         </div>
     </article>
 
+    <article class="island island-default">
+        <div id="meetboss" class="carousel carousel-default  slide hidden-xs" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#meetboss" data-slide-to="0" class="active"></li>
+                <li data-target="#meetboss" data-slide-to="1"></li>
+                <li data-target="#meetboss" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h3 class="text-center">Boss Revolution is trusted by 1,000,000 customers daily.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">We connect XXXX minutes of phone calls a day.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">Our suite of products connects friends and families in XX countries.</h3>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#meetboss" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div> 
+    </article>
+
+
+    <article class="features_block island island-default">
+        <h2 class="island--title">Features</h2>
+
+        <div data-ride="carousel" data-interval="30000" class="carousel carousel-default slide" id="myCarouselPromo">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators carousel-indicators-content">
+                <li data-slide-to="0" data-target="#myCarouselPromo" class="active" >Add Additional Numbers</li>
+                <li data-slide-to="1" data-target="#myCarouselPromo" class="">Quick Call</li>
+                <li data-slide-to="2" data-target="#myCarouselPromo" class="">Unlimited Calling</li>
+                <li data-slide-to="3" data-target="#myCarouselPromo" class="">Mobile App</li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="dyad dyad-1-1">
+                        <div class="dyad--first">
+                            <img alt="" src="http://dummyimage.com/395x235/666666/fff">
+                        </div>
+                        <div class="dyad--second">
+                            <h3 class="title">Add Additional Numbers</h3>                    
+                            <p>Register up to 10 phone numbers to your account, so that you and your family can easily make international calls from any phone -- at home, work or on the go.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dyad dyad-1-1">
+                        <div class="dyad--first">
+                            <img alt="" src="http://dummyimage.com/395x235/777777/fff">
+                        </div>
+                        <div class="dyad--second">
+                            <h3 class="title">Quick Call</h3>                    
+                            <p>Register the numbers that you call most frequently so you don’t have to dial the full number to make a call. Just enter the speed dial code and the pound key to begin your call.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dyad dyad-1-1">
+                        <div class="dyad--first">
+                            <img alt="" src="http://dummyimage.com/395x235/eeeeee/fff">
+                        </div>
+                        <div class="dyad--second">
+                            <h3 class="title">Unlimited Calling</h3>                   
+                            <p>For select destinations, call as much as you’d like at one flat rate, so you can call your friends and family abroad without worrying about running out of talk time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dyad dyad-1-1">
+                        <div class="dyad--first">
+                            <img alt="" src="http://dummyimage.com/395x235/eeeeee/fff">
+                        </div>
+                        <div class="dyad--second">
+                            <h3 class="title">Mobile App</h3>                   
+                            <p>International calling has never been easier. Our award-winning app lets you make one-tap dialing while enjoying our great rates and superior quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="left carousel-control" href="#myCarouselPromo" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#myCarouselPromo" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </article>
 </div>
