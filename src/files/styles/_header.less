@@ -2,9 +2,9 @@
 @header-bg-red: #b00009;
 
 .allpage--header {
-	width: 100%;
-	position: absolute;
-	z-index: 5;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
 
     .allpage--headerbg,
     .allpage--headerbg2 {
@@ -34,7 +34,8 @@
     /* 1 - minimum width is equal to the layout min-width limit */
     .allpage--header {
         height: 50px;
-        /*min-width: 480px;*/ /* 1 */
+        /*min-width: 480px;*/
+        /* 1 */
         transition: all 0.3s ease-in-out;
         z-index: @zindex-navbar-fixed;
 
@@ -74,6 +75,7 @@
         }
     }
 }
+
 /* mobile header end */
 
 // @TODO: Move to the base layer as a separate module.
@@ -100,42 +102,76 @@
 
 /* pullin overlay object end */
 
-
 /* header-promo */
 .header-promo {
+    min-height: 300px;
 
+    .header-promo--inner {
+        position: relative;
+        z-index: 4;
+    }
+
+    .header-promo--box {
+        position: absolute;
+        bottom: 40px;
+        width: 40%;
+        padding: 40px 40px;
+        background-color: rgba(0, 0, 0, 0.45);
+        border-radius: 5px;
+        color: #FFF;
+
+        h1 {
+            color: inherit;
+        }
+    }
+
+    .header-promo--info {
+        .clearfix;
+        margin-bottom: @line-height-computed;
+
+        .header-promo--info-block {
+            margin-bottom: 10px;
+        }
+
+        .local-time,
+        .exchage-rate {
+            .h3, .h4, .h5 {
+                margin: 0;
+                line-height: 1.25;
+            }
+        }
+    }
+
+    @media (max-width: @screen-md-min) {
+        .header-promo--inner {
+            padding: 0;
+            width: auto;
+        }
+
+        .header-promo--box {
+            display: block;
+            position: static;
+            width: auto;
+            border-radius: 0;
+            margin: 0;
+        }
+    }
 }
 
-.header-promo--inner {
-	position: relative;
-	z-index: 4;
-}
-
-.header-promo--box {
-	position: absolute;
-	bottom: 40px;
-	width: 40%;
-	padding: 40px 40px;
-	background-color: rgba(0, 0, 0, 0.45);
-	border-radius: 5px;
-	color: #FFF;
-
-	h1 {
-		color: inherit;
-	}
-}
 /* header-promo end */
 
 /* offscreen promo */
 .offscreen-promo--link {
-	display: block;
-	padding: 15px 25px 15px 15px;
-	color: @gray-dark;
-	font-size: @font-size-small;
-	text-transform: uppercase;
+    display: block;
+    padding: 15px 25px 15px 15px;
+    color: @gray-dark;
+    font-size: @font-size-small;
+    text-transform: uppercase;
 }
+
 .offscreen-promo--link-icon {
-	float: left;
-	margin-right: 15px;
+    float: left;
+    margin-right: 15px;
 }
+
 /* offscreen promo end */

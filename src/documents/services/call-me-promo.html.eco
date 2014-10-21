@@ -4,7 +4,71 @@ title: "idtfrontend"
 scripts: ['/scripts/jqgrid_init.js']
 ---
 
-<div class="container"></div>
+<div class="container">
+    <header class="header-promo">
+        <div style="height: 600px;"></div>
+        <div class="header-promo--inner">
+            <section class="header-promo--box">
+                <h1>United Kingdom</h1>
+                <p><a class="destination-link link-underline" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--destination">
+                        <use xlink:href="#i--destination"></use>
+                    </svg>Change Country
+                </a></p>
+                <div class="header-promo--info">
+                    <div class="header-promo--info-block local-time">
+                        <div class="icon-block">
+                            <div class="icon-block--i">
+                                <div class="plate plate-transp-white plate-small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--local-time">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--local-time"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="icon-block--text">
+                                <strong class="h5 h5-thin">in London</strong>
+                                <strong class="h4 center-block">2:00 pm EST</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-promo--info-block exchage-rate">
+                        <div class="icon-block">
+                            <div class="icon-block--i">
+                                <div class="plate plate-transp-white plate-small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--currency">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--currency"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="icon-block--text">
+                                <strong class="h5 h5-thin">Exchange Rate</strong>
+                                <span class="h4 h4-thin center-block">$1 <small>USD</small> = <strong>$0.75 <small>EURO</small></strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><button type="button" class="btn btn-primary btn-block btn-text-lg btn-text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                    </svg>
+                    INTERNATIONAL CALLING
+                </button></p>
+                <p><button type="button" class="btn btn-default btn-block btn-text-lg btn-text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                    </svg>
+                    CALL ME
+                </button></p>
+                <p><button type="button" class="btn btn-primary btn-block btn-text-lg btn-text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                    </svg>
+                    AIRTIME TOP UP
+                </button></p>
+            </section>
+        </div>
+    </header>
+</div>
 
 <div class="container">
 

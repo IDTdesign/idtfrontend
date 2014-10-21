@@ -74,6 +74,14 @@
 
 .btn {
     font-weight: bold;
+
+    &.btn-block {
+        margin-bottom: 1em;
+    }
+
+    .i {
+        margin: -2px 3px 0 0;
+    }
 }
 
 .btn-default {
@@ -116,19 +124,18 @@
         }
     }
 
+    .i {
+        fill: @brand-primary-btn-dark;
+    }
+
     &.btn-svg {
         color: @gray-alt;
 
         .i {
             width: 20px;
             height: 20px;
-            margin: -2px 3px 0 0;
             fill: @gray-alt;
         }
-    }
-
-    &.btn-block {
-        margin-bottom: 1em;
     }
 }
 
@@ -218,6 +225,14 @@
             background: #4d871d;
         }
     }
+}
+
+.btn-text-left {
+    text-align: left;
+}
+
+.btn-text-lg {
+    font-size: @font-size-large;
 }
 
 .btn-lg {

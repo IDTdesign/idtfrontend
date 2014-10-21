@@ -63,6 +63,23 @@ body {
     }
 }
 
+a {
+    &.link-underline {
+        text-decoration: underline;
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    &.destination-link {
+        .i {
+            margin-right: 5px;
+        }
+    }
+}
+
 .top-offset {
     margin-top: @grid-gutter-width;
 }
