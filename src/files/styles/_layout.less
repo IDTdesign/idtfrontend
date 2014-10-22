@@ -80,7 +80,7 @@ a {
     }
 }
 
-.top-offset {
+.offset-v-top {
     margin-top: @grid-gutter-width;
 
     @media (max-width: @screen-sm-min) {
@@ -88,10 +88,20 @@ a {
     }
 }
 
-.bottom-offset {
+.offset-v-bottom {
     margin-bottom: @grid-gutter-width;
 
     @media (max-width: @screen-sm-min) {
+        margin-bottom: ((@grid-gutter-width) /2);
+    }
+}
+
+.offset-vertical {
+    margin-top: @grid-gutter-width;
+    margin-bottom: @grid-gutter-width;
+
+    @media (max-width: @screen-sm-min) {
+        margin-top: ((@grid-gutter-width) /2);
         margin-bottom: ((@grid-gutter-width) /2);
     }
 }
