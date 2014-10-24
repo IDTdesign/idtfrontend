@@ -22,6 +22,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/visa-virtual-prepaid.html') %>">visa-virtual-prepaid.html.eco</a></li>
             <li><a href="<%= @getUrl('/404-error/404-error.html') %>">/404-error/404-error.html</a></li>
             <li><a href="<%= @getUrl('/Oops/Oops.html') %>">/Oops/Oops.html</a></li>
+            <li><a href="<%= @getUrl('/Oops-boss/Oops-boss.html') %>">/Oops-boss/Oops-boss.html</a></li>
             <li><a href="<%= @getUrl('/about.html') %>">about.html</a></li>
             </ul>
     </article>
