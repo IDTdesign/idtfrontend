@@ -110,7 +110,7 @@ title: "Visa Virtual Account"
     </article>
 
     <article class="island visa-virtual-carousel">
-        <h2 class="island--title">Visa® Virtual Account Benefits</h2>
+        <h2 class="island--title">Visa<sup>®</sup> Virtual Account Benefits</h2>
         <div id="visa-virtual" class="carousel carousel-default  slide" data-ride="carousel" data-interval="5000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
