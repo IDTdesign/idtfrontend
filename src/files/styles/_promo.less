@@ -124,3 +124,36 @@
         }
     }
 }
+
+.promo-apps {
+    > div {
+        margin: 20px 0;
+    }
+
+    .h3 {
+        line-height: 1.25;
+    }
+
+    .plate {
+        width: 265px;
+        height: 265px;
+        padding: 30px 35px;
+
+        .h2 {
+            display: block;
+            margin: 0;
+            color: @brand-primary-bright;
+            text-align: left;
+        }
+
+        .btn {
+            margin: @line-height-computed 0 0 0;
+        }
+    }
+
+    @media (max-width: @screen-md-min) {
+        > div {
+            text-align: center;
+        }
+    }
+}

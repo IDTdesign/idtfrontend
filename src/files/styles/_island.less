@@ -230,7 +230,7 @@
 .island-condenced {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 30px;
+    padding: @grid-gutter-width;
 
     .island--title {
         margin-top: 0;
@@ -240,12 +240,18 @@
     }
 
     &.island-header {
-        margin: -30px -30px 0;
+        margin: (-(@grid-gutter-width)) (-(@grid-gutter-width)) 0;
     }
 }
 
 .island-condenced + .island-condenced {
     margin-top: 6px;
+}
+
+.island-supercondenced {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: (@grid-gutter-width /2);
 }
 
 .island-alt {

@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "idtfrontend"
+title: "International Calling"
 scripts: ['/scripts/jqgrid_init.js']
 ---
 
@@ -25,7 +25,7 @@ scripts: ['/scripts/jqgrid_init.js']
         <div data-ride="carousel" data-interval="30000" class="carousel carousel-default slide" id="myCarouselPromo">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators carousel-indicators-content">
-                <li data-slide-to="0" data-target="#myCarouselPromo" class="active" >Add Additional Numbers</li>
+                <li data-slide-to="0" data-target="#myCarouselPromo" class="active">Add Additional Numbers</li>
                 <li data-slide-to="1" data-target="#myCarouselPromo" class="">Quick Call</li>
                 <li data-slide-to="2" data-target="#myCarouselPromo" class="">Unlimited Calling</li>
                 <li data-slide-to="3" data-target="#myCarouselPromo" class="">Mobile App</li>
@@ -38,7 +38,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             <img alt="" src="http://dummyimage.com/395x235/666666/fff">
                         </div>
                         <div class="dyad--second">
-                            <h3 class="title">Add Additional Numbers</h3>                    
+                            <h3 class="title">Add Additional Numbers</h3>
                             <p>Register up to 10 phone numbers to your account, so that you and your family can easily make international calls from any phone -- at home, work or on the go.</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             <img alt="" src="http://dummyimage.com/395x235/777777/fff">
                         </div>
                         <div class="dyad--second">
-                            <h3 class="title">Quick Call</h3>                    
+                            <h3 class="title">Quick Call</h3>
                             <p>Register the numbers that you call most frequently so you don’t have to dial the full number to make a call. Just enter the speed dial code and the pound key to begin your call.</p>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             <img alt="" src="http://dummyimage.com/395x235/eeeeee/fff">
                         </div>
                         <div class="dyad--second">
-                            <h3 class="title">Unlimited Calling</h3>                   
+                            <h3 class="title">Unlimited Calling</h3>
                             <p>For select destinations, call as much as you’d like at one flat rate, so you can call your friends and family abroad without worrying about running out of talk time.</p>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ scripts: ['/scripts/jqgrid_init.js']
                             <img alt="" src="http://dummyimage.com/395x235/eeeeee/fff">
                         </div>
                         <div class="dyad--second">
-                            <h3 class="title">Mobile App</h3>                   
+                            <h3 class="title">Mobile App</h3>
                             <p>International calling has never been easier. Our award-winning app lets you make one-tap dialing while enjoying our great rates and superior quality.</p>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "idtfrontend"
+title: "Call Me Promo Page"
 scripts: ['/scripts/jqgrid_init.js']
 ---
 
@@ -455,35 +455,37 @@ scripts: ['/scripts/jqgrid_init.js']
     <article class="island island-default">
         <h2 class="island--title">Other Boss Revolution Services</h2>
         <section class="more-items">
-            <div class="more-items--block"><a class="more-items--link" href="#">
-                <div class="plate plate-default plate-large">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--prepaid-visa-card">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--prepaid-visa-card"></use>
-                    </svg>
-                </div>
-                <h3>PREPAID VISA® CARD</h3>
-                <span>Load, Spend, Reload... Get access to your cash, your way for all your purchasing needs</span>
-            </a></div>
-            <div class="more-items--block"><a class="more-items--link" href="#">
-                <div class="plate plate-default plate-large">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
-                    </svg>
-                </div>
-                <h3>GPR CARD</h3>
-                <span>Safe and secure electronic gift cards without the need for a bank account or credit check</span>
-            </a></div>
-            <div class="more-items--block"><a class="more-items--link" href="#">
-                <div class="plate plate-default plate-large">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
-                    </svg>
-                </div>
-                <h3>ADDITIONAL BR SERVICE</h3>
-                <span>Send money overseas with great exchange rates</span>
-            </a></div>
+            <div class="more-items--row">
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--prepaid-visa-card">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--prepaid-visa-card"></use>
+                        </svg>
+                    </div>
+                    <h3>PREPAID VISA® CARD</h3>
+                    <span>Load, Spend, Reload... Get access to your cash, your way for all your purchasing needs</span>
+                </a></div>
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                        </svg>
+                    </div>
+                    <h3>GPR CARD</h3>
+                    <span>Safe and secure electronic gift cards without the need for a bank account or credit check</span>
+                </a></div>
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                        </svg>
+                    </div>
+                    <h3>ADDITIONAL BR SERVICE</h3>
+                    <span>Send money overseas with great exchange rates</span>
+                </a></div>
+            </div>
         </section>
-        <div class="clearfix text-right">
+        <div class="offset-v-top-sm clearfix text-right">
             <a href="#"><strong class="h4">See All Boss Revolution Services »</strong></a>
         </div>
     </article>
