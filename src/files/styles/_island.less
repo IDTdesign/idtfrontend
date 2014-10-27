@@ -60,6 +60,7 @@
         display: inline-block;
         vertical-align: middle;
     }
+
 }
 
 @media (max-width: @screen-xs-max ) {
@@ -71,6 +72,10 @@
         &:before,
         &:after {
             content: none;
+        }
+
+        > span > br {
+            display: none;
         }
 
     }
