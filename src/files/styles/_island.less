@@ -139,6 +139,11 @@
 
 .island-default {
     padding: 40px 60px;
+
+    .island-sticky {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
 }
 
 .island-default .island--title,
@@ -216,6 +221,10 @@
     background-color: transparent;
 }
 
+.island-square {
+    border-radius: 0;
+}
+
 .island-square-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -240,6 +249,11 @@
     &.island-header {
         margin: (-(@grid-gutter-width)) (-(@grid-gutter-width)) 0;
     }
+
+    .island-sticky {
+        margin-left: -@grid-gutter-width;
+        margin-right: -@grid-gutter-width;
+    }
 }
 
 .island-condenced + .island-condenced {
@@ -250,6 +264,11 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: (@grid-gutter-width /2);
+
+    .island-sticky {
+        margin-left: (-(@grid-gutter-width / 2));
+        margin-right: (-(@grid-gutter-width / 2));
+    }
 }
 
 .island-alt {
