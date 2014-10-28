@@ -132,6 +132,26 @@ a {
     }
 }
 
+@media (min-width: @screen-md-min) {
+    .offset-v-bottom {
+        &.no-offset {
+            margin-bottom: 0;
+        }
+    
+    }
+
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .offset-v-bottom {
+        &.no-offset:nth-child(4) {
+            margin-bottom: 0;
+        }
+    
+    }
+
+}
+
 .notice {
     font-size: @font-size-small;
 }

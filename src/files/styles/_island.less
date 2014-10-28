@@ -148,6 +148,34 @@
     .island-sticky {
         margin-left: -60px;
         margin-right: -60px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+}
+
+.island-sticky .list-inline {
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    
+    li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 15px;
+
+        &:after {
+            position: relative;
+            top: -1px;
+            content: '|';
+            display: inline-block;
+            margin: 0 0 0 15px;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+
     }
 }
 
@@ -238,6 +266,11 @@
 .island-square-bottom {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.island-enlarged {
+    margin-top: (@grid-gutter-width * 1.5); // 45px
+    margin-bottom: (@grid-gutter-width * 1.5); // 45px
 }
 
 .island-condenced {

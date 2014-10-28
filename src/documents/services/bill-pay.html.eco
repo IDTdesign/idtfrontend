@@ -4,47 +4,6 @@ title: "Friends Forever"
 ---
 
 <style>
-    .island-fiends-forever-1 {
-        text-align: right;
-        padding-left: 5%;
-        padding-top: 5%;
-    }
-    .island-fiends-forever-1 img {
-        border-radius: inherit;
-    }
-    .island-fiends-forever-2 {
-        background-image: url(<%= @getUrl(@document.basename+"/ff-call-to-action-bg.png") %>);
-        background-repeat: no-repeat;
-        background-position: 0 bottom;
-        min-height: 430px;
-        padding: 180px 45px 40px 0;
-        padding-left: 76%;
-        color: #fff;
-    }
-    .island .text-center {
-        margin-top: 35px;
-    }
-    @media (max-width: 991px) {
-        .island-fiends-forever-2 {
-            padding: 40px 60px 0 60px;
-            padding-bottom: 45%;
-            text-align: center;
-            min-height: 100%;
-            background-size: 95% auto;
-        }
-    }
-    @media (min-width: 992px) and (max-width: 1200px) {
-        .island-fiends-forever-2 {
-            min-height: 396px;
-            background-size: 90% auto;
-        }
-    }
-    @media (max-width: 768px) {
-        .island-fiends-forever-2 {
-            border-bottom: 7px solid rgba(235, 240, 245, 0.1);
-
-        }
-    }
 
 </style>
 
@@ -108,51 +67,70 @@ title: "Friends Forever"
 
         <h2 class="island--title"><span>You Can Pay Participating Billers <br />in&nbsp;the&nbsp;following Categories</span></h2>
 
-        <section class="island-default island-alt">
-            <ul>
-                <li>Cable / Internet / Phone</li>
-                <li>Cellular</li>
-                <li>Credit Card / Retailer</li>
-                <li>Finance</li>
-                <li>Insurance</li>
-                <li>Utilities</li>
-                <li>And more...</li>
+        <section class="island island-enlarged island-alt island-sticky island-square">
+            <ul class="list list-inline text-center text-uppercase">
+                <li><strong>Cable / Internet / Phone</strong></li>
+                <li><strong>Cellular</strong></li>
+                <li><strong>Credit Card / Retailer</strong></li>
+                <li><strong>Finance</strong></li>
+                <li><strong>Insurance</strong></li>
+                <li><strong>Utilities</strong></li>
+                <li><strong>And more...</strong></li>
             </ul>
         </section>
 
-        <section class="island island-default island-alt">
-            <span>Phone</span> <span>Cable</span> <span>Credit</span> <span>Power</span> <span>Water</span> <span>Gas</span>
+        <section class="island island-default island-alt row text-center text-uppercase">
+            <div class="col-md-2 col-sm-4 col-xs-6 offset-v-bottom no-offset">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--phone">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--phone"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Phone</span></strong></p>
+            </div>
+             <div class="col-md-2 col-sm-4 col-xs-6 offset-v-bottom no-offset">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--cable">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--cable"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Cable</span></strong></p>
+            </div>
+             <div class="col-md-2 col-sm-4 col-xs-6 offset-v-bottom no-offset">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--credit">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--credit"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Credit</span></strong></p>
+            </div>
+             <div class="col-md-2 col-sm-4 col-xs-6 offset-v-bottom no-offset">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--power">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--power"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Power</span></strong></p>
+            </div>
+             <div class="col-md-2 col-sm-4 col-xs-6">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--water">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--water"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Water</span></strong></p>
+            </div>
+             <div class="col-md-2 col-sm-4 col-xs-6">
+                <span class="plate plate-extralarge offset-v-bottom-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--gas">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gas"></use>
+                    </svg>
+                </span>
+                <p><strong><span class="lead">Gas</span></strong></p>
+            </div>
         </section>
         
-        <p class="lead text-center">Visit your local Boss Revolution retailer for more information and to start paying bills</p>
-
-    </article>
-
-    <article class="island island-default" id="benefits">
-
-        <h2 class="island--title">Benefits</h2>
-
-        <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-benefits.png") %>" alt="Benefits"></p>
-        <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
-            <p>Every time they buy online... <strong class="brand-color">YOU&nbsp;EARN MINUTES!</strong></p>
-            <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-2.png") %>" alt=""></p>
-            <p>And your minutes never expire... <strong class="brand-color">THEY&nbsp;ARE FOREVER!</strong></p>
-        </div>
-
-    </article>
-
-    <article class="island island-default" id="earn">
-
-        <h2 class="island--title">Earn</h2>
-        <p class="lead text-center">Let's Put It This Way:</p>
-
-        <p class="text-center"><img src="<%= @getUrl(@document.basename+"/ff-earn.png") %>" alt="Earn"></p>
-        <div class="columns-block columns-block-gutter lead text-center columns-block-va-middle">
-            <p>If your friends tops up <strong class="brand-color-alt">$20</strong> a month online for International Calls, <strong class="brand-color">$2&nbsp;BONUS</strong> goes directly into your account.</p>
-            <p>So, if you have <strong class="brand-color">10&nbsp;FRIENDS</strong> and each tops up <strong class="brand-color-alt">$20</strong> per month, that makes a total of <strong class="brand-color-alt">$200</strong> per month.</p>
-            <p class="hidden-xs columns-block--separator"><img src="<%= @getUrl(@document.basename+"/ff-dbl-arrow-3.png") %>" alt=""></p>
-            <p>You Get a <strong class="brand-color">$20&nbsp;BONUS. EACH&nbsp;MONTH. FREE.</strong></p>
-        </div>
+        <p class="lead text-center offset-v-top">Visit your local Boss Revolution retailer for more information and to start paying bills</p>
 
     </article>
 
