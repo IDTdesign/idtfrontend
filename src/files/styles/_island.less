@@ -155,9 +155,9 @@
 }
 
 .island-sticky .list-inline {
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
     li {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -223,6 +223,16 @@
     top: 0;
     left: 0;
     right: 0;
+}
+
+@media (max-width: @screen-xs-max) {
+    .island-absolute-top,
+    .island-absolute-bottom {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
 }
 
 /* connected to previous, no margin between */
@@ -354,14 +364,8 @@
     border: 15px solid fade(@ink, 10%);
 }
 
-@media (max-width: @screen-xs-max) {
-    .island-absolute-top,
-    .island-absolute-bottom {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-    }
+.island-white {
+    background-color: #fff;
 }
 
 //@media (max-width: @screen-xs-max) {

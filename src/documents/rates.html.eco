@@ -1,0 +1,351 @@
+---
+layout: "default"
+title: "Rates"
+---
+
+<div class="container">
+    <header class="header-promo">
+        <div style="height: 400px;"></div>
+        <div class="header-promo--inner">
+            <section class="header-promo--box">
+                <h1>Rates</h1>
+                <p>Save up to 90% on your international calling. Our rates to mobile phones and landlines are incredibly low and have no  fees or hidden charges.</p>
+            </section>
+        </div>
+    </header>
+</div>
+
+<div class="container">
+    <div class="dyad dyad-2-1 dyad-sm-vertical">
+        <div class="dyad--first island island-default rates">
+            <div class="form-section">
+
+                <ul class="nav nav-tabs nav-tabs-payment" role="tablist">
+                    <li class="active"><a href="#rates" role="tab" data-toggle="tab">Rates</a></li>
+                    <li><a href="#plans" role="tab" data-toggle="tab">Plans</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="rates">
+                        <p class="text-center lead offset-v-top">
+                            Choose between our low per minute rates to India or select an Unlimited plan to be able to call your friends and family as often as you’d like.
+                        </p>
+                        <div class="row forms-default form-horizontal">
+                            <label for="ratesel_amount" class="col-sm-6 control-label">Choose an amount:</label>
+                            <div class="col-sm-3">
+                                <select class="form-control form-control-default col-sm-6" id="ratesel_amount" name="ratesel_amount"><option value="3">$3</option>
+                                    <option value="5">$5</option>
+                                    <option value="10">$10</option>
+                                    <option value="20">$20</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table class="table table-dotted-nowrap lead offset-v-top-sm">
+                            <tbody><tr><td><span class="value">India           </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">55min</span></td></tr>
+                            <tr><td><span class="value">India Cellular  </span></td><td class="numeric"><span class="value">1.81¢/min</span></td><td class="numeric"><span class="value">165min</span></td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="text-center">
+                            <a class="btn btn-primary" href="/register?ReturnUrl=%2Fmy-account%2Finternational-calling%2Frecharge">GET STARTED</a>
+                        </div>
+
+                        <div class="text-center offset-v-top">
+                            <a href="#"><strong>or learn more about services for India</strong></a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="plans">
+                        <div class="text-center lead offset-v-top">
+                            <p>Choose between our low per minute rates to India or select an Unlimited plan to be able to call your friends and family as often as you’d like.</p>
+                            <strong class="h2">for Amdavad, Mumbai, New Dehli, Channai</strong>
+                        </div>
+                        <div class="countries countries-sm">
+                            <div class="text-center">
+                                <button type="button" class="collapse-trigger collapse-trigger-arrows" data-toggle="collapse" data-target="#countries--list">
+                                    <span>Call Me Plan is available for over 105 Destinations World Wide</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--expand">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--expand"></use>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--collapse">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--collapse"></use>
+                                    </svg>
+                                </button>
+                             </div>
+                            <div class="countries--list-wrapper collapse" id="countries--list">
+                                <div class="island island-default island-no-margin island-square">
+                                    <h4>17 Countries</h4>
+                                    <div class="countries--list">
+                                        <ul class="flags-list">
+                                            <li><span class="flag flag-ar"></span> Argentina</li>
+                                            <li><span class="flag flag-br"></span> Brazil</li>
+                                            <li><span class="flag flag-ca"></span> Canada</li>
+                                            <li><span class="flag flag-cl"></span> Chile</li>
+                                            <li><span class="flag flag-do"></span> Dominican Republic</li>
+                                            <li><span class="flag flag-sv"></span> El Salvador</li>
+                                            <li><span class="flag flag-uk"></span> Great Britain (UK)</li>
+                                            <li><span class="flag flag-il"></span> Israel</li>
+                                            <li><span class="flag flag-mx"></span> Mexico</li>
+                                            <li><span class="flag flag-ng"></span> Nigeria</li>
+                                            <li><span class="flag flag-pa"></span> Panama</li>
+                                            <li><span class="flag flag-pe"></span> Peru</li>
+                                            <li><span class="flag flag-pl"></span> Poland</li>
+                                            <li><span class="flag flag-za"></span> South Africa</li>
+                                            <li><span class="flag flag-es"></span> Spain</li>
+                                            <li><span class="flag flag-th"></span> Thailand</li>
+                                            <li><span class="flag flag-ve"></span> Venezuela</li>
+                                        </ul>
+                                    </div>
+
+                                    <h4>17 Other Destinations</h4>
+                                    <div class="countries--list">
+                                        <ul class="flags-list">
+                                            <li><span class="flag flag-ar"></span> Argentina
+                                                <ul>
+                                                    <li>Buenos Aires</li>
+                                                    <li>Cordoba</li>
+                                                    <li>Rosario</li>
+                                                    <li>Mendoza</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-br"></span> Brazil
+                                                <ul>
+                                                    <li>Sao Paulo</li>
+                                                    <li>Rio de Janeiro</li>
+                                                    <li>Salvador</li>
+                                                    <li>Brasilia</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-ca"></span> Canada
+                                                <ul>
+                                                    <li>Calgary</li>
+                                                    <li>Edmonton</li>
+                                                    <li>Montreal</li>
+                                                    <li>Ottawa</li>
+                                                    <li>Quebec City</li>
+                                                    <li>Toronto</li>
+                                                    <li>Vancouver</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-cl"></span> Chile
+                                                <ul>
+                                                    <li>Santiago</li>
+                                                    <li>Valparaiso</li>
+                                                    <li>Concepcion</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-do"></span> Dominican Republic
+                                                <ul>
+                                                    <li>La Romana</li>
+                                                    <li>La Vega, Moca</li>
+                                                    <li>San Cristobal</li>
+                                                    <li>San Pedro de Macoris</li>
+                                                    <li>Santiago</li>
+                                                    <li>Santo Domingo</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-sv"></span> El Salvador
+                                                <ul>
+                                                    <li>San Salvador</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-uk"></span> Great Britain (UK)
+                                                <ul>
+                                                    <li>Birmingham</li>
+                                                    <li>Bradford</li>
+                                                    <li>Leeds</li>
+                                                    <li>Liverpool</li>
+                                                    <li>London</li>
+                                                    <li>Manchester</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-il"></span> Israel
+                                                <ul>
+                                                    <li>Jerusalem</li>
+                                                    <li>Tel Aviv</li>
+                                                    <li>Haifa</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-mx"></span> Mexico
+                                                <ul>
+                                                    <li>Acapulco       </li>
+                                                    <li>Aguascalientes </li>
+                                                    <li>Cancun         </li>
+                                                    <li>Ciudad Victoria</li>
+                                                    <li>Celaya         </li>
+                                                    <li>Chihuahua      </li>
+                                                    <li>Cordoba        </li>
+                                                    <li>Cuernavaca     </li>
+                                                    <li>Culiacan       </li>
+                                                    <li>Durango        </li>
+                                                    <li>Guadalajara    </li>
+                                                    <li>Guaymas        </li>
+                                                    <li>Hermosillo     </li>
+                                                    <li>Irapuato       </li>
+                                                    <li>Jalapa         </li>
+                                                    <li>Juarez         </li>
+                                                    <li>Leon           </li>
+                                                    <li>Matamoros      </li>
+                                                    <li>Mazatlan       </li>
+                                                    <li>Merida,        </li>
+                                                    <li>Mexicali       </li>
+                                                    <li>Mexico City    </li>
+                                                    <li>Monterrey      </li>
+                                                    <li>Morelia        </li>
+                                                    <li>Nogales        </li>
+                                                    <li>Nuevo Laredo   </li>
+                                                    <li>Orizaba        </li>
+                                                    <li>Pachuca de Soto</li>
+                                                    <li>Puebla         </li>
+                                                    <li>Queretaro      </li>
+                                                    <li>Reynosa        </li>
+                                                    <li>Saltillo       </li>
+                                                    <li>San Luis Potosi</li>
+                                                    <li>Tepic          </li>
+                                                    <li>Tijuana        </li>
+                                                    <li>Toluca         </li>
+                                                    <li>Torreon        </li>
+                                                    <li>Veracruz       </li>
+                                                    <li>Zacatecas      </li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-ng"></span> Nigeria
+                                                <ul>
+                                                    <li>Lagos</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-pa"></span> Panama
+                                                <ul>
+                                                    <li>David</li>
+                                                    <li>Panama City</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-pe"></span> Peru
+                                                <ul>
+                                                    <li>Lima</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-pl"></span> Poland
+                                                <ul>
+                                                    <li>Krakow</li>
+                                                    <li>Lodz</li>
+                                                    <li>Posnan</li>
+                                                    <li>Warsaw</li>
+                                                    <li>Wroclaw</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-za"></span> South Africa
+                                                <ul>
+                                                    <li>Cape Town</li>
+                                                    <li>Durban</li>
+                                                    <li>Johannesburg</li>
+                                                    <li>Pretoria</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-es"></span> Spain
+                                                <ul>
+                                                    <li>Barcelona</li>
+                                                    <li>Madrid</li>
+                                                    <li>Seville</li>
+                                                    <li>Valencia</li>
+                                                    <li>Zaragosa</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-th"></span> Thailand
+                                                <ul>
+                                                    <li>National</li>
+                                                </ul>
+                                            </li>
+                                            <li><span class="flag flag-ve"></span> Venezuela
+                                                <ul>
+                                                    <li>Barquisimeto</li>
+                                                    <li>Caracas</li>
+                                                    <li>Maracaibo</li>
+                                                    <li>Maracay</li>
+                                                    <li>Valencia</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="collapse-trigger collapse-trigger-cross collapsed" data-toggle="collapse" data-target="#countries--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--clear">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--clear"></use>
+                                            </svg>
+                                            <span>Collapse</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+
+                        <div class="text-center">
+                            <div class="price">$12 <small>/ Month</small></div>
+                        </div>
+
+                        <div class="text-center offset-v-top">
+                            <a class="btn btn-primary" href="/register?ReturnUrl=%2Fmy-account%2Finternational-calling%2Frecharge">GET STARTED</a>
+                        </div>
+
+                        <div class="text-center offset-v-top">
+                            <a href="#"><strong>or learn more about services for India</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dyad--second island island-transparent">
+            <div class="social-promo">
+                <div class="social-promo--block">
+                    <img src="<%= @getUrl(@document.basename+"/todo3.png") %>" alt="" />
+                </div>
+                <div class="social-promo--block">
+                    <img src="<%= @getUrl(@document.basename+"/todo3.png") %>" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="island island-default">
+        <h2 class="island--title">Check Out More Boss Revolution Services</h2>
+        <section class="more-items">
+            <div class="more-items--row">
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                    </div>
+                    <h3>INTERNATIONAL MOBILE TOP UP</h3>
+                    <span>Get great rates on topping up your loved one's mobile phone.</span>
+                </a></div>
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                    </div>
+                    <h3>DOMESTIC MOBILE TOP UP</h3>
+                    <span>Get great rates on topping up your loved one's mobile phone.</span>
+                </a></div>
+                <div class="more-items--block"><a class="more-items--link" href="#">
+                    <div class="plate plate-default plate-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--prepaid-visa-card">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--prepaid-visa-card"></use>
+                        </svg>
+                    </div>
+                    <h3>MONEY TRANSFER</h3>
+                    <span>Send money quickly and securely to friends and family around the world.</span>
+                </a></div>
+            </div>
+        </section>
+        <div class="offset-v-top-sm clearfix text-right">
+            <a href="#"><strong class="h4">See All Boss Revolution Services »</strong></a>
+        </div>
+    </article>
+
+    <article class="island island-default">
+        <div class="notice">
+            <b>Note:</b> Advertised minutes based on single, non-payphone call from the United States to a landline phone in the chosen country destination using local access. Advertised rates are based on calls from the United States to a landline phone in the chosen country destination using local access. Rates shown are live rates and are subject to change without notice (except where an expiration date is provided). Listed destinations are for landlines except where noted. <br> <b>Important:</b> when calling from a cell phone DO NOT PRESS "SEND" after entering the destination number as this might result in additional charges from your wireless provider. Your wireless carrier may assess roaming or long distance charges when calling a local access number - please check the details of your plan with your provider.
+        </div>
+    </article>
+</div>
