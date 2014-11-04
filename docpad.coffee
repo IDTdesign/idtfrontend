@@ -27,10 +27,11 @@ docpadConfig = {
 			styles: [
 				'/styles/bootstrap.css'
 				'/styles/bootstrap-theme.css'
-				'/styles/bossrevolution.css'
 				'/vendor/animate.css/animate.min.css'
 				'/vendor/jqgrid/css/ui.jqgrid.css'
 				'/styles/jqgrid/ui-jqgrid-boss.css'
+				'/vendor/SelectOrDie/selectordie.css'
+                '/styles/bossrevolution.css'
 			]
 
 			# The JavaScript files for the site.
@@ -44,6 +45,7 @@ docpadConfig = {
 				'/vendor/alfablur/StackBlur.js'
                 '/vendor/alfablur/alfablur.js'
 				'/vendor/bowser/bowser.min.js'
+				'/vendor/SelectOrDie/selectordie.min.js'
 				'/scripts/forms.js'
 				'/scripts/script.js'
 			]

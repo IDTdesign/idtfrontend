@@ -236,6 +236,8 @@ module.exports = (grunt) ->
 					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
                     'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js',
 					'out/vendor/bowser/bowser.min.js':'bower_components/bowser/bowser.min.js',
+					'out/vendor/SelectOrDie/selectordie.min.js':'bower_components/SelectOrDie/_src/selectordie.min.js',
+					'out/vendor/SelectOrDie/selectordie.css':'bower_components/SelectOrDie/_src/selectordie.css',
 					{
 					cwd: 'bower_components/jqgrid',
 					src: '**/*',

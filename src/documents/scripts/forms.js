@@ -1,4 +1,7 @@
 (function ($) {
+
+    $('select.form-control-custom').selectOrDie();
+
     $('#forms--example').bootstrapValidator({
         live: 'disabled',
         feedbackIcons: {

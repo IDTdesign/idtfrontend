@@ -15,36 +15,36 @@ title: "Forms"
                     <div class="form-group required">
                         <div class="col-lg-5">
                             <label class="control-label">First Name</label>
-                            <input type="text" class="form-control" name="firstname" placeholder="First Name" />
+                            <input type="text" class="form-control" name="firstname" placeholder="First Name" tabindex="1" />
                         </div>
                         <div class="col-lg-7">
                             <label class="control-label">Last Name</label>
-                            <input type="text" class="form-control" name="lastname" placeholder="Last Name" />
+                            <input type="text" class="form-control" name="lastname" placeholder="Last Name" tabindex="2" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Phone Number</label>
-                            <input type="tel" class="form-control" name="phone" placeholder="(+1) (123) (456) (7890)" />
+                            <input type="tel" class="form-control" name="phone" placeholder="(+1) (123) (456) (7890)" tabindex="3" />
                         </div>
                     </div>
 
                     <div class="form-group required">
                         <div class="col-lg-8">
                             <label class="control-label">Email address</label>
-                            <input type="text" class="form-control" name="email" placeholder="_ _ _@_ _ _._ _ _" />
+                            <input type="text" class="form-control" name="email" placeholder="_ _ _@_ _ _._ _ _" tabindex="4" />
                         </div>
                     </div>
 
                     <div class="form-group required">
                         <div class="col-lg-6">
                             <label class="control-label">Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="password" />
+                            <input type="password" class="form-control" name="password" placeholder="password" tabindex="5" />
                         </div>
                         <div class="col-lg-6">
                             <label class="control-label">Confirm Password</label>
-                            <input type="password" class="form-control" name="confirm-password" placeholder="password" />
+                            <input type="password" class="form-control" name="confirm-password" placeholder="password" tabindex="6" />
                         </div>
                     </div>
 
@@ -53,15 +53,15 @@ title: "Forms"
                             <label class="control-label">Gender</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <input type="radio" name="gender" id="gender-male" value="male" />
+                            <input type="radio" name="gender" id="gender-male" value="male" tabindex="7" />
                             <label for="gender-male">Male</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <input type="radio" name="gender" id="gender-female" value="female" />
+                            <input type="radio" name="gender" id="gender-female" value="female" tabindex="8" />
                             <label for="gender-female">Female</label>
                         </div>
                         <div class="radio col-lg-3">
-                            <input type="radio" name="gender" id="gender-other" value="other" />
+                            <input type="radio" name="gender" id="gender-other" value="other" tabindex="9" />
                             <label for="gender-other">Other</label>
                         </div>
                     </div>
@@ -69,20 +69,20 @@ title: "Forms"
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Disabled Form</label>
-                            <input type="text" class="form-control" name="disabledForm" placeholder="" disabled />
+                            <input type="text" class="form-control" name="disabledForm" placeholder="" disabled tabindex="10" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Date of birth</label>
-                            <input type="text" class="form-control form-control-date" name="birthday" placeholder="YYYY/MM/DD" />
+                            <input type="text" class="form-control form-control-date" name="birthday" placeholder="YYYY/MM/DD" tabindex="11" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="checkbox col-lg-8">
-                            <input type="checkbox" id="rss" name="rss" />
+                            <input type="checkbox" id="rss" name="rss" tabindex="12" />
                             <label for="rss">Do you want to receive news?</label>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ title: "Forms"
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Select example</label>
-                            <select class="form-control">
+                            <select class="form-control form-control-custom" tabindex="13">
                               <option>Value example 1</option>
                               <option>Value example 2</option>
                               <option>Value example 3</option>
@@ -103,21 +103,21 @@ title: "Forms"
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Textarea example</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3" tabindex="14"></textarea>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group offset-vertical">
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-default">Default Button</button>
+                            <button type="submit" class="btn btn-default" tabindex="15">Default Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-primary">Primary Button</button>
+                            <button type="submit" class="btn btn-primary" tabindex="16">Primary Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-success">Success Button</button>
+                            <button type="submit" class="btn btn-success" tabindex="17">Success Button</button>
                         </div>
                     </div>
                 </form>
