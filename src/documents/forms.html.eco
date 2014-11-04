@@ -91,11 +91,46 @@ title: "Forms"
                         <div class="col-lg-8">
                             <label class="control-label">Select example</label>
                             <select class="form-control form-control-custom" tabindex="13">
-                              <option>Value example 1</option>
-                              <option>Value example 2</option>
-                              <option>Value example 3</option>
-                              <option>Value example 4</option>
-                              <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
+                                <option>Value example 1</option>
+                                <option>Value example 2</option>
+                                <option>Value example 3</option>
+                                <option>Value example 4</option>
+                                <option>Value example 5</option>
                             </select>
                         </div>
                     </div>

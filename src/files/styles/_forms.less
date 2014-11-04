@@ -397,11 +397,13 @@ textarea.form-control-default {
         margin: 0;
         border-width: 2px;
         border-color: #fff rgba(0, 128, 255, 1) rgba(0, 128, 255, 1);
+        border-radius: 0;
         border-bottom-left-radius: @border-radius-base;
         border-bottom-right-radius: @border-radius-base;
 
         .sod_list {
             padding: 6px 0;
+            max-height: 306px;
         }
 
         .sod_option {
@@ -415,6 +417,26 @@ textarea.form-control-default {
             }
         }
     }
+
+    &.above {
+        .sod_list_wrapper  {
+            width: auto;
+            top: auto;
+            bottom: 39px;
+            left: -2px;
+            right: -2px;
+            margin: 0;
+            border-width: 2px;
+            border-color: rgba(0, 128, 255, 1) rgba(0, 128, 255, 1) #fff;
+            border-radius: 0;
+            border-top-left-radius: @border-radius-base;
+            border-top-right-radius: @border-radius-base;
+        }
+    }
+}
+
+.form-inline .sod_select {
+    display: inline-block;
 }
 
 /* forms-gray */
