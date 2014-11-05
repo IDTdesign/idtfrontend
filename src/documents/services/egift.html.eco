@@ -1,0 +1,131 @@
+---
+layout: "default"
+title: "eGift"
+---
+
+<style>
+
+</style>
+
+<header class="header-promo">
+    <div class="container header-promo--inner">
+        <img src="<%= @getUrl("egift/egift.png") %>" alt="">
+        <section class="header-promo--box">
+            <h1>Boss Revolution<sup>SM</sup> eGift</h1>
+            <h4>Shopping without stress? Send an e-Gift</h4>
+            <p>Send a virtual gift card from our wide range of popular merchants. The card will be delivered electronically to anyone you select – along with a personalized message from you.</p>
+        </section>
+    </div>
+</header>
+
+<div class="container">
+
+    <article class="island island-default">
+        
+        <section class="dyad dyad-gap-small dyad-sm-vertical dyad-1-2 dyad--1_5-2 dyad-reverse">
+            <div class="dyad--first dyad--stretch text-center">
+                <div class="island island-condenced island-alt island-no-margin">
+                    <img src="<%= @getUrl("egift/egift-flyer.png") %>" alt="BossRevolution eGift merchants">
+                </div>
+            </div>
+            <div class="dyad--second">
+                <div class="spec-margin-top spec-margin-left">
+                    <h1 class="offset-v-bottom">No Gift Wrap Necessary</h1>
+                    <ul class="svg-list svg-list--sm">
+                        <li class="svg-list--item"><h3>Popular merchants</h3></li>
+                        <li class="svg-list--item"><h3>Instant Electronic Delivery</h3></li>
+                        <li class="svg-list--item"><h3>No Fees</h3></li>
+                        <li class="svg-list--item"><h3>Use card in-store, online or over phone*</h3></li>
+                    </ul>
+                    <h2 class="brand-color bordered-top offset-v-top" style="width: 93%;">Order Today at Your Participating Boss Revolution Retailer</h2>
+                    <h3 class="h3-thin offset-v-top-sm no-offset-v-bottom">Choose the gift and the amount, <br />we send it electronically</h3>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <article class="island island-default">
+
+        <h2 class="island--title">How It Works</h2>
+
+        <section class="how-works how-works-4-blocks how-works-number-centered">
+            <div class="how-works--block">
+                <p>
+                    <img src="<%= @getUrl("egift/how-it-works-egift-01.png") %>" alt="step 1">
+                </p>
+                <h3>Select the e-gift card that you want to send</h3>
+                <p>Choose from many popular merchants.</p>
+            </div>
+            <div class="how-works--block">
+                <p>
+                    <img src="<%= @getUrl("egift/how-it-works-egift-02.png") %>" alt="step 2">
+                </p>
+                <h3>Provide recipient information to the Boss Revolution retailer</h3>
+                <p>Choose SMS or email delivery.</p>
+            </div>
+            <div class="how-works--block">
+                <p>
+                    <img src="<%= @getUrl("egift/how-it-works-egift-03.png") %>" alt="step 3">
+                </p>
+                <h3>Specify the amount of&nbsp;the&nbsp;gift&nbsp;card to&nbsp;send</h3>
+                <p>From $25 - $100.</p>
+            </div>
+            <div class="how-works--block">
+                <p>
+                    <img class="offset-v-top-sm" src="<%= @getUrl("egift/how-it-works-egift-04.png") %>" alt="step 4">
+                </p>
+                <h3>We’ll deliver the electronic gift card instantly</h3>
+                <p>Card details will be sent securely to&nbsp;the&nbsp;recipient.</p>
+            </div>
+        </section>
+
+    </article>
+
+    <article class="island island-default ">
+
+        <h2 class="island--title"><span>For terms and conditions of each merchant, <br />click on its logo below</span></h2>
+
+        <section class="island island-transparent text-center">
+            <div class="col-md-spec">
+                <a href="https://chilis.cashstar.com/about/terms_and_conditions/" target="_blank">Chilis</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://dominos.cashstar.com/about/terms_and_conditions/" target="_blank">Domino's</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://footlocker.cashstar.com/about/terms_and_conditions/" target="_blank">Foot Locker</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://gap.cashstar.com/about/terms_and_conditions/" target="_blank">GAP</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://crackerbarrel.cashstar.com/about/terms_and_conditions/" target="_blank">CBacker Barrel</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://oldnavy.cashstar.com/about/terms_and_conditions/" target="_blank">Old Navy</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://papajohns.cashstar.com/about/terms_and_conditions/" target="_blank">Papa John's</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://steinmart.cashstar.com/about/terms_and_conditions/" target="_blank">Stein Mart</a>
+            </div>
+            <div class="col-md-spec">
+                <a href="https://tgif.cashstar.com/about/terms_and_conditions/" target="_blank">Fridays</a>
+            </div>
+        </section>
+        
+        <h3 class="text-center offset-v-top note-see">More Merchants Coming Soon!
+            <span class="h4 h4-thin">* See merchant terms of use</span>
+        </h3>
+
+    </article>
+
+    <article class="island island-default ">
+
+        <p class="notice">
+            The purchase and use of an electronic gift card constitutes acceptance of all terms and conditions regarding the card. The issuer of the card may place limitations or restrictions on the use and redemption of the card. For the issuer’s complete terms and conditions see www.bossrevolution.com/eGift. Recipient will receive an electronic gift card by email or SMS. Except as required by law, this electronic gift card cannot be transferred, redeemed for cash or applied to another account. No refund or credit will be provided if the electronic gift card is lost, stolen, destroyed or used without permission. No expiration date or service fees. Risk of loss and title for the electronic gift card passes to the recipient/purchaser upon electronic transmission of the card’s PIN to the purchaser, recipient or delivery to the carrier, whichever is applicable. Purchaser consents to receive a purchase confirmation text message from Boss Revolution to purchaser’s mobile phone number provided - Standard message and data rates may apply. Neither the issuer, the retailer, CashStar nor IDT Domestic Telecom, Inc. is responsible for wrong information provided by the purchaser during the transaction. NEITHER THE ISSUER, CASHSTAR, NOR IDT DOMESTIC TELECOM, INC. MAKES ANY WARRANTIES, EXPRESS OR IMPLIED, WITH RESPECT TO THE ELECTRONIC GIFT CARDS, INCLUDING WITHOUT LIMITATION, ANY EXPRESS OR IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN THE EVENT THE ELECTRONIC GIFT CARD IS NON-FUNCTIONAL, YOUR SOLE REMEDY, AND OUR SOLE LIABILITY, SHALL BE THE REPLACEMENT OF SUCH ELECTRONIC GIFT CARD. Because some jurisdictions do not permit these exclusions or limitations, our liability in such jurisdictions shall be limited to the extent permitted by law. Call 844-208-0168 for additional information.
+        </p>
+
+</div>

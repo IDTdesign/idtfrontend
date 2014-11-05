@@ -26,6 +26,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/Oops-boss/Oops-boss.html') %>">/Oops-boss/Oops-boss.html</a></li>
             <li><a href="<%= @getUrl('/about.html') %>">about.html</a></li>
             <li><a href="<%= @getUrl('/rates.html') %>">rates.html</a></li>
+            <li><a href="<%= @getUrl('/services/egift.html') %>">/services/egift.html</a></li>
             </ul>
     </article>
     <article class="island island-default">

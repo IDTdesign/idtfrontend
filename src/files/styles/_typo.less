@@ -328,6 +328,13 @@ table:not([class]) {
 //    }
 //}
 
+.brand-color {
+    color: @brand-primary-bright;
+}
+.bordered-top {
+    padding-top: 22px; 
+    border-top: 2px solid rgba(255,255,255,0.25);
+}
 .learn-more {
     text-decoration: none;
     font-weight: bold;
@@ -335,6 +342,22 @@ table:not([class]) {
     &:hover {
         text-decoration: none;
     }
+}
+.note-see {
+    position: relative;
+
+    .h4 {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    
+        @media (max-width: @screen-sm-max) {
+            position: static;
+            display: block;
+            margin-top: 15px;
+        }
+    }
+
 }
 
 .mimic {
