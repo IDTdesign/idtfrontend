@@ -88,31 +88,58 @@ title: "eGift"
 
         <section class="island island-transparent text-center">
             <div class="col-md-spec">
-                <a href="https://chilis.cashstar.com/about/terms_and_conditions/" target="_blank">Chilis</a>
+                <a href="https://chilis.cashstar.com/about/terms_and_conditions/" target="_blank">Chilis
+                    <img class="bottom" src="<%= @getUrl("egift/card-chilis.png") %>" alt="Chilis">
+                    <img class="top" src="<%= @getUrl("egift/card-chilis_b.png") %>" alt="Chilis">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://dominos.cashstar.com/about/terms_and_conditions/" target="_blank">Domino's</a>
+                <a href="https://dominos.cashstar.com/about/terms_and_conditions/" target="_blank">Domino's
+                    <img class="bottom" src="<%= @getUrl("egift/card-footlocker.png") %>" alt="Domino's">
+                    <img class="top" src="<%= @getUrl("egift/card-footlocker_b.png") %>" alt="Domino's">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://footlocker.cashstar.com/about/terms_and_conditions/" target="_blank">Foot Locker</a>
+                <a href="https://footlocker.cashstar.com/about/terms_and_conditions/" target="_blank">Foot Locker
+                    <img class="bottom" src="<%= @getUrl("egift/card-dominos.png") %>" alt="Foot Locker">
+                    <img class="top" src="<%= @getUrl("egift/card-dominos_b.png") %>" alt="Foot Locker">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://gap.cashstar.com/about/terms_and_conditions/" target="_blank">GAP</a>
+                <a href="https://gap.cashstar.com/about/terms_and_conditions/" target="_blank">GAP
+                    <img class="bottom" src="<%= @getUrl("egift/card-gap.png") %>" alt="GAP">
+                    <img class="top" src="<%= @getUrl("egift/card-gap_b.png") %>" alt="GAP">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://crackerbarrel.cashstar.com/about/terms_and_conditions/" target="_blank">CBacker Barrel</a>
+                <a href="https://crackerbarrel.cashstar.com/about/terms_and_conditions/" target="_blank">Cracker Barrel
+                    <img class="bottom" src="<%= @getUrl("egift/card-crackerbarreloldcountrystore.png") %>" alt="Cracker Barrel">
+                    <img class="top" src="<%= @getUrl("egift/card-crackerbarreloldcountrystore_b.png") %>" alt="Cracker Barrel">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://oldnavy.cashstar.com/about/terms_and_conditions/" target="_blank">Old Navy</a>
+                <a href="https://oldnavy.cashstar.com/about/terms_and_conditions/" target="_blank">Old Navy
+                    <img class="bottom" src="<%= @getUrl("egift/card-oldnavy.png") %>" alt="Old Navy">
+                    <img class="top" src="<%= @getUrl("egift/card-oldnavy_b.png") %>" alt="Old Navy">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://papajohns.cashstar.com/about/terms_and_conditions/" target="_blank">Papa John's</a>
+                <a href="https://papajohns.cashstar.com/about/terms_and_conditions/" target="_blank">Papa John's
+                    <img class="bottom" src="<%= @getUrl("egift/card-papajohns.png") %>" alt="Papa John's">
+                    <img class="top" src="<%= @getUrl("egift/card-papajohns_b.png") %>" alt="Papa John's">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://steinmart.cashstar.com/about/terms_and_conditions/" target="_blank">Stein Mart</a>
+                <a href="https://steinmart.cashstar.com/about/terms_and_conditions/" target="_blank">Stein Mart
+                    <img class="bottom" src="<%= @getUrl("egift/card-steinmart.png") %>" alt="Stein Mart">
+                    <img class="top" src="<%= @getUrl("egift/card-steinmart_b.png") %>" alt="Stein Mart">
+                </a>
             </div>
             <div class="col-md-spec">
-                <a href="https://tgif.cashstar.com/about/terms_and_conditions/" target="_blank">Fridays</a>
+                <a href="https://tgif.cashstar.com/about/terms_and_conditions/" target="_blank">Fridays
+                    <img class="bottom" src="<%= @getUrl("egift/card-tgifridays.png") %>" alt="Fridays">
+                    <img class="top" src="<%= @getUrl("egift/card-tgifridays_b.png") %>" alt="Fridays">
+                </a>
             </div>
         </section>
         
