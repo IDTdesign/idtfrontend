@@ -3,10 +3,6 @@ layout: "default"
 title: "Money Transfer"
 ---
 
-<style>
-
-</style>
-
 <header class="header-promo">
     <div class="container header-promo--inner">
         <img src="<%= @getUrl("money-transfer/money-transfer.png") %>" alt="">
@@ -20,7 +16,7 @@ title: "Money Transfer"
 
 <div class="container">
 
-<article class="island island-default money-transfer-carousel">
+    <article class="island island-default money-transfer-carousel">
 
         <h2 class="island--title">Money Transfer Benefits</h2>
         <div id="money-transfer" class="carousel carousel-default slide" data-ride="carousel" data-interval="false">
@@ -94,5 +90,7 @@ title: "Money Transfer"
         <p class="notice">
             * For customers using Boss Revolution  to Go, call forwarding, Boss Revolution  mobile™ for Verizon, Boss Revolution  on 3, Boss Revolution ™ on au, and Boss Revolution  on Telkomsel, the following per minute rates and connection fees apply for the listed regions:  Australia (landline, Canberra and Sydney): €0.019 (connection fee (CF) €0.049), Australia mobile: €0.168 (CF €0.089), Bangladesh (landline and mobile): €0.032 (CF €0.089), Brazil landline: €0.046 (CF €0.089), Brazil Rio de Janeiro: €0.03 (CF €0.089), Brazil Sao Paolo: €0.023 (CF €0.089), Brazil mobile: €0.179 (CF €0.089), Colombia (landline (excl Lex), Armenia, Medellin, Pereira): €0.078 (CF €0.089), Colombia (Bogota, Barranquilla, Cali): €0.046 (CF €0.089), Colombia mobile: €0.086 (CF €0.089), Dominican Republic (landline): €0.066 (CF €0.089), Dominican Republic mobile: €0.111 (CF €0.089), France (landline, Paris): €0.019 (CF €0.049), France mobile: €0.169 (CF €0.089), Germany: €0.019 (CF €0.049), Germany mobile: €0.205 (CF €0.089), India: €0.069 (CF €0.089), Italy: €0.019 (CF €0.049), Italy mobile: €0.25 (CF €0.089), Korea, Republic of (landline, Seoul): €0.019 (CF €0.049), Korea, Republic of (mobile): €0.061 (CF €0.089) Nigeria landline: €0.13 (CF €0.089), Nigeria Lagos: €0.1 (CF €0.089), Nigeria mobile: €0.21 (CF €0.089), Pakistan: €0.102 (CF €0.089), Philippines (landline, Cebu, Manila): €0.161 (CF €0.089), Philippines mobile: €0.202 (CF €0.089), Poland (landline, Gdansk, Warsaw): €0.019 (CF €0.049), Poland mobile: €0.208 (CF €0.089), South Africa (landline, Cape Town, Johannesburg): €0.058 (CF €0.089), South Africa mobile: €0.195 (CF €0.089).
         </p>
+        
+    </article>
 
 </div>

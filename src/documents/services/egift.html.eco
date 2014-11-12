@@ -3,10 +3,6 @@ layout: "default"
 title: "eGift"
 ---
 
-<style>
-
-</style>
-
 <header class="header-promo">
     <div class="container header-promo--inner">
         <img src="<%= @getUrl("egift/egift.png") %>" alt="">
@@ -154,5 +150,7 @@ title: "eGift"
         <p class="notice">
             The purchase and use of an electronic gift card constitutes acceptance of all terms and conditions regarding the card. The issuer of the card may place limitations or restrictions on the use and redemption of the card. For the issuer’s complete terms and conditions see www.bossrevolution.com/eGift. Recipient will receive an electronic gift card by email or SMS. Except as required by law, this electronic gift card cannot be transferred, redeemed for cash or applied to another account. No refund or credit will be provided if the electronic gift card is lost, stolen, destroyed or used without permission. No expiration date or service fees. Risk of loss and title for the electronic gift card passes to the recipient/purchaser upon electronic transmission of the card’s PIN to the purchaser, recipient or delivery to the carrier, whichever is applicable. Purchaser consents to receive a purchase confirmation text message from Boss Revolution to purchaser’s mobile phone number provided - Standard message and data rates may apply. Neither the issuer, the retailer, CashStar nor IDT Domestic Telecom, Inc. is responsible for wrong information provided by the purchaser during the transaction. NEITHER THE ISSUER, CASHSTAR, NOR IDT DOMESTIC TELECOM, INC. MAKES ANY WARRANTIES, EXPRESS OR IMPLIED, WITH RESPECT TO THE ELECTRONIC GIFT CARDS, INCLUDING WITHOUT LIMITATION, ANY EXPRESS OR IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN THE EVENT THE ELECTRONIC GIFT CARD IS NON-FUNCTIONAL, YOUR SOLE REMEDY, AND OUR SOLE LIABILITY, SHALL BE THE REPLACEMENT OF SUCH ELECTRONIC GIFT CARD. Because some jurisdictions do not permit these exclusions or limitations, our liability in such jurisdictions shall be limited to the extent permitted by law. Call 844-208-0168 for additional information.
         </p>
+        
+    </article>
 
 </div>
