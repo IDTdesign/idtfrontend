@@ -210,7 +210,8 @@ module.exports = (grunt) ->
 			less:
 				files: ['./src/files/styles/**/*.*']
 				tasks: [
-					'less'
+					'less',
+					'copy:manan'
 				]
 
 		# start server
@@ -245,6 +246,11 @@ module.exports = (grunt) ->
 					expand: true
 					}
 				]
+			manan:
+				files: [
+					'../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css':'out/styles/bossrevolution.css'
+					'../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css.map':'out/styles/bossrevolution.css.map'
+				]
 
 		# generate development
 		shell:
@@ -275,9 +281,9 @@ module.exports = (grunt) ->
 	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'svg-sprites', 'replace:sprites']
 	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
-	grunt.registerTask 'postprocess',   ['copy', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
+	grunt.registerTask 'postprocess',   ['copy:main', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run',           ['generate', 'server']
-	grunt.registerTask 'development',   ['postprocess', 'watch:less']
+	grunt.registerTask 'development',   ['postprocess', 'copy:manan', 'watch:less']
 	grunt.registerTask 'default',       ['run']

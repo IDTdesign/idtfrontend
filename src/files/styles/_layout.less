@@ -245,40 +245,25 @@ a {
 
 /* social promo */
 .social-promo {
-    text-align: right;
-    margin-left: 20px;
 
     .social-promo--block {
         display: inline-block;
-        margin: 0 0 20px;
+        width: 100%;
         padding: 20px;
         background-color: #fff;
         border-radius: @border-radius-large;
+        color: #000;
 
-        &:last-child {
-            margin-bottom: 0;
+        a:link,
+        a:visited {
+            color: #000;
         }
-    }
-
-    @media (max-width: @screen-md-min) {
-        margin: 0 -10px;
-        text-align: center;
-
-        .social-promo--block {
-            margin: 0 10px;
-        }
-    }
-
-    @media (max-width: @screen-sm-min) {
-        margin-bottom: 7px;
     }
 
     @media (max-width: 690px) {
-        margin: 0;
 
         .social-promo--block {
             display: block;
-            margin: 7px 0 0 0;
             border-radius: 0;
         }
     }
