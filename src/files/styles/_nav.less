@@ -969,7 +969,7 @@
 
                 &:focus {
                 	border-top: 3px @brand-primary-btn-dark solid;
-                    color: #cc0000;                    
+                    color: #cc0000;
 
                     &:after {
                         border-color: #fff transparent transparent transparent;
@@ -1236,4 +1236,28 @@
         }
     }
 
+}
+
+.nav-horizontal {
+    width: 100%;
+
+    .nav--list {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav--item {
+        display: inline-block;
+
+        &:after {
+            content: '|';
+            display: inline-block;
+            margin: 0 10px;
+            color: @link-color;
+        }
+
+        &:last-child {
+            &:after {display: none;}
+        }
+    }
 }
