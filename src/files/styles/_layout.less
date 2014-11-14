@@ -171,7 +171,7 @@ a {
         margin-left: -50px;
 
         .svg-list--item {
-            padding:  6px 0 5px 50px; 
+            padding:  6px 0 5px 50px;
 
             &:after {
                 top: 7px;
@@ -1029,7 +1029,19 @@ a {
                     font-weight: bold;
 
                     .flag {
-                        vertical-align: baseline;
+                        vertical-align: middle;
+                    }
+
+                    sup {
+                        top: 0;
+                        font-size: 16px;
+                        color: @brand-primary-bright;
+                    }
+
+                    .i {
+                        width: 16px;
+                        height: 15px;
+                        color: @brand-primary-bright;
                     }
 
                     ul {
@@ -1065,6 +1077,24 @@ a {
 
             @media (max-width: @screen-xxs) {
                 column-count: 1;
+            }
+        }
+
+        .countries--note {
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: uppercase;
+
+            .i {
+                width: 16px;
+                height: 15px;
+                color: @brand-primary-bright;
+            }
+
+            sup {
+                top: 0;
+                font-size: 16px;
+                color: @brand-primary-bright;
             }
         }
     }
@@ -1388,13 +1418,13 @@ a {
         height: 100%;
         text-indent: -4000px;
         display: block;
-        
+
         img {
             position: absolute;
             left: calc(50% - 65px);
             top: calc(50% - 45px);
             transition: opacity 1s ease-in-out;
-            
+
             &.top:hover,
             &.top:focus,
             &.top:active {
@@ -1474,15 +1504,15 @@ a {
     margin-bottom: 0;
 }
 
-.spec-margin-top { 
+.spec-margin-top {
     @media (max-width: @screen-desktop) {
         margin-top: 25px;
     }
 }
 
-.spec-margin-left { 
-    margin-left: 50px; 
-    
+.spec-margin-left {
+    margin-left: 50px;
+
     @media (max-width: @screen-desktop) {
         margin-left: 60px;
     }

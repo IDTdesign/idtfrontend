@@ -135,9 +135,9 @@ scripts: ['/scripts/jqgrid_init.js']
             </div>
         </form>
 
-        <div class="call-me-countries">
+        <div class="countries">
             <div class="text-center">
-                <button type="button" class="collapse-trigger collapse-trigger-arrows collapsed" data-toggle="collapse" data-target="#call-me-countries--list">
+                <button type="button" class="collapse-trigger collapse-trigger-arrows collapsed" data-toggle="collapse" data-target="#countries--list">
                     <span>Call Me is available for the following countries</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="i i--expand">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--expand"></use>
@@ -147,10 +147,10 @@ scripts: ['/scripts/jqgrid_init.js']
                     </svg>
                 </button>
             </div>
-            <div class="call-me-countries--list-wrapper collapse" id="call-me-countries--list">
+            <div class="countries--list-wrapper collapse" id="countries--list">
                 <div class="island island-default island-no-margin island-square-top">
                     <h4>17 Countries / 105 Destinations</h4>
-                    <div class="call-me-countries--list">
+                    <!--<div class="countries--list">
                         <ul class="flags-list">
                             <li><span class="flag flag-ar"></span> Argentina
                                 <ul>
@@ -318,9 +318,243 @@ scripts: ['/scripts/jqgrid_init.js']
                                 </ul>
                             </li>
                         </ul>
+                    </div>-->
+                    <div class="countries--list">
+                    <ul class="flags-list">
+                    <li>
+                        <span class="flag flag-ar"></span> Argentina
+                    </li>
+                    <li>
+                        <span class="flag flag-australia"></span> Australia
+                    </li>
+                    <li>
+                        <span class="flag flag-austria"></span> Austria
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-belgium"></span> Belgium
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-br"></span> Brazil
+                    </li>
+                    <li>
+                        <span class="flag flag-bulgaria"></span> Bulgaria
+                    </li>
+                    <li>
+                        <span class="flag flag-ca"></span> Canada
+                    </li>
+                    <li>
+                        <span class="flag flag-cl"></span> Chile
+                    </li>
+                    <li>
+                        <span class="flag flag-china"></span> China
+                    </li>
+                    <li>
+                        <span class="flag flag-costa-rica"></span> Costa Rica
+                    </li>
+                    <li>
+                        <span class="flag flag-croatia"></span> Croatia
+                    </li>
+                    <li>
+                        <span class="flag flag-cyprus"></span> Cyprus
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-cz"></span> Czech Republic
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-de"></span> Denmark
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-estonia"></span> Estonia
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-finland"></span> Finland
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-france"></span> France
+                    </li>
+                    <li>
+                        <span class="flag flag-french-guiana"></span> French Guiana
+                    </li>
+                    <li>
+                        <span class="flag flag-germany"></span> Germany
+                    </li>
+                    <li>
+                        <span class="flag flag-greece"></span> Greece
+                    </li>
+                    <li>
+                        <span class="flag flag-guadeloupe"></span> Guadeloupe
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-guam"></span> Guam
+                    </li>
+                    <li>
+                        <span class="flag flag-hong-kong"></span> Hong Kong
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-hungary"></span> Hungary
+                    </li>
+                    <li>
+                        <span class="flag flag-iceland"></span> Iceland
+                    </li>
+                    <li>
+                        <span class="flag flag-india"></span> India
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-ireland"></span> Ireland
+                    </li>
+                    <li>
+                        <span class="flag flag-israel"></span> Israel
+                    </li>
+                    <li>
+                        <span class="flag flag-kz"></span> Kazakhstan
+                    </li>
+                    <li>
+                        <span class="flag flag-lithuania"></span> Lithuania
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-luxembourg"></span> Luxembourg
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-malaysia"></span> Malaysia
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-malta"></span> Malta
+                    </li>
+                    <li>
+                        <span class="flag flag-martinique"></span> Martinique (French Antilles)
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-mx"></span> Mexico
+                    </li>
+                    <li>
+                        <span class="flag flag-netherlands"></span> Netherlands
+                    </li>
+                    <li>
+                        <span class="flag flag-new-zealand"></span> New Zealand
+                    </li>
+                    <li>
+                        <span class="flag flag-norway"></span> Norway
+                    </li>
+                    <li>
+                        <span class="flag flag-pe"></span> Peru <sup>*</sup>
+                    </li>
+                    <li>
+                        <span class="flag flag-pl"></span> Poland
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-portugal"></span> Portugal
+                    </li>
+                    <li>
+                        <span class="flag flag-puerto-rico"></span> Puerto Rico
+                    </li>
+                    <li>
+                        <span class="flag flag-romania"></span> Romania
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-ru"></span> Russia
+                    </li>
+                    <li>
+                        <span class="flag flag-singapore"></span> Singapore
+                    </li>
+                    <li>
+                        <span class="flag flag-slovakia"></span> Slovakia
+                    </li>
+                    <li>
+                        <span class="flag flag-za"></span> South Africa
+                    </li>
+                    <li>
+                        <span class="flag flag-south-korea"></span> South Korea
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-es"></span> Spain
+                    </li>
+                    <li>
+                        <span class="flag flag-sweden"></span> Sweden
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-switzerland"></span> Switzerland
+                    </li>
+                    <li>
+                        <span class="flag flag-taiwan"></span> Taiwan
+                    </li>
+                    <li>
+                        <span class="flag flag-th"></span> Thailand
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="flag flag-uk"></span> United Kingdom
+                    </li>
+                    <li>
+                        <span class="flag flag-vi"></span> U.S. Virgin Islands
+                    </li>
+                    <li>
+                        <span class="flag flag-usa"></span> United States
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="countries--note">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="i i--mobile-top-up"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--mobile-top-up"></use></svg>
+                            = Includes calls to mobile phones </p>
+                        <p><sup>*</sup> Does not include calls to Rural locations</p>
                     </div>
                     <div class="text-center">
-                        <button type="button" class="collapse-trigger collapse-trigger-cross" data-toggle="collapse" data-target="#call-me-countries--list">
+                        <button type="button" class="collapse-trigger collapse-trigger-cross" data-toggle="collapse" data-target="#countries--list">
                             <svg xmlns="http://www.w3.org/2000/svg" class="i i--clear">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--clear"></use>
                             </svg>
