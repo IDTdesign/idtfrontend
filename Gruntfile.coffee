@@ -211,7 +211,7 @@ module.exports = (grunt) ->
 				files: ['./src/files/styles/**/*.*']
 				tasks: [
 					'less',
-					'copy:manan'
+					'autoprefixer:bossout'
 				]
 
 		# start server
@@ -285,5 +285,6 @@ module.exports = (grunt) ->
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run',           ['generate', 'server']
-	grunt.registerTask 'development',   ['postprocess', 'copy:manan', 'watch:less']
+	grunt.registerTask 'development',   ['postprocess', 'watch:less']
+	grunt.registerTask 'production',    ['postprocess', 'copy:manan']
 	grunt.registerTask 'default',       ['run']
