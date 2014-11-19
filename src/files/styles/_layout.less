@@ -990,14 +990,14 @@ a {
 .countries {
     .clearfix;
     padding: 0;
-    margin: 40px -60px -40px;
+    margin: 40px -60px 20px;
 
     .collapse-trigger-arrows {
         margin-bottom: 20px;
     }
 
     @media (max-width: @screen-sm-min) {
-        margin: 20px -20px -20px;
+        margin: 20px -20px;
     }
 
     .countries--list-wrapper {
@@ -1009,7 +1009,7 @@ a {
         }
 
         .countries--list {
-            columns: 4 20px;
+            columns: 3 20px;
             height: auto;
             width: 100%;
             padding: 0;
@@ -1036,13 +1036,11 @@ a {
                     sup {
                         top: 0;
                         font-size: 16px;
-                        color: @brand-primary-bright;
                     }
 
                     .i {
                         width: 16px;
                         height: 15px;
-                        color: @brand-primary-bright;
                     }
 
                     ul {
@@ -1059,12 +1057,10 @@ a {
             }
 
             @media (max-width: @screen-md-min) {
-                column-count: 3;
+                column-count: 2;
             }
 
             @media (max-width: @screen-sm-min) {
-                column-count: 2;
-
                 .flags-list {
                     > li > ul {
                         display: none;
@@ -1073,10 +1069,6 @@ a {
             }
 
             @media (max-width: @screen-xs-min) {
-                column-count: 2;
-            }
-
-            @media (max-width: @screen-xxs) {
                 column-count: 1;
             }
         }
@@ -1089,13 +1081,11 @@ a {
             .i {
                 width: 16px;
                 height: 15px;
-                color: @brand-primary-bright;
             }
 
             sup {
                 top: 0;
                 font-size: 16px;
-                color: @brand-primary-bright;
             }
         }
     }
@@ -1105,15 +1095,9 @@ a {
 
         .countries--list-wrapper {
             .countries--list {
-                columns: 3 20px;
-
-                @media (max-width: @screen-md-min) {
-                    column-count: 2;
-                }
+                columns: 2 20px;
 
                 @media (max-width: @screen-sm-min) {
-                    column-count: 2;
-
                     .flags-list {
                         > li > ul {
                             display: none;
@@ -1122,10 +1106,6 @@ a {
                 }
 
                 @media (max-width: @screen-xs-min) {
-                    column-count: 2;
-                }
-
-                @media (max-width: @screen-xxs) {
                     column-count: 1;
                 }
             }
