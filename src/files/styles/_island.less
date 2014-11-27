@@ -403,10 +403,12 @@
 /* island end */
 
 .island--header {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 60px;
     text-align: center;
     //color: @ink;
+    @media (max-width: @screen-xs-max) {
+        padding: 40px 20px;
+    }
 
     .island--title {
         margin-top: 0;
