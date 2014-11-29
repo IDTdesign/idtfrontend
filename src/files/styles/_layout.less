@@ -5,8 +5,16 @@ body {
   height: 100%;
 }
 
-/* fix for jogging background in IE. 
-see http://stackoverflow.com/questions/19377810/windows-8-makes-fixed-backgrounds-jump-when-scrolling-with-mouse-wheel */
+/* 
+
+fix for jogging background in IE. 
+see http://stackoverflow.com/questions/19377810/windows-8-makes-fixed-backgrounds-jump-when-scrolling-with-mouse-wheel 
+
+turned-off, because it breaks anchors, local navigation
+
+*/
+
+/*
 html {
     overflow: hidden;
 }
@@ -14,6 +22,7 @@ body {
     overflow: auto;
     overflow-x: hidden;
 }
+*/
 /* end fix for jogging background in IE. */
 
 @media (max-width: 480px) {
@@ -48,6 +57,11 @@ body {
     background-image: url(../img/bg-d3.jpg), none; /* 1 */
     background-size: cover;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-menu.navmenu-fixed-right + .page-canvas.canvas-slid {
+    left:-@navmenu-width;
+    right:@navmenu-width;
 }
 
 .allpage--body > .container:first-child {
@@ -115,15 +129,12 @@ a {
     font-size: @font-size-small;
 }
 
- /* z - to fix click on scrollbar bug caused by jogging background in IE fix */
-
 .offcanvas-menu {
-    z-index: -1; /* z */
     opacity: 0;
 }
 
 .offcanvas-menu.in {
-    z-index: 1;  /* z */
+    z-index: 1;
     opacity: 1;
 }
 
