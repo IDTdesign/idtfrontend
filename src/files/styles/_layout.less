@@ -5,6 +5,17 @@ body {
   height: 100%;
 }
 
+/* fix for jogging background in IE. 
+see http://stackoverflow.com/questions/19377810/windows-8-makes-fixed-backgrounds-jump-when-scrolling-with-mouse-wheel */
+html {
+    overflow: hidden;
+}
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+/* end fix for jogging background in IE. */
+
 @media (max-width: 480px) {
 
     /* fix min width of the page to 480px */
@@ -104,12 +115,15 @@ a {
     font-size: @font-size-small;
 }
 
+ /* z - to fix click on scrollbar bug caused by jogging background in IE fix */
+
 .offcanvas-menu {
-    z-index: 1;
+    z-index: -1; /* z */
     opacity: 0;
 }
 
 .offcanvas-menu.in {
+    z-index: 1;  /* z */
     opacity: 1;
 }
 

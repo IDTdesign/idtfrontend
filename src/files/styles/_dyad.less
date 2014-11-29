@@ -32,21 +32,23 @@
     .dyad-3-1 > .dyad--first    { flex-grow: 3; }
     .dyad-3-1 > .dyad--second   { flex-grow: 1; }
 
+    .dyad-1-3 > .dyad--first    { flex-grow: 1; }
+    .dyad-1-3 > .dyad--second   { flex-grow: 3; }
+
     .dyad-2-1 > .dyad--first    { flex-grow: 2; }
     .dyad-2-1 > .dyad--second   { flex-grow: 1; }
+
+    .dyad-1-2 > .dyad--first    { flex-grow: 1; }
+    .dyad-1-2 > .dyad--second   { flex-grow: 2; }
 
     .dyad-3-2 > .dyad--first    { flex-grow: 3; }
     .dyad-3-2 > .dyad--second   { flex-grow: 2; }
 
-    .dyad-1-3 > .dyad--first    { flex-grow: 1; }
-    .dyad-1-3 > .dyad--second   { flex-grow: 3; }
-
-    .dyad-1-2 > .dyad--first    { flex-grow: 1; }
-    .dyad--1_5-2 > .dyad--first { flex-grow: 1.5; }
-    .dyad-1-2 > .dyad--second   { flex-grow: 2; }
-
     .dyad-2-3 > .dyad--first    { flex-grow: 2; }
     .dyad-2-3 > .dyad--second   { flex-grow: 3; }
+
+    .dyad-3-4 > .dyad--first    { flex-grow: 3; }
+    .dyad-3-4 > .dyad--second   { flex-grow: 4; }
 
     .dyad-auto > .dyad--first,
     .dyad-auto > .dyad--second {
@@ -196,4 +198,54 @@
 .dyad-img-cover {
     overflow: hidden;
     background-size: cover;
+}
+
+/* no flexbox fallback */
+@media (min-width: @screen-sm-min) {
+    .no-flexbox.no-flexboxlegacy .dyad {
+        display: table;
+        width: 100%;
+
+        > .dyad--first,
+        > .dyad--second {
+            display: table-cell;
+            vertical-align: top;
+            width: 50%;
+        }
+
+    }
+
+    .no-flexbox.no-flexboxlegacy {
+        
+        .dyad-3-1 > .dyad--first    { width: 75%; }
+        .dyad-3-1 > .dyad--second   { width: 25%; }
+
+        .dyad-1-3 > .dyad--first    { width: 25%; }
+        .dyad-1-3 > .dyad--second   { width: 75%; }
+
+        .dyad-2-1 > .dyad--first    { width: 66.5%; }
+        .dyad-2-1 > .dyad--second   { width: 33.5%; }
+
+        .dyad-1-2 > .dyad--first    { width: 33.5%; }
+        .dyad-1-2 > .dyad--second   { width: 66.5%; }
+
+        .dyad-3-2 > .dyad--first    { width: 60%; }
+        .dyad-3-2 > .dyad--second   { width: 40%; }
+
+        .dyad-2-3 > .dyad--first    { width: 40%; }
+        .dyad-2-3 > .dyad--second   { width: 60%; }
+
+        .dyad-3-4 > .dyad--first    { width: 42.8%; }
+        .dyad-3-4 > .dyad--second   { width: 57.2%; }
+
+        .dyad-reverse {
+            direction: rtl;
+
+            & > .dyad--first,
+            & > .dyad--second {
+                direction: ltr;
+            }
+        }
+
+    }
 }
