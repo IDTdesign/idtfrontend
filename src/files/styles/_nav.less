@@ -84,6 +84,7 @@
             &:focus {
                 background: #000;
                 color: inherit;
+                filter: progid:none; 
             }
         }
     }
@@ -386,6 +387,10 @@
         background: fade(@ink, 97%);
         font-size: 12px;
 
+        .navbar--submenu {
+            border-radius: 0;
+        }
+
         .navbar--submenulink {
             display: block;
             border-bottom: 1px solid fade(@gray-light, 50%);
@@ -400,6 +405,7 @@
             &:focus {
                 background: #bd1915;
                 color: @mainmenu-textcolor;
+                filter: progid:none; 
             }
         }
 
@@ -411,6 +417,12 @@
         > .navbar--submenuitem:last-child > .navbar--submenulink {
             border-radius: 0 0 @mainmenu-radius @mainmenu-radius;
             border-bottom: none;
+        }
+
+        .navbar--submenu {
+            > .navbar--submenuitem:last-child > .navbar--submenulink {
+                border-radius: 0;
+            }
         }
     }
 
