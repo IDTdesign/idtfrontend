@@ -44,18 +44,21 @@ body {
 /* offcanvas menu */
 
 /* 1 - smaller bg for modern browsers */
+body {
+    background-color: #EEE;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg-d3.jpg), none; /* 1 */
+    background-size: cover;    
+}
 
 .allpage {
     position: relative;
     left: 0;
     z-index: 2;
     min-height: 100%;
-    background-color: #EEE;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    background-image: url(../img/bg.jpg);
-    background-image: url(../img/bg-d3.jpg), none; /* 1 */
-    background-size: cover;
+
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -64,17 +67,41 @@ body {
     right:@navmenu-width;
 }
 
+.offcanvas-menu {
+    opacity: 0;
+    z-index: -1;
+    right: -@navmenu-width;
+    //transition: right .5s ease-in-out;
+    transition: none;
+}
+
+.offcanvas-menu.in {
+    z-index: 1;
+    opacity: 1;
+    right: 0;
+    transition: right .5s ease-in-out;
+    transition: none;
+}
+
+
+/* increasing specifity for allpage--header*/
+.canvas-sliding,
+.canvas-sliding.allpage--header.allpage--header {
+    transition-timing-function: ease-in-out;
+    transition: none;
+}
+
 .allpage--body > .container:first-child {
     padding-top: 160px;
 }
 
 @media (max-width: @screen-xs-max) {
 
-    .allpage {
-        background-attachment: scroll;
-        background-size: 200% auto;
-        background-position: 50% 0;
-    }
+    //.allpage {
+    //    background-attachment: scroll;
+    //    background-size: 200% auto;
+    //    background-position: 50% 0;
+    //}
 
     .allpage--body > .container:first-child {
         padding-top: 50px;
@@ -129,20 +156,6 @@ a {
     font-size: @font-size-small;
 }
 
-.offcanvas-menu {
-    opacity: 0;
-}
-
-.offcanvas-menu.in {
-    z-index: 1;
-    opacity: 1;
-}
-
-/* increasing specifity for allpage--header*/
-.canvas-sliding,
-.canvas-sliding.allpage--header.allpage--header {
-    transition-timing-function: ease-in-out;
-}
 /* offcanvas menu end */
 
 /* sticky footer */
