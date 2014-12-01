@@ -115,8 +115,14 @@
         }
     });
 
+    $('.input-group .form-control').focus(function(event){
+        $(this).parent().addClass('input-group-focus');
+    }).blur(function(event){
+        $(this).parent().removeClass('input-group-focus');
+    });
+
     $('input[type="tel"]').inputmask({
-        mask: '(+9) (999) (999) (9999)'
+        mask: '99999999'
     });
 
     $('.form-control-date').inputmask({
