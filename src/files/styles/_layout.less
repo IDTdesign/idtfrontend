@@ -916,22 +916,23 @@ a {
 
     .more-items--row {
         display: table;
+        table-layout: fixed;
         width: 100%;
     }
 
     .more-items--block {
         display: table-cell;
         height: 100%;
-        width: 33.33%;
         padding: @grid-gutter-width;
         background: fade(@paper, 20%);
         background-clip: padding-box;
-        border: ((@grid-gutter-width / 2)) transparent solid;
+        border: (((@grid-gutter-width / 2)) - 5) transparent solid;
         border-radius: (((@grid-gutter-width / 2)) + 5);
         vertical-align: top;
 
         .more-items--link {
             display: block;
+            color: @ink;
 
             h3, .h3, h4, .h4 {
                 margin: @line-height-computed 0;
@@ -941,6 +942,7 @@ a {
             &:hover,
             &:active {
                 text-decoration: none;
+                color: @link-hover-color;
             }
         }
 
