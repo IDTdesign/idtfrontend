@@ -34,8 +34,7 @@
     /* 1 - minimum width is equal to the layout min-width limit */
     .allpage--header {
         height: 50px;
-        /*min-width: 480px;*/
-        /* 1 */
+        /*min-width: 480px;*/ /* 1 */
         transition: all 0.3s ease-in-out;
         z-index: @zindex-navbar-fixed;
 
@@ -47,8 +46,19 @@
             display: none;
         }
     }
+    .xs-fixed-header .allpage--header {
+        transition-delay: -0.3s;
 
-    .scrolldown .allpage--header {
+        .no-csstransforms3d & {
+            top: -@header-xs-height;
+        }
+
+        .csstransforms3d & {
+            transform: translate3d(0, -@header-xs-height, 0);
+        }        
+    }
+
+    .scrolldown.xs-fixed-header .allpage--header {
         position: fixed;
         transition-timing-function: ease-in;
 
@@ -62,8 +72,9 @@
         }
     }
 
-    .scrolltop .allpage--header {
+    .scrolltop.xs-fixed-header .allpage--header {
         position: fixed;
+        transition-delay: 0;
         transition-timing-function: ease-out;
 
         .no-csstransforms3d & {
