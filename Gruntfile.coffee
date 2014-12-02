@@ -190,9 +190,9 @@ module.exports = (grunt) ->
 					optimizationLevel: 3,
 				files: [
 					expand: true,
-					cwd: 'src/files/images/',
-					src: ['**/*.{png,jpg,gif}'],
-					dest: 'src/files/images/'
+					cwd: 'src/files/img/',
+					src: ['**/*.{png,jpg,jpeg,gif}'],
+					dest: 'src/files/img/'
 				]
 
 		# track changes in src dir and regenerate docpad
