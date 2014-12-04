@@ -5,10 +5,11 @@
 /* headers and paragraphs */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+    display: block;
     line-height: 1.1;
 
-    /* first headers */
     &:first-child {
+        /* first headers */
         margin-top: 0;
     }
 }
@@ -332,7 +333,7 @@ table:not([class]) {
     color: @brand-primary-bright;
 }
 .bordered-top {
-    padding-top: 22px; 
+    padding-top: 22px;
     border-top: 2px solid rgba(255,255,255,0.25);
 }
 .learn-more {
@@ -350,7 +351,7 @@ table:not([class]) {
         position: absolute;
         top: 5px;
         left: 0;
-    
+
         @media (max-width: @screen-sm-max) {
             position: static;
             display: block;
