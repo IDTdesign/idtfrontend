@@ -612,6 +612,21 @@ a {
     .payment-type--card {
         margin: -25px 0;
 
+        .radio,
+        .checkbox {
+            margin: 0;
+            padding-left: 25px;
+        }
+        
+        .radio label:before,
+        .radio label:after {
+            margin-left: 0;
+        }
+
+        .radio label:after {
+            left: 5px;
+        }
+
         table {
             width: 100%;
 
@@ -631,7 +646,7 @@ a {
             }
 
             td {
-                padding: @line-height-computed 0;
+                padding: (@line-height-computed + 4) 0 (@line-height-computed - 6);
                 font-size: @font-size-larger;
 
                 p {
