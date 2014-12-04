@@ -278,7 +278,7 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-text-replace'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'svg-sprites', 'replace:sprites']
+	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'replace:sprites']
 	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
 	grunt.registerTask 'postprocess',   ['copy:main', 'less', 'concat:bootstrap', 'uglify', 'autoprefixer:bossout']
