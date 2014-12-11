@@ -41,20 +41,25 @@
         }
     }
 
-    .carousel-indicators li {
-        margin: 5px;
-        width: 25px;
-        height: 25px;
-        border-width: 4px;
-        border-radius: 50%;
-        background: rgba(255,255,255,0.5);
-        border-color: transparent;
+    .carousel-indicators {
+        width: 100%;
+        margin-left: -50%;
 
-        &.active {
+        li {
             margin: 5px;
-            background-color: @brand-primary-btn-dark;
-            background-clip: content-box;
-            border-color: rgba(255,255,255,0.5);
+            width: 25px;
+            height: 25px;
+            border-width: 4px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            border-color: transparent;
+
+            &.active {
+                margin: 5px;
+                background-color: @brand-primary-btn-dark;
+                background-clip: content-box;
+                border-color: rgba(255,255,255,0.5);
+            }
         }
     }
 
