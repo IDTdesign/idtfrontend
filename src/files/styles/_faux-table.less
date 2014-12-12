@@ -1,0 +1,16 @@
+@media (min-width: @screen-sm-min) {
+	.faux-table-sm {
+		display: table;
+		width: 100%;
+
+		> .faux-table-row {
+			display: table-row;
+		}
+
+		> .faux-table-cell,
+		> .faux-table-row > .faux-table-cell {
+			display: table-cell;
+		}
+	}
+
+}

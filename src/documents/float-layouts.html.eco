@@ -1,0 +1,49 @@
+---
+layout: "default"
+title: "idtfrontend"
+---
+
+<div class="container">
+
+    <article class="island island-default">
+        <h1 class="island--title">Payment Options</h1>
+        
+        <div class="island island-condenced">
+            <div class="faux-table-sm faux-table-default">
+                <div class="faux-table-row">
+                    <div class="faux-table-cell">
+                        <strong class="inline-block">American Express</strong>
+                        <small class="inline-block">(xxxxxxxxxxx0005)</small>
+                    </div>
+                    <div class="faux-table-cell">DSADSAD DSAD, AK 11229</div>
+                    <div class="faux-table-cell">Remove</div>
+                </div>
+                <div class="faux-table-row">
+                    <div class="faux-table-cell">
+                        <strong class="inline-block">Visa</strong>
+                        <small class="inline-block">(xxxxxxxxxxxx1881)</small>
+                    </div>
+                    <div class="faux-table-cell">Rimmaz Brooklyn, NJ 07010</div>
+                    <div class="faux-table-cell">Remove</div>
+                </div>
+                <div class="faux-table-row">
+                    <div class="faux-table-cell">
+                        <strong class="inline-block">Mastercard</strong>
+                        <small class="inline-block">(xxxxxxxxxxxx4444)</small>
+                    </div>
+                    <div class="faux-table-cell">Dsad Dsa, AK 11229</div>
+                    <div class="faux-table-cell">Remove</div>
+                </div>
+                <div class="faux-table-row">
+                    <div class="faux-table-cell">
+                        <strong class="inline-block">American Express</strong>
+                        <small class="inline-block">(xxxxxxxxxxx8431)</small>
+                    </div>
+                    <div class="faux-table-cell"></div>
+                    <div class="faux-table-cell">— This payment type can not be removed as it is used for auto recharge</div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</div>
