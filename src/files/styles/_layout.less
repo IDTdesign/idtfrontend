@@ -631,7 +631,12 @@ a {
 
                 .card-radio {
                     float: left;
-                    padding-top: 6px;
+                    padding-top: 16px;
+
+                    .radio {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
                 }
 
                 .card {
@@ -1280,6 +1285,24 @@ a {
 
     .plan-dates {
         padding: @line-height-computed;
+
+        .plan-dates--old,
+        .plan-dates--new {
+            width: 310px;
+        }
+    }
+
+}
+
+@media (max-width: @screen-xs) {
+
+    .plan-dates {
+        padding: @line-height-computed;
+
+        .plan-dates--old,
+        .plan-dates--new {
+            width: 220px;
+        }
     }
 
 }
