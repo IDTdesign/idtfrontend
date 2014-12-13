@@ -1,0 +1,133 @@
+---
+layout: "default"
+title: "banners"
+---
+
+<div class="container">
+
+    <article class="island">
+		<div id="banners2" class="carousel carousel-default carousel-default-img carousel-default-img-rounded slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#banners2" data-slide-to="0" class="active"></li>
+                <li data-target="#banners2" data-slide-to="1"></li>
+                <li data-target="#banners2" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://placehold.it/1140x400/b00009/ffffff" class="visible-lg" alt="">
+                    <img src="http://placehold.it/940x400/b00009/ffffff" class="visible-md" alt="">
+                    <img src="http://placehold.it/720x400/b00009/ffffff" class="visible-sm" alt="">
+                    <img src="http://placehold.it/720x400/b00009/ffffff" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1140x400/e10000/ffffff" class="visible-lg" alt="">
+                    <img src="http://placehold.it/940x400/e10000/ffffff" class="visible-md" alt="">
+                    <img src="http://placehold.it/720x400/e10000/ffffff" class="visible-sm" alt="">
+                    <img src="http://placehold.it/720x400/e10000/ffffff" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1140x400/720000/ffffff" class="visible-lg" alt="">
+                    <img src="http://placehold.it/940x400/720000/ffffff" class="visible-md" alt="">
+                    <img src="http://placehold.it/720x400/720000/ffffff" class="visible-sm" alt="">
+                    <img src="http://placehold.it/720x400/720000/ffffff" class="visible-xs" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control carousel-control-white" href="#banners2" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control carousel-control-white" href="#banners2" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </article>
+
+    <article class="island island-default">
+    	<h1 class="island--title">Banners overlayed</h1>
+		<div id="banners1" class="carousel carousel-default carousel-default-img slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#banners1" data-slide-to="0" class="active"></li>
+                <li data-target="#banners1" data-slide-to="1"></li>
+                <li data-target="#banners1" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://placehold.it/1020x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/820x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/600x400" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1020x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/820x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/600x400" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/1020x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/820x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/600x400" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#banners1" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#banners1" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </article>
+
+    <article class="island island-default">
+    	<h1 class="island--title">Banners cropped</h1>
+		<div id="banners" class="carousel carousel-default slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#banners" data-slide-to="0" class="active"></li>
+                <li data-target="#banners" data-slide-to="1"></li>
+                <li data-target="#banners" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://placehold.it/860x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/660x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/440x300" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/860x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/660x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/440x300" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/860x400" class="visible-lg" alt="">
+                    <img src="http://placehold.it/660x400" class="visible-md" alt="">
+                    <img src="http://placehold.it/440x300" class="visible-sm" alt="">
+                    <img src="http://placehold.it/640x400" class="visible-xs" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#banners" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#banners" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </article>
+
+</div>

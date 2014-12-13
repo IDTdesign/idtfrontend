@@ -67,11 +67,25 @@
         padding: 20px 80px 70px;
     }
 }
+.carousel-default-img {
+
+    .carousel-inner > .item {
+        padding: 0px;
+    }
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     display: inline-block;
 }
+
+@media (min-width: @screen-sm-min) {
+    .carousel-default-img-rounded {
+        border-radius: @border-radius-large;
+        overflow: hidden;
+    }
+}
+
 
 @media (max-width: @screen-xs-max) {
     .carousel-indicators {
@@ -118,6 +132,20 @@
 .carousel-inner-wrapper .carousel-inner > .item,
 .carousel-indicators-content + .carousel-inner > .item {
   padding-bottom: 10px;
+}
+
+
+.carousel-control.carousel-control-white {
+
+    .i {
+        fill: #FFF;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+        fill: #FFF;
+    }
 }
 
 #call-me-promo {

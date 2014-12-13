@@ -38,6 +38,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/docs/icons.html') %>">Icons</a></li>
             <li><a href="<%= @getUrl('/forms.html') %>">Forms Example</a></li>
             <li><a href="<%= @getUrl('/float-layouts.html') %>">Fluid layouts</a></li>
+            <li><a href="<%= @getUrl('/banners.html') %>">Banners</a></li>
         </ul>
     </article>
 </div>
