@@ -328,3 +328,114 @@
 }
 
 /* icon with text end */
+.main_category_list {
+    .nav_block {
+        margin-top: 30px;
+
+        @media screen and (max-width: @screen-xs-min) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    h3 {
+        &.island--title {
+            margin: 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+
+        &:not(.island--title) {
+            cursor: pointer;
+            margin: 1em 0 0.5em;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.open {
+                color: @link-hover-color;
+            }
+        }
+
+        .icon-txt {
+            > .i {
+                margin-top: -4px;
+                margin-left: 3px;
+       
+                @media screen and (max-width: @screen-xs-min) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            > .icon-txt--text {
+                padding-left: 8px;
+            }
+        }
+
+        @media screen and (max-width: @screen-xs-min) {
+            font-size: 16px;
+        }
+    }
+        
+    h4 {
+        cursor: pointer;
+        color: @link-hover-color;
+
+        .icon-txt {
+            > .i {
+                position: relative;
+                top: -1px;
+            }
+            > .icon-txt--text {
+                padding-left: 8px;
+            }
+        }
+ 
+        @media (min-width: @screen-sm-max) {
+            cursor: default;
+
+            .icon-txt {
+                .i {
+                    display: none;
+                }
+
+                .icon-txt--text {
+                    padding-left: 24px;
+                }
+            }
+        }
+
+        @media screen and (max-width: @screen-xs-min) {
+            font-size: 14px;
+        }
+    }
+
+    .ans {
+        margin-left: 25px;
+
+        @media (max-width: @screen-md-min) {
+            display: none;
+        }
+    }
+
+    :not(.open) .i--expand-alt,
+    :not(.open) .i--expand-faq {
+        display: inline-block;
+    }
+
+    :not(.open) .i--collapse-alt,
+    :not(.open) .i--collapse-faq {
+        display: none;
+    }
+
+    .open .i--expand-alt,
+    .open .i--expand-faq {
+        display: none;
+    }
+
+    .open .i--collapse-alt,
+    .open .i--collapse-faq {
+        display: inline-block;
+    }
+}
