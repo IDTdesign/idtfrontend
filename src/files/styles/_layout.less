@@ -1630,3 +1630,161 @@ a {
         margin-left: 60px;
     }
 }
+
+/* FAQ's */
+.visa-virtual-faq, 
+.main_category_list {
+    .nav_block {
+        margin-top: 40px;
+
+        @media screen and (max-width: @screen-xs-min) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    > .nav_block:first-child,
+    > div:first-of-type > .nav_block {
+        margin-top: 0; 
+    }
+
+    h3 {
+        &.island--title {
+            margin: 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+
+        &:not(.island--title) {
+            cursor: pointer;
+            margin: 1em 0 0.5em;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.open {
+                color: @link-hover-color;
+            }
+
+            @media screen and (max-width: @screen-xs-min) {
+                margin-left: 3px;
+            }
+        }
+
+        .icon-txt {
+            > .i {
+                margin-top: -4px;
+                margin-left: 3px;
+       
+                @media screen and (max-width: @screen-xs-min) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            > .icon-txt--text {
+                padding-left: 8px;
+            }
+        }
+
+        @media screen and (max-width: @screen-xs-min) {
+            font-size: 16px;
+        }
+    }
+        
+    h4 {
+        margin-bottom: 0;
+        cursor: pointer;
+        color: @link-hover-color;
+
+        .icon-txt {
+            > .i {
+                position: relative;
+                top: -1px;
+            }
+            > .icon-txt--text {
+                padding-left: 8px;
+            }
+        }
+ 
+        @media (min-width: @screen-sm-max) {
+            cursor: default;
+
+            .icon-txt {
+                .i {
+                    display: none;
+                }
+
+                .icon-txt--text {
+                    padding-left: 24px;
+                }
+            }
+        }
+
+        @media screen and (max-width: @screen-xs-min) {
+            font-size: 14px;
+        }
+    }
+
+    .ans {
+        margin-top: 0.66666em;
+        margin-left: 25px;
+
+        @media (max-width: @screen-md-min) {
+            display: none;
+        }
+    }
+    .ans + h4 {
+        margin-top: 1.3em;
+    }
+
+    .footnotes {
+        margin-top:  15px;
+        margin-left: 25px;
+    }
+
+    :not(.open) .i--expand-alt,
+    :not(.open) .i--expand-faq {
+        display: inline-block;
+    }
+
+    :not(.open) .i--collapse-alt,
+    :not(.open) .i--collapse-faq {
+        display: none;
+    }
+
+    .open .i--expand-alt,
+    .open .i--expand-faq {
+        display: none;
+    }
+
+    .open .i--collapse-alt,
+    .open .i--collapse-faq {
+        display: inline-block;
+    }
+
+    + .nav {
+        margin-top: 35px;
+    }
+}
+
+.visa-virtual-faq {
+    padding-left: 10px;
+
+    @media (min-width: @screen-sm-max) {
+
+        h4 {
+            cursor: default;
+
+            .icon-txt {
+                .i {
+                    display: none;
+                }
+
+                .icon-txt--text {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}

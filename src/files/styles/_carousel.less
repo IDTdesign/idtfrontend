@@ -42,8 +42,10 @@
     }
 
     .carousel-indicators {
-        width: 100%;
-        margin-left: -50%;
+        &:not(.carousel-indicators-content) {
+            width: 100%;
+            margin-left: -50%;
+        }
 
         li {
             margin: 5px;
