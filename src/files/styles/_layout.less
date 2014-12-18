@@ -745,11 +745,12 @@ a {
 }
 
 /* Redeem */
-.redeem {
-    margin: @line-height-computed 0;
-    padding-left: 320px;
+.redeem--card {
     background: url("../img/services/redeem-card.png") 0 0 no-repeat;
-
+    padding-top: 196px;
+    font-size: 16px;
+}
+.redeem--form {
     .forms {
         min-height: 176px;
 
@@ -761,10 +762,10 @@ a {
 }
 
 @media (max-width: @screen-md-min) {
-
-    .redeem {
-        padding: 200px 0 0;
+    .redeem--card {
         background-position: 50% 0;
+        padding-bottom: 20px;
+        text-align: center;
     }
 }
 

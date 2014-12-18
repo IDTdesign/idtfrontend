@@ -161,21 +161,26 @@ scripts: ['/scripts/jqgrid_init.js']
 
     <article class="island island-default" id="redeem">
         <h2 class="island--title">Redeem a Carrier Top Up Card</h2>
-        <div class="redeem">
-            <div class="forms forms-gray form-horizontal">
-                <form>
-                    <div class="form-group">
-                        <p>Your Activation Code is fonund on the back of your Boss Revolution Card.</p>
-                        <div class="col-lg-7 col-xs-7">
-                            <label for="code">Enter the Activation Code</label>
-                            <input type="text" class="form-control form-control-default" name="code" placeholder="12345678" />
+        <div class="row">
+            <div class="redeem--card col-xs-12 col-md-4">
+                The total value of the prepaid card will be added to this top up.
+            </div>
+            <div class="redeem--form col-xs-12 col-md-8">
+                <div class="forms forms-gray form-horizontal">
+                    <form>
+                        <div class="form-group">
+                            <p>Your Activation Code is fonund on the back of your Boss Revolution Card.</p>
+                            <div class="col-lg-7 col-xs-7">
+                                <label for="code">Enter the Activation Code</label>
+                                <input type="text" class="form-control form-control-default" name="code" placeholder="12345678" />
+                            </div>
+                            <div class="col-lg-5 col-xs-5">
+                                <label>&nbsp;</label>
+                                <button type="submit" class="btn btn-primary">Get Started</button>
+                            </div>
                         </div>
-                        <div class="col-lg-5 col-xs-5">
-                            <label>&nbsp;</label>
-                            <button type="submit" class="btn btn-primary">Get Started</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </article>
