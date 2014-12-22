@@ -7,7 +7,7 @@ title: "idtfrontend"
 
     <article class="island island-default">
         <h1 class="island--title">Payment Options</h1>
-        
+
         <div class="island island-condenced">
             <div class="faux-table-sm faux-table-default">
                 <div class="faux-table-row">
@@ -44,6 +44,27 @@ title: "idtfrontend"
                 </div>
             </div>
         </div>
+
+    </article>
+
+    <article class="island island-default">
+        <h1 class="island--title">Multicolumn text</h1>
+
+        <section class="notice multicolumn multicolumn-1-1">
+            <div class="multicolumn--block">
+                <p>* IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW CARD ACCOUNT: To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens a Card Account. What this means for you: When you open a Card Account, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask to see a copy of your driver’s license or other identifying documents.</p>
+                <p>1 Card may be used everywhere Visa debit cards are accepted in the U.S. and the District of Columbia. The Card must be registered to use for online, mail or telephone purchases in the U.S. and the District of Columbia. Card may not be used at any merchant, including Internet and mail or telephone order merchants, outside of the U.S. and the District of Columbia unless upgraded to personalized reloadable card. Card is reloadable only after successful upgrade. Reload fees apply. Additional fees apply to nonreloadable, reloadable and personalized cards. For complete terms and conditions see Cardholder Agreements here.</p>
+                <p>2 Additional fees apply. Please see the Cardholder Agreement for a complete list of fees.</p>
+                <p>3 A $5.00 Second Card Fee will be charged for each additional card. May request up to two additional cards.</p>
+                <p>4 The Ingo Money Network is owned by Ingo Money, Inc. and operated with First Century Bank, N.A. which provides all check clearing and card funding services for users. Use of Ingo is subject to the Ingo Money and First Century Bank Terms and Conditions, and the information you send to us is subject to the terms of our Privacy Policy. Approval usually takes 3 to 5 minutes but can take up to an hour. All checks are subject to approval for funding by Ingo in its sole discretion. Unapproved checks will not be loaded to your card. Ingo reserves the right to recover funds from bad checks if you knew the check was bad when you sent it, if you attempt to cash or deposit it elsewhere, or if you otherwise act illegally or fraudulently. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. &copy; 2014. Ingo Money. All Rights Reserved.</p>
+                <p>5 Standard text messaging and data rates from your wireless service provider may apply. Delivery of alerts may be delayed for various reasons, including service outages affecting your phone, wireless or internet provider; technology failures; and system capacity limitations.</p>
+                <p>6 Boss Revolution Pinless calling service provided by IDT America Corp. and subject to terms and conditions. Click here for complete terms and current rates.</p>
+                <p>The Boss RevolutionSM Prepaid Visa Card is issued by The Bancorp Bank, Member FDIC, pursuant to a license from Visa U.S.A. Inc. and is distributed and serviced by IDT Payment Services, Inc., a licensed money transmitter and an Independent Sales Organization (”ISO”) pursuant to an agreement with The Bancorp Bank. Funds in your Card Account are FDIC insured through the card issuer, The Bancorp Bank; Member FDIC.</p>
+                <p>Boss Revolution is a registered trademark of IDT Telecom, Inc. All rights reserved. <br>
+                    All other trademarks, service marks and other registered marks are the property of their respective owners. <br>
+                    &copy; 2014 IDT Payment Services, Inc. All rights reserved.</p>
+            </div>
+        </section>
 
     </article>
 </div>

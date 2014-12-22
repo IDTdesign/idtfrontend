@@ -1790,3 +1790,17 @@ a {
         }
     }
 }
+
+.multicolumn {
+    column-count: 2;
+    column-gap: 40px;
+    height: auto;
+    width: 100%;
+
+    .multicolumn--block {}
+
+    @media (max-width: @screen-xs-max) {
+        column-count: 1;
+        column-gap: 0;
+    }
+}
