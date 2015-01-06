@@ -18,21 +18,21 @@ module.exports = (grunt) ->
 		concat:
 			bootstrap:
 				src: [
-				  'bower_components/bootstrap-less/js/transition.js',
-				  'bower_components/bootstrap-less/js/alert.js',
-				  'bower_components/bootstrap-less/js/button.js',
-				  'bower_components/bootstrap-less/js/carousel.js',
-				  'bower_components/bootstrap-less/js/collapse.js',
-				  'bower_components/bootstrap-less/js/dropdown.js',
-				  'bower_components/bootstrap-less/js/modal.js',
-				  'bower_components/bootstrap-less/js/tooltip.js',
-				  'bower_components/bootstrap-less/js/popover.js',
-				  'bower_components/bootstrap-less/js/scrollspy.js',
-				  'bower_components/bootstrap-less/js/tab.js',
-				  'bower_components/bootstrap-less/js/affix.js',
-				  'bower_components/jasny-bootstrap/js/offcanvas.js',
-				  'bower_components/jasny-bootstrap/js/inputmask.js',
-				  'bower_components/bootstrapValidator/dist/js/bootstrapValidator.js'
+					'bower_components/bootstrap-less/js/transition.js',
+					'bower_components/bootstrap-less/js/alert.js',
+					'bower_components/bootstrap-less/js/button.js',
+					'bower_components/bootstrap-less/js/carousel.js',
+					'bower_components/bootstrap-less/js/collapse.js',
+					'bower_components/bootstrap-less/js/dropdown.js',
+					'bower_components/bootstrap-less/js/modal.js',
+					'bower_components/bootstrap-less/js/tooltip.js',
+					'bower_components/bootstrap-less/js/popover.js',
+					'bower_components/bootstrap-less/js/scrollspy.js',
+					'bower_components/bootstrap-less/js/tab.js',
+					'bower_components/bootstrap-less/js/affix.js',
+					'bower_components/jasny-bootstrap/js/offcanvas.js',
+					'bower_components/jasny-bootstrap/js/inputmask.js',
+					'bower_components/bootstrapValidator/dist/js/bootstrapValidator.js'
 				]
 				dest: 'out/vendor/bootstrap/js/bootstrap.js'
 
@@ -235,7 +235,7 @@ module.exports = (grunt) ->
 				files: [
 					'out/vendor/animate.css/animate.min.css':'bower_components/animate.css/animate.min.css',
 					'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js',
-                    'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js',
+					'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js',
 					'out/vendor/bowser/bowser.min.js':'bower_components/bowser/bowser.min.js',
 					'out/vendor/SelectOrDie/selectordie.min.js':'bower_components/SelectOrDie/_src/selectordie.min.js',
 					'out/vendor/SelectOrDie/selectordie.css':'bower_components/SelectOrDie/_src/selectordie.css',

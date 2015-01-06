@@ -16,9 +16,9 @@ Clone the repository.
 ``` bash
 $ npm install
 $ bower install
-$ grunt
+$ docpad run
 ```
-Open http://localhost:7777/docs/
+Open http://localhost:7777/
 
 ## Development
 
@@ -30,16 +30,20 @@ grunt makesprites
 ```
 to create sprite for icons
 
-### Local compiling
+### Image Optimization
 
 ``` bash
-docpad run --env static
-grunt development
-
+grunt optimizeimg
 ```
 
-Open console and run `docpad run --env static` to compile site.
-While running docpad open another console instance and run `grunt development` to create less files and to do other postprocessing.
+to minify image assets
+
+### Copy css files to main project
+
+``` bash
+grunt production
+```
+to compile, minify and copy css files to core project
 
 ## License
 

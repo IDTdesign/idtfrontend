@@ -31,7 +31,7 @@ docpadConfig = {
 				'/vendor/jqgrid/css/ui.jqgrid.css'
 				'/styles/jqgrid/ui-jqgrid-boss.css'
 				'/vendor/SelectOrDie/selectordie.css'
-                '/styles/bossrevolution.css'
+				'/styles/bossrevolution.css'
 			]
 
 			# The JavaScript files for the site.
@@ -43,7 +43,7 @@ docpadConfig = {
 				'/vendor/jqgrid/js/i18n/grid.locale-en.js'
 				'/vendor/jqgrid/js/minified/jquery.jqGrid.min.js'
 				'/vendor/alfablur/StackBlur.js'
-                '/vendor/alfablur/alfablur.js'
+				'/vendor/alfablur/alfablur.js'
 				'/vendor/bowser/bowser.min.js'
 				'/vendor/SelectOrDie/selectordie.min.js'
 				'/scripts/forms.js'
@@ -88,6 +88,14 @@ docpadConfig = {
 		highlightjs:
 			aliases:
 				missinglanguage: 'alternativelanguage'
+		grunt:
+			writeAfter: ["postprocess"]
+			writeBefore: false
+			renderBefore: false
+			renderAfter: false
+			generateBefore: false
+			generateAfter: false
+
 
 	# =================================
 	# Collections
