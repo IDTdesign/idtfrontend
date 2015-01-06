@@ -168,6 +168,20 @@ title: "Forms"
                             <button type="submit" class="btn btn-success" tabindex="17">Success Button</button>
                         </div>
                     </div>
+
+                    <div class="form-group offset-vertical">
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-default btn-sm" tabindex="15">Small Button</button>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-primary btn-xs" tabindex="16">Extra Small Button</button>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-success btn-lg" tabindex="17">Large Button</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

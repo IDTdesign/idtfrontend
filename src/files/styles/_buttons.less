@@ -73,7 +73,9 @@
     /* 4 */ 0 0 0 0 rgba(0, 128, 255, 1);
 
 .btn {
+    height: 45px;
     font-weight: bold;
+    vertical-align: top;
 
     &.btn-block {
         margin-bottom: 1em;
@@ -238,14 +240,17 @@
 .btn-lg {
     .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
     min-width: inherit;
+    height: auto;
 }
 .btn-sm {
     .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
     min-width: inherit;
+    height: auto;
 }
 .btn-xs {
     .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-xs-small; @line-height-small; @border-radius-small);
     min-width: inherit;
+    height: auto;
 }
 
 .btn-link {
