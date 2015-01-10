@@ -100,10 +100,19 @@ title: "Forms"
                         </div>
                     </div>
 
+                    <div class="form-group offset-v-top">
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="" placeholder="" tabindex="3" />
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="submit" class="btn btn-block btn-primary" tabindex="17">Button</button>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Select example</label>
-                            <select class="form-control form-control-custom" tabindex="13">
+                            <select class="form-control form-control-custom" tabindex="18">
                                 <option>Value example 1</option>
                                 <option>Value example 2</option>
                                 <option>Value example 3</option>
@@ -151,35 +160,35 @@ title: "Forms"
                     <div class="form-group">
                         <div class="col-lg-8">
                             <label class="control-label">Textarea example</label>
-                            <textarea class="form-control" rows="3" tabindex="14"></textarea>
+                            <textarea class="form-control" rows="3" tabindex="19"></textarea>
                         </div>
                     </div>
 
                     <div class="form-group offset-vertical">
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-default" tabindex="15">Default Button</button>
+                            <button type="submit" class="btn btn-default" tabindex="20">Default Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-primary" tabindex="16">Primary Button</button>
+                            <button type="submit" class="btn btn-primary" tabindex="21">Primary Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-success" tabindex="17">Success Button</button>
+                            <button type="submit" class="btn btn-success" tabindex="22">Success Button</button>
                         </div>
                     </div>
 
                     <div class="form-group offset-vertical">
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-default btn-sm" tabindex="15">Small Button</button>
+                            <button type="submit" class="btn btn-default btn-sm" tabindex="23">Small Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-primary btn-xs" tabindex="16">Extra Small Button</button>
+                            <button type="submit" class="btn btn-primary btn-xs" tabindex="24">Extra Small Button</button>
                         </div>
 
                         <div class="col-lg-4">
-                            <button type="submit" class="btn btn-success btn-lg" tabindex="17">Large Button</button>
+                            <button type="submit" class="btn btn-success btn-lg" tabindex="25">Large Button</button>
                         </div>
                     </div>
                 </form>
