@@ -56,6 +56,26 @@
             &:focus {
                 background-color: @navbar-bg-dark;
             }
+
+            &.navmenu--link-btn {
+                margin: 8px 0 0 5px;
+                padding: 8px 10px 7px;
+                border-radius: 3px;
+                background-color: #c00;
+                color: #FFF;
+                font-size: 10px;
+                line-height: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                transition: all 0.5s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    background-color: #e10000;
+                    transition: all 0;
+                }
+            }
         }
     }
 
