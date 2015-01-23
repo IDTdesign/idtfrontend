@@ -239,6 +239,8 @@ module.exports = (grunt) ->
 					'out/vendor/bowser/bowser.min.js':'bower_components/bowser/bowser.min.js',
 					'out/vendor/SelectOrDie/selectordie.min.js':'bower_components/SelectOrDie/_src/selectordie.min.js',
 					'out/vendor/SelectOrDie/selectordie.css':'bower_components/SelectOrDie/_src/selectordie.css',
+					'out/vendor/alfablur/StackBlur.js':'src/documents/scripts/StackBlur.js',
+					'out/vendor/alfablur/alfablur.js':'src/documents/scripts/alfablur.js',					
 					{
 					cwd: 'bower_components/jqgrid',
 					src: '**/*',
