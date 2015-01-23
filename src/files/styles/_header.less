@@ -116,6 +116,13 @@
 /* header-promo */
 .header-promo {
     min-height: 300px;
+    canvas {
+        display: block;
+        margin: auto;
+    }
+    .blur {
+        position: absolute;
+    }
 
     .header-promo--inner {
         position: relative;
@@ -190,6 +197,7 @@
     }
 
     @media (max-width: @screen-md-min) {
+    /*@media screen and (max-width: 940px) {   from _fix.css*/
         background-repeat: no-repeat;
 
         .header-promo--inner {
@@ -202,6 +210,7 @@
             position: static;
             width: auto;
             padding: 20px;
+            background: #333;
             border-radius: 0;
             margin: 0;
         }
