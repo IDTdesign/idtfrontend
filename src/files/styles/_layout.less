@@ -295,6 +295,31 @@ a {
         a:visited {
             color: #000;
         }
+
+        /* special tariff banner */
+        .spec-tariff-banner {
+            text-align: center;
+            font-size: 28px;
+            line-height: 1.1;
+            color: #000;
+
+            h2 {
+                margin: -20px -20px 20px;
+                padding: 10px 0 8px;
+                border-radius: @border-radius-large @border-radius-large 0 0;
+                background-color: @brand-primary-bright;
+                color: #fff;
+                text-align: center;
+                font-size: 30px;
+                line-height: 1.1;
+                font-weight: 600;
+            }
+
+            .text-red {
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
     }
 
     @media (max-width: 690px) {
@@ -1146,7 +1171,7 @@ a {
                     font-weight: bold;
 
                     .flag {
-                        margin-left: -20px; 
+                        margin-left: -20px;
                         vertical-align: middle;
                     }
 
