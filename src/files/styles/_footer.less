@@ -118,7 +118,7 @@
 }
 
 @media (min-width: @screen-sm-min) {
-    
+
     .footer-nav {
         .nav > li > a {
             display: inline-block;
@@ -231,7 +231,7 @@
         display: block;
         height: auto !important;
     }
-    
+
 }
 
 @media (max-width: @screen-xs-max) {
@@ -257,7 +257,7 @@
         margin-left: -((@grid-gutter-width / 2));
         margin-right: -((@grid-gutter-width / 2));
     }
-    
+
     .footer-collapse .panel-collapse {
         background: @brand-alt-highlight-bright;
         color: @gray-darker;
@@ -403,7 +403,7 @@
                 a[href*="youtube"]   { background-color: #c4302c; color: #c4302c; }
                 a[href*="twitter"]   { background-color: #55acef; color: #55acef; }
                 a[href*="pinterest"] { background-color: #c8222c; color: #c8222c; }
-                
+
                 a:link .i,
                 a:visited .i {
                     fill: @ink;
@@ -430,6 +430,33 @@
 /* live chat banner */
 .livechat {
     margin: 20px auto;
+}
+
+.chat-btn-sm--container {
+    width: 221px;
+    height: 86px;
+    margin: auto;
+}
+
+.android,
+.ios {
+    .chat-btn-sm {
+        padding: 0;
+        margin: 0;
+    }
+
+    .chat-btn-sm--container {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .chat-btn-sm {
+        padding: (@grid-gutter-width / 2);
+        margin: -1px (-(@grid-gutter-width / 2)) 0;
+        background: @gray;
+    }
 }
 
 /* footer end */

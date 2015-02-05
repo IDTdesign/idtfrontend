@@ -20,7 +20,7 @@ title: "Download App"
         .mediablock-tighter > .mediablock--secondary {
             padding: 60px;
         }
-    }    
+    }
     @media (max-width: 992px) {
         .island section:last-child > .mediablock--primary {
             padding: 20px;
@@ -53,11 +53,11 @@ title: "Download App"
                 <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
                 <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" target="_blank" class="btn btn-gplay"></a>
             </p>
-            <footer class="">   
+            <footer class="">
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_sharing_toolbox"></div>
-           
+
             </footer>
         </section>
     </div>
@@ -74,13 +74,12 @@ title: "Download App"
     </div>
 </nav>
 
-
 <div class="container">
-    
+
     <article class="island">
-    
+
         <h2 class="island--title">Mobile App Features</h2>
-    
+
         <section class="mediablock mediablock-default mediablock-tighter mediablock-hasarrow" id="one-tap-dialing">
             <div class="mediablock--primary text-center">
                 <img src="<%= @getUrl(@document.basename+"/app-dialing.png") %>" alt="One-Tap Dialing">
@@ -90,7 +89,7 @@ title: "Download App"
                 <p>Easy and convenient dialing directly from your contacts. Just tap on the contact you want to call and you’re done.</p>
             </div>
         </section>
-    
+
         <section class="mediablock mediablock-default mediablock-tighter mediablock-alt mediablock-rtl mediablock-hasarrow" id="in-app-funding">
             <div class="mediablock--primary text-center">
                 <img src="<%= @getUrl(@document.basename+"/app-funding.png") %>" alt="In-App Funding">
@@ -100,7 +99,7 @@ title: "Download App"
                 <p>Flexible funding methods to add funds to your account. Choose a BOSS Revolution Recharge Card, Credit or Debit Card or iTunes funding. You can also add funds at a participating BOSS Revolution retailer.</p>
             </div>
         </section>
-    
+
         <section class="mediablock mediablock-default mediablock-tighter mediablock-hasarrow" id="call-types">
             <div class="mediablock--primary text-center">
                 <img src="<%= @getUrl(@document.basename+"/app-types.png") %>" alt="Call Types">
@@ -110,7 +109,7 @@ title: "Download App"
                 <p>Access BOSS Revolution using Wi-Fi or data to save mobile airtime costs.</p>
             </div>
         </section>
-    
+
         <section class="mediablock mediablock-default mediablock-tighter mediablock-alt mediablock-rtl mediablock-hasarrow" id="mobile-top-up">
             <div class="mediablock--primary text-center">
                 <img src="<%= @getUrl(@document.basename+"/app-top-up.png") %>" alt="Mobile Top Up">
@@ -120,7 +119,7 @@ title: "Download App"
                 <p>Easy and convenient way to recharge prepaid mobile phones in over 200 destinations.</p>
             </div>
         </section>
-    
+
         <section class="mediablock mediablock-tight mediablock-2-to-1">
             <div class="mediablock--primary text-center">
                 <img src="<%= @getUrl(@document.basename+"/app-screens.png") %>" alt="BossRevolution Free App screenshots">
@@ -133,6 +132,6 @@ title: "Download App"
                 </p>
             </div>
         </section>
-    
+
     </article>
 </div>

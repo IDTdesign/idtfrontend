@@ -69,10 +69,10 @@
         padding: 20px 80px 70px;
     }
 }
-.carousel-default-img {
 
+.carousel-default-img {
     .carousel-inner > .item {
-        padding: 0px;
+        padding: 0;
     }
 }
 
@@ -88,10 +88,30 @@
     }
 }
 
+@media (max-width: @screen-sm-min) {
+    .features_block {
+        .carousel-default {
+            .carousel-inner > .item {
+                .dyad--second.island-default {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
 
-@media (max-width: @screen-xs-max) {
+@media (max-width: @screen-xs-min) {
     .carousel-indicators {
         bottom: 0;
+    }
+
+    .features_block {
+        .carousel-default {
+            .carousel-inner > .item {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
 }
 
@@ -135,7 +155,6 @@
 .carousel-indicators-content + .carousel-inner > .item {
   padding-bottom: 10px;
 }
-
 
 .carousel-control.carousel-control-white {
 
