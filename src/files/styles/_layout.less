@@ -1173,6 +1173,16 @@ a {
 
     .call-me-plan {
         padding: @line-height-computed;
+
+        &.call-me-plan-condenced {
+            padding: 0;
+
+            .call-me-plan--name,
+            .call-me-plan--price {
+                font-weight: normal;
+                font-size: 14px;
+            }
+        }
     }
 
 }
