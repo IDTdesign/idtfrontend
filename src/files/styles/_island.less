@@ -314,6 +314,10 @@
         margin-left: -@grid-gutter-width;
         margin-right: -@grid-gutter-width;
     }
+
+    @media (max-width: @screen-xs-min) {
+        padding: (@grid-gutter-width /2);
+    }
 }
 
 .island-condenced + .island-condenced {
@@ -467,6 +471,6 @@
     padding: @grid-gutter-width @grid-gutter-width @grid-gutter-width 10px;
 
     @media screen and (max-width: @screen-xs-min) {
-        padding: 15px 20px 15px 6px; 
+        padding: 15px 20px 15px 6px;
     }
 }
