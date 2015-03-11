@@ -21,9 +21,11 @@
 
 /* 1 - remove background-image from svg tags when supporting inline-svg */
 /* 2 - fix event bubbling */
+/* 3 - Firefox pixel perfect icons */
 .svg svg.i {
 	background-image: none; /* 1 */
     pointer-events: none; /* 2 */
+    transform: translateX(0); /* 3 */
 }
 
 .btn .i {
@@ -187,7 +189,7 @@
         width: 65px;
         height: 65px;
     }
-    
+
 }
 
 .plate-small {
