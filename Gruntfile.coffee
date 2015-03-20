@@ -164,15 +164,15 @@ module.exports = (grunt) ->
 		svg2png:
 			out:
 				files: [
-					cwd: 'out/images/',
+					cwd: 'out/img/',
 					src: ['**/*.svg'],
-					dest: 'out/images/'
+					dest: 'out/img/'
 				]
 			src:
 				files: [
-					cwd: 'src/files/images/',
+					cwd: 'src/files/img/',
 					src: ['**/*.svg'],
-					dest: 'src/files/images/'
+					dest: 'src/files/img/'
 				]
 			icons:
 				files: [
