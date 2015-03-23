@@ -65,7 +65,7 @@
                 params.callBack = function () {
                     $('canvas').addClass('visible')
                 }
-               
+
                 if (img.data('gradient_width')) {
                     params.gradient_width = img.data('gradient_width');
                 }
@@ -84,12 +84,29 @@
                 if (img.data('blur_page_alfa')) {
                     params.blur_page_alfa = img.data('blur_page_alfa');
                 }
-                $(img).alfablur(params);       
+                $(img).alfablur(params);
         } else {
-            $('.blur').attr('src', $('.blur').data('src'));     
+            $('.blur').attr('src', $('.blur').data('src'));
         }
     }
 
-    
+    if ($(".island--title-popover-trigger").length > 0) {
+        $(".island--title-popover-trigger").popover({
+            html : true,
+            placement: 'bottom',
+            content: function() {
+                return $('.h1PopoverContent').html();
+            },
+            title: function() {
+                return '';
+            }
+        });
+
+        $(".island--title-popover").on("click", ".island--title-popover-close", function(event) {
+            event.preventDefault();
+            console.log('clicked');
+            $(".island--title-popover-trigger").popover('hide');
+        });
+    }
 
 }(jQuery));

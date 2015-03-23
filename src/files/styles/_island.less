@@ -130,6 +130,45 @@
 
 }
 
+.island--title-popover {
+    .i {
+        vertical-align: baseline;
+    }
+
+    .popover {
+        max-width: 700px;
+        color: @gray-dark;
+        font-size: @font-size-base;
+        font-weight: normal;
+        text-align: left;
+
+        .popover-content {
+            padding: 25px;
+
+            h2 {
+                margin-top: 0;
+                font-size: @font-size-base;
+            }
+
+            hr {
+                padding: 10px 0 0;
+                margin: 0 -25px 20px;
+            }
+
+            p {
+                padding: 10px 0;
+                margin: 0;
+            }
+
+            .island--title-popover-close {
+                display: block;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+    }
+}
+
 .explanatory {
     font-size: @font-size-h2;
     line-height: 1;
