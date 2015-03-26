@@ -7,13 +7,11 @@ title: About
 <div class="container">
 
     <article class="island island-default">
-        <h1 class="island--title island--title-popover">
+        <h1 class="island--title island--title-popover-trigger">
             Title with popup
-            <span class="island--title-popover-trigger">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--info-small">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--info"></use>
-                </svg>
-            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--info-small">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--info"></use>
+            </svg>
         </h1>
 
         <div class="h1PopoverContent" style="display: none;">
@@ -22,7 +20,12 @@ title: About
             <hr/>
             <h2>About Bank Transfer</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="island--title-popover-close">CLOSE</a>
+            <a class="island--title-popover-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--close">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--close"></use>
+                </svg>
+                <span>CLOSE</span>
+            </a>
         </div>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

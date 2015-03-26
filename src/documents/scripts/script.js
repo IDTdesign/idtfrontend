@@ -94,17 +94,18 @@
         $(".island--title-popover-trigger").popover({
             html : true,
             placement: 'bottom',
+            viewport: '.island--title-popover',
             content: function() {
                 return $('.h1PopoverContent').html();
             },
             title: function() {
                 return '';
-            }
+            },
+            template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
         });
 
-        $(".island--title-popover").on("click", ".island--title-popover-close", function(event) {
+        $(".island").on("click", ".island--title-popover-close", function(event) {
             event.preventDefault();
-            console.log('clicked');
             $(".island--title-popover-trigger").popover('hide');
         });
     }

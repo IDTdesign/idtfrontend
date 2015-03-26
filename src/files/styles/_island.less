@@ -130,40 +130,52 @@
 
 }
 
-.island--title-popover {
+.island--title-popover-trigger {
     .i {
         vertical-align: baseline;
     }
+}
 
-    .popover {
-        max-width: 700px;
-        color: @gray-dark;
-        font-size: @font-size-base;
-        font-weight: normal;
-        text-align: left;
+.island--title-popover {
+    max-width: 700px;
+    color: @gray-dark;
+    font-size: @font-size-base;
+    font-weight: normal;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 
-        .popover-content {
-            padding: 25px;
+    .popover-content {
+        padding: 25px;
 
-            h2 {
-                margin-top: 0;
-                font-size: @font-size-base;
+        h2 {
+            margin-top: 0;
+            font-size: @font-size-base;
+        }
+
+        hr {
+            padding: 10px 0 0;
+            margin: 0 -25px 20px;
+            border-width: 1px;
+        }
+
+        p {
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .island--title-popover-close {
+            display: block;
+            cursor: pointer;
+            text-align: center;
+
+            .i--close {
+                height: 10px;
+                width: 10px;
+                vertical-align: baseline;
             }
 
-            hr {
-                padding: 10px 0 0;
-                margin: 0 -25px 20px;
-            }
-
-            p {
-                padding: 10px 0;
-                margin: 0;
-            }
-
-            .island--title-popover-close {
-                display: block;
-                cursor: pointer;
-                text-align: center;
+            &:hover {
+                text-decoration: none;
             }
         }
     }
