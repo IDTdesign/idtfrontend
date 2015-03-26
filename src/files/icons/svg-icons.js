@@ -1,12 +1,12 @@
 var SVG_SVG_DEFS =
-'<svg xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="svgstore60b3647b26f062e431af31fcf9c37d56gradient2" '+
+'<svg xmlns="http://www.w3.org/2000/svg"><defs><lineargradient id="svgstore60b3647b26f062e431af31fcf9c37d56gradient2" '+
 'x1="47.3684%" y1="0%" x2="47.3684%" y2="100%"><stop stop-color="#5fa624" stop-opacity="1" offset="0%"/><stop stop-col'+
-'or="#4d871d" stop-opacity="1" offset="100%"/></linearGradient><linearGradient id="svgstore3f55d3c77c45b73d7fffd7b082a'+
+'or="#4d871d" stop-opacity="1" offset="100%"/></lineargradient><lineargradient id="svgstore3f55d3c77c45b73d7fffd7b082a'+
 '6b3fagradient1" x1="50%" y1="0%" x2="100.0005%" y2="86.6038%"><stop stop-color="#e81a1a" stop-opacity="1" offset="0%"'+
 '/><stop stop-color="#cc0000" stop-opacity="1" offset="50%"/><stop stop-color="#a00000" stop-opacity="1" offset="100%"'+
-'/></linearGradient><linearGradient id="svgstored0b896322368d848dee01bafd6300ce6gradient3" x1="-14.3944%" y1="11.3634%'+
+'/></lineargradient><lineargradient id="svgstored0b896322368d848dee01bafd6300ce6gradient3" x1="-14.3944%" y1="11.3634%'+
 '" x2="71.9689%" y2="97.7267%"><stop stop-color="#cc0000" stop-opacity="1" offset="0%"/><stop stop-color="#9d0000" sto'+
-'p-opacity="1" offset="100%"/></linearGradient></defs><symbol viewBox="0 0 25 25" id="i--add-number"><title>add-number'+
+'p-opacity="1" offset="100%"/></lineargradient></defs><symbol viewBox="0 0 25 25" id="i--add-number"><title>add-number'+
 '</title><g id="svgstore60b3647b26f062e431af31fcf9c37d56add-number"><path id="svgstore60b3647b26f062e431af31fcf9c37d56'+
 'base38" d="M 10 3 L 10 10 L 3 10 L 3 15 L 10 15 L 10 22 L 15 22 L 15 15 L 22 15 L 22 10 L 15 10 L 15 3 L 10 3 Z"/></g'+
 '></symbol><symbol viewBox="0 0 25 25" id="i--add-numbers"><title>add-numbers</title><g id="svgstoreb59f5ff83652f4cb26'+
