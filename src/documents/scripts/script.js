@@ -96,7 +96,7 @@
             placement: 'bottom',
             viewport: '.island--title-popover',
             content: function() {
-                return $('.h1PopoverContent').html();
+                return $('.island--title-popover-content').html();
             },
             title: function() {
                 return '';
