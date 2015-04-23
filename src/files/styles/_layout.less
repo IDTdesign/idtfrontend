@@ -328,6 +328,21 @@ a {
 /* social promo */
 .social-promo {
 
+    &.social-promo-transparent {
+        .social-promo--block {
+            background: transparent;
+
+            .spec-offer-mt {
+                min-height: inherit;
+                color: #fff;
+
+                h2 {
+                    padding: 30px 15px 28px;
+                }
+            }
+        }
+    }
+
     .social-promo--block {
         display: inline-block;
         width: 100%;
@@ -374,21 +389,26 @@ a {
         .spec-offer-mt {
             min-height: 325px;
             text-align: center;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 1.1;
             color: #000;
 
             h2 {
                 margin: -20px -20px 20px;
-                padding: 20px 0 18px;
+                padding: 20px 15px 18px;
                 border-radius: @border-radius-large @border-radius-large 0 0;
                 background-color: @brand-primary;
                 color: #fff;
                 text-align: center;
-                font-size: 26px;
+                font-size: 24px;
                 line-height: 1.1;
                 font-weight: 600;
                 vertical-align: middle;
+            }
+
+            strong {
+                font-size: 110%;
+                font-weight: 800;
             }
 
             .text-red {
@@ -396,6 +416,37 @@ a {
                 color: @brand-primary-bright;
                 font-size: 40px;
                 font-weight: 800;
+            }
+
+            .last {
+                font-size: 50%;
+                text-align: right;
+
+                a {
+                    font-weight: bold;
+                    color: @link-color;
+                    text-decoration: none;
+
+                    &:hover, &:active {
+                        color: @link-hover-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &.spec-offer-mt-small {
+                min-height: inherit;
+                font-size: 21px;
+
+                h2 {
+                    padding: 15px 15px 14px;
+                    font-size: 21px;
+                }
+
+                .text-red {
+                    margin: .5em 0;
+                    font-size: 32px;
+                }
             }
         }
     }
@@ -409,6 +460,67 @@ a {
             .spec-tariff-banner h2 {
                 border-radius: 0;
             }
+
+            .spec-offer-mt h2 {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+/* location logos list */
+.location-logo {
+    h2 {
+        margin-left: -60px;
+        margin-right: -60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        overflow: hidden;
+        line-height: 1.3;
+        text-align: center;
+        color: @ink;
+
+        &:before,
+        &:after {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            vertical-align: middle;
+            border-bottom: 2px solid (fade(@brand-alt-highlight, 20%));
+        }
+
+        &:before {
+            left: -0.5em;
+            margin: 0 0 0 -100%;
+        }
+
+        &:after {
+            left: 0.5em;
+            margin: 0 -100% 0 0;
+        }
+
+        > span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .location-logo--list {
+        .clearfix;
+
+        .location-logo--item {
+            float: left;
+            width: 160px;
+            height: 160px;
+            margin: 10px;
+            padding: 0;
+            background-color: #fff;
+            border-radius: @border-radius-large;
+            list-style: none;
+            color: #ddd;
+            vertical-align: middle;
         }
     }
 }
