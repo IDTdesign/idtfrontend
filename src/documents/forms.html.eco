@@ -7,7 +7,7 @@ title: "Forms"
     <article class="island">
         <h1 class="island--title">Forms Examples</h1>
 
-        <div class="forms forms-default form-horizontal row">
+        <div class="forms forms-default form-horizontal">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Sign up</h2>
 
