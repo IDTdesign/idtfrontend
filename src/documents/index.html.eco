@@ -1,46 +1,55 @@
 ---
-layout: "default"
+layout: "docshome"
 title: "idtfrontend - index"
 ---
 
+<main class="bs-docs-masthead allpage-header" id="content" role="main">
+  <div class="container">
+    <p class="">
+        <img src="<%- @getUrl('/docs/logo/bossrevolution-logo.svg') %>" width="180" alt="">
+    </p>
+    <p class="lead">BOSS Revolution Style Guides</p>
+  </div>
+</main>
+
 <div class="container">
-    <article class="island island-default">
-        <h1 class="island--title">Pages</h1>
-        <ul>
-            <li><a href="<%= @getUrl('/homepage.html') %>">homepage.html</a></li>
-            <li><a href="<%= @getUrl('/download-app.html') %>">download-app.html</a></li>
-            <li><a href="<%= @getUrl('/one-dollar-free.html') %>">one-dollar-free.html</a></li>
-            <li><a href="<%= @getUrl('/services/friends-forever.html') %>">services/friends-forever.html</a></li>
-            <li><a href="<%= @getUrl('/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
-            <li><a href="<%= @getUrl('/my-account/calling-history.html') %>">/my-account/calling-history.html</a></li>
-            <li><a href="<%= @getUrl('/my-account.html') %>">/my-account.html</a></li>
-            <li><a href="<%= @getUrl('/services/call-me.html') %>">/services/call-me.html</a></li>
-            <li><a href="<%= @getUrl('/services/call-me-promo.html') %>">/services/call-me-promo.html</a></li>
-            <li><a href="<%= @getUrl('/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
-            <li><a href="<%= @getUrl('/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
-            <li><a href="<%= @getUrl('/services/bill-pay.html') %>">/services/bill-pay.html</a></li>
-            <li><a href="<%= @getUrl('/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
-            <li><a href="<%= @getUrl('/visa-virtual-prepaid.html') %>">visa-virtual-prepaid.html.eco</a></li>
-            <li><a href="<%= @getUrl('/404-error/404-error.html') %>">/404-error/404-error.html</a></li>
-            <li><a href="<%= @getUrl('/Oops/Oops.html') %>">/Oops/Oops.html</a></li>
-            <li><a href="<%= @getUrl('/Oops-boss/Oops-boss.html') %>">/Oops-boss/Oops-boss.html</a></li>
-            <li><a href="<%= @getUrl('/Maintenance/Maintenance-page.html') %>">/Maintenance/Maintenance-page.html</a></li>
-            <li><a href="<%= @getUrl('/about.html') %>">about.html</a></li>
-            <li><a href="<%= @getUrl('/rates.html') %>">rates.html</a></li>
-            <li><a href="<%= @getUrl('/services/egift.html') %>">/services/egift.html</a></li>
-            <li><a href="<%= @getUrl('/services/money-transfer.html') %>">/services/money-transfer.html</a></li>
-            <li><a href="<%= @getUrl('/title-with-popup.html') %>">title-with-popup.html</a></li>
-            </ul>
-    </article>
     <article class="island island-default">
         <h1 class="island--title">Documentation</h1>
         <ul>
             <li><a href="<%= @getUrl('/docs/index.html') %>">Bootstrap</a></li>
             <li><a href="<%= @getUrl('/docs/typography.html') %>">Typography</a></li>
             <li><a href="<%= @getUrl('/docs/icons.html') %>">Icons</a></li>
-            <li><a href="<%= @getUrl('/forms.html') %>">Forms Example</a></li>
-            <li><a href="<%= @getUrl('/float-layouts.html') %>">Fluid layouts</a></li>
-            <li><a href="<%= @getUrl('/banners.html') %>">Banners</a></li>
+            <li><a href="<%= @getUrl('/templates/forms.html') %>">Forms Example</a></li>
+            <li><a href="<%= @getUrl('/templates/float-layouts.html') %>">Fluid layouts</a></li>
+            <li><a href="<%= @getUrl('/templates/banners.html') %>">Banners</a></li>
         </ul>
+    </article>
+    <article class="island island-default">
+        <h1 class="island--title">Templates</h1>
+        <ul>
+            <li><a href="<%= @getUrl('/templates/homepage.html') %>">homepage.html</a></li>
+            <li><a href="<%= @getUrl('/templates/download-app.html') %>">download-app.html</a></li>
+            <li><a href="<%= @getUrl('/templates/one-dollar-free.html') %>">one-dollar-free.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/friends-forever.html') %>">services/friends-forever.html</a></li>
+            <li><a href="<%= @getUrl('/templates/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
+            <li><a href="<%= @getUrl('/templates/my-account/calling-history.html') %>">/my-account/calling-history.html</a></li>
+            <li><a href="<%= @getUrl('/templates/my-account.html') %>">/my-account.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/call-me.html') %>">/services/call-me.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/call-me-promo.html') %>">/services/call-me-promo.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
+            <li><a href="<%= @getUrl('/templates/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
+            <li><a href="<%= @getUrl('/templates/services/bill-pay.html') %>">/services/bill-pay.html</a></li>
+            <li><a href="<%= @getUrl('/templates/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
+            <li><a href="<%= @getUrl('/templates/visa-virtual-prepaid.html') %>">visa-virtual-prepaid.html.eco</a></li>
+            <li><a href="<%= @getUrl('/templates/404-error/404-error.html') %>">/404-error/404-error.html</a></li>
+            <li><a href="<%= @getUrl('/templates/Oops/Oops.html') %>">/Oops/Oops.html</a></li>
+            <li><a href="<%= @getUrl('/templates/Oops-boss/Oops-boss.html') %>">/Oops-boss/Oops-boss.html</a></li>
+            <li><a href="<%= @getUrl('/templates/Maintenance/Maintenance-page.html') %>">/Maintenance/Maintenance-page.html</a></li>
+            <li><a href="<%= @getUrl('/templates/about.html') %>">about.html</a></li>
+            <li><a href="<%= @getUrl('/templates/rates.html') %>">rates.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/egift.html') %>">/services/egift.html</a></li>
+            <li><a href="<%= @getUrl('/templates/services/money-transfer.html') %>">/services/money-transfer.html</a></li>
+            <li><a href="<%= @getUrl('/templates/title-with-popup.html') %>">title-with-popup.html</a></li>
+            </ul>
     </article>
 </div>

@@ -53,15 +53,15 @@ scripts: ['/scripts/jqgrid_init.js']
         <h2 class="island--title">How Does It Work?</h2>
         <div class="how-works how-works-number-centered">
             <div class="how-works--block">
-                <p><img src="<%= @getUrl("/services/how-it-works-01.png") %>" alt="Select a country and city"></p>
+                <p><img src="<%= @getUrl("/how-it-works-01.png") %>" alt="Select a country and city"></p>
                 <p>Choose your Home Country and City (e.g., Mexico and Monterrey)</p>
             </div>
             <div class="how-works--block">
-                <p><img src="<%= @getUrl("/services/how-it-works-04.png") %>" alt="Select the U.S. phone number"></p>
+                <p><img src="<%= @getUrl("/how-it-works-04.png") %>" alt="Select the U.S. phone number"></p>
                 <p>Select the US number that will receive calls from your home country</p>
             </div>
             <div class="how-works--block">
-                <p><img src="<%= @getUrl("/services/how-it-works-05.png") %>" alt="Share your Call Me number"></p>
+                <p><img src="<%= @getUrl("/how-it-works-05.png") %>" alt="Share your Call Me number"></p>
                 <p>Share the number with friends and family, and start receiving calls!</p>
             </div>
         </div>

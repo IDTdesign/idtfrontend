@@ -1,0 +1,34 @@
+<ul class="nav navbar-nav navbar--list navbar--list-position-right">
+    <li class="navbar--item">
+        <a class="navbar--link dropdown-toggle" href="#" data-toggle="dropdown">
+            <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span></span>
+            <span class="visible-xxs"><span class="flag flag-us"></span> EN</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="navbar--submenu dropdown-menu" role="menu">
+            <li class="dropdown-header">Language:</li>
+            <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink">English</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Region:</li>
+            <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-gb"></span> UK</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-es"></span> ES</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-de"></span> DE</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-hk"></span> HK</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-sg"></span> SG</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-au"></span> AU</a></li>
+        </ul>
+    </li>
+    <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Login</a></li>
+    <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
+    <li class="navbar--item visible-xs">
+        <a class="navbar-toggle" href="<%- @getUrl('/templates/login.html') %>">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--my-account"><use xlink:href="#i--my-account"></use></svg>
+            <span class="sr-only">Login or Register</span>
+        </a>
+    </li>
+    <li class="navbar--item visible-xs">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">Menu</button>
+    </li>
+</ul>

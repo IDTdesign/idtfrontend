@@ -1,33 +1,29 @@
-<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="<%= @getUrl('/docs') %>" class="navbar-brand">Bootstrap</a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li<% if @document.slug == "getting-started" : %> class="active"<% end %>>
-          <a href="<%= @getUrl('/docs/getting-started.html') %>">Getting started</a>
-        </li>
-        <li<% if @document.slug == "css" : %> class="active"<% end %>>
-          <a href="<%= @getUrl('/docs/css.html') %>">CSS</a>
-        </li>
-        <li<% if @document.slug == "components" : %> class="active"<% end %>>
-          <a href="<%= @getUrl('/docs/components.html') %>">Components</a>
-        </li>
-        <li<% if @document.slug == "js" : %> class="active"<% end %>>
-          <a href="<%= @getUrl('/docs/javascript.html') %>">JavaScript</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://expo.getbootstrap.com/">Expo</a></li>
-        <li><a href="http://blog.getbootstrap.com/">Blog</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<ul class="nav nav-pills navbar--list">
+    <li class="navbar--item <%- @isActive('/docs/logo.html') %>">
+        <a href="<%= @getUrl('/docs/logo.html') %>" class="navbar--link">Logo</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/docs/typography.html') %>">
+        <a href="<%= @getUrl('/docs/typography.html') %>" class="navbar--link">Typography</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/docs/icons.html') %>">
+        <a href="<%= @getUrl('/docs/icons.html') %>" class="navbar--link">Icons</a>
+    </li>
+    <li class="navbar--item dropdown <%- @isActive('/docs') %>">
+        <a href="<%= @getUrl('/docs') %>" class="navbar--link pullin-space">Bootstrap</a><!--
+        --><%- @partial("site/dropdown-button") %>
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+            <li class="navbar--submenuitem <%- @isActive('/docs/getting-started.html') %>">
+                <a href="<%= @getUrl('/docs/getting-started.html') %>" class="navbar--submenulink">Getting started</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/docs/css.html') %>">
+                <a href="<%= @getUrl('/docs/css.html') %>" class="navbar--submenulink">CSS</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/docs/components.html') %>">
+                <a href="<%= @getUrl('/docs/components.html') %>" class="navbar--submenulink">Components</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/docs/javascript.html') %>">
+                <a href="<%= @getUrl('/docs/javascript.html') %>" class="navbar--submenulink">JavaScript</a>
+            </li>
+        </ul>
+    </li>
+</ul>

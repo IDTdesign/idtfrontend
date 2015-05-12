@@ -24,7 +24,7 @@ title: "Prepaid Visa Virtual"
                     <div class="offset-vertical"><button type="button" class="btn btn-primary">GET STARTED</button></div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-5 col-lg-offset-2">
-                    <img src="<%= @getUrl('/services/prepaidcard1.png') %>" alt="Register your Instant Use Card now" />
+                    <img src="<%= @getUrl('/templates/services/prepaidcard1.png') %>" alt="Register your Instant Use Card now" />
                 </div>
             </div>
 
@@ -39,7 +39,7 @@ title: "Prepaid Visa Virtual"
                         <span class="h4">Get your Personalized Card today for no fee<sup>2</sup></span>
                         <i>Offer expires 12/31/2014</i>
                     </div>
-                    <img src="<%= @getUrl('/services/prepaidcard.png') %>" alt="Upgrade to a Personalized Reloadable Boss RevolutionSM Prepaid Visa® Card" />
+                    <img src="<%= @getUrl('/templates/services/prepaidcard.png') %>" alt="Upgrade to a Personalized Reloadable Boss RevolutionSM Prepaid Visa® Card" />
                 </div>
             </div>
         </section>
@@ -139,7 +139,7 @@ title: "Prepaid Visa Virtual"
         <div class="promo-apps row">
             <div class="col-xs-12 col-md-4">
                 <div class="plate plate-white text-left">
-                    <img src="<%= @getUrl('/services/in_go.png') %>" alt="Check using the Ingo Money app" />
+                    <img src="<%= @getUrl('/templates/services/in_go.png') %>" alt="Check using the Ingo Money app" />
                 </div>
             </div>
             <div class="col-xs-12 col-md-4 text-center">
@@ -191,7 +191,7 @@ title: "Prepaid Visa Virtual"
         <div class="island island-condenced island-alt-bright">
             <div class="row">
                 <div class="col-xs-12 col-md-4 offset-v-top text-center">
-                    <img src="<%= @getUrl('/services/1-free-for-calling-2.png') %>" alt="Get $1 in free international calling minutes with Boss Revolution Pinless" />
+                    <img src="<%= @getUrl('/templates/services/1-free-for-calling-2.png') %>" alt="Get $1 in free international calling minutes with Boss Revolution Pinless" />
                 </div>
                 <div class="col-xs-12 col-md-8 offset-vertical">
                     <h3 class="h2">Get Rewarded with Every Reload</h3>

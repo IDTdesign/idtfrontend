@@ -4,13 +4,26 @@
     <%- @partial('docs/header') %>
   </head>
   <body>
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-    <!-- Docs master nav -->
-    <%- @partial('docs/nav/main') %>
+    <%= @partial('site/svgcontainer') %>
 
-    <%- @content %>
+    <div class="allpage page-canvas">
+        <header class="allpage--header">
+            <div class="allpage--headerbg2" style="top:0"></div>
+            <div class="container">
+                <div class="logo">
+                    <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
+                </div>
+                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
+                    <%- @partial('docs/nav/main') %>
+                </nav>
+            </div>
+        </header>
 
-    <%- @partial('docs/footer') %>
+        <div class="allpage--body">
+            <%- @content %>
+        </div>
 
+        <%- @partial('docs/footer') %>
+    </div>
   </body>
 </html>

@@ -1,93 +1,83 @@
-                    <ul class="nav nav-pills navbar--list">
-                        <li class="navbar--item dropdown <%- @isActive('/services.html') %>">
-                            <a href="<%= @getUrl('/services.html') %>" class="navbar--link pullin-space">Services</a><!--
-                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
-                                <span class="btn btn-dropdown btn-xs">
-                                    <span class="caret"></span>
-                                </span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
-                                <li class="navbar--submenuitem <%- @isActive('/services/international-calling.html') %>">
-                                    <a href="<%= @getUrl('/services/international-calling.html') %>" class="navbar--submenulink">International Calling</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/international-calling/add-funds.html') %>">
-                                            <a href="<%= @getUrl('/my-account/international-calling/add-funds.html') %>" class="navbar--submenulink">Add Funds</a>
-                                        </li>
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/international-calling/redeem-card.html') %>">
-                                            <a href="<%= @getUrl('/my-account/international-calling/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
-                                        </li>
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/international-calling/call-history.html') %>">
-                                            <a href="<%= @getUrl('/my-account/international-calling/call-history.html') %>" class="navbar--submenulink">Call History</a>
-                                        </li>
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/international-calling/unlimited-plans.html') %>">
-                                            <a href="<%= @getUrl('/my-account/international-calling/unlimited-plans.html') %>" class="navbar--submenulink">Unlimited Plans</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/call-me.html') %>">
-                                    <a href="<%= @getUrl('/services/call-me.html') %>" class="navbar--submenulink">Call Me</a>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/international-mobile-top-up.html') %>">
-                                    <a href="<%= @getUrl('/services/international-mobile-top-up.html') %>" class="navbar--submenulink">International Mobile Top Up</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/international-mobile-top-up/redeem-card.html') %>">
-                                            <a href="<%= @getUrl('/my-account/international-mobile-top-up/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/domestic-mobile-top-up.html') %>">
-                                    <a href="<%= @getUrl('/services/domestic-mobile-top-up.html') %>" class="navbar--submenulink">Domestic Mobile Top Up</a>
-                                    <ul class="navbar--submenu">
-                                        <li class="navbar--submenuitem <%- @isActive('/my-account/domestic-mobile-top-up/redeem-card.html') %>">
-                                            <a href="<%= @getUrl('/my-account/domestic-mobile-top-up/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-header">Additional Services</li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/money-transfer.html') %>">
-                                    <a href="<%= @getUrl('/services/money-transfer.html') %>" class="navbar--submenulink">Money Transfer</a>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/bill-pay.html') %>">
-                                    <a href="<%= @getUrl('/services/bill-pay.html') %>" class="navbar--submenulink">Bill Pay</a>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/services/bill-pay.html') %>">
-                                    <a href="<%= @getUrl('/services/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navbar--item <%- @isActive('/rates.html') %>">
-                            <a href="<%= @getUrl('/rates.html') %>" class="navbar--link">Rates</a>
-                        </li>
-                        <li class="navbar--item <%- @isActive('/rates.html') %>">
-                            <a href="<%= @getUrl('/download-app.html') %>" class="navbar--link">Mobile App</a>
-                        </li>
-                        <li class="navbar--item <%- @isActive('/support.html') %>">
-                            <a href="<%= @getUrl('/support.html') %>" class="navbar--link">Support</a>
-                        </li>
-                        <li class="navbar--item <%- @isActive('/my-account.html') %> dropdown">
-                            <a href="<%= @getUrl('/my-account.html') %>" class="navbar--link pullin-space">My Account</a><!--
-                            --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
-                                <span class="btn btn-dropdown btn-xs">
-                                    <span class="caret"></span>
-                                </span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
-                                <li class="dropdown-header">Welcome, Username!</li>
-                                <li class="navbar--submenuitem <%- @isActive('/my-account/personal-profile.html') %>">
-                                    <a href="<%= @getUrl('/my-account/personal-profile.html') %>" class="navbar--submenulink">Personal Profile</a>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/my-account/payment-option.html') %>">
-                                    <a href="<%= @getUrl('/my-account/payment-option.html') %>" class="navbar--submenulink">Payment Options</a>
-                                </li>
-                                <li class="navbar--submenuitem <%- @isActive('/my-account/friends-forever.html') %>">
-                                    <a href="<%= @getUrl('/my-account/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
-                                </li>
-                                <li class="navbar--submeitem divider"></li>
-                                <li class="navbar--submenuitem <%- @isActive('/my-account/logout.html') %>">
-                                    <a href="<%= @getUrl('/my-account/logout.html') %>" class="navbar--submenulink">Logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+<ul class="nav nav-pills navbar--list">
+    <li class="navbar--item dropdown <%- @isActive('/templates/services.html') %>">
+        <a href="<%= @getUrl('/templates/services.html') %>" class="navbar--link pullin-space">Services</a><!--
+        --><%- @partial("site/dropdown-button") %>
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/international-calling.html') %>">
+                <a href="<%= @getUrl('/templates/services/international-calling.html') %>" class="navbar--submenulink">International Calling</a>
+                <ul class="navbar--submenu">
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/international-calling/add-funds.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/international-calling/add-funds.html') %>" class="navbar--submenulink">Add Funds</a>
+                    </li>
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/international-calling/redeem-card.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/international-calling/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
+                    </li>
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/international-calling/call-history.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/international-calling/call-history.html') %>" class="navbar--submenulink">Call History</a>
+                    </li>
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/international-calling/unlimited-plans.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/international-calling/unlimited-plans.html') %>" class="navbar--submenulink">Unlimited Plans</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/call-me.html') %>">
+                <a href="<%= @getUrl('/templates/services/call-me.html') %>" class="navbar--submenulink">Call Me</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/international-mobile-top-up.html') %>">
+                <a href="<%= @getUrl('/templates/services/international-mobile-top-up.html') %>" class="navbar--submenulink">International Mobile Top Up</a>
+                <ul class="navbar--submenu">
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/international-mobile-top-up/redeem-card.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/international-mobile-top-up/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/domestic-mobile-top-up.html') %>">
+                <a href="<%= @getUrl('/templates/services/domestic-mobile-top-up.html') %>" class="navbar--submenulink">Domestic Mobile Top Up</a>
+                <ul class="navbar--submenu">
+                    <li class="navbar--submenuitem <%- @isActive('/templates/my-account/domestic-mobile-top-up/redeem-card.html') %>">
+                        <a href="<%= @getUrl('/templates/my-account/domestic-mobile-top-up/redeem-card.html') %>" class="navbar--submenulink">Redeem Card</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-header">Additional Services</li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/money-transfer.html') %>">
+                <a href="<%= @getUrl('/templates/services/money-transfer.html') %>" class="navbar--submenulink">Money Transfer</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/bill-pay.html') %>">
+                <a href="<%= @getUrl('/templates/services/bill-pay.html') %>" class="navbar--submenulink">Bill Pay</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/services/bill-pay.html') %>">
+                <a href="<%= @getUrl('/templates/services/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
+            </li>
+        </ul>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
+        <a href="<%= @getUrl('/templates/rates.html') %>" class="navbar--link">Rates</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
+        <a href="<%= @getUrl('/templates/download-app.html') %>" class="navbar--link">Mobile App</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/support.html') %>">
+        <a href="<%= @getUrl('/templates/support.html') %>" class="navbar--link">Support</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/my-account.html') %> dropdown">
+        <a href="<%= @getUrl('/templates/my-account.html') %>" class="navbar--link pullin-space">My Account</a><!--
+        --><%- @partial("site/dropdown-button") %>
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
+            <li class="dropdown-header">Welcome, Username!</li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/personal-profile.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/personal-profile.html') %>" class="navbar--submenulink">Personal Profile</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/payment-option.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/payment-option.html') %>" class="navbar--submenulink">Payment Options</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/friends-forever.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
+            </li>
+            <li class="navbar--submeitem divider"></li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/logout.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/logout.html') %>" class="navbar--submenulink">Logout</a>
+            </li>
+        </ul>
+    </li>
+</ul>

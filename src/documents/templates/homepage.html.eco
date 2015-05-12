@@ -5,7 +5,7 @@ title: "Homepage"
 
 <header class="header-promo">
     <div class="container header-promo--inner">
-        <img src="<%= @getUrl("/download-app/downloadapp.jpg") %>" alt="">
+        <img src="<%= @getUrl("/templates/download-app/downloadapp.jpg") %>" alt="">
         <section class="service-selector island island-condenced">
             <h1>Staying Connected Has Never Been Easier</h1>
             <form action="#">
@@ -114,6 +114,6 @@ title: "Homepage"
             <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
                 <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
             </a>
-        </div>        
+        </div>
     </div>
 </div>

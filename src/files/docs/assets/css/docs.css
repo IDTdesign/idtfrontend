@@ -231,11 +231,6 @@ body {
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
   background-color: #bf0027;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7c002a), to(#bf0027));
-  background-image: -webkit-linear-gradient(top, #7c002a 0%, #bf0027 100%);
-  background-image:      -o-linear-gradient(top, #7c002a 0%, #bf0027 100%);
-  background-image:         linear-gradient(to bottom, #7c002a 0%, #bf0027 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c002a', endColorstr='#bf0027', GradientType=0);
   background-repeat: repeat-x;
 }
 
@@ -316,7 +311,7 @@ body {
 
 @media (min-width: 768px) {
   .bs-docs-header {
-    padding-top: 60px;
+    padding-top: 160px;
     padding-bottom: 60px;
     font-size: 24px;
     text-align: left;
