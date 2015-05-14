@@ -7,7 +7,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "docpad": "~6.73.5",
+    "docpad": "~6.78.1",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-geturl": "~2.1.1",
