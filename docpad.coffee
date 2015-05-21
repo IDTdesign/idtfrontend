@@ -9,7 +9,7 @@ docpadConfig = {
 			title: "idtfrontend"
 
 			# The production url of our website.
-			url: ""
+			url: "http://idtdesign.github.io/idtfrontend/"
 
 			# The website description (for SEO).
 			description: """
