@@ -16,12 +16,13 @@ title: "idtfrontend - index"
     <article class="island island-default">
         <h1 class="island--title">Documentation</h1>
         <ul>
-            <li><a href="<%= @getUrl('/docs/index.html') %>">Bootstrap</a></li>
+            <li><a href="<%= @getUrl('/docs/logo.html') %>">Logo</a></li>
             <li><a href="<%= @getUrl('/docs/typography.html') %>">Typography</a></li>
             <li><a href="<%= @getUrl('/docs/icons.html') %>">Icons</a></li>
             <li><a href="<%= @getUrl('/templates/forms.html') %>">Forms Example</a></li>
             <li><a href="<%= @getUrl('/templates/float-layouts.html') %>">Fluid layouts</a></li>
             <li><a href="<%= @getUrl('/templates/banners.html') %>">Banners</a></li>
+            <li><a href="<%= @getUrl('/docs/index.html') %>">Bootstrap</a></li>
         </ul>
     </article>
     <article class="island island-default">

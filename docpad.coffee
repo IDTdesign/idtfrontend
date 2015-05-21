@@ -85,6 +85,7 @@ docpadConfig = {
 			deployBranch: 'gh-pages'
 		marked:
 			gfm: true
+			breaks: true
 		highlightjs:
 			aliases:
 				missinglanguage: 'alternativelanguage'

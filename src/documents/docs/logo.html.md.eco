@@ -5,4 +5,61 @@ title: Logo
 
 # BOSS Revolution logo
 
-<%- # %>
+## English slogan
+
+<table>
+    <tr>
+        <td>
+            ![Site logo EN](<%= @getUrl("/docs/logo/logo-bossrevolution-en.svg") %>)
+        </td>
+        <td>
+            Download: <br>
+            [SVG](<%= @getUrl("/docs/logo/logo-bossrevolution-en.svg") %>) 100×140px <br>
+            [PNG](<%= @getUrl("/docs/logo/logo-bossrevolution-en@1x.png") %>) 100×140px <br>
+            [PNG@2x](<%= @getUrl("/docs/logo/logo-bossrevolution-en@2x.png") %>) 200×280px <br>
+            [PNG@3x](<%= @getUrl("/docs/logo/logo-bossrevolution-en@3x.png") %>) 300×420px
+        </td>
+    </tr>
+</table>
+
+## Spanish slogan
+
+<table>
+    <tr>
+        <td>
+            ![Site logo ES](<%= @getUrl("/docs/logo/logo-bossrevolution-es.svg") %>)
+        </td>
+        <td>
+            Download: <br/>
+            [SVG](<%= @getUrl("/docs/logo/logo-bossrevolution-es.svg") %>) 100×140px <br>
+            [PNG](<%= @getUrl("/docs/logo/logo-bossrevolution-es@1x.png") %>) 100×140px <br>
+            [PNG@2x](<%= @getUrl("/docs/logo/logo-bossrevolution-es@2x.png") %>) 200×280px <br>
+            [PNG@3x](<%= @getUrl("/docs/logo/logo-bossrevolution-es@3x.png") %>) 300×420px
+        </td>
+    </tr>
+</table>
+
+## Without slogan
+
+<table>
+    <tr>
+        <td>
+            ![bossrevolution logo](<%= @getUrl("/docs/logo/bossrevolution.svg") %>)
+        </td>
+        <td>
+            Download: <br/>
+            [SVG](<%= @getUrl("/docs/logo/bossrevolution.svg") %>) 100×110px <br>
+            [PNG](<%= @getUrl("/docs/logo/bossrevolution.png") %>) 100×110px <br>
+            [PNG@2x](<%= @getUrl("/docs/logo/bossrevolution@2x.png") %>) 200×220px
+        </td>
+    </tr>
+</table>
+
+## Square icon
+
+![bossrevolution logo](<%= @getUrl("/docs/logo/fist-icon.png") %>)
+
+![bossrevolution logo](<%= @getUrl("/docs/logo/fist-icon@2x.png") %>)
+
+
+
