@@ -53,10 +53,24 @@ button, input, optgroup, select, textarea {
 
 /* help block */
 .help-block {
-    margin-top: 10px;
+    margin: 10px 0;
     //color: #000;
     font-size: @font-size-small;
     line-height: 1.2;
+
+    &.help-block--bigger {
+        font-size: @font-size-larger;
+    }
+}
+
+@media (max-width: @screen-md-min) {
+
+    .help-block {
+        &.help-block--bigger {
+            font-size: @font-size-base;
+        }
+    }
+
 }
 
 /* default field */
