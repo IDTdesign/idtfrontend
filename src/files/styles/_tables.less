@@ -63,9 +63,33 @@
     }
 }
 
-
 /* table overflow wrapper */
 .table-overflow-scroll {
     max-width: 100%;
     overflow: auto;
+}
+
+.table-clear {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    thead,
+    tbody,
+    tfoot {
+        tr {
+            border: none;
+
+            td {
+                border: none;
+                padding: 5px;
+
+                .h2, .h3, .h4 {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
 }

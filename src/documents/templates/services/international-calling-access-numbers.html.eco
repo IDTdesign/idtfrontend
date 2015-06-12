@@ -1,0 +1,77 @@
+---
+layout: "default"
+title: "International Calling Access Numbers"
+scripts: ['/scripts/jqgrid_init.js']
+---
+
+<header class="header-promo">
+    <div class="container header-promo--inner">
+        <img src="\templates\services\friends-forever\friendsforever.jpg" alt="" />
+        <section class="header-promo--box">
+            <h1>International Calling Access Numbers</h1>
+            <p>Sit back and relax. You can now call friends and family for as long and as often as you'd like for a low monthly fee.</p>
+        </section>
+    </div>
+</header>
+
+<div class="container">
+
+    <article class="island island-default" id="local-numbers">
+        <h2 class="island--title">Local Access Numbers</h2>
+        <div class="row offset-v-bottom">
+            <div class="col-xs-12 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
+                <p>Your mobile service provider may assess roaming or long distance charges when calling the local access numbers you use. Please check the details of your plan with your provider.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
+                <div class="faux-table-sm faux-table-default">
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Cantonese</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access English</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Mandarin</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Polish</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Portuguese</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Romanian</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Spanish</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Local Access Tagalog</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">National Access</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Toll Free Access English</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                    <div class="faux-table-row">
+                        <div class="faux-table-cell"><span class="h3">Toll Free Access Spanish</span></div>
+                        <div class="faux-table-cell"><span class="h3">03307771229</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div><!--/container-->

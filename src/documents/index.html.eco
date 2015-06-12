@@ -38,6 +38,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/templates/services/call-me.html') %>">/services/call-me.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/call-me-promo.html') %>">/services/call-me-promo.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/international-calling.html') %>">/services/international-calling.html (.st1)</a></li>
+            <li><a href="<%= @getUrl('/templates/services/international-calling-access-numbers.html') %>">/services/international-calling-access-numbers.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/international-mobile-top-up.html') %>">/services/international-mobile-top-up.html (IMTU.st2)</a></li>
             <li><a href="<%= @getUrl('/templates/services/bill-pay.html') %>">/services/bill-pay.html</a></li>
             <li><a href="<%= @getUrl('/templates/visa-virtual-account.html') %>">visa-virtual-account.html.eco</a></li>
