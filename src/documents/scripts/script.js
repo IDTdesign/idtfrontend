@@ -64,7 +64,7 @@
 
                 params.callBack = function () {
                     $('canvas').addClass('visible')
-                }
+                };
 
                 if (img.data('gradient_width')) {
                     params.gradient_width = img.data('gradient_width');
@@ -90,23 +90,40 @@
         }
     }
 
-    if ($(".island--title-popover-trigger").length > 0) {
-        $(".island--title-popover-trigger").popover({
-            html : true,
-            placement: 'bottom',
-            viewport: '.island--title-popover',
-            content: function() {
-                return $('.island--title-popover-content').html();
-            },
-            title: function() {
-                return '';
-            },
-            template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-        });
+    // Popover for titles
+    if ($('.island--title-popover-trigger').length > 0) {
+        $('.island--title-popover-trigger').on('click', '.island--title-popover-icon', function(event) {
 
-        $(".island").on("click", ".island--title-popover-close", function(event) {
             event.preventDefault();
-            $(".island--title-popover-trigger").popover('hide');
+
+            var popoverTrigger = $('.island--title-popover-trigger'),
+                popoverViewport = '.island--title-popover',
+                popoverTriggerNeed = $(this).parent(),
+                popoverContent = popoverTriggerNeed.next('.island--title-popover-content');
+
+            popoverTrigger.each(function() {
+                $(this).popover('destroy');
+            });
+
+            popoverTriggerNeed.popover({
+                html: true,
+                placement: 'bottom',
+                viewport: popoverViewport,
+                content: function () {
+                    return popoverContent.html();
+                },
+                title: function () {
+                    return '';
+                },
+                template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+            });
+
+            popoverTrigger.popover('show');
+
+            $('.island').on('click', '.island--title-popover-close', function (event) {
+                event.preventDefault();
+                popoverTriggerNeed.popover('destroy');
+            });
         });
     }
 
