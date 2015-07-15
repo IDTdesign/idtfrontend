@@ -1,0 +1,201 @@
+---
+layout: "default"
+title: "Security Page"
+---
+
+<header class="header-promo">
+    <div class="container header-promo--inner">
+
+    </div>
+</header>
+
+<div class="container">
+    <section class="island island-default security-page">
+        <h1 class="island--title">
+            Consumer Fraud Protection Notice
+        </h1>
+
+        <h3 class="text-center">Only send funds to:</h3>
+
+        <div class="island island-default security-page--notice">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--guy">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--guy"></use>
+            </svg>
+            <div class="security-page--notice-text"><p>Friends or family members that you personally knowand you can confirm the identity of the recipient,even in an emergency situation</p></div>
+        </div>
+
+        <div class="security-page--warnings">
+            <h3 class="text-center">Do not send funds:</h3>
+            <ul class="security-page--warnings-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--inet">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inet"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For an internet <br/> purchase</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--employment">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--employment"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For an <br/> employment orbusiness opportunity</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--prize">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--prize"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>To claim a <br/> prize or lottery winnings</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--pet">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--pet"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>To recover <br/>a lost pet or item</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--property">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--property"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For rental <br/>property</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--loan">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--loan"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For a credit card <br/>or loan fee</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--check">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--check"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>To refund part of a check given to you until yourbank confirms thatthe check has cleared</strong>
+                                <small>THIS CAN TAKE 2 WEEKS AND EVEN LONGER FOR AN INTERNATIONAL CHECK</small></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--vehicle">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--vehicle"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For a vehicle <br/>down payment</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--dating">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--dating"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>To someone you’ve met through online datinguntil you’ve verifiedhis or her identity</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--charity">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--charity"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>To an unknown charity organizationin response to a natural disaster</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--newspaper">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--newspaper"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>For a purchase made in response to a newspaper ad</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--telemarketing">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--telemarketing"></use>
+                    </svg>
+                    <div class="table">
+                        <div class="table-cell">
+                            <p><strong>In response to a <br/> telemarketing call</strong></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="island--separator"/>
+
+        <h4 class="h4 h4-thin text-center">
+            Remember, if you have been subject to fraud you may not be able to obtain a refundfrom BOSS Revolution. If you feel like you have been subject to fraud, please contact us immediately at 1-800-308-9931.
+        </h4>
+
+        <hr class="island--separator"/>
+
+        <div class="notice text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in commodo tortor. Duis finibus sollicitudin augue, at vulputate arcu convallis eget. Etiam eget ipsum eget sem tincidunt vestibulum nec eget ante. Morbi hendrerit ex dolor, ornare feugiat est vehicula et. Quisque quis sem ut elit ultrices pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet blandit est. Nullam et elit tempor, condimentum sapien ut, malesuada sapien. Donec aliquet at ipsum ac efficitur. Morbi sollicitudin scelerisque dui et pharetra. Maecenas eu tristique ipsum. Donec imperdiet risus quam, pulvinar semper augue convallis nec.</p>
+        </div>
+    </section>
+</div>
+
+<div class="promo-meetboss">
+    <div class="container">
+        <p class="promo-meetboss--cta"><a href="<%= @getUrl("/about.html") %>" class="btn btn-primary btn-lg">Meet BOSS Revolution</a></p>
+        <div id="meetboss" class="carousel carousel-default  slide hidden-xs" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#meetboss" data-slide-to="0" class="active"></li>
+                <li data-target="#meetboss" data-slide-to="1"></li>
+                <li data-target="#meetboss" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h3 class="text-center">Boss Revolution is trusted by 1,000,000 customers daily.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">We connect XXXX minutes of phone calls a day.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">Our suite of products connects friends and families in XX countries.</h3>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#meetboss" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </div>
+</div>

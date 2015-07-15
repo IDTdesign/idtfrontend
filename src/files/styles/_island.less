@@ -130,6 +130,25 @@
 
 }
 
+.island--separator {
+    height: 1px;
+    margin: @line-height-computed (-(@line-height-computed));
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid (fade(@brand-alt-highlight, 20%));
+
+    .island-default & {
+        margin-left:  (-((@line-height-computed)*3));
+        margin-right: (-((@line-height-computed)*3));
+
+        @media (max-width: @screen-xs-max) {
+            margin-left:  (-(@line-height-computed));
+            margin-right: (-(@line-height-computed));
+        }
+    }
+}
+
 .island--title-popover-trigger {
     position: relative;
     z-index: 10;
@@ -137,7 +156,7 @@
     .island--title-popover-icon {
         position: relative;
         z-index: 11;
-        vertical-align: middle;
+        vertical-align: top;
     }
 }
 
@@ -154,6 +173,7 @@
 
         h2 {
             margin-top: 0;
+            margin-bottom: 10px;
             font-size: @font-size-base;
         }
 
@@ -169,6 +189,10 @@
             font-size: 13px;
             line-height: 18px;
             text-align: justify;
+
+            &:first-child {
+                padding-top: 0;
+            }
         }
 
         .island--title-popover-close {
@@ -259,7 +283,7 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: @screen-xs-max ) {
+@media (max-width: @screen-xs-max) {
 
     .island-default {
         padding-left: 20px;
@@ -540,5 +564,246 @@
 
     @media screen and (max-width: @screen-xs-min) {
         padding: 15px 20px 15px 6px;
+    }
+}
+
+.security-page {
+
+    .h4 {
+        line-height: 1.4;
+    }
+    
+    .security-page--notice {
+        .clearfix;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: @border-radius-large;
+
+        .i {
+            width: 160px;
+            height: 160px;
+            float: left;
+            margin-right: 40px;
+        }
+
+        .security-page--notice-text {
+            display: table;
+            min-height: 160px;
+            margin-left: 200px;
+            font-size: 26px;
+            line-height: 1.25;
+            vertical-align: middle;
+
+            p {
+                display: table-cell;
+                padding: 0;
+                margin: 0;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .security-page--warnings-list {
+        .clearfix;
+
+        padding: 0;
+        margin: 0 -2%;
+
+        > li {
+            float: left;
+            padding: 20px;
+            margin: 20px 2%;
+            width: 29%;
+            border-radius: @border-radius-large;
+            background: @paper;
+            list-style: none;
+            list-style-image: none;
+            text-align: center;
+
+            .table {
+                display: table;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+
+                .table-cell {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 0;
+                    margin: 0;
+                    height: 130px;
+                }
+            }
+
+            p {
+                margin: 10px 0;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            .i {
+                display: block;
+                margin: 10px auto;
+                width: 132px;
+                height: 132px;
+            }
+
+            strong {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 1.25;
+                vertical-align: middle;
+            }
+
+            small {
+                display: block;
+                padding-top: 5px;
+                text-transform: uppercase;
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
+    }
+
+    @media screen and (max-width: @screen-lg) {
+        .security-page--warnings-list {
+            margin: 0 -2%;
+
+            > li {
+                width: 46%;
+            }
+        }
+    }
+
+    @media screen and (max-width: @screen-md) {
+        .security-page--warnings-list {
+            > li {
+                strong {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: @screen-sm) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .security-page--notice {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .i {
+                width: 80px;
+                height: 80px;
+                margin-right: 40px;
+            }
+
+            .security-page--notice-text {
+                min-height: 80px;
+                margin-left: 120px;
+                font-size: 18px;
+                line-height: 1.25;
+            }
+        }
+
+        .security-page--warnings-list {
+            margin: 0;
+
+            > li {
+                width: 100%;
+                margin: 10px 0;
+                min-height: 84px;
+                position: relative;
+
+                .i {
+                    width: 64px;
+                    height: 64px;
+                    margin: 0 10px 0 0;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+
+                .table {
+                    .table-cell {
+                        height: 64px;
+                        padding-left: 84px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                strong {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: @screen-xs) {
+        .security-page--notice {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: 20px -20px;
+            border-radius: 0;
+
+            .i {
+                width: 64px;
+                height: 64px;
+                margin-right: 20px;
+            }
+
+            .security-page--notice-text {
+                display: block;
+                min-height: 60px;
+                margin-left: 84px;
+                font-size: 16px;
+                line-height: 1.25;
+            }
+        }
+
+        .security-page--warnings-list {
+            margin: 0;
+
+            > li {
+                padding: 15px;
+
+                .i {
+                    width: 48px;
+                    height: 48px;
+                    margin: 0 10px 0 0;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                }
+
+                .table {
+                    .table-cell {
+                        height: 48px;
+                        padding-left: 58px;
+                    }
+                }
+
+                strong {
+                    font-size: 15px;
+                }
+
+                small {
+                    font-size: 11px;
+                }
+            }
+        }
     }
 }

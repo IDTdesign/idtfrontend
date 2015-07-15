@@ -115,7 +115,7 @@
                 title: function () {
                     return '';
                 },
-                template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+                template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>'
             });
 
             popoverTrigger.popover('show');

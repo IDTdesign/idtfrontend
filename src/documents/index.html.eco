@@ -52,6 +52,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/templates/services/egift.html') %>">/services/egift.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/money-transfer.html') %>">/services/money-transfer.html</a></li>
             <li><a href="<%= @getUrl('/templates/title-with-popup.html') %>">title-with-popup.html</a></li>
+            <li><a href="<%= @getUrl('/templates/security-page.html') %>">security-paged.html</a></li>
             </ul>
     </article>
 </div>
