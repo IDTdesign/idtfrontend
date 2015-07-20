@@ -1261,6 +1261,31 @@ a {
         display: table;
         table-layout: fixed;
         width: 100%;
+
+        &.flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-flow: row wrap;
+            align-items: stretch;
+        
+            .more-items--block {
+                height: initial;
+                display: block;
+
+                .more-items--link {
+                    width: 100%;
+                }
+
+                @media (min-width: 992px) {
+                    width: 33.3%;
+                } 
+            }
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+        }
     }
 
     .more-items--block {
