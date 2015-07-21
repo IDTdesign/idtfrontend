@@ -118,7 +118,7 @@
                 template: '<div class="popover island--title-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>'
             });
 
-            popoverTrigger.popover('show');
+            popoverTriggerNeed.popover('show');
 
             $('.island').on('click', '.island--title-popover-close', function (event) {
                 event.preventDefault();
