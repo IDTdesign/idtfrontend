@@ -62,7 +62,7 @@
                 padding: 8px 10px 7px;
                 border-radius: 3px;
                 background-color: #c00;
-                color: #FFF;
+                color: #fff;
                 font-size: 10px;
                 line-height: 20px;
                 font-weight: bold;
@@ -73,7 +73,7 @@
                 &:hover,
                 &:focus {
                     background-color: #e10000;
-                    transition: all 0;
+                    transition: all 0s;
                 }
             }
         }
@@ -112,7 +112,7 @@
     .navbar--submenu > .active > .navbar--submenulink,
     .navbar--submenu > .active > .navbar--submenulink:hover,
     .navbar--submenu > .active > .navbar--submenulink:focus {
-        background-image: url(../icons/svg/checkmark.svg);
+        background-image: url("../icons/svg/checkmark.svg");
         background-repeat: no-repeat;
         background-position: 95% 50%;
         pointer-events: none;
@@ -178,14 +178,14 @@
             font-weight: bold;
             text-transform: uppercase;
             background-color: #c00;
-            color: #FFF;
+            color: #fff;
             border-radius: 3px;
             transition: all 0.5s ease-in-out;
 
             &:hover,
             &:focus {
                 background-color: #e10000;
-                transition: all 0;
+                transition: all 0s;
             }
 
             /* 1 - SVG icon sometimes don't receive clicks */
@@ -263,7 +263,7 @@
             &.dropdown {
                 .pullin-space {
                     display: inline-block; /* 1 */
-                    padding-right: 35px; /* 2 */
+                    padding-right: 35px;   /* 2 */
                 }
 
                 .btn-dropdown {
@@ -451,6 +451,7 @@
         padding-top: 0;
         background: fade(@gray-light, 50%);
     }
+
     .dropdown-menu .navbar--submenu .navbar--submenulink {
         border: none;
         padding: 5px 25px 5px 35px;
@@ -484,9 +485,7 @@
     }
 
 }
-
 /* navbar-bossmain end */
-
 
 /* local navigation */
 .local-nav--anchor {
@@ -510,7 +509,6 @@
 
     }
 
-
     .nav--item {
         border-bottom: solid 8px transparent;
         vertical-align: middle;
@@ -520,7 +518,7 @@
         &:hover,
         &:focus {
             background-color: transparent;
-            border-color: #cc0000;
+            border-color: #c00;
         }
 
     }
@@ -548,6 +546,7 @@
     }
 
 }
+
 .fixed-local-nav .local-nav {
     position: fixed;
     z-index: @zindex-navbar;
@@ -616,6 +615,12 @@
 
         .nav--item {
             display: inline-block;
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+                border-color: transparent;
+            }
         }
 
     }
@@ -624,8 +629,9 @@
 
 /* offscreen menu */
 .navmenu-fixed-right, .navbar-offcanvas {
-	background: @topline-textcolor;
+    background: @topline-textcolor;
 }
+
 .navmenu-accordeon {
     border-color: #eee;
 
@@ -637,7 +643,6 @@
         }
 
     }
-
 
     .navmenu--link {
         display: inline-block;
@@ -653,7 +658,7 @@
         &:focus {
             background-color: transparent;
             color: @brand-primary-bright;
-            transition-duration: 0;
+            transition-duration: 0s;
         }
     }
 
@@ -739,7 +744,6 @@
 
     }
 
-
     /* Firefox has a bug when .btn-toggler is not clickable when .pullin-object has width:0 and height:0 */
     .pullin-object {
         width: 36px;
@@ -776,7 +780,7 @@
     &:hover,
     &:focus {
         color: @brand-primary-dark;
-        transition-duration: 0;
+        transition-duration: 0s;
     }
 
     .i {
@@ -785,7 +789,6 @@
         vertical-align: baseline;
     }
 }
-
 
 /* TODO: Move to _collapse.less */
 .btn-toggler {
@@ -801,7 +804,7 @@
     &:hover,
     &:focus {
         background-color: @brand-primary-dark;
-        transition-duration: 0;
+        transition-duration: 0s;
     }
 
     .i {
@@ -822,6 +825,7 @@
 .open .btn-toggler--when-closed {
     display: none;
 }
+
 .open .btn-toggler--when-opened {
     display: block;
 }
@@ -830,11 +834,11 @@
 [data-toggle="collapse"]:not(.collapsed) .btn-toggler--when-closed {
     display: none;
 }
+
 [data-toggle="collapse"]:not(.collapsed) .btn-toggler--when-opened {
     display: block;
 }
 /* offscreen menu end */
-
 
 /* tabs modification */
 .island--title + .nav-tabs-sections {
@@ -1011,7 +1015,7 @@
 
                 &:focus {
                     border-top: 3px @brand-primary-btn-dark solid;
-                    color: #cc0000;
+                    color: #c00;
 
                     &:after {
                         border-color: #fff transparent transparent transparent;
@@ -1174,6 +1178,7 @@
         &:first-child:after {
             opacity: 0;
         }
+
         > a {
             //color: @gray-alt-bright;
             padding-top: @line-height-computed;
@@ -1241,6 +1246,7 @@
                 padding-bottom: (@line-height-computed / 2);
                 text-align: left;
             }
+
             .icon-txt {
                 .i {
                     top: -1px;
@@ -1254,6 +1260,7 @@
                     border-radius: 0;
                 }
             }
+
             &:last-child {
                 a {
                     border-radius: 0;
@@ -1289,9 +1296,13 @@
 }
 
 .nav {
+
     .btn {
+
         .i {
             margin: 0;
         }
+
     }
+
 }
