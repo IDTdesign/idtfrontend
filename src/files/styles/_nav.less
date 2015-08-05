@@ -626,20 +626,14 @@
         .nav.nav-pills {
 
             .nav--item {
-                display: none;
+                display: block;
                 width: 100%;
                 position: relative;
                 border: none;
-                border-top: 1px solid @gray-dark;
+                border-bottom: 1px solid @gray-dark;
 
-                &:first-child {
-                    display: block;
-
-                    .nav--link {
-                        &:after {
-                            .nav-dotted;
-                        }
-                    }
+                &:hover, &:focus {
+                    background: @gray-darker;
                 }
             }
 

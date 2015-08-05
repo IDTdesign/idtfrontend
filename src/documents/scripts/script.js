@@ -131,10 +131,9 @@
         _this = $('.local-nav--mobile-stick');
 
         _this.on('click', '.nav--link', function (ev) {
-            if (!_this.hasClass('open')) {
+            if (!_this.hasClass('open') && (_this.parent().hasClass('fixed-local-nav'))) {
                 ev.preventDefault();
                 ev.stopPropagation();
-                ev.stopImmediatePropagation();
 
                 _this.addClass('open');
             } else {
