@@ -630,6 +630,7 @@
                 width: 100%;
                 position: relative;
                 border: none;
+                border-top: 1px solid @gray-dark;
 
                 &:first-child {
                     display: block;
@@ -723,9 +724,29 @@
     .xs-fixed-header.scrolltop .fixed-local-nav .local-nav--mobile-stick {
         top: 50px!important;
 
+        .nav-pills {
+            .nav--item.active {
+                .nav--link {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .xs-fixed-header.scrolltop .fixed-local-nav .local-nav--mobile-stick.open {
+
         .nav.nav-pills {
-            .nav--link {
-                text-align: center;
+            .nav--item.nav--item {
+
+                .nav--link {
+                    text-align: left;
+                }
+
+                &:first-child {
+                    .nav--link {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
