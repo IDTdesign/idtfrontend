@@ -63,7 +63,7 @@ title: "Download App"
     </div>
 </header>
 
-<nav class="local-nav">
+<nav class="local-nav local-nav--mobile-stick">
     <div class="container">
         <ul class="nav nav-pills nav-justified">
             <li class="nav--item"><a href="#one-tap-dialing" class="nav--link">One-Tap Dialing</a></li>

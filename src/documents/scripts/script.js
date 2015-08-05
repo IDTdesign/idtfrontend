@@ -127,4 +127,20 @@
         });
     }
 
+    if ($('.local-nav--mobile-stick').length > 0) {
+        _this = $('.local-nav--mobile-stick');
+
+        _this.on('click', '.nav--link', function (ev) {
+            if (!_this.hasClass('open')) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                ev.stopImmediatePropagation();
+
+                _this.addClass('open');
+            } else {
+                _this.removeClass('open');
+            }
+        });
+    }
+
 }(jQuery));
