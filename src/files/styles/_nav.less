@@ -903,20 +903,27 @@
 
     /* Firefox has a bug when .btn-toggler is not clickable when .pullin-object has width:0 and height:0 */
     .pullin-object {
-        width: 36px;
-        height: 36px;
+        width: 55px;
+        height: 55px;
         position: absolute;
-        right: 10px;
-        top: 9px;
+        right: 0;
+        top: 0;
         color: inherit;
+        background-color: transparent;
 
         .btn-toggler {
-            right: 0;
-            bottom: 0;
+            right: 10px;
+            bottom: 9px;
         }
 
+        &:hover,
+        &:focus {
+            .btn-toggler {
+                background-color: @brand-primary-dark;
+                transition-duration: 0s;
+            }
+        }
     }
-
 }
 
 .navbar-close {
@@ -1462,4 +1469,21 @@
 
     }
 
+}
+
+.navmenu--logout-link {
+    float: right;
+    width: 55px;
+    height: 52px;
+    margin: -25px -25px 0 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: @brand-primary-bright;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+        color: @brand-primary-dark;
+        text-decoration: none;
+    }
 }
