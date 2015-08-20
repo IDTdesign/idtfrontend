@@ -7,7 +7,7 @@ Front-end documentation, built with [DocPad](http://docpad.org).
 
 * [node.js](http://nodejs.org/)
 * [npm](https://npmjs.org)
-
+* `npm install grunt-cli -g`
 
 ## First run
 
@@ -18,7 +18,7 @@ $ npm install
 $ bower install
 $ docpad run
 ```
-Open http://localhost:7777/
+Open [http://localhost:7777/]()
 
 ## Development
 
