@@ -18,7 +18,7 @@ $ npm install
 $ bower install
 $ docpad run
 ```
-Open http://localhost:7777/
+Open [http://localhost:7777/]()
 
 ## Development
 
