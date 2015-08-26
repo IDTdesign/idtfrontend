@@ -1,0 +1,46 @@
+---
+title: "Banners"
+layout: "docs"
+---
+
+# Banners
+
+## General rules
+
+1. Where possible **use HTML-banners** instead of just images.
+HTML-banners more flexible: we can use one markup for all screen resolutions and manage banner layout with css.
+
+2. If banner has no text on it (or text is big enough) we can use only largest image file and scale banner with CSS. Text should be readable on 320px wide resolution.
+
+## Homepage promo carousel
+
+Use HTML-banners or images in following resolutions:
+
+* 1140×400px - for wide screens
+* 940×400px - for medium screens
+* 720×400px - for small screens
+* 720×400px (rendered as 320×177px) - mobile resolutions
+
+On mobile screens we use 720×400px images but they rendered as 320×177px (for high-density screens). Text should be readable on mobile so use twice larger fonts.
+
+**Important!** Because we use slider we must have all banners 400px height. In the opposite we have 'jumping' footer issue.
+
+On homepage slider we have navigation arrow and dots over the banners. Keep that in mind: text should not be under navigation elements.
+
+Use these templates:
+
+![](<%- @getUrl('/docs/banners/1140x400.png') %>)
+
+![](<%- @getUrl('/docs/banners/940x400.png') %>)
+
+![](<%- @getUrl('/docs/banners/720x400.png') %>)
+
+[See example: Homepage slider](<%- @getUrl('/templates/banners.html') %>)
+
+## My account banners
+
+work in progress
+
+## Manage your services banners
+
+work in progress

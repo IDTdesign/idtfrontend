@@ -4,7 +4,9 @@ title: "banners"
 ---
 
 <div class="container">
-
+    <article class="island island-default">
+        <h1 class="island--title">Homepage slider</h1>
+    </article>
     <article class="island">
 		<div id="banners2" class="carousel carousel-default carousel-default-img carousel-default-img-rounded slide" data-ride="carousel" data-interval="5000">
             <!-- Indicators -->

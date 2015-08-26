@@ -7,7 +7,7 @@ Front-end documentation, built with [DocPad](http://docpad.org).
 
 * [node.js](http://nodejs.org/)
 * [npm](https://npmjs.org)
-
+* `npm install grunt-cli -g`
 
 ## First run
 
@@ -18,7 +18,7 @@ $ npm install
 $ bower install
 $ docpad run
 ```
-Open http://localhost:7777/
+Open [http://localhost:7777/]()
 
 ## Development
 
@@ -44,6 +44,17 @@ to minify image assets
 grunt production
 ```
 to compile, minify and copy css files to core project
+
+## Publishing
+
+Before first publishing run this command in GIT console  
+`git remote add deploy https://login:password@github.com/IDTdesign/idtfrontend.git` 
+
+Where *login* and *password* is your Github credentials.
+
+Then run `docpad deploy-ghpages --env static` — publish to [http://IDTdesign.github.io/idtfrontend]()
+
+More info http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/
 
 ## License
 
