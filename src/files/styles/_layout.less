@@ -852,7 +852,7 @@ a {
 /* Payments type */
 .payment-type {
     .clearfix;
-    padding: 30px 60px;
+    padding: 0 60px;
     color: @ink;
 
     &.payment-type-bg-gray {
@@ -975,7 +975,7 @@ a {
 
     .payment-type {
         margin: 0;
-        padding: 20px;
+        padding: 0 20px;
     }
 }
 
@@ -1857,15 +1857,14 @@ a {
 
 /* merchants logos */
 .col-md-spec {
+    position: relative;
     cursor: pointer;
     display: inline-block;
     border-radius: 8px;
     background-color: @ink;
-    width: 180px;
-    height: 165px;
+    width: 186px;
+    height: 180px;
     margin: 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
 
     a {
         position: relative;
@@ -1876,29 +1875,165 @@ a {
         img {
             position: absolute;
             left: calc(50% - 65px);
-            top: calc(50% - 45px);
+            top: calc(50% - 52px);
             transition: opacity 1s ease-in-out;
+        }
 
-            &.top:hover,
-            &.top:focus,
-            &.top:active {
-                opacity:0;
-            }
+        &:hover .top,
+        &:focus .top,
+        &:active .top {
+            opacity:0;
         }
     }
 
+    .link {
+        position: absolute;
+        left: 11px;
+        bottom: 6px;
+        text-indent: initial;
+    }
+
+    .btn-primary {
+        position: absolute;
+        height: initial;
+        right: 6px;
+        bottom: 6px;
+        text-indent: initial;
+    }
+
+    .btn-xs {
+        display: block;
+    }
+
+    .btn-sm {
+        display: none;
+    }
+
     @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-        width: 177px;
+        width: 184px;
     }
 
     @media (max-width: @screen-xxs-max) {
-        display: block;
-        width: 100%;
-        height: 130px;
-        margin-left: 0;
-        margin-right: 0;
+        display: inline-block;
+        width: calc(100% - 30px);
+        height: 65px;
+        margin: 0 15px 1px;
         border-radius: 0;
+
+        a img {
+            max-height: 50px;
+            left: 10px;
+            top: calc(50% - 25px);
+        }
+
+        .link {
+            left: initial;
+            right: 111px;
+            bottom: 20px;
+            text-indent: initial;
+        }
+
+        .btn-primary {
+            right: 16px;
+            bottom: 14px;
+            text-indent: initial;
+        }
+
+        .btn-sm {
+            display: block;
+        }
+
+        .btn-xs {
+            display: none;
+        }
     }
+}
+
+.selected-merchant {
+    .col-md-spec {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 8px;
+        background-color: @ink;
+        width: 92%;
+        height: 150px;
+        margin: 0;
+
+        a {
+            position: relative;
+            height: 100%;
+            text-indent: -4000px;
+
+            img {
+                position: absolute;
+                left: 19%;
+                top: calc(50% - 45px);
+                max-height: initial;
+                transition: opacity 1s ease-in-out;
+            }
+
+            &:hover .top,
+            &:focus .top,
+            &:active .top {
+                opacity:0;
+            }
+        }
+
+        .link {
+            position: absolute;
+            height: auto;
+            left: initial;
+            right: 5%;
+            bottom: 63%;
+            font-size: 16px;
+            text-indent: initial;
+        }
+
+        .btn-primary {
+            position: absolute;
+            height: initial;
+            right: 5%;
+            bottom: 20%;
+            text-indent: initial;
+        }
+        
+        .btn {
+            display: block;
+        }
+
+        .btn-xs {
+            display: none;
+        }
+
+        @media (max-width: @screen-sm-max) {
+            width: 100%;
+        }
+        
+        @media (max-width: @screen-xxs-max) {
+            display: block;
+            height: 130px;
+            border-radius: 0;
+
+            .link {
+                font-size: 14px;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            .btn-xs {
+                display: block;
+            }
+        }
+    }
+}
+
+.col-md-spec--purchase {
+    width: 160px;
+    height: 160px;
+    line-height: 11;
 }
 
 /* vertical margins and paddings */
@@ -1973,6 +2108,10 @@ a {
 
     @media (max-width: @screen-desktop) {
         margin-left: 60px;
+    }
+
+    @media (max-width: @screen-xs) {
+        margin-left: 30px;
     }
 }
 

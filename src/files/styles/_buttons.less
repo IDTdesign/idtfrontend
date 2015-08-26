@@ -34,7 +34,7 @@
     /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
     /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000,
     /* 4 */ 0 0 0 0 rgba(0, 128, 255, 1);
-@btn-primary-hover-shadow:
+@btn-primary-hover-shadow:i--expand
     /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3),
     /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0.0),
     /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000,
@@ -550,10 +550,26 @@
             &.i--collapse {display: inline-block;}
             &.i--expand {display: none;}
         }
+        
+        .collapse-trigger-arrows--lable-show {
+            display: none;
+        }
+
+        .collapse-trigger-arrows--lable-hide {
+            display: inline;
+        }
 
         &.collapsed {
             .i--collapse {display: none;}
             .i--expand {display: inline-block;}
+
+            .collapse-trigger-arrows--lable-show {
+                display: inline;
+            }
+
+            .collapse-trigger-arrows--lable-hide {
+                display: none;
+            }
         }
     }
 

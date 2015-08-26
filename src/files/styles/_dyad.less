@@ -55,7 +55,29 @@
         flex-grow: 0;
         width: auto;
     }
+}
 
+/* reversed flow with flex */
+.dyad-column {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .dyad--first,
+    .dyad--second {
+        flex-grow: 0;
+        width: 100%;
+    }
+
+    @media (max-width: @screen-sm) {
+        &.dyad-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .dyad--first,
+        .dyad--second {
+            width: initial;
+        }
+    }
 }
 
 /* dyad--stretch modifier to make inner content fill the height */
@@ -74,6 +96,21 @@
     .dyad--stretch > *:last-child {
         flex-grow: 1;
     }
+
+    /* dyad--stretch-img to make inner image placed centered inside */
+    .dyad--stretch-img {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        
+        > *:last-child {
+            flex-grow: 0;
+            align-self: center;
+            width: auto;
+        }
+    }
+
 }
 
 /* default padding */
