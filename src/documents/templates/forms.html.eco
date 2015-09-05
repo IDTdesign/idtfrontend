@@ -81,6 +81,13 @@ title: "Forms"
 
                     <div class="form-group">
                         <div class="col-lg-8">
+                            <label class="control-label">Numbers Input</label>
+                            <input type="number" class="form-control" name="numbers-input" placeholder="" tabindex="10" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-8">
                             <label class="control-label">Disabled Form</label>
                             <input type="text" class="form-control" name="disabledForm" placeholder="" disabled tabindex="10" />
                         </div>

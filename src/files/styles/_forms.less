@@ -51,6 +51,17 @@ button, input, optgroup, select, textarea {
     font-family: @font-family-arial;
 }
 
+/* Turn Off number input pinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 /* help block */
 .help-block {
     margin: 10px 0;
