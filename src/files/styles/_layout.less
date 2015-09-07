@@ -240,7 +240,7 @@ a {
     li {
         list-style: none;
         margin-top: 5px;
-        
+
         &:before {
             counter-increment: myCounter;
             content: counter(myCounter) ".";
@@ -1268,7 +1268,7 @@ a {
             justify-content: center;
             flex-flow: row wrap;
             align-items: stretch;
-        
+
             .more-items--block {
                 height: initial;
                 display: block;
@@ -1279,7 +1279,7 @@ a {
 
                 @media (min-width: 992px) {
                     width: 33.3%;
-                } 
+                }
             }
 
             @media (max-width: 991px) {
@@ -1436,7 +1436,7 @@ a {
             width: 100%;
             padding: 0;
             margin: 0 0 20px;
-            overflow: auto;
+            overflow: visible;
 
             .flags-list {
                 padding: 0 0 0 20px;
@@ -1997,7 +1997,7 @@ a {
             bottom: 20%;
             text-indent: initial;
         }
-        
+
         .btn {
             display: block;
         }
@@ -2009,7 +2009,7 @@ a {
         @media (max-width: @screen-sm-max) {
             width: 100%;
         }
-        
+
         @media (max-width: @screen-xxs-max) {
             display: block;
             height: 130px;
