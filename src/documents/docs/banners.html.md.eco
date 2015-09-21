@@ -19,9 +19,7 @@ Use HTML-banners or images in following resolutions:
 * 1140×400px - for wide screens
 * 940×400px - for medium screens
 * 720×400px - for small screens
-* 720×400px (rendered as 320×177px) - mobile resolutions
-
-On mobile screens we use 720×400px images but they rendered as 320×177px (for high-density screens). Text should be readable on mobile so use twice larger fonts.
+* 386×275px - mobile resolutions
 
 **Important!** Because we use slider we must have all banners 400px height. In the opposite we have 'jumping' footer issue.
 
@@ -39,8 +37,45 @@ Use these templates:
 
 ## My account banners
 
-work in progress
+We have 2 sizes for my account banners:
+
+* 660×300px - for wide screens, tablet and mobile
+* 400×315px - for medium screens
+
+No aditional limitations.
 
 ## Manage your services banners
 
-work in progress
+Prefered small image plus html.
+
+Code:
+
+```html
+
+<div>
+    <div class="icon-txt">
+        <div class="icon-txt--i">
+            <img src="<%- @getUrl('/docs/banners/auto_recharge_80x80_eng.png') %>" alt="Get a $5 Bonus on Your 1st Auto Recharge Transaction">
+        </div>
+        <div class="icon-txt--text">
+            <h3 class="mimic">Get a $5 Bonus on Your 1st Auto Recharge Transaction</h3>
+            <p>Add Auto Recharge and never run out of talk time. <a class="learn-more" href="#">Set Up Now&nbsp;»</a></p>
+        </div>
+    </div>
+</div>
+
+```
+
+Example:
+
+<div class="island island-default">
+    <div class="icon-txt">
+        <div class="icon-txt--i">
+            <img src="<%- @getUrl('/docs/banners/auto_recharge_80x80_eng.png') %>" alt="Get a $5 Bonus on Your 1st Auto Recharge Transaction">
+        </div>
+        <div class="icon-txt--text">
+            <h3 class="mimic">Get a $5 Bonus on Your 1st Auto Recharge Transaction</h3>
+            <p>Add Auto Recharge and never run out of talk time. <a class="learn-more" href="#">Set Up Now&nbsp;»</a></p>
+        </div>
+    </div>
+</div>
