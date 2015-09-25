@@ -487,7 +487,7 @@ a {
         }
     }
 
-    @media (max-width: 690px) {
+    @media (max-width: @screen-xs-max) {
 
         .social-promo--block {
             display: block;
@@ -2123,6 +2123,10 @@ a {
     padding-left: (@padding-base-horizontal * 2); //40px
 }
 
+.no-pad {
+    padding: 0 !important;
+}
+
 /* FAQ's */
 .visa-virtual-faq,
 .main_category_list {
@@ -2384,6 +2388,30 @@ a {
                     float: none;
                 }
             }
+        }
+    }
+}
+
+/* Rates page banners */
+.en-GB .country_IN .common-tariff-banner,
+.en-GB .country_EG .common-tariff-banner,
+.en-GB .country_KE .common-tariff-banner,
+.en-GB .country_GB .common-tariff-banner,
+.es-GB .country_IN .common-tariff-banner,
+.es-GB .country_EG .common-tariff-banner,
+.es-GB .country_KE .common-tariff-banner,
+.es-GB .country_GB .common-tariff-banner {
+    display: none;
+}
+
+.common-tariff-banner,
+.spec-tariff-banner {
+    img {
+        width: 100%;
+        border-radius: 8px;
+
+        @media (max-width: @screen-xs-max) {
+            border-radius: 0;
         }
     }
 }
