@@ -79,3 +79,15 @@ Example:
         </div>
     </div>
 </div>
+
+## Unlimited banners 
+### on International Calling / Rates pages
+
+Use HTML-banners or images in following width with no heigh limitation:
+
+* 373px width (with any height) - for wide and mobile screens
+* 720px width (with any height) - for small screens
+
+**Important!** Please don't make 720px banner just via scalling 373px - better make it horizontal-oriented by rearranging elements.
+
+No aditional limitations.
