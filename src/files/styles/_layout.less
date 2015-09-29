@@ -963,7 +963,7 @@ a {
         .add-new-card {
             padding: 20px 0 10px;
 
-            label {
+            .radio label {
                 padding-left: 15px;
             }
         }
@@ -1892,6 +1892,7 @@ a {
 
     .link {
         position: absolute;
+        height: auto;
         left: 11px;
         bottom: 6px;
         text-indent: initial;
@@ -1971,10 +1972,15 @@ a {
 
             img {
                 position: absolute;
-                left: 19%;
+                left: calc(25% - 45px);
                 top: calc(50% - 45px);
                 max-height: initial;
                 transition: opacity 1s ease-in-out;
+
+                @media (min-width: 992px) {
+                    left: calc(25% - 55
+                        px);
+                }
             }
 
             &:hover .top,
