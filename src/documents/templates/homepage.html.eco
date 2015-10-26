@@ -34,7 +34,6 @@ title: "Homepage"
                 <li data-target="#promotions-main" data-slide-to="0" class="active"></li>
                 <li data-target="#promotions-main" data-slide-to="1"></li>
             </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
@@ -72,7 +71,6 @@ title: "Homepage"
                     </div>
                 </div>
             </div>
-
             <!-- Controls -->
             <a class="left carousel-control" href="#promotions-main" role="button" data-slide="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
