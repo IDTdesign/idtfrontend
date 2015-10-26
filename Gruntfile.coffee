@@ -170,9 +170,9 @@ module.exports = (grunt) ->
 				]
 			src:
 				files: [
-					cwd: 'src/files/img/',
+					cwd: 'src/raw/img/',
 					src: ['**/*.svg'],
-					dest: 'src/files/img/'
+					dest: 'src/raw/img/'
 				]
 			icons:
 				files: [
@@ -222,8 +222,8 @@ module.exports = (grunt) ->
 
 		replace:
 			sprites:
-				src: 'src/documents/styles/_sprite.less'
-				dest: 'src/documents/styles/_sprite.less'
+				src: 'src/files/styles/_sprite.less'
+				dest: 'src/files/styles/_sprite.less'
 				replacements: [
 					{
 						from: '../../files/icons/',
@@ -248,9 +248,9 @@ module.exports = (grunt) ->
 					optimizationLevel: 3,
 				files: [
 					expand: true,
-					cwd: 'src/files/img/',
+					cwd: 'src/raw/img/',
 					src: ['**/*.{png,jpg,jpeg,gif}'],
-					dest: 'src/files/img/'
+					dest: 'src/raw/img/'
 				]
 			logo:
 				options:
@@ -351,10 +351,11 @@ module.exports = (grunt) ->
 	grunt.registerTask 'makesprites',   ['svgstore', 'svg2string', 'replace:sprites']
 	grunt.registerTask 'optimizeimg',   ['svg2png:src', 'newer:imagemin:src']
 	grunt.registerTask 'preprocess',    ['makesprites', 'optimizeimg']
-	grunt.registerTask 'postprocess',   ['copy:main', 'less', 'concat:bootstrap', 'uglify', 'modernizr:dist', 'autoprefixer:bossout']
-	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'postprocess']
+	grunt.registerTask 'prepare',       ['copy:main', 'concat:bootstrap', 'uglify', 'modernizr:dist']
+	grunt.registerTask 'postprocess',   ['less', 'autoprefixer:bossout']
+	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run',           ['generate', 'server']
-	grunt.registerTask 'development',   ['postprocess', 'watch:less']
-	grunt.registerTask 'production',    ['postprocess', 'copy:manan']
+	grunt.registerTask 'development',   ['prepare', 'postprocess', 'watch:less']
+	grunt.registerTask 'production',    ['prepare', 'postprocess', 'copy:manan']
 	grunt.registerTask 'default',       ['run']

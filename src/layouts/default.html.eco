@@ -46,9 +46,6 @@
                 </div>
 
                 <nav class="navbar navbar-topline">
-                    <p class="navbar-left navbar--text hidden-xs">
-                        <a href="#">$1 FREE TRIAL <span class="hidden-sm">FOR NEW INTERNATIONAL CALLING CUSTOMERS</span></a>
-                    </p>
                     <%- @partial("site/topline-menu") %>
                 </nav>
 
