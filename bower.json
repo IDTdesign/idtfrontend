@@ -2,15 +2,31 @@
   "name": "idtdesign-idtfrontend",
   "version": "0.0.0",
   "dependencies": {
-    "modernizr": "~2.8.3",
-    "bootstrap-less": "~3.2.0",
-    "animate.css": "~3.2.0",
+    "modernizr": "~3.1.0",
+    "bootstrap-less": "~3.3.4",
+    "animate.css": "~3.4.0",
     "jasny-bootstrap": "~3.1.3",
     "sticky": "*",
-    "jquery.localScroll": "~1.3.5",
+    "jquery.localScroll": "~1.4.0",
     "jqgrid": "~4.6.0",
-    "bootstrapValidator": "~0.5.1",
-    "bowser": "~0.7.2",
+    "bootstrapValidator": "~0.5.3",
+    "bowser": "~1.0.0",
     "SelectOrDie": "latest"
-  }
+  },
+  "homepage": "https://github.com/IDTdesign/idtfrontend",
+  "authors": [
+    "Paul Radzkov <radzkov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

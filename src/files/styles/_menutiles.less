@@ -1,0 +1,170 @@
+@tilesgap: 5px; //the gap between tiles
+@borderstyle: 1px solid #D9D9D9; //tiles border style
+@bdrs: 4px; //
+@tilebg: #FFF;
+@tilecolor1: #000; // tile link color
+@tilecolor2: #B00009; // for hovers
+@tilecolor3: #005DE2; // for sub links
+@tileicon: #E10000;
+
+/*ul*/.menutiles {
+    list-style-type: none;
+    margin: 0;
+    padding: @tilesgap 0 0 @tilesgap;
+    overflow: hidden;
+    font-size: 0;
+}
+
+/*li*/.menutiles-item {
+    position: relative;
+    margin: 0 @tilesgap @tilesgap 0;
+    display: inline-block;
+    font-size: 14px;
+    width: calc( ~"33.33% - "@tilesgap );
+    vertical-align: top;
+
+    &.panel {
+        /* reset bootstrap panel styles.
+           we need .panel class here to make accordeon work
+        */
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+/*a*/.menutiles-link {
+    display: block;
+    border: @borderstyle;
+    border-radius: @bdrs;
+    height: 90px;
+    background-color: @tilebg;
+    color: @tilecolor1;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        outline: none;
+
+        .menutiles-text {
+            color: @tilecolor2;
+        }
+    }
+}
+
+.menutiles-icon {
+    display: block;
+    color: @tileicon;
+    height: 50px;
+    padding-top: 20px;
+    vertical-align: bottom;
+
+    .i {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.menutiles-text {
+    display: block;
+    padding: 8px;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @tilecolor1;
+}
+
+.menutiles-collapse {
+    padding: 0; /* 1 */
+    overflow: hidden;
+    width: calc( ~"300% + "@tilesgap*2 );
+}
+
+.menutiles-collapse-inner {
+    margin-top: 5px;
+    border: @borderstyle;
+    border-radius: 0 @bdrs @bdrs @bdrs;
+    padding: 10px 15px;
+    background-color: @tilebg;
+    color: @tilecolor1;
+}
+
+.menutiles-item:nth-child(3n+2) {
+    .menutiles-collapse {
+        margin-left: calc( ~"-100% - "@tilesgap );
+    }
+
+    .menutiles-collapse-inner {
+        border-radius: @bdrs;
+    }
+}
+
+.menutiles-item:nth-child(3n+3) {
+    .menutiles-collapse {
+        margin-left: calc( ~"-200% - "@tilesgap*2 );
+    }
+
+    .menutiles-collapse-inner {
+        border-radius: @bdrs 0 @bdrs @bdrs;
+    }
+}
+
+
+
+.btn-tilecollapse {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 16px;
+    line-height: 14px;
+    padding: @bdrs;
+    background-color: @tilebg;
+    border: @borderstyle;
+    border-width: 0 1px;
+    color: @tilecolor2;
+    outline: none;
+    //transition: all .5s;
+
+    &.collapsed {
+        text-align: right;
+        top: 68px;
+        right: 1px;
+        width: 98%;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: @bdrs;
+
+        .caret {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+/*a*/.menutiles-sublink {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 14px;
+    color: @tilecolor3;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: @tilecolor2;
+        text-decoration: underline;
+    }
+}
+
+/* custom */
+.menutiles-collapse-inner .list-inline > li:only-child {
+    width: 100%;
+    text-align: center;
+}

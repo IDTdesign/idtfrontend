@@ -1,0 +1,81 @@
+/*ul*/.menutree {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*li*/.menutree-item {
+    padding: 0;
+    position: relative;
+}
+
+/*a*/.menutree-link {
+    display: block;
+    border-top: 1px solid #D9D9D9;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background: #FFF;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #B00009;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.menutree-text {
+    font-size: 14px;
+    line-height: 39px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-menucollapse {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 52px;
+    padding: 6px 6px 0 6px;
+    background-color: transparent;
+    border: none;
+    color: #B23221;
+    outline: none;
+
+    .caret {
+        transition: transform .5s;
+    }
+
+    &.collapsed .caret {
+        transform: rotate(-90deg);
+    }
+
+    .btn-menucollapse-inner {
+        display: block;
+        height: 35px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding-top: 2px;
+    }
+
+    &:not(.collapsed) .btn-menucollapse-inner {
+        background-color: #ECECEC;
+        border-color: #D9D9D9 #D9D9D9 #ECECEC #D9D9D9;
+    }
+}
+
+/* 1 - don't apply padding here. instead you get jaggy animation */
+.menutree-collapse {
+    border-top: 1px solid #D9D9D9;
+    padding: 0; /* 1 */
+    overflow: hidden;
+    background-color: #ECECEC;
+}
+
+.menutree-collapse-body {
+    padding: 10px 0;
+}
