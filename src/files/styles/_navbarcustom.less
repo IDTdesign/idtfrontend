@@ -1,0 +1,43 @@
+@userareabg: #ECECEC;
+@userareac1: #000; //default text color
+@userareac2: #0065DD; //link color
+@userareac3: #B00009; //hover color
+
+.navbar-userarea {
+    margin: 0;
+    background: @userareabg;
+    color: @userareac1;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    a {
+        color: @userareac2;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: @userareac3;
+        }
+    }
+
+    .navbar-text {
+        float: left;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .navbar-nav.navbar-right:last-child {
+        margin: 0;
+        float: right;
+    }
+
+    .navbar-nav > li {
+        float: left;
+
+        > a {
+            padding: 15px;
+        }
+    }
+}
+

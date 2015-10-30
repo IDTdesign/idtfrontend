@@ -1,0 +1,9 @@
+---
+layout: "default"
+title: "Menu Pop-up"
+---
+<div class="container">
+    <h1>Pop-up example</h1>
+
+     <%- @partial('site/menupopup') %>
+</div>

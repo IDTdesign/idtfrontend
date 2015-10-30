@@ -1,13 +1,10 @@
----
-layout: "default"
-title: "Menu Pop-up"
----
-<div class="container">
-    <h1>Pop-up example</h1>
-
-    <nav class="nav-container">
-        <header class="navheader">
-
+   <nav class="nav-container">
+        <header class="navbar navbar-userarea">
+            <div class="navbar-text">Hello</div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Login »</a></li>
+                <li><a href="">Register »</a></li>
+            </ul>
         </header>
         <ul class="menutree">
             <li class="menutree-item">
@@ -159,8 +156,12 @@ title: "Menu Pop-up"
                 </a>
             </li>
         </ul>
-        <aside class="menuads">
 
+        <aside class="popup-promo">
+            <a href="#" class="popup-promo--link">
+                <img class="popup-promo--link-icon" src="<%= @getUrl('/img/1S-free-for-calling-2.png') %>" alt="$1 Free Trial">
+                <span class="popup-promo--text">TRY OUR INTERNATIONAL CALLING SERVICE</span>
+            </a>
         </aside>
+
     </nav>
-</div>
