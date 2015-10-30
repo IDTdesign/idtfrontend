@@ -5,5 +5,6 @@ title: "Menu Pop-up"
 <div class="container">
     <h1>Pop-up example</h1>
 
-     <%- @partial('site/menupopup') %>
+    <%- @partial('site/mobilenav-toppanel') %>
+    <%- @partial('site/menupopup') %>
 </div>

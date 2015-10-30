@@ -143,12 +143,6 @@ docpadConfig = {
 	# You can find a full listing of events on the DocPad Wiki
 
 	events:
-		extendCollections: (opts) ->
-			@docpad.getCollection('files').on('add', (document) ->
-				document.setMetaDefaults(standalone:true))
-		extendCollections: (opts) ->
-			@docpad.getCollection('documents').on('add', (document) ->
-				document.setMetaDefaults(standalone:true))
 
 		# Server Extend
 		# Used to add our own custom routes to the server before the docpad routes are added

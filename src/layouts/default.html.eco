@@ -25,19 +25,11 @@
 <body data-spy="scroll" data-target=".local-nav" data-offset="80">
     <%= @partial('site/svgcontainer') %>
 
-    <nav class="offcanvas-menu navmenu navmenu-accordeon navmenu-fixed-right" role="navigation">
-        <button type="button" class="navbar-close" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i--close"><use xlink:href="#i--close"></use></svg>
-            Close
-        </button>
-        <%- @partial('site/offscreenmenu') %>
-        <div class="offscreen-promo">
-            <a href="#" class="offscreen-promo--link"><img class="offscreen-promo--link-icon" src="<%= @getUrl('/img/1S-free-for-calling-100x100.png') %>" alt="$1 Free Trial"><strong>$1 Free Trial</strong> for New International Calling Customers</a>
-        </div>
-    </nav>
-
     <div class="allpage page-canvas">
-        <header class="allpage--header">
+        <div class="visible-xs">
+            <%- @partial('site/mobilenav-toppanel') %>
+        </div>
+        <header class="allpage--header hidden-xs">
             <div class="allpage--headerbg"></div>
             <div class="allpage--headerbg2"></div>
             <div class="container">
@@ -61,6 +53,10 @@
 
         <%- @partial('site/allpagefooter') %>
 
+    </div>
+    <div id="mobileNav" class="modal mobilenav-container" tabindex="-1" role="dialog" aria-labelledby=".navbar-toggle">
+        <%- @partial('site/mobilenav-toppanel') %>
+        <%- @partial('site/menupopup') %>
     </div>
 
     <!-- DocPad Scripts + Our Own -->

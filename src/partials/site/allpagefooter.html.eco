@@ -1,22 +1,7 @@
         <footer class="allpage--footer">
-            <div class="footer-promo">
-                <div class="container">
-                    <!-- content for tablet and desktop -->
-                    <div class="text-center">
-                        <p class="footer-promo--title h3">
-                            Download Our App and Get $1 Free
-                        </p>
-                        <p class="footer-promo--title">
-                            <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
-                            <a href="https://play.google.com/store/apps/details?id=net.idt.um.android.bossrevapp" target="_blank" class="btn btn-gplay"></a>
-                        </p>
-                    </div>
-                    <!-- /content for tablet and desktop -->
-                </div>
-            </div>
             <nav class="footer-main">
                 <div class="container">
-                    
+
                     <div class="mediablock mediablock-sm-vertical mediablock-2-to-3">
                         <div class="mediablock--primary">
                             <!-- content for tablet and desktop -->
@@ -102,9 +87,9 @@
                             <!-- /content for phone -->
                         </div>
                         <div class="mediablock--secondary">
-                            
+
                             <div class="columns-block footer-collapse">
-                                
+
                                 <nav class="footer-nav">
                                     <h4 class="footer-nav--title hidden-xs">Services</h4>
                                     <div class="collapse-trigger collapse-trigger-inverse visible-xs">
@@ -218,7 +203,7 @@
                             </h4>
                         </div>
                         <div id="footer-legal-content" class="panel-collapse collapse">
-                            
+
                             <nav class="navbar legal-nav">
                                 <p class="navbar-text navbar-left">© BOSS Revolution 2014</p>
                                 <ul class="nav navbar-nav navbar-right">
@@ -226,11 +211,7 @@
                                     <li><a href="<%= @getUrl('/privacy-policy.html') %>">Privacy Policy</a></li>
                                 </ul>
                             </nav>
-                        
-                            <p class="footer-legal--text">
-                                Legal lorem ipsum Styff es Simplemente el Texto de relleno de las imprentas y Archivos de texto. Lorem Ipsum ha Sido el Texto de relleno Estándar de las Industrias desde el Año 1500, desconocido sin CUANDO TOMO Una Impresora de cocina pisos y codificados párrafo HACER UN Libro de Muestras de pisos.
-                            </p>
-                            
+
                         </div>
                     </div>
                 </div>

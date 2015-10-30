@@ -29,6 +29,6 @@
         </a>
     </li>
     <li class="navbar--item visible-xs">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".offcanvas-menu" data-canvas=".page-canvas">Menu</button>
+        <button type="button" class="navbar-toggle" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">Menu</button>
     </li>
 </ul>
