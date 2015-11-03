@@ -1,17 +1,17 @@
-<header class="mobilenav-toppanel navbar">
-    <ul class="mobilenav-layout nav navbarnav">
+<header class="mobilenav-panel mobilenav-toppanel navbar">
+    <ul class="mobilenav-layout mobilenav-layout-top nav navbarnav">
         <li class="mobilenav-layout--left logo-mobile navbar--item">
             <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
         </li>
         <li class="mobilenav-layout--mid navbar--item">
-            <button type="button" class="mobilenav-toggle" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">
+            <button type="button" class="mobilenav-button mobilenav-button-top" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">
                 <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
                 <br>
                 Menu
             </button>
         </li>
         <li class="mobilenav-layout--right navbar--item">
-            <button class="navbar--link dropdown-toggle" type="button" data-toggle="dropdown">
+            <button class="mobilenav-button mobilenav-button-top text-right navbar--link dropdown-toggle" type="button" data-toggle="dropdown">
                 <span class="flag flag-us"></span>
                 <br>
                 <span class="">EN</span>

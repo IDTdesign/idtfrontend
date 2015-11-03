@@ -2,7 +2,7 @@
     background: #FFF;
 }
 
-.mobilenav-toppanel {
+.mobilenav-panel {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,72 +18,72 @@
         display: table-cell;
         vertical-align: bottom;
         width: 30%;
-        text-align: left;
     }
 
     > .mobilenav-layout--mid {
         display: table-cell;
         vertical-align: bottom;
         width: 40%;
-        text-align: center;
     }
 
     > .mobilenav-layout--right {
         display: table-cell;
         vertical-align: bottom;
         width: 30%;
-        text-align: right;
     }
 
 }
 
-.mobilenav-toggle {
+.mobilenav-button {
     width: 100%;
-    height: 70px;
     border: none;
+    padding: 3px 6px;
     color: #FFF;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
     background-color: transparent;
+    cursor: pointer;
+    transition: all .5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
         background-color: #E10000;
+    }
+
+    &:focus {
         outline: none;
     }
-}
 
-.mobilenav-toggle--close {
-    background-color: #E10000;
-}
-
-.mobilenav-toppanel {
-
-    button {
-        cursor: pointer;
-    }
-
-    .navbar--link.dropdown-toggle {
-        width: 100%;
+    &.mobilenav-button-top {
         height: 70px;
-        border: none;
-        color: #FFF;
-        font-weight: bold;
-        background-color: transparent;
-        text-align: right;
-        padding: 15px;
     }
 
-    .nav > li > a:hover,
+    &.mobilenav-button-bottom {
+        height: 50px;
+    }
+
+    .nav > li > & {
+        padding: 3px 6px;
+
+        &:hover {
+            color: #FFF;
+            background-color: #E10000;
+        }
+    }
+
+    .open & {
+        background-color: #E10000;
+    }
+}
+
+.mobilenav-panel {
+
     .nav > li > a:focus,
-    .nav .open > a,
-    .nav .open > a:hover,
     .nav .open > a:focus {
         background-color: transparent;
     }
 
-    .flag {
+    .mobilenav-layout--right .flag {
         margin-right: 12px;
     }
 }

@@ -1,0 +1,25 @@
+<footer class="mobilenav-panel mobilenav-bottompanel navbar">
+    <ul class="mobilenav-layout mobilenav-layout-bottom nav navbarnav">
+        <li class="mobilenav-layout--left navbar--item">
+            <button class="mobilenav-button mobilenav-button-bottom navbar--link dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="flag flag-us"></span>
+                <br>
+                <span class="">EN&thinsp;/&thinsp;US</span>
+            </button>
+        </li>
+        <li class="mobilenav-layout--mid navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">
+                <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
+                <br>
+                Menu
+            </button>
+        </li>
+        <li class="mobilenav-layout--right navbar--item">
+            <a href="" class="mobilenav-button mobilenav-button-bottom text-center">
+                <img src="<%- @getUrl('/img/lock.svg') %>" alt="">
+                <br>
+                Log in
+            </a>
+        </li>
+    </ul>
+</footer>

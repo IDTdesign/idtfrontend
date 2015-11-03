@@ -58,7 +58,9 @@
         <%- @partial('site/mobilenav-toppanel') %>
         <%- @partial('site/menupopup') %>
     </div>
-
+    <div class="fixed-panel-container">
+        <%- @partial('site/mobilenav-bottompanel') %>
+    </div>
     <!-- DocPad Scripts + Our Own -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <%- @getBlock('scripts').add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>

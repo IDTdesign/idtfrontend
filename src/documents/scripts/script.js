@@ -16,23 +16,67 @@
 
     // detect scrolling direction
     // add class to body
+    $(function () {
+        var body = $('html, body'),
+            backToTop = $('.back-to-top'),
+            fromBottom = parseInt($(backToTop).css('bottom')),
+            windowHeight = $(window).height(),
+            footer = $('.allpage--footer'),
+            lastScrollTop = 0,
+            delta = 5;
 
-    $(function(){
-        var lastScrollTop = 0, delta = 5;
-        $(window).scroll(function(event){
-           var st = $(this).scrollTop();
+        backToTop.click(function () {
+            body.animate({ scrollTop: 0 }, 1000);
+        });
 
-           if(Math.abs(lastScrollTop - st) <= delta)
-              return;
+        $(window).scroll(function (event) {
+            var scrolledFromTop = $(this).scrollTop(); //hided scrolled height from document's top
 
-           if (st > lastScrollTop){
-               // downscroll code
-               $("body").removeClass("scrolltop").addClass("scrolldown");
-           } else {
-              // upscroll code
-              $("body").removeClass("scrolldown").addClass("scrolltop");
-           }
-           lastScrollTop = st;
+            if (Math.abs(lastScrollTop - scrolledFromTop) <= delta)
+                return;
+
+            if (scrolledFromTop > lastScrollTop) {
+                // downscroll code
+                $("body").removeClass("scrolltop").addClass("scrolldown");
+            } else {
+                // upscroll code
+                $("body").removeClass("scrolldown").addClass("scrolltop");
+            }
+
+            lastScrollTop = scrolledFromTop;
+
+            //position for 'back-to-top' button
+            if (scrolledFromTop >= 15) {
+                var scrollPosition = scrolledFromTop + windowHeight,
+                    maxScrollingHeight = ($(document).height() - $(footer).height());
+
+                if (scrollPosition >= maxScrollingHeight) {
+                    $(backToTop).css('bottom', fromBottom + (scrollPosition - maxScrollingHeight));
+                }
+                else {
+                    $(backToTop).css('bottom', fromBottom);
+                }
+
+                $(backToTop).fadeIn();
+
+            } else {
+                $(backToTop).fadeOut();
+            }
+        });
+
+    });
+
+    // fixed header on mobile
+    $(function () {
+        var maxScrollTop = 70;
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+
+            if (st > maxScrollTop) {
+                $("body").addClass("xs-fixed-header xs-fixed-panel");
+            } else {
+                $("body").removeClass("xs-fixed-header xs-fixed-panel");
+            }
         });
     });
 
