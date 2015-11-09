@@ -4,22 +4,24 @@ title: "Homepage"
 ---
 
 
-<div class="collage1 visible-xs visible-sm">
-    <h1 class="layout-custom1-txt1">CHEAP INTERNATIONAL CALLING</h1>
-    <h2 class="layout-custom1-txt2">Unite your worlds</h2>
-    <p><img src="https://idt.invisionapp.com/assets/3619008/5131496/6052ED13E7F3C9CDBDABDE24B6172824960EE6857B7C9B86DBD3FBFCCB44DE57/preview?w=758" alt="" /></p>
-    <p><a href="" class="btn btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
+<div class="homepage-cover collage1 visible-xs ">
+    <h1 class="homepage-cover-txt1">CHEAP INTERNATIONAL CALLING</h1>
+    <p><img src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
+    <p><a href="" class="btn btn-success">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
     <p>* For new accounts</p>
 </div>
-<div class="collage2 hidden-xs hidden-sm">
-    <div class="collage2--primary">
-        <h1 class="layout-custom1-txt1">CHEAP INTERNATIONAL CALLING</h1>
-        <h2 class="layout-custom1-txt2">Unite your worlds</h2>
-        <p><a href="" class="btn btn-lg btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
-        <p>* For new accounts</p>
-    </div>
-    <div class="collage2--secondary">
-        <p><img src="https://idt.invisionapp.com/assets/3619008/5131496/6052ED13E7F3C9CDBDABDE24B6172824960EE6857B7C9B86DBD3FBFCCB44DE57/preview?w=758" alt="" /></p>
+<div class="homepage-cover-large hidden-xs ">
+    <div class="container">
+        <div class="collage3">
+            <div class="collage3--primary">
+                <h1 class="homepage-cover-large-txt1">CHEAP <br>INTERNATIONAL <br>CALLING</h1>
+                <p><a href="" class="btn btn-lg btn-success">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
+                <p>* For new accounts</p>
+            </div>
+            <div class="collage3--secondary">
+                <p><img src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -39,5 +41,20 @@ title: "Homepage"
     </div>
 </div>
 
+<div class="homepage-promos">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 homepagebanner">
+                <a href=""><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt=""></a>
+            </div>
+            <div class="col-sm-4 homepagebanner">
+                <a href=""><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt=""></a>
+            </div>
+            <div class="col-sm-4 homepagebanner">
+                <a href=""><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <%- #nothing %>

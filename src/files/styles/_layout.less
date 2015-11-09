@@ -2509,12 +2509,13 @@ a {
 
 .layout-custom1-txt1 {
     /* CHEAP INTERNATIONAL : */
-    font-size: 14px;
-    color: #4A4A4A;
-    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    color: #4d4d4f;
 
     @media (min-width: @screen-sm-min) {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     @media (min-width: @screen-md-min) {
@@ -2526,7 +2527,13 @@ a {
     /* Unite your worlds: */
     margin: 10px 0;
     font-size: 18px;
-    color: #B00009;
+    font-weight: bold;
+    line-height: 1;
+    color: #e21a23;
+
+    @media (min-width: @screen-sm-min) {
+        font-size: 24px;
+    }
 
     @media (min-width: @screen-md-min) {
         font-size: 32px;
@@ -2537,6 +2544,20 @@ a {
     .layout-custom1-cta {
         /* button */
         font-size: 12px;
+    }
+}
+
+.display-small {
+    font-size: 13px;
+    font-weight: normal;
+
+    @media (min-width: @screen-sm-min) {
+        font-size: 16px;
+    }
+
+    @media (min-width: @screen-md-min) {
+        font-size: 24px;
+        font-weight: bold;
     }
 }
 
@@ -2561,18 +2582,30 @@ a {
     vertical-align: middle;
 }
 
+.collage3 {
+    display: table;
+    max-width: 100%;
+    margin: auto;
+}
+
+.collage3--primary {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.collage3--secondary {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .ctaform-fullwidth {
     background: rgba(0, 0, 0, 0.6);
     padding: 0 20px;
 
     .container {
         max-width: 720px;
-        padding: 20px 0;
+        padding: 20px 0 0;
         margin: auto;
-    }
-
-    @media (min-width: @screen-md-min) {
-        margin-bottom: -20px;
     }
 }
 
@@ -2587,5 +2620,68 @@ a {
     .btn {
         width: 30%;
         border-radius: 0 4px 4px 0;
+    }
+}
+
+.homepage-cover {
+    padding: 20px 0;
+    background: #B00009;
+    background-image: linear-gradient(#B00009 1%, #950101 16%, #620000 70%, #DA000B 100%);
+    text-align: center;
+    color: #FFF;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+    }
+}
+
+.homepage-cover-txt1 {
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.homepagebanner {
+    display: block;
+    color: #000;
+    background: #FFF;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.homepage-cover-large {
+    padding: 110px 0 20px;
+    background: #B00009;
+    background-image: linear-gradient(#800108 1%, #6D0000 25%, #b00009 100%);
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+    }
+}
+
+.homepage-cover-large-txt1 {
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media (min-width: @screen-md-min) {
+        font-size: 42px;
+    }
+}
+
+.homepage-promos {
+    background: #FFF;
+
+    @media (min-width: @screen-md-min) {
+        margin-bottom: -20px;
     }
 }
