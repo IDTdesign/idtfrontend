@@ -60,7 +60,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bossrevolution.css.map'
 					sourceMapFilename: 'out/styles/bossrevolution.css.map'
 				files:
-					'out/styles/bossrevolution.css': 'src/files/styles/bossrevolution.css.less'
+					'out/styles/bossrevolution.css': 'src/raw/styles/bossrevolution.css.less'
 			compileBootstrap:
 				options:
 					strictMath: true
@@ -69,7 +69,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bootstrap.css.map'
 					sourceMapFilename: 'out/styles/bootstrap.css.map'
 				files:
-					'out/styles/bootstrap.css': 'src/files/styles/bootstrap.css.less'
+					'out/styles/bootstrap.css': 'src/raw/styles/bootstrap.css.less'
 			compileBsTheme:
 				options:
 					strictMath: true
@@ -78,7 +78,7 @@ module.exports = (grunt) ->
 					sourceMapURL: 'bootstrap-theme.css.map'
 					sourceMapFilename: 'out/styles/bootstrap-theme.css.map'
 				files:
-					'out/styles/bootstrap-theme.css': 'src/files/styles/bootstrap-theme.css.less'
+					'out/styles/bootstrap-theme.css': 'src/raw/styles/bootstrap-theme.css.less'
 
 		# add vendor prefixes
 		autoprefixer:
@@ -96,7 +96,7 @@ module.exports = (grunt) ->
 			bosssrc:
 				options:
 					map: true
-				src: 'src/files/styles/*.less'
+				src: 'src/raw/styles/*.less'
 			bossout:
 				options:
 					map: true
@@ -145,7 +145,7 @@ module.exports = (grunt) ->
 				# You can override this by defining a "files" array below.
 				files:
 					src: [
-						'src/files/**/*.less'
+						'src/raw/**/*.less'
 						'src/documents/**/*.css'
 						'src/documents/**/*.js'
 					]
@@ -177,9 +177,9 @@ module.exports = (grunt) ->
 			icons:
 				files: [
 					expand: false,
-					cwd: 'src/files/icons/svg/',
+					cwd: 'src/raw/icons/svg/',
 					src: ['*.svg'],
-					dest: 'src/files/icons/png/',
+					dest: 'src/raw/icons/png/',
 				]
 
 		#create one svg from multiple files
@@ -192,23 +192,23 @@ module.exports = (grunt) ->
 			default:
 				options:
 					cleanup: ['fill']
-				files: 'src/files/icons/svg-defs.svg':['src/files/icons/svg/*.svg']
+				files: 'src/raw/icons/svg-defs.svg':['src/raw/icons/svg/*.svg']
 			colored:
-				files: 'src/files/icons/svg-defs-colored.svg':['src/files/icons/svg-color/*.svg']
+				files: 'src/raw/icons/svg-defs-colored.svg':['src/raw/icons/svg-color/*.svg']
 
 		#convert content of svg file to string
 		svg2string:
 			icons:
-				files: 'src/files/icons/svg-icons.js':['src/files/icons/svg-defs.svg','src/files/icons/svg-defs-colored.svg']
+				files: 'src/raw/icons/svg-icons.js':['src/raw/icons/svg-defs.svg','src/raw/icons/svg-defs-colored.svg']
 
 		# background-image svg and png sprites
 		'svg-sprites':
 			icons:
 				options:
-					spriteElementPath: 'src/files/icons/svg'
-					spritePath: 'src/files/icons/icons-sprite.svg'
-					cssPath: 'src/files/styles/_sprite.less'
-					previewPath: 'src/files/icons/'
+					spriteElementPath: 'src/raw/icons/svg'
+					spritePath: 'src/raw/icons/icons-sprite.svg'
+					cssPath: 'src/raw/styles/_sprite.less'
+					previewPath: 'src/raw/icons/'
 					prefix: 'i-'
 					cssSvgPrefix: '.svg '
 					cssPngPrefix: '.no-svg '
@@ -218,15 +218,15 @@ module.exports = (grunt) ->
 						small: 25
 						large: 51
 					refSize: 33
-					template: 'src/files/icons/templates/stylesheet.hbs'
+					template: 'src/raw/icons/templates/stylesheet.hbs'
 
 		replace:
 			sprites:
-				src: 'src/files/styles/_sprite.less'
-				dest: 'src/files/styles/_sprite.less'
+				src: 'src/raw/styles/_sprite.less'
+				dest: 'src/raw/styles/_sprite.less'
 				replacements: [
 					{
-						from: '../../files/icons/',
+						from: '../../raw/icons/',
 						to: '../icons/'
 					}
 				]
@@ -275,7 +275,7 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			less:
-				files: ['./src/files/styles/**/*.*']
+				files: ['./src/raw/styles/**/*.*']
 				tasks: [
 					'less',
 					'autoprefixer:bossout'

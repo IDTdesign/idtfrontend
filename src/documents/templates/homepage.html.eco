@@ -6,16 +6,18 @@ title: "Homepage"
 <div class="layout-custom1">
     <div class="layout--primary">
         <div class="collage1 visible-xs visible-sm">
-            <h1 class="layout-custom1-txt1">Cheap international calling</h1>
+            <h1 class="layout-custom1-txt1">Connecting millions of people every day</h1>
             <h2 class="layout-custom1-txt2">Unite your worlds</h2>
             <p><img src="https://idt.invisionapp.com/assets/3619008/5131496/6052ED13E7F3C9CDBDABDE24B6172824960EE6857B7C9B86DBD3FBFCCB44DE57/preview?w=758" alt="" /></p>
+            <h1 class="layout-custom1-txt3">Cheap International Calling</h1>
             <p><a href="" class="btn btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
             <p class="small">* For new accounts</p>
         </div>
         <div class="collage2 hidden-xs hidden-sm">
             <div class="collage2--primary">
-                <h1 class="layout-custom1-txt1">Cheap international calling</h1>
+                <h1 class="layout-custom1-txt1">Connecting millions of people every day</h1>
                 <h2 class="layout-custom1-txt2">Unite your worlds</h2>
+                <h1 class="layout-custom1-txt3">Cheap International Calling</h1>
                 <p><a href="" class="btn btn-lg btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
                 <p>* For new accounts</p>
             </div>
@@ -25,13 +27,22 @@ title: "Homepage"
         </div>
     </div>
     <div class="layout--secondary">
-        <a href="" class="banner visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758" alt="" /></a>
-        <a href="" class="banner visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758" alt="" /></a>
-        <a href="" class="banner visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758" alt="" /></a>
-
-        <a href="" class="banner hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt="" /></a>
-        <a href="" class="banner hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="" /></a>
-        <a href="" class="banner hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt="" /></a>
+        <h1 class="banner">
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" />
+            </a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" /></a>
+            <span class="sr-only">Cheap International Calling: Unlimited calls to Mexico cell or landline</span>
+        </h1>
+        <h1 class="banner">
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
+            <span class="sr-only">Money Transfer: No Fees on your first transaction</span>
+        </h1>
+        <h1 class="banner">
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
+            <span class="sr-only">Mobile App: Even better with the app — Free Download</span>
+        </h1>
     </div>
 </div>
 <div class="ctaform-fullwidth">
@@ -50,5 +61,144 @@ title: "Homepage"
     </div>
 </div>
 
+<div data-page="home_index" data-zonename="content" data-size="any" data-lang="en" class="visible-lg visible-md visible-sm visible-xs" data-loaded="1"><style>
+    @media (min-width: 1200px) {
+       #promotions-main .slide-1 {
+            padding: 118px 80px 119px;
+        }
+    }
+    @media (max-width: 1200px) and (min-width: 991px) {
+       #promotions-main .slide-1{
+            padding: 118px 80px 119px;
+        }
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+       #promotions-main .slide-1 {
+            padding: 118px 80px 119px;
+        }
+    }
+    @media (max-width: 767px) {
+        #promotions-main .slide-2,
+        #promotions-main .slide-3,
+        #promotions-main .slide-4 {
+            padding: 0 0 60px;
+        }
+        #promotions-main .slide-1 {
+            padding: 10px 40px 55px;
+        }
+    }
+    @media (min-width: 767px) {
+        #promotions-main .slide-2,
+        #promotions-main .slide-3,
+        #promotions-main .slide-4 {
+            padding: 0;
+        }
+    }
+    @media (max-width: 479px) {
+        #promotions-main .slide-1 {
+            padding: 0 0 60px;
+        }
+    }
+</style>
+<div class="promotions">
+    <div class="container">
+        <div id="promotions-main" class="carousel carousel-default carousel-default-img slide" data-ride="carousel" data-interval="5000">
 
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#promotions-main" data-slide-to="0" class=""></li>
+                <li data-target="#promotions-main" data-slide-to="1" class="active"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item slide-1 text-center">
+                    <div class="home-slider-promo dyad dyad-2-1 hidden-xxs">
+                        <div class="dyad--first">
+                            <div class="dyad dyad-reverse text-center">
+                                <div class="dyad--first">
+                                    <a href="/my-account/international-calling/free-trial"><img src="http://bossrevolution.com/Content/img/1S-free-for-calling-2.png" alt="Get Free Dollar"></a>
+                                </div>
+                                <div class="dyad--second">
+                                    <p>Try our international calling service</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dyad--second text-center">
+                            <a href="/my-account/international-calling/free-trial" class="btn btn-default">START FOR FREE</a>
+                        </div>
+                    </div>
+                    <a href="/my-account/international-calling/free-trial" class="visible-xxs"><img src="http://bossrevolution.com/Content/img/banners/1DollarFree_Home_385_Eng.jpg" class="" alt=""></a>
+                </div>
+                <div class="item slide-2 text-center active">
+                    <a href="/services/unlimited-plan" class="visible-lg"><img src="http://bossrevolution.com/Content/img/banners/mexico-unlimited/Mexico-Unlimited_1140x400_Eng.png" class="" alt=""></a>
+                    <a href="/services/unlimited-plan" class="visible-md"><img src="http://bossrevolution.com/Content/img/banners/mexico-unlimited/Mexico-Unlimited_941x400_Eng.png" class="" alt=""></a>
+                    <a href="/services/unlimited-plan" class="visible-sm"><img src="http://bossrevolution.com/Content/img/banners/mexico-unlimited/Mexico-Unlimited_720x400_Eng.png" class="" alt=""></a>
+                    <a href="/services/unlimited-plan" class="visible-xs"><img src="http://bossrevolution.com/Content/img/banners/mexico-unlimited/Mexico-Unlimited_386x275_Eng.png" class="" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#promotions-main" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left" style="fill: #FF8484;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#promotions-main" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right" style="fill: #FF8484;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+
+        </div>
+    </div>
+</div>
+<div class="promo-meetboss" style="margin-bottom:0;">
+    <div class="container">
+        <p class="promo-meetboss--cta"><a href="/about" class="btn btn-primary btn-lg">Meet BOSS Revolution</a></p>
+        <div id="meetboss" class="carousel carousel-default slide hidden-xs" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#meetboss" data-slide-to="0" class=""></li>
+                <li data-target="#meetboss" data-slide-to="1" class="active"></li>
+                <li data-target="#meetboss" data-slide-to="2" class=""></li>
+                <li data-target="#meetboss" data-slide-to="3" class=""></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <h3 class="text-center">Trusted by millions of customers every day.</h3>
+                </div>
+                <div class="item active">
+                    <h3 class="text-center">Connecting billions of crystal clear minutes every year.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">We are always near you through the web, app or at thousands of retailers.</h3>
+                </div>
+                <div class="item">
+                    <h3 class="text-center">Helping you participate in the lives of friends and family back home.</h3>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#meetboss" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use></svg>
+            </a>
+            <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use></svg>
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<div class="footer-promo">
+    <div class="container">
+        <div data-page="global" data-zonename="footerbanner" data-size="any" data-lang="en" class="visible-lg visible-md visible-sm visible-xs" data-loaded="1">
+            <div class="text-center">
+                <p class="footer-promo--title h3">Download Our App and Get $1 Free</p>
+                <p class="footer-promo--title">
+                    <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+                    <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+                </p>
+            </div>
+       </div>
+    </div>
+</div>
 <%- #nothing %>
