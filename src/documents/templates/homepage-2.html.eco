@@ -8,7 +8,7 @@ title: "Homepage"
     <h1 class="homepage-cover-txt1">CHEAP INTERNATIONAL CALLING</h1>
     <p><img src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
     <p><a href="" class="btn btn-success">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
-    <p>* For new accounts</p>
+    <p class="muted">* For new accounts</p>
 </div>
 <div class="homepage-cover-large hidden-xs ">
     <div class="container">
@@ -16,7 +16,7 @@ title: "Homepage"
             <div class="collage3--primary">
                 <h1 class="homepage-cover-large-txt1">CHEAP <br>INTERNATIONAL <br>CALLING</h1>
                 <p><a href="" class="btn btn-lg btn-success">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
-                <p>* Free Call Time for new accounts</p>
+                <p class="muted">* Free Call Time for new accounts</p>
             </div>
             <div class="collage3--secondary">
                 <p><img src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
@@ -25,11 +25,102 @@ title: "Homepage"
     </div>
 </div>
 
-<div class="ctaform-fullwidth">
+<div class="fullwidth-panel">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 form-group">
-                <h3 class="text-center">See how our services can keep you connected</h3>
+            <div class="col-sm-3">
+                <h3>Select a country to see how our services can keep you connected</h3>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/mexico.png") %>" width="32" height="32" alt="Mexico flag">
+                                <span class="icon-txt--text">Mexico</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/guatemala.png") %>" width="32" height="32" alt="Guatemala flag">
+                                <span class="icon-txt--text">Guatemala</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
+                                <span class="icon-txt--text">El Salvador</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/honduras.png") %>" width="32" height="32" alt="Honduras flag">
+                                <span class="icon-txt--text">Honduras</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
+                                <span class="icon-txt--text">Haiti</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/nigeria.png") %>" width="32" height="32" alt="Nigeria flag">
+                                <span class="icon-txt--text">Nigeria</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/dominican_republic.png") %>" width="32" height="32" alt="Dominican Republic flag">
+                                <span class="icon-txt--text">Dominican Republic</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/jamaica.png") %>" width="32" height="32" alt="Jamaica flag">
+                                <span class="icon-txt--text">Jamaica</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
+                                <span class="icon-txt--text">United Kingdom</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/cuba.png") %>" width="32" height="32" alt="Cuba flag">
+                                <span class="icon-txt--text">Cuba</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">
+                                <span class="icon-txt--text">India</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i" src="<%- @getUrl("/Content/img/flags/nicaragua.png") %>" width="32" height="32" alt="Nicaragua flag">
+                                <span class="icon-txt--text">Nicaragua</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>Search other countries</h4>
+            </div>
+            <div class="col-sm-9 form-group">
                 <div class="form-group">
                     <div class="input-group-flex">
                         <input class="form-control" id="srvsel_dest" name="srvsel_dest" placeholder="Enter Country..." type="text" value="" autocomplete="off">
