@@ -6,20 +6,26 @@ title: "Homepage"
 <div class="layout-custom1">
     <div class="layout--primary">
         <div class="collage1 visible-xs visible-sm">
-            <h1 class="layout-custom1-txt1">Connecting millions of people every day</h1>
+            <h1 class="layout-custom1-txt1">Cheap International Calling</h1>
             <h2 class="layout-custom1-txt2">Unite your worlds</h2>
             <p><img src="https://idt.invisionapp.com/assets/3619008/5131496/6052ED13E7F3C9CDBDABDE24B6172824960EE6857B7C9B86DBD3FBFCCB44DE57/preview?w=758" alt="" /></p>
-            <h1 class="layout-custom1-txt3">Cheap International Calling</h1>
             <p><a href="" class="btn btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
             <p class="small">* For new accounts</p>
+            <p class="">
+                <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+                <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+            </p>
         </div>
         <div class="collage2 hidden-xs hidden-sm">
             <div class="collage2--primary">
-                <h1 class="layout-custom1-txt1">Connecting millions of people every day</h1>
+                <h1 class="layout-custom1-txt1">Cheap International Calling</h1>
                 <h2 class="layout-custom1-txt2">Unite your worlds</h2>
-                <h1 class="layout-custom1-txt3">Cheap International Calling</h1>
                 <p><a href="" class="btn btn-lg btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
                 <p>* For new accounts</p>
+                <p class="">
+                    <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+                    <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
+                </p>
             </div>
             <div class="collage2--secondary">
                 <p><img src="https://idt.invisionapp.com/assets/3619008/5131496/6052ED13E7F3C9CDBDABDE24B6172824960EE6857B7C9B86DBD3FBFCCB44DE57/preview?w=758" alt="" /></p>
@@ -27,29 +33,120 @@ title: "Homepage"
         </div>
     </div>
     <div class="layout--secondary">
-        <h1 class="banner">
+        <h3 class="banner">
             <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" />
             </a>
             <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" /></a>
             <span class="sr-only">Cheap International Calling: Unlimited calls to Mexico cell or landline</span>
-        </h1>
-        <h1 class="banner">
+        </h3>
+        <h3 class="banner">
             <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
             <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
             <span class="sr-only">Money Transfer: No Fees on your first transaction</span>
-        </h1>
-        <h1 class="banner">
+        </h3>
+        <h3 class="banner">
             <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
             <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
             <span class="sr-only">Mobile App: Even better with the app — Free Download</span>
-        </h1>
+        </h3>
     </div>
 </div>
-<div class="ctaform-fullwidth">
+<div class="fullwidth-panel">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 form-group">
-                <h3 class="text-center display-small">See how our services can keep you connected</h3>
+            <div class="col-sm-3">
+                <h3 class="display-1 ">Select a country to see how our services can keep you connected</h3>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/mexico.png") %>" width="32" height="32" alt="Mexico flag">
+                                <span class="icon-txt--text">Mexico</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/guatemala.png") %>" width="32" height="32" alt="Guatemala flag">
+                                <span class="icon-txt--text">Guatemala</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
+                                <span class="icon-txt--text">El Salvador</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/honduras.png") %>" width="32" height="32" alt="Honduras flag">
+                                <span class="icon-txt--text">Honduras</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
+                                <span class="icon-txt--text">Haiti</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nigeria.png") %>" width="32" height="32" alt="Nigeria flag">
+                                <span class="icon-txt--text">Nigeria</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/dominican_republic.png") %>" width="32" height="32" alt="Dominican Republic flag">
+                                <span class="icon-txt--text">Dominican Republic</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/jamaica.png") %>" width="32" height="32" alt="Jamaica flag">
+                                <span class="icon-txt--text">Jamaica</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
+                                <span class="icon-txt--text">United Kingdom</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/cuba.png") %>" width="32" height="32" alt="Cuba flag">
+                                <span class="icon-txt--text">Cuba</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">
+                                <span class="icon-txt--text">India</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a class="icon-txt" href="">
+                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nicaragua.png") %>" width="32" height="32" alt="Nicaragua flag">
+                                <span class="icon-txt--text">Nicaragua</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4 style="margin-top: 15px">Search other countries</h4>
+            </div>
+            <div class="col-sm-9 form-group">
                 <div class="form-group">
                     <div class="input-group-flex">
                         <input class="form-control" id="srvsel_dest" name="srvsel_dest" placeholder="Enter Country..." type="text" value="" autocomplete="off">
@@ -187,18 +284,4 @@ title: "Homepage"
         </div>
     </div>
 </div></div>
-
-<div class="footer-promo">
-    <div class="container">
-        <div data-page="global" data-zonename="footerbanner" data-size="any" data-lang="en" class="visible-lg visible-md visible-sm visible-xs" data-loaded="1">
-            <div class="text-center">
-                <p class="footer-promo--title h3">Download Our App and Get $1 Free</p>
-                <p class="footer-promo--title">
-                    <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
-                    <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
-                </p>
-            </div>
-       </div>
-    </div>
-</div>
 <%- #nothing %>

@@ -2441,7 +2441,7 @@ a {
 
     .layout--primary {
         width: 61%;
-        padding: 10px;
+        padding: 20px 10px;
         text-align: center;
         font-size: 14px;
         color: #4A4A4A;
@@ -2459,15 +2459,25 @@ a {
 
     .layout--secondary {
         width: 39%;
-
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        justify-content: space-around;
 
         .banner {
-            display: block;
+            display: flex;
+            flex-grow: 1;
             color: #000;
             background: #FFF;
             text-align: center;
             margin: 0;
             padding: 0;
+
+            a {
+                display: block;
+                margin: auto;
+            }
 
             img {
                 width: 100%;
@@ -2481,7 +2491,7 @@ a {
         }
 
         .banner:not(:last-child) {
-            border-bottom: 1px solid #E1E1E1;
+            border-bottom: 1px solid #C3C3C3;
         }
     }
 }
@@ -2536,6 +2546,7 @@ a {
 
     @media (min-width: @screen-sm-min) {
         font-size: 24px;
+        margin-bottom: 20px;
     }
 
     @media (min-width: @screen-md-min) {
@@ -2634,13 +2645,14 @@ a {
 }
 
 .homepage-cover {
-    padding: 20px 0;
+    padding: 20px;
     background: #B00009;
-    background-image: linear-gradient(#B00009 1%, #950101 16%, #620000 70%, #DA000B 100%);
+    //background-image: linear-gradient(#B00009 1%, #950101 16%, #620000 70%, #DA000B 100%);
+    background-image: linear-gradient(#800108 1%, #6D0000 25%, #b00009 100%);
     text-align: center;
     color: #FFF;
 
-    img {
+    .mainimage {
         display: block;
         width: 100%;
         max-width: 450px;
@@ -2660,18 +2672,23 @@ a {
     color: #000;
     background: #FFF;
     text-align: center;
-    border-bottom: 1px solid #E1E1E1;
+}
+
+@media (min-width: @screen-lg-min) {
+    .homepagebanner.homepagebanner--gap-lg {
+        margin-top: 20px;
+    }
 }
 
 .homepage-cover-large {
-    padding: 110px 0 20px;
+    padding: 110px 0 0;
     background: #B00009;
     background-image: linear-gradient(#800108 1%, #6D0000 25%, #b00009 100%);
 
-    img {
+    .mainimage {
         display: block;
         width: 100%;
-        max-width: 450px;
+        max-width: 520px;
         margin: auto;
     }
 }
