@@ -6,7 +6,7 @@ title: "Homepage"
 
 <div class="homepage-cover collage1 visible-xs ">
     <h1 class="homepage-cover-txt1">CHEAP INTERNATIONAL CALLING</h1>
-    <p><img class="mainimage" src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
+    <p><img class="homepage-cover-mainimage" src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
     <p><a href="" class="btn btn-success">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
     <p class="muted">* Free Call Time for new accounts</p>
     <p class="">
@@ -29,7 +29,7 @@ title: "Homepage"
                         </p>
                     </div>
                     <div class="collage3--secondary">
-                        <p><img class="mainimage" src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
+                        <p><img class="homepage-cover-mainimage" src="<%- @getUrl('/img/homepage-graphics-with-text.png') %>" alt="" /></p>
                     </div>
                 </div>
             </div>
@@ -37,13 +37,13 @@ title: "Homepage"
                 <div class="homepage-promos">
                     <div class="row">
                         <div class="col-sm-4 col-lg-12">
-                            <a href="" class="homepagebanner"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt=""></a>
+                            <a href="" class="homepage-banner"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt=""></a>
                         </div>
                         <div class="col-sm-4 col-lg-12">
-                            <a href="" class="homepagebanner homepagebanner--gap-lg"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt=""></a>
+                            <a href="" class="homepage-banner homepage-banner--gap-lg"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt=""></a>
                         </div>
                         <div class="col-sm-4 col-lg-12">
-                            <a href="" class="homepagebanner homepagebanner--gap-lg"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt=""></a>
+                            <a href="" class="homepage-banner homepage-banner--gap-lg"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -59,83 +59,83 @@ title: "Homepage"
                 <h3 class="display-1 ">Select a country to see how our services can keep you connected</h3>
             </div>
             <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                <div class="row table-layout-lg">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/mexico.png") %>" width="32" height="32" alt="Mexico flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/mexico.png") %>" width="32" height="32" alt="Mexico flag">
                                 <span class="icon-txt--text">Mexico</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/guatemala.png") %>" width="32" height="32" alt="Guatemala flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/guatemala.png") %>" width="32" height="32" alt="Guatemala flag">
                                 <span class="icon-txt--text">Guatemala</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
                                 <span class="icon-txt--text">El Salvador</span>
                             </a>
                         </p>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/honduras.png") %>" width="32" height="32" alt="Honduras flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/honduras.png") %>" width="32" height="32" alt="Honduras flag">
                                 <span class="icon-txt--text">Honduras</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
                                 <span class="icon-txt--text">Haiti</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nigeria.png") %>" width="32" height="32" alt="Nigeria flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nigeria.png") %>" width="32" height="32" alt="Nigeria flag">
                                 <span class="icon-txt--text">Nigeria</span>
                             </a>
                         </p>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/dominican_republic.png") %>" width="32" height="32" alt="Dominican Republic flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/dominican_republic.png") %>" width="32" height="32" alt="Dominican Republic flag">
                                 <span class="icon-txt--text">Dominican Republic</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/jamaica.png") %>" width="32" height="32" alt="Jamaica flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/jamaica.png") %>" width="32" height="32" alt="Jamaica flag">
                                 <span class="icon-txt--text">Jamaica</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
                                 <span class="icon-txt--text">United Kingdom</span>
                             </a>
                         </p>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead">
+                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/cuba.png") %>" width="32" height="32" alt="Cuba flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/cuba.png") %>" width="32" height="32" alt="Cuba flag">
                                 <span class="icon-txt--text">Cuba</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">
                                 <span class="icon-txt--text">India</span>
                             </a>
                         </p>
                         <p>
                             <a class="icon-txt" href="">
-                                <img class"icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nicaragua.png") %>" width="32" height="32" alt="Nicaragua flag">
+                                <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nicaragua.png") %>" width="32" height="32" alt="Nicaragua flag">
                                 <span class="icon-txt--text">Nicaragua</span>
                             </a>
                         </p>
@@ -163,13 +163,13 @@ title: "Homepage"
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <a href="" class="homepagebanner"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt=""></a>
+                <a href="" class="homepage-banner"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt=""></a>
             </div>
             <div class="col-sm-4">
-                <a href="" class="homepagebanner"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt=""></a>
+                <a href="" class="homepage-banner"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt=""></a>
             </div>
             <div class="col-sm-4">
-                <a href="" class="homepagebanner"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt=""></a>
+                <a href="" class="homepage-banner"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt=""></a>
             </div>
         </div>
     </div>
