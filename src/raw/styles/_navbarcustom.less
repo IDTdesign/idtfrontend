@@ -35,8 +35,14 @@
     .navbar-nav > li {
         float: left;
 
-        > a {
+        > .navbar--link {
             padding: 15px;
+
+            &.navbar--link-after:after {
+                content: "\00BB";
+                display: inline-block;
+                margin-left: 5px;
+            }
         }
     }
 }

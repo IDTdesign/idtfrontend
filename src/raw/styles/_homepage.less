@@ -71,15 +71,19 @@
 
 
 .layout-custom1 {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    min-width: 320px;
-    max-width: 767px;
+    background: @gray-light;
+
+    .layout-custom1--inner {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1140px;
+        margin: auto;
+    }
 
     @media (min-width: @screen-sm-min) {
         margin-top: 110px;
-        max-width: 100%;
     }
 
     .layout--primary,

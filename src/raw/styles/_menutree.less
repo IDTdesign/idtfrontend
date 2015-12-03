@@ -62,16 +62,20 @@
         transform: rotate(-90deg);
     }
 
-    .btn-menucollapse-inner {
+    .btn-menucollapse--inner {
         display: block;
         height: 35px;
         border: @mtreeborderstyle;
         border-color: transparent;
         background-color: transparent;
         padding-top: 2px;
+
+        &:focus {
+            outline: none;
+        }
     }
 
-    &:not(.collapsed) .btn-menucollapse-inner {
+    &:not(.collapsed) .btn-menucollapse--inner {
         background-color: @mtreebg2;
         border-color: @mtreebdcolor @mtreebdcolor @mtreebg2 @mtreebdcolor;
     }

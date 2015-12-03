@@ -7,9 +7,13 @@ title: "Homepage"
     <div class="layout--primary">
         <div class="collage1 visible-xs visible-sm">
             <h2 class="layout-custom1-txt2">UNITE YOUR WORLDS</h2>
-            <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds" /></p>
+
+            <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds"/></p>
+
             <p><a href="" class="btn btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
+
             <p class="small">* For new accounts</p>
+
             <p class="">
                 <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
                 <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
@@ -18,37 +22,48 @@ title: "Homepage"
         <div class="collage2 hidden-xs hidden-sm">
             <div class="collage2--primary">
                 <h2 class="layout-custom1-txt2">UNITE YOUR WORLDS</h2>
+
                 <p><a href="" class="btn btn-lg btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
+
                 <p class="">
                     <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
                     <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
                 </p>
+
                 <p>* For new accounts</p>
             </div>
             <div class="collage2--secondary">
-                <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds" /></p>
+                <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds"/></p>
             </div>
         </div>
     </div>
     <div class="layout--secondary">
         <h1 class="banner">
-            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" />
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758"
+                                                alt="Cheap International Calling: Unlimited calls to Mexico cell or landline"/>
             </a>
-            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" /></a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758"
+                                               alt="Cheap International Calling: Unlimited calls to Mexico cell or landline"/></a>
             <span class="sr-only">Cheap International Calling: Unlimited calls to Mexico cell or landline</span>
         </h1>
+
         <h3 class="banner">
-            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
-            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758"
+                                                alt="Money Transfer: No Fees on your first transaction"/></a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="Money Transfer: No Fees on your first transaction"/></a>
             <span class="sr-only">Money Transfer: No Fees on your first transaction</span>
         </h3>
+
         <h3 class="banner">
-            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
-            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
+            <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758"
+                                                alt="Mobile App: Even better with the app — Free Download"/></a>
+            <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758"
+                                               alt="Mobile App: Even better with the app — Free Download"/></a>
             <span class="sr-only">Mobile App: Even better with the app — Free Download</span>
         </h3>
     </div>
 </div>
+
 <div class="fullwidth-panel">
     <div class="container">
         <div class="row">
@@ -64,12 +79,14 @@ title: "Homepage"
                                 <span class="icon-txt--text">Mexico</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/guatemala.png") %>" width="32" height="32" alt="Guatemala flag">
                                 <span class="icon-txt--text">Guatemala</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
@@ -84,12 +101,14 @@ title: "Homepage"
                                 <span class="icon-txt--text">Honduras</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
                                 <span class="icon-txt--text">Haiti</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nigeria.png") %>" width="32" height="32" alt="Nigeria flag">
@@ -104,12 +123,14 @@ title: "Homepage"
                                 <span class="icon-txt--text">Dominican Republic</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/jamaica.png") %>" width="32" height="32" alt="Jamaica flag">
                                 <span class="icon-txt--text">Jamaica</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
@@ -124,12 +145,14 @@ title: "Homepage"
                                 <span class="icon-txt--text">Cuba</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">
                                 <span class="icon-txt--text">India</span>
                             </a>
                         </p>
+
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/nicaragua.png") %>" width="32" height="32" alt="Nicaragua flag">
@@ -156,32 +179,38 @@ title: "Homepage"
     </div>
 </div>
 
-<div data-page="home_index" data-zonename="content" data-size="any" data-lang="en" class="visible-lg visible-md visible-sm visible-xs" data-loaded="1"><style>
+<div data-page="home_index" data-zonename="content" data-size="any" data-lang="en" class="visible-lg visible-md visible-sm visible-xs" data-loaded="1">
+<style>
     @media (min-width: 1200px) {
-       #promotions-main .slide-1 {
+        #promotions-main .slide-1 {
             padding: 118px 80px 119px;
         }
     }
+
     @media (max-width: 1200px) and (min-width: 991px) {
-       #promotions-main .slide-1{
+        #promotions-main .slide-1 {
             padding: 118px 80px 119px;
         }
     }
+
     @media (max-width: 991px) and (min-width: 768px) {
-       #promotions-main .slide-1 {
+        #promotions-main .slide-1 {
             padding: 118px 80px 119px;
         }
     }
+
     @media (max-width: 767px) {
         #promotions-main .slide-2,
         #promotions-main .slide-3,
         #promotions-main .slide-4 {
             padding: 0 0 60px;
         }
+
         #promotions-main .slide-1 {
             padding: 10px 40px 55px;
         }
     }
+
     @media (min-width: 767px) {
         #promotions-main .slide-2,
         #promotions-main .slide-3,
@@ -189,6 +218,7 @@ title: "Homepage"
             padding: 0;
         }
     }
+
     @media (max-width: 479px) {
         #promotions-main .slide-1 {
             padding: 0 0 60px;
@@ -235,10 +265,14 @@ title: "Homepage"
 
             <!-- Controls -->
             <a class="left carousel-control" href="#promotions-main" role="button" data-slide="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left" style="fill: #FF8484;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left" style="fill: #FF8484;">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use>
+                </svg>
             </a>
             <a class="right carousel-control" href="#promotions-main" role="button" data-slide="next">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right" style="fill: #FF8484;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right" style="fill: #FF8484;">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use>
+                </svg>
             </a>
 
         </div>
@@ -247,6 +281,7 @@ title: "Homepage"
 <div class="promo-meetboss" style="margin-bottom:0;">
     <div class="container">
         <p class="promo-meetboss--cta"><a href="/about" class="btn btn-primary btn-lg">Meet BOSS Revolution</a></p>
+
         <div id="meetboss" class="carousel carousel-default slide hidden-xs" data-ride="carousel" data-interval="5000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -274,12 +309,17 @@ title: "Homepage"
 
             <!-- Controls -->
             <a class="left carousel-control" href="#meetboss" role="button" data-slide="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use>
+                </svg>
             </a>
             <a class="right carousel-control" href="#meetboss" role="button" data-slide="next">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use>
+                </svg>
             </a>
         </div>
     </div>
-</div></div>
+</div>
+</div>
 <%- #nothing %>
