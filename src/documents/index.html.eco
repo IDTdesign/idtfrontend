@@ -57,4 +57,12 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/templates/security-page.html') %>">security-paged.html</a></li>
             </ul>
     </article>
+    <article class="island island-default">
+        <h1>Opengraph test</h1>
+        <ul>
+            <li><a href="<%= @getUrl('/templates/homepage-2-clean.html') %>">Without open graph</a></li>
+            <li><a href="<%= @getUrl('/templates/homepage-2.html') %>">With open graph</a></li>
+            <li><a href="<%= @getUrl('/templates/homepage-2-ogv.html') %>">With open graph (video)</a></li>
+        </ul>
+    </article>
 </div>

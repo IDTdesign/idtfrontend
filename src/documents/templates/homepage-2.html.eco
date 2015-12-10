@@ -175,4 +175,39 @@ title: "Homepage"
     </div>
 </div>
 
+<div class="promotions">
+    <div class="container">
+        <div class="island" style="overflow:hidden;">
+            <div id="promotions-main" class="carousel carousel-banners slide" data-ride="carousel" data-interval="5000">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#promotions-main" data-slide-to="0" class="active"></li>
+                    <li data-target="#promotions-main" data-slide-to="1" class=""></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item text-center active">
+                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt=""></a>
+                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt=""></a>
+                    </div>
+                    <div class="item text-center">
+                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt=""></a>
+                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#promotions-main" role="button" data-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left" style="fill: #FFFFFF;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-left"></use></svg>
+                </a>
+                <a class="right carousel-control" href="#promotions-main" role="button" data-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right" style="fill: #FFFFFF;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--slider-arrow-right"></use></svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
 <%- #nothing %>
