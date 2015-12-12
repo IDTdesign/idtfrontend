@@ -15,8 +15,8 @@ out/
 
 # IDE files
 .idea/
+.DS_Store
 
 # =====================================
 # CUSTOM MODIFICATIONS
-
 src/files/vendor
