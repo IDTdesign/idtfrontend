@@ -1,4 +1,4 @@
-<ul class="menutiles" id="servicesTiles">
+<ul class="menutiles <%=@menutilesclass or ''%>" id="servicesTiles">
     <li class="menutiles-item panel">
         <a href="" class="menutiles-link">
             <span class="menutiles-icon">
@@ -6,7 +6,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">International Calling</span>
+            <span class="menutiles-text">LLAMADAS INTERNACIONALES</span>
         </a>
         <button class="btn-tilecollapse" type="button" data-target---="#collapseIntCalling" data-toggle---="collapse" data-parent="#servicesTiles" aria-expanded="true" aria-controls="collapseIntCalling">
             <!--span class="caret"></span-->
@@ -14,9 +14,9 @@
         <div id="collapseIntCalling" class="menutiles-collapse collapse in">
             <div class="menutiles-collapse-inner">
                 <ul class="list-inline row">
-                    <li class="col-xs-6"><a href="" class="menutiles-sublink">Add Funds »</a></li>
-                    <li class="col-xs-6"><a href="" class="menutiles-sublink">Redeem Card »</a></li>
-                    <li class="col-xs-6"><a href="" class="menutiles-sublink">Unlimited Plan »</a></li>
+                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Añadir Fondos »</a></li>
+                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Canjear Tarjeta »</a></li>
+                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Plan Ilimitado »</a></li>
                 </ul>
             </div>
         </div>
@@ -28,7 +28,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">Money Transfer</span>
+            <span class="menutiles-text">INTERNACIONAL ENVÍO DE DINERO</span>
         </a>
     </li>
     <li class="menutiles-item panel">
@@ -38,7 +38,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">International Mobile Top Up</span>
+            <span class="menutiles-text">RECARGA MÓVIL INTERNACIONAL</span>
         </a>
     </li>
     <li class="menutiles-item panel">
@@ -58,7 +58,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">Domestic Mobile Top Up</span>
+            <span class="menutiles-text">RECARGA MÓVIL NACIONAL</span>
         </a>
     </li>
     <li class="menutiles-item panel">
@@ -78,7 +78,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">International eGifts</span>
+            <span class="menutiles-text">E-GIFT INTERNACIONAL</span>
         </a>
     </li>
     <li class="menutiles-item panel">
@@ -88,7 +88,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">Bill Pay</span>
+            <span class="menutiles-text">PAGO DE FACTURAS</span>
         </a>
     </li>
     <li class="menutiles-item panel">
@@ -98,7 +98,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
                 </svg>
             </span>
-            <span class="menutiles-text">Visa Virtual</span>
+            <span class="menutiles-text">CUENTA VIRTUAL BOSS REVOLUTION® VISA</span>
         </a>
     </li>
 </ul>
