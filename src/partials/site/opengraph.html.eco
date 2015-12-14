@@ -1,0 +1,6 @@
+<% if @document.og :%>
+    <meta property="og:title" content="<%= @document.og.title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boss Revolution" />
+    <meta property="og:image" content="<%= @document.og.image.url %>" />
+<% end %>

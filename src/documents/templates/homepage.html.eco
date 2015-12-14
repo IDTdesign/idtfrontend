@@ -3,18 +3,16 @@ layout: "default"
 title: "Homepage"
 og:
   title: Cheap International Calling
-  type: website
-  site_name: Boss Revolution
   image:
-    value: http://example.com/image.jpg
+    url: http://example.com/image.jpg
     secure_url: https://secure.example.com/image.jpg
     type: image/jpeg
     width: 400
     height: 300
 ---
 <div class="" style="background: #CDCDCD;">
-    <div class="" style="max-width: 1140px; margin: auto; padding: 0;">
-        <div class="layout-custom1">
+    <div class="layout-custom1">
+        <div class="layout-custom1--inner">
             <div class="layout--primary">
                 <div class="collage1 visible-xs visible-sm">
                     <h2 class="layout-custom1-txt2">UNITE YOUR WORLDS</h2>
