@@ -1,6 +1,14 @@
 ---
 layout: "default"
 title: "Homepage"
+og:
+  title: Cheap International Calling
+  description: BOSS Revolution makes it simple & cheap to stay in touch with loved ones, with high quality international calling, mobile airtime top ups & money transfers.
+  image:
+    url: http://idtdesign.github.io/idtfrontend/img/og-homepage.jpg
+  video:
+    url: http://www.youtube.com/v/KXGnVPRElOM?version=3&autohide=1
+
 ---
 
 

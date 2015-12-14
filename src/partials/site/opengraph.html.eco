@@ -1,6 +1,11 @@
 <% if @document.og :%>
     <meta property="og:title" content="<%= @document.og.title %>" />
+    <meta property="og:description" content="<%= @document.og.description %>" />
+    <meta property="og:image" content="<%= @document.og.image.url %>" />
+    <% if @document.og.video : %>
+    <meta property="og:video:url" content="<%= @document.og.video.url %>" />
+    <% end %>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Boss Revolution" />
-    <meta property="og:image" content="<%= @document.og.image.url %>" />
+    <meta property="og:url" content="<%= @document.url %>" />
 <% end %>
