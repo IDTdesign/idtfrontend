@@ -31,6 +31,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/templates/homepage.html') %>">homepage.html</a></li>
             <li><a href="<%= @getUrl('/templates/homepage-2.html') %>">homepage-2.html</a></li>
             <li><a href="<%= @getUrl('/templates/menu-popup.html') %>">menu-popup.html</a></li>
+            <li><a href="<%= @getUrl('/templates/tiles.html') %>">tiles.html</a></li>
             <li><a href="<%= @getUrl('/templates/download-app.html') %>">download-app.html</a></li>
             <li><a href="<%= @getUrl('/templates/one-dollar-free.html') %>">one-dollar-free.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/friends-forever.html') %>">services/friends-forever.html</a></li>

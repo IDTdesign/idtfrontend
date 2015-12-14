@@ -7,8 +7,8 @@
             </span>
             <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices" style="width: 320px;">
-            <%- @partial("site/menutiles") %>
+        <div class="navbar--submenu dropdown-menu navbar--submenu-tiles-container" role="menu" aria-labelledby="dropdownServices">
+            <%- @partial("site/menutiles", {menutilesclass:'menutiles-large'}) %>
         </div>
     </li>
     <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
