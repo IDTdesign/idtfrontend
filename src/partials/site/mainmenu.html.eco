@@ -17,6 +17,9 @@
     <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
         <a href="<%= @getUrl('/templates/download-app.html') %>" class="navbar--link">Mobile App</a>
     </li>
+    <li class="navbar--item <%- @isActive('/templates/brclub.html') %>">
+        <a href="<%= @getUrl('/templates/brclub.html') %>" class="navbar--link">BR Club</a>
+    </li>
     <li class="navbar--item <%- @isActive('/templates/support.html') %>">
         <a href="<%= @getUrl('/templates/support.html') %>" class="navbar--link">Support</a>
     </li>
