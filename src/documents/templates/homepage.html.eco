@@ -217,12 +217,12 @@ og:
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item text-center active">
-                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt=""></a>
-                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt=""></a>
+                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt="" /></a>
+                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt="" /></a>
                     </div>
                     <div class="item text-center">
-                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt=""></a>
-                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt=""></a>
+                        <a href="/services/unlimited-plan" class="hidden-xs"><img src="http://placehold.it/1140x300" class="" alt="" /></a>
+                        <a href="/services/unlimited-plan" class="visible-xs"><img src="http://placehold.it/480x320" class="" alt="" /></a>
                     </div>
                 </div>
 
