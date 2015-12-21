@@ -1895,7 +1895,7 @@ a {
         height: auto;
         left: 11px;
         bottom: 6px;
-        text-indent: initial;
+        text-indent: 0;
     }
 
     .btn-primary {
@@ -1904,6 +1904,12 @@ a {
         right: 6px;
         bottom: 6px;
         text-indent: 0;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
     }
 
     .btn-xs {
@@ -1932,16 +1938,16 @@ a {
         }
 
         .link {
-            left: initial;
+            left: auto;
             right: 111px;
             bottom: 20px;
-            text-indent: initial;
+            text-indent: 0;
         }
 
         .btn-primary {
             right: 16px;
             bottom: 14px;
-            text-indent: initial;
+            text-indent: 0;
         }
 
         .btn-sm {
@@ -1985,7 +1991,7 @@ a {
             &:hover .top,
             &:focus .top,
             &:active .top {
-                opacity:0;
+                opacity: 0;
             }
         }
 
@@ -2005,6 +2011,7 @@ a {
             right: 5%;
             bottom: 20%;
             text-indent: 0;
+            text-decoration: none;
         }
 
         .btn {
