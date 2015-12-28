@@ -27,7 +27,7 @@
 
 		h3 {
 			margin-top: 1em;
-			text-transform: uppercase;  
+			text-transform: uppercase;
 		}
 
 		&:hover,
@@ -40,12 +40,12 @@
 		&.item--3, &.item--5, &.item--6, &.item--9 {max-width: 366px;}
 
 		&.item--4, &.item--7, &.item--8, &.item--10 {max-width: 270px;}
-		
+
 		&.item-equalized {
 			@media screen and (max-width: @screen-md-max) {
 				max-width: 300px;
 			}
-			
+
 			@media screen and (max-width: @screen-sm-max) {
 				max-width: 348px;
 			}
@@ -58,7 +58,7 @@
 			}
 		}
 	}
-	
+
 	@media screen and (max-width: @screen-xs-max) {
 		flex-direction: column;
         align-items: stretch;
@@ -70,12 +70,12 @@
 
 /* equlized with table */
 .no-flexbox.no-flexboxlegacy .container-equalized {
-        display: block;
+    display: block;
 
-        .item-equalized {
-            display: inline-block;
-            width: 100%;
-            min-height: 330px;
-            vertical-align: top;
-		}
-    }
+    .item-equalized {
+        display: inline-block;
+        width: 100%;
+        min-height: 330px;
+        vertical-align: top;
+	}
+}

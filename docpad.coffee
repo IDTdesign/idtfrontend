@@ -79,6 +79,9 @@ docpadConfig = {
 			if s == @document.url
 				"active"
 
+
+	ignoreCustomPatterns: /^_(\w*.less)?/gm
+
 	plugins:
 		ghpages:
 			deployRemote: 'deploy'
@@ -90,7 +93,8 @@ docpadConfig = {
 			aliases:
 				missinglanguage: 'alternativelanguage'
 		grunt:
-			writeAfter: ['prepare', 'postprocess']
+			# writeAfter: ['prepare', 'postprocess']
+			writeAfter: false
 			writeBefore: false
 			renderBefore: false
 			renderAfter: false

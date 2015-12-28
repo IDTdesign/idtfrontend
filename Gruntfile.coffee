@@ -277,8 +277,7 @@ module.exports = (grunt) ->
 			less:
 				files: ['./src/raw/styles/**/*.*']
 				tasks: [
-					'less',
-					'autoprefixer:bossout'
+					'postprocess'
 				]
 
 		# start server
@@ -327,6 +326,20 @@ module.exports = (grunt) ->
 				options:
 					stdout: true
 				command: 'docpad generate --env static'
+			docpadrun:
+				options:
+					stdout: true
+				command: [
+						'docpad run'
+						'grunt development'
+					].join('&')
+			deploy:
+				options:
+					stdout: true
+				command: 'docpad deploy-ghpages --env static'
+
+	# measures the time each task takes
+	require('time-grunt')(grunt);
 
 	# Build the available Grunt tasks.
 	grunt.loadNpmTasks 'grunt-shell'
@@ -355,7 +368,9 @@ module.exports = (grunt) ->
 	grunt.registerTask 'postprocess',   ['less', 'autoprefixer:bossout']
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
-	grunt.registerTask 'run',           ['generate', 'server']
+	grunt.registerTask 'run2',          ['generate', 'server']
+	grunt.registerTask 'run',           ['shell:docpadrun']
 	grunt.registerTask 'development',   ['prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'production',    ['prepare', 'postprocess', 'copy:manan']
+	grunt.registerTask 'deploy',    	['generate', 'shell:deploy']
 	grunt.registerTask 'default',       ['run']
