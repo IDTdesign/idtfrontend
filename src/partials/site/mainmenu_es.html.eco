@@ -1,0 +1,46 @@
+<ul class="nav nav-pills navbar--list">
+    <li class="navbar--item dropdown <%- @isActive('/templates/services.html') %>">
+        <a href="<%= @getUrl('/templates/services.html') %>" class="navbar--link pullin-space">SERVICIOS</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
+            <span class="btn btn-dropdown btn-xs">
+                <span class="caret"></span>
+            </span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="navbar--submenu dropdown-menu navbar--submenu-tiles-container" role="menu" aria-labelledby="dropdownServices">
+            <%- @partial("site/menutiles", {menutilesclass:'menutiles-large'}) %>
+        </div>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
+        <a href="<%= @getUrl('/templates/rates.html') %>" class="navbar--link">TARIFAS</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/rates.html') %>">
+        <a href="<%= @getUrl('/templates/download-app.html') %>" class="navbar--link">APLICACIÓN MÓVIL</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/support.html') %>">
+        <a href="<%= @getUrl('/templates/support.html') %>" class="navbar--link">ATENCIÓN AL CLIENTE</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/brclub.html') %>">
+        <a href="<%= @getUrl('/templates/brclub.html') %>" class="navbar--link">BR Club</a>
+    </li>
+    <li class="navbar--item <%- @isActive('/templates/my-account.html') %> dropdown">
+        <a href="<%= @getUrl('/templates/my-account.html') %>" class="navbar--link pullin-space">MI CUENTA</a><!--
+        --><%- @partial("site/dropdown-button") %>
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
+            <li class="dropdown-header">Welcome, Username!</li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/personal-profile.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/personal-profile.html') %>" class="navbar--submenulink">Personal Profile</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/payment-option.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/payment-option.html') %>" class="navbar--submenulink">Payment Options</a>
+            </li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/friends-forever.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
+            </li>
+            <li class="navbar--submeitem divider"></li>
+            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/logout.html') %>">
+                <a href="<%= @getUrl('/templates/my-account/logout.html') %>" class="navbar--submenulink">Logout</a>
+            </li>
+        </ul>
+    </li>
+</ul>
