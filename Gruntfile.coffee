@@ -372,5 +372,5 @@ module.exports = (grunt) ->
 	grunt.registerTask 'run',           ['shell:docpadrun']
 	grunt.registerTask 'development',   ['prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'production',    ['prepare', 'postprocess', 'copy:manan']
-	grunt.registerTask 'deploy',    	['generate', 'shell:deploy']
+	grunt.registerTask 'deploy',    	['clean:out', 'prepare', 'postprocess', 'shell:deploy']
 	grunt.registerTask 'default',       ['run']
