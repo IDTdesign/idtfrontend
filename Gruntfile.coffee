@@ -325,24 +325,24 @@ module.exports = (grunt) ->
 			docpad:
 				options:
 					stdout: true
+					async: false
 				command: 'docpad generate --env static'
 			docpadrun:
 				options:
 					stdout: true
-				command: [
-						'docpad run'
-						'grunt development'
-					].join('&')
+					async: true
+				command: 'docpad run'
 			deploy:
 				options:
 					stdout: true
+					async: false
 				command: 'docpad deploy-ghpages --env static'
 
 	# measures the time each task takes
 	require('time-grunt')(grunt);
 
 	# Build the available Grunt tasks.
-	grunt.loadNpmTasks 'grunt-shell'
+	grunt.loadNpmTasks 'grunt-shell-spawn'
 	grunt.loadNpmTasks 'grunt-contrib-uglify'
 	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-contrib-connect'
@@ -369,7 +369,7 @@ module.exports = (grunt) ->
 	grunt.registerTask 'generate',      ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
 	grunt.registerTask 'server',        ['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run2',          ['generate', 'server']
-	grunt.registerTask 'run',           ['shell:docpadrun']
+	grunt.registerTask 'run',           ['shell:docpadrun', 'prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'development',   ['prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'production',    ['prepare', 'postprocess', 'copy:manan']
 	grunt.registerTask 'deploy',    	['clean:out', 'prepare', 'postprocess', 'shell:deploy']
