@@ -15,7 +15,7 @@
                     <span class="btn-menucollapse-inner"><span class="caret"></span></span>
                 </button>
                 <div id="collapseServices" class="menutree-collapse collapse in">
-                    <%- @partial("site/menutiles") %>
+                    <%- @partial("site/menutiles", {menutilesclass:'menutiles-simple', menutilesid: 'mobile'}) %>
                 </div>
             </li>
             <li class="menutree-item">
@@ -27,6 +27,7 @@
                 <a href="" class="menutree-link">
                     <span class="menutree-text">Mobile App</span>
                 </a>
+                <!--
                 <button class="btn-menucollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseApp" aria-expanded="false" aria-controls="collapseApp">
                     <span class="btn-menucollapse-inner"><span class="caret"></span></span>
                 </button>
@@ -35,10 +36,17 @@
                         <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
                     </div>
                 </div>
+            -->
             </li>
             <li class="menutree-item">
                 <a href="" class="menutree-link">
                     <span class="menutree-text">Support</span>
+                </a>
+            </li>
+            </li>
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">BR Club</span>
                 </a>
             </li>
         </ul>

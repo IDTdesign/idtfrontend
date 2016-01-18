@@ -1,23 +1,27 @@
-@mtreeborderstyle: 1px solid #D9D9D9; // border style
-@mtreebdcolor: #D9D9D9;
-@mtreebg1: #FFF; // first level background
-@mtreebg2: #ECECEC; // second level background
-@mtreecolor1: #000; // first level link color
-@mtreecolor2: #B00009; // first level hover color
+@menutree: menutree;
 
-/*ul*/.menutree {
+.menutree-settings() {
+    @mtreeborderstyle: 1px solid #D9D9D9; // border style
+    @mtreebdcolor: #D9D9D9;
+    @mtreebg1: #FFF; // first level background
+    @mtreebg2: #ECECEC; // second level background
+    @mtreecolor1: #000; // first level link color
+    @mtreecolor2: #B00009; // first level hover color
+}
+
+.@{menutree} {
     list-style-type: none;
     margin: 0;
     padding: 0;
     border-bottom: @mtreeborderstyle;
-}
 
-/*li*/.menutree-item {
-    padding: 0;
-    position: relative;
-}
+    &-item {
+        padding: 0;
+        position: relative;
+    }
 
-/*a*/.menutree-link {
+
+    &-link {
     display: block;
     border-top: @mtreeborderstyle;
     text-align: center;
@@ -25,21 +29,37 @@
     color: @mtreecolor1;
     background: @mtreebg1;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: @mtreecolor2;
-        outline: none;
-        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color: @mtreecolor2;
+            outline: none;
+            text-decoration: none;
+        }
     }
+    &-text {
+        font-size: 14px;
+        line-height: 39px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* 1 - don't apply padding here. instead you get jaggy animation */
+    &-collapse {
+        border-top: @mtreeborderstyle;
+        padding: 0; /* 1 */
+        overflow: hidden;
+        background-color: @mtreebg2;
+    }
+
+    &-collapse-body {
+        padding: 10px 0;
+    }
+
+    .menutree-settings();
 }
 
-.menutree-text {
-    font-size: 14px;
-    line-height: 39px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+
 
 .btn-menucollapse {
     position: absolute;
@@ -79,16 +99,6 @@
         background-color: @mtreebg2;
         border-color: @mtreebdcolor @mtreebdcolor @mtreebg2 @mtreebdcolor;
     }
-}
 
-/* 1 - don't apply padding here. instead you get jaggy animation */
-.menutree-collapse {
-    border-top: @mtreeborderstyle;
-    padding: 0; /* 1 */
-    overflow: hidden;
-    background-color: @mtreebg2;
-}
-
-.menutree-collapse-body {
-    padding: 10px 0;
+    .menutree-settings();
 }

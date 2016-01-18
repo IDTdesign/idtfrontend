@@ -38,19 +38,19 @@ og:
             </div>
             <div class="layout--secondary">
                 <h1 class="banner">
-                    <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129705/4DD92085F7DDEA54AAFAB46A296D0B7502FE9EA560A76CC967077CCE1A2DFD8D/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" />
+                    <a href="" class=" visible-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_cheap-int-calling_small.png')%>" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" />
                     </a>
-                    <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614354/AEB84BD6553CA1F3EBAFF919AD1EE5330827286AFDC943599235126F674D9B66/preview?w=758" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" /></a>
+                    <a href="" class=" hidden-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_cheap-int-calling.png')%>" alt="Cheap International Calling: Unlimited calls to Mexico cell or landline" /></a>
                     <span class="sr-only">Cheap International Calling: Unlimited calls to Mexico cell or landline</span>
                 </h1>
                 <h3 class="banner">
-                    <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129700/E2ABF4A8304F1D419804BE2205DD4469BD41861BF1D2768559A4AAE5EF6BED3A/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
-                    <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614355/4DBA61FF7A7BB9D8355C8FCB9D19D1E62003706D6EA4AEFF6FF8581608E61151/preview?w=758" alt="Money Transfer: No Fees on your first transaction" /></a>
+                    <a href="" class=" visible-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_int-money-transf_small.png')%>" alt="Money Transfer: No Fees on your first transaction" /></a>
+                    <a href="" class=" hidden-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_int-money-transf.png')%>" alt="Money Transfer: No Fees on your first transaction" /></a>
                     <span class="sr-only">Money Transfer: No Fees on your first transaction</span>
                 </h3>
                 <h3 class="banner">
-                    <a href="" class=" visible-xs"><img src="https://idt.invisionapp.com/assets/3619008/5129701/E5CBD4B2660FF20D9C0AF5D19AC2D96E9A5EAD6CD6A6C8CC2265D4DECA859E39/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
-                    <a href="" class=" hidden-xs"><img src="https://idt.invisionapp.com/assets/3619008/5614499/3CF2F683B54E06D930D46E82B2E9FAE6E08DFE857521E0845AE80192397FBF67/preview?w=758" alt="Mobile App: Even better with the app — Free Download" /></a>
+                    <a href="" class=" visible-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_egift-card_small.png')%>" alt="eGift card: Shopping without stress" /></a>
+                    <a href="" class=" hidden-xs"><img src="<%- @getUrl('/img/homepage-header-banners/hpb_US-ENG_egift-card.png')%>" alt="eGift card: Shopping without stress" /></a>
                     <span class="sr-only">Mobile App: Even better with the app — Free Download</span>
                 </h3>
             </div>
@@ -65,7 +65,7 @@ og:
             </div>
             <div class="col-sm-9">
                 <div class="row table-layout-lg">
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/mexico.png") %>" width="32" height="32" alt="Mexico flag">
@@ -78,20 +78,22 @@ og:
                                 <span class="icon-txt--text">Guatemala</span>
                             </a>
                         </p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/el_salvador.png") %>" width="32" height="32" alt="El Salvador flag">
                                 <span class="icon-txt--text">El Salvador</span>
                             </a>
                         </p>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/honduras.png") %>" width="32" height="32" alt="Honduras flag">
                                 <span class="icon-txt--text">Honduras</span>
                             </a>
                         </p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/haiti.png") %>" width="32" height="32" alt="Haiti flag">
@@ -105,7 +107,7 @@ og:
                             </a>
                         </p>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/dominican_republic.png") %>" width="32" height="32" alt="Dominican Republic flag">
@@ -118,20 +120,22 @@ og:
                                 <span class="icon-txt--text">Jamaica</span>
                             </a>
                         </p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/united_kingdom.png") %>" width="32" height="32" alt="United Kingdom flag">
                                 <span class="icon-txt--text">United Kingdom</span>
                             </a>
                         </p>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/cuba.png") %>" width="32" height="32" alt="Cuba flag">
                                 <span class="icon-txt--text">Cuba</span>
                             </a>
                         </p>
+                    </div>
+                    <div class="col-xs-6 col-md-4 lead table-layout--cell">
                         <p>
                             <a class="icon-txt" href="">
                                 <img class="icon-txt--i nonresponsive" src="<%- @getUrl("/Content/img/flags/india.png") %>" width="32" height="32" alt="India flag">

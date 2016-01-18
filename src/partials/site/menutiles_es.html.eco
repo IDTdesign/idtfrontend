@@ -1,4 +1,4 @@
-<ul class="menutiles <%=@menutilesclass or ''%>" id="servicesTiles">
+<ul class="menutiles <%=@menutilesclass or ''%>" id="<%=@menutilesid or 'servicesTiles'%>">
     <li class="menutiles-item panel">
         <a href="" class="menutiles-link">
             <span class="menutiles-icon">
@@ -8,15 +8,15 @@
             </span>
             <span class="menutiles-text">LLAMADAS INTERNACIONALES</span>
         </a>
-        <button class="btn-tilecollapse" type="button" data-target---="#collapseIntCalling" data-toggle---="collapse" data-parent="#servicesTiles" aria-expanded="true" aria-controls="collapseIntCalling">
+        <button class="btn-tilecollapse" type="button" data-target---="#<%=@menutilesid%>collapseIntCalling" data-toggle---="collapse" data-parent="#<%=@menutilesid%>" aria-expanded="true" aria-controls="<%=@menutilesid%>collapseIntCalling">
             <!--span class="caret"></span-->
         </button>
-        <div id="collapseIntCalling" class="menutiles-collapse collapse in">
+        <div id="<%=@menutilesid%>collapseIntCalling" class="menutiles-collapse collapse in">
             <div class="menutiles-collapse-inner">
-                <ul class="list-inline row">
-                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Añadir Fondos »</a></li>
-                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Canjear Tarjeta »</a></li>
-                    <li class="col-xs-4"><a href="" class="menutiles-sublink">Plan Ilimitado »</a></li>
+                <ul class="menutiles-submenu">
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Añadir Fondos</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Canjear Tarjeta</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Plan Ilimitado</a></li>
                 </ul>
             </div>
         </div>

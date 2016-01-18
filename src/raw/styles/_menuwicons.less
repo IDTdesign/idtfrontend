@@ -1,0 +1,345 @@
+
+@menuwicons: menutiles;
+
+.menuwicons-settings() {
+    @iconsize: 26px;                    // default icon size
+    @fz: 12px;                          // font-size
+    @iconpadding: 20px;                 // left padding around icon
+    @textpadding: 8px;                  // padding around text
+    @borderstyle: 1px solid #F1F1F1;    // lines between items
+    @bg: #FFF;
+    @color1: #000;                      // tile link color
+    @color2: #B00009;                   // for hovers
+    @color3: #005DE2;                   // for sub links
+    @coloricon: #E10000;                // for sub links
+    @collapsebg: #F1F1F1;
+
+    @tilesgap: 5px;                     //the gap between tiles
+    @tilesborderstyle: 1px solid #D9D9D9; //tiles border style
+    @tilesbdrs: 4px;                    // tiles radius
+    @tilebg: @bg;
+    @tilecolor1: @color1;                  // tile link color
+    @tilecolor2: @color2;               // for hovers
+    @tilecolor3: @color3;               // for sub links
+    @tileicon: @coloricon;
+    @tileheight: 100px;                 // tiles has fixed height
+    @tileiconsize: 32px;
+
+    @simplepadding: @textpadding;
+    @simpleiconsize: @iconsize;
+    @simplecollapsebg: @collapsebg;
+}
+
+.@{menuwicons} {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+        margin: 0;
+
+        &.panel {
+            /* reset bootstrap panel styles.
+               we need .panel class here to make accordeon work
+            */
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        &:not(:last-child) {
+            border-bottom: @borderstyle;
+        }
+    }
+
+    &-link {
+        display: table;
+        width: 100%;
+        font-size: @fz;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: @bg;
+        color: @color1;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            outline: none;
+
+            .@{menuwicons}-text {
+                color: @color2;
+            }
+        }
+    }
+
+    &-icon {
+        display: table-cell;
+        vertical-align: top;
+        padding: @textpadding @textpadding @textpadding @iconpadding;
+        width: (@iconsize + @textpadding + @iconpadding);
+        color: @coloricon;
+
+        .i {
+            width: @iconsize;
+            height: @iconsize;
+        }
+    }
+
+    &-text {
+        display: table-cell;
+        vertical-align: middle;
+        padding: @textpadding;
+    }
+
+    &-collapse-inner {
+        padding: @textpadding @textpadding @textpadding (@iconsize + @textpadding*2 + @iconpadding);
+        background: @collapsebg;
+        color: #000;
+    }
+
+    &-submenu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    &-subitem {
+    }
+
+    &-sublink {
+        display: inline-block;
+        padding: 5px 0;
+        color: @color3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: @color2;
+            text-decoration: underline;
+        }
+    }
+
+    &-sublink-after:after {
+        content: "\00BB";
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .menuwicons-settings();
+}
+
+// curreently used only for -tiles theme
+.btn-tilecollapse {
+    display: none;
+}
+
+.@{menuwicons}-tiles {
+    padding: @tilesgap 0 0 @tilesgap;
+    font-size: 0;
+
+    .@{menuwicons}-item {
+        position: relative;
+        margin: 0 @tilesgap @tilesgap 0;
+        display: inline-block;
+        font-size: 14px;
+        width: calc( ~"33.33% - "@tilesgap );
+        vertical-align: top;
+    }
+
+    .@{menuwicons}-link {
+        display: block;
+        border: @tilesborderstyle;
+        border-radius: @tilesbdrs;
+        height: @tileheight;
+        background-color: @tilebg;
+        color: @tilecolor1;
+        text-align: center;
+
+
+        &:hover,
+        &:focus,
+        &:active {
+
+            .@{menuwicons}-text {
+                color: @tilecolor2;
+            }
+        }
+    }
+
+    .@{menuwicons}-icon {
+        display: block;
+        color: @tileicon;
+        width: 100%;
+        height: 55px;
+        padding: 20px 0 0;
+        vertical-align: bottom;
+
+        .i {
+            display: inline-block;
+            vertical-align: bottom;
+            width: @tileiconsize;
+            height: @tileiconsize;
+        }
+    }
+
+    .@{menuwicons}-text {
+        display: block;
+        padding: 4px;
+        font-size: 9px;
+        line-height: 1.4;
+        color: @tilecolor1;
+    }
+
+    .@{menuwicons}-collapse {
+        padding: 0;
+        overflow: hidden;
+        width: calc( ~"300% + "@tilesgap*2 );
+    }
+
+    .@{menuwicons}-collapse-inner {
+        margin-top: 5px;
+        border: @tilesborderstyle;
+        border-radius: 0 @tilesbdrs @tilesbdrs @tilesbdrs;
+        padding: 10px 0;
+        background-color: @tilebg;
+        color: @tilecolor1;
+    }
+
+    .@{menuwicons}-item:nth-child(3n+2) {
+        .@{menuwicons}-collapse {
+            margin-left: calc( ~"-100% - "@tilesgap );
+        }
+
+        .@{menuwicons}-collapse-inner {
+            border-radius: @tilesbdrs;
+        }
+    }
+
+    .@{menuwicons}-item:nth-child(3n+3) {
+        .@{menuwicons}-collapse {
+            margin-left: calc( ~"-200% - "@tilesgap*2 );
+        }
+
+        .@{menuwicons}-collapse-inner {
+            border-radius: @tilesbdrs 0 @tilesbdrs @tilesbdrs;
+        }
+    }
+
+    .@{menuwicons}-submenu {
+        overflow: hidden;
+    }
+
+    .@{menuwicons}-subitem {
+        float: left;
+        width: 33.3%;
+    }
+
+    .@{menuwicons}-sublink {
+        padding: 5px 10px;
+        font-size: 14px;
+        color: @tilecolor3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: @tilecolor2;
+            text-decoration: underline;
+        }
+
+        &.@{menuwicons}-sublink-after:after {
+            content: "\00BB";
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+
+    /* custom */
+    .@{menuwicons}-collapse-inner .list-inline > li:only-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-tilecollapse {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: (@tileheight - 10px);
+        right: 0;
+        width: 100%;
+        height: 16px;
+        line-height: 14px;
+        padding: @tilesbdrs;
+        background-color: @tilebg;
+        border: @tilesborderstyle;
+        border-width: 0 1px;
+        color: @tilecolor2;
+        outline: none;
+
+        &.collapsed {
+            text-align: right;
+            top: 68px;
+            right: 1px;
+            width: 98%;
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: @tilesbdrs;
+
+            .caret {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .menuwicons-settings();
+}
+
+//modifier for larger text. use together with -tiles theme
+.@{menuwicons}-tiles.@{menuwicons}-large {
+    .@{menuwicons}-text {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+// modifier to show tiles as classic menu with border
+.@{menuwicons}-simple {
+    margin: @tilesgap;
+    border: @tilesborderstyle;
+    border-radius: @tilesbdrs;
+
+    .@{menuwicons}-item {
+        &:not(:last-child) {
+            border-bottom: @tilesborderstyle;
+        }
+    }
+
+    .@{menuwicons}-icon {
+        padding: @simplepadding;
+        width: (@simplepadding*2 + @simpleiconsize);
+
+        .i {
+            width: @simpleiconsize;
+            height: @simpleiconsize;
+        }
+    }
+
+    .@{menuwicons}-text {
+        padding: @simplepadding @simplepadding @simplepadding 0;
+    }
+
+    .@{menuwicons}-collapse-inner {
+        //margin: 0;
+        padding-left: (@simplepadding*2 + @simpleiconsize);
+        //border: none;
+        border-top: @tilesborderstyle;
+        //border-radius: 0;
+        background: @simplecollapsebg;
+    }
+
+    .menuwicons-settings();
+}
