@@ -80,7 +80,7 @@ docpadConfig = {
 				"active"
 
 
-	ignoreCustomPatterns: /^_(\w*.less)?/gm
+	ignoreCustomPatterns: /^\S*([.]less)/gm
 
 	plugins:
 		ghpages:

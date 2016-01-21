@@ -13,7 +13,7 @@ og:
             <div class="layout--primary">
                 <div class="collage1 visible-xs visible-sm">
                     <h2 class="layout-custom1-txt2">UNITE YOUR WORLDS</h2>
-                    <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds" /></p>
+                    <p><img src="<%- @getUrl('/img/homepage-india2.png') %>" alt="unite your worlds" /></p>
                     <p><a href="" class="btn btn-success layout-custom1-cta">JOIN&nbsp;&amp;&nbsp;GET $1 FREE&nbsp;<sup>*</sup></a></p>
                     <p class="">
                         <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&amp;network_id=1038&amp;device_id=device_id&amp;site_id=1"></a>
@@ -32,7 +32,7 @@ og:
                         <p>* For new accounts</p>
                     </div>
                     <div class="collage2--secondary">
-                        <p><img src="<%- @getUrl('/img/homepage-mx.png') %>" alt="unite your worlds" /></p>
+                        <p><img src="<%- @getUrl('/img/homepage-india2.png') %>" alt="unite your worlds" /></p>
                     </div>
                 </div>
             </div>

@@ -52,6 +52,33 @@
         &:not(:last-child) {
             border-bottom: @borderstyle;
         }
+
+        &--comingsoon {
+
+            .@{menuwicons}-link {
+                pointer-events: none;
+                position: relative;
+
+                &:after {
+                    content: 'coming soon';
+                    position: absolute;
+                    display: block;
+                    top: 5px;
+                    right: 5px;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                    font-size: 8px;
+                    text-transform: uppercase;
+                    background: #004c8d;
+                    color: #FFF;
+                }
+            }
+
+            .@{menuwicons}-icon,
+            .@{menuwicons}-text {
+                opacity: 0.4;
+            }
+        }
     }
 
     &-link {
@@ -144,8 +171,9 @@
 
     .@{menuwicons}-item {
         position: relative;
-        margin: 0 @tilesgap @tilesgap 0;
         display: inline-block;
+        margin: 0 @tilesgap @tilesgap 0;
+        border: none;
         font-size: 14px;
         width: calc( ~"33.33% - "@tilesgap );
         vertical-align: top;
@@ -291,6 +319,21 @@
 
             .caret {
                 transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .@{menuwicons}-item--comingsoon {
+
+        .@{menuwicons}-link {
+            pointer-events: none;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                padding: 2px 20px;
+                transform: rotate(45deg) translate(30px, -10px);
+                white-space: nowrap;
             }
         }
     }

@@ -134,6 +134,10 @@
     width: 400px;
 }
 
+.navbar--submenu-default-container {
+    width: 320px;
+}
+
 @media (min-width: @screen-sm-min) {
 
     .navbar-topline .navbar--list-position-right .navbar--submenu {
@@ -479,15 +483,23 @@
         .navbar--list .navbar--link {
             padding: 20px 11px;
         }
+    }
+}
+
+@media (max-width: @screen-lg-min) {
+    .navbar-bossmain {
 
         .navbar--item:last-child .dropdown-menu {
             left: auto;
             right: 0;
             float: right;
+
+            &:before {
+                left: auto !important;
+                right: 25px !important;
+            }
         }
-
     }
-
 }
 /* navbar-bossmain end */
 

@@ -1,0 +1,34 @@
+---
+layout: "default"
+title: "My account popup test"
+---
+<div class="container">
+    <div class="island island-default">
+        <h1 class="island-title">Desktop and mobile dropdown default version</h1>
+        <p>Has only class .menutiles</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesid: 'example1'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-simple', menutilesid: 'example2'}) %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-tiles', menutilesid: 'example1'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-tiles-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-tiles menutiles-large', menutilesid: 'example2'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

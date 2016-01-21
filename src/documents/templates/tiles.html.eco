@@ -9,29 +9,28 @@ title: "Tiles test"
         <p>Has only class .menutiles</p>
         <div class="row">
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97); overflow: hidden;">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles", {menutilesid: 'example1'}) %>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97); overflow: hidden;">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles_es", {menutilesid: 'example2'}) %>
                 </div>
             </div>
         </div>
     </div>
-<div class="container">
     <div class="island island-default">
         <h1 class="island-title">Desktop and mobile dropdown simple version</h1>
         <p>Has additional class .menutiles-simple</p>
         <div class="row">
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97); overflow: hidden;">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles", {menutilesclass:'menutiles-simple', menutilesid: 'example3'}) %>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97); overflow: hidden;">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-simple', menutilesid: 'example4'}) %>
                 </div>
             </div>
@@ -41,12 +40,12 @@ title: "Tiles test"
         <h1 class="island-title">Mobile versions</h1>
         <div class="row">
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97);">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles", {menutilesclass:'menutiles-tiles', menutilesid: 'example5'}) %>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div style="width:320px; background: rgba(255, 255, 255, 0.97);">
+                <div class="navbar--submenu-default-container">
                     <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-tiles', menutilesid: 'example6'}) %>
                 </div>
             </div>
@@ -57,12 +56,12 @@ title: "Tiles test"
         <p>Has additional class .menutiles-large</p>
         <div class="row">
             <div class="col-sm-6">
-                <div style="width:400px; background: rgba(255, 255, 255, 0.97);">
+                <div class="navbar--submenu-tiles-container">
                     <%- @partial("site/menutiles", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example7'}) %>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div style="width:400px; background: rgba(255, 255, 255, 0.97);">
+                <div class="navbar--submenu-tiles-container">
                     <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example8'}) %>
                 </div>
             </div>

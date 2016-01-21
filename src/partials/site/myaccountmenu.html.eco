@@ -1,0 +1,117 @@
+<nav class="accountmenu">
+    <ul class="accountmenu-nav profilemenu">
+        <li class="profilemenu-item profilemenu-item--home">
+            <a href="" class="profilemenu-link">
+                <span class="icon-block">
+                    <span class="icon-block--i">
+                        <span class="plate plate-alt plate-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--home"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--home"></use></svg>
+                        </span>
+                    </span>
+                    <span class="icon-block--text">
+                        <strong class="accountmenu-username">Pavel Radzkov</strong>
+                        <span class="accountmenu-email">pavel.radzkov@idt.net</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">My Recipients</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Transactions</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Edit Profile</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Payment Options</a></li>
+    </ul>
+    <div class="accountmenu-services">
+        <ul class="menutiles <%=@menutilesclass or ''%>">
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-calling" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Calling</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Money Transfer</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">eGift</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Domestic Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Call Me</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--comingsoon">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International eGifts</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--comingsoon">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Bill Pay</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--comingsoon">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--visa-virtual" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Visa Virtual</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

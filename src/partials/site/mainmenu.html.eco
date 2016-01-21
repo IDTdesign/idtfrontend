@@ -7,7 +7,7 @@
             </span>
             <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="navbar--submenu dropdown-menu navbar--submenu-tiles-container" role="menu" aria-labelledby="dropdownServices">
+        <div class="navbar--submenu dropdown-menu navbar--submenu-default-container" role="menu" aria-labelledby="dropdownServices">
             <%- @partial("site/menutiles", {menutilesid: 'servicesMenu'}) %>
         </div>
     </li>
@@ -26,21 +26,8 @@
     <li class="navbar--item <%- @isActive('/templates/my-account.html') %> dropdown">
         <a href="<%= @getUrl('/templates/my-account.html') %>" class="navbar--link pullin-space">My Account</a><!--
         --><%- @partial("site/dropdown-button") %>
-        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownAccount">
-            <li class="dropdown-header">Welcome, Username!</li>
-            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/personal-profile.html') %>">
-                <a href="<%= @getUrl('/templates/my-account/personal-profile.html') %>" class="navbar--submenulink">Personal Profile</a>
-            </li>
-            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/payment-option.html') %>">
-                <a href="<%= @getUrl('/templates/my-account/payment-option.html') %>" class="navbar--submenulink">Payment Options</a>
-            </li>
-            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/friends-forever.html') %>">
-                <a href="<%= @getUrl('/templates/my-account/friends-forever.html') %>" class="navbar--submenulink">Friends Forever</a>
-            </li>
-            <li class="navbar--submeitem divider"></li>
-            <li class="navbar--submenuitem <%- @isActive('/templates/my-account/logout.html') %>">
-                <a href="<%= @getUrl('/templates/my-account/logout.html') %>" class="navbar--submenulink">Logout</a>
-            </li>
-        </ul>
+        <div class="navbar--submenu dropdown-menu navbar--submenu-default-container" role="menu" aria-labelledby="dropdownAccount">
+            <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-tiles', menutilesid: 'myacc'}) %>
+        </div>
     </li>
 </ul>
