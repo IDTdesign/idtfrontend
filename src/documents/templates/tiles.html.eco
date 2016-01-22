@@ -15,7 +15,7 @@ title: "Tiles test"
             </div>
             <div class="col-sm-6">
                 <div class="navbar--submenu-default-container">
-                    <%- @partial("site/menutiles_es", {menutilesid: 'example2'}) %>
+                    <%- @partial("site/menutiles-us-spa", {menutilesid: 'example2'}) %>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ title: "Tiles test"
             </div>
             <div class="col-sm-6">
                 <div class="navbar--submenu-default-container">
-                    <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-simple', menutilesid: 'example4'}) %>
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-simple', menutilesid: 'example4'}) %>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@ title: "Tiles test"
             </div>
             <div class="col-sm-6">
                 <div class="navbar--submenu-default-container">
-                    <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-tiles', menutilesid: 'example6'}) %>
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-tiles', menutilesid: 'example6'}) %>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ title: "Tiles test"
             </div>
             <div class="col-sm-6">
                 <div class="navbar--submenu-tiles-container">
-                    <%- @partial("site/menutiles_es", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example8'}) %>
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example8'}) %>
                 </div>
             </div>
         </div>
