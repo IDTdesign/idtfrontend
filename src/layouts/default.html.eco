@@ -61,6 +61,11 @@
         <%- @partial('site/mobilenav-toppanel') %>
         <%- @partial('site/menupopup') %>
     </div>
+    </div>
+    <div id="mobileAccount" class="modal mobilenav-container" tabindex="-1" role="dialog" aria-labelledby=".navbar-toggle">
+        <%- @partial('site/mobilenav-toppanel') %>
+        <%- @partial('site/myaccountmenu', {menutilesclass: 'menutiles-simple', menutilesid: 'accountmenu'}) %>
+    </div>
     <div class="fixed-panel-container">
         <%- @partial('site/mobilenav-bottompanel') %>
     </div>

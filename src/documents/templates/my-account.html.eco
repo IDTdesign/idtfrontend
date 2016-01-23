@@ -2,6 +2,7 @@
 layout: "default"
 title: "idtfrontend"
 scripts: ['/scripts/jqgrid_init.js']
+islogged: true
 ---
 
 <div class="container">
@@ -173,7 +174,7 @@ scripts: ['/scripts/jqgrid_init.js']
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon-txt">                            
+                                <span class="icon-txt">
                                     <svg class="i i--speed-dial"><use xlink:href="#i--speed-dial"></use></svg>
                                     <span class="icon-txt--text">Speed Dial</span>
                                 </span>
@@ -181,15 +182,15 @@ scripts: ['/scripts/jqgrid_init.js']
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon-txt">                        
+                                <span class="icon-txt">
                                     <svg class="i i--move-service"><use xlink:href="#i--move-service"></use></svg>
                                     <span class="icon-txt--text">Move Service</span>
-                                </span>    
+                                </span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon-txt">                                
+                                <span class="icon-txt">
                                     <svg class="i i--security-code"><use xlink:href="#i--security-code"></use></svg>
                                     <span class="icon-txt--text">Security Code</span>
                                 </span>
@@ -205,7 +206,7 @@ scripts: ['/scripts/jqgrid_init.js']
                         </li>
                         <li>
                             <a href="#">
-                                <span class="icon-txt">                           
+                                <span class="icon-txt">
                                     <svg class="i i--add-numbers"><use xlink:href="#i--add-numbers"></use></svg>
                                     <span class="icon-txt--text">Add Numbers</span>
                                 </span>

@@ -1,5 +1,28 @@
 <footer class="mobilenav-panel mobilenav-bottompanel navbar">
     <ul class="mobilenav-layout mobilenav-layout-bottom nav navbarnav">
+        <% if (@document.islogged == true) : %>
+        <li class="mobilenav-layout--left navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">
+                <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
+                <br>
+                Menu
+            </button>
+        </li>
+        <li class="mobilenav-layout--mid navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-toggle="modal" data-recalc="false" data-target="#mobileAccount" data-canvas=".page-canvas">
+                <img src="<%- @getUrl('/img/grid.svg') %>" alt="">
+                <br>
+                My account
+            </button>
+        </li>
+        <li class="mobilenav-layout--right navbar--item">
+            <a href="" class="mobilenav-button mobilenav-button-bottom text-center">
+                <img src="<%- @getUrl('/img/exit.svg') %>" alt="">
+                <br>
+                Sign out
+            </a>
+        </li>
+        <% else : %>
         <li class="mobilenav-layout--left navbar--item">
             <button class="mobilenav-button mobilenav-button-bottom navbar--link dropdown-toggle" type="button" data-toggle="dropdown">
                 <span class="flag flag-us"></span>
@@ -21,5 +44,6 @@
                 Log in
             </a>
         </li>
+        <% end %>
     </ul>
 </footer>
