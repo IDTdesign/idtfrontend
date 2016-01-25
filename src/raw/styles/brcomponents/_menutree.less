@@ -18,6 +18,14 @@
     &-item {
         padding: 0;
         position: relative;
+
+        &.active {
+            .@{menutree}-link {
+                color: #FFF;
+                background-color: #870000;
+                border-color: #870000;
+            }
+        }
     }
 
 
@@ -59,6 +67,13 @@
     .menutree-settings();
 }
 
+.@{menutree}-compact {
+    .@{menutree}-text {
+        line-height: 29px;
+    }
+
+    .menutree-settings();
+}
 
 
 .btn-menucollapse {

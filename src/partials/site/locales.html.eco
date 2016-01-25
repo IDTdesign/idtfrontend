@@ -1,0 +1,21 @@
+<div class="locales locales-popup">
+    <nav class="locales-nav">
+        <p class="locales-title">Region:</p>
+        <ul class="menutree menutree-compact">
+            <li class="menutree-item active"><a href="" class="menutree-link menutree-text"><span class="flag flag-us"></span> US</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-gb"></span> UK</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-es"></span> ES</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-de"></span> DE</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-hk"></span> HK</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-sg"></span> SG</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-au"></span> AU</a></li>
+        </ul>
+    </nav>
+    <nav class="locales-nav">
+        <p class="locales-title">Language:</p>
+        <ul class="menutree">
+            <li class="menutree-item active"><a href="" class="menutree-link menutree-text">English</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text">Espanol</a></li>
+        </ul>
+    </nav>
+</div>

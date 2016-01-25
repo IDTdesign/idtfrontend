@@ -1,0 +1,119 @@
+---
+layout: "default"
+title: "Navigation popups"
+---
+
+
+<div class="container">
+    <div class="island island-default">
+        <h1 class="island-title">Desktop and mobile dropdown default version</h1>
+        <p>Has only class .menutiles</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles", {menutilesid: 'example1'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles-us-spa", {menutilesid: 'example2'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="island island-default">
+        <h1 class="island-title">Desktop and mobile dropdown simple version</h1>
+        <p>Has additional class .menutiles-simple</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles", {menutilesclass:'menutiles-simple', menutilesid: 'example3'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-simple', menutilesid: 'example4'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="island island-default">
+        <h1 class="island-title">Mobile versions</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles", {menutilesclass:'menutiles-tiles', menutilesid: 'example5'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-tiles', menutilesid: 'example6'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="island island-default">
+        <h1 class="island-title">Desktop dropdown wide versions</h1>
+        <p>Has additional class .menutiles-large</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-tiles-container">
+                    <%- @partial("site/menutiles", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example7'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-tiles-container">
+                    <%- @partial("site/menutiles-us-spa", {menutilesclass:'menutiles-tiles menutiles-large', menutilesid: 'example8'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Pop-up example</h1>
+    <div style="max-width: 400px">
+        <%- @partial('site/mobilenav-toppanel') %>
+        <%- @partial('site/menupopup') %>
+    </div>
+</div>
+
+<div class="container">
+    <div class="island island-default">
+        <h1 class="island-title">Desktop and mobile dropdown default version</h1>
+        <p>Has only class .menutiles</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesid: 'example1'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-simple', menutilesid: 'example2'}) %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="navbar--submenu-default-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-tiles', menutilesid: 'example1'}) %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="navbar--submenu-tiles-container">
+                    <%- @partial("site/myaccountmenu", {menutilesclass: 'menutiles-tiles menutiles-large', menutilesid: 'example2'}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="island island-default">
+        <h1 class="island-title">Navigation languages and regions</h1>
+        <div style="width: 320px">
+            <%- @partial("site/locales") %>
+        </div>
+    </div>
+</div>
