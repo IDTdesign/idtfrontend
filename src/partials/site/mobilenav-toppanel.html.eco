@@ -4,7 +4,7 @@
             <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
         </li>
         <li class="mobilenav-layout--mid navbar--item">
-            <button type="button" class="mobilenav-button mobilenav-button-top" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">
+            <button type="button" class="mobilenav-button mobilenav-button-top" data-toggle="modal" data-target="#mobileNav" data-menupage="#commonNav">
                 <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
                 <br>
                 Menu

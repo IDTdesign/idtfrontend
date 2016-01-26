@@ -57,17 +57,17 @@
         <%- @partial('site/allpagefooter') %>
 
     </div>
-    <div id="mobileNav" class="modal fade mobilenav-container" tabindex="-1" role="dialog" aria-labelledby=".navbar-toggle">
+    <div id="mobileNav" class="modal mobilenav-container" tabindex="-1" role="dialog">
         <%- @partial('site/mobilenav-toppanel') %>
-        <%- @partial('site/menupopup') %>
-    </div>
-    <div id="mobileAccount" class="modal fade mobilenav-container" tabindex="-1" role="dialog" aria-labelledby=".navbar-toggle">
-        <%- @partial('site/mobilenav-toppanel') %>
-        <%- @partial('site/myaccountmenu', {menutilesclass: 'menutiles-simple', menutilesid: 'accountmenu'}) %>
-    </div>
-    <div id="mobileLocales" class="modal fade mobilenav-container" tabindex="-1" role="dialog" aria-labelledby=".navbar-toggle">
-        <%- @partial('site/mobilenav-toppanel') %>
-        <%- @partial('site/locales') %>
+        <div class="mobilenav-page" id="commonNav">
+            <%- @partial('site/menupopup') %>
+        </div>
+        <div class="mobilenav-page" id="mobileAccount">
+            <%- @partial('site/myaccountmenu', {menutilesclass: 'menutiles-simple', menutilesid: 'accountmenu'}) %>
+        </div>
+        <div class="mobilenav-page" id="mobileLocales">
+            <%- @partial('site/locales') %>
+        </div>
     </div>
     <div class="fixed-panel-container">
         <%- @partial('site/mobilenav-bottompanel') %>
