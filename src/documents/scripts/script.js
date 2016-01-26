@@ -192,14 +192,20 @@
         var menupage = $(this).data('menupage');
         $(target).show();
         $('body').addClass('modal-open');
+        $('[data-menupage="'+menupage+'"]').addClass('active');
 
         if( $(menupage).is(':visible') ) {
+            //close menu
             $(menupage).hide();
             $(target).hide();
             $('body').removeClass('modal-open');
+            $('[data-menupage]').removeClass('active');
         } else {
+            //switch menu to another page
             $('.mobilenav-page').hide();
             $(menupage).show();
+            $('[data-menupage]').removeClass('active');
+            $('[data-menupage="'+menupage+'"]').addClass('active');
         }
     });
 
