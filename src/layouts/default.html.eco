@@ -59,13 +59,13 @@
     </div>
     <div id="mobileNav" class="modal mobilenav-container" tabindex="-1" role="dialog">
         <%- @partial('site/mobilenav-toppanel') %>
-        <div class="mobilenav-page" id="commonNav">
+        <div class="mobilenav-page" id="commonNav" style="display: none;">
             <%- @partial('site/menupopup') %>
         </div>
-        <div class="mobilenav-page" id="mobileAccount">
+        <div class="mobilenav-page" id="mobileAccount" style="display: none;">
             <%- @partial('site/myaccountmenu', {menutilesclass: 'menutiles-simple', menutilesid: 'accountmenu'}) %>
         </div>
-        <div class="mobilenav-page" id="mobileLocales">
+        <div class="mobilenav-page" id="mobileLocales" style="display: none;">
             <%- @partial('site/locales') %>
         </div>
     </div>

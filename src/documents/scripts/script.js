@@ -187,16 +187,17 @@
     }
 
     //mobile nav begin
-    $('#mobileNav').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget); // Button that triggered the modal
-        var page = button.data('menupage'); // Extract info from data-* attributes
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        var modal = $(this);
-        modal.find('.mobilenav-page').hide();
-        modal.find(''+page+'').show();
+   $('.customEvent button').click(function(){
+        $('#mobileNav').show();
+        var modal = $(this).data('menupage');        
 
-        console.info(button, page, modal);
-    });
-    //mobile nav end
+        if($(modal).is(':visible')){
+            $(modal).hide();
+            $('#mobileNav').hide();
+        } else {
+            $('.mobilenav-page').hide();
+            $(modal).show();
+        }        
+   })
 
 }(jQuery));

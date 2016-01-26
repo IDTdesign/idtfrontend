@@ -1,15 +1,15 @@
-<footer class="mobilenav-panel mobilenav-bottompanel navbar">
+<footer class="mobilenav-panel mobilenav-bottompanel navbar customEvent">
     <ul class="mobilenav-layout mobilenav-layout-bottom nav navbarnav">
         <% if (@document.islogged == true) : %>
         <li class="mobilenav-layout--left navbar--item">
-            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-toggle="modal" data-target="#mobileNav" data-menupage="#commonNav">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-target="#mobileNav" data-menupage="#commonNav">
                 <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
                 <br>
                 Menu
             </button>
         </li>
         <li class="mobilenav-layout--mid navbar--item">
-            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-toggle="modal" data-target="#mobileNav" data-menupage="#mobileAccount">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-target="#mobileNav" data-menupage="#mobileAccount">
                 <img src="<%- @getUrl('/img/grid.svg') %>" alt="">
                 <br>
                 My account
@@ -24,14 +24,14 @@
         </li>
         <% else : %>
         <li class="mobilenav-layout--left navbar--item">
-            <button class="mobilenav-button mobilenav-button-bottom" type="button" data-toggle="modal" data-target="#mobileNav"  data-menupage="#mobileLocales">
+            <button class="mobilenav-button mobilenav-button-bottom" type="button" data-target="#mobileNav"  data-menupage="#mobileLocales">
                 <span class="flag flag-us"></span>
                 <br>
                 <span class="">EN&thinsp;/&thinsp;US</span>
             </button>
         </li>
         <li class="mobilenav-layout--mid navbar--item">
-            <button class="mobilenav-button mobilenav-button-bottom" type="button" data-toggle="modal" data-target="#mobileNav"  data-menupage="#commonNav">
+            <button class="mobilenav-button mobilenav-button-bottom" type="button" data-target="#mobileNav"  data-menupage="#commonNav">
                 <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
                 <br>
                 Menu
