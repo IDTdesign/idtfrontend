@@ -1,5 +1,20 @@
-.mobilenav-container {
+@mobilenav: mobilenav;
+
+.@{mobilenav} {
     background: #FFF;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    &-page {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+         justify-content: flex-end;
+    }
 }
 
 .mobilenav-panel {

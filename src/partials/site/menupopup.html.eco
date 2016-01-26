@@ -51,11 +51,11 @@
             </li>
         </ul>
 
-        <aside class="popup-promo">
+        <!--aside class="popup-promo">
             <a href="#" class="popup-promo--link">
                 <img class="popup-promo--link-icon" src="<%= @getUrl('/img/1S-free-for-calling-2.png') %>" alt="$1 Free Trial">
                 <span class="popup-promo--text">TRY OUR INTERNATIONAL CALLING SERVICE</span>
             </a>
-        </aside>
+        </aside-->
 
     </nav>

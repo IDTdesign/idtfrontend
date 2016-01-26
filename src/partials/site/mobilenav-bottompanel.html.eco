@@ -1,4 +1,4 @@
-<footer class="mobilenav-panel mobilenav-bottompanel navbar customEvent">
+<footer class="mobilenav-panel mobilenav-bottompanel navbar">
     <ul class="mobilenav-layout mobilenav-layout-bottom nav navbarnav">
         <% if (@document.islogged == true) : %>
         <li class="mobilenav-layout--left navbar--item">

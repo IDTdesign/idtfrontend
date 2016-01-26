@@ -4,33 +4,19 @@
             <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/img/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
         </li>
         <li class="mobilenav-layout--mid navbar--item">
-            <button type="button" class="mobilenav-button mobilenav-button-top" data-toggle="modal" data-target="#mobileNav" data-menupage="#commonNav">
+            <button type="button" class="mobilenav-button mobilenav-button-top" data-target="#mobileNav" data-menupage="#commonNav">
                 <img src="<%- @getUrl('/img/menu.svg') %>" alt="">
                 <br>
                 Menu
             </button>
         </li>
         <li class="mobilenav-layout--right navbar--item">
-            <button class="mobilenav-button mobilenav-button-top text-right navbar--link dropdown-toggle" type="button" data-toggle="dropdown">
+            <button class="mobilenav-button mobilenav-button-top text-right navbar--link dropdown-toggle" type="button" data-target="#mobileNav" data-menupage="#mobileLocales">
                 <span class="flag flag-us"></span>
                 <br>
                 <span class="">EN</span>
                 <span class="caret"></span>
             </button>
-            <ul class="navbar--submenu dropdown-menu navbar--submenu-right" role="menu">
-                <li class="dropdown-header">Language:</li>
-                <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink">English</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Region:</li>
-                <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-gb"></span> UK</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-es"></span> ES</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-de"></span> DE</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-hk"></span> HK</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-sg"></span> SG</a></li>
-                <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-au"></span> AU</a></li>
-            </ul>
         </li>
     </ul>
 </header>

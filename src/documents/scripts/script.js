@@ -187,17 +187,20 @@
     }
 
     //mobile nav begin
-   $('.customEvent button').click(function(){
-        $('#mobileNav').show();
-        var modal = $(this).data('menupage');        
+   $('[data-menupage]').click(function() {
+        var target = $(this).data('target');
+        var menupage = $(this).data('menupage');
+        $(target).show();
+        $('body').addClass('modal-open');
 
-        if($(modal).is(':visible')){
-            $(modal).hide();
-            $('#mobileNav').hide();
+        if( $(menupage).is(':visible') ) {
+            $(menupage).hide();
+            $(target).hide();
+            $('body').removeClass('modal-open');
         } else {
             $('.mobilenav-page').hide();
-            $(modal).show();
-        }        
-   })
+            $(menupage).show();
+        }
+    });
 
 }(jQuery));
