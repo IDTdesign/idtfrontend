@@ -15,14 +15,19 @@
 .@{profilemenu} {
     padding: @gap 0 0 @gap;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     &-item {
-        float: left;
+        display: flex;
+        flex-direction: column;
         width: calc(~"50% - "@gap);
         margin: 0 @gap @gap 0;
     }
 
     &-link {
+        flex-grow: 1;
         display: block;
         border: @border;
         border-radius: @bdrs;

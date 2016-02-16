@@ -187,7 +187,7 @@
     }
 
     //mobile nav begin
-   $('[data-menupage]').click(function() {
+    $('[data-menupage]').click(function() {
         var target = $(this).data('target');
         var menupage = $(this).data('menupage');
         $(target).show();
