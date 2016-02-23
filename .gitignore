@@ -16,6 +16,7 @@ out/
 # IDE files
 .idea/
 .DS_Store
+desktop.ini
 
 # =====================================
 # CUSTOM MODIFICATIONS
