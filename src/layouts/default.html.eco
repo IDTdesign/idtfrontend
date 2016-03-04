@@ -24,7 +24,7 @@
 
     <script src="<%= @getUrl('/vendor/modernizr/modernizr.min.js') %>"></script>
     <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
-    <%- @partial('site/webfontsjs', { pathtofonts: @getUrl("/fonts/texgyreheros.css?v=0.1") }) %>
+    <%- @partial('site/webfontsjs', { pathtofonts: @getUrl("/fonts/texgyreheros.css?v=0.2") }) %>
 </head>
 <body data-spy="scroll" data-target=".local-nav" data-offset="80">
     <%= @partial('site/svgcontainer') %>
