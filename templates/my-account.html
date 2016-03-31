@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <!-- Rendered with Eco -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-TextLayoutMetrics" content="snap-vertical" />
+    <meta http-equiv="X-UA-CSSOMElementFloatMetrics" content="false" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Properities -->
+    <title>idtfrontend</title>
+    <meta name="description" content="When your website appears in search results in say Google, the text here
+will be shown underneath your website's title." />
+    <meta name="keywords" content="place,your,website,keywords,here" />
+
+    <!-- OpenGraph -->
+    
+
+
+    <!-- DocPad Meta -->
+    <meta name="generator" content="DocPad v6.78.4" />
+
+    <!-- DocPad Styles + Our Own -->
+    <link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/bootstrap.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/bootstrap-theme.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/vendor/animate.css/animate.min.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/vendor/jqgrid/css/ui.jqgrid.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/jqgrid/ui-jqgrid-boss.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/vendor/SelectOrDie/selectordie.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/bossrevolution.css" />
+
+    <script src="http://idtdesign.github.io/idtfrontend/vendor/modernizr/modernizr.min.js"></script>
+    <script src="http://idtdesign.github.io/idtfrontend/icons/svg-icons.js"></script>
+    <script type="text/javascript">
+    (function () {
+      "use strict";
+      // once cached, the css file is stored on the client forever unless
+      // the URL below is changed. Any change will invalidate the cache
+      var css_href = 'http://idtdesign.github.io/idtfrontend/fonts/texgyreheros.css?v=0.2';
+      // a simple event handler wrapper
+      function on(el, ev, callback) {
+        if (el.addEventListener) {
+          el.addEventListener(ev, callback, false);
+        } else if (el.attachEvent) {
+          el.attachEvent("on" + ev, callback);
+        }
+      }
+
+      // if we have the fonts in localStorage or if we've cached them using the native batrowser cache
+      if ((window.localStorage && localStorage.font_css_cache) || document.cookie.indexOf('font_css_cache') > -1){
+        // just use the cached version
+        injectFontsStylesheet();
+      } else {
+       // otherwise, don't block the loading of the page; wait until it's done.
+        on(window, "load", injectFontsStylesheet);
+      }
+
+      // quick way to determine whether a css file has been cached locally
+      function fileIsCached(href) {
+        return window.localStorage && localStorage.font_css_cache && (localStorage.font_css_cache_file === href);
+      }
+
+      // time to get the actual css file
+      function injectFontsStylesheet() {
+       // if this is an older browser
+        if (!window.localStorage || !window.XMLHttpRequest) {
+          var stylesheet = document.createElement('link');
+          stylesheet.href = css_href;
+          stylesheet.rel = 'stylesheet';
+          stylesheet.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(stylesheet);
+          // just use the native browser cache
+          // this requires a good expires header on the server
+          document.cookie = "font_css_cache";
+
+        // if this isn't an old browser
+        } else {
+           // use the cached version if we already have it
+          if (fileIsCached(css_href)) {
+            injectRawStyle(localStorage.font_css_cache);
+          // otherwise, load it with ajax
+          } else {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", css_href, true);
+            // cater for IE8 which does not support addEventListener or attachEvent on XMLHttpRequest
+            xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4) {
+                // once we have the content, quickly inject the css rules
+                injectRawStyle(xhr.responseText);
+                // and cache the text content for further use
+                // notice that this overwrites anything that might have already been previously cached
+                localStorage.font_css_cache = xhr.responseText;
+                localStorage.font_css_cache_file = css_href;
+              }
+            };
+            xhr.send();
+          }
+        }
+      }
+
+      // this is the simple utitily that injects the cached or loaded css text
+      function injectRawStyle(text) {
+        var style = document.createElement('style');
+        // cater for IE8 which doesn't support style.innerHTML
+        style.setAttribute("type", "text/css");
+        if (style.styleSheet) {
+            style.styleSheet.cssText = text;
+        } else {
+            style.innerHTML = text;
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+      }
+
+    }());
+</script>
+
+</head>
+<body data-spy="scroll" data-target=".local-nav" data-offset="80">
+    <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS + SVG_SVG_DEFS_COLORED;</script>
+
+
+    <div class="allpage page-canvas">
+        <div class="visible-xs">
+            <header class="mobilenav-panel mobilenav-toppanel navbar">
+    <ul class="mobilenav-layout mobilenav-layout-top nav navbarnav">
+        <li class="mobilenav-layout--left logo-mobile navbar--item">
+            <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+        </li>
+        <li class="mobilenav-layout--mid navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-top" data-target="#mobileNav" data-menupage="#commonNav">
+                <img src="http://idtdesign.github.io/idtfrontend/img/menu.svg" alt="">
+                <br>
+                Menu
+            </button>
+        </li>
+        <li class="mobilenav-layout--right navbar--item">
+            <button class="mobilenav-button mobilenav-button-top text-right navbar--link dropdown-toggle" type="button" data-target="#mobileNav" data-menupage="#mobileLocales">
+                <span class="flag flag-us"></span>
+                <br>
+                <span class="">EN</span>
+                <span class="caret"></span>
+            </button>
+        </li>
+    </ul>
+</header>
+
+        </div>
+        <header class="allpage--header hidden-xs">
+            <div class="allpage--headerbg"></div>
+            <div class="allpage--headerbg2"></div>
+            <div class="container">
+                <div class="logo">
+                    <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+                </div>
+
+                <nav class="navbar navbar-topline">
+                    <ul class="nav navbar-nav navbar--list navbar--list-position-right">
+    <li class="navbar--item">
+        <a class="navbar--link dropdown-toggle" href="#" data-toggle="dropdown">
+            <span class="hidden-xxs">English&emsp;/&emsp;<span class="flag flag-us"></span></span>
+            <span class="visible-xxs"><span class="flag flag-us"></span> EN</span>
+            <span class="caret"></span>
+        </a>
+        <ul class="navbar--submenu dropdown-menu" role="menu">
+            <li class="dropdown-header">Language:</li>
+            <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink">English</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink">Espanol</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Region:</li>
+            <li class="navbar--submenuitem active"><a href="#" class="navbar--submenulink"><span class="flag flag-us"></span> US</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-gb"></span> UK</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-es"></span> ES</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-de"></span> DE</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-hk"></span> HK</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-sg"></span> SG</a></li>
+            <li class="navbar--submenuitem"><a href="#" class="navbar--submenulink"><span class="flag flag-au"></span> AU</a></li>
+        </ul>
+    </li>
+    <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Login</a></li>
+    <li class="navbar--item hidden-xs"><a href="#" class="navbar--link">Register</a></li>
+    <li class="navbar--item visible-xs">
+        <a class="navbar-toggle" href="http://idtdesign.github.io/idtfrontend/templates/login.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--my-account"><use xlink:href="#i--my-account"></use></svg>
+            <span class="sr-only">Login or Register</span>
+        </a>
+    </li>
+    <li class="navbar--item visible-xs">
+        <button type="button" class="navbar-toggle" data-toggle="modal" data-recalc="false" data-target="#mobileNav" data-canvas=".page-canvas">Menu</button>
+    </li>
+</ul>
+
+                </nav>
+
+                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
+                    <ul class="nav nav-pills navbar--list">
+    <li class="navbar--item dropdown ">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/services.html" class="navbar--link pullin-space">Services</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownServices" data-toggle="dropdown">
+            <span class="btn btn-dropdown btn-xs">
+                <span class="caret"></span>
+            </span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="navbar--submenu dropdown-menu navbar--submenu-default-container" role="menu" aria-labelledby="dropdownServices">
+            <ul class="menutiles " id="servicesMenu">
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--inter-calling" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">LLAMADAS INTERNACIONALES</span>
+        </a>
+        <button class="btn-tilecollapse" type="button" data-target---="#servicesMenucollapseIntCalling" data-toggle---="collapse" data-parent="#servicesMenu" aria-expanded="true" aria-controls="servicesMenucollapseIntCalling">
+            <!--span class="caret"></span-->
+        </button>
+        <div id="servicesMenucollapseIntCalling" class="menutiles-collapse collapse in">
+            <div class="menutiles-collapse-inner">
+                <ul class="menutiles-submenu">
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Añadir Fondos</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Canjear Tarjeta</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Plan Ilimitado</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">INTERNACIONAL ENVÍO DE DINERO</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">RECARGA MÓVIL INTERNACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--gift" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">eGift</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">RECARGA MÓVIL NACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">Call Me</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">E-GIFT INTERNACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">PAGO DE FACTURAS</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--visa-virtual" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">CUENTA VIRTUAL VISA</span>
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/rates.html" class="navbar--link">Rates</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/download-app.html" class="navbar--link">Mobile App</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/brclub.html" class="navbar--link">BR Club</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/support.html" class="navbar--link">Support</a>
+    </li>
+    <li class="navbar--item active dropdown">
+        <a href="http://idtdesign.github.io/idtfrontend/templates/my-account.html" class="navbar--link pullin-space">My Account</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
+    <span class="btn btn-dropdown btn-xs">
+        <span class="caret"></span>
+    </span>
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+
+        <div class="navbar--submenu dropdown-menu navbar--submenu-default-container" role="menu" aria-labelledby="dropdownAccount">
+            <nav class="accountmenu">
+    <ul class="accountmenu-nav profilemenu">
+        <li class="profilemenu-item profilemenu-item--home">
+            <a href="" class="profilemenu-link">
+                <span class="icon-block">
+                    <span class="icon-block--i">
+                        <span class="plate plate-alt plate-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--home"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--home"></use></svg>
+                        </span>
+                    </span>
+                    <span class="icon-block--text">
+                        <strong class="accountmenu-username">Pavel Radzkov</strong>
+                        <span class="accountmenu-email">pavel.radzkov@idt.net</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">My Recipients</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Transactions</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Edit Profile</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Payment Options</a></li>
+    </ul>
+    <div class="accountmenu-services">
+        <ul class="menutiles menutiles-tiles">
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-calling" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Calling</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Money Transfer</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">eGift</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Domestic Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Call Me</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--new">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International eGifts</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--new">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Bill Pay</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--comingsoon">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--visa-virtual" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Visa Virtual</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        </div>
+    </li>
+</ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="allpage--body">
+            <div class="container">
+<style>
+    .transactions-grid {
+        margin-bottom: 10px;
+    }
+    .i--recent-transactions,
+    .i--balance {
+        fill: #fff;
+        height: 45px;
+    }
+    .transaction-type {
+        color: #AAA;
+        font-size: 14px;
+    }
+</style>
+
+    <div class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
+        <div class="dyad--first dyad--stretch">
+            <div class="island island-condenced island-square-bottom">
+                <h1>My account</h1>
+                <h4>Hi Gabriella!</h4>
+                <div class="dyad dyad-auto dyad-gap-small userprofile">
+                    <div class="dyad--first userprofile--image">
+                        <img class="media-object" src="http://dummyimage.com/150x150/AAA/fff" alt="Gabriela Estevez">
+                    </div>
+                    <dl class="dyad--second userprofile--data">
+                        <dt class="data--label">Name</dt>
+                        <dd class="data--value">
+                            Gabriela Estevez
+                        </dd>
+                        <dt class="data--label">Email</dt>
+                        <dd class="data--value">
+                            gabriela.estevez@hotmail.com
+                        </dd>
+                        <dt class="data--label">International Calling Access Number</dt>
+                        <dd class="data--value">
+                            (201) 204-1125
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="island island-condenced island-connected island-square-top island-alt-bright">
+                <div class="icon-block icon-block-vmiddle icon-block-xxs-vertical">
+                    <div class="icon-block--i gauge">
+                        <div class="progress_line">
+                            <input type="text" value="30" data-width="60" data-height="60" data-font="24" data-value="100" data-thickness=".2" class="dial">
+                        </div>
+                    </div>
+                    <p class="icon-block--text">Your Profile is 30% Complete</p>
+                    <p class="icon-block--text text-right">
+                        <a href="http://idtdesign.github.io/idtfrontend/my-account/update-profile.html" class="btn btn-default">Edit profile</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="dyad--second dyad--stretch">
+            <div class="island island-condenced bonus_block">
+                <table class="promo-eq">
+                    <tbody>
+                        <tr>
+                            <td class="promo-eq--item">
+                                <img src="http://idtdesign.github.io/idtfrontend/Content/img/flags/argentina.png" width="64" alt="Ag">
+                            </td>
+                            <td class="promo-eq--sep">+</td>
+                            <td class="promo-eq--item">
+                                <img src="http://idtdesign.github.io/idtfrontend/Content/img/card/card-movistar-80.png" width="64" alt="Movistar">
+                            </td>
+                            <td class="promo-eq--sep">=</td>
+                            <td class="promo-eq--item">
+                                <div class="promo-eq--result">
+                                    <span class="h2">2x</span><br><small>minutes</small>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Double Minutes for Argentina Movistar Top Ups This Month!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed ornare non diam eget elemen bibendum adipiscing <br> <a href="#" class="learn-more">Top Up Now »</a></p>
+                <p><em><small>Lorem Ipsum and dorum and also etce. <a href="#">Terms and Conditions</a></small></em></p>
+            </div>
+        </div>
+    </div>
+
+    <article class="island clearfix island-square-bottom">
+        <h1 class="island--title">Manage Your Services</h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-justified nav-tabs-sections hidden-xs" role="tablist">
+            <li class="active">
+                <a href="#inter-calling" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                            <use xlink:href="#i--inter-calling"></use>
+                        </svg>
+                        <span class="icon-txt--text">International <br> Calling</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#call-me" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                            <use xlink:href="#i--call-me"></use>
+                        </svg>
+                        <span class="icon-txt--text">Call Me <br> Services</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#inter-mobile-top-up" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                            <use xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                        <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#domestic-mobile-top-up" role="tab" data-toggle="tab">
+                    <span class="icon-txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                            <use xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                        <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </article>
+
+    <!-- Tab panes -->
+    <div class="tab-content tab-content-xs-accordeon island-connected island-transparent">
+
+        <article class="tab-pane fade in active" id="inter-calling">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#inter-calling-content" class="collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                                <use xlink:href="#i--inter-calling"></use>
+                            </svg>
+                            <span class="icon-txt--text">International <br> Calling</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+
+            <div id="inter-calling-content" class="panel-collapse collapse in collapse-xs-opened">
+
+                <section class="island island-connected island-square-bottom island-square-top">
+                    <ul class="nav nav-pane">
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                    <span class="icon-txt--text">Quick Call</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--speed-dial"><use xlink:href="#i--speed-dial"></use></svg>
+                                    <span class="icon-txt--text">Speed Dial</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--move-service"><use xlink:href="#i--move-service"></use></svg>
+                                    <span class="icon-txt--text">Move Service</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--security-code"><use xlink:href="#i--security-code"></use></svg>
+                                    <span class="icon-txt--text">Security Code</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--print-virtual-card"><use xlink:href="#i--print-virtual-card"></use></svg>
+                                    <span class="icon-txt--text">Print Virtual Card</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--add-numbers"><use xlink:href="#i--add-numbers"></use></svg>
+                                    <span class="icon-txt--text">Add Numbers</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--unlim"><use xlink:href="#i--unlim"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">Unlimited Plan</strong>
+                                    <span class="sub-header">to Argentina</span></span>
+                                </div>
+                            </div>
+                            <div class="popover top popover-static popover-warning">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <p>Your plan expires on June 30</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-primary">Renew Now</a>
+                            </p>
+
+                            <p class="icon-block icon-block-default">
+                                <input type="checkbox" name="inter-calling-auto-renew" id="inter-calling-auto-renew">
+                                <span class="icon-block--text">
+                                    <label for="inter-calling-auto-renew">Auto Renewal is OFF.</label>
+                                    <a href="#" class="learn-more">Configure »</a>
+                                </span>
+                            </p>
+
+                            <h3 class="mimic">Call Anywhere in the World with BOSS Relovution</h3>
+
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--balance"><use xlink:href="#i--balance"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h2 prominent">$7.00 Balance</strong>
+                                    <a href="#" class="learn-more">Add Funds »</a>
+                                </div>
+                            </div>
+
+                            <p><a href="#" class="btn btn-bordered">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--redeem-br-card"><use xlink:href="#i--redeem-br-card"></use></svg> Redeem a BR Card
+                            </a></p>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer class="text-center-xs">
+                                <a href="#" class="btn btn-flat-bordered">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-history"><use xlink:href="#i--call-history"></use></svg>
+                                     Call History
+                                </a>
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
+                            </footer>
+                        </section>
+                        <section class="island island-condenced island-alt-bordered">
+                            <h3 class="mimic">Lorem ipsum dolor sit amet! <small><a href="#" class="learn-more">Auto Recharge »</a></small></h3>
+                        </section>
+                    </div>
+                </div>
+
+
+            </div>
+        </article><!--/inter-calling-->
+
+
+
+        <article class="tab-pane fade" id="call-me">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#call-me-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                                <use xlink:href="#i--call-me"></use>
+                            </svg>
+                            <span class="icon-txt--text">Call Me <br> Services</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="call-me-content" class="panel-collapse collapse collapse-xs-opened">
+
+                <section class="island island-connected island-square-bottom island-square-top">
+                    <ul class="nav nav-pane">
+                        <li class="active">
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--quick-call"><use xlink:href="#i--quick-call"></use></svg>
+                                    <span class="icon-txt--text">Renewal</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
+                                    <span class="icon-txt--text">Change U.S. Phone Number</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
+                                    <span class="icon-txt--text">Change Notification Number</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-txt">
+                                    <svg class="i i--share-your-number"><use xlink:href="#i--share-your-number"></use></svg>
+                                    <span class="icon-txt--text">Share Your Number</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="island island-square-top island-alt-bright">
+                    <h2 class="island--title island--title-alt h3">Renew your current Call Me plan for an additional 30 days</h2>
+                    <div class="call-me-plan">
+                        <div class="call-me-plan--phones">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt-highlight plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--change-us-number"><use xlink:href="#i--change-us-number"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h3">862 216 9846</strong>
+                                    U.S. Forwarding Number
+                                </div>
+                            </div>
+
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt-highlight plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--change-notification-number"><use xlink:href="#i--change-notification-number"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="h3">862 289 6549</strong>
+                                    Notification Number
+                                </div>
+                            </div>
+                        </div>
+                        <div class="call-me-plan--details">
+                            <div class="call-me-plan--country">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <img src="http://idtdesign.github.io/idtfrontend/Content/img/flags/mexico.png" width="45" alt="Me" />
+                                    </div>
+                                    <div class="icon-block--text">
+                                        MONTERREY / MEXICO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-me-plan--tariff">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <span class="plate plate-alt plate-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer"><use xlink:href="#i--money-transfer"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="icon-block--text">
+                                        <strong class="h2 prominent">$9.99 <small>/month</small></strong>
+                                        Plan cost
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-dates">
+                        <h3 class="h2 text-center mimic">Your Plan Expiration Date</h3>
+                        <div class="plan-dates--old">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--local-time"><use xlink:href="#i--local-time"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="">September 2, 2014</strong>
+                                    Old date
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-dates--new">
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <strong class="">October 2, 2014</strong>
+                                    New date
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-payments">
+                        <div class="plan-payments--card">
+                            <div class="plan-payments--card-number">
+                                <div class="icon-block icon-block-default">
+                                    <div class="icon-block--i">
+                                        <span class="plate plate-alt-highlight plate-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--visa-virtual"><use xlink:href="#i--visa-virtual"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="icon-block--text">
+                                        <strong class="h3">6759</strong>
+                                        Last 4 digits of card number
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The card you have on file will be used to purchase your <strong>Call Me</strong> plan.</p>
+                            <button class="update-card collapsed" data-toggle="collapse" data-target="#update-card">
+                                Update Card
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--expand">
+                                    <use xlink:href="#i--expand"></use>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="i i--collapse">
+                                    <use xlink:href="#i--collapse"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div id="update-card" class="collapse">
+                            <div class="payment-type payment-type-bg-gray">
+                                <h2 class="payment-type--title">Select a Payment Type</h2>
+                                <ul class="nav nav-tabs nav-tabs-payment nav-tabs-payment-red" role="tablist">
+                                    <li class="active"><a href="#pay-type-card" role="tab" data-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-credit-card">
+                                            <use xlink:href="#i--payment-by-credit-card"></use>
+                                        </svg>
+                                        Pay by Credit Card</a>
+                                    </li>
+                                    <li><a href="#pay-type-check" role="tab" data-toggle="tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--payment-by-check">
+                                            <use xlink:href="#i--payment-by-check"></use>
+                                        </svg>
+                                        Pay by Check</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="pay-type-card">
+                                        <div class="payment-type--card">
+                                            <table>
+                                                <tr>
+                                                    <th colspan="2">Credit Card Information</th>
+                                                    <th>Billing Information</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fake-radio fake-radio-checked">
+                                                            <span>&nbsp;</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="card card-visa">
+                                                            <img src="http://idtdesign.github.io/idtfrontend/Content/img/card/card-br_online_visa.gif" alt="Visa" />
+                                                            <strong>**** **** **** 4759</strong>
+                                                            <p>Expiration: 01/2014</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="card card-info">
+                                                            <strong>Gabriella Estevez</strong>
+                                                            <p>22 Cortland st. apt 23</p>
+                                                            <p>New York, NY 11216</p>
+                                                            <p>United States</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fake-radio">
+                                                            <span>&nbsp;</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>or <a href="#">Add a New Card</a></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div  class="tab-pane" id="pay-type-check">
+                                        <div class="payment-type--check">
+                                            <h2>Pay by Check</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-type--bottom">
+                                    <a href="#" class="btn btn-default">Update</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan-button">
+                        <a href="#" class="btn btn-primary">Renew My Plan</a>
+                    </div>
+
+                </section>
+
+            </div>
+        </article><!--/call-me-->
+
+
+
+        <article class="tab-pane fade" id="inter-mobile-top-up">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#inter-mobile-top-up-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-airtime-top-up">
+                                <use xlink:href="#i--inter-airtime-top-up"></use>
+                            </svg>
+                            <span class="icon-txt--text">International <br> Mobile Top Up</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="inter-mobile-top-up-content" class="panel-collapse collapse collapse-xs-opened">
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <h3 class="mimic">Send Airtime to the Mobile Phones of Your Family and Friends Abroad</h3>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">International Recipient Phone Number</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
+                                    <button class="btn btn-primary">Send a Top Up</button>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                </section>
+
+            </div>
+        </article><!--/inter-mobile-top-up-->
+
+
+        <article class="tab-pane fade" id="domestic-mobile-top-up">
+            <header class="collapse-trigger visible-xs">
+                <h3 class="collapse-trigger--title">
+                    <a href="#domestic-mobile-top-up-content" class="collapsed collapse-trigger--link" data-toggle="collapse">
+                        <span class="icon-txt">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--domestic-airtime-top-up">
+                                <use xlink:href="#i--domestic-airtime-top-up"></use>
+                            </svg>
+                            <span class="icon-txt--text">Domestic <br> Mobile Top Up</span>
+                        </span>
+                        <span class="dropdown-toggle pull-right">
+                            <span class="btn btn-toggler">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                            </span>
+                            <span class="sr-only">Toggle Panel</span>
+                        </span>
+                    </a>
+                </h3>
+            </header>
+            <div id="domestic-mobile-top-up-content" class="panel-collapse collapse collapse-xs-opened">
+
+                <div class="mediablock mediablock-equalized mediablock-2-to-3 mediablock-tiny-spacing mediablock-sm-vertical">
+                    <div class="mediablock--primary">
+
+                        <section class="island island-square-top island-condenced island-alt-bright">
+                            <h3 class="mimic">Top Up Your Domestic Mobile Phone Airtime</h3>
+                            <div class="icon-block icon-block-default">
+                                <div class="icon-block--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--number-to-top-up"><use xlink:href="#i--number-to-top-up"></use></svg>
+                                    </span>
+                                </div>
+                                <div class="icon-block--text">
+                                    <div class="form-group">
+                                        <label for="" class="h3 prominent">Mobile Phone Number to Top Up</label>
+                                        <input type="text" class="form-control form-control-default" placeholder="Enter Phone Number">
+                                    </div>
+                                    <button class="btn btn-primary">Top Up Now</button>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="mediablock--secondary">
+                        <section class="island island-square-top island-condenced">
+                            <h2 class="island--title icon-txt">
+                                <span class="icon-txt--i">
+                                    <span class="plate plate-alt plate-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--recent-transactions"><use xlink:href="#i--recent-transactions"></use></svg>
+                                    </span>
+                                </span>
+                                <span class="icon-txt--text">Resent Transactions</span>
+                            </h2>
+                            <div class="transactions-grid">
+                                <table id="testGrid"></table>
+                            </div>
+                            <footer class="text-right">
+                                <a href="#" class="btn btn-transp learn-more">See All Transactions &raquo;</a>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="island island-condenced island-alt-bordered">
+                    <h3 class="mimic">Make Sure Your Balance Never Runs Out With Auto Recharge!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur hic, officiis doloremque cupiditate quod esse sed sequi ab ullam. <a href="#" class="learn-more">Configure Auto Recharge »</a></p>
+                </section>
+
+            </div>
+        </article><!--/domestic-mobile-top-up-->
+
+    </div><!--/tab-content-->
+
+
+
+
+
+
+
+  </div><!--/container-->
+        </div>
+
+                <footer class="allpage--footer">
+            <nav class="footer-main">
+                <div class="container">
+                    <div class="mediablock mediablock-sm-vertical mediablock-2-to-3">
+                        <div class="mediablock--primary">
+                            <div class="col-sm-8 col-md-12 no-padding">
+                                <div data-page="global" data-zonename="contactinfo_large" data-size="large" data-lang="en" class="visible-lg visible-md visible-sm" data-loaded="1">
+                                    <!-- content for tablet and desktop -->
+                                    <div class="hidden-xs">
+                                        <div class="footer-contacts ">
+                                            <div class="footer-contacts--item">
+                                                <div class="icon-block icon-block-default">
+                                                    <p class="icon-block--i">
+                                                        <svg class="i i--email-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--email"></use></svg>
+                                                    </p>
+                                                    <p class="icon-block--text">
+                                                        Send email to
+                                                        <a class="footer-contacts--email" href="mailto:support@bossrevolution.com?subject=Support">support@bossrevolution.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="footer-contacts--item">
+                                                <div class="icon-block icon-block-default">
+                                                    <p class="icon-block--i">
+                                                        <svg class="i i--phone-number-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--phone-number"></use></svg>
+                                                    </p>
+                                                    <p class="icon-block--text">
+                                                        Call Customer Assistance
+                                                        <span class="footer-contacts--tel">1-800-308-9931</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /content for tablet and desktop -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-12 no-padding chat-btn-sm hidden-xs">
+                                <div class="footer-contacts">
+                                    <div class="footer-contacts--item chat-now chat-btn-sm--container">
+                                        <div class="icon-block icon-block-default">
+                                            <p class="icon-block--i">
+                                                <svg class="i i--chat-now-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--chat-now"></use></svg>
+                                            </p>
+                                            <div class="icon-block--text">
+                                                <div id="LP_DIV_1412096663397" style="width:117px;height:39px;"><div id="LPMcontainer-1448285219993-0" class="LPMcontainer LPMoverlay" style="margin: 0px; padding: 0px; border: 0px solid rgb(102, 102, 102); outline-style: none; outline-width: 0px; font-style: normal; font-weight: normal; font-variant: normal; list-style: none outside none; letter-spacing: normal; line-height: normal; text-decoration: none; vertical-align: baseline; white-space: normal; word-spacing: normal; width: 117px; height: 39px; cursor: pointer; display: block; position: relative; top: 0px; left: 0px; background-color: transparent; background-position: 0% 100%; background-repeat: repeat-x;"><img src="https://www.bossrevolution.com/Content/img/chatnow-online.png" alt="Chat Now" id="LPMimage-1448285219995-1" class="LPMimage" style="margin: 0px; padding: 0px; border-style: none; border-width: 0px; outline-style: none; outline-width: 0px; font-style: normal; font-weight: normal; font-variant: normal; list-style: none outside none; letter-spacing: normal; line-height: normal; text-decoration: none; vertical-align: baseline; white-space: normal; word-spacing: normal; position: absolute; z-index: 600; left: 0px; top: 0px;"></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mediablock--secondary clr">
+                            <div class="columns-block footer-collapse">
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">Services</h4>
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a href="#footer-nav-products" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                                Services
+                                                <span class="dropdown-toggle pull-right">
+                                                    <span class="btn btn-toggler">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--plus"></use></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--minus"></use></svg>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Panel</span>
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="footer-nav-products" class="panel-collapse collapse">
+                                        <ul class="nav nav-stacked">
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/international-calling">International Calling</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/call-me">Call Me</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/international-mobile-topup">International Mobile Top Up</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/domestic-mobile-topup">Domestic Mobile Top&nbsp;Up</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/money-transfer">Money Transfer</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/bill-pay">Bill Pay</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/egift">eGift</a> </li>
+                                            <li> <a href="http://idtdesign.github.io/idtfrontend/services/international-egifts">International eGifts</a> </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">About</h4>
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a href="#footer-nav-about" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                                About
+                                                <span class="dropdown-toggle pull-right">
+                                                    <span class="btn btn-toggler">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--plus"></use></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--minus"></use></svg>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Panel</span>
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="footer-nav-about" class="panel-collapse collapse">
+                                        <ul class="nav nav-stacked">
+                                            <li><a href="http://idtdesign.github.io/idtfrontend/about">About BOSS Revolution</a></li>
+                                            <li class="hidden-xs"><a href="http://idtdesign.github.io/idtfrontend/faq">FAQs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a class="collapse-trigger--link" href="http://idtdesign.github.io/idtfrontend/friends-forever">Friends Forever</a>
+                                        </h4>
+                                    </div>
+                                    <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                        <h4 class="collapse-trigger--title">
+                                            <a class="collapse-trigger--link" href="http://sellbossrev.com/" target="_blank">Become a Reseller</a>
+                                        </h4>
+                                    </div>
+                                    <div class="footer-contacts-xs visible-xs" style="margin:0">
+                                        <div data-page="global" data-zonename="contactinfo_small" data-size="small" data-lang="en" class="visible-xs" data-loaded="1">
+                                            <!-- content for phone -->
+                                            <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                                            	<h4 class="collapse-trigger--title">
+                                            		<a data-toggle="collapse" class="collapse-trigger--link collapsed" href="#footer-needhelp">
+                                            			Need Help?
+                                            			<span class="dropdown-toggle pull-right">
+                                            				<span class="btn btn-toggler">
+                                            					<svg class="btn-toggler--when-closed i i--plus" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--plus"></use></svg>
+                                            					<svg class="btn-toggler--when-opened i i--minus" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--minus"></use></svg>
+                                            				</span>
+                                            				<span class="sr-only">Toggle Panel</span>
+                                            			</span>
+                                            		</a>
+                                            	</h4>
+                                            </div>
+                                            <div class="panel-collapse collapse" id="footer-needhelp" style="height: 50px; background: #720000;">
+                                            	<p>
+                                            		<a class="btn btn-support icon-txt icon-txt-default" href="/faq">
+                                            			<span class="icon-txt--i">
+                                            				<svg class="i i--faqs-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--faqs"></use></svg>
+                                            			</span>
+                                            			<span class="icon-txt--text btn-support--key text-transform--normal">
+                                            				FAQs
+                                            			</span>
+                                            		</a>
+                                            	</p>
+                                            	<p>
+                                            		<a class="btn btn-support icon-txt icon-txt-default" href="tel:18003089931">
+                                            			<span class="icon-txt--i">
+                                            				<svg class="i i--phone-number-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--phone-number"></use></svg>
+                                            			</span>
+                                            			<span class="icon-txt--text btn-support--key">
+                                            				CALL 1-800-308-9931
+                                            			</span>
+                                            		</a>
+                                            	</p>
+                                            	<p>
+                                            		<a class="btn btn-support icon-txt icon-txt-default" href="mailto:support@bossrevolution.com?subject=Support">
+                                            			<span class="icon-txt--i">
+                                            				<svg class="i i--email-large" xmlns="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--email"></use></svg>
+                                            			</span>
+                                            			<span class="icon-txt--text btn-support--key">
+                                            				SEND AN EMAIL
+                                            			</span>
+                                            		</a>
+                                            	</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <nav class="footer-nav">
+                                    <h4 class="footer-nav--title hidden-xs">Connect With Us</h4>
+                                    <div class="footer-social">
+                                        <ul class="nav nav-stacked">
+                                                <li>
+                                                    <a href="https://facebook.com/bossrevolution" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--social-fb"></use></svg>
+                                                        <span class="hidden-xs">Facebook</span>
+                                                    </a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://www.youtube.com/user/BossRevolutionUS" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-yt"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--social-yt"></use></svg>
+                                                        <span class="hidden-xs">YouTube</span>
+                                                    </a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://twitter.com/bossrevolution" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="i i--social-tw"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--social-tw"></use></svg>
+                                                        <span class="hidden-xs">Twitter</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="footer-legal">
+
+                <div class="container">
+                    <div class="footer-collapse">
+                        <div class="collapse-trigger collapse-trigger-inverse visible-xs">
+                            <h4 class="collapse-trigger--title">
+                                <a href="#footer-legal-content" class="collapse-trigger--link collapsed" data-toggle="collapse">
+                                    Legal information
+                                    <span class="dropdown-toggle pull-right">
+                                        <span class="btn btn-toggler">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-closed i i--plus"><use xlink:href="#i--plus"></use></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="btn-toggler--when-opened i i--minus"><use xlink:href="#i--minus"></use></svg>
+                                        </span>
+                                        <span class="sr-only">Toggle Panel</span>
+                                    </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="footer-legal-content" class="panel-collapse collapse">
+
+                            <nav class="navbar legal-nav">
+                                <p class="navbar-text navbar-left">© BOSS Revolution 2014</p>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="http://idtdesign.github.io/idtfrontend/terms-and-conditions.html">Terms and Conditions</a></li>
+                                    <li><a href="http://idtdesign.github.io/idtfrontend/privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <div id="mobileNav" class="modal mobilenav" tabindex="-1" role="dialog">
+        <div class="mobilenav-container">
+            <header class="mobilenav-panel mobilenav-toppanel navbar">
+    <ul class="mobilenav-layout mobilenav-layout-top nav navbarnav">
+        <li class="mobilenav-layout--left logo-mobile navbar--item">
+            <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+        </li>
+        <li class="mobilenav-layout--mid navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-top" data-target="#mobileNav" data-menupage="#commonNav">
+                <img src="http://idtdesign.github.io/idtfrontend/img/menu.svg" alt="">
+                <br>
+                Menu
+            </button>
+        </li>
+        <li class="mobilenav-layout--right navbar--item">
+            <button class="mobilenav-button mobilenav-button-top text-right navbar--link dropdown-toggle" type="button" data-target="#mobileNav" data-menupage="#mobileLocales">
+                <span class="flag flag-us"></span>
+                <br>
+                <span class="">EN</span>
+                <span class="caret"></span>
+            </button>
+        </li>
+    </ul>
+</header>
+
+            <div class="mobilenav-page" id="commonNav" style="display: none;">
+                   <nav class="nav-container">
+        <header class="navbar navbar-userarea">
+            <div class="navbar-text">Hello</div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Login »</a></li>
+                <li><a href="">Register »</a></li>
+            </ul>
+        </header>
+        <ul class="menutree">
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">Services</span>
+                </a>
+                <button class="btn-menucollapse" type="button" data-toggle="collapse" data-target="#collapseServices" aria-expanded="true" aria-controls="collapseServices">
+                    <span class="btn-menucollapse-inner"><span class="caret"></span></span>
+                </button>
+                <div id="collapseServices" class="menutree-collapse collapse in">
+                    <ul class="menutiles menutiles-simple" id="mobile">
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--inter-calling" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">LLAMADAS INTERNACIONALES</span>
+        </a>
+        <button class="btn-tilecollapse" type="button" data-target---="#mobilecollapseIntCalling" data-toggle---="collapse" data-parent="#mobile" aria-expanded="true" aria-controls="mobilecollapseIntCalling">
+            <!--span class="caret"></span-->
+        </button>
+        <div id="mobilecollapseIntCalling" class="menutiles-collapse collapse in">
+            <div class="menutiles-collapse-inner">
+                <ul class="menutiles-submenu">
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Añadir Fondos</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Canjear Tarjeta</a></li>
+                    <li class="menutiles-subitem"><a href="" class="menutiles-sublink menutiles-sublink-after">Plan Ilimitado</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">INTERNACIONAL ENVÍO DE DINERO</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">RECARGA MÓVIL INTERNACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--gift" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">eGift</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">RECARGA MÓVIL NACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">Call Me</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">E-GIFT INTERNACIONAL</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">PAGO DE FACTURAS</span>
+        </a>
+    </li>
+    <li class="menutiles-item panel">
+        <a href="" class="menutiles-link">
+            <span class="menutiles-icon">
+                <svg class="i i--visa-virtual" xmlns="http://www.w3.org/2000/svg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                </svg>
+            </span>
+            <span class="menutiles-text">CUENTA VIRTUAL VISA</span>
+        </a>
+    </li>
+</ul>
+
+                </div>
+            </li>
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">Rates</span>
+                </a>
+            </li>
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">Mobile App</span>
+                </a>
+                <!--
+                <button class="btn-menucollapse collapsed" type="button" data-toggle="collapse" data-target="#collapseApp" aria-expanded="false" aria-controls="collapseApp">
+                    <span class="btn-menucollapse-inner"><span class="caret"></span></span>
+                </button>
+                <div id="collapseApp" class="menutree-collapse collapse">
+                    <div class="menutree-collapse-body text-center">
+                        <a href="https://itunes.apple.com/us/app/boss-revolution-simple-easy/id586745548?ls=1&amp;mt=8" target="_blank" class="btn btn-appstore"></a>
+                    </div>
+                </div>
+            -->
+            </li>
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">Support</span>
+                </a>
+            </li>
+            </li>
+            <li class="menutree-item">
+                <a href="" class="menutree-link">
+                    <span class="menutree-text">BR Club</span>
+                </a>
+            </li>
+        </ul>
+
+        <!--aside class="popup-promo">
+            <a href="#" class="popup-promo--link">
+                <img class="popup-promo--link-icon" src="http://idtdesign.github.io/idtfrontend/img/1S-free-for-calling-2.png" alt="$1 Free Trial">
+                <span class="popup-promo--text">TRY OUR INTERNATIONAL CALLING SERVICE</span>
+            </a>
+        </aside-->
+
+    </nav>
+
+            </div>
+            <div class="mobilenav-page" id="mobileAccount" style="display: none;">
+                <nav class="accountmenu">
+    <ul class="accountmenu-nav profilemenu">
+        <li class="profilemenu-item profilemenu-item--home">
+            <a href="" class="profilemenu-link">
+                <span class="icon-block">
+                    <span class="icon-block--i">
+                        <span class="plate plate-alt plate-small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="i i--home"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--home"></use></svg>
+                        </span>
+                    </span>
+                    <span class="icon-block--text">
+                        <strong class="accountmenu-username">Pavel Radzkov</strong>
+                        <span class="accountmenu-email">pavel.radzkov@idt.net</span>
+                    </span>
+                </span>
+            </a>
+        </li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">My Recipients</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Transactions</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Edit Profile</a></li>
+        <li class="profilemenu-item"><a href="" class="profilemenu-link profilemenu-link--caps">Payment Options</a></li>
+    </ul>
+    <div class="accountmenu-services">
+        <ul class="menutiles menutiles-simple">
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-calling" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-calling"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Calling</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--money-transfer"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Money Transfer</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--inter-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">eGift</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--domestic-airtime-top-up"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Domestic Mobile Top Up</span>
+                </a>
+            </li>
+            <li class="menutiles-item">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--call-me"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Call Me</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--new">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--international-gift"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">International eGifts</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--new">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--bill-pay"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Bill Pay</span>
+                </a>
+            </li>
+            <li class="menutiles-item menutiles-item--comingsoon">
+                <a href="" class="menutiles-link">
+                    <span class="menutiles-icon">
+                        <svg class="i i--visa-virtual" xmlns="http://www.w3.org/2000/svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--visa-virtual"></use>
+                        </svg>
+                    </span>
+                    <span class="menutiles-text">Visa Virtual</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+            </div>
+            <div class="mobilenav-page" id="mobileLocales" style="display: none;">
+                <div class="locales locales-popup">
+    <nav class="locales-nav">
+        <p class="locales-title">Region:</p>
+        <ul class="menutree menutree-compact">
+            <li class="menutree-item active"><a href="" class="menutree-link menutree-text"><span class="flag flag-us"></span> US</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-gb"></span> UK</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-es"></span> ES</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-de"></span> DE</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-hk"></span> HK</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-sg"></span> SG</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text"><span class="flag flag-au"></span> AU</a></li>
+        </ul>
+    </nav>
+    <nav class="locales-nav">
+        <p class="locales-title">Language:</p>
+        <ul class="menutree">
+            <li class="menutree-item active"><a href="" class="menutree-link menutree-text">English</a></li>
+            <li class="menutree-item"><a href="" class="menutree-link menutree-text">Espanol</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="fixed-panel-container">
+        <footer class="mobilenav-panel mobilenav-bottompanel navbar">
+    <ul class="mobilenav-layout mobilenav-layout-bottom nav navbarnav">
+        
+        <li class="mobilenav-layout--left navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-target="#mobileNav" data-menupage="#commonNav">
+                <img src="http://idtdesign.github.io/idtfrontend/img/menu.svg" alt="">
+                <br>
+                Menu
+            </button>
+        </li>
+        <li class="mobilenav-layout--mid navbar--item">
+            <button type="button" class="mobilenav-button mobilenav-button-bottom" data-target="#mobileNav" data-menupage="#mobileAccount">
+                <img src="http://idtdesign.github.io/idtfrontend/img/grid.svg" alt="">
+                <br>
+                My account
+            </button>
+        </li>
+        <li class="mobilenav-layout--right navbar--item">
+            <a href="" class="mobilenav-button mobilenav-button-bottom text-center">
+                <img src="http://idtdesign.github.io/idtfrontend/img/exit.svg" alt="">
+                <br>
+                Sign out
+            </a>
+        </li>
+        
+    </ul>
+</footer>
+
+    </div>
+    <!-- DocPad Scripts + Our Own -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/sticky/jquery.sticky.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/jquery.localScroll/jquery.localScroll.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/jqgrid/js/i18n/grid.locale-en.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/jqgrid/js/minified/jquery.jqGrid.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/alfablur/StackBlur.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/alfablur/alfablur.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/bowser/bowser.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/vendor/SelectOrDie/selectordie.min.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/scripts/forms.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/scripts/script.js"></script><script defer="defer"  src="http://idtdesign.github.io/idtfrontend/scripts/jqgrid_init.js"></script>
+</body>
+</html>

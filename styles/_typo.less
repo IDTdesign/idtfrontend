@@ -1,0 +1,424 @@
+/* BetterText.css */
+
+/* Typography */
+
+/* headers and paragraphs */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    display: block;
+    font-family: @font-family-sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+
+    &:first-child {
+        /* first headers */
+        margin-top: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+    &.loose {
+        line-height: 1.4;
+    }
+}
+
+h1, .h1 {
+    margin-top: 2.5em;
+    margin-bottom: 0.4em;
+    //color: @brand-primary-dark;
+    color: @ink;
+
+    &.h1-thin {
+        font-weight: normal;
+    }
+}
+
+h2, .h2 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+
+    &.h2-thin {
+        font-weight: normal;
+    }
+}
+
+h3, .h3 {
+    margin-top: 2em;
+    margin-bottom: 0.57143em;
+    //color: @brand-primary;
+    color: @ink;
+
+    &.h3-thin {
+        font-weight: normal;
+    }
+}
+
+h4, .h4 {
+    margin-bottom: 0.66666em;
+
+    &.h4-thin {
+        font-weight: normal;
+    }
+}
+
+h5, .h5 {
+    margin-bottom: 0.8em;
+
+    &.h5-thin {
+        font-weight: normal;
+    }
+}
+
+h6, .h6 {
+    margin-bottom: 1em;
+
+    &.h6-thin {
+        font-weight: normal;
+    }
+}
+
+/* double headers */
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6
+.h1 + .h2,
+.h2 + .h3,
+.h3 + .h4,
+.h4 + .h5,
+.h5 + .h6 {
+    margin-top: 1.5em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+li p:last-child {
+    margin-bottom: 1em;
+}
+
+/* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/‎ */
+p:not([class]):before,
+ol:not([class]):before,
+ul:not([class]):before {
+    content: '';
+    display: block;
+    width: 10em;
+    overflow: hidden;
+}
+
+li p:before {
+    content: none;
+}
+
+p code {
+    font-size: 1.1em;
+    line-height: 0.8;
+}
+
+sup, sub {
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.5em;
+}
+
+hr:not([class]) {
+    border:0;
+    border-bottom:2px solid fade(@paper, 10%);
+    margin:2em auto;
+}
+
+abbr {
+    letter-spacing: .05em;
+    margin-right: -.05em;
+}
+
+strong, b, dt {
+    font-weight: inherit;
+}
+
+strong, b, dt, .text-bold {
+    font-weight: bolder;
+}
+
+/* lists without classes */
+ul:not([class]),
+ol:not([class]) {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul:not([class]) li,
+ol:not([class]) li {
+    overflow: hidden;
+    padding-left: 2.5em;
+}
+
+ul:not([class]) > li:before {
+    content: '\2013'; /* mdash */
+    display: inline-block;
+    float: left;
+    width: 1.3em;
+    margin-left: -1.3em;
+}
+
+ol:not([class]) {
+    counter-reset: olist;
+}
+
+ol:not([class]) li:before {
+    direction: rtl;
+    content: "." counter(olist);
+    counter-increment: olist;
+    display: inline-block;
+    float: left;
+    width: 0;
+    margin-left: -0.5em;
+    margin-right: 0.5em;
+    text-align: right;
+}
+
+/* nested lists */
+ul:not([class]) ul:not([class]),
+ol:not([class]) ol:not([class]) {
+    margin-top: 0.5em;
+}
+
+ul:not([class]) li li,
+ol:not([class]) li li {
+    overflow: visible;
+}
+
+ul:not([class]) li li:before {
+    content: '\2212'; /* minus */
+}
+
+ul:not([class]) li li li:before {
+    content: '\22C5'; /* sdot */
+}
+
+ol:not([class]) ol {
+    counter-reset: olist2;
+}
+
+ol:not([class]) ol:not([class]) > li:before {
+    content: "." counter(olist) "." counter(olist2);
+    counter-increment: olist2;
+}
+
+ol:not([class]) ol:not([class]) ol:not([class]) {
+    counter-reset: olist3;
+}
+
+ol:not([class]) ol:not([class]) ol:not([class]) > li:before {
+    content: "." counter(olist) "." counter(olist2) "." counter(olist3);
+    counter-increment: olist3;
+}
+
+nav ol,
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ol:not([class]) > li,
+nav ul:not([class]) > li {
+    padding-left: 0;
+
+    &:before {
+        content: none;
+    }
+}
+
+/* images */
+img {
+    /*width: inherit;*/ /* for IE8 */
+    max-width:100%;
+    height:auto;
+    -ms-interpolation-mode: bicubic; /* for IE7 */
+}
+
+figure {
+    margin: 2em auto;
+}
+
+figure > p,
+figcaption {
+    font-size: 0.8em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+/* blockquotes */
+blockquote {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+
+    > cite {
+        display: block;
+        text-align: right;
+        padding-right: 1em;
+    }
+}
+
+/* tables */
+table:not([class]) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+
+    caption {
+        text-align: right;
+        font-size: 0.8em;
+        margin-bottom: 0.625em;
+    }
+
+    tr {
+        border-style: solid;
+        border-color: rgba(0,0,0,0.1);
+        border-width: 0 0 1px;
+    }
+
+    th, td {
+        padding: 0.5em 1em;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    thead {
+        th, td {
+            vertical-align: bottom;
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+/* typo classes */
+.lead-2 {
+    font-size: @font-size-larger;
+}
+//@media (max-width: @screen-xs-max) {
+//    .prominent {
+//        //color: #000;
+//        color: @ink;
+//        color: #000;
+//
+//        small {
+//            color: #000;
+//        }
+//    }
+//
+//    .brand {
+//        //color: @brand-primary-dark;
+//        color: @ink;
+//    }
+//
+//    .brand-alt {
+//        //color: @brand-alt-dark;
+//        color: @ink;
+//    }
+//}
+
+.brand-color {
+    color: @brand-primary-bright;
+}
+.bordered-top {
+    padding-top: 22px;
+    border-top: 2px solid rgba(255,255,255,0.25);
+}
+.learn-more {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.note-see {
+    position: relative;
+
+    .h4 {
+        position: absolute;
+        top: 5px;
+        left: 0;
+
+        @media (max-width: @screen-sm-max) {
+            position: static;
+            display: block;
+            margin-top: 15px;
+        }
+    }
+
+}
+
+.mimic {
+    color: inherit;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+@media (max-width: @screen-sm-max) {
+
+    .text-center-sm {
+        text-align: center;
+    }
+
+    .text-left-sm {
+        text-align: left;
+    }
+
+    .text-right-sm {
+        text-align: right;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .text-center-xs {
+        text-align: center;
+    }
+
+    .text-left-xs {
+        text-align: left;
+    }
+
+    .text-right-xs {
+        text-align: right;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .nowrap-sm {
+        white-space: nowrap;
+    }
+}
+
+img.nonresponsive {
+    max-width: none;
+}
+
+.display-1 {
+    line-height: 1.4;
+}

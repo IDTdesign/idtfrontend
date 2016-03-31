@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (375) - http://www.bohemiancoding.com/sketch -->
+    <title>grid</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logged-in-user" sketch:type="MSArtboardGroup" transform="translate(-153.000000, -931.000000)" fill="#FFFFFF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 921.000000)">
+                <g id="my-account-button" transform="translate(95.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M58,20 L58,24 L62,24 L62,20 L58,20 Z M63,20 L63,24 L67,24 L67,20 L63,20 Z M68,20 L68,24 L72,24 L72,20 L68,20 Z M58,15 L58,19 L62,19 L62,15 L58,15 Z M63,15 L63,19 L67,19 L67,15 L63,15 Z M68,15 L68,19 L72,19 L72,15 L68,15 Z M58,10 L58,14 L62,14 L62,10 L58,10 Z M63,10 L63,14 L67,14 L67,10 L63,10 Z M68,10 L68,14 L72,14 L72,10 L68,10 Z" id="grid"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

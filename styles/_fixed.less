@@ -1,0 +1,33 @@
+.xs-fixed-panel {
+
+    @media (max-width: @screen-xs-max) and (min-height: 130vw) {
+
+        .allpage--footer {
+            margin-bottom: 50px;
+        }
+
+        .mobilenav-container {
+            padding-bottom: 50px;
+        }
+    }
+
+}
+
+.fixed-panel-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: (@zindex-navbar-fixed + 100);
+    transform: translateY(50px);
+    transition: all .5s;
+    display: none;
+
+    @media (max-width: @screen-xs-max) and (min-height: 130vw) {
+        display: block;
+    }
+
+    .xs-fixed-panel & {
+        transform: translateY(0);
+    }
+}

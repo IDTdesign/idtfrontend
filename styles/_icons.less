@@ -1,0 +1,376 @@
+/* icon system */
+
+/* for inline-svg icons by default use the color of the text */
+.i {
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor; /* 1 */
+
+    &[fill] {
+        fill: currentColor; /* 1 */
+    }
+}
+
+.i-colored[fill] {
+    fill: inherit;
+}
+
+/* 1 - remove background-image from svg tags when supporting inline-svg */
+/* 2 - fix event bubbling */
+/* 3 - Firefox pixel perfect icons */
+.svg svg.i {
+    background-image: none; /* 1 */
+    pointer-events: none; /* 2 */
+    transform: translateX(0); /* 3 */
+}
+
+.btn .i {
+    fill: #FFF;
+}
+
+// default sizes
+.i {
+    width: 33px;
+    height: 33px;
+}
+
+.i-small,
+.i[class*='-small'] {
+    width: 25px;
+    height: 25px;
+}
+
+.i-xsmall,
+.i[class*='-xsmall'] {
+    width: 16px;
+    height: 16px;
+}
+
+.i-large,
+.i[class*='-large'] {
+    width: 51px;
+    height: 51px;
+}
+
+.i--back-to-myaccount {
+    width: 13px;
+    height: 15px;
+}
+
+.i--expand-alt,
+.i--collapse-alt {
+    width: 23px;
+    height: 23px;
+}
+
+/* plate */
+
+.plate {
+    display: inline-block;
+    border-radius: @border-radius-base;
+    width: 57px;
+    height: 57px;
+    padding: 12px;
+    text-align: center;
+    line-height: 1;
+
+    &.plate-size-double {
+        width: 124px;
+
+        .i--plus {
+            height: 33px;
+            font-size: 24px;
+            line-height: 31px;
+        }
+    }
+
+    .i {
+        width: 33px;
+        height: 33px;
+        vertical-align: top;
+    }
+
+}
+
+.plate-default {
+    color: #FFF;
+    background-color: @brand-primary;
+}
+
+.plate-img {
+    padding: 0;
+    color: #fff;
+    background-color: #fff;
+}
+
+.plate-rounded {
+    border-radius: 50%;
+}
+
+.plate-default-inset {
+    color: #FFF;
+    background-color: @brand-primary;
+    background-image: linear-gradient(rgb(157, 0, 0) 0%, rgb(204, 0, 0) 100%);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+    .i {
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.plate-default-inset-revert {
+    color: #fff;
+    background-color: @brand-primary;
+    background-image: linear-gradient(rgb(220, 95, 95) 0%, rgb(156, 9, 9) 100%);
+    box-shadow: inset 3px 3px 6px 1px rgba(255, 255, 255, 0.2), inset -3px -3px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
+.plate-alt {
+    color: #fff;
+    background-color: @brand-alt-dark;
+}
+
+.plate-alt-highlight {
+    color: @brand-alt-dark;
+    background-color: @brand-alt-highlight;
+}
+
+.plate-brand-color {
+    color: #fff;
+    background-color: @brand-primary;
+}
+
+.plate-white {
+    color: @brand-alt-dark;
+    background-color: #fff;
+}
+
+.plate-icon-red {
+    color: @brand-primary-btn-dark;
+}
+
+.plate-transp {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.plate-transp-white {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.plate-large {
+    width: 79px;
+    height: 79px;
+    padding: 14px;
+    border-radius: @border-radius-large;
+
+    &.plate-size-double {
+        width: 168px;
+
+        .i--plus {
+            height: 51px;
+            font-size: 38px;
+            line-height: 50px;
+        }
+    }
+
+    .i {
+        width: 51px;
+        height: 51px;
+    }
+}
+
+.plate-extralarge {
+    padding: 0;
+    width: 65px;
+    height: 65px;
+
+    .i {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+.plate-small {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+
+    &.plate-size-double {
+        width: 100px;
+
+        .i--plus {
+            height: 25px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .i {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.plate-extrasmall {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+
+    .i {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+.plate-xxs {
+    width: 22px;
+    height: 22px;
+    padding: 2px;
+
+    .i {
+        width: 14px;
+        height: 17px;
+    }
+}
+
+.plate-size-double {
+    .i--plus {
+        margin: 0 5px;
+        color: #000;
+        line-height: 100%;
+        font-weight: bold;
+    }
+}
+
+/* plate end */
+
+/* icon with text */
+.icon-txt {
+    display: inline-table;
+
+    > .i,
+    > .icon-txt--i,
+    > .icon-txt--text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    > .icon-txt--text {
+        padding-left: 10px;
+        white-space: normal;
+    }
+
+    > .icon-txt--i + .icon-txt--text {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: @screen-xxs-max) {
+    .icon-txt {
+
+        > .icon-txt--text {
+            padding-left: 5px;
+        }
+
+        > .icon-txt--i + .icon-txt--text {
+            padding-left: 5px;
+        }
+    }
+
+}
+
+.btn .icon-txt {
+    vertical-align: middle;
+}
+
+/* bootstrap specifity override */
+.nav > li > a.icon-txt {
+    display: table;
+    width: 100%;
+}
+
+.island--title.icon-txt {
+    width: 100%;
+
+    .icon-txt--i {
+        width: 1%;
+    }
+}
+
+/* icon with other content */
+
+.icon-block {
+    display: table;
+    width: 100%;
+
+    > .icon-block--i,
+    > .icon-block--text {
+        display: table-cell;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    > .icon-block--i {
+        width: 1%;
+    }
+
+    > .icon-block--text {
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+}
+
+.icon-block-default {
+    margin-bottom: @line-height-computed;
+
+    > .icon-block--text {
+        padding-left: 20px;
+    }
+
+    /* 1 - visual compensation of line-height in --text block */
+    > .icon-block--text > strong:first-child {
+        display: block;
+        margin-top: -5px; /* 1 */
+        margin-bottom: 0;
+    }
+
+    > .icon-block--text .h3:first-child {
+        margin-top: 0;
+    }
+
+    /* custom rule for my-account page */
+    > .icon-block--text label.h3:first-child {
+        margin-top: -4px; /* 1 */
+    }
+}
+
+.icon-block-vmiddle {
+
+    > .icon-block--i,
+    > .icon-block--text {
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: @screen-xxs-max) {
+    .icon-block-xxs-vertical {
+        display: block;
+
+        .icon-block--i,
+        .icon-block--text {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+}
+
+/* icon with text end */

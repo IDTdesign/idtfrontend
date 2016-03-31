@@ -1,0 +1,380 @@
+/* mediablock */
+/* horizontal layout by default */
+
+/* 1 - delete space between inline-blocks */
+.mediablock {
+    font-size: 0; /* 1 */
+}
+
+/* 1 - restore default font-size */
+.mediablock--primary,
+.mediablock--secondary {
+    font-size: @font-size-larger; /* 1 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* equalized by height */
+.mediablock-equalized {
+    display: table;
+    width: 100%;
+}
+
+.mediablock-equalized > .mediablock--primary,
+.mediablock-equalized > .mediablock--secondary {
+    display: table-cell;
+}
+
+.mediablock-equalized,
+.mediablock-equalized > .mediablock--primary,
+.mediablock-equalized > .mediablock--secondary {
+    border-radius: inherit;
+}
+
+@media (min-width: @screen-sm-min) {
+
+    /* equlized with flex */
+    .flexbox .mediablock-equalized {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .flexbox .mediablock-equalized > .mediablock--primary,
+    .flexbox .mediablock-equalized > .mediablock--secondary {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flexbox .mediablock-equalized > .mediablock--primary > *,
+    .flexbox .mediablock-equalized > .mediablock--secondary > * {
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .flexbox .mediablock-equalized > .mediablock--primary > *:last-child,
+    .flexbox .mediablock-equalized > .mediablock--secondary > *:last-child {
+        flex-grow: 1;
+    }
+}
+
+/* sizes */
+
+.mediablock-3-to-1 > .mediablock--primary     { width: 75%; }
+.mediablock-3-to-1 > .mediablock--secondary   { width: 25%; }
+
+.mediablock-2-to-1 > .mediablock--primary     { width: 66.66%; }
+.mediablock-2-to-1 > .mediablock--secondary   { width: 33.33%; }
+
+.mediablock-3-to-2 > .mediablock--primary     { width: 60%; }
+.mediablock-3-to-2 > .mediablock--secondary   { width: 40%; }
+
+.mediablock-1-to-3 > .mediablock--primary     { width: 25%; }
+.mediablock-1-to-3 > .mediablock--secondary   { width: 75%; }
+
+.mediablock-1-to-2 > .mediablock--primary     { width: 33.33%; }
+.mediablock-1-to-2 > .mediablock--secondary   { width: 66.66%; }
+
+.mediablock-2-to-3 > .mediablock--primary     { width: 40%; }
+.mediablock-2-to-3 > .mediablock--secondary   { width: 60%; }
+
+/* sizes end */
+
+/* in column: primary above secondary */
+@media (max-width: @screen-xs-max) {
+
+    .mediablock > .mediablock--primary,
+    .mediablock > .mediablock--secondary,
+    .flexbox .mediablock-sm-vertical > .mediablock--primary,
+    .flexbox .mediablock-sm-vertical > .mediablock--secondary {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .flexbox .mediablock-sm-vertical,
+    .mediablock-sm-vertical > .mediablock--primary,
+    .mediablock-sm-vertical > .mediablock--secondary,
+    .flexbox .mediablock-sm-vertical > .mediablock--primary,
+    .flexbox .mediablock-sm-vertical > .mediablock--secondary  {
+        display: block;
+        width: auto;
+    }
+}
+
+/* secondary on left, primary on right */
+.mediablock-rtl {
+    direction: rtl;
+}
+
+.mediablock-rtl > .mediablock--primary,
+.mediablock-rtl > .mediablock--secondary {
+    direction: ltr;
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-rtl {
+        direction: ltr;
+    }
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+    .mediablock-default.mediablock-rtl > .mediablock--primary {
+        padding-left: 80px;
+        padding-right: 120px;
+    }
+
+    .mediablock-default.mediablock-rtl > .mediablock--secondary {
+        padding-left: 120px;
+        padding-right: 80px;
+    }
+
+}
+
+/* paddings */
+
+/* default paddings */
+.mediablock-default > .mediablock--primary,
+.mediablock-default > .mediablock--secondary {
+    padding: 80px;
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-default > .mediablock--primary,
+    .mediablock-default > .mediablock--secondary {
+        padding: 40px;
+    }
+
+    .mediablock-default > .mediablock--primary {
+        padding-bottom: 20px;
+    }
+
+    .mediablock-default > .mediablock--secondary {
+        padding-top: 20px;
+    }
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+    .mediablock-default > .mediablock--primary {
+        padding-left: 120px;
+    }
+
+    .mediablock-default > .mediablock--secondary {
+        padding-right: 120px;
+    }
+
+}
+
+.mediablock-tight > .mediablock--primary {
+    padding: 40px 20px 40px 60px;
+}
+
+.mediablock-tight > .mediablock--secondary {
+    padding: 40px 60px 40px 20px;
+}
+
+.mediablock-tight.mediablock-rtl > .mediablock--primary {
+    padding-right: 60px;
+    padding-left: 20px;
+}
+
+.mediablock-tight.mediablock-rtl > .mediablock--secondary {
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.mediablock-tighter > .mediablock--primary {
+    margin-top: -40px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+@media (max-width: @screen-sm-max) {
+
+    .mediablock-tight > .mediablock--primary,
+    .mediablock-tight > .mediablock--secondary,
+    .mediablock-tight.mediablock-rtl > .mediablock--primary,
+    .mediablock-tight.mediablock-rtl > .mediablock--secondary {
+        padding: 20px;
+    }
+}
+
+.mediablock-tiny-spacing {
+
+    > .mediablock--primary,
+    > .mediablock--secondary {
+        vertical-align: top;
+        padding: 6px 0;
+    }
+
+    > .mediablock--primary {
+        padding-right: 3px;
+    }
+
+    > .mediablock--secondary {
+        padding-left: 3px;
+    }
+
+}
+
+@media (max-width: @screen-sm-max) {
+
+    /* 1 - maybe need to refactor that */
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--primary,
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--secondary {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mediablock-tiny-spacing.mediablock-sm-vertical > .mediablock--primary {
+        padding-bottom: 0;
+    }
+
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .mediablock-tiny-spacing > .mediablock--primary,
+    .mediablock-tiny-spacing > .mediablock--secondary {
+        padding: 0;
+    }
+}
+
+/* paddings end */
+
+/* alternative coloring */
+.mediablock-alt {
+    background-color: fade(@paper, 20%);
+}
+
+//@media (max-width: @screen-xs-max) {
+//    .mediablock-alt {
+//        background-color: @brand-alt-highlight;
+//    }
+//}
+
+/*  mediablock-hasarrow option */
+
+@mediablock-arrow-w: 20px;
+@mediablock-arrow-h: 60px;
+@mediablock-arrowcolor: #f5f8fa;
+
+@mediablock-arrow-half-h: (floor(@mediablock-arrow-h / 2));
+@mediablock-arrow-shift:  (floor(@mediablock-arrow-w / 2));
+
+.mediablock-hasarrow > .mediablock--secondary {
+    position: relative;
+}
+
+.mediablock-hasarrow > .mediablock--secondary:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.mediablock-hasarrow > .mediablock--secondary:before {
+    top: 50%;
+    left: 0;
+    margin: -@mediablock-arrow-half-h 0 0 -@mediablock-arrow-shift;
+    border-right-color: @mediablock-arrowcolor;
+    border-width: @mediablock-arrow-half-h @mediablock-arrow-w @mediablock-arrow-half-h 0;
+}
+
+.mediablock-hasarrow.mediablock-rtl > .mediablock--secondary:before {
+    left: auto;
+    right: 0;
+    margin: -@mediablock-arrow-half-h -@mediablock-arrow-shift 0 0;
+    border-left-color: @mediablock-arrowcolor;
+    border-width: @mediablock-arrow-half-h 0 @mediablock-arrow-half-h @mediablock-arrow-w;
+}
+
+@media (max-width: @screen-xs-max) {
+    .mediablock-hasarrow > .mediablock--secondary:before {
+        content: none;
+    }
+}
+
+/*  mediablock-hasarrow option end */
+
+
+/* mediablock gap */
+@media (min-width: @screen-sm-min) {
+    
+    .mediablock-gap > .mediablock--primary {
+        padding-right: 20px;
+    }
+
+    .mediablock-gap > .mediablock--secondary {
+        padding-left: 20px;
+    }  
+
+    .mediablock-gap.mediablock-rtl > .mediablock--primary {
+        padding-left: 20px;
+    }
+
+    .mediablock-gap.mediablock-rtl > .mediablock--secondary {
+        padding-right: 20px;
+    }
+
+}
+
+
+
+/* mediablock end */
+
+/* wrapper */
+.wrapper-default {
+    padding: 40px;
+}
+
+.img-fullwidth {
+    width: 100%;
+    border-radius: inherit;
+}
+
+
+/* columns-block */
+
+.columns-block {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.columns-block > * {
+    display: table-cell;
+}
+
+@media (max-width: @screen-xs-max) {
+    .columns-block,
+    .columns-block > * {
+        display: block;
+        width: auto;
+    }
+}
+
+.columns-block-gutter > * {
+    padding: (@grid-gutter-width / 2);
+}
+
+.columns-block-va-middle > * {
+    vertical-align: middle;
+}
+
+/* 1 - custom width for friends forever page */
+.columns-block--separator {
+    width: 100px; /* 1 */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* columns-block end */

@@ -1,0 +1,119 @@
+@menutree: menutree;
+
+.menutree-settings() {
+    @mtreeborderstyle: 1px solid #D9D9D9; // border style
+    @mtreebdcolor: #D9D9D9;
+    @mtreebg1: #FFF; // first level background
+    @mtreebg2: #ECECEC; // second level background
+    @mtreecolor1: #000; // first level link color
+    @mtreecolor2: #B00009; // first level hover color
+}
+
+.@{menutree} {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: @mtreeborderstyle;
+
+    &-item {
+        padding: 0;
+        position: relative;
+
+        &.active {
+            .@{menutree}-link {
+                color: #FFF;
+                background-color: #870000;
+                border-color: #870000;
+            }
+        }
+    }
+
+
+    &-link {
+    display: block;
+    border-top: @mtreeborderstyle;
+    text-align: center;
+    text-decoration: none;
+    color: @mtreecolor1;
+    background: @mtreebg1;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: @mtreecolor2;
+            outline: none;
+            text-decoration: none;
+        }
+    }
+    &-text {
+        font-size: 14px;
+        line-height: 39px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* 1 - don't apply padding here. instead you get jaggy animation */
+    &-collapse {
+        border-top: @mtreeborderstyle;
+        padding: 0; /* 1 */
+        overflow: hidden;
+        background-color: @mtreebg2;
+    }
+
+    &-collapse-body {
+        padding: 10px 0;
+    }
+
+    .menutree-settings();
+}
+
+.@{menutree}-compact {
+    .@{menutree}-text {
+        line-height: 29px;
+    }
+
+    .menutree-settings();
+}
+
+
+.btn-menucollapse {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 52px;
+    padding: 6px 6px 0 6px;
+    background-color: transparent;
+    border: none;
+    color: @mtreecolor2;
+    outline: none;
+
+    .caret {
+        transition: transform .5s;
+    }
+
+    &.collapsed .caret {
+        transform: rotate(-90deg);
+    }
+
+    .btn-menucollapse--inner {
+        display: block;
+        height: 35px;
+        border: @mtreeborderstyle;
+        border-color: transparent;
+        background-color: transparent;
+        padding-top: 2px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &:not(.collapsed) .btn-menucollapse--inner {
+        background-color: @mtreebg2;
+        border-color: @mtreebdcolor @mtreebdcolor @mtreebg2 @mtreebdcolor;
+    }
+
+    .menutree-settings();
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="">
+
+<title>
+    Banners
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://idtdesign.github.io/idtfrontend/styles/bootstrap.css" rel="stylesheet">
+
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/highlight.css" rel="stylesheet">
+<link href="http://idtdesign.github.io/idtfrontend/styles/bossrevolution.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/docs.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico">
+    <script src="http://idtdesign.github.io/idtfrontend/vendor/modernizr/modernizr.min.js"></script>
+    <script src="http://idtdesign.github.io/idtfrontend/icons/svg-icons.js"></script>
+  </head>
+  <body>
+    <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS + SVG_SVG_DEFS_COLORED;</script>
+
+
+    <div class="allpage page-canvas">
+        <header class="allpage--header">
+            <div class="allpage--headerbg2" style="top:0"></div>
+            <div class="container">
+                <div class="logo">
+                    <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+                </div>
+                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
+                    <ul class="nav nav-pills navbar--list">
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/logo.html" class="navbar--link">Logo</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/typography.html" class="navbar--link">Typography</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/icons.html" class="navbar--link">Icons</a>
+    </li>
+    <li class="navbar--item dropdown ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs" class="navbar--link pullin-space">Bootstrap</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
+    <span class="btn btn-dropdown btn-xs">
+        <span class="caret"></span>
+    </span>
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/getting-started.html" class="navbar--submenulink">Getting started</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/css.html" class="navbar--submenulink">CSS</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/components.html" class="navbar--submenulink">Components</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/javascript.html" class="navbar--submenulink">JavaScript</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="allpage--body">
+            <!-- Docs page layout -->
+            <div class="allpage-header bs-docs-header">
+              <div class="container">
+                <h1>Banners</h1>
+                <p></p>
+              </div>
+            </div>
+            <div class="container bs-docs-container">
+              <div class="row">
+                <div class="col-md-9 island island-default" role="main">
+                  <h1 id="banners">Banners</h1>
+<h2 id="general-rules">General rules</h2>
+<ol>
+<li><p>Where possible <strong>use HTML-banners</strong> instead of just images.
+HTML-banners more flexible: we can use one markup for all screen resolutions and manage banner layout with css.</p>
+</li>
+<li><p>If banner has no text on it (or text is big enough) we can use only largest image file and scale banner with CSS. Text should be readable on 320px wide resolution.</p>
+</li>
+</ol>
+<h2 id="homepage-promo-carousel">Homepage promo carousel</h2>
+<p>Use HTML-banners or images in following resolutions:</p>
+<ul>
+<li>1140×400px - for wide screens</li>
+<li>940×400px - for medium screens</li>
+<li>720×400px - for small screens</li>
+<li>386×275px - mobile resolutions</li>
+</ul>
+<p><strong>Important!</strong> Because we use slider we must have all banners 400px height. In the opposite we have &#39;jumping&#39; footer issue.</p>
+<p>On homepage slider we have navigation arrow and dots over the banners. Keep that in mind: text should not be under navigation elements.</p>
+<p>Use these templates:</p>
+<p><img src="http://idtdesign.github.io/idtfrontend/docs/banners/1140x400.png" alt=""></p>
+<p><img src="http://idtdesign.github.io/idtfrontend/docs/banners/940x400.png" alt=""></p>
+<p><img src="http://idtdesign.github.io/idtfrontend/docs/banners/720x400.png" alt=""></p>
+<p><a href="http://idtdesign.github.io/idtfrontend/templates/banners.html">See example: Homepage slider</a></p>
+<h2 id="my-account-banners">My account banners</h2>
+<p>We have 2 sizes for my account banners:</p>
+<ul>
+<li>660×300px - for wide screens, tablet and mobile</li>
+<li>400×315px - for medium screens</li>
+</ul>
+<p>No aditional limitations.</p>
+<h2 id="manage-your-services-banners">Manage your services banners</h2>
+<p>Prefered small image plus html.</p>
+<p>Code:</p>
+<pre class="highlight"><code class="hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-txt"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-txt--i"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://idtdesign.github.io/idtfrontend/docs/banners/auto_recharge_80x80_eng.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Get a $5 Bonus on Your 1st Auto Recharge Transaction"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-txt--text"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mimic"</span>&gt;</span>Get a $5 Bonus on Your 1st Auto Recharge Transaction<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Add Auto Recharge and never run out of talk time. <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"learn-more"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Set Up Now&amp;nbsp;»<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Example:</p>
+<div class="island island-default">
+    <div class="icon-txt">
+        <div class="icon-txt--i">
+            <img src="http://idtdesign.github.io/idtfrontend/docs/banners/auto_recharge_80x80_eng.png" alt="Get a $5 Bonus on Your 1st Auto Recharge Transaction">
+        </div>
+        <div class="icon-txt--text">
+            <h3 class="mimic">Get a $5 Bonus on Your 1st Auto Recharge Transaction</h3>
+            <p>Add Auto Recharge and never run out of talk time. <a class="learn-more" href="#">Set Up Now&nbsp;»</a></p>
+        </div>
+    </div>
+</div>
+
+<h2 id="unlimited-banners">Unlimited banners</h2>
+<h3 id="on-international-calling-rates-pages">on International Calling / Rates pages</h3>
+<p>Use HTML-banners or images in following width with no heigh limitation:</p>
+<ul>
+<li>373px width (with any height) - for wide and mobile screens</li>
+<li>720px width (with any height) - for small screens</li>
+</ul>
+<p><strong>Important!</strong> Please don&#39;t make 720px banner just via scalling 373px - better make it horizontal-oriented by rearranging elements.</p>
+<p>No aditional limitations.</p>
+
+                </div>
+                <div class="col-md-3 island island-default">
+                  <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
+                    <ul class="nav bs-docs-sidenav">
+                    
+                    </ul>
+                    <a class="back-to-top" href="#top">
+                      Back to top
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/docs.min.js"></script>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="">
+
+<title>
+    JavaScript
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://idtdesign.github.io/idtfrontend/styles/bootstrap.css" rel="stylesheet">
+
+  <!-- Optional Bootstrap Theme -->
+  <link href="data:text/css;charset=utf-8," data-href="http://idtdesign.github.io/idtfrontend/styles/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/highlight.css" rel="stylesheet">
+<link href="http://idtdesign.github.io/idtfrontend/styles/bossrevolution.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/docs.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico">
+    <script src="http://idtdesign.github.io/idtfrontend/vendor/modernizr/modernizr.min.js"></script>
+    <script src="http://idtdesign.github.io/idtfrontend/icons/svg-icons.js"></script>
+  </head>
+  <body>
+    <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS + SVG_SVG_DEFS_COLORED;</script>
+
+
+    <div class="allpage page-canvas">
+        <header class="allpage--header">
+            <div class="allpage--headerbg2" style="top:0"></div>
+            <div class="container">
+                <div class="logo">
+                    <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+                </div>
+                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
+                    <ul class="nav nav-pills navbar--list">
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/logo.html" class="navbar--link">Logo</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/typography.html" class="navbar--link">Typography</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/icons.html" class="navbar--link">Icons</a>
+    </li>
+    <li class="navbar--item dropdown ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs" class="navbar--link pullin-space">Bootstrap</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
+    <span class="btn btn-dropdown btn-xs">
+        <span class="caret"></span>
+    </span>
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/getting-started.html" class="navbar--submenulink">Getting started</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/css.html" class="navbar--submenulink">CSS</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/components.html" class="navbar--submenulink">Components</a>
+            </li>
+            <li class="navbar--submenuitem active">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/javascript.html" class="navbar--submenulink">JavaScript</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="allpage--body">
+            <!-- Docs page layout -->
+            <div class="allpage-header bs-docs-header">
+              <div class="container">
+                <h1>JavaScript</h1>
+                <p>Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.</p>
+              </div>
+            </div>
+            <div class="container bs-docs-container">
+              <div class="row">
+                <div class="col-md-9 island island-default" role="main">
+                  <div class="bs-docs-section"><h1 id="js-overview" class="page-header">Overview</h1>
+
+<h3 id="js-individual-compiled">Individual or compiled</h3>
+
+<p>Plugins can be included individually (using Bootstrap&#39;s individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Using the compiled JavaScript</h4>
+  <p>Both <code>bootstrap.js</code> and <code>bootstrap.min.js</code> contain all plugins in a single file. Include only one.</p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Component data attributes</h4>
+  <p>Don&#39;t use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element.</p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependencies</h4>
+  <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/twbs/bootstrap/blob/master/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+</div>
+
+<h3 id="js-data-attrs">Data attributes</h3>
+
+<p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap&#39;s first-class API and should be your first consideration when using a plugin.</p>
+
+<p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-built_in">document</span>).off(<span class="hljs-string">'.data-api'</span>)
+</code></pre>
+<p>Alternatively, to target a specific plugin, just include the plugin&#39;s name as a namespace along with the data-api namespace like this:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-built_in">document</span>).off(<span class="hljs-string">'.alert.data-api'</span>)
+</code></pre>
+<h3 id="js-programmatic-api">Programmatic API</h3>
+
+<p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.btn.danger'</span>).button(<span class="hljs-string">'toggle'</span>).addClass(<span class="hljs-string">'fat'</span>)
+</code></pre>
+<p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal()                      <span class="hljs-comment">// initialized with defaults</span>
+$(<span class="hljs-string">'#myModal'</span>).modal({ keyboard: <span class="hljs-literal">false</span> })   <span class="hljs-comment">// initialized with no keyboard</span>
+$(<span class="hljs-string">'#myModal'</span>).modal(<span class="hljs-string">'show'</span>)                <span class="hljs-comment">// initializes and invokes show immediately</span>
+</code></pre>
+<p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Constructor</code>. If you&#39;d like to get a particular plugin instance, retrieve it directly from an element: <code>$(&#39;[rel=&quot;popover&quot;]&#39;).data(&#39;popover&#39;)</code>.</p>
+
+<h3 id="js-noconflict">No conflict</h3>
+
+<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> bootstrapButton = $.fn.button.noConflict() <span class="hljs-comment">// return $.fn.button to previously assigned value</span>
+$.fn.bootstrapBtn = bootstrapButton            <span class="hljs-comment">// give $().bootstrapBtn the Bootstrap functionality</span>
+</code></pre>
+<h3 id="js-events">Events</h3>
+
+<p>Bootstrap provides custom events for most plugins&#39; unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
+
+<p>As of 3.0.0, all Bootstrap events are namespaced.</p>
+
+<p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).on(<span class="hljs-string">'show.bs.modal'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+  <span class="hljs-keyword">if</span> (!data) <span class="hljs-keyword">return</span> e.preventDefault() <span class="hljs-comment">// stops modal from being shown</span>
+})
+</code></pre>
+<div class="bs-callout bs-callout-warning" id="callout-third-party-libs">
+  <h4>Third-party libraries</h4>
+  <p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.</p>
+</div></div>
+<div class="bs-docs-section"><h1 id="transitions" class="page-header">Transitions <small>transition.js</small></h1>
+
+<h3>About transitions</h3>
+
+<p>For simple transition effects, include <code>transition.js</code> once alongside the other JS files. If you&#39;re using the compiled (or minified) <code>bootstrap.js</code>, there is no need to include this&mdash;it&#39;s already there.</p>
+
+<h3>What&#39;s inside</h3>
+
+<p>Transition.js is a basic helper for <code>transitionEnd</code> events as well as a CSS transition emulator. It&#39;s used by the other plugins to check for CSS transition support and to catch hanging transitions.</p></div>
+<div class="bs-docs-section"><h1 id="modals" class="page-header">Modals <small>modal.js</small></h1>
+
+<h2 id="modals-examples">Examples</h2>
+
+<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+
+<div class="bs-callout bs-callout-warning" id="callout-stacked-modals">
+  <h4>Overlapping modals not supported</h4>
+  <p>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.</p>
+</div>
+
+<div class="bs-callout bs-callout-warning" id="callout-modal-markup-placement">
+  <h4>Modal markup placement</h4>
+  <p>Always try to place a modal&#39;s HTML code in a top-level position in your document to avoid other components affecting the modal&#39;s appearance and/or functionality.</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Mobile device caveats</h4>
+  <p>There are some caveats regarding using modals on mobile devices. <a href="getting-started.html#support-fixed-position-keyboards">See our browser support docs</a> for details.</p>
+</div>
+
+<h3>Static example</h3>
+
+<p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+<div class="bs-example bs-example-modal">
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal fade"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-dialog"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">"modal"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-title"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-body"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>One fine body&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">"modal"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.modal-content --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.modal-dialog --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- /.modal --&gt;</span>
+</code></pre>
+<h3>Live demo</h3>
+
+<p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+
+<!-- sample modal content -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+      </div>
+      <div class="modal-body">
+        <h4>Text in a modal</h4>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <h4>Popover in a modal</h4>
+        <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+        <h4>Tooltips in a modal</h4>
+        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
+        <hr>
+        <h4>Overflowing text to show scroll behavior</h4>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Button trigger modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary btn-lg"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#myModal"</span>&gt;</span>
+  Launch demo modal
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal fade"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myModal"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"dialog"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"myModalLabel"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-dialog"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">"modal"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-title"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myModalLabel"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-body"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">"modal"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Save changes<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-warning">
+  <h4>Make modals accessible</h4>
+  <p>Be sure to add <code>role=&quot;dialog&quot;</code> to <code>.modal</code>, <code>aria-labelledby=&quot;myModalLabel&quot;</code> attribute to reference the modal title, and <code>aria-hidden=&quot;true&quot;</code> to tell assistive technologies to skip the modal&#39;s DOM elements.</p>
+  <p>Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Embedding YouTube videos</h4>
+  <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="http://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
+</div>
+
+<h2 id="modals-sizes">Optional sizes</h2>
+
+<p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
+
+<div class="bs-example">
+  <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+  <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Large modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">".bs-example-modal-lg"</span>&gt;</span>Large modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal fade bs-example-modal-lg"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"dialog"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"myLargeModalLabel"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-dialog modal-lg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-content"</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Small modal --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">".bs-example-modal-sm"</span>&gt;</span>Small modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal fade bs-example-modal-sm"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"dialog"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"mySmallModalLabel"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-dialog modal-sm"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal-content"</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<!--  Modal content for the above example -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<h2 id="modals-remove-animation">Remove animation</h2>
+
+<p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"dialog"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h2 id="modals-usage">Usage</h2>
+
+<p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+
+<h3>Via data attributes</h3>
+
+<p>Activate a modal without writing JavaScript. Set <code>data-toggle=&quot;modal&quot;</code> on a controller element, like a button, along with a <code>data-target=&quot;#foo&quot;</code> or <code>href=&quot;#foo&quot;</code> to target a specific modal to toggle.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#myModal"</span>&gt;</span>Launch modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h3>Via JavaScript</h3>
+
+<p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal(options)
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=&quot;&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 50px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>backdrop</td>
+       <td>boolean or the string <code>&#39;static&#39;</code></td>
+       <td>true</td>
+       <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn&#39;t close the modal on click.</td>
+     </tr>
+     <tr>
+       <td>keyboard</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Closes the modal when escape key is pressed</td>
+     </tr>
+     <tr>
+       <td>show</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Shows the modal when initialized.</td>
+     </tr>
+     <tr>
+       <td>remote</td>
+       <td>path</td>
+       <td>false</td>
+       <td><p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery&#39;s <code>load</code> method and injected into the <code>.modal-content</code> div. If you&#39;re using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"modal"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"remote.html"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#modal"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+</code></pre>
+
+       </td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Methods</h3>
+
+<h4>.modal(options)</h4>
+
+<p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal({
+  keyboard: <span class="hljs-literal">false</span>
+})
+</code></pre>
+<h4>.modal(&#39;toggle&#39;)</h4>
+
+<p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal(<span class="hljs-string">'toggle'</span>)
+</code></pre>
+<h4>.modal(&#39;show&#39;)</h4>
+
+<p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal(<span class="hljs-string">'show'</span>)
+</code></pre>
+<h4>.modal(&#39;hide&#39;)</h4>
+
+<p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).modal(<span class="hljs-string">'hide'</span>)
+</code></pre>
+<h3>Events</h3>
+
+<p>Bootstrap&#39;s modal class exposes a few events for hooking into modal functionality.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>show.bs.modal</td>
+       <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+     </tr>
+     <tr>
+       <td>shown.bs.modal</td>
+       <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+     </tr>
+     <tr>
+       <td>hide.bs.modal</td>
+       <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+     </tr>
+     <tr>
+       <td>hidden.bs.modal</td>
+       <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+     </tr>
+     <tr>
+       <td>loaded.bs.modal</td>
+       <td>This event is fired when the modal has loaded content using the remote option.</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myModal'</span>).on(<span class="hljs-string">'hidden.bs.modal'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+  <span class="hljs-comment">// do something...</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>
+
+<h2 id="dropdowns-examples">Examples</h2>
+
+<p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+
+<h3>Within a navbar</h3>
+
+<div class="bs-example">
+  <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project Name</a>
+      </div>
+      <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="fat-menu" class="dropdown">
+            <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav> <!-- /navbar-example -->
+</div> 
+
+<h3>Within pills</h3>
+
+<div class="bs-example">
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Regular link</a></li>
+    <li class="dropdown">
+      <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+      <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <span class="caret"></span></a>
+      <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <span class="caret"></span></a>
+      <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+      </ul>
+    </li>
+  </ul> <!-- /pills -->
+</div> 
+
+
+<h2 id="dropdowns-usage">Usage</h2>
+
+<p>Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item. When opened, the plugin also adds <code>.dropdown-backdrop</code> as a click area for closing dropdown menus when clicking outside the menu. Note: The <code>data-toggle=dropdown</code> attribute is relied on for closing dropdown menus at an application level, so it&#39;s a good idea to always use it.</p>
+
+<h3>Via data attributes</h3>
+
+<p>Add <code>data-toggle=&quot;dropdown&quot;</code> to a link or button to toggle a dropdown.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Dropdown trigger<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"menu"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"dLabel"</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>To keep URLs intact, use the <code>data-target</code> attribute instead of <code>href=&quot;#&quot;</code>.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"dLabel"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/page.html"</span>&gt;</span>
+    Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"menu"</span> <span class="hljs-attribute">aria-labelledby</span>=<span class="hljs-value">"dLabel"</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3>Via JavaScript</h3>
+
+<p>Call the dropdowns via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.dropdown-toggle'</span>).dropdown()
+</code></pre>
+<div class="bs-callout bs-callout-info">
+  <h4><code>data-toggle=&quot;dropdown&quot;</code> still required</h4>
+  <p>Regardless of whether you call your dropdown via JavaScript or instead use the data-api, <code>data-toggle=&quot;dropdown&quot;</code> is always required to be present on the dropdown&#39;s trigger element.</p>
+</div>
+
+<h3>Options</h3>
+
+<p><em>None</em></p>
+
+<h3>Methods</h3>
+
+<h4>$().dropdown(&#39;toggle&#39;)</h4>
+
+<p>Toggles the dropdown menu of a given navbar or tabbed navigation.</p>
+
+<h3>Events</h3>
+
+<p>All dropdown events are fired at the <code>.dropdown-menu</code>&#39;s parent element.</p>
+
+<p><div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Event Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>show.bs.dropdown</td>
+        <td>This event fires immediately when the show instance method is called. The toggling anchor element is available as the <code>relatedTarget</code> property of the event.</td>
+      </tr>
+      <tr>
+        <td>shown.bs.dropdown</td>
+        <td>This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete).  The toggling anchor element is available as the <code>relatedTarget</code> property of the event.</td>
+      </tr>
+      <tr>
+        <td>hide.bs.dropdown</td>
+        <td>This event is fired immediately when the hide instance method has been called. The toggling anchor element is available as the <code>relatedTarget</code> property of the event.</td>
+      </tr>
+      <tr>
+        <td>hidden.bs.dropdown</td>
+        <td>This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete). The toggling anchor element is available as the <code>relatedTarget</code> property of the event.</td>
+      </tr>
+    </tbody>
+  </table>
+</div><!-- ./bs-table-responsive --></p>
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myDropdown'</span>).on(<span class="hljs-string">'show.bs.dropdown'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="scrollspy" class="page-header">ScrollSpy <small>scrollspy.js</small></h1>
+
+<h2 id="scrollspy-examples">Example in navbar</h2>
+
+<p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
+
+<div class="bs-example">
+  <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project Name</a>
+      </div>
+      <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+        <ul class="nav navbar-nav">
+          <li><a href="#fat">@fat</a></li>
+          <li><a href="#mdo">@mdo</a></li>
+          <li class="dropdown">
+            <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+              <li><a href="#one" tabindex="-1">one</a></li>
+              <li><a href="#two" tabindex="-1">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#three" tabindex="-1">three</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+    <h4 id="fat">@fat</h4>
+    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#39;s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven&#39;t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+    <h4 id="mdo">@mdo</h4>
+    <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney&#39;s vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney&#39;s quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+    <h4 id="one">one</h4>
+    <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+    <h4 id="two">two</h4>
+    <p>In incididunt echo park, officia deserunt mcsweeney&#39;s proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven&#39;t heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+    <h4 id="three">three</h4>
+    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#39;s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven&#39;t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+    <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven&#39;t heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+    </p>
+  </div>
+</div>
+
+
+<h2 id="scrollspy-usage">Usage</h2>
+
+<h3>Requires relative positioning</h3>
+
+<p>No matter the implementation method, scrollspy requires the use of <code>position: relative;</code> on the element you&#39;re spying on. In most cases this is the <code>&lt;body&gt;</code>.</p>
+
+<h3>Via data attributes</h3>
+
+<p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span> <span class="hljs-attribute">data-spy</span>=<span class="hljs-value">"scroll"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">".navbar-example"</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar-example"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+</code></pre>
+<h3>Via JavaScript</h3>
+
+<p>After adding <code>position: relative;</code> in your CSS, call the scrollspy via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'body'</span>).scrollspy({ target: <span class="hljs-string">'.navbar-example'</span> })
+</code></pre>
+<div class="bs-callout bs-callout-danger">
+  <h4>Resolvable ID targets required</h4>
+  <p>Navbar links must have resolvable id targets. For example, a <code>&lt;a href=&quot;#home&quot;&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like <code>&lt;div id=&quot;home&quot;&gt;&lt;/div&gt;</code>.</p>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Non-<code>:visible</code> target elements ignored</h4>
+  <p>Target elements that are not <a href="http://api.jquery.com/visible-selector/"><code>:visible</code> according to jQuery</a> will be ignored and their corresponding nav items will never be highlighted.</p>
+</div>
+
+<h3>Methods</h3>
+
+<h4>.scrollspy(&#39;refresh&#39;)</h4>
+
+<p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you&#39;ll need to call the refresh method like so:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'[data-spy="scroll"]'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">var</span> $spy = $(<span class="hljs-keyword">this</span>).scrollspy(<span class="hljs-string">'refresh'</span>)
+})
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=&quot;&quot;</code>.</p>
+
+<p><div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 100px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>offset</td>
+       <td>number</td>
+       <td>10</td>
+       <td>Pixels to offset from top when calculating position of scroll.</td>
+     </tr>
+    </tbody>
+  </table>
+</div><!-- ./bs-table-responsive --></p>
+<h3>Events</h3>
+
+<p><div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>activate.bs.scrollspy</td>
+       <td>This event fires whenever a new item becomes activated by the scrollspy.</td>
+    </tr>
+    </tbody>
+  </table>
+</div><!-- ./bs-table-responsive --></p>
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myScrollspy'</span>).on(<span class="hljs-string">'activate.bs.scrollspy'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="tabs" class="page-header">Togglable tabs <small>tab.js</small></h1>
+
+<h2 id="tabs-examples">Example tabs</h2>
+
+<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+
+<div class="bs-example bs-example-tabs">
+  <ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li class="dropdown">
+      <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+        <li><a href="#dropdown1" tabindex="-1" role="tab" data-toggle="tab">@fat</a></li>
+        <li><a href="#dropdown2" tabindex="-1" role="tab" data-toggle="tab">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+      <p>Raw denim you probably haven&#39;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </div>
+    <div class="tab-pane fade" id="profile">
+      <p>Food truck fixie locavore, accusamus mcsweeney&#39;s marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown1">
+      <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney&#39;s organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven&#39;t heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown2">
+      <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Extends tabbed navigation</h4>
+  <p>This plugin extends the <a href="components.html#nav-tabs">tabbed navigation component</a> to add tabbable areas.</p>
+</div>
+
+
+<h2 id="tabs-usage">Usage</h2>
+
+<p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myTab a'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+  e.preventDefault()
+  $(<span class="hljs-keyword">this</span>).tab(<span class="hljs-string">'show'</span>)
+})
+</code></pre>
+<p>You can activate individual tabs in several ways:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myTab a[href="#profile"]'</span>).tab(<span class="hljs-string">'show'</span>) <span class="hljs-comment">// Select tab by name</span>
+$(<span class="hljs-string">'#myTab a:first'</span>).tab(<span class="hljs-string">'show'</span>) <span class="hljs-comment">// Select first tab</span>
+$(<span class="hljs-string">'#myTab a:last'</span>).tab(<span class="hljs-string">'show'</span>) <span class="hljs-comment">// Select last tab</span>
+$(<span class="hljs-string">'#myTab li:eq(2) a'</span>).tab(<span class="hljs-string">'show'</span>) <span class="hljs-comment">// Select third tab (0-indexed)</span>
+</code></pre>
+<h3>Markup</h3>
+
+<p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle=&quot;tab&quot;</code> or <code>data-toggle=&quot;pill&quot;</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap <a href="components.html#nav-tabs">tab styling</a>, while adding the <code>nav</code> and <code>nav-pills</code> classes will apply <a href="components.html#nav-pills">pill styling</a>.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- Nav tabs --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#home"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#profile"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#messages"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Messages<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#settings"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Tab panes --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-content"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane active"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"home"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"profile"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"messages"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"settings"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3>Fade effect</h3>
+
+<p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.in</code> to properly fade in initial content.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-content"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane fade in active"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"home"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane fade"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"profile"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane fade"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"messages"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-pane fade"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"settings"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3>Methods</h3>
+<h4>$().tab</h4>
+
+<p>Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM.</p>
+
+<code>html
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot; id=&quot;myTab&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#settings&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(function () {
+    $(&#39;#myTab a:last&#39;).tab(&#39;show&#39;)
+  })
+&lt;/script&gt;</code>
+
+<h3>Events</h3>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>show.bs.tab</td>
+       <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+    </tr>
+    <tr>
+       <td>shown.bs.tab</td>
+       <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'a[data-toggle="tab"]'</span>).on(<span class="hljs-string">'shown.bs.tab'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(e)</span> </span>{
+  e.target <span class="hljs-comment">// activated tab</span>
+  e.relatedTarget <span class="hljs-comment">// previous tab</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="tooltips" class="page-header">Tooltips <small>tooltip.js</small></h1>
+
+<h2 id="tooltips-examples">Examples</h2>
+
+<p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don&#39;t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+
+<p>Hover over the links below to see tooltips:</p>
+
+<div class="bs-example tooltip-demo">
+  <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven&#39;t heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney&#39;s fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney&#39;s cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+  </p>
+</div>
+
+<h3>Four directions</h3>
+
+<div class="bs-example tooltip-demo">
+  <div class="bs-example-tooltips">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"left"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Tooltip on left"</span>&gt;</span>Tooltip on left<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"top"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Tooltip on top"</span>&gt;</span>Tooltip on top<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"bottom"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Tooltip on bottom"</span>&gt;</span>Tooltip on bottom<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"right"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Tooltip on right"</span>&gt;</span>Tooltip on right<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-danger">
+  <h4>Opt-in functionality</h4>
+  <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Tooltips in button groups and input groups require special setting</h4>
+  <p>When using tooltips on elements within a <code>.btn-group</code> or an <code>.input-group</code>, you&#39;ll have to specify the option <code>container: &#39;body&#39;</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip is triggered).</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Don&#39;t try to show tooltips on hidden elements</h4>
+  <p>Invoking <code>$(...).tooltip(&#39;show&#39;)</code> when the target element is <code>display: none;</code> will cause the tooltip to be incorrectly positioned.</p>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Tooltips on disabled elements require wrapper elements</h4>
+  <p>To add a tooltip to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the tooltip to that <code>&lt;div&gt;</code> instead.</p>
+</div>
+
+<h2 id="tooltips-usage">Usage</h2>
+
+<p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
+
+<p>Trigger the tooltip via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#example'</span>).tooltip(options)
+</code></pre>
+<h3>Markup</h3>
+
+<p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Multiple-line links</h4>
+  <p>Sometimes you want to add a tooltip to a hyperlink that wraps multiple lines. The default behavior of the tooltip plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- HTML to write --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Some tooltip text!"</span>&gt;</span>Hover over me<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Generated markup by the plugin --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip top"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tooltip"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip-arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip-inner"</span>&gt;</span>
+    Some tooltip text!
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=&quot;&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 100px;">Type</th>
+       <th style="width: 50px;">Default</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>animation</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Apply a CSS fade transition to the tooltip</td>
+     </tr>
+     <tr>
+       <td>container</td>
+       <td>string | false</td>
+       <td>false</td>
+       <td>
+        <p>Appends the tooltip to a specific element. Example: <code>container: &#39;body&#39;</code>. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.</p>
+       </td>
+     </tr>
+     <tr>
+       <td>delay</td>
+       <td>number | object</td>
+       <td>0</td>
+       <td>
+        <p>Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type</p>
+        <p>If a number is supplied, delay is applied to both hide/show</p>
+        <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+       </td>
+     </tr>
+     <tr>
+       <td>html</td>
+       <td>boolean</td>
+       <td>false</td>
+       <td>Insert HTML into the tooltip. If false, jQuery&#39;s <code>text</code> method will be used to insert content into the DOM. Use text if you&#39;re worried about XSS attacks.</td>
+     </tr>
+     <tr>
+       <td>placement</td>
+       <td>string | function</td>
+       <td>&#39;top&#39;</td>
+       <td>How to position the tooltip - top | bottom | left | right | auto. <br> When &quot;auto&quot; is specified, it will dynamically reorient the tooltip. For example, if placement is &quot;auto left&quot;, the tooltip will display to the left when possible, otherwise it will display right.</td>
+     </tr>
+     <tr>
+       <td>selector</td>
+       <td>string</td>
+       <td>false</td>
+       <td>If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="http://jsfiddle.net/fScua/">an informative example</a>.</td>
+     </tr>
+     <tr>
+       <td>template</td>
+       <td>string</td>
+       <td><code>&#39;&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;</code></td>
+       <td>
+        <p>Base HTML to use when creating the tooltip.</p>
+        <p>The tooltip&#39;s <code>title</code> will be injected into the <code>.tooltip-inner</code>.</p>
+        <p><code>.tooltip-arrow</code> will become the tooltip&#39;s arrow.</p>
+        <p>The outermost wrapper element should have the <code>.tooltip</code> class.</p>
+      </td>
+     </tr>
+     <tr>
+       <td>title</td>
+       <td>string | function</td>
+       <td>&#39;&#39;</td>
+       <td>Default title value if <code>title</code> attribute isn&#39;t present</td>
+     </tr>
+     <tr>
+       <td>trigger</td>
+       <td>string</td>
+       <td>&#39;hover focus&#39;</td>
+       <td>How tooltip is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.</td>
+     </tr>
+     <tr>
+       <td>viewport</td>
+       <td>string | object</td>
+       <td>{ selector: &#39;body&#39;, padding: 0 }</td>
+       <td>
+        <p>Keeps the tooltip within the bounds of this element. Example: <code>viewport: &#39;#viewport&#39;</code> or <code>{ selector: &#39;#viewport&#39;, padding: 0 }</code></p>
+       </td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Data attributes for individual tooltips</h4>
+  <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
+</div>
+
+<h3>Methods</h3>
+
+<h4>$().tooltip(options)</h4>
+
+<p>Attaches a tooltip handler to an element collection.</p>
+
+<h4>.tooltip(&#39;show&#39;)</h4>
+
+<p>Reveals an element&#39;s tooltip.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).tooltip(<span class="hljs-string">'show'</span>)
+</code></pre>
+<h4>.tooltip(&#39;hide&#39;)</h4>
+
+<p>Hides an element&#39;s tooltip.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).tooltip(<span class="hljs-string">'hide'</span>)
+</code></pre>
+<h4>.tooltip(&#39;toggle&#39;)</h4>
+
+<p>Toggles an element&#39;s tooltip.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).tooltip(<span class="hljs-string">'toggle'</span>)
+</code></pre>
+<h4>.tooltip(&#39;destroy&#39;)</h4>
+
+<p>Hides and destroys an element&#39;s tooltip.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).tooltip(<span class="hljs-string">'destroy'</span>)
+</code></pre>
+<h3>Events</h3>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>show.bs.tooltip</td>
+       <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+     </tr>
+     <tr>
+       <td>shown.bs.tooltip</td>
+       <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
+     </tr>
+     <tr>
+       <td>hide.bs.tooltip</td>
+       <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+     </tr>
+     <tr>
+       <td>hidden.bs.tooltip</td>
+       <td>This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myTooltip'</span>).on(<span class="hljs-string">'hidden.bs.tooltip'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="popovers" class="page-header">Popovers <small>popover.js</small></h1>
+
+<h2 id="popovers-examples">Examples</h2>
+
+<p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependency</h4>
+  <p>Popovers require the <a href="#tooltips">tooltip plugin</a> to be included in your version of Bootstrap.</p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Opt-in functionality</h4>
+  <p>For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself</strong>.</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Popovers in button groups and input groups require special setting</h4>
+  <p>When using popovers on elements within a <code>.btn-group</code> or an <code>.input-group</code>, you&#39;ll have to specify the option <code>container: &#39;body&#39;</code> (documented below) to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the popover is triggered).</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Don&#39;t try to show popovers on hidden elements</h4>
+  <p>Invoking <code>$(...).popover(&#39;show&#39;)</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned.</p>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Popovers on disabled elements require wrapper elements</h4>
+  <p>To add a popover to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the popover to that <code>&lt;div&gt;</code> instead.</p>
+</div>
+
+<h3>Static popover</h3>
+
+<p>Four options are available: top, right, bottom, and left aligned.</p>
+
+<div class="bs-example bs-example-popover">
+  <div class="popover top">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover top</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+
+  <div class="popover right">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover right</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+
+  <div class="popover bottom">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover bottom</h3>
+
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+
+  <div class="popover left">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover left</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+
+<h3>Live demo</h3>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <button type="button" class="btn btn-lg btn-danger bs-docs-popover" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-danger"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Popover title"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"And here's some amazing content. It's very engaging. Right?"</span>&gt;</span>Click to toggle popover<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h4>Four directions</h4>
+
+<div class="bs-example tooltip-demo">
+  <div class="bs-example-tooltips">
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on left
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on top
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on bottom
+    </button>
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on right
+    </button>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-container</span>=<span class="hljs-value">"body"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"left"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span>&gt;</span>
+  Popover on left
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-container</span>=<span class="hljs-value">"body"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"top"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span>&gt;</span>
+  Popover on top
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-container</span>=<span class="hljs-value">"body"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"bottom"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."</span>&gt;</span>
+  Popover on bottom
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span> <span class="hljs-attribute">data-container</span>=<span class="hljs-value">"body"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">data-placement</span>=<span class="hljs-value">"right"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span>&gt;</span>
+  Popover on right
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h4>Dismiss on next click</h4>
+
+<p>Use the <code>focus</code> trigger to dismiss popovers on their next click.</p>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <button type="button" class="btn btn-lg btn-danger bs-docs-popover-dismiss" data-toggle="popover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-danger popover-dismiss"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"popover"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Dismissible popover"</span> <span class="hljs-attribute">data-content</span>=<span class="hljs-value">"And here's some amazing content. It's very engaging. Right?"</span>&gt;</span>Dismissible popover<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.popover-dismiss'</span>).popover({
+  trigger: <span class="hljs-string">'focus'</span>
+})
+</code></pre>
+<div class="bs-callout bs-callout-warning">
+  <h4>Multiple-line links</h4>
+  <p>Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;</code> to your anchors to avoid this.</p>
+</div>
+
+
+<h2 id="popovers-usage">Usage</h2>
+
+<p>Enable popovers via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#example'</span>).popover(options)
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=&quot;&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 100px;">Name</th>
+        <th style="width: 100px;">Type</th>
+        <th style="width: 50px;">Default</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>animation</td>
+        <td>boolean</td>
+        <td>true</td>
+        <td>Apply a CSS fade transition to the popover</td>
+      </tr>
+      <tr>
+        <td>container</td>
+        <td>string | false</td>
+        <td>false</td>
+        <td>
+         <p>Appends the popover to a specific element. Example: <code>container: &#39;body&#39;</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>content</td>
+        <td>string | function</td>
+        <td>&#39;&#39;</td>
+        <td>
+          <p>Default content value if <code>data-content</code> attribute isn&#39;t present.</p>
+          <p>If a function is given, it will be called with 1 argument, which is the element that the popover is attached to.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>delay</td>
+        <td>number | object</td>
+        <td>0</td>
+        <td>
+         <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
+         <p>If a number is supplied, delay is applied to both hide/show</p>
+         <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>boolean</td>
+        <td>false</td>
+        <td>Insert HTML into the popover. If false, jQuery&#39;s <code>text</code> method will be used to insert content into the DOM. Use text if you&#39;re worried about XSS attacks.</td>
+      </tr>
+      <tr>
+        <td>placement</td>
+        <td>string | function</td>
+        <td>&#39;right&#39;</td>
+        <td>How to position the popover - top | bottom | left | right | auto.<br> When &quot;auto&quot; is specified, it will dynamically reorient the popover. For example, if placement is &quot;auto left&quot;, the popover will display to the left when possible, otherwise it will display right.</td>
+      </tr>
+      <tr>
+        <td>selector</td>
+        <td>string</td>
+        <td>false</td>
+        <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="http://jsfiddle.net/fScua/">an informative example</a>.</td>
+      </tr>
+      <tr>
+        <td>template</td>
+        <td>string</td>
+        <td><code>&#39;&lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;h3 class=&quot;popover-title&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;</code></td>
+        <td>
+         <p>Base HTML to use when creating the popover.</p>
+         <p>The popover&#39;s <code>title</code> will be injected into the <code>.popover-title</code>.</p>
+         <p>The popover&#39;s <code>content</code> will be injected into the <code>.popover-content</code>.</p>
+         <p><code>.arrow</code> will become the popover&#39;s arrow.</p>
+         <p>The outermost wrapper element should have the <code>.popover</code> class.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>string | function</td>
+        <td>&#39;&#39;</td>
+        <td>Default title value if <code>title</code> attribute isn&#39;t present</td>
+      </tr>
+      <tr>
+        <td>trigger</td>
+        <td>string</td>
+        <td>&#39;click&#39;</td>
+        <td>How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.</td>
+      </tr>
+      <tr>
+       <td>viewport</td>
+       <td>string | object</td>
+       <td>{ selector: &#39;body&#39;, padding: 0 }</td>
+       <td>
+        <p>Keeps the popover within the bounds of this element. Example: <code>viewport: &#39;#viewport&#39;</code> or <code>{ selector: &#39;#viewport&#39;, padding: 0 }</code></p>
+       </td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Data attributes for individual popovers</h4>
+  <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
+</div>
+
+<h3>Methods</h3>
+
+<h4>$().popover(options)</h4>
+
+<p>Initializes popovers for an element collection.</p>
+
+<h4>.popover(&#39;show&#39;)</h4>
+
+<p>Reveals an elements popover.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).popover(<span class="hljs-string">'show'</span>)
+</code></pre>
+<h4>.popover(&#39;hide&#39;)</h4>
+
+<p>Hides an elements popover.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).popover(<span class="hljs-string">'hide'</span>)
+</code></pre>
+<h4>.popover(&#39;toggle&#39;)</h4>
+
+<p>Toggles an elements popover.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).popover(<span class="hljs-string">'toggle'</span>)
+</code></pre>
+<h4>.popover(&#39;destroy&#39;)</h4>
+
+<p>Hides and destroys an element&#39;s popover.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#element'</span>).popover(<span class="hljs-string">'destroy'</span>)
+</code></pre>
+<h3>Events</h3>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>show.bs.popover</td>
+       <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+     </tr>
+     <tr>
+       <td>shown.bs.popover</td>
+       <td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
+     </tr>
+     <tr>
+       <td>hide.bs.popover</td>
+       <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+     </tr>
+     <tr>
+       <td>hidden.bs.popover</td>
+       <td>This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myPopover'</span>).on(<span class="hljs-string">'hidden.bs.popover'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="alerts" class="page-header">Alert messages <small>alert.js</small></h1>
+
+<h2 id="alerts-examples">Example alerts</h2>
+
+<p>Add dismiss functionality to all alert messages with this plugin.</p>
+
+<div class="bs-example">
+  <div class="alert alert-warning fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>Holy guacamole!</strong> Best check yo self, you&#39;re not looking too good.
+  </div>
+</div>
+
+<div class="bs-example">
+  <div class="alert alert-danger fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4>Oh snap! You got an error!</h4>
+    <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+    <p>
+      <button type="button" class="btn btn-danger">Take this action</button>
+      <button type="button" class="btn btn-default">Or do this</button>
+    </p>
+  </div>
+</div>
+
+
+<h2 id="alerts-usage">Usage</h2>
+
+<p>Enable dismissal of an alert via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">".alert"</span>).alert()
+</code></pre>
+<h3>Markup</h3>
+
+<p>Just add <code>data-dismiss=&quot;alert&quot;</code> to your close button to automatically give an alert close functionality.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span> <span class="hljs-attribute">data-dismiss</span>=<span class="hljs-value">"alert"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h3>Methods</h3>
+
+<h4>$().alert()</h4>
+
+<p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+
+<h4>.alert(&#39;close&#39;)</h4>
+
+<p>Closes an alert.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">".alert"</span>).alert(<span class="hljs-string">'close'</span>)
+</code></pre>
+<h3>Events</h3>
+
+<p>Bootstrap&#39;s alert class exposes a few events for hooking into alert functionality.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Event Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>close.bs.alert</td>
+        <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+      </tr>
+      <tr>
+        <td>closed.bs.alert</td>
+        <td>This event is fired when the alert has been closed (will wait for CSS transitions to complete).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#my-alert'</span>).on(<span class="hljs-string">'closed.bs.alert'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="buttons" class="page-header">Buttons <small>button.js</small></h1>
+
+<h2 id="buttons-examples">Example uses</h2>
+
+<p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+
+<h4>Stateful</h4>
+
+<p>Add <code>data-loading-text=&quot;Loading...&quot;</code> to use a loading state on a button.</p>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary">
+    Loading state
+  </button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"loading-example-btn"</span> <span class="hljs-attribute">data-loading-text</span>=<span class="hljs-value">"Loading..."</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>
+  Loading state
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-string">'#loading-example-btn'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> btn = $(<span class="hljs-keyword">this</span>)
+    btn.button(<span class="hljs-string">'loading'</span>)
+    $.ajax(...).always(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      btn.button(<span class="hljs-string">'reset'</span>)
+    });
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<h4>Single toggle</h4>
+
+<p>Add <code>data-toggle=&quot;button&quot;</code> to activate toggling on a single button.</p>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"button"</span>&gt;</span>Single toggle<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h4>Checkbox</h4>
+
+<p>Add <code>data-toggle=&quot;buttons&quot;</code> to a group of checkboxes for checkbox style toggling on btn-group.</p>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Pre-checked options need <code>.active</code></h4>
+  <p>For pre-checked options, you must add the <code>.active</code> class to the input&#39;s <code>label</code> yourself.</p>
+</div>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active">
+      <input type="checkbox" checked> Option 1 (pre-checked)
+    </label>
+    <label class="btn btn-primary">
+      <input type="checkbox"> Option 2
+    </label>
+    <label class="btn btn-primary">
+      <input type="checkbox"> Option 3
+    </label>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn-group"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"buttons"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">checked</span>&gt;</span> Option 1 (pre-checked)
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span>&gt;</span> Option 2
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span>&gt;</span> Option 3
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h4>Radio</h4>
+
+<p>Add <code>data-toggle=&quot;buttons&quot;</code> to a group of radio inputs for radio style toggling on btn-group.</p>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Preselected options need <code>.active</code></h4>
+  <p>For preselected options, you must add the <code>.active</code> class to the input&#39;s <code>label</code> yourself.</p>
+</div>
+
+<div class="bs-example" style="padding-bottom: 24px;">
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active">
+      <input type="radio" name="options" id="option1" checked> Option 1 (preselected)
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option2"> Option 2
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option3"> Option 3
+    </label>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn-group"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"buttons"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"options"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span> Option 1 (preselected)
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"options"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"option2"</span>&gt;</span> Option 2
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"options"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"option3"</span>&gt;</span> Option 3
+  <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h2 id="buttons-usage">Usage</h2>
+
+<p>Enable buttons via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.btn'</span>).button()
+</code></pre>
+<h3>Markup</h3>
+
+<p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
+
+<h3>Options</h3>
+
+<p><em>None</em></p>
+
+<h3>Methods</h3>
+
+<h4>$().button(&#39;toggle&#39;)</h4>
+
+<p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Auto toggling</h4>
+  <p>You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"button"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<h4>$().button(&#39;loading&#39;)</h4>
+
+<p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
+</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"loading-example-btn"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-loading-text</span>=<span class="hljs-value">"loading stuff..."</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-string">'#loading-example-btn'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> btn = $(<span class="hljs-keyword">this</span>)
+    btn.button(<span class="hljs-string">'loading'</span>)
+    $.ajax(...).always(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      btn.button(<span class="hljs-string">'reset'</span>)
+    });
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-danger">
+  <h4>Cross-browser compatibility</h4>
+  <p><a href="https://github.com/twbs/bootstrap/issues/793">Firefox persists form control states across page loads</a>. A workaround for this is to use <code>autocomplete=&quot;off&quot;</code>.</p>
+</div>
+
+<h4>$().button(&#39;reset&#39;)</h4>
+
+<p>Resets button state - swaps text to original text.</p>
+
+<h4>$().button(string)</h4>
+
+<p>Resets button state - swaps text to any data defined text state.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span> <span class="hljs-attribute">data-complete-text</span>=<span class="hljs-value">"finished!"</span> &gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-string">'.btn'</span>).button(<span class="hljs-string">'complete'</span>)
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="collapse" class="page-header">Collapse <small>collapse.js</small></h1>
+
+<h3>About</h3>
+
+<p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependency</h4>
+  <p>Collapse requires the <a href="#transitions">transitions plugin</a> to be included in your version of Bootstrap.</p>
+</div>
+
+<h2 id="collapse-examples">Example accordion</h2>
+
+<p>Using the collapse plugin, we built a simple accordion by extending the panel component.</p>
+
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Collapsible Group Item #1
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            Collapsible Group Item #2
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            Collapsible Group Item #3
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-group"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"accordion"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-parent</span>=<span class="hljs-value">"#accordion"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#collapseOne"</span>&gt;</span>
+          Collapsible Group Item #1
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"collapseOne"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-collapse collapse in"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-parent</span>=<span class="hljs-value">"#accordion"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#collapseTwo"</span>&gt;</span>
+          Collapsible Group Item #2
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"collapseTwo"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-collapse collapse"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-heading"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-title"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-parent</span>=<span class="hljs-value">"#accordion"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#collapseThree"</span>&gt;</span>
+          Collapsible Group Item #3
+        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"collapseThree"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-collapse collapse"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-danger"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"collapse"</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#demo"</span>&gt;</span>
+  simple collapsible
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"demo"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"collapse in"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h2 id="collapse-usage">Usage</h2>
+
+<p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+
+<ul>
+  <li><code>.collapse</code> hides the content</li>
+  <li><code>.collapse.in</code> shows the content</li>
+  <li><code>.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+</ul>
+
+<p>These classes can be found in <code>component-animations.less</code>.</p>
+
+<h3>Via data attributes</h3>
+
+<p>Just add <code>data-toggle=&quot;collapse&quot;</code> and a <code>data-target</code> to element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you&#39;d like it to default open, add the additional class <code>in</code>.</p>
+
+<p>To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent=&quot;#selector&quot;</code>. Refer to the demo to see this in action.</p>
+
+<h3>Via JavaScript</h3>
+
+<p>Enable manually with:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.collapse'</span>).collapse()
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=&quot;&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 50px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>parent</td>
+       <td>selector</td>
+       <td>false</td>
+       <td>If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this dependent on the <code>panel</code> class)</td>
+     </tr>
+     <tr>
+       <td>toggle</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Toggles the collapsible element on invocation</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Methods</h3>
+
+<h4>.collapse(options)</h4>
+
+<p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.
+
+<code>js
+$(&#39;#myCollapsible&#39;).collapse({
+  toggle: false
+})</code>
+
+<h4>.collapse(&#39;toggle&#39;)</h4>
+
+<p>Toggles a collapsible element to shown or hidden.</p>
+
+<h4>.collapse(&#39;show&#39;)</h4>
+
+<p>Shows a collapsible element.</p>
+
+<h4>.collapse(&#39;hide&#39;)</h4>
+
+<p>Hides a collapsible element.</p>
+
+<h3>Events</h3>
+
+<p>Bootstrap&#39;s collapse class exposes a few events for hooking into collapse functionality.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>show.bs.collapse</td>
+       <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+     </tr>
+     <tr>
+       <td>shown.bs.collapse</td>
+       <td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
+     </tr>
+     <tr>
+       <td>hide.bs.collapse</td>
+       <td>
+        This event is fired immediately when the <code>hide</code> method has been called.
+       </td>
+     </tr>
+     <tr>
+       <td>hidden.bs.collapse</td>
+       <td>This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myCollapsible'</span>).on(<span class="hljs-string">'hidden.bs.collapse'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="carousel" class="page-header">Carousel <small>carousel.js</small></h1>
+
+<h2 id="carousel-examples">Examples</h2>
+
+<p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+
+<div class="bs-example">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+      </div>
+      <div class="item">
+        <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+      </div>
+      <div class="item">
+        <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"carousel-example-generic"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel slide"</span> <span class="hljs-attribute">data-ride</span>=<span class="hljs-value">"carousel"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Indicators --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-indicators"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">data-target</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">data-slide-to</span>=<span class="hljs-value">"2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Wrapper for slides --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-inner"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item active"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"..."</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"..."</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-caption"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"..."</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"..."</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-caption"</span>&gt;</span>
+        ...
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Controls --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"left carousel-control"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-slide</span>=<span class="hljs-value">"prev"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"glyphicon glyphicon-chevron-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"right carousel-control"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#carousel-example-generic"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">data-slide</span>=<span class="hljs-value">"next"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"glyphicon glyphicon-chevron-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-warning" id="callout-carousel-transitions">
+  <h4>Transition animations not supported in Internet Explorer 8 &amp; 9</h4>
+  <p>Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 &amp; 9 don&#39;t support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.</p>
+</div>
+
+<h3>Optional captions</h3>
+
+<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.item</code>. Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
+
+<div class="bs-example">
+  <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+      <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img data-src="holder.js/900x500/auto/#777:#777" alt="First slide image">
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img data-src="holder.js/900x500/auto/#666:#666" alt="Second slide image">
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img data-src="holder.js/900x500/auto/#555:#5555" alt="Third slide image">
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"..."</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"..."</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"carousel-caption"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-danger">
+  <h4>Accessibility issue</h4>
+  <p>The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+</div>
+
+<h2 id="carousel-usage">Usage</h2>
+
+<h3>Multiple carousels</h3>
+
+<p>Carousels require the use of an <code>id</code> on the outermost container (the <code>.carousel</code>) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel&#39;s <code>id</code>, be sure to update the relevant controls.</p>
+
+<h3>Via data attributes</h3>
+
+<p>Use data attributes to easily control the position of the carousel. <code>data-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to</code> to pass a raw slide index to the carousel <code>data-slide-to=&quot;2&quot;</code>, which shifts the slide position to a particular index beginning with <code>0</code>.</p>
+
+<p>The <code>data-ride=&quot;carousel&quot;</code> attribute is used to mark a carousel as animating starting at page load.</p>
+
+<h3>Via JavaScript</h3>
+
+<p>Call carousel manually with:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.carousel'</span>).carousel()
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=&quot;&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 50px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>interval</td>
+       <td>number</td>
+       <td>5000</td>
+       <td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+     </tr>
+     <tr>
+       <td>pause</td>
+       <td>string</td>
+       <td>&quot;hover&quot;</td>
+       <td>Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.</td>
+     </tr>
+     <tr>
+       <td>wrap</td>
+       <td>boolean</td>
+       <td>true</td>
+       <td>Whether the carousel should cycle continuously or have hard stops.</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Methods</h3>
+
+<h4>.carousel(options)</h4>
+
+<p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'.carousel'</span>).carousel({
+  interval: <span class="hljs-number">2000</span>
+})
+</code></pre>
+<h4>.carousel(&#39;cycle&#39;)</h4>
+
+<p>Cycles through the carousel items from left to right.</p>
+
+<h4>.carousel(&#39;pause&#39;)</h4>
+
+<p>Stops the carousel from cycling through items.</p>
+
+
+<h4>.carousel(number)</h4>
+
+<p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
+
+<h4>.carousel(&#39;prev&#39;)</h4>
+
+<p>Cycles to the previous item.</p>
+
+<h4>.carousel(&#39;next&#39;)</h4>
+
+<p>Cycles to the next item.</p>
+
+<h3>Events</h3>
+
+<p>Bootstrap&#39;s carousel class exposes two events for hooking into carousel functionality.</p>
+
+<p>Both events have the following additional properties:</p>
+
+<ul>
+  <li><code>direction</code>: The direction in which the carousel is sliding (either <code>&quot;left&quot;</code> or <code>&quot;right&quot;</code>).</li>
+  <li><code>relatedTarget</code>: The DOM element that is being slid into place as the active item.</li>
+</ul>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 150px;">Event Type</th>
+       <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>slide.bs.carousel</td>
+       <td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+     </tr>
+     <tr>
+       <td>slid.bs.carousel</td>
+       <td>This event is fired when the carousel has completed its slide transition.</td>
+     </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#myCarousel'</span>).on(<span class="hljs-string">'slide.bs.carousel'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// do something…</span>
+})
+</code></pre>
+</div>
+<div class="bs-docs-section"><h1 id="affix" class="page-header">Affix <small>affix.js</small></h1>
+
+<h2 id="affix-examples">Example</h2>
+
+<p>The subnavigation on the right is a live demo of the affix plugin.</p>
+
+<hr class="bs-docs-separator">
+
+<h2 id="affix-usage">Usage</h2>
+
+<p>Use the affix plugin via data attributes or manually with your own JavaScript. <strong class="text-danger">In both situations, you must provide CSS for the positioning and width of your affixed content.</strong></p>
+
+<h3>Positioning via CSS</h3>
+
+<p>The affix plugin toggles between three classes, each representing a particular state: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code>. You must provide the styles for these classes yourself (independent of this plugin) to handle the actual positions.</p>
+
+<p>Here&#39;s how the affix plugin works:</p>
+
+<ol>
+  <li>To start, the plugin adds <code>.affix-top</code> to indicate the element is in its top-most position. At this point no CSS positioning is required.</li>
+  <li>Scrolling past the element you want affixed should trigger the actual affixing. This is where <code>.affix</code> replaces <code>.affix-top</code> and sets <code>position: fixed;</code> (provided by Bootstrap&#39;s code CSS).</li>
+  <li>If a bottom offset is defined, scrolling past that should replace <code>.affix</code> with <code>.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position: absolute;</code> when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.</li>
+</ol>
+
+<p>Follow the above steps to set your CSS for either of the usage options below.</p>
+
+<h3>Via data attributes</h3>
+
+<p>To easily add affix behavior to any element, just add <code>data-spy=&quot;affix&quot;</code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.</p>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-spy</span>=<span class="hljs-value">"affix"</span> <span class="hljs-attribute">data-offset-top</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">data-offset-bottom</span>=<span class="hljs-value">"200"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3>Via JavaScript</h3>
+
+<p>Call the affix plugin via JavaScript:</p>
+
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#my-affix'</span>).affix({
+  offset: {
+    top: <span class="hljs-number">100</span>
+  , bottom: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-keyword">this</span>.bottom = $(<span class="hljs-string">'.footer'</span>).outerHeight(<span class="hljs-literal">true</span>))
+    }
+  }
+})
+</code></pre>
+<h3>Options</h3>
+
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset-top=&quot;200&quot;</code>.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+     <tr>
+       <th style="width: 100px;">Name</th>
+       <th style="width: 100px;">type</th>
+       <th style="width: 50px;">default</th>
+       <th>description</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>offset</td>
+       <td>number | function | object</td>
+       <td>10</td>
+       <td>Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object <code>offset: { top: 10 }</code> or <code>offset: { top: 10, bottom: 5 }</code>. Use a function when you need to dynamically calculate an offset.</td>
+     </tr>
+     <tr>
+       <td>target</td>
+       <td>selector | node | jQuery element</td>
+       <td>the <code>window</code> object</td>
+       <td>Specifies the target element of the affix.</td>
+     </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+<h3>Events</h3>
+
+<p>Bootstrap&#39;s affix class exposes a few events for hooking into affix functionality.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th style="width: 150px;">Event Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>affix.bs.affix</td>
+        <td>This event fires immediately before the element has been affixed.</td>
+      </tr>
+      <tr>
+        <td>affixed.bs.affix</td>
+        <td>This event is fired after the element has been affixed.</td>
+      </tr>
+      <tr>
+        <td>affix-top.bs.affix</td>
+        <td>This event fires immediately before the element has been affixed-top.</td>
+      </tr>
+      <tr>
+        <td>affixed-top.bs.affix</td>
+        <td>This event is fired after the element has been affixed-top.</td>
+      </tr>
+     <tr>
+      <td>affix-bottom.bs.affix</td>
+        <td>This event fires immediately before the element has been affixed-bottom.</td>
+      </tr>
+      <tr>
+        <td>affixed-bottom.bs.affix</td>
+        <td>This event is fired after the element has been affixed-bottom.</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div>
+                </div>
+                <div class="col-md-3 island island-default">
+                  <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
+                    <ul class="nav bs-docs-sidenav">
+                    
+                      <li>
+  <a href="#js-overview">Overview</a>
+  <ul class="nav">
+    <li><a href="#js-individual-compiled">Individual or compiled</a></li>
+    <li><a href="#js-data-attrs">Data attributes</a></li>
+    <li><a href="#js-programmatic-api">Programmatic API</a></li>
+    <li><a href="#js-noconflict">No conflict</a></li>
+    <li><a href="#js-events">Events</a></li>
+    <li><a href="#callout-third-party-libs">Third-party libraries</a></li>
+  </ul>
+</li>
+<li><a href="#transitions">Transitions</a></li>
+<li>
+  <a href="#modals">Modal</a>
+  <ul class="nav">
+    <li><a href="#modals-examples">Examples</a></li>
+    <li><a href="#modals-sizes">Sizes</a></li>
+    <li><a href="#modals-remove-animation">Remove animation</a></li>
+    <li><a href="#modals-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#dropdowns">Dropdown</a>
+  <ul class="nav">
+    <li><a href="#dropdowns-examples">Examples</a></li>
+    <li><a href="#dropdowns-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#scrollspy">Scrollspy</a>
+  <ul class="nav">
+    <li><a href="#scrollspy-examples">Examples</a></li>
+    <li><a href="#scrollspy-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#tabs">Tab</a>
+  <ul class="nav">
+    <li><a href="#tabs-examples">Examples</a></li>
+    <li><a href="#tabs-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#tooltips">Tooltip</a>
+  <ul class="nav">
+    <li><a href="#tooltips-examples">Examples</a></li>
+    <li><a href="#tooltips-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#popovers">Popover</a>
+  <ul class="nav">
+    <li><a href="#popovers-examples">Examples</a></li>
+    <li><a href="#popovers-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#alerts">Alert</a>
+  <ul class="nav">
+    <li><a href="#alerts-examples">Examples</a></li>
+    <li><a href="#alerts-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#buttons">Button</a>
+  <ul class="nav">
+    <li><a href="#buttons-examples">Examples</a></li>
+    <li><a href="#buttons-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#collapse">Collapse</a>
+  <ul class="nav">
+    <li><a href="#collapse-examples">Examples</a></li>
+    <li><a href="#collapse-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#carousel">Carousel</a>
+  <ul class="nav">
+    <li><a href="#carousel-examples">Examples</a></li>
+    <li><a href="#carousel-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#affix">Affix</a>
+  <ul class="nav">
+    <li><a href="#affix-examples">Examples</a></li>
+    <li><a href="#affix-usage">Usage</a></li>
+  </ul>
+</li>
+
+                    
+                    </ul>
+                    <a class="back-to-top" href="#top">
+                      Back to top
+                    </a>
+                    
+                    <a href="#" class="bs-docs-theme-toggle">
+                      Preview theme
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/docs.min.js"></script>
+
+
+    </div>
+  </body>
+</html>

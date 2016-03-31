@@ -1,0 +1,113 @@
+/*
+
+# Gutter-half, gutter-quarter, gutter-null
+
+Adjust spacing between columns (applies to paddings).
+
+```html
+<div class="row">
+    <div class="col-sm-4 gutter-half-right-sm">
+        ...
+    </div>
+    <div class="col-sm-4 gutter-half-sm">
+        ...
+    </div>
+    <div class="col-sm-4 gutter-half-left-sm">
+        ...
+    </div>
+</div>
+```
+Docs: http://codepen.io/paulradzkov/pen/VaZzBr?editors=1100
+
+*/
+
+
+.gutter-settings() {
+    @gutter-width: 30px; // space between grid columns
+
+    // media breakpoints (default: as on bootstrap)
+    @breakpoints:
+        ~"min-width: 480px",
+        ~"min-width: 768px",
+        ~"min-width: 992px",
+        ~"min-width: 1200px";
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg;
+
+    // classnames
+    @gutter: gutter;
+    @half: half;
+    @quarter: quarter;
+    @null: null;
+
+    // classnames modifiers
+    @left: left;
+    @right: right;
+}
+
+@gutter-render: {
+    //calculations
+    @n: length(@breakpoints); // how many breakpoints we have
+    @m: length(@suffixes); // how many suffixes we have
+
+    .padding-half-l()    { padding-left:  round(( @gutter-width / 4 )); }
+    .padding-half-r()    { padding-right: round(( @gutter-width / 4 )); }
+    .padding-quarter-l() { padding-left:  round(( @gutter-width / 8 )); }
+    .padding-quarter-r() { padding-right: round(( @gutter-width / 8 )); }
+    .padding-null-l()    { padding-left:  0; }
+    .padding-null-r()    { padding-right: 0; }
+
+    .padding-half() {
+        .padding-half-l();
+        .padding-half-r();
+    }
+    .padding-quarter() {
+        .padding-quarter-l();
+        .padding-quarter-r();
+    }
+    .padding-null() {
+        .padding-null-l();
+        .padding-null-r();
+    }
+
+    // generates mobile first classes
+    .responsive(@index: @n) when (@index > 0) and (@n = @m) {
+        .responsive((@index - 1)); // next iteration
+        @current-suffix: extract(@suffixes, @index);
+
+        // generating code
+        @media (extract(@breakpoints, @index)) {
+            .@{gutter}-@{half}-@{current-suffix}          { .padding-half(); }
+            .@{gutter}-@{half}-@{left}-@{current-suffix}  { .padding-half-l(); }
+            .@{gutter}-@{half}-@{right}-@{current-suffix} { .padding-half-r(); }
+
+            .@{gutter}-@{quarter}-@{current-suffix}          { .padding-quarter(); }
+            .@{gutter}-@{quarter}-@{left}-@{current-suffix}  { .padding-quarter-l(); }
+            .@{gutter}-@{quarter}-@{right}-@{current-suffix} { .padding-quarter-r(); }
+
+            .@{gutter}-@{null}-@{current-suffix}          { .padding-null(); }
+            .@{gutter}-@{null}-@{left}-@{current-suffix}  { .padding-null-l(); }
+            .@{gutter}-@{null}-@{right}-@{current-suffix} { .padding-null-r(); }
+        }
+    }
+
+    .@{gutter}-@{half}          { .padding-half(); }
+    .@{gutter}-@{half}-@{left}  { .padding-half-l(); }
+    .@{gutter}-@{half}-@{right} { .padding-half-r(); }
+
+    .@{gutter}-@{quarter}          { .padding-quarter(); }
+    .@{gutter}-@{quarter}-@{left}  { .padding-quarter-l(); }
+    .@{gutter}-@{quarter}-@{right} { .padding-quarter-r(); }
+
+    .@{gutter}-@{null}          { .padding-null(); }
+    .@{gutter}-@{null}-@{left}  { .padding-null-l(); }
+    .@{gutter}-@{null}-@{right} { .padding-null-r(); }
+
+    .gutter-settings();
+
+    // run after settings! otherwise mixin is undefined
+    .responsive;
+};
+
+@gutter-render();

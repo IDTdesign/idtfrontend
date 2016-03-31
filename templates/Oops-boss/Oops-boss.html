@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>Oops...</title>
+
+		<style>
+			html, body {
+				height: 100%;
+			}
+			body {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				font-size: 62.5%;
+				background-position: 50% 50%;
+				background-attachment: fixed;
+				background-image: url(bg-d3.jpg), none;
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-color: #EEE;
+				color: #FFF;
+			}
+			.island {
+				box-sizing: border-box;
+				width: 80%;
+				max-width: 1200px;
+				margin: 100px auto;
+				padding-top: 60px;
+				padding-bottom: 40px;
+				padding-left: 3%;
+				padding-right: 3%;
+			    text-align: center;
+				background-color: rgba(0, 0, 0, 0.4);
+			    border-radius: 8px;
+			}
+			.oops {
+				margin: 0 auto;
+			    height: 180px;
+				text-indent: -9999px;
+				background: url('oops.svg') no-repeat top center;
+				background-size: contain;
+			}
+			h2 {
+				margin: 10px 0 0;
+				font-size: 5.4em;
+				font-weight: bold;
+			}
+			p {	
+				margin: 15px auto;
+				font-size: 22px;	
+			}
+			p span {
+				display: block;
+			}
+			h2 + p{
+				margin: 0;
+				margin-bottom: 20px;
+				font-size: 27px;
+			}
+			.logo {
+				position: relative;
+				width: 42px;
+				height: 50px; 
+				margin: 30px auto 25px;
+				background: url('logo-42.png') no-repeat center center;
+				background-size: contain;
+				box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+			}
+			.logo:before,
+			.logo:after {
+				content: "";
+				display: block;
+				position: absolute;
+				opacity: 1;
+				top: 49%;
+				width: 225px;
+				height: 2px;
+				background-color: rgba(255,255,255,0.25); 
+			}
+			.logo:before {
+				left: -255px;
+			}
+			.logo:after {
+				right: -255px;
+			}
+			div div {
+				display: inline-block;
+				text-align: left;
+			}
+			div p {
+				font-size: 20px;
+				margin-top: 0;
+				margin-bottom: 0; 
+			}
+			div p:first-child {
+				margin-bottom: 5px;
+			}
+			a {
+				display: inline-block;
+				position: relative;
+				top: -2px;
+				width: 125px;
+				margin-top: 10px;
+				margin-right: 36px;
+				margin-bottom: 10px;
+				text-align: right;
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #e00000;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+			}
+			a:hover {
+				text-decoration: none;
+				color: #ff0000;
+			}
+			a span {
+				position: relative;
+			}
+			a span:after {
+				content: "";
+				display: block;
+				position: absolute;
+				opacity: 1;
+				top: 19%;
+				right: -28px;
+				width: 13px;
+				height: 11px;
+				background: url('arrow.svg') no-repeat center center;
+			}
+			a:hover span:after {
+				background: url('arrow-hover.svg') no-repeat center center;
+			}
+			@media (max-width: 910px) {
+				body {
+					font-size: 42.5%;
+				}
+				.oops{
+					height: 120px;
+				}
+				h2 {
+					font-size: 6em;
+				}
+			}
+			@media (max-width: 768px) {
+				body {
+					font-size: 22.5%;
+				}
+				.island {
+					width: 100%;
+					height: 100%;
+				    margin: 0;
+					padding-top: 40px;
+					padding-bottom: 40px;
+				    border-radius: 0;
+					overflow:auto;
+				}
+				h2 {
+					font-size: 9em;
+				}
+				h2 + p {
+					font-size: 6.8em;
+				}
+			}
+			@media (max-width: 590px) {
+				div div {
+					text-align: center;
+				}
+				div p {
+					font-size: 5.8em;
+				}
+				div a {
+					display: block;
+					top: 0;
+					width: auto;
+					margin-right: 0;
+					text-align: center;
+				}
+				div a span {
+					display: inline-block;
+				}
+				a span:before {
+					content: "";
+					display: block;
+					position: absolute;
+					opacity: 1;
+					top: 19%;
+					left: -26px;
+					width: 13px;
+					height: 11px;
+					background: url('arrow.svg') no-repeat center center;
+				}
+				a:hover span:before {
+					background: url('arrow-hover.svg') no-repeat center center;
+				}
+				a span:after {
+					opacity: 0;
+				}
+			}
+			@media (max-width: 430px) {
+				p span {
+					display: inline;
+				}
+			}
+			@media (max-width: 350px) {
+				body {
+					font-size: 17.5%;
+				}
+				.oops{
+					height: 100px;
+				}
+				div p {
+					font-size: 6.3em;
+				}
+				p {
+					font-size: 6.8em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<article class="island">
+			<p class="oops">Oops</p>
+			<h2>We're sorry...</h2>
+			<p>The site is down at the moment.</p>
+			<p><span>We’ll be back and running before long, </span><span>so check back with us soon.</span></p>
+			<p>Thanks for your patience.</p>
+			<p class="logo"></p>	
+			<div>
+				<div>
+					<p><a href="#"><span>previuos page</span></a> Go back to the previous page</p>
+					<p><a href="#"><span>home page</span></a> Go back to the Boss Revolution home page</p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

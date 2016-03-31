@@ -1,0 +1,81 @@
+/* equalized flexblock */
+
+/* equlized with flex */
+.container-equalized {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: -10px;
+    text-align: center;
+    font-size: 0;
+
+   .item-equalized {
+		flex-grow: 1;
+		box-sizing: border-box;
+		margin: 10px;
+		padding: 30px;
+		position: relative;
+		border-radius: @border-radius-large;
+		background: @paper;
+		vertical-align: top;
+		font-size: 15px;
+		line-height: 1.36;
+		color: @ink;
+	    text-align: left;
+
+		h3 {
+			margin-top: 1em;
+			text-transform: uppercase;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+			color: @link-hover-color;
+		}
+
+		&.item--3, &.item--5, &.item--6, &.item--9 {max-width: 366px;}
+
+		&.item--4, &.item--7, &.item--8, &.item--10 {max-width: 270px;}
+
+		&.item-equalized {
+			@media screen and (max-width: @screen-md-max) {
+				max-width: 300px;
+			}
+
+			@media screen and (max-width: @screen-sm-max) {
+				max-width: 348px;
+			}
+
+			@media screen and (max-width: @screen-xs-max) {
+				align-self: stretch;
+			    max-width: none;
+			    border-radius: @border-radius-base;
+			    background-color: fade(@paper, 20%);
+			}
+		}
+	}
+
+	@media screen and (max-width: @screen-xs-max) {
+		flex-direction: column;
+        align-items: stretch;
+        margin: 0 -15px;
+        padding: 20px;
+        background-color: @paper;
+	}
+}
+
+/* equlized with table */
+.no-flexbox.no-flexboxlegacy .container-equalized {
+    display: block;
+
+    .item-equalized {
+        display: inline-block;
+        width: 100%;
+        min-height: 330px;
+        vertical-align: top;
+	}
+}

@@ -1,0 +1,183 @@
+@media (max-width: @screen-xs-max) {
+
+    .custom-about-br-1 {
+        max-width:100%;
+        padding: 20px 20px 0;
+        overflow: hidden;
+
+        img {
+            max-width: 60%;
+        }
+    }
+
+    .custom-about-br-2 {
+        max-width:100%;
+        padding: 20px 20px 0;
+        overflow: hidden;
+
+        img {
+            max-width: 60%;
+        }
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+
+    .custom-about-br-1 {
+        max-width:100%;
+        padding-top: 40px;
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            margin-bottom: -40px;
+            max-width: none;
+        }
+    }
+    .custom-about-br-2 {
+        max-width:100%;
+        padding-bottom: 40px;
+        overflow: hidden;
+        direction: rtl;
+        text-align: center;
+
+        img {
+            margin-top: -100px;
+            max-width: none;
+        }
+    }
+}
+
+
+//mobile-app page
+.island #one-tap-dialing > .mediablock--primary {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.island section:last-child > .mediablock--primary {
+        padding-top: 60px;
+        padding-bottom: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .mediablock-tighter > .mediablock--primary {
+        margin-top: 0;
+        padding: 40px 60px;
+        overflow: hidden;
+    }
+    .mediablock-tighter > .mediablock--secondary {
+        padding: 60px;
+    }
+}  
+
+@media (max-width: 992px) {
+    .island section:last-child > .mediablock--primary {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mediablock-tighter > .mediablock--primary {
+        margin-top: 0;
+        padding: 40px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+}
+//mobile-app page end
+
+//money-transfer page
+.money-transfer-carousel {
+
+    .carousel-indicators {
+        bottom: 0px;
+    }
+
+    .item {
+        .mediablock--primary {
+            border-radius: 5px;
+            overflow: hidden;
+ 
+            @media (min-width: @screen-md-min) {
+                width: 55%;
+                margin-right: 60px;
+            }
+
+            @media (max-width: @screen-sm-max) {
+                margin: 0 0 30px;
+            }
+        }
+
+        .mediablock--secondary {
+            @media (min-width: @screen-lg-min) {
+                width: 38%;
+            }
+
+            @media (max-width: @screen-md-max) and (min-width: @screen-md-min) {
+                width: 35%;
+            }
+        }
+
+        .item--title {
+            line-height: 1.3;
+        }
+    }
+}
+
+.money-transfer-logo {
+    .mediablock--primary {
+        @media (min-width: @screen-md-min) {
+            width: 15%;
+            margin-right: 165px;
+            margin-left: 40px;
+        }        
+
+        @media (max-width: @screen-md-max) and (min-width: @screen-md-min) {
+            margin-right: 80px;
+        }
+
+        @media (max-width: @screen-sm-max) {
+            margin: 0 0 30px;
+        }
+    }
+    
+    &.mediablock-rtl > .mediablock--secondary {
+        @media (min-width: @screen-md-min) {
+            width: 60%;
+            direction: rtl;
+        }  
+
+        @media (max-width: @screen-md-max) and (min-width: @screen-md-min) {
+            width: 67%;
+        }
+
+        h1 {
+            line-height: 1.3;
+            margin-bottom: 0;
+
+            @media (max-width: @screen-sm-max) {
+                text-align: center;
+            }
+
+        }
+    }
+}
+//money-transfer page end
+
+.nav-pane {
+    .icon-txt {
+        > .i {
+            @media (max-width: @screen-xs-max) {
+                position: relative;
+                top: 3px;
+            }
+        } 
+    }   
+}
+
+
+// label on register page
+.forms-default label[for="AllowSMS"] {
+    font-weight: normal;
+}

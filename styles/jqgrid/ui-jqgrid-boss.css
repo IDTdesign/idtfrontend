@@ -1,0 +1,94 @@
+.ui-jqgrid tr.jqgrow {
+	outline-style: none;
+}
+.ui-jqgrid tr.jqgrow td {
+	font-weight: normal;
+	vertical-align: top;
+	line-height: 1.42857143em;
+	overflow: hidden;
+	padding: 8px 15px;
+	border-bottom-width: 1px;
+	border-bottom-color: inherit;
+	border-bottom-style: solid;
+	font-size: 16px;
+	color: #fff;
+}
+.ui-jqgrid .ui-jqgrid-btable {
+	table-layout: fixed;
+	margin: 0;
+	outline-style: none;
+}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {
+	border-left: 0 none;
+	border-right: 0 none;
+}
+.ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
+	overflow: hidden;
+	text-align: left;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	vertical-align: bottom;
+}
+.ui-jqgrid .ui-jqgrid-htable th, .ui-jqgrid tr.jqgrow td {
+	padding-left: 5px;
+	padding-right: 0px;
+}
+.ui-jqgrid .ui-jqgrid-htable th:first-child, .ui-jqgrid tr.jqgrow td:first-child{
+	padding-left: 0;
+}
+.ui-jqgrid .ui-jqgrid-htable th:last-child, .ui-jqgrid tr.jqgrow td:last-child{
+	padding-right: 0;
+}
+.transactions-grid .ui-widget-content{
+	border: 0;
+}
+.ui-jqgrid .ui-jqgrid-hbox{
+	padding-right: 0;
+}
+.ui-jqgrid .ui-jqgrid-btable{
+	table-layout: fixed;
+}
+.ui-jqgrid tr.ui-row-ltr td{
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgba(235, 240, 245, 0.2);;
+	white-space: normal;
+}
+.ui-jqgrid tr.ui-row-ltr:last-child td{
+	border-bottom: 0;
+}
+.ui-jqgrid .ui-jqgrid-bdiv{
+	overflow: visible;
+	table-layout: fixed;
+	margin: 0;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border-top: none;
+	border-bottom: 1px solid rgba(235, 240, 245, 0.2);;
+	background: none;
+	font-weight: normal;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+	overflow: hidden;
+	position: relative;
+	padding: 8px 0;
+	height: auto;
+}
+.ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-hover.ui-state-highlight{
+	background: rgba(255, 255, 255, 0.1);
+}
+.ui-widget-content th.ui-state-hover{
+	background: transparent;
+}
+.ui-widget-content .ui-state-highlight{
+	background: none;
+}
+th[id*=amount]{
+	text-align: right!important;
+}
+td[aria-describedby*=amount]{
+	font-weight: bold!important;
+}

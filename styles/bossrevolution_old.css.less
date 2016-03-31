@@ -1,0 +1,6032 @@
+/*variable*/
+.plus:after {
+    content: '+';
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background: #c00;
+    color: #fff;
+    font-weight: 700;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    font-size: 31px;
+    line-height: 27px;
+    border-radius: 4px;
+}
+
+.minus:after {
+    content: '\2013'!important;
+}
+
+.no-padding {
+    padding: 0!important;
+    min-height: 0;
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.display-none {
+    display: none;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    font-family: 'Tex Gyre Heros';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mobile_app {
+    font-family: 'Tex Gyre Heros';
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.allpage-footer .bottom_menu h4 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.allpage-footer .bottom_menu a {
+    color: #ffa0a0;
+}
+
+.allpage-footer .copy {
+    color: #fff;
+    font-family: 'Tex Gyre Heros';
+    font-size: 12px;
+}
+
+.allpage-footer .copy p {
+    font-style: italic;
+}
+
+.allpage-footer .copy a {
+    color: #fff;
+}
+
+.allpage-footer .copy .terms a {
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.grid_wrapper article {
+    padding: 25px 0;
+    margin: 25px 0;
+}
+
+.grid_wrapper article h2 {
+    font-size: 32px;
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+.bottom_menu li,
+.bottom_menu li a {
+    font-size: 13px;
+}
+
+.module_header {
+    color: #730000;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin: 0;
+}
+
+/*structure*/
+.grid_wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+@media screen and (min-width: 940px) and (max-width: 1280px) {
+
+    .grid_wrapper {
+        width: 920px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .grid_wrapper {
+        width: auto;
+    }
+}
+
+.homepage_promo, .top_promo {
+    margin: auto;
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    top: 93px;
+    left: 138px;
+    padding: 0;
+    margin: 0;
+}
+
+.home_headline {
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+}
+
+.home_headline .headline_promo {
+    width: 308px;
+    height: 300px;
+    float: left;
+}
+
+.home_headline .headline_promo_wrapper {
+    width: 920px;
+    margin: auto;
+}
+
+.home_headline .headline_promo_wrapper .headline_promo {
+    display: inline-block;
+}
+
+.home_headline .headline_promo_wrapper h1 {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_headline {
+        position: static;
+    }
+}
+
+.bottom_menu {
+    zoom: 1;
+    padding: 0;
+}
+
+.bottom_menu:before,
+.bottom_menu:after {
+    content: "";
+    display: table;
+}
+
+.bottom_menu:after {
+    clear: both;
+}
+
+.bottom_menu .block_1 {
+    width: 384px;
+}
+
+.bottom_menu .block_1 .line_1 {
+    padding: 25px 0;
+}
+
+.bottom_menu .block_2,
+.bottom_menu .block_3 {
+    width: 192px;
+}
+
+.bottom_menu .block_4 {
+    width: 152px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .bottom_menu .block_1,
+    .bottom_menu .block_2,
+    .bottom_menu .block_3,
+    .bottom_menu .block_4 {
+        width: auto;
+        float: none;
+    }
+}
+
+.block_1, .block_2, .block_3, .block_4 {
+    float: left;
+}
+
+.content {
+    margin: 25px auto;
+}
+
+.allpage-footer .copy {
+    padding: 25px 0 30px;
+}
+
+.allpage-footer .copy .terms {
+    float: right;
+}
+
+.mobile_app {
+    padding: 25px 0;
+}
+
+@media screen and (max-width: 940px) {
+
+    .mobile_app {
+        text-align: center;
+    }
+
+    .mobile_app a {
+        display: inline-block;
+        margin: 10px 0 0;
+    }
+
+    .mobile_app a:last-child {
+        display: none;
+    }
+}
+
+.line {
+    margin: 25px 0;
+}
+
+.l_2 .block_b {
+    margin-left: 20px;
+}
+
+.l_2 .block_b:first-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 940px) {
+
+    .l_2 .block_b {
+        display: none;
+    }
+}
+
+.visible {
+    transition: opacity .7s ease-in;
+    transition-delay: .5s;
+    opacity: 1;
+}
+
+.homepage_promo, .top_promo {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+.homepage_promo .homepage_promo_inner,
+.top_promo .top_promo_inner {
+    min-height: 600px;
+    margin-top: 50px;
+}
+
+.homepage_promo .homepage_image {
+    display: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+
+    .homepage_promo.homepage_promo {
+        background: none!important;
+        position: relative;
+    }
+
+    .homepage_promo.homepage_promo .homepage_promo_inner {
+        min-height: 0;
+        margin-top: 0;
+    }
+
+    .homepage_promo .homepage_image {
+        display: block;
+    }
+}
+
+.grid_wrapper article {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .grid_wrapper article {
+        border-radius: 0;
+    }
+}
+
+.block_a {
+    display: inline-block;
+    width: 250px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    text-align: left;
+    margin: 0 16px;
+    vertical-align: top;
+    min-height: 205px;
+}
+
+.block_a p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.block_a a {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 940px) {
+
+    .block_a {
+        width: 100%;
+        margin: 25px 0;
+    }
+}
+
+.block_b {
+    display: inline-block;
+    width: 290px;
+    padding: 11px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* -Rates / Services */
+.custom-services {
+    margin: 0 -15px -20px;
+    font-size: 0;
+    text-align: center;
+}
+
+.custom-services .block_c {
+    font-size: 15px;
+    color: #fff;
+}
+
+.custom-services .block_c:hover,
+.custom-services .block_c:focus,
+.custom-services .block_c:active {
+    color: #add6ff;
+}
+
+.block_c {
+    display: inline-block;
+    width: 269px;
+    min-height: 320px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    margin: 0 10px 20px;
+    text-align: left;
+    padding: 25px 30px 20px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.36;
+}
+
+.block_c:hover {
+    text-decoration: none;
+}
+
+.more_promo {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 20px;
+    width: 100%;
+}
+
+.more_promo .block_c {
+    display: table-cell;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .more_promo {
+        width: auto;
+        display: block;
+    }
+
+    .more_promo .block_c {
+        background: inherit;
+        display: block;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .block_c {
+        display: block;
+        width: 100%;
+        min-height: 0;
+        margin: 10px 0;
+    }
+
+    .block_c:first-child {
+        margin: 10px 0;
+    }
+}
+
+.block_c h3 {
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.more_promo h2 {
+    border: 0;
+}
+
+.more_promo h2 + .block_c {
+    margin-left: 0;
+}
+
+.more_promo .block_c {
+    padding: 30px 24px 24px;
+    font-size: 14px;
+}
+
+.more_promo .block_c h3 {
+    font-size: 19px;
+}
+
+.round_4 {
+    border-radius: 4px;
+}
+
+.more_promo2 {
+    zoom: 1;
+}
+
+.more_promo2:before,
+.more_promo2:after {
+    content: "";
+    display: table;
+}
+
+.more_promo2:after {
+    clear: both;
+}
+
+.more_promo2 h2 {
+    border: 0;
+}
+
+.more_promo2 h2 + .block_c {
+    margin-left: 0;
+}
+
+.more_promo2 .block_c {
+    width: 274px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container .more_promo2 .block_c {
+        width: 327px!important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .container .more_promo2 .block_c {
+        margin-left: 0;
+    }
+}
+
+.more_promo2 .more {
+    margin: 0 20px 0 0;
+    float: right;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.grid1.grid1, .grid2.grid2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid1 {
+    width: 290px;
+}
+
+.container .grid2 {
+    width: 830px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container .grid2 {
+        width: 611px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container .grid2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .grid1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .grid1 .block_b {
+        margin: 0 10px;
+    }
+}
+
+.grid2 {
+    width: 611px;
+}
+
+.bottom_link {
+    text-align: center;
+}
+
+.bottom_link a {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    padding: 30px 0 30px 70px;
+    display: inline-block;
+}
+
+.bottom_link a:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    margin-top: -25px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.mr {
+    margin-right: 15px;
+}
+
+.social_column .block_b {
+    margin-bottom: 15px;
+}
+
+.rates {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.rates.grid2 {
+    margin-right: 15px;
+}
+
+.main-nav .sub-menu li a {
+    white-space: nowrap;
+}
+
+.content_block_2 .visible-lg,
+.content_block_2 .visible-md,
+.content_block_2 .visible-sm,
+.content_block_2 .visible-xs {
+    overflow: hidden;
+    /*or clearfix*/
+}
+
+#country_rates {
+    margin: 20px 0;
+}
+
+.how_much_is .sod_select {
+    margin-right: 20px;
+}
+
+.block_c h3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content table {
+    width: 100%;
+}
+
+.learn_more_block {
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.learn_more_block a {
+    margin-right: 15px;
+}
+
+ul.ui-widget-content {
+    background-color: #dadada;
+}
+
+.trial {
+    padding: 25px 0 0;
+}
+
+.trial .sod_select {
+    vertical-align: middle;
+}
+
+.trial .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+.last_updated {
+    font-size: 12px;
+}
+
+.show_all {
+    border: 0;
+    position: absolute;
+    margin: 15px 0 0 -65px;
+    background: none;
+    font-size: 11px;
+    z-index: 10;
+}
+
+.rates_form {
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: -180px;
+    position: relative;
+    z-index: 4;
+}
+
+@media screen and (max-width: 980px) {
+
+    .rates_form {
+        margin: 0;
+    }
+
+    .rates_form h2 {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    #ratesel_dest {
+        margin-bottom: 10px;
+    }
+}
+
+.rates_form .i--destination {
+    width: 46px;
+    height: 46px;
+    vertical-align: top;
+}
+
+.b_RatesIndex .header-promo--box.header-promo--box {
+    bottom: 220px;
+}
+
+.rates_form h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.rates_form .sod_select:before {
+    content: " ";
+    display: inline-block;
+    height: 47px;
+    left: -53px;
+    position: absolute;
+    top: -4px;
+    width: 42px;
+    background: url('../img/sprite.png') -188px 0 no-repeat;
+}
+
+.rates_for {
+    color: #730000;
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+#rate_details .sod_select,
+#rate_details .sod_list_wrapper {
+    min-width: 65px;
+    width: 65px;
+}
+
+/*header_image_fix*/
+.homepage_promo img.blur,
+.homepage_promo canvas,
+.top_promo img.blur,
+.top_promo canvas {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+    canvas.visible {
+        display: none!important;
+    }
+
+    img.blur {
+        display: block;
+        margin: auto;
+        position: static!important;
+        visibility: visible!important;
+    }
+}
+
+.allpage-header canvas {
+    opacity: .0;
+}
+
+.blur {
+    visibility: hidden;
+}
+
+canvas.visible {
+    opacity: 1;
+    transition: opacity .7s ease-in .5s;
+}
+
+.b_HomeAbout .homepage_promo .homepage_promo_inner {
+    min-height: 550px;
+}
+
+.check_rates .buttons_line {
+    padding: 30px 0 0;
+}
+
+.check_rates .buttons_line .btn {
+    margin: 0 5px;
+}
+
+table.white td .value {
+    background: none;
+}
+
+table.odd_style tr td .value {
+    background: #fff;
+}
+
+table.odd_style tr:nth-child(2n) {
+    background-color: #ebf0f5;
+}
+
+table.odd_style tr:nth-child(2n) .value {
+    background: #ebf0f5;
+}
+
+table.odd_style td .highlight {
+    color: #720000;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.block_e {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.aditional_service .description h3 {
+    margin-top: 1em;
+}
+
+.aditional_service .services {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.aditional_service .block_e {
+    padding: 25px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .aditional_service .description .plate {
+        float: left;
+        margin: 0 15px 15px 0;
+    }
+
+    .aditional_service .description h3 {
+        margin: 0;
+    }
+
+    .aditional_service .description p {
+        clear: both;
+    }
+
+    .aditional_service .services {
+        margin-top: 20px;
+    }
+}
+
+.promo_with_carousel {
+    padding: 37px 80px 57px;
+    zoom: 1;
+}
+
+.promo_with_carousel:before,
+.promo_with_carousel:after {
+    content: "";
+    display: table;
+}
+
+.promo_with_carousel:after {
+    clear: both;
+}
+
+.promo_with_carousel .area_1 {
+    width: 280px;
+    float: left;
+}
+
+.promo_with_carousel .area_1 .buttons_line .btn {
+    display: block;
+    text-align: center;
+}
+
+.promo_with_carousel .area_2 {
+    margin-left: 50%;
+}
+
+/*bootstrap carousel*/
+.bs-example {
+    margin: 20px;
+}
+
+.hash_nav {
+    background: #eeeded;
+    overflow: hidden;
+}
+
+.hash_nav .hash_nav_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 750px;
+}
+
+.hash_nav .hash_nav_menu li {
+    float: left;
+}
+
+.hash_nav .hash_nav_menu li a {
+    float: left;
+    padding: 25px 20px 20px;
+    border-bottom: solid 8px #eeeded;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+
+.hash_nav .hash_nav_menu li a.active {
+    border-bottom: solid 8px #c00;
+}
+
+.tmp {
+    display: block;
+    margin: auto;
+}
+
+.features_block .block_a {
+    padding-top: 0;
+    margin: 135px 9px 10px;
+    text-align: center;
+}
+
+.br_card_form {
+    min-height: 239px;
+    padding: 0 0 0 325px;
+    margin: 40px 65px 0;
+    background: url('../img/sprite.png') 0 -860px no-repeat;
+}
+
+.gray_form {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    clear: left;
+}
+
+.nav_blocks_area .gray_form {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+
+    .br_card_form {
+        padding: 200px 0;
+    }
+
+    .br_card_form .gray_form .input {
+        margin: 10px 0;
+    }
+}
+
+.br_card_form .gray_form label {
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+.content_block_2 h3, .content_block_2 img {
+    margin-top: 0;
+}
+
+.content_block_2 .visible-lg,
+.content_block_2 .visible-md,
+.content_block_2 .visible-sm,
+.content_block_2 .visible-xs {
+    overflow: hidden;
+    /*or clearfix*/
+}
+
+#country_rates {
+    margin: 20px 0;
+}
+
+.how_much_is .btn,
+#rate_details .btn {
+    margin-left: 15px;
+}
+
+.how_much_is .sod_select {
+    margin-right: 20px;
+}
+
+.block_c h3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content table {
+    width: 100%;
+}
+
+.learn_more_block {
+    font-weight: 700;
+    margin: 40px 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.learn_more_block a {
+    margin-right: 15px;
+}
+
+ul.ui-widget-content {
+    background-color: #dadada;
+}
+
+.trial {
+    padding: 25px 0 0;
+}
+
+.trial .sod_select {
+    vertical-align: middle;
+}
+
+.trial .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+.last_updated {
+    font-size: 12px;
+}
+
+.show_all {
+    border: 0;
+    position: absolute;
+    margin: 15px 0 0 -65px;
+    background: none;
+    font-size: 11px;
+    z-index: 10;
+}
+
+.rates_form .sod_select:before {
+    content: " ";
+    display: inline-block;
+    height: 47px;
+    left: -53px;
+    position: absolute;
+    top: -4px;
+    width: 42px;
+    background: url('../img/sprite.png') -188px 0 no-repeat;
+}
+
+.rates_for {
+    color: #730000;
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+#rate_details .sod_select,
+#rate_details .sod_list_wrapper {
+    min-width: 65px;
+    width: 65px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #ratesel_dest {
+        min-width: 150px;
+    }
+}
+
+.country_page_title {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+    left: 0;
+}
+
+.country_page_title:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    width: 79px;
+    height: 79px;
+    margin-left: -40px;
+    background: url('../img/sprite.png') 0 -269px no-repeat;
+}
+
+.graybox {
+    bottom: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 498px;
+    padding: 25px;
+    border-radius: 4px;
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+}
+
+.b_HomeAbout .graybox {
+    bottom: 195px;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top:before {
+    content: "\e113";
+    color: #fff;
+    font-size: 31px;
+    position: relative;
+    top: 6px;
+    left: 10px;
+    font-family: 'Glyphicons Halflings';
+    line-height: 1;
+}
+
+.back-to-top:hover:before,
+.back-to-top:focus:before,
+.back-to-top:active:before {
+    color: #ccc;
+}
+
+.b_CountriesInternationalCalling .graybox {
+    width: 350px;
+}
+
+.b_HomeTerms .allpage-header,
+.b_HomePrivacy .allpage-header,
+.b_LoginTerms .allpage-header,
+.b_LoginVerifyEmail .allpage-header,
+.b_LoginSetupQA .allpage-header,
+.b_LoginVerifyQA .allpage-header,
+.b_LoginLogin .allpage-header,
+.b_RegisterIndex .allpage-header,
+.b_LoginForgot .allpage-header,
+.b_LoginForgotResetPassword .allpage-header,
+.b_LoginForgotVerifyQA .allpage-header {
+    min-height: 150px;
+    background: none;
+}
+
+.terms_title, .privacy_title, .title_with_icon {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.content article .no_border.no_border {
+    border: 0;
+}
+
+.terms_map {
+    padding-left: 40px;
+}
+
+.terms_map ul,
+.privacy_map ul,
+.nav_blocks_area ul {
+    color: #484848;
+    list-style: none;
+    width: 100%;
+}
+
+.terms_map ul li a,
+.nav_blocks_area ul li a {
+    font-weight: 700;
+    padding: 6px 12px;
+    display: block;
+}
+
+.faq .mass_wrap {
+    width: 33.3%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .faq .mass_wrap {
+        width: 50%;
+    }
+}
+
+.terms_map .mass_wrap {
+    width: 50%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .terms_map .mass_wrap {
+        width: 100%;
+    }
+}
+
+.terms_map ul .title,
+.nav_blocks_area ul .title {
+    margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.terms_map ul .title a,
+.nav_blocks_area ul .title a {
+    color: #fff;
+}
+
+.nav_blocks_area ul .title a {
+    padding: 12px;
+}
+
+.privacy_map ul {
+    width: auto;
+    padding: 40px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.privacy_map ul li {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .privacy_map ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.privacy_map ul li a {
+    display: block;
+    font-weight: 700;
+    padding: 5px 12px;
+}
+
+.terms .btn_line {
+    padding-top: 30px;
+}
+
+.terms .btn_line .btn {
+    margin-right: 20px;
+}
+
+.form_row {
+    margin: 30px 0;
+}
+
+.form_row label {
+    display: block;
+    min-width: 200px;
+}
+
+.verifyEmail .btn_line {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.verifyEmail .btn_line .btn {
+    margin: 10px 0 10px 10px;
+}
+
+.setup_message {
+    margin: 30px 0;
+}
+
+.login_area .gray_form {
+    margin: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.forgot_area {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.rates_selector .description {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.features_block .block_a h3 {
+    font-size: 23px;
+}
+
+.forgotpass_area .form_row label {
+    min-width: 0;
+}
+
+.forgotpass_area .island.island {
+    max-width: 295px;
+    margin: auto;
+}
+
+.forgotpass_area .captcha {
+    white-space: normal;
+    text-align: center;
+}
+
+.forgotpass_area .captcha img {
+    margin-left: 0;
+}
+
+.forgotpass_area .captcha label {
+    display: block;
+}
+
+.forgotpass_area .form_row {
+    margin: 15px 0;
+}
+
+.forgot_qa .gray_form,
+.reset_pass .gray_form {
+    max-width: 404px;
+    margin: auto;
+}
+
+.forgot_qa .gray_form .btn,
+.reset_pass .gray_form .btn {
+    display: block;
+    margin: auto;
+}
+
+/*mobile app page*/
+.captcha {
+    margin: 15px 0;
+    text-align: right;
+    padding: 0;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+
+    .fake-label {
+        display: none;
+    }
+
+    .captcha {
+        text-align: left;
+        white-space: normal;
+    }
+
+    .captcha.captcha label {
+        display: block;
+    }
+}
+
+.captcha label {
+    min-width: 0;
+    display: inline-block;
+}
+
+.captcha img {
+    border: solid 1px #428bca;
+    margin-left: 15px;
+    vertical-align: bottom;
+}
+
+.b_HomeApps .homepage_promo .homepage_promo_inner {
+    min-height: 565px;
+}
+
+.b_HomeApps .graybox {
+    min-height: 304px;
+    height: auto;
+}
+
+.b_HomeSupport .faq > .gray_form {
+    margin: 0 10px 15px;
+}
+
+img {
+    /*width: inherit;*/
+    /* for IE8 */
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    /* for IE7 */
+}
+
+.login_area .island--header .island--title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*LOGIN TABS*/
+.login_area .tabs {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 820px;
+    font-size: 0;
+}
+
+.login_area .tabs li {
+    font-size: 14px;
+    display: inline-block;
+    width: 50%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.login_area .tabs li .inactive,
+.login_area .tabs li .active {
+    display: block;
+    padding: 22px 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 700;
+    border-radius: 4px;
+    position: relative;
+}
+
+.login_area .tabs li .inactive {
+    background: #ebf0f5;
+    color: #525261;
+}
+
+.login_area .tabs li .inactive:hover {
+    color: #c00;
+}
+
+.login_area .tabs li .active{
+    color: #fff;
+    text-shadow: 0 1px 0 #950000;
+    background: #b50000;
+    box-shadow: /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.2), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #cb0000, /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+    transition: all 0.2s;
+}
+
+.login_area  .tabs li .active:hover {
+    background-color: #cd0000;
+    text-shadow: 0 1px 0 #be0000;
+    color:#fff;
+    text-decoration: none;
+    box-shadow: /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 2.2em 2.2em -1.1em #fd0000, /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+}
+
+.login_area  .tabs li .active:focus {
+    outline: none;
+    color:#fff;
+    text-decoration:none;
+    box-shadow: /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3), /* 2 */ inset 0 0 0 0 rgba(0, 0, 0, 0), /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000, /* 4 */ 0 0 0 3px rgba(0, 128, 255, 0.3);
+}
+
+.login_area .tabs li .active:active {
+    outline: none;
+    box-shadow: /* 1 */ inset 0 0 0 1px rgba(0, 0, 0, 0.3), /* 2 */ inset 1px 2px 3px 0 rgba(0, 0, 0, 0.2), /* 3 */ inset 0 1.1em 1.1em -0.6em #cb0000, /* 4 */ 0 0 0 0 rgba(0, 128, 255, 0.3);
+    transition-duration: 0.1s;
+}
+
+.login_area .tabs li .active:after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -16px;
+}
+
+.login_area .tabs li .active:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 18px 0;
+    border-color: #b50000 transparent transparent;
+    z-index: 4;
+    transition: all .2s;
+}
+
+.login_area .tabs li .active:hover:after {
+    border-color: #cd0000 transparent transparent;
+}
+
+.login_area .setup_message {
+    font-size: 25px;
+    margin: 20px 20px -20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+
+    .login_area .title {
+        font-size: 50px;
+    }
+
+    .login_area .setup_message {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .login_area .title {
+        font-size: 30px;
+    }
+
+    .login_area .setup_message {
+        font-size: 14px;
+    }
+
+    .login_area .forms-default,
+    .login_area .forms-default .island-default,
+    .login_area .forms-default .gray_form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .login_area .aside-last {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*END LOGIN TABS*/
+.top_promo_inner {
+    position: relative;
+}
+
+.home_headline h1 {
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+
+    .allpage-header canvas {
+        display: none;
+    }
+}
+
+nav .bottom_menu h4 {
+    margin-top: 25px;
+}
+
+#ratesel_details .tabs {
+    list-style: none;
+    margin: 20px auto 10px;
+    padding: 0;
+    max-width: 820px;
+    font-size: 0;
+}
+
+#ratesel_details .tabs li {
+    font-size: 14px;
+    display: inline-block;
+    width: 50%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+#ratesel_details .tabs li span,
+#ratesel_details .tabs li .active {
+    display: block;
+    padding: 22px 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 700;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    border-top: solid 4px #fff;
+}
+
+#ratesel_details .tabs li span {
+    background: #fff;
+    color: #525261;
+}
+
+#ratesel_details .tabs li span:hover {
+    color: #c00;
+}
+
+#ratesel_details .tabs li .selected,
+#ratesel_details .tabs li .selected:hover {
+    border-top: solid 4px #c00;
+    background: #fff;
+    transition: all .2s;
+}
+
+#ratesel_details .tabs li .selected {
+    color: #c00;
+}
+
+#ratesel_details .tabs li .selected:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -16px;
+}
+
+#ratesel_details .tabs li .selected:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 18px 0;
+    border-color: #fff transparent transparent;
+    z-index: 20;
+    transition: all .2s;
+}
+
+.rates #ratesel_details .tabs li span,
+.rates #ratesel_details .tabs li span:hover,
+.country_page #ratesel_details .tabs li span,
+.country_page #ratesel_details .tabs li span:hover {
+    border-top: solid 4px #ebf0f5;
+    background: #ebf0f5;
+}
+
+.rates #ratesel_details .tabs li .selected,
+.rates #ratesel_details .tabs li .selected:hover,
+.country_page #ratesel_details .tabs li .selected,
+.country_page #ratesel_details .tabs li .selected:hover {
+    border-top: solid 4px #c00;
+}
+
+.rates #ratesel_details .tabs li .selected:after,
+.country_page #ratesel_details .tabs li .selected:after {
+    border-color: #ebf0f5 transparent transparent;
+}
+
+.b_AccountIndex .grid1 {
+    width: 525px;
+}
+
+.b_AccountIndex .grid2 {
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+
+    .b_AccountIndex .grid1 {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .b_AccountIndex .grid1,
+    .b_AccountIndex .grid2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.b_RegisterIndex .gray_form,
+.b_RegisterAddProfile .gray_form {
+    overflow: hidden;
+}
+
+.form-group input {
+    max-width: 100%;
+}
+
+.clr, .notice {
+    clear: both;
+}
+
+.b_RegisterIndex .description,
+.b_RegisterAddProfile .description {
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 14px;
+    clear: both;
+}
+
+.b_RegisterIndex .description + h3,
+.b_RegisterAddProfile .description + h3 {
+    margin-top: 0;
+}
+
+.i-red-and-border {
+    color: #cb0000;
+}
+
+.login_page .island--header {
+    padding-top: 60px;
+}
+
+.login_page .form_row {
+    max-width: 280px;
+    margin: 30px auto;
+}
+
+.login_page .btn {
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    .login_area.login_area_white {
+        background: #fff;
+    }
+
+    .login_area.login_area_white .island--title > span {
+        color: #252525;
+        font-weight: 300;
+    }
+
+    .login_area.login_area_white ul.tabs li {
+        padding: 0;
+        margin-top: 20px;
+        border-top: 1px #dadada solid;
+        border-bottom: 1px #dadada solid;
+    }
+
+    .login_area.login_area_white ul.tabs li .inactive, 
+    .login_area.login_area_white ul.tabs li .active {
+        border-radius: 0;
+    }
+
+    .login_area.login_area_white .gray_form {
+        background: #f7f7f7;
+    }
+    
+    .login_area.login_area_white .island-default p,
+    .login_area.login_area_white label,
+    .login_area.login_area_white .control-label,
+    .login_area.login_area_white .island-default h3 {
+        color: #252525;
+    }
+
+    .login_area.login_area_white .gray_form .description {
+        background: #dcf1d0;
+        margin: 0 -20px 20px;
+        padding: 10px 20px;
+        color: #252525;
+        text-align: center;
+    }
+
+    .login_area.login_area_white .gray_form .description .i {
+        display: none;
+    }
+}
+
+.pseudo_table {
+    display: table;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.pseudo_table .tr {
+    display: table-row;
+}
+
+.pseudo_table .tr:before,
+.pseudo_table .tr:after {
+    content: none;
+}
+
+.pseudo_table .th {
+    font-weight: 700;
+}
+
+.pseudo_table .th,
+.pseudo_table .td {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.pseudo_table .td .label {
+    display: none;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.pseudo_table .dial_code {
+    width: 90px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.pseudo_table .phone_number {
+    width: 240px;
+}
+
+.pseudo_table .phone_desription {
+    width: auto;
+}
+
+.pseudo_table .record_action {
+    text-align: left;
+    width: 60px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .pseudo_table .tr.form-group {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        border: 2px #FFF solid;
+    }
+
+    .pseudo_table .th {
+        display: none;
+    }
+
+    .pseudo_table .td {
+        display: block;
+        width: 100%;
+    }
+
+    .pseudo_table .td .label {
+        display: block;
+        padding-left: 0;
+    }
+
+    .pseudo_table .record_action {
+        text-align: right;
+    }
+}
+
+.form-control.code {
+    padding: 14px 10px;
+}
+
+.container .pseudo_table .sod_select,
+.b_QuickCallIndex .container .sod_select {
+    min-width: 0;
+}
+
+.speed-dial .btn_line {
+    padding: 10px 10px 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+.speed-dial .btn_line .btn-primary {
+    display: block;
+    margin: 10px auto;
+}
+
+.move-service .btn_line {
+    padding: 20px;
+    text-align: center;
+}
+
+.move-service .btn_line .btn,
+.sequrity-code .btn_line .btn {
+    margin: 5px 10px;
+}
+
+.sequrity-code .btn_line {
+    padding: 20px;
+    text-align: center;
+}
+
+.speed-dial .btn_line .btn-primary {
+    display: block;
+    margin: 10px auto;
+}
+
+.add-number {
+    overflow: hidden;
+}
+
+.flag_area, .card_area {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.bonus_area {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.bonus_area small {
+    display: block;
+}
+
+div.bonus_block > table td.plus,
+div.bonus_block > table td.equally {
+    vertical-align: middle;
+    font-size: 1.6em;
+    padding: 10px;
+    width: 1%;
+}
+
+.b_ServicesIndex .allpage-header {
+    margin-bottom: -200px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .b_ServicesIndex .allpage-header {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .b_ServicesIndex .allpage-header {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+
+    .block_c:first-child {
+        margin-left: 15px;
+    }
+}
+
+.b_ServicesIndex .header-promo--box.header-promo--box {
+    bottom: 240px;
+}
+
+.custom_blur {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+
+    header .custom_blur {
+        visibility: visible;
+        width: 100%;
+        position: static;
+    }
+}
+
+#ratesel_no_results {
+    color: red;
+}
+
+select, input {
+    color: #343434;
+}
+
+ul.services li {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 80px;
+    margin: 10px;
+    padding: 13px;
+    display: inline-block;
+}
+
+.card-tab-padding {
+    padding: 30px;
+}
+
+.popover-holder {
+    cursor: pointer;
+}
+
+.modal-media .modal-dialog {
+    width: 672px;
+}
+
+.card_row {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#Cap.form-control {
+    width: 60px;
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+.payment_instruments {
+    margin-bottom: 20px;
+}
+
+.newPayment .forms-default .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.payment_instruments #add_cc_option {
+    border-top: 0;
+}
+
+.payment_instruments #addccmsg {
+    padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .payment_instruments {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .payment_instruments .payment-subtitle {
+        margin-bottom: 15px;
+    }
+
+    .newPayment .forms-default {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card_row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newPayment .forms-default .btn-block-xs {
+        margin-bottom: 0;
+}
+}
+
+.row_with_pad {
+    padding: 15px 0;
+}
+
+.field-validation-error {
+    background: #fde5e6;
+    border-left: 3px solid #c00;
+    color: #c00;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.key + .allpage--body > .rates_form {
+    margin: 0;
+}
+
+.key {
+    background: #fff;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    margin: 20px auto;
+    max-width: 1140px;
+    padding: 20px 20px 20px 60px;
+    position: relative;
+}
+
+.key.flash-error {
+    border-left-color: #c00;
+}
+
+.key.flash-success {
+    border-left-color: #4D871D;
+}
+
+.key.flash-warning {
+    border-left-color: #FFB900;
+}
+
+.key.flash-info {
+    border-left-color: #4D90FE;
+}
+
+.key:before {
+    font-size: 31px;
+    position: absolute;
+    display: block;
+    /*ie fix*/
+    margin-top: -18px;
+    top: 50%;
+    left: 16px;
+    font-family: 'Glyphicons Halflings';
+    line-height: 1;
+}
+
+.key.flash-error:before {
+    content: "\e101";
+    color: #c00;
+}
+
+.key.flash-success:before {
+    content: "\e084";
+    color: #4D871D;
+}
+
+.key.flash-warning:before {
+    content: "\e107";
+    color: #FFB900;
+}
+
+.key.flash-info:before {
+    content: "\e086";
+    color: #4D90FE;
+}
+
+.veryfy-security-code .setup_message {
+    font-size: 35px;
+    margin: 20px auto;
+    max-width: 827px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+
+    .veryfy-security-code .setup_message {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .veryfy-security-code .setup_message {
+        font-size: 20px;
+    }
+}
+
+.veryfy-security-code .aside-default {
+    padding-top: 0;
+}
+
+.veryfy-security-code .aside .plate {
+    margin-bottom: 15px;
+}
+
+.resend {
+    padding: 15px 0;
+}
+
+.resend .btn {
+    width: 100%;
+}
+
+.color-red {
+    color: #c00;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.receipt--title {
+    padding-bottom: 10px;
+}
+
+.receipt--data {
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+.receipt--data .data--value {
+    float: right;
+}
+
+.receipt--data .control-label {
+    float: left;
+}
+
+.btn-print .glyphicon {
+    margin-right: 5px;
+}
+
+.reminderItem {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* GRID UNIQUE STYLE */
+.b_RafInvite .ui-jqgrid .ui-jqgrid-htable th:last-child,
+.b_RafInvite .ui-jqgrid tr.jqgrow td:last-child {
+    padding-left: 20px;
+}
+
+.b_RafInvite .success,
+.b_RafInvite .pending {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.b_RafInvite .success {
+    color: #66cc66;
+}
+
+.b_RafInvite .pending {
+    color: #83C1FF;
+}
+
+.b_RafInvite td[aria-describedby*=earned] {
+    font-weight: 700!important;
+}
+
+.b_RafInvite .phone-num {
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* specifity boost */
+.b_RafInvite .custom-frinds-forever-tip.custom-frinds-forever-tip {
+    padding-top: 55px;
+}
+
+/*---end grid styles*/
+.recharge--info {
+    vertical-align: top;
+    padding: 50px 20px 30px;
+    float: right;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+
+    .recharge--info {
+        float: none;
+        padding: 20px 0;
+    }
+}
+
+.recharge--button {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.autorecharge .title {
+    text-align: left;
+}
+
+.autorecharge .title .lead-2 {
+    padding-left: 0;
+}
+
+.autorecharge .title .lead-2 .radio {
+    margin-top: 6px;
+}
+
+.autorecharge .title .lead-2 .radio label {
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.autorecharge .title .lead-2 .radio-inline {
+    padding-left: 0;
+}
+
+.autorecharge .title .lead-2 .radio-inline + .radio-inline {
+    margin-left: 0;
+}
+
+.autorecharge .setup_message {
+    margin-top: 0;
+}
+
+.form_wrapper.N {
+    opacity: 0.3;
+    position: relative;
+}
+
+.form_wrapper.N:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flag80 {
+    width: 80px;
+    height: 80px;
+}
+
+.flag45 {
+    width: 45px;
+    height: 45px;
+}
+
+.update_title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.update_form {
+    padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .rates.island table td {
+        font-size: smaller;
+    }
+
+    .rates.island table tr td:first-child {
+        white-space: normal;
+    }
+
+    .rates.island table tr td:first-child:after {
+        display: none;
+    }
+
+    .social_column.social_column {
+        display: none;
+    }
+}
+
+.main_category_list .category_list {
+    display: none;
+}
+
+.faq_columns_class {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .faq_columns_class {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .faq_columns_class {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+}
+
+.faq_columns_class .nav_block {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.faq_columns_class ul {
+    list-style: none;
+}
+
+.faq_columns_class ul li a {
+    display: block;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+.faq_columns_class .title {
+    margin-bottom: 10px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    list-style: none outside none;
+    text-transform: uppercase;
+}
+
+.faq_columns_class .title a {
+    display: block;
+    font-weight: 700;
+    padding: 12px;
+    color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .top_questions {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 70px;
+        -moz-column-gap: 70px;
+        column-gap: 70px;
+    }
+}
+
+.phone-number #lnkEdit {
+    font-size: 16px;
+}
+
+.b_HomeFaqGpr .island--header,
+.b_HomeFaqVisaVirtual .island--header,
+.b_HomeTerms .island--header {
+    padding-top: 10px;
+}
+
+/*local nav mobile update*/
+@media screen and (max-width: 600px) {
+    .mobile-nav-style, .mobile-nav-style .container {
+        position: relative;
+    }
+
+    .mobile-nav-style .container {
+        padding: 0 20px;
+    }
+
+    .mobile-nav-style .mobile-nav-container {
+        white-space: nowrap;
+        overflow: auto;
+        padding: 0 25px;
+    }
+
+    .mobile-nav-style .mobile-nav-container li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .mobile-nav-style .container .mobile-nav-container:before,
+    .mobile-nav-style .container .mobile-nav-container:after {
+        position: absolute;
+        content: ' ';
+        visibility: hidden;
+        width: 55px;
+        height: 47px;
+        z-index: 10;
+    }
+
+    .mobile-nav-style .mobile-nav-container:before {
+        background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+        background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+        background: -ms-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+        left: 0;
+        top: 0;
+    }
+
+    .mobile-nav-style .container:before, .mobile-nav-style .container:after {
+        top: 0;
+        position: absolute;
+        content: ' ';
+        width: 25px;
+        height: 47px;
+        z-index: 12;
+        display: block;
+    }
+
+    .mobile-nav-style .container:before {
+        left: 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAYCAYAAADDLGwtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAADbSURBVCiRfZOhDoMwEIa/kQnkJHKSRyCZQU6S7AX2gkt4BGQlEjmJWYLEMcGVXa/tmlzSP/nS+/9ee9q2jcwqgScwAe6co4AWqKTqIgNVQKO0y4Gd2r+BMQX6lgAr0ANY8CLg0RJYUqBuOQODFxpsgKvSvT7Bg6VpOciJEdgJjHhyxhIFUEvplmsKfCg9st9btGzqTwry4Evpm/IagZMUAnU5EMIANlwArqgpAHdrQYdx/BLbmUep9diCkVpwMRa6HAjhnA8LuReuLbRAlQNnwofR/vuFA3uYCXBf+8osQdekzw0AAAAASUVORK5CYII=) 50% 50% no-repeat;
+    }
+
+    .mobile-nav-style .container:after {
+        right: 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAYCAYAAADDLGwtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAADgSURBVCiRjZMhDoNAEEUfqJWVlZXISpIaZCVH6NF6gSYcAYmsRCIxTZAkFVvRWZjdzib9CWGHPIa//NnCe++AGqiAO7BiqARuQAMc5W6qBAZV1/KCCT6BST1rcyBAp7yZFgK4JBYa4GCBAD0w5yxoMFgIOvHdnAnO0llbcBaIeF1k7YIFC1wTCxVQFd57gwXpdJb12+oY9NJFDnTARdWPHNgKDDACowVWcoHaWAo64KrqXuAfsGHPeELlr8ETKjLifxmBegh69nQiUH8yzXsD00HtUiiAGhqIZ3JT8e9x/QAPPjGFdYaFkgAAAABJRU5ErkJggg==) 50% 50% no-repeat;
+    }
+
+    .mobile-nav-style .mobile-nav-container:after {
+        background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        right: 0;
+        top: 0;
+    }
+
+    .mobile-nav-style.both .mobile-nav-container:before,
+    .mobile-nav-style.both .mobile-nav-container:after,
+    .mobile-nav-style.both .container:before {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mobile-nav-style.startScroll .mobile-nav-container:before,
+    .mobile-nav-style.startScroll .container:before {
+        opacity: 0.4;
+    }
+
+    .mobile-nav-style.endScroll .mobile-nav-container:after,
+    .mobile-nav-style.endScroll .container:after {
+        opacity: 0.4;
+    }
+
+    .mobile-nav-style .mobile-nav-container .nav--item:focus,
+    .mobile-nav-style .mobile-nav-container .nav--item:hover {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .allpage--body .fixed-local-nav .mobile-nav-style {
+        position: fixed!important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    /*Start - WHITE VERSION*/
+    .island.island-sm-white {
+        background: #f7f7f7;
+        color: #878787;
+        padding: 20px;
+    }
+
+    .island.island-sm-white .mt-banner {
+        margin-bottom: 10px;
+    }
+
+    .island.island-sm-white .island-alt-bright {
+        background: none;
+        color: #4e4b49;
+    }
+
+    .island.island-sm-white .key.flash-info {
+        border: 1px #4d90fe solid;
+        border-left-width: 3px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .island.island-sm-white .control-label {
+        color: #4e4b49;
+    }
+
+    .island.island-sm-white .b-amount-selector--view .island--title {
+        padding-top: 20px;
+    }
+
+    .island.island-sm-white > .island--title:first-child {
+        margin-bottom: 0;
+    }
+
+    .island.island-sm-white .form-horizontal .island--title:first-child {
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .b_CountriesMoneyTransfer .header-promo .island--header {
+        margin-bottom: 20px;
+    }
+
+    .b_MoneyTransferStartOrder .island.island-sm-white .plate,
+    .b_ServicesMoneyTransfer .header-promo .header-promo--box .plate,
+    .b_CountriesMoneyTransfer .header-promo .island--header .plate,
+    #get-started.island.island-sm-white .plate {
+        height: 57px;
+        width: 57px;
+        border-radius: 4px;
+        padding: 12px;
+    }
+
+    .b_MoneyTransferStartOrder .island.island-sm-white .plate .i,
+    .b_ServicesMoneyTransfer .header-promo .header-promo--box .plate .i,
+    .b_CountriesMoneyTransfer .header-promo .island--header .plate .i,
+    #get-started.island.island-sm-white .plate .i {
+        width: 33px;
+        height: 33px;
+    }
+
+    .b_MoneyTransferStartOrder .island.island-sm-white .island--title.island--title-smaller,
+    .b_ServicesMoneyTransfer .header-promo .header-promo--box > h1,
+    .b_CountriesMoneyTransfer .header-promo .island--header .island--title,
+    #get-started.island.island-sm-white .island--title.island--title-smaller {
+        display: block;
+        padding: 0;
+        margin: 14px 0 0;
+        font-size: 24px;
+        text-align: left;
+        border: none;
+    }
+
+    .b_ServicesMoneyTransfer .header-promo .header-promo--box > p {
+        clear: left;
+        padding-top: 15px;
+    }
+
+  
+
+    .island.island-sm-white .form-horizontal .form-group > div {
+        margin-bottom: 15px;
+    }
+
+    .island.island-sm-white .form-horizontal .form-group > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .island-sm-white .payment-type--card-list, .island-sm-white .imtu--block-payment .payment-type {
+        color: #4e4b49;
+    }
+
+    .payment-type .payment-type--card .payment-type--card-list li:first-child {
+        padding-top: 8px;
+    }
+
+    .island-sm-white a {
+        color: #006cd8;
+    }
+
+    .map_link {
+        display: none;
+    }
+
+    .island-sm-white .island {
+        background: none;
+    }
+
+    .island-sm-white h2.island--title {
+        font-size: 18px;
+    }
+
+    .island-sm-white .island.island-default {
+        background: none;
+        padding: 0;
+    }
+
+    .island.island-sm-white .b-amount-selector--view {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*background: #ebf0f5; temporary removed*/
+    }
+
+    .island.island-sm-white .island--title, 
+    .island.island-sm-white .island h3 {
+        color: #720000;
+        text-align: center;
+    }
+
+    .island.island-sm-white .island--header .island--title {
+        text-align: center;
+        color: #fff;
+    }
+
+    .island.island-sm-white .line-up-wrapper {
+        padding: 0;
+    }
+
+    .island.island-sm-white .island--title::before,
+    .island.island-sm-white .island--title::after {
+        display: none;
+    }
+
+    .island.island-sm-white .transferRateArea {
+        background: #ebf0f5;
+        color: #242424;
+        padding: 10px 20px 5px;
+        margin-top: 15px;
+    }
+
+    .island.island-sm-white .transferRateArea label {
+        display: block;
+    }
+
+    .island.island-sm-white .b-amount-selector #SendingCurr {
+        color: #000;
+    }
+
+    .island.island-sm-white .forms-gray {
+        background: #fff;
+        border-radius: 0;
+        margin: 0 -20px;
+        padding: 0 20px 20px;
+    }
+
+    .island.island-sm-white .forms-default .form-control,
+    .island.island-sm-white .forms-default .input-group .form-control,
+    .island.island-sm-white .forms-default .input-group-addon {
+        border-color: #7E8A93;
+        border-width: 1px;
+    }
+
+    .island.island-sm-white .island--header {
+        margin: -48px -20px 0;
+        padding: 40px 20px 10px;
+        background: #333;
+    }
+
+    .b_MoneyTransferIndex .island.island-sm-white .island--header {
+        margin-top: -18px;
+    }
+
+    .b_MoneyTransferStartOrder .island.island-sm-white .island--header {
+        padding-bottom: 40px;
+    }
+
+    .island.island-sm-white .island--header .island--title {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .island.island-sm-white .island--header .island--title.island--title-small {
+        margin-bottom: 9px;
+    }
+
+    .island-sm-white .forms-default select.form-control-pure,
+    select.form-control-pure {
+        color: #006CD8;
+    }
+
+    .island-sm-white .list-element {
+        color: #000;
+    }
+
+    .island-sm-white .list-element .description {
+        color: #585858;
+    }
+
+    .island-sm-white .b-amount-selector--view .order-total {
+        margin: 0 -20px;
+        padding: 20px;
+        border-top: solid 1px #e1e1e1;
+    }
+
+    .island-sm-white .h3 {
+        color: #4e4b49;
+    }
+
+    .island-sm-white .b-amount-selector--view .collapsed-info--line {
+        margin: 0 -15px;
+    }
+
+    .island-sm-white .icon-block {
+        color: #4E4B49;
+    }
+
+    .island-sm-white .white-block {
+        background: #fff;
+        color: #333;
+        border-radius: 0;
+        padding: 10px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .island-sm-white .white-block .white-block--header {
+        color: #9f0000;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 10px 0 10px 60px;
+        min-height: 30px;
+        border-bottom: 0;
+        position: relative;
+    }
+
+    .island-sm-white .white-block .white-block--header .plate {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .island-sm-white .white-block .white-block--content {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .b-order-display .white-block .white-block--content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .island-sm-white .island--title-popover-trigger {
+        font-size: 20px;
+    }
+
+    .island-sm-white .island--title-popover-trigger .island--title-popover-icon {
+        width: 21px;
+        height: 24px;
+        vertical-align: baseline;
+    }
+
+    .island-sm-white .island--title-popover-trigger .i[class*=info] {
+        position: relative;
+        top: -2px;
+        left: 0;
+        width: 21px;
+        height: 21px;
+        color: #006CD8;
+    }
+
+    .island-sm-white .white-block .white-block--header {
+        min-height: 65px;
+    }
+
+    .b_MoneyTransferReceipt .next-steps .row {
+        margin-left: -20px;
+        margin-right: -20px;
+        background: #fff;
+    }
+
+    .b_MoneyTransferReceipt .next-steps .icon-block {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 10px 20px;
+        border-top: 1px #dcdcdc solid;
+        width:auto;
+    }
+}
+/*End   - WHITE VERSION*/
+
+/*start block-amount-selector*/
+/*mobile-version*/
+.b-amount-selector #SendingCurr {
+    color: #000;
+}
+
+.transferRateArea {
+    text-align: center;
+    padding: 20px 0 25px;
+    margin: 0 -20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#TransferRateDisplay {
+    font-weight: 400;
+}
+
+.action-block {
+    padding: 13px 0 0;
+}
+
+.b-amount-selector #SendingCurr {
+    display: block;
+    padding: 6px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.b-amount-selector .amount-selector input {
+    font-weight: 700;
+    font-size: 20px;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.b-amount-selector .amount-selector .form-group {
+    margin-bottom: 5px;
+}
+
+.b-amount-selector .amount-selector input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.b-amount-selector .amount-selector input::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.b-amount-selector .amount-selector input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.b-amount-selector .amount-selector input:-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.b_CountriesMoneyTransfer .b-amount-selector .country-selector {
+    display: none;
+}
+
+.b-amount-selector .country-selector .plate {
+    float: right;
+    padding: 6px;
+    margin: 35px 0 0 15px;
+    height: 45px;
+    width: 45px;
+}
+
+.b-amount-selector .country-selector .plate .i {
+    width: 25px;
+}
+
+.amount-convert .amount-convert--link {
+    display: block;
+    padding-top: 6px;
+    color: #a6a6a6;
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.amount-convert .amount-convert--link .plate {
+    height: 45px;
+    padding: 6px 12px;
+    margin-top: 5px;
+}
+
+.status-line {
+    display: none;
+}
+
+.status-line--mobile {
+    display: block;
+    position: relative;
+}
+
+@media screen and (max-width: 640px) {
+
+    .collapsed-info .edit-link-wrapper {
+        display: none;
+    }
+
+    .order-total, .fee-line {
+        display: none;
+    }
+
+    .b_ServicesMoneyTransfer #get-started.island.island-sm-white .amount-convert--link .plate,
+    .b_MoneyTransferStartOrder .island.island-sm-white .amount-convert .amount-convert--link .plate {
+        height: 42px;
+        width: 42px;
+        padding: 6px;
+    }
+}
+
+.edit-link-wrapper {
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    top: 10px;
+    color: #006cd8;
+}
+
+.edit-link {
+    text-indent: -10000px;
+    outline: none;
+    width: 33px;
+    height: 33px;
+    display: block;
+    margin-top: -33px;
+}
+
+.status-line--mobile .edit-link-wrapper {
+    right: 5px;
+}
+
+.b-amount-selector--view .icon-block {
+    margin-bottom: 20px;
+}
+
+.b-amount-selector--view .control-label.value {
+    font-weight: 700;
+}
+
+.b-amount-selector--view .expand-link-wrapper {
+    padding: 10px 0 10px 60px;
+}
+
+.b-amount-selector--view .expand-link-wrapper .expand-link {
+    color: #006cd8;
+}
+
+.b-amount-selector--view .expand-link-wrapper .i {
+    display: none;
+}
+
+.b-amount-selector--view .status-line--mobile .label-amount {
+    color: #242424;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 0 40px 10px 0;
+}
+
+.b-amount-selector--view .status-line--mobile .label-amount .plate {
+    float: left;
+    margin: 8px 10px 0 0;
+}
+
+.b-amount-selector--view .status-line--mobile .label-amount > label {
+    display: block;
+    margin-bottom: 0;
+    color: #242424;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.b-amount-selector--view .status-line--mobile .label-amount .label-currency-rate {
+    font-size: 14px;
+}
+
+.b-amount-selector--view .status-line--mobile .label-location .flag {
+    margin: -3px 5px 0 55px;
+}
+
+.b-amount-selector .order-total .fee-line {
+    display: none;
+}
+
+.b-amount-selector .order-total .total-line {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.b-amount-selector .order-total .total-line .val {
+    font-weight: 700;
+}
+
+/* start order-total--mobile*/
+@media screen and (max-width: 640px) {
+
+    .b_MoneyTransferReceipt .island.island-sm-white .forms-default,
+    .b_MoneyTransferIndex .newPayment .forms-default,
+    #ConfirmContent .forms-default,
+    #DeliveryMethodInfoContent .forms-default {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .b_MoneyTransferIndex #flash {
+        margin-bottom: -30px;
+        position: relative;
+        z-index: 101;
+    }
+
+    .b_MoneyTransferIndex #flash .key {
+        margin: auto;
+    }
+
+    #DeliveryMethodInfoContent .island > .island--title {
+        margin-bottom: 10px;
+    }
+
+    .b_MoneyTransferReceipt .island.island-sm-white .b-amount-selector {
+        padding: 20px 0;
+    }
+
+    .b_MoneyTransferReceipt .island.island-sm-white .b-amount-selector .icon-block {
+        width: auto;
+        background: #fff;
+        padding: 10px 20px;
+        margin: 0 -20px;
+    }
+
+    .b_MoneyTransferReceipt .island.island-sm-white .b-recipient-info {
+        background: #fff;
+    }
+
+    .b_MoneyTransferReceipt .island.island-sm-white .b-amount-selector--view {
+        padding: 0 20px 20px;
+        background: #fff;
+    }
+
+    .b-amount-selector--view .order-total {
+        color: #4e4b49;
+        margin-top: 20px;
+    }
+
+    .b-amount-selector--view .order-total .fee-line {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .b-amount-selector--view .order-total .total-line {
+        color: #59a317;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .b-amount-selector--view .order-total .val {
+        float: right;
+    }
+
+    .b-amount-selector .icon-block,
+    .b-amount-selector #paymentView > div:last-child {
+        margin-bottom: 20px;
+    }
+
+    .b-amount-selector .b-recipient-info--view .icon-block,
+    .b-amount-selector #paymentView .icon-block {
+        margin-top: 20px;
+    }
+
+    .b_MoneyTransferReceipt .island-default > .no-offset-v-bottom.island--title:first-child {
+        margin-bottom: 0;
+    }
+
+    .b_MoneyTransferReceipt .h4.prominent {
+        color: #720000;
+    }
+
+    .status-line--mobile {
+        background: #fff;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* end order-total--mobile*/
+
+@media screen and (min-width: 640px) {
+
+    /*normal version*/
+    .transferRateArea {
+        font-size: 1.4em;
+    }
+
+    #TransferRateDisplay {
+        font-weight: 400;
+    }
+
+    .b-amount-selector #SendingCurr {
+        color: #fff;
+    }
+
+    .status-line {
+        display: block;
+    }
+
+    .status-line--mobile {
+        display: none;
+    }
+}
+/*end block-amount-selector*/
+
+/*moved from tpl*/
+.money_xfer_section_hide {
+    display: none;
+}
+
+.loading-gif {
+    background: url('../img/ajax-loader-min.gif') #fff no-repeat right center;
+}
+/*end moved from tpl*/
+
+.b_MoneyTransferIndex .forms-default > .island--title {
+    padding-top: 0;
+}
+
+.b_MoneyTransferIndex .pm-verification {
+    min-height: 320px;
+}
+
+.pm-verification .btn.btn-primary,
+.pm-verification .btn.btn-primary:hover {
+    color: #fff;
+}
+
+.b_MoneyTransferIndex .pm-verification--setup-msg,
+.b_MoneyTransferIndex .pm-verification--another-method {
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.b_MoneyTransferIndex .pm-verification--btn-before {
+    display: block;
+    padding-bottom: 1em;
+}
+
+.b_MoneyTransferIndex .pm-verification--setup-btn {
+    padding: 1em 0;
+}
+
+.payment-type .form-group.auto-renew {
+    padding: 15px 0 0 15px;
+}
+
+.b_MoneyTransferIndex .payment-type {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.b_MoneyTransferIndex .payment-type .payment-subtitle {
+    display: none;
+}
+
+.b_MoneyTransferIndex .payment-type--card .add-new-card .newPayment label {
+    padding-left: 0;
+}
+
+.b_MoneyTransferIndex .help-block .i {
+    float: left;
+    color: #c00;
+    height: 27px;
+    width: 27px;
+    margin-right: 5px;
+}
+
+.b_MoneyTransferIndex .help-block span {
+    font-size: 15px;
+    line-height: 26px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 640px) {
+
+    .b_MoneyTransferIndex .help-block .i {
+        color: #878787;
+        width: 21px;
+        height: 21px;
+    }
+
+    .b_MoneyTransferIndex .help-block span {
+        color: #878787;
+        font-style: normal;
+        line-height: 21px;
+    }
+
+    .b_MoneyTransferIndex .b-recipient-info .form-group {
+        margin-bottom: 0;
+    }
+
+    .b_MoneyTransferIndex .b-recipient-info .form-group label {
+        color: #4e4b49;
+    }
+
+    .collapsed-info--line {
+        padding: 10px 20px;
+        background: #fff;
+        border-top: 1px #dcdcdc solid;
+    }
+}
+
+/*start b-delivery-methods*/
+.b-delivery-methods .line-up-wrapper {
+    padding-bottom: 30px;
+}
+
+.b-payment-methods .radio label .radio--title {
+    margin-right: 15px;
+}
+
+.b-payment-methods .radio label .radio--discount {
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.b-payment-methods .radio label .radio--discount del:before {
+    content: "(";
+    display: inline-block;
+}
+
+.b-payment-methods .radio label .radio--discount del:after {
+    content: ")";
+    display: inline-block;
+}
+
+.line-up-wrapper .forms-default {
+    padding-top: 0;
+}
+
+.line-up-wrapper .radio label {
+    font-size: 21px;
+}
+
+.line-up-wrapper .radio input:checked + label > .plate.plate-alt {
+    background: #a00;
+}
+
+#CountryNotSelectedMessageForDelivery {
+    text-align: center;
+}
+
+#DeliveryMethods .island--title > br {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .line-up-wrapper .forms-default,
+    .b-amount-selector .forms-default {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .line-up-wrapper .radio {
+        padding-left: 21px;
+    }
+
+    .line-up-wrapper .radio label {
+        width: 100%;
+    }
+
+    .b-payment-methods .radio label .radio--title {
+        display: block;
+        margin-right: 0;
+    }
+
+    .b-payment-methods .radio label .radio--discount {
+        color: #e00000;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #DeliveryMethods .island--title > br {
+        display: block;
+    }
+}
+/*end b-delivery-methods*/
+
+/*start b-payment-methods*/
+.delivery-method.mobile-wallet .description .popover,
+.b-payment-methods .description .popover {
+    width: 320px;
+    max-width: 90%;
+}
+
+.mobile-wallet .description .popover-title.popover-title.popover-title,
+.b-payment-methods .description .popover-title.popover-title.popover-title {
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    text-transform: none;
+}
+
+.mobile-wallet .description .popover .popover-content,
+.b-payment-methods .description .popover-content {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.b-payment-methods .description .arrow.arrow.arrow {
+    top: -11px!important;
+}
+
+.b-payment-methods .mobile-wallet .description .popover.bottom > .arrow::after,
+.b-payment-methods .description .popover.bottom > .arrow::after {
+    border-bottom-color: #f7f7f7;
+}
+
+.b-payment-methods .line-up-wrapper {
+    padding-bottom: 30px;
+}
+
+.b_MoneyTransferStartOrder .b-payment-methods > .island--title-popover-trigger,
+.b_MoneyTransferStartOrder .b-delivery-methods > .island--title-popover-trigger {
+    white-space: nowrap;
+}
+
+.b_MoneyTransferIndex #Wizard > .island--header,
+.b_MoneyTransferStartOrder #frmStartOrder .forms-default > .island--header {
+    display: block;
+    padding-top: 40px;
+}
+
+.b_MoneyTransferIndex #frmAmount .forms-default > .island--header {
+    display: none;
+}
+
+.b_MoneyTransferIndex #Wizard.confirm-page > .island--header {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+
+    .b_MoneyTransferIndex #Wizard > .island--header,
+    .b_MoneyTransferIndex #Wizard.confirm-page > .island--header,
+    .b_MoneyTransferStartOrder #frmStartOrder .forms-default > .island--header {
+        padding-top: 30px;
+    }
+}
+
+#CountryNotSelectedMessageForPayment {
+    text-align: center;
+}
+/*end b-payment-methods*/
+
+/*start list-element*/
+.list-element {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.list-element .radio label {
+    padding-left: 10px;
+}
+
+.list-element .radio .plate {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: none;
+}
+
+.list-element .radio small.description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: block;
+}
+
+.list-element .radio label::before {
+    top: 8px;
+}
+
+.list-element .radio label::after {
+    top: 13px;
+}
+
+@media screen and (min-width: 640px) {
+
+    /*normal version*/
+    .list-element .radio label {
+        position: relative;
+        padding-left: 85px;
+    }
+
+    .list-element .radio .plate {
+        display: block;
+    }
+
+    .list-element .radio label::before {
+        top: 18px;
+    }
+
+    .list-element .radio label::after {
+        top: 23px;
+    }
+}
+/*end list-element*/
+
+/*start b-order-display*/
+.b-order-display {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #59a317;
+    font-size: 16px;
+    border-top: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.b-order-display .control-label {
+    float: right;
+}
+
+.b-order-display .fee-amount .control-label,
+.b-order-display .total-amount .control-label {
+    padding-top: 0;
+    margin-left: 10px;
+}
+
+.b-amount-selector .b-order-display {
+    border: none;
+    background: none;
+}
+
+.b-order-display .white-block .white-block--content {
+    padding: 20px 45px;
+}
+
+@media screen and (min-width: 640px) {
+
+    .b-order-display,
+    .b-amount-selector .b-order-display {
+        margin: 0;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .b-order-display .white-block {
+        /*background: #EBF0F5;*/
+        background: #fff;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .b-order-display .white-block .white-block--content {
+        padding: 20px 40px 15px;
+    }
+
+    .b-order-display .white-block .white-block--content .form-group {
+        margin-bottom: 5px;
+    }
+
+    .b-order-display .white-block .white-block--content .form-group.total-amount {
+        padding-top: 5px;
+        margin-bottom: 0;
+    }
+}
+/*end b-order-display*/
+
+.mt-banner {
+    margin-bottom: 1.5em;
+}
+
+.mt-banner .mt-banner__img {
+    display: none;
+}
+
+.mt-banner .mt-banner__text {
+    display: block;
+    position: relative;
+    background: #59A317;
+    padding: 20px;
+    margin: 0 -20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'TeX Gyre Heros';
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.mt-banner .mt-banner__text strong {
+    text-transform: uppercase;
+}
+
+.mt-banner .mt-banner__text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #59A317;
+}
+
+@media screen and (min-width: 640px) {
+
+    /*normal*/
+    .b-amount-selector--view {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .confirm-page .island--header,
+    .confirm-page .island--header .island--title {
+        padding-top: 0;
+    }
+
+    .confirm-page .b-amount-selector--view {
+        position: relative;
+        left: auto;
+        top: auto;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .b_MoneyTransferReceipt .b-amount-selector--view {
+        position: relative;
+        top: auto;
+        left: auto;
+        background: transparent;
+        border-radius: 0;
+        margin: 15px 0 0;
+    }
+
+    .b-amount-selector--view .island--title {
+        display: none;
+    }
+
+    .b-amount-selector--view .island--title::before,
+    .b-amount-selector--view .island--title::after {
+        display: none;
+    }
+
+    .b_MoneyTransferReceipt .collapsed-info--line {
+        background: none;
+        border: none;
+        margin-bottom: 0;
+        border-bottom: 1px rgba(235, 240, 245, 0.2) solid;
+    }
+
+    .collapsed-info--line .edit-link-wrapper {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #91D6FF;
+        display: block;
+        z-index: 5;
+    }
+
+    .collapsed-info--line .edit-link-wrapper:hover {
+        color: #fff;
+    }
+
+    .collapsed-info--line .edit-link {
+        text-indent: -10000px;
+        outline: none;
+        width: 33px;
+        height: 33px;
+        display: block;
+        margin-top: -33px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .confirm-page .collapsed-info--line .edit-link-wrapper .i {
+        color: #91D6FF;
+    }
+
+    .confirm-page .collapsed-info--line .edit-link-wrapper:hover .i {
+        color: #fff;
+    }
+
+    .b-amount-selector--view .expand-link-wrapper {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    .confirm-page .b-amount-selector--view .money_xfer_section_hide,
+    .confirm-page .b-amount-selector--view .expand-link-wrapper {
+        display: none;
+    }
+
+    .b-amount-selector--view .expand-link {
+        display: block;
+        text-indent: -10000px;
+        width: 33px;
+        height: 33px;
+        outline: none;
+        margin-top: -33px;
+    }
+
+    .b-amount-selector--view .expand-link-wrapper .i {
+        display: block;
+    }
+
+    .b-amount-selector--view .status-line {
+        padding: 15px 340px 15px 20px;
+        font-size: 20px;
+    }
+
+    .en-US .b-amount-selector--view .status-line {
+        padding: 15px 285px 15px 20px;
+    }
+
+    .es-US .b-amount-selector--view .status-line {
+        padding: 15px 340px 15px 20px;
+    }
+
+    .b-amount-selector--view .label-amount {
+        font-weight: 700;
+        padding: 0 0 0 10px;
+    }
+
+    .b-amount-selector--view .status-line .title {
+        display: inline-block;
+    }
+
+    .b-amount-selector--view .order-total {
+        position: absolute;
+        top: 18px;
+        right: 60px;
+    }
+
+    .confirm-page .b-amount-selector--view .order-total {
+        right: 20px;
+    }
+
+    .collapsed-info--line {
+        margin-bottom: 2px;
+        padding: 20px 0;
+        background: rgba(67, 67, 67, 0.95);
+        position: relative;
+        overflow: hidden;
+        z-index: 4;
+    }
+
+    .confirm-page .collapsed-info--line {
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .confirm-page .money_xfer_section_hide:last-child .collapsed-info--line {
+        margin: 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .confirm-page .collapsed-info--line .col-sm-offset-2 {
+        margin-left: 20px;
+    }
+
+    .mt-banner .mt-banner__img {
+        display: block;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .mt-banner .mt-banner__text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .b-amount-selector--view .status-line {
+        padding: 17px 20px;
+        padding-right: 200px;
+        /*space for order total block*/
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .b-amount-selector--view .order-total .total-line {
+        font-size: 16px;
+    }
+}
+
+/* start from _cashPickupLocationSearch.cshtml*/
+#cashPickupLocationSearchResults .cpLocation {
+    position: relative;
+}
+
+.cpLocation:hover {
+    cursor: pointer;
+}
+
+#cashPickupLocationSearchResults .cpLocation:after {
+    content: 'Select >';
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 10px;
+    color: #006cd8;
+    font-size: 17px;
+    line-height: 60px;
+}
+
+#cashPickupLocationSearchResults .cpLocation:hover:after {
+    text-decoration: underline;
+}
+
+.cpLocation table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.cpLocation.pickup-table table {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.cpLocation.pickup-table table th,
+.cpLocation.pickup-table table th:first-child,
+.cpLocation.pickup-table table th:last-child {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    border-bottom: rgba(255, 255, 255, .1) 1px solid;
+}
+
+.cpLocation table.cpLocation--table td,
+.cpLocation table.cpLocation--table td:first-child,
+.cpLocation table.cpLocation--table td:last-child {
+    padding: 5px 10px;
+    border-bottom: rgba(255, 255, 255, .1) 1px solid;
+}
+
+.cpLocation table tr:hover td {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cpLocation .map_link {
+    font-size: 12px;
+}
+
+.cpLocation--table-name {
+    width: 40%;
+    font-weight: 700;
+}
+
+.cpLocation--table-map {
+    vertical-align: middle;
+}
+
+.cpLocation--table-btns {
+    width: 1%;
+}
+
+#cashPickupLocationSearchResults .cpLocation::after {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .rwd-table-wide td.cpLocation--table-btns {
+        display: none;
+    }
+
+    #cashPickupLocationSearchResults .cpLocation::after {
+        display: block;
+    }
+}
+
+.pickup-table.cpLocation::after {
+    display: none;
+}
+
+.pickup-table table {
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    .cpLocation::after {
+        color: #aaa;
+    }
+
+    .cpLocation {
+        margin-left: -35px;
+        margin-right: -35px;
+        padding-left: 10px;
+        padding-right: 75px;
+        color: #242424;
+    }
+
+    .cpLocation:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .cpLocation table td {
+        width: inherit;
+    }
+
+    .cpLocation table tr:hover td {
+        background-color: transparent;
+    }
+
+    .pickup-table {
+        display: none!important;
+    }
+
+    .cpLocation--table-name {
+        font-weight: 400;
+    }
+
+    .cpLocation table.cpLocation--table .cpLocation--table-phone {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .cpLocation table.cpLocation--table td:first-child {
+        padding-top: 10px;
+    }
+
+    .cpLocation table.cpLocation--table td:nth-last-child(2) {
+        padding-bottom: 10px;
+    }
+
+    #cashPickupShowMore {
+        margin-left: -16px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+
+    #cashPickupShowMore {
+        margin-left: 10px;
+    }
+}
+/* end from _cashPickupLocationSearch.cshtml*/
+
+.b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt > h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    display: table-cell;
+    width: 1%;
+    color: #000;
+    min-height: 320px;
+    vertical-align: middle;
+}
+
+.b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt > h3 strong {
+    color: #B00009;
+    display: block;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 980px) {
+    .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt {
+        min-height: 240px;
+    }    
+}
+
+@media screen and (max-width: 640px) {
+
+    div.location-logo .location-logo--list .location-logo--item {
+        width: 90px;
+        height: 90px;
+    }
+
+    .amount-convert .amount-convert--link-text {
+        display: none;
+    }
+
+    .amount-convert .amount-convert--link .plate {
+        height: 40px;
+        width: 48px;
+        padding: 6px;
+        margin-top: 20px;
+        background-color: transparent;
+        color: #7E8A93;
+    }
+
+    .b-amount-selector .dyad--first {
+        margin-bottom: 20px;
+    }
+
+    .b_ServicesMoneyTransfer .forms-default .social-promo,
+    .b-amount-selector .social-promo {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt,
+    .b-amount-selector .social-promo .social-promo--block .spec-offer-mt {
+        min-height: 240px;
+    }
+
+    .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt > h3 {
+        font-size: 36px;
+        color: #4e4b49;
+    }
+
+    .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt > h3 strong {
+        font-size: 42px;
+        margin-top: 6px;
+    }
+
+    .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt .text-red,
+    .b-amount-selector .social-promo .social-promo--block .spec-offer-mt .text-red {
+        margin: .5em 0;
+        font-size: 32px;
+    }
+
+    .b-amount-selector .country-selector {
+        padding-top: 15px;
+    }
+
+    .b-amount-selector .country-selector .plate {
+        margin-top: 25px;
+    }
+
+    .island.island-default .location-logo .island--title {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+/*edit link fix*/
+.collapsed-info--line {
+    position: relative;
+}
+
+.b-recipient-info .control-label > div {
+    padding: 5px 0 0;
+}
+
+.deliveli-edit {
+    display: none;
+}
+/*end edit link fix*/
+
+.icon-block .title {
+    display: inline-block;
+}
+
+.icon-block .value {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.display-block {
+    display: block;
+}
+
+.b_MoneyTransferReceipt .island hr {
+    border-top: 1px solid rgba(235, 240, 245, 0.2);
+}
+
+.b_MoneyTransferReceipt .island--header .island--title {
+    padding-top: 0;
+}
+
+.b_MoneyTransferReceipt .receipt {
+    padding: 15px 0;
+}
+
+.b_MoneyTransferReceipt .receipt--data {
+    overflow: hidden;
+    padding-left: 0;
+    padding-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.b_MoneyTransferReceipt .receipt--data .receipt--data-label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.b_MoneyTransferReceipt .receipt--data .receipt--data-value {
+    float: none;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.b_MoneyTransferReceipt .alerts .checkbox-inline label {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.b_MoneyTransferReceipt .alerts .checkbox-inline label::before {
+    margin-right: 8px;
+}
+
+.b_MoneyTransferReceipt .alerts .checkbox-inline p {
+    margin: 3px 0 0 30px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.b_MoneyTransferReceipt .expand-link-wrapper .expand-link {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.b_MoneyTransferReceipt .expand-link-wrapper .i {
+    height: 25px;
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+.b_MoneyTransferReceipt .reminders .reminderItem {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.b_MoneyTransferReceipt .reminders .reminderItem .state-hide {
+    opacity: 0.5;
+}
+
+.b_MoneyTransferReceipt .reminders .reminderItem .checkbox > label {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.b_MoneyTransferReceipt .reminders .reminderItem .checkbox-inline label::before {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .b_MoneyTransferReceipt .reminders .reminderItem.MT {
+        padding: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background: #fff;
+    }
+
+    .b_MoneyTransferReceipt .reminders .reminderItem.MT label {
+        color: #000;
+    }
+}
+
+.confirm-page .confirmation {
+}
+
+.confirm-page .confirmation .form-group, .b-order-display .white-block .form-group {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.confirm-page .status-line--mobile {
+    padding-bottom: 10px;
+}
+
+.b-amount-selector .status-line--mobile .fee-amount {
+    padding: 0 0 0 55px;
+    margin: 0;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.confirm-page .confirmation .fee-amount .control-label,
+.b-order-display .fee-amount .control-label {
+    display: block;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.confirm-page .confirmation .total-amount,
+.b-order-display .total-amount {
+    color: #63BB11;
+    font-weight: 700;
+    text-align: right;
+}
+
+.confirm-page .confirmation .total-amount .control-label,
+.b-order-display .total-amount .control-label {
+    display: block;
+    text-align: right;
+    font-size: 36px;
+}
+
+.confirm-page .confirmation .fee-amount .control-label,
+.b-order-display .fee-amount .control-label {
+    display: block;
+    margin-bottom: 0;
+}
+
+.confirm-page .confirmation .fee-amount > span,
+.b-order-display .fee-amount > span,
+.confirm-page .confirmation .total-amount > span,
+.b-order-display .total-amount > span {
+    float: left;
+}
+
+.confirm-page .confirmation .cvv {
+    padding-bottom: 15px;
+}
+
+.confirm-page .confirmation .cvv .control-label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.confirm-page .confirmation .cvv .form-control {
+    display: inline-block;
+    width: 80px;
+}
+
+.confirm-page .confirmation .cvv .help-block {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.confirm-page .confirmation-permission .checkbox-inline label:before {
+    margin-right: 10px;
+}
+
+.confirm-page .confirmation-permission .checkbox-inline p {
+    margin-left: 30px;
+}
+
+.confirm-page .confirmation #alerts .island--title {
+    padding-top: 0;
+    color: #000;
+}
+
+.b_AccountTransactionDetails .details-alerts #alerts {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.b_AccountTransactionDetails .details-alerts .island--title {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.confirm-page .confirmation #alerts .island--title:after,
+.confirm-page .confirmation #alerts .island--title:before {
+    display: none;
+}
+
+.confirm-page .confirmation #alerts .alerts {
+    padding-bottom: 15px;
+}
+
+.b_AccountTransactionDetails .details-alerts .checkbox-inline label {
+    font-weight: 700;
+}
+
+.confirm-page .confirmation #alerts .checkbox-inline label:before,
+.b_AccountTransactionDetails .details-alerts .checkbox-inline label:before {
+    margin-right: 10px;
+}
+
+.confirm-page .confirmation #alerts .checkbox-inline input[type=checkbox],
+.b_AccountTransactionDetails .details-alerts .checkbox-inline input[type=checkbox] {
+    margin-left: 0;
+}
+
+.confirm-page .confirmation #alerts .checkbox-inline p,
+.b_AccountTransactionDetails .details-alerts p {
+    display: inline-block;
+}
+
+.b_AccountTransactionDetails .details-alerts .form-group-buttons {
+    min-width: 280px;
+    max-width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.b_MoneyTransferThanks .island .island--header {
+    padding: 0 40px 20px;
+}
+
+.b_MoneyTransferThanks .island .island--title br {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .b_MoneyTransferReceipt .receipt {
+        background: #fff;
+        padding: 10px 20px;
+        margin: 0 -20px 20px;
+        color: #000;
+    }
+
+    .b_MoneyTransferReceipt .island--header {
+        padding: 20px;
+    }
+
+    .b_MoneyTransferThanks .island .island--header {
+        padding: 60px 20px 20px;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .b_MoneyTransferReceipt .island--header .island--title {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .b_MoneyTransferReceipt .island .island--divider {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .b_MoneyTransferReceipt .receipt--data {
+        padding-bottom: 5px;
+    }
+
+    .b_MoneyTransferReceipt .receipt--data .receipt--data-label,
+    .b_MoneyTransferReceipt .receipt--data .receipt--data-value {
+        display: inline-block;
+    }
+
+    .confirm-page .forms-default {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .confirm-page .confirmation-permission {
+        padding-top: 15px;
+    }
+
+    .confirm-page .confirmation .form-group,
+    .b-order-display .white-block .form-group {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .confirm-page .confirmation .form-group.total-amount > *,
+    .b-order-display .form-group.total-amount > * {
+        font-size: 21px;
+    }
+
+    .confirm-page .payment-view .h3 {
+        margin-bottom: 15px;
+    }
+
+    .confirm-page .payment-view .edit-link-wrapper {
+        top: 0;
+    }
+
+    .confirm-page .confirmation .cvv .control-label {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .confirm-page .confirmation .cvv .form-control {
+        float: left;
+    }
+
+    .confirm-page .confirmation .cvv .help-block {
+        display: block;
+        width: 120px;
+        margin: 0 0 0 100px;
+    }
+
+    .b_AccountTransactionDetails .details-alerts #alerts {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .b_AccountTransactionDetails .details-alerts .island--title {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*white block on thanks page*/
+.white-block {
+    background: #fff;
+    color: #333;
+    border-radius: 4px;
+}
+
+.white-block .white-block--header {
+    color: #9f0000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 25px 30px 25px 100px;
+    min-height: 30px;
+    border-bottom: solid 10px #eccccc;
+    position: relative;
+}
+
+.white-block .white-block--header .plate {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.white-block .white-block--content {
+    padding: 30px;
+    font-size: 16px;
+}
+
+.white-block .white-block--content a {
+    color: #006cd8;
+}
+
+.white-block .help-block {
+    color: #333;
+}
+/*end white block on thanks page*/
+
+.reminder-description {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/*start my recipient block*/
+.b-recipient-form .forms-default .row .rcp-btn,
+.b-recipient-form .forms-default .row .rcp-btn--all,
+.b-recipient-form .forms-default .row .rcp-btn--add {
+    float: left;
+    clear: left;
+    width: 34%;
+    margin: 5px 0;
+    position: relative;
+}
+
+.rcp-btn::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-weight: 700;
+    content: "\232A";
+    font-size: 18px;
+    margin-top: -14px;
+    color: red;
+}
+
+.rcp-btn--panel {
+    float: left;
+    clear: left;
+    width: 34%;
+    padding: 0 5px;
+    position: relative;
+    margin-top: -5px;
+    display: none;
+}
+
+.rcp--panel-box {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #333;
+    width: 100%;
+}
+
+.serviceBtn {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 2.2;
+    color: #006CD8;
+}
+
+.serviceBtn + .serviceBtn {
+    border-top: 1px solid #eee; 
+}
+
+.serviceBtn:hover {
+    color: #84c1ff;
+}
+
+.rcp--services-box {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.actionBtn {
+    cursor: pointer;
+}
+
+.actionBtn:hover .plate {
+    background: #ea0000;
+}
+
+.rcp-btns--box {
+    background: #C00;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 24%;
+    max-width: 84px;
+    font-size: 1px;
+    display: table-cell;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid #AE0000;
+}
+
+.b_AccountRecipients .rcp-btns--box .plate-small {
+    width: 50%;
+    height: 43px;
+    padding: 9px 0;
+    border-radius: 0;
+}
+
+.b_AccountRecipients .rcp-btns--box .plate-small .i--close {
+    width: 16px;
+}
+
+.b_AccountRecipients .rcp-btns--box .actionBtn:first-child .plate-small {
+    border-right: 1px solid #AE0000;
+}
+
+.b_AccountRecipients .rcp-btns--box .actionBtn:last-child:hover .plate {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.divRecipientDetails .btn.remove {
+    padding: 5px 20px 5px 80px;
+    padding-left: 75px;
+    font-size: 13px;
+    text-align: left;
+    background-color: transparent;
+    background: url('../img/recipient-delete.svg') no-repeat 25px 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 0 rgba(0, 0, 0, 0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+
+    .divRecipientDetails .btn.remove br {
+        display: none;
+    }
+
+    .divRecipientDetails .btn.remove {
+        margin-top: 20px;
+        padding: 5px 20px 5px 80px;
+        padding-left: 155px;
+        line-height: 2.7;
+        background-position: 105px 3px;
+    }
+}
+
+.b_AccountRecipients .recipient-active {
+    text-align: left;
+}
+
+.divRecipientDetails {
+    float: right;
+    width: 60%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .island-default.b-recipient-form > .island--title:first-child {
+        margin-bottom: 0;
+    }
+
+    .divRecipientDetails {
+        position: static;
+        float: none;
+        clear: left;
+        width: auto;
+        padding: 20px 0;
+        margin-top: 0!important;
+    }
+
+    .rcp-btn, .rcp-btn--add, .rcp-btn--panel, .rcp-btn--all {
+        float: none!important;
+    }
+
+    .b-recipient-form .forms-default .row .rcp-btn,
+    .b-recipient-form .forms-default .row .rcp-btn--add,
+    .b-recipient-form .forms-default .row .rcp-btn--all {
+        display: block;
+        width: 100%;
+    }
+
+    .b-recipient-form .forms-default .row .rcp-btn--all {
+        border:1px  #878787 solid;
+    }
+    .rcp-btn--panel {
+        width: auto;
+}
+}
+
+/*my acc recipientTab*/
+.recipientsTab-area .rcp-btn {
+    position: relative;
+}
+/*end my recipient block */
+
+/*moved from StartOrder tpl*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.b_MoneyTransferStartOrder .white-block {
+    margin-bottom: 28px;
+}
+
+.b_MoneyTransferStartOrder .action-block {
+    padding-top: 0;
+}
+
+/* fix for form paddings on recipient information page */
+@media screen and (max-width: 640px) {
+
+    #RecipientInfoContent .forms.forms-default {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #recipientInfo, 
+    #CPRecipient, 
+    .island-sm-white #init_cc_payment {
+        padding: 10px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background: #fff;
+    }
+
+   .payment_instruments #init_cc_payment {
+       background: none;
+   }
+
+    #recipientInfo .island > h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+.b_MoneyTransferStartOrder .radio input[type=radio]:disabled ~ label a[data-toggle=popover],
+.b_MoneyTransferStartOrder .radio input[type=radio]:disabled ~ label button[data-toggle=popover] {
+    display: none;
+}
+
+#confirm-notice a[data-toggle=collapse] {
+    cursor: pointer;
+}
+
+#confirm-notice #viewdetails.collapse.in {
+    margin-bottom: 15px;
+}
+
+/* Afunds and MT common rules*/
+.white-block {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #333;
+}
+
+.white-block .white-block--content {
+    font-size: 16px;
+    padding: 30px;
+}
+
+.white-block .total-amount {
+    color: #63bb11;
+    font-weight: 700;
+}
+
+.add-funds--summary .white-block--content .control-label {
+    float: right;
+}
+
+/*end_Afunds and MT common rules*/
+.add-funds--summary .white-block,
+.promotion-code--block .margin-bottom {
+    margin-bottom: 20px;
+}
+
+.field-validation-success {
+    background: #F8FFF2;
+    border-left: 3px solid #63bb11;
+    border-radius: 4px;
+    color: #63bb11;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+/*special offer*/
+.b_MtuInternationalAuthPurchase.es-US .imtu .imtu--block .spec-offer .lead,
+.b_MtuDomesticAuthPurchase.es-US .imtu .imtu--block .spec-offer .lead {
+    font-size: 16px;
+}
+
+.imtu--special-offer {
+    height: auto;
+    background: #fff;
+    color: #e00000;
+    line-height: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.special-offer--title {
+    display: block;
+    background: #a00000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.special-offer--msg {
+    height: auto;
+    line-height: 30px;
+    background: #fff;
+    color: #e00000;
+}
+
+.imtu--special-offer #discountOfferAmount {
+    float: none;
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+
+    .imtu--special-offer {
+        min-height: 50px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .special-offer--title {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 50px;
+        padding: 0 15px;
+    }
+
+    .special-offer--msg {
+        height: 50px;
+        padding: 0 15px;
+        line-height: 40px;
+    }
+
+    .imtu--special-offer #discountOfferAmount {
+        padding: 0 15px 0 30px;
+        line-height: 50px;
+        float: right;
+    }
+}
+
+@media (max-width: 640px) {
+
+    /*Fix for popup close button on mobile devices*/
+    /*Will be moved to the bootstrap theme.*/
+    .bootbox-close-button {
+        font-size: 41px!important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .b_MtuInternationalAuthPurchase.es-US .imtu .imtu--block .spec-offer .lead,
+    .b_MtuDomesticAuthPurchase.es-US .imtu .imtu--block .spec-offer .lead {
+        font-size: 13px;
+    }
+}
+
+.discountOffer {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 10px 10px;
+    color: #a10000;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.discountOffer > div {
+    margin: -5px -10px 5px;
+    padding: 10px 0;
+    color: #fff;
+    background: #a10000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.discountOffer #discountOfferAmount {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.payment-options--amountblock label {
+    display: block;
+}
+
+.payment-options--amountblock input.form-control {
+    width: 50px;
+    display: inline;
+}
+
+.vertical-align--bottom {
+    vertical-align: bottom;
+}
+
+.pay-source-table .forms-default {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pay-source-table .validate-dd {
+    margin-top: 28px;
+}
+
+.pay-source-table .faux-table-cell {
+    vertical-align: top;
+}
+
+.white-space-normal {
+    white-space: normal;
+}
+
+.pay-source-table .payment-options--amountblock .control-label {
+    white-space: nowrap;
+}
+
+.card-accounts-list .card_row {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-accounts-list .list-action,
+    .bank-accounts-list .list-action {
+        padding: 20px 0 0;
+    }
+
+    .card-accounts-list .list-action .faux-table-cell,
+    .bank-accounts-list .list-action .faux-table-cell {
+        padding-bottom: 10px;
+    }
+}
+
+/*TODO. Move to bootstrap theme and create for all mod.*/
+@media screen and (max-width: 480px) {
+
+    .text-center-xs {
+        text-align: center;
+    }
+}
+/*end*/
+
+.documents-content .notice,
+.payment-type--notice .notice {
+    font-size: 16px;
+    display: block;
+}
+
+/* transactions-details page */
+.transactions-details {}
+
+.transactions-details--receipt {
+    padding: 20px 0;
+}
+
+.transactions-details--receipt .receipt--data {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align: bottom;
+}
+
+.transactions-details--receipt .receipt--data-amount {
+    text-align: right;
+    font-size: 18px;
+}
+
+.transactions-details--receipt .receipt--data-amount .receipt--data-label {
+    float: left;
+}
+
+.transactions-details--receipt .receipt--data-amount strong {
+    font-size: 21px;
+}
+
+.transactions-details--receipt-mt {
+}
+
+.transactions-details--steps {
+    padding: 20px 30px 0;
+    margin: 0 0 2px;
+    background: rgba(67, 67, 67, 0.95);
+}
+
+@media screen and (max-width: 640px) {
+    .transactions-details--steps {
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+
+    .transactions-details--steps .collapsed-info--line {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .transactions-details--steps .icon-block {
+        margin-bottom: 10px;
+    }
+
+    .transactions-details--steps .plate.plate-white {
+        border: 1px #004c8d solid;
+        width: 44px;
+        height: 44px;
+        padding: 5px;
+    }
+
+    .transactions-details--steps .icon-block .icon-block--text {
+        padding-left: 10px;
+    }
+
+    .island-sm-white #clearCashPickupLocation {
+        color: #c00;
+        background-color: #e1e1e1;
+        border: 1px #878787 solid;
+    }
+}
+
+.island-sm-white .island.documents-content {
+    padding-top: 28px;
+}
+
+.island-sm-white .island.documents-content .island--title-small {
+    padding: 20px 40px;
+}
+
+#invite-with-confirm label {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/*added to local numbers. todo: move to br.css*/
+#local-numbers.local-numbers-short .faux-table-row .faux-table-cell .h3 {
+    margin-bottom: 0;
+}
+
+#local-numbers.local-numbers-short .faux-table-row .faux-table-cell {
+    padding: 7px;
+}
+
+#local-numbers.local-numbers-short .faux-table-row .faux-table-cell:first-child {
+    padding-left: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#local-numbers.local-numbers-short .faux-table-row .faux-table-cell:last-child {
+    padding-right: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#local-numbers.local-numbers-short .faux-table-row:hover .faux-table-cell {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/*show more for display numbers*/
+#local-numbers .display-none {
+    display: none;
+}
+
+
+#local-numbers.show-all .display-none {
+    display: table-row;
+}
+.show-more a,
+.show-more a:hover {
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 60px;
+}
+.show-more .show-more--collapse,
+.show-more .i--collapse {
+    display: none;
+}
+
+.show-more .collape-all .show-more--collapse,
+.show-more .collape-all .i--collapse {
+    display: inline;
+}
+.show-more .collape-all .i--expand,
+.show-more .collape-all .show-more--expand {
+    display: none;
+}
+
+.show-more--expand,
+.show-more--collapse {
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+/*end show more for display numbers*/
+
+@media screen and (max-width: 768px) {
+
+    #local-numbers.local-numbers-short .faux-table-row:hover .faux-table-cell {
+        background: none;
+    }
+
+    #local-numbers.local-numbers-short .faux-table-row {
+        margin-bottom: 10px;
+    }
+
+    #local-numbers.local-numbers-short .faux-table-row .faux-table-cell:first-child {
+        padding: 4px 0;
+    }
+
+    #local-numbers.local-numbers-short .faux-table-row .faux-table-cell:first-child .h3 {
+        font-size: 18px;
+    }
+
+    #local-numbers.local-numbers-short .faux-table-row .faux-table-cell:last-child .h3 {
+        font-size: 16px;
+    }
+
+    #local-numbers.local-numbers-short .faux-table-row .faux-table-cell:last-child {
+        padding: 4px 0;
+    }
+}
+
+/*sofort-block in payment sections
+    todo: move to br.css
+*/
+.sofort--block {}
+
+.sofort--block .card-radio {
+    float: left;
+    padding-top: 16px;
+}
+
+.sofort--block .radio {
+    padding-left: 25px;
+}
+
+.payment-type .payment-type--card .sofort--block .card {
+    margin-left: 55px;
+}
+
+@media screen and (max-width: 460px) {
+
+    .payment-type .payment-type--card .sofort--block .card {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .payment-type .payment-type--card .sofort--block .card img {
+        float: none;
+    }
+}
+
+/*  sweepstakes   */
+@font-face {
+    font-family: 'Conv_HelveticaNeueLTPro-Cn';
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-Cn.eot');
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-Cn.woff') format('woff'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-Cn.ttf') format('truetype'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-Cn.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaNeueLTPro-LtCn';
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-LtCn.eot');
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-LtCn.woff') format('woff'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-LtCn.ttf') format('truetype'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-LtCn.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaNeueLTPro-BdCn';
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-BdCn.eot');
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-BdCn.woff') format('woff'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-BdCn.ttf') format('truetype'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-BdCn.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_HelveticaNeueLTPro-MdCn';
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-MdCn.eot');
+    src: url('../img/sweepstakes/HelveticaNeueLTPro-MdCn.woff') format('woff'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-MdCn.ttf') format('truetype'),
+    url('../img/sweepstakes/HelveticaNeueLTPro-MdCn.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sweepstakes {
+    padding: 40px 0;
+}
+
+.sweepstakes--content {
+    background: url('../img/sweepstakes/content-bg.png') 50% 0 no-repeat;
+    padding: 30px 30px 30px 400px;
+    min-height: 660px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sweepstakes--title {
+    font-family: Conv_HelveticaNeueLTPro-BdCn;
+    color: #B8131A;
+    font-size: 96px;
+    line-height: 0.9;
+    font-weight: 400;
+    margin: 0 0 70px;
+    padding: 0;
+}
+
+.es-US .sweepstakes--title {
+    font-size: 72px;
+    line-height: 78px;
+    margin-bottom: 90px;
+}
+
+.sweepstakes--title small {
+    display: block;
+    color: #000;
+    font-family: Conv_HelveticaNeueLTPro-MdCn;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.es-US .sweepstakes--title small {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.sweepstakes--phone {
+    background: url('../img/sweepstakes/phone-app.png') 0 0 no-repeat;
+    height: 590px;
+    width: 295px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.sweepstakes--apps {
+    float: left;
+    width: 390px;
+    height: 256px;
+    margin: 0 30px 0 0;
+    padding: 50px 30px 30px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #231f20;
+    font-family: Conv_HelveticaNeueLTPro-Cn;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.es-US .sweepstakes--apps {
+    font-size: 24px;
+}
+
+.sweepstakes--apps strong {
+    display: block;
+    font-family: Conv_HelveticaNeueLTPro-BdCn;
+    color: #E11B23;
+    font-weight: 400;
+}
+
+.sweepstakes--apps .btn {
+    margin-top: 25px;
+    height: 46px;
+}
+
+.sweepstakes--offers {}
+
+.sweepstakes--offers h2 {
+    padding: 0;
+    margin: 0 0 10px;
+    font-family: Conv_HelveticaNeueLTPro-LtCn;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.es-US .sweepstakes--offers h2 {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.sweepstakes--offers h2 span {
+    display: block;
+}
+
+.sweepstakes--offers ul {
+    display: table;
+    padding-left: 20px;
+}
+
+.sweepstakes--offers ul li {
+    font-family: Conv_HelveticaNeueLTPro-MdCn;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.es-US .sweepstakes--offers ul li {
+    margin-bottom: 5px;
+}
+
+.sweepstakes--offers ul li span {
+    list-style: disc;
+    color: #000;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.es-US .sweepstakes--offers ul li span {
+    font-size: 20px;
+}
+
+.sweepstakes--card-1 {
+    background: url('../img/sweepstakes/gift-card-1.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 171px;
+    height: 137px;
+    position: absolute;
+    top: 310px;
+    left: 350px;
+}
+
+.sweepstakes--card-2 {
+    background: url('../img/sweepstakes/gift-card-2.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 143px;
+    height: 141px;
+    position: absolute;
+    top: 20px;
+    right: 110px;
+}
+
+.sweepstakes--card-3 {
+    background: url('../img/sweepstakes/gift-card-3.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 138px;
+    height: 161px;
+    position: absolute;
+    top: 260px;
+    right: 0;
+}
+
+.sweepstakes--notice {
+    padding: 20px 0;
+    position: relative;
+    font-size: 11px;
+    line-height: 12px;
+    color: #000;
+    text-align: justify;
+}
+
+.sweepstakes--notice a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sweepstakes--notice a:hover,
+.sweepstakes--notice a:active {
+    color: #000;
+    text-decoration: underline;
+}
+
+.sweepstakes--notice > p {
+    padding: 0;
+    margin: 0 0 0 45px;
+}
+
+.sweepstakes--notice > img {
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .sweepstakes--title {
+        font-size: 78px;
+        margin-bottom: 90px;
+    }
+
+    .es-US .sweepstakes--title {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    .sweepstakes--title small {
+        font-size: 32px;
+    }
+
+    .sweepstakes--card-2 {
+        right: 40px;
+        top: 20px;
+        width: 120px;
+    }
+
+    .sweepstakes--apps {
+        float: none;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .sweepstakes--content {
+        padding-left: 220px;
+    }
+
+    .sweepstakes--phone {
+        left: -103px;
+    }
+
+    .sweepstakes--title {
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+
+    .es-US .sweepstakes--title {
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .sweepstakes--title small {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .sweepstakes--card-1 {
+        left: 190px;
+        top: 230px;
+        width: 160px;
+    }
+
+    .es-US .sweepstakes--card-1 {
+        top: 280px;
+    }
+
+    .sweepstakes--card-2 {
+        right: 30px;
+        top: 10px;
+        width: 100px;
+    }
+
+    .sweepstakes--card-3 {
+        top: 260px;
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .sweepstakes--apps {
+        height: 236px;
+        float: none;
+        margin: 0 0 30px;
+        padding: 30px 20px 20px;
+        width: 370px;
+    }
+
+    .sweepstakes--title {
+        font-size: 56px;
+        margin-bottom: 60px;
+    }
+
+    .es-US .sweepstakes--title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .sweepstakes--card-1 {
+        left: 190px;
+        top: 250px;
+        width: 140px;
+    }
+
+    .sweepstakes--card-2 {
+        right: 10px;
+        top: 10px;
+        width: 100px;
+    }
+
+    .sweepstakes--card-3 {
+        top: 250px;
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .es-US .sweepstakes--title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .es-US .sweepstakes--title small {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .es-US .sweepstakes--card-1 {
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .sweepstakes--title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .sweepstakes--title small {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .sweepstakes--card-2 {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .sweepstakes {
+        padding: 60px 0 20px;
+    }
+
+    .sweepstakes--content {
+        border-radius: 10px;
+    }
+
+    .sweepstakes--title {
+        margin-left: 140px;
+    }
+
+    .es-US .sweepstakes--title {
+        margin-bottom: 75px;
+    }
+
+    .es-US .sweepstakes--title br {
+        display: none;
+    }
+
+    .es-US .sweepstakes--title small {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .sweepstakes--phone {
+        background-size: contain;
+        width: 240px;
+        left: -100px;
+    }
+
+    .sweepstakes--content {
+        padding-left: 20px;
+    }
+
+    .sweepstakes--apps {
+        height: 168px;
+        float: none;
+        margin: 0 0 20px 140px;
+        padding: 20px 10px 10px;
+        width: 260px;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .es-US .sweepstakes--apps {
+        font-size: 20px;
+        height: auto;
+    }
+
+    .sweepstakes--apps .btn {
+        background-size: contain!important;
+        height: 36px;
+        margin-top: 15px;
+        width: 110px;
+    }
+
+    .sweepstakes--card-1 {
+        left: 140px;
+        top: 305px;
+        width: 100px;
+    }
+
+    .es-US .sweepstakes--card-1 {
+        top: 280px;
+    }
+
+    .sweepstakes--card-2 {
+        width: 60px;
+    }
+
+    .sweepstakes--card-3 {
+        top: 290px;
+        width: 90px;
+    }
+
+    .sweepstakes--offers h2 span {
+        display: inline;
+    }
+
+    .sweepstakes--notice {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .sweepstakes--notice > p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sweepstakes--notice > img {
+        display: block;
+        position: static;
+        top: auto;
+        left: auto;
+        margin: 15px auto 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .sweepstakes {
+        padding: 60px 0 20px;
+    }
+
+    .sweepstakes--content {
+        border-radius: 5px;
+        padding: 30px 20px 20px;
+        background-position: 50% -50px;
+    }
+
+    .sweepstakes--title {
+        margin-left: 90px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .sweepstakes--title small {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .sweepstakes--phone {
+        background-size: contain;
+        left: -60px;
+        width: 160px;
+    }
+
+    .sweepstakes--apps {
+        height: auto;
+        float: none;
+        margin: 0 0 20px 90px;
+        padding: 20px 5px 10px;
+        width: 200px;
+        border-radius: 5px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .sweepstakes--apps .btn {
+        height: 46px;
+        margin-top: 10px;
+        width: 142px;
+    }
+
+    .sweepstakes--card-1 {
+        left: 95px;
+        top: 205px;
+        width: 70px;
+    }
+
+    .sweepstakes--card-2 {
+        width: 42px;
+    }
+
+    .sweepstakes--card-3 {
+        top: 205px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .es-US .sweepstakes--title small {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+
+    .sweepstakes--title {
+        margin-bottom: 30px;
+    }
+
+    .es-US .sweepstakes--title {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 130px;
+    }
+
+    .es-US .sweepstakes--title small {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .sweepstakes--apps {
+        width: 170px;
+    }
+
+    .es-US .sweepstakes--apps {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .sweepstakes--offers h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .sweepstakes--offers ul li {
+        font-size: 21px;
+    }
+
+    .sweepstakes--offers ul li span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .es-US .sweepstakes--card-1 {
+        top: 260px;
+    }
+}
+
+/* home-delivery options */
+.home-delivery--option {
+    border-bottom: rgba(255, 255, 255, .1) 1px solid;
+    padding-bottom: 15px;
+}
+
+.home-delivery--option:last-child {
+    border-bottom: none;
+}
+
+.home-delivery--option .radio .home-delivery--option-label::before {
+    top: 50%;
+    margin-top: -10px;
+}
+
+.home-delivery--option .radio .home-delivery--option-label::after {
+    top: 50%;
+    margin-top: -5px;
+}
+
+.home-delivery--option .home-delivery--option-label {
+    float: left;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+.home-delivery--option .home-delivery--option-title {
+    display: block;
+    font-weight: 700;
+}
+
+.home-delivery--option .home-delivery--option-details {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+    .home-delivery--option .home-delivery--option-title {
+        display: block;
+        clear: left;
+        color: #000;
+    }
+
+    .home-delivery--option .home-delivery--option-details {
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .newPayment .forms.divddtoken {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.ddRoutingNumberInfo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ddRoutingNumberInfo .i {
+    vertical-align: baseline;
+}
+
+.ddRoutingNumberInfo + .popover {
+    width: 300px;
+    max-width: 300px;
+}
+
+.block--font-size p {
+    font-size: 16px;
+}
+
+.payment-options--ccnotification {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    margin: 20px auto 20px;
+    max-width: 1140px;
+    padding: 20px 20px 20px 0;
+    position: relative;
+    display: block;
+}
+
+.forms-default .form-group .offset-v-top-sm {
+    margin-top: 0;
+}
+
+/*fix for invite page*/
+.forms-default .form-group.preview_row .offset-v-top-sm {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 640px) {
+    .forms-default .form-group .offset-v-top-sm {
+        margin-top: 15px;
+    }
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: text;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.preview_row #preview{
+    margin-top: 5px;
+}
+
+/*fix for invite page*/
+.forms-default .form-group.preview_row .offset-v-top-sm {
+    margin-top: 15px;
+}
+
+/* cookie-policy */
+.cookie-policy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.75);
+    padding: 15px 30px;
+}
+
+.cookie-policy .close {
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin: -5px -10px 5px 5px;
+    overflow: hidden;
+    color: #fff;
+    opacity: .5;
+}
+
+.cookie-policy .close:hover,
+.cookie-policy .close:focus {
+    opacity: 1;
+}
+
+.cookie-policy .close .i {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .cookie-policy {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* countdown-wrapper */
+.countdown-block {
+    position: relative;
+    text-align: center;
+}
+
+.countdown-block header h2 {
+    font-weight: 800;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.countdown-timer > div {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    width: 75px;
+    font-size: 11px;
+    border-radius: 5px;
+    color: #000;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.countdown-timer > div.countdown-timer--secs {
+    margin-right: 0;
+}
+
+.countdown-timer > div.countdown-timer--secs:after {
+    display: none;
+}
+
+.countdown-timer > div span {
+    display: block;
+    color: #B8131A;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 800;
+}
+
+.countdown-block footer strong {
+    display: block;
+    padding-top: 30px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 1200px) {
+   .countdown-timer > div {
+       padding: 5px;
+       width: 65px;
+   }
+}
+
+@media screen and (max-width: 980px) {
+   .countdown-timer > div {
+       padding: 10px;
+       width: 75px;
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .countdown-timer > div {
+       padding: 5px;
+       width: 65px;
+   }
+}
+
+@media screen and (max-width: 380px) {
+   .countdown-block header h2,
+   .countdown-block footer strong {
+       font-size: 21px;
+   }
+
+   .countdown-timer > div {
+       font-size: 9px;
+       width: 56px;
+   }
+
+   .countdown-timer > div span {
+       font-size: 28px;
+   }
+}
+
+.br-club.header-promo--box h1 {
+    margin-top: 20px;
+}
+.br-club-promo--title {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 25px 30px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  /*
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: #FFF;
+        background-color: @brand-primary-bright;
+    }
+    */
+}
+
+.egift-merchant--padding {
+    padding-top: 15px;
+}
+
+.allcountries-list.table > tfoot > tr > th, 
+.allcountries-list.table > thead > tr > td, 
+.allcountries-list.table > tbody > tr > td, 
+.allcountries-list.table > tfoot > tr > td {
+    border-top: 1px solid #6C6765;
+    vertical-align: middle;
+}
+
+.allcountries-list.table > thead > tr > th {
+    border-bottom: 1px solid #dddddd;
+}
+
+.country-list--country {
+    position: relative;
+}
+
+.country-list--countryflag {
+  position: absolute;
+  top: 16px; 
+}
+
+.country-list--countryname{
+    padding-left: 25px;
+    display: block;
+}
+
+.plate-default-inset.country-plate--country.plate-xxs {
+    visibility: hidden;
+    display: none;
+
+}
+
+@media screen and (max-width: 548px) and (min-width: 421px){
+    .allcountries-list.table > thead > tr > th{
+        font-size:10px;
+    }
+
+    .allcountries-list.table > tbody > tr > td{
+        font-size: 12px;
+    }
+
+    .allcountries-list .flag {
+        display: none !important;
+    }
+
+    .country-list--countryname{
+        padding-left: 0;
+    }
+
+    .plate.plate-default-inset.country-plate--country.plate-extrasmall {
+        visibility: hidden;
+        display: none;
+    }
+
+    .plate.plate-default-inset.country-plate--country.plate-xxs {
+        visibility: visible;
+        display: inline-block;
+    }  
+}
+
+@media screen and (max-width: 420px) {
+    .allcountries-list.table > thead > tr > th{
+        font-size:10px;
+    }
+
+    .allcountries-list.table > tbody > tr > td{
+        font-size: 10px;
+    }
+
+    .allcountries-list .flag {
+        display: none !important;
+    }
+
+    .country-list--countryname{
+        padding-left: 0;
+    }
+
+    .plate.plate-default-inset.country-plate--country.plate-xxs {
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .plate.plate-default-inset.country-plate--country.plate-extrasmall {
+        visibility: hidden;
+        display: none;
+    }
+
+    .island-default.allcountries-page {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+.plate-xs.plate-xs {
+    width: 30px;
+    height: 30px;
+    padding: 6px;  
+}
+.plate-xs.plate-xs .i {
+    width: 19px;
+    height: 19px;
+}
+.plate-xxs.plate-xxs {
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+}
+
+.plate-xxs.plate-xxs .i {
+  width: 14px;
+  height: 17px;
+}

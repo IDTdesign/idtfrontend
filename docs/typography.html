@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="">
+
+<title>
+    Typography
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://idtdesign.github.io/idtfrontend/styles/bootstrap.css" rel="stylesheet">
+
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/highlight.css" rel="stylesheet">
+<link href="http://idtdesign.github.io/idtfrontend/styles/bossrevolution.css" rel="stylesheet">
+<link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/bootstrap-theme.css" /><link  rel="stylesheet" href="http://idtdesign.github.io/idtfrontend/styles/bossrevolution.css" />
+<!-- Documentation extras -->
+<link href="http://idtdesign.github.io/idtfrontend/docs/assets/css/docs.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico">
+    <script src="http://idtdesign.github.io/idtfrontend/vendor/modernizr/modernizr.min.js"></script>
+    <script src="http://idtdesign.github.io/idtfrontend/icons/svg-icons.js"></script>
+  </head>
+  <body>
+    <div id="elements-placeholder" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS + SVG_SVG_DEFS_COLORED;</script>
+
+
+    <div class="allpage page-canvas">
+        <header class="allpage--header">
+            <div class="allpage--headerbg2" style="top:0"></div>
+            <div class="container">
+                <div class="logo">
+                    <a class="logo--link" href="http://idtdesign.github.io/idtfrontend/"><img src="http://idtdesign.github.io/idtfrontend/img/logo-bossrevolution.png" alt="BossRevolution"></a>
+                </div>
+                <nav class="navbar navbar-bossmain hidden-xs" role="navigation">
+                    <ul class="nav nav-pills navbar--list">
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/logo.html" class="navbar--link">Logo</a>
+    </li>
+    <li class="navbar--item active">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/typography.html" class="navbar--link">Typography</a>
+    </li>
+    <li class="navbar--item ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs/icons.html" class="navbar--link">Icons</a>
+    </li>
+    <li class="navbar--item dropdown ">
+        <a href="http://idtdesign.github.io/idtfrontend/docs" class="navbar--link pullin-space">Bootstrap</a><!--
+        --><button type="button" class="pullin-object dropdown-toggle" id="dropdownAccount" data-toggle="dropdown">
+    <span class="btn btn-dropdown btn-xs">
+        <span class="caret"></span>
+    </span>
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+
+        <ul class="navbar--submenu dropdown-menu" role="menu" aria-labelledby="dropdownServices">
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/getting-started.html" class="navbar--submenulink">Getting started</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/css.html" class="navbar--submenulink">CSS</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/components.html" class="navbar--submenulink">Components</a>
+            </li>
+            <li class="navbar--submenuitem ">
+                <a href="http://idtdesign.github.io/idtfrontend/docs/javascript.html" class="navbar--submenulink">JavaScript</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="allpage--body">
+            <!-- Docs page layout -->
+            <div class="allpage-header bs-docs-header">
+              <div class="container">
+                <h1>Typography</h1>
+                <p>Basic Fonts, Colors, Text Styles</p>
+              </div>
+            </div>
+            <div class="container bs-docs-container">
+              <div class="row">
+                <div class="col-md-9 island island-default" role="main">
+                  <h1 id="type" class="page-header">Typography</h1>
+
+<h2 id="default-fonts">Default fonts</h2>
+<p>Basic sans-serif font family: <code>&quot;Helvetica Neue&quot;, &quot;Tex Gyre Heros&quot;, Helvetica, Arial, sans-serif</code>.</p>
+<p>First font — <code>Helvetica Neue</code> — system font on Mac and iOS.<br>If not available (Windows, other platforms) use free webfont <code>Tex Gyre Heros</code>. You can download *.otf from <a href="http://www.fontsquirrel.com/fonts/TeX-Gyre-Heros">http://www.fontsquirrel.com/fonts/TeX-Gyre-Heros</a> .</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="name" colspan="2">
+            <img src="http://cdn1.fontsquirrel.com/fnt_imgs/e2/166d/6e081d1604ecff20c1bc9985fe/fsl-720.png" width="720" alt="TeX Gyre Heros Regular free font">
+            <p class="mini">TeX Gyre Heros Regular | 1239 Glyphs</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="name" colspan="2">
+            <img src="http://cdn2.fontsquirrel.com/fnt_imgs/f7/2504/1a2cf9d8655590e54fd7f54d71/fsl-720.png" width="720" alt="TeX Gyre Heros Italic free font">
+            <p class="mini">TeX Gyre Heros Italic | 1239 Glyphs</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="name" colspan="2">
+            <img src="http://cdn3.fontsquirrel.com/fnt_imgs/33/a913/966af7ded67ed621f7db7ec345/fsl-720.png" width="720" alt="TeX Gyre Heros Bold free font">
+            <p class="mini">TeX Gyre Heros Bold | 1239 Glyphs</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="name" colspan="2">
+            <img src="http://cdn1.fontsquirrel.com/fnt_imgs/88/8bce/cdb88e578da100ae67f67651cf/fsl-720.png" width="720" alt="TeX Gyre Heros Bold Italic free font">
+            <p class="mini">TeX Gyre Heros Bold Italic | 1239 Glyphs</p>
+        </td>
+    </tr>
+</table>
+
+<p><a href="http://www.fontsquirrel.com/fonts/download/TeX-Gyre-Heros" class="btn btn-primary">Download OTF</a></p>
+<!-- Headings -->
+<h2 id="type-headings">Headings</h2>
+
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+
+<div class="bs-example bs-example-type">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><h1>h1. Bootstrap heading</h1></td>
+        <td class="type-info">Semibold 36px</td>
+      </tr>
+      <tr>
+        <td><h2>h2. Bootstrap heading</h2></td>
+        <td class="type-info">Semibold 30px</td>
+      </tr>
+      <tr>
+        <td><h3>h3. Bootstrap heading</h3></td>
+        <td class="type-info">Semibold 24px</td>
+      </tr>
+      <tr>
+        <td><h4>h4. Bootstrap heading</h4></td>
+        <td class="type-info">Semibold 18px</td>
+      </tr>
+      <tr>
+        <td><h5>h5. Bootstrap heading</h5></td>
+        <td class="type-info">Semibold 14px</td>
+      </tr>
+      <tr>
+        <td><h6>h6. Bootstrap heading</h6></td>
+        <td class="type-info">Semibold 12px</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>h1. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>h2. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>h3. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>h4. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>h5. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>h6. Bootstrap heading<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+</code></pre>
+<p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+
+<div class="bs-example bs-example-type">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><h1>h1. Bootstrap heading <small>Secondary text</small></h1></td>
+      </tr>
+      <tr>
+        <td><h2>h2. Bootstrap heading <small>Secondary text</small></h2></td>
+      </tr>
+      <tr>
+        <td><h3>h3. Bootstrap heading <small>Secondary text</small></h3></td>
+      </tr>
+      <tr>
+        <td><h4>h4. Bootstrap heading <small>Secondary text</small></h4></td>
+      </tr>
+      <tr>
+        <td><h5>h5. Bootstrap heading <small>Secondary text</small></h5></td>
+      </tr>
+      <tr>
+        <td><h6>h6. Bootstrap heading <small>Secondary text</small></h6></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>h1. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>h2. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>h3. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>h4. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>h5. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>h6. Bootstrap heading <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+</code></pre>
+<!-- Body copy -->
+<h2 id="type-body-copy">Body copy</h2>
+
+<p>Bootstrap&#39;s global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>1.428</strong> (=20px). This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+
+<div class="bs-example">
+  <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<!-- Body copy .lead -->
+<h3>Lead body copy</h3>
+
+<p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+
+<div class="bs-example">
+  <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lead"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<!-- Using Less -->
+<h3>Built with Less</h3>
+
+<p>The typographic scale is based on two Less variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height-base</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
+
+<!-- Inline text elements -->
+<h2 id="type-inline-text">Inline text elements</h2>
+
+<h3>Marked text</h3>
+
+<p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+
+<div class="bs-example">
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml">You can use the mark tag to <span class="hljs-tag">&lt;<span class="hljs-title">mark</span>&gt;</span>highlight<span class="hljs-tag">&lt;/<span class="hljs-title">mark</span>&gt;</span> text.
+</code></pre>
+<h3>Deleted text</h3>
+
+<p>For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code> tag.</p>
+
+<div class="bs-example">
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">del</span>&gt;</span>This line of text is meant to be treated as deleted text.<span class="hljs-tag">&lt;/<span class="hljs-title">del</span>&gt;</span>
+</code></pre>
+<h3>Strikethrough text</h3>
+
+<p>For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code> tag.</p>
+
+<div class="bs-example">
+  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">s</span>&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="hljs-tag">&lt;/<span class="hljs-title">s</span>&gt;</span>
+</code></pre>
+<h3>Inserted text</h3>
+
+<p>For indicating additions to the document use the <code>&lt;ins&gt;</code> tag.</p>
+
+<div class="bs-example">
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ins</span>&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="hljs-tag">&lt;/<span class="hljs-title">ins</span>&gt;</span>
+</code></pre>
+<h3>Underlined text</h3>
+
+<p>To underline text use the <code>&lt;u&gt;</code> tag.</p>
+
+<div class="bs-example">
+  <p><u>This line of text will render as underlined</u></p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">u</span>&gt;</span>This line of text will render as underlined<span class="hljs-tag">&lt;/<span class="hljs-title">u</span>&gt;</span>
+</code></pre>
+<p>Make use of HTML&#39;s default emphasis tags with lightweight styles.</p>
+
+<h3>Small text</h3>
+
+<p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
+
+<p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+
+<div class="bs-example">
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>This line of text is meant to be treated as fine print.<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+</code></pre>
+<h3>Bold</h3>
+
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+
+<div class="bs-example">
+  <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>rendered as bold text<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+</code></pre>
+<h3>Italics</h3>
+
+<p>For emphasizing a snippet of text with italics.</p>
+
+<div class="bs-example">
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>rendered as italicized text<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-info">
+  <h4>Alternate elements</h4>
+  <p>Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+</div>
+
+<h2 id="type-alignment">Alignment classes</h2>
+
+<p>Easily realign text to components with text alignment classes.</p>
+
+<div class="bs-example">
+  <p class="text-left">Left aligned text.</p>
+  <p class="text-center">Center aligned text.</p>
+  <p class="text-right">Right aligned text.</p>
+  <p class="text-justify">Justified text.</p>
+  <p class="text-nowrap">No wrap text.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-left"</span>&gt;</span>Left aligned text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-center"</span>&gt;</span>Center aligned text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-right"</span>&gt;</span>Right aligned text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-justify"</span>&gt;</span>Justified text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-nowrap"</span>&gt;</span>No wrap text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<h2 id="type-transformation">Transformation classes</h2>
+
+<p>Transform text in components with text capitalization classes.</p>
+
+<div class="bs-example">
+  <p class="text-lowercase">Lowercased text.</p>
+  <p class="text-uppercase">Uppercased text.</p>
+  <p class="text-capitalize">Capitalized text.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-lowercase"</span>&gt;</span>Lowercased text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-uppercase"</span>&gt;</span>Uppercased text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-capitalize"</span>&gt;</span>Capitalized text.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<!-- Abbreviations -->
+<h2 id="type-abbreviations">Abbreviations</h2>
+
+<p>Stylized implementation of HTML&#39;s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
+
+<h3>Basic abbreviation</h3>
+
+<p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute with the <code>&lt;abbr&gt;</code> element.</p>
+
+<div class="bs-example">
+  <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">abbr</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"attribute"</span>&gt;</span>attr<span class="hljs-tag">&lt;/<span class="hljs-title">abbr</span>&gt;</span>
+</code></pre>
+<h3>Initialism</h3>
+
+<p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+
+<div class="bs-example">
+  <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">abbr</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"HyperText Markup Language"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"initialism"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-title">abbr</span>&gt;</span>
+</code></pre>
+<!-- Addresses -->
+<h2 id="type-addresses">Addresses</h2>
+
+<p>Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+
+<div class="bs-example">
+  <address>
+    <strong>Twitter, Inc.</strong><br>
+    795 Folsom Ave, Suite 600<br>
+    San Francisco, CA 94107<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+  </address>
+  <address>
+    <strong>Full Name</strong><br>
+    <a href="mailto:#">first.last@example.com</a>
+  </address>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">address</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Twitter, Inc.<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  795 Folsom Ave, Suite 600<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  San Francisco, CA 94107<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">abbr</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Phone"</span>&gt;</span>P:<span class="hljs-tag">&lt;/<span class="hljs-title">abbr</span>&gt;</span> (123) 456-7890
+<span class="hljs-tag">&lt;/<span class="hljs-title">address</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">address</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Full Name<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"mailto:#"</span>&gt;</span>first.last@example.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">address</span>&gt;</span>
+</code></pre>
+<!-- Blockquotes -->
+<h2 id="type-blockquotes">Blockquotes</h2>
+
+<p>For quoting blocks of content from another source within your document.</p>
+
+<h3>Default blockquote</h3>
+
+<p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
+
+<div class="bs-example">
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  </blockquote>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">blockquote</span>&gt;</span>
+</code></pre>
+<h3>Blockquote options</h3>
+
+<p>Style and content changes for simple variations on a standard <code>&lt;blockquote&gt;</code>.</p>
+
+<h4>Naming a source</h4>
+
+<p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+
+<div class="bs-example">
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">footer</span>&gt;</span>Someone famous in <span class="hljs-tag">&lt;<span class="hljs-title">cite</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Source Title"</span>&gt;</span>Source Title<span class="hljs-tag">&lt;/<span class="hljs-title">cite</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">blockquote</span>&gt;</span>
+</code></pre>
+<h4>Alternate displays</h4>
+
+<p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
+
+<div class="bs-example" style="overflow: hidden;">
+  <blockquote class="blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  </blockquote>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">blockquote</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"blockquote-reverse"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">blockquote</span>&gt;</span>
+</code></pre>
+<!-- Lists -->
+<h2 id="type-lists">Lists</h2>
+
+<h3>Unordered</h3>
+
+<p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+
+<div class="bs-example">
+  <ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+      <ul>
+        <li>Phasellus iaculis neque</li>
+        <li>Purus sodales ultricies</li>
+        <li>Vestibulum laoreet porttitor sem</li>
+        <li>Ac tristique libero volutpat at</li>
+      </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+  </ul>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h3>Ordered</h3>
+
+<p>A list of items in which the order <em>does</em> explicitly matter.</p>
+
+<div class="bs-example">
+  <ol>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit</li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+  </ol>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<h3>Unstyled</h3>
+
+<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+
+<div class="bs-example">
+  <ul class="list-unstyled">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+      <ul>
+        <li>Phasellus iaculis neque</li>
+        <li>Purus sodales ultricies</li>
+        <li>Vestibulum laoreet porttitor sem</li>
+        <li>Ac tristique libero volutpat at</li>
+      </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+  </ul>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-unstyled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h3>Inline</h3>
+
+<p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
+
+<div class="bs-example">
+  <ul class="list-inline">
+    <li>Lorem ipsum</li>
+    <li>Phasellus iaculis</li>
+    <li>Nulla volutpat</li>
+  </ul>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"list-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h3>Description</h3>
+
+<p>A list of terms with their associated descriptions.</p>
+
+<div class="bs-example">
+  <dl>
+    <dt>Description lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+    <dt>Euismod</dt>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dt>Malesuada porta</dt>
+    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+  </dl>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+</code></pre>
+<h4>Horizontal description</h4>
+
+<p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
+
+<div class="bs-example">
+  <dl class="dl-horizontal">
+    <dt>Description lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+    <dt>Euismod</dt>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dt>Malesuada porta</dt>
+    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    <dt>Felis euismod semper eget lacinia</dt>
+    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+  </dl>
+</div>
+
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">dl</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dl-horizontal"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+</code></pre>
+<div class="bs-callout bs-callout-info">
+  <h4>Auto-truncating</h4>
+  <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
+</div>
+                </div>
+                <div class="col-md-3 island island-default">
+                  <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" role="complementary">
+                    <ul class="nav bs-docs-sidenav">
+                    
+                    </ul>
+                    <a class="back-to-top" href="#top">
+                      Back to top
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://idtdesign.github.io/idtfrontend/docs/assets/js/docs.min.js"></script>
+
+
+    </div>
+  </body>
+</html>

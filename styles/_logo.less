@@ -1,0 +1,73 @@
+// @TODO: Create a header for the files with name of the module and details.
+@logowidth: 100px;
+@logoheight: 140px;
+@logo-xs-width: 70px;
+@logo-xs-height: 99px;
+@logo-xxs-width: 50px;
+@logo-xxs-height: 80px;
+@logo-hover-shift: 10px;
+
+.logo {
+    position: absolute;
+    z-index: 5;
+    margin-top: -@logo-hover-shift;
+    padding-top: @logo-hover-shift;
+    width: @logowidth;
+    height: (@logoheight + @logo-hover-shift);
+    background: #e10000;
+    border-radius: 0 0 4px 4px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        transform: translate3d(0, @logo-hover-shift, 0);
+    }
+
+    .logo--link {
+        display: block;
+        width: inherit;
+        height: inherit;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .logo {
+        margin-top: -15px;
+        width: @logo-xs-width;
+        height: (@logo-xs-height + @logo-hover-shift);
+    }
+
+}
+
+@media (max-width: @screen-xxs) {
+
+    .logo {
+        margin-top: -15px;
+        width: @logo-xxs-width;
+        height: @logo-xxs-height;
+    }
+
+}
+
+// used only for mobile
+
+.logo-mobile {
+    position: static;
+
+    .logo--link {
+        display: block;
+        margin: 0;
+        width: 50px;
+        height: 70px;
+        padding: 0;
+        background-color: #E10000;
+
+        &:hover {
+            background-color: #E10000;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

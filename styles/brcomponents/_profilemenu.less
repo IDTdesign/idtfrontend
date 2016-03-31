@@ -1,0 +1,62 @@
+@profilemenu: profilemenu;
+
+.profilemenu-settings() {
+    @gap: 5px;                     //distanse between links
+    @border: 1px solid #D9D9D9;    //border style
+    @bdrs: 4px;                    //border-radius
+    @padv: 8px;                    //vertical padding
+    @padh: 10px;                   //horizontal padding
+    @fz: 12px;                     //font-size
+    @c-link: #000;                 //link color
+    @c-hover: #B00009;             //hover color
+    @bgc: #FFF;                    //background color
+}
+
+.@{profilemenu} {
+    padding: @gap 0 0 @gap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        width: calc(~"50% - "@gap);
+        margin: 0 @gap @gap 0;
+    }
+
+    &-link {
+        flex-grow: 1;
+        display: block;
+        border: @border;
+        border-radius: @bdrs;
+        padding: @padv @padh;
+        color: @c-link;
+        background: @bgc;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            outline: none;
+            color: @c-hover;
+        }
+    }
+
+    &-item--home {
+        width: calc(~"100% - "@gap);
+
+        .@{profilemenu}-link {
+            padding-left: @padv;
+        }
+    }
+
+    .profilemenu-link--caps {
+        font-size: @fz;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .profilemenu-settings();
+}
