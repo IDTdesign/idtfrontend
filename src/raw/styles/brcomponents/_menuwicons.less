@@ -91,6 +91,27 @@ modifiers:
                 opacity: 0.4;
             }
         }
+
+        &--new {
+
+            .@{menuwicons}-link {
+                position: relative;
+
+                &:after {
+                    content: 'new';
+                    position: absolute;
+                    display: block;
+                    top: 5px;
+                    right: 5px;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                    font-size: 8px;
+                    text-transform: uppercase;
+                    background: #008D07;
+                    color: #FFF;
+                }
+            }
+        }
     }
 
     &-link {
@@ -345,6 +366,21 @@ modifiers:
             &:after {
                 padding: 2px 20px;
                 transform: rotate(45deg) translate(30px, -10px);
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .@{menuwicons}-item--new {
+
+        .@{menuwicons}-link {
+            pointer-events: none;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                padding: 2px 20px;
+                transform: rotate(45deg) translate(15px, -15px);
                 white-space: nowrap;
             }
         }

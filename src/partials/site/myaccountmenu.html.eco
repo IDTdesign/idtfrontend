@@ -82,7 +82,7 @@
                     <span class="menutiles-text">Call Me</span>
                 </a>
             </li>
-            <li class="menutiles-item menutiles-item--comingsoon">
+            <li class="menutiles-item menutiles-item--new">
                 <a href="" class="menutiles-link">
                     <span class="menutiles-icon">
                         <svg class="i i--international-gift" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +92,7 @@
                     <span class="menutiles-text">International eGifts</span>
                 </a>
             </li>
-            <li class="menutiles-item menutiles-item--comingsoon">
+            <li class="menutiles-item menutiles-item--new">
                 <a href="" class="menutiles-link">
                     <span class="menutiles-icon">
                         <svg class="i i--bill-pay" xmlns="http://www.w3.org/2000/svg">
