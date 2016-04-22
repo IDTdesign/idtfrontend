@@ -1,0 +1,267 @@
+---
+layout: default
+title: Country-MT
+---
+
+ 
+        <header class="allpage-header">
+            <div class="header-promo big-header-promo country_page">            
+    <img data-blur_page="body" data-src="/img/country-images/mexico.jpg" data-vertical_gradient="0.7" alt="" class="blur" src="/Content/img/country-images/mexico.jpg" style="position: absolute; visibility: hidden;">
+    <div class="container header-promo--inner">
+        <section class="header-promo--box">
+            <h2>Mexico 
+    <small>
+        <button data-target="#changeCountyModal" data-toggle="modal" id="changeCountyTrigger" class="btn-link btn-xs" type="button">
+            Change Country
+        </button>
+    </small>
+</h2>
+<div class="header-promo--info">
+    <div class="header-promo--info-block local-time">
+        <div class="icon-block">
+            <div class="icon-block--i">
+                <div class="plate plate-transp-white plate-small">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--local-time">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--local-time"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="icon-block--text">
+                <strong class="h5 h5-thin">Mexico</strong>
+                <strong class="h4 center-block">22-Apr 12:08 PM</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <a class="btn btn-block btn-primary" href="/en-us/country/mexico/international-calling">
+        <span class="icon-txt">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--inter-calling">
+                <use xlink:href="#i--inter-calling"/>
+            </svg>
+            <span class="icon-txt--text">International Calling</span>
+        </span>
+    </a>
+
+    <a class="btn btn-block btn-default" href="/en-us/country/mexico/money-transfer">
+        <span class="icon-txt">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                <use xlink:href="#i--money-transfer"/>
+            </svg>
+            <span class="icon-txt--text">International Money Transfer</span>
+        </span>
+    </a>
+
+    <a class="btn btn-block btn-primary" href="/en-us/country/mexico/international-mobile-topup">
+        <span class="icon-txt">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i  i--inter-airtime-top-up">
+                <use xlink:href="#i--inter-airtime-top-up"/>
+            </svg>
+            <span class="icon-txt--text">International Mobile Top Up</span>
+        </span>
+    </a>
+
+
+    <a class="btn btn-block btn-primary" href="/en-us/country/mexico/call-me">
+        <span class="icon-txt">
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i--call-me">
+                <use xlink:href="#i--call-me"/>
+            </svg>
+            <span class="icon-txt--text">Call Me</span>
+        </span>
+    </a>
+
+<input type="hidden" value="mexico" name="ratesel_country" id="ratesel_country">
+        </section>
+        <section class="island--header" id="country-service">
+            <div class="plate plate-default-inset plate-large">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                        <use xlink:href="#i--money-transfer"/>
+                    </svg>
+            </div>
+            <h1 class="island--title">International Money Transfer
+            </h1>
+            <div class="header-promo--description">
+                                                                <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="header" data-page="services_moneytransfer" data-loaded="1"><div class="mt-header-block">
+  <h1 class="text-center">YOUR FIRST ONLINE<br> MONEY TRANSFER<br> UP TO $300<br> IS <span class="brand-color">FREE</span></h1>
+  <a href="#get-started" class="btn btn-opt btn-block">SEND MONEY NOW</a>
+</div>
+<div class="country-page-text">With one trusted brand for all of your needs to stay connected to your loved ones abroad, you can send money quickly and securely to friends and family around the world.</div>
+<style type="text/css">
+#country-service .mt-header-block{display: none !important;}
+.country-page-text{display: none;}
+#country-service .country-page-text{display: block;}
+</style></div>            </div>
+        </section>        
+    </div>
+</div>
+
+
+
+        </header>
+   
+
+        
+
+
+
+<div style="display:none"><div class="form_row captcha col-lg-12">
+    <label for="Cap">How much is ...</label>
+    <a style="cursor:pointer" id="cap_link">
+        <img src2="/en-us/captcha" alt="" id="cap" src="/captcha?1461344901363">
+    </a>
+    
+    <input type="text" value="" name="Cap" id="Cap" data-val-required="Please enter correct answer" data-val="true" class="form-control form-control-default">        
+    
+    <span data-valmsg-replace="true" data-valmsg-for="Cap" class="field-validation-valid"></span>
+</div>
+
+</div>
+
+<div class="allpage--body">
+
+    <div class="container">
+        <div class="island island-default island-sm-white row">
+            
+<h2 class="island--title"><span>Enter the amount to send</span></h2>
+<style type="text/css">
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+
+<input type="hidden" value="[{&quot;CountryName&quot;:&quot;Argentina&quot;,&quot;CountryCode&quot;:&quot;AR&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Burkina Faso&quot;,&quot;CountryCode&quot;:&quot;BF&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Benin&quot;,&quot;CountryCode&quot;:&quot;BJ&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Bolivia&quot;,&quot;CountryCode&quot;:&quot;BO&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Brazil&quot;,&quot;CountryCode&quot;:&quot;BR&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Republic of the Congo&quot;,&quot;CountryCode&quot;:&quot;CG&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Ivory Coast&quot;,&quot;CountryCode&quot;:&quot;CI&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Cameroon&quot;,&quot;CountryCode&quot;:&quot;CM&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;China&quot;,&quot;CountryCode&quot;:&quot;CN&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Colombia&quot;,&quot;CountryCode&quot;:&quot;CO&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Costa Rica&quot;,&quot;CountryCode&quot;:&quot;CR&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Cape Verde&quot;,&quot;CountryCode&quot;:&quot;CV&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Dominican Republic&quot;,&quot;CountryCode&quot;:&quot;DO&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Ecuador&quot;,&quot;CountryCode&quot;:&quot;EC&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Ghana&quot;,&quot;CountryCode&quot;:&quot;GH&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Guinea&quot;,&quot;CountryCode&quot;:&quot;GN&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Guatemala&quot;,&quot;CountryCode&quot;:&quot;GT&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Honduras&quot;,&quot;CountryCode&quot;:&quot;HN&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Kenya&quot;,&quot;CountryCode&quot;:&quot;KE&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Morocco&quot;,&quot;CountryCode&quot;:&quot;MA&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Mali&quot;,&quot;CountryCode&quot;:&quot;ML&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Mauritania&quot;,&quot;CountryCode&quot;:&quot;MR&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Mexico&quot;,&quot;CountryCode&quot;:&quot;MX&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Niger&quot;,&quot;CountryCode&quot;:&quot;NE&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Nigeria&quot;,&quot;CountryCode&quot;:&quot;NG&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Nicaragua&quot;,&quot;CountryCode&quot;:&quot;NI&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Panama&quot;,&quot;CountryCode&quot;:&quot;PA&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Peru&quot;,&quot;CountryCode&quot;:&quot;PE&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Paraguay&quot;,&quot;CountryCode&quot;:&quot;PY&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Sierra Leone&quot;,&quot;CountryCode&quot;:&quot;SL&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;El Salvador&quot;,&quot;CountryCode&quot;:&quot;SV&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Chad&quot;,&quot;CountryCode&quot;:&quot;TD&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Togo&quot;,&quot;CountryCode&quot;:&quot;TG&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Tunisia&quot;,&quot;CountryCode&quot;:&quot;TN&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Uganda&quot;,&quot;CountryCode&quot;:&quot;UG&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Uruguay&quot;,&quot;CountryCode&quot;:&quot;UY&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Ethiopia&quot;,&quot;CountryCode&quot;:&quot;ET&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Comoros&quot;,&quot;CountryCode&quot;:&quot;KM&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Democratic Republic of the Congo&quot;,&quot;CountryCode&quot;:&quot;CD&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Guinea-Bissau&quot;,&quot;CountryCode&quot;:&quot;GW&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Gabon&quot;,&quot;CountryCode&quot;:&quot;GA&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Madagascar&quot;,&quot;CountryCode&quot;:&quot;MG&quot;,&quot;Enabled&quot;:&quot;Y&quot;},{&quot;CountryName&quot;:&quot;Equatorial Guinea&quot;,&quot;CountryCode&quot;:&quot;GQ&quot;,&quot;Enabled&quot;:&quot;Y&quot;}]" name="mt_countries_data" id="mt_countries_data">
+
+<form method="post" id="frmCountryAmountSelector" autocomplete="off" action="/en-us/CountryAmountSelector" novalidate="novalidate"><input type="hidden" value="kL0WeL_zgLTrvkRQ7yYJi1gcZm4GsUFWweP_22R3is7Lq77HW0Kv4-8GMrzfx3Gkewc96jboBM9AgTxgCY2p_ZJX1q6yHRlhwzKG2U-rqpI1" name="__RequestVerificationToken">    <script type="text/javascript">var freshPage = true;</script>
+<input type="hidden" value="MX" name="CountryCode" id="CountryCode" length="2"><input type="hidden" value="" name="ExchangeRate" id="ExchangeRate"><input type="hidden" value="10000" name="DeliveryMethodAmount" id="DeliveryMethodAmount" data-val-required="The DeliveryMethodAmount field is required." data-val-number="The field DeliveryMethodAmount must be a number." data-val="true"><input type="hidden" value="False" name="ViewModeFull" id="ViewModeFull" data-val-required="The ViewModeFull field is required." data-val="true">    <div class="b-amount-selector">
+        <article class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
+            <div class="dyad--first dyad--stretch">
+                <div class="island island-default line-up-wrapper clearfix">
+                    <div class="forms forms-default form-horizontal">
+                        <div class="col-xs-12 country-selector">
+                            <div class="form-group" id="SendAmount">
+
+<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="hidden" value="Mexico" name="CountryName" id="CountryName" data-val-required="The Country field is required." data-val="true" class="ui-autocomplete-input" autocomplete="off"><input type="hidden" value="MX" name="CountryCode" id="CountryCode" length="2">                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-5 amount-selector amount-selector--from">
+                            <div class="form-group">
+                                <label for="SendingAmount" class="control-label">Sending</label>
+
+
+                                <input type="number" value="" placeholder="Amount" name="SendingAmount" id="SendingAmount" data-val-validatedeliverymethod-maxamount="2999" data-val-validatedeliverymethod-deliverymethodamount="DeliveryMethodAmount" data-val-validatedeliverymethod-amount="SendingAmount" data-val-validatedeliverymethod="Sending Amount cannot exceed {0}." data-val-required="The Sending field is required." data-val-minamount-minamount="10" data-val-minamount-amount="SendingAmount" data-val-minamount="Sorry, $10.00 is the minimum amount you can send." data-val="true" class="input form-control numericAndDecimalOnly">
+                                <input type="hidden" value="USD" name="ISOCurrencySymbol" id="ISOCurrencySymbol">
+                                <input type="hidden" value="$" name="CurrencySymbol" id="CurrencySymbol">
+                                <input type="hidden" name="SendingCurrency" id="SendingCurrency" value="USD">
+                                <span data-valmsg-replace="true" data-valmsg-for="SendingAmount" class="field-validation-valid"></span>
+                                <span id="SendingCurr">USD</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2 col-sm-2 amount-convert">
+                            <div class="form-group">
+                                <a class="amount-convert--link" id="linkConvert">
+                                    <span class="amount-convert--link-text">click to calculate</span>
+                                    <span class="plate plate-default">
+                                        <svg class="i i--exchange" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="#i--exchange" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-5 amount-selector amount-selector--to">
+                            <div class="form-group">
+                                <label for="ReceivingAmount" class="control-label">Receiving</label>
+                                <input type="number" value="" placeholder="Amount" name="ReceivingAmount" id="ReceivingAmount" data-val-required="The Receiving field is required." data-val="true" class="input form-control numericAndDecimalOnly">
+                                <span id="ReceivingCurr"></span>
+                            </div>
+                            <div style="" id="CurrencySelector" class="form-group">
+                                <select name="Currency" id="Currency" data-val-required="The Currency field is required." data-val="true" class="input form-control form-control-pure"><option value="MXN">MXN</option></select>
+                                <span data-valmsg-replace="true" data-valmsg-for="Currency" class="field-validation-valid"></span>
+                            </div>
+                        </div>
+                        
+                        <div style="display: none;" class="clr transferRateArea" id="NotifyRounding">
+                            <label id="NotifyRoundingMsg"></label>
+                        </div>
+                        
+                        <div class="clr transferRateArea" style="display: none;" id="TransferDisplay">
+                            Exchange Rate: <label id="TransferRateDisplay"></label>
+                        </div>
+                        <div class="col-xs-12 action-block text-center">
+                            <input type="submit" class="btn btn-primary" value="Continue" id="btnContinue" name="btnContinue" disabled="disabled" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dyad--second dyad--stretch">
+                <div class="island island-transparent">
+                    <script src="/cms/cmslibrary?v=1461271500347" type="text/javascript"></script>
+<div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="offerbanner" data-page="services_moneytransfer" data-loaded="1"><style>
+  @media screen and (max-width: 990px) {
+   .b_ServicesMoneyTransfer .social-promo .social-promo--block .spec-offer-mt {
+     min-height: initial;
+     line-height: 1.1;
+   }
+  }  
+</style>
+<div class="social-promo">
+	<div style="padding:0; display:block;" class="social-promo--block">
+		<div style="line-height: 12.1;" class="spec-offer-mt">
+			<img src="/Content/img/banners/mt-freetrans/US-ENG_money-transfer-spring-fever_small.png" style="margin-top:10px;" class="hidden-xs hidden-sm">
+            <img src="/Content/img/banners/mt-freetrans/US-ENG_money-transfer-spring-fever.png" style="" class="hidden-lg hidden-md">
+		</div>
+	</div>
+</div></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+            boss_alert(i18n.money_transfer.state_is_disabled + '04');
+            $("#btnContinue").hide();
+    });
+</script>
+
+
+        </div>
+
+        <article class="island">
+            <div class="social-promo social-promo-transparent">
+                <div class="social-promo--block">
+                    <div class="spec-offer-mt">
+                        <h2>
+                            GET FREE CALLING TIME WITH EVERY MONEY TRANSFER
+                        </h2>
+                        <p>You’ll get free calling time to let your loved ones know that money is on the way</p>
+                        <p class="last"><a href="/en-us/services/money-transfer">Learn more about our Money&nbsp;Transfer&nbsp;service&nbsp;»</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        
+
+  
+        <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="disclaimers" data-page="services_moneytransfer" data-loaded="1"><article class="island island-default" id="got-covers">
+    <h1 class="island--title">We've Got You Covered</h1>
+    <p>Your security and trust are of the highest importance to us. We work hard to protect all of your personal information and to ensure that you can feel confident knowing that your money is safe with BOSS Revolution.</p>
+    <p>And we offer a money-back guarantee that your money will be received or we’ll refund your transaction in full.</p>
+    <p>Be sure to read our <a target="_blank" href="/en-us/security-page">tips</a> to make sure that you don’t fall victim to fraud.</p>
+</article>
+<article class="island island-default notice">
+    <p>Spring Fever Special Offer Terms: Fee promotion valid only for certain money transfers made online at bossrevolution.com or through the Boss Revolution Android App from March 17 through June 30, 2016. See website for details, including list of eligible destination countries serviced by IDT Payment. Promotional fee varies by destination, amount transferred and method of payment. Standard service fees apply to all other money transfers. IDT Payment reserves the right to modify or discontinue the promotion at any time without prior notice. Available only where IDT Payment is licensed.</p>
+    <p>Boss Revolution money transfer products and payment services are offered and serviced by IDT Payment Services, Inc., a licensed money transmitter (“IDT Payment”). IDT Payment may make money when it changes your dollars into foreign currency. Access to money transfer products and services may be limited, delayed or unavailable during periods of peak demand, market volatility, system upgrades or maintenance, or communication system problems. Transfer of funds may be delayed or unavailable based on certain transaction conditions, including amount sent, destination country, currency availability, regulatory issues, identification requirements and Agent location hours. Additional restrictions may apply. See <a target="_blank" href="/Content/pdf/TermsofUse_RegulatedProducts.pdf">terms</a> or Agent for details. For each person-to-person international money transfer transaction sent with IDT Payment through Boss Revolution, we will deposit a minimum of $.30 in the sender’s Boss Revolution account for free. The amount of the free balance depends on the destination country of the money transfer transaction. This promotional balance can be used to call any destination serviced by Boss Revolution. If the sender does not have a Boss Revolution account, one will be created for them with an opening balance of $1. Boss Revolution service subject to terms and conditions. Visit www.bossrevolution.com for complete terms, current rates and additional information. Boss Revolution service provided by IDT Domestic Telecom, Inc. All rights reserved.</p>
+    <p><a target="_blank" href="/Content/pdf/Privacy_Notice_for_Money_Transfers.pdf">Privacy notice for Money Transfer</a></p>
+    <p>Texas Consumers <a target="_blank" href="/Content/pdf/Money_Transfer_Texas_Consumers.pdf">Click Here</a></p>
+    <p><a target="_blank" href="/Content/pdf/BossRevolutionIDTPS_State_Disclousures.pdf">State Licenses and Disclosures</a></p>
+</article>
+</div>
+  
+    </div>
+</div>

@@ -36,6 +36,7 @@ title: "idtfrontend - index"
             <li><a href="<%= @getUrl('/templates/myaccountpopup.html') %>">myaccountpopup.html</a></li>
             <li><a href="<%= @getUrl('/templates/download-app.html') %>">download-app.html</a></li>
             <li><a href="<%= @getUrl('/templates/one-dollar-free.html') %>">one-dollar-free.html</a></li>
+            <li><a href="<%= @getUrl('/templates/country/mexico/money-transfer.html') %>">/country/mexico/money-transfer.html</a></li>
             <li><a href="<%= @getUrl('/templates/services/friends-forever.html') %>">services/friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/templates/my-account/friends-forever.html') %>">/my-account/friends-forever.html</a></li>
             <li><a href="<%= @getUrl('/templates/my-account/calling-history.html') %>">/my-account/calling-history.html</a></li>
