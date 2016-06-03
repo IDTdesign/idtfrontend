@@ -1,96 +1,622 @@
 ---
 layout: "default"
 title: "Money Transfer"
+pageClass: "b_ServicesMoneyTransfer en-US"
 ---
+<div class="allpage--body">
+<header class="allpage-header">
+<!-- Section Header -->
+    <header class="header-promo horizontal_blur">
+        <img data-blur_page="body" data-src="<%= @getUrl("/img/money-transfer2.jpg") %>" alt="" data-blur_width="5" data-vertical_gradient="0" class="blur">
+        <img src="<%= @getUrl("/img/money-transfer2-md.jpg") %>" class="mt-header-image-sm">
+        <img src="<%= @getUrl("/img/money-transfer2-xs.jpg") %>" class="mt-header-image-xs">
 
-<header class="header-promo">
-    <div class="container header-promo--inner">
-        <img src="<%= @getUrl("money-transfer/money-transfer.png") %>" alt="">
-        <section class="header-promo--box">
-            <h1>Boss Revolution<sup>SM</sup> Money Transfer</h1>
-            <h4>Every Time You Send Money Something Good Happens</h4>
-            <p>You can now send money abroad with Boss Revolution<sup>SM</sup> Money Transfer to help your loved ones around the world.</p>
-        </section>
+        <div class="container header-promo--inner">
+            <section class="header-promo--mt">
+                <h2 class="hidden-sm hidden-xs">Online Money Transfer</h2>
+                <div class="plate plate-default-inset">
+                    <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#i--money-transfer"/>
+                    </svg>
+                </div>
+                <a class="modal-video plate plate-transp" data-title="Money Transfer" target="_blank" href=" http://youtu.be/UvrZKAKwCsI"><svg class="i i-play-large" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#i--play"/></svg></a>
+                <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="header" data-page="services_moneytransfer" data-loaded="1">
+                    <div class="mt-header-block">
+                        <h1 class="text-center">YOUR FIRST ONLINE<br> MONEY TRANSFER<br> UP TO $300<br> IS <span class="brand-color">FREE</span></h1>
+                        <a href="#get-started" class="btn btn-opt btn-block">SEND MONEY NOW</a>
+                    </div>
+                    <div class="country-page-text">With one trusted brand for all of your needs to stay connected to your loved ones abroad, you can send money quickly and securely to friends and family around the world.
+                        <p class="offset-v-top-sm myacc-block">
+                            <a class="btn btn-opt btn-block" href="/en-us/services/money-transfer#get-started">SEND MONEY NOW</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="bannerstart" data-page="services_moneytransfer" data-loaded="1"><div class="mt-mobile-promo">
+            <div class="plate plate-default-inset">
+                <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#i--money-transfer"/>
+                </svg>
+            </div>
+                a href=" http://youtu.be/UvrZKAKwCsI" target="_blank" data-title="Money Transfer" class="modal-video plate plate-transp"><svg xmlns="http://www.w3.org/2000/svg" class="i i-play-large"><use xlink:href="#i--play"/></svg></a>
+                <div class="mt-small">
+                <span><img alt=""  src="<%= @getUrl("/img/money-transfer/mt-services-en.png") %>"><a href="#get-started">SEND MONEY NOW</a></span>
+            </div>
+                <h2>Online Money Transfer</h2>
+                <p>With one trusted brand for all of your needs to stay connected to your loved ones abroad, you can send money quickly and securely to friends and family around the world.</p>
+            </div>
+            <div class="mt-promo">
+                <p>Prefer to pay in cash? <a href="/en-us/store-locator">Find the nearest BOSS Revolution Money Transfer Agent</a></p>
+            </div>
+        </div>    
+    </header>
+
+</header>           
+
+
+        <div id="undefined-sticky-wrapper" class="hold" style="height: 73px;"><nav class="local-nav" style="">
+            <div class="container">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav--item"><a href="#get-started" class="nav--link">Get started</a></li>
+                    <li class="nav--item"><a href="#features" class="nav--link">Features</a></li>
+                    <li class="nav--item"><a href="#benefits" class="nav--link">Benefits</a></li>
+                    <li class="nav--item"><a href="#got-covers" class="nav--link">We've Got You Covered</a></li>
+                </ul>
+            </div>
+        </nav></div>
+
+        <div class="container">
+
+            <article class="island island-default island-sm-white row" id="get-started">
+                
+<h2 class="island--title"><span>Enter the amount to send</span></h2>
+
+
+<input type="hidden" value="" name="mt_countries_data" id="mt_countries_data">
+
+<form method="post" id="frmCountryAmountSelector" autocomplete="off" action="/en-us/CountryAmountSelector" novalidate="novalidate"><input type="hidden" value="Q_7PSs5p9ApNftR59PpiQ5499tvX_spnGXwis0OEFP_M_gCzBr28bO6HNF-L_UsCyU4eqcHumfDmsqbCOJuxDKpXrrnDWFeRo8-8EI1IeLs1" name="__RequestVerificationToken">    <script type="text/javascript">var freshPage = true;</script>
+<input type="hidden" value="" name="CountryCode" id="CountryCode"><input type="hidden" value="" name="ExchangeRate" id="ExchangeRate"><input type="hidden" value="0" name="DeliveryMethodAmount" id="DeliveryMethodAmount" data-val-required="The DeliveryMethodAmount field is required." data-val-number="The field DeliveryMethodAmount must be a number." data-val="true"><input type="hidden" value="True" name="ViewModeFull" id="ViewModeFull" data-val-required="The ViewModeFull field is required." data-val="true">    <div class="b-amount-selector">
+        <article class="dyad dyad-2-1 dyad-sm-vertical dyad-gap-small">
+            <div class="dyad--first dyad--stretch">
+                <div class="island island-default line-up-wrapper clearfix">
+                    <div class="forms forms-default form-horizontal">
+                        <div class="col-xs-12 country-selector">
+                            <div class="form-group" id="SendAmount">
+
+                                    <p><span style="display: none" id="NoResult" class="field-validation-error"></span></p>
+<label for="CountryName" class="control-label">Country</label>                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <span class="country-flag flag"></span>
+                                        </div>
+                                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" value="" placeholder="Select Country" name="CountryName" id="CountryName" data-val-required="The Country field is required." data-val="true" class="input form-control ui-autocomplete-input" autocomplete="off">
+                                    </div>
+<span data-valmsg-replace="true" data-valmsg-for="CountryName" class="field-validation-valid"></span>                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-5 amount-selector amount-selector--from">
+                            <div class="form-group">
+                                <label for="SendingAmount" class="control-label">Sending</label>
+
+
+                                <input type="number" value="" placeholder="Amount" name="SendingAmount" id="SendingAmount" data-val-validatedeliverymethod-maxamount="2999" data-val-validatedeliverymethod-deliverymethodamount="DeliveryMethodAmount" data-val-validatedeliverymethod-amount="SendingAmount" data-val-validatedeliverymethod="La cantidad enviada no puede exceder {0}." data-val-required="The Sending field is required." data-val-minamount-minamount="10" data-val-minamount-amount="SendingAmount" data-val-minamount="Lo sentimos, $10.00 es la cantidad mínima que puedes enviar." data-val="true" class="input form-control numericAndDecimalOnly" disabled="">
+                                <input type="hidden" value="USD" name="ISOCurrencySymbol" id="ISOCurrencySymbol">
+                                <input type="hidden" value="$" name="CurrencySymbol" id="CurrencySymbol">
+                                <input type="hidden" name="SendingCurrency" id="SendingCurrency" value="USD">
+                                <span data-valmsg-replace="true" data-valmsg-for="SendingAmount" class="field-validation-valid"></span>
+                                <span id="SendingCurr">USD</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2 col-sm-2 amount-convert">
+                            <div class="form-group">
+                                <a class="amount-convert--link" id="linkConvert">
+                                    <span class="amount-convert--link-text">click to calculate</span>
+                                    <span class="plate plate-default">
+                                        <svg class="i i--exchange" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="#i--exchange" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-5 amount-selector amount-selector--to">
+                            <div class="form-group">
+                                <label for="ReceivingAmount" class="control-label">Receiving</label>
+                                <input type="number" value="" placeholder="Amount" name="ReceivingAmount" id="ReceivingAmount" data-val-required="The Receiving field is required." data-val="true" class="input form-control numericAndDecimalOnly" disabled="">
+                                <span id="ReceivingCurr"></span>
+                            </div>
+                            <div style="display: none" id="CurrencySelector" class="form-group">
+                                <select name="Currency" id="Currency" data-val-required="The Currency field is required." data-val="true" class="input form-control form-control-pure"></select>
+                                <span data-valmsg-replace="true" data-valmsg-for="Currency" class="field-validation-valid"></span>
+                            </div>
+                        </div>
+                        
+                        <div style="display: none;" class="clr transferRateArea" id="NotifyRounding">
+                            <label id="NotifyRoundingMsg"></label>
+                        </div>
+                        
+                        <div class="clr transferRateArea" style="display: none;" id="TransferDisplay">
+                            Exchange Rate: <label id="TransferRateDisplay"></label>
+                        </div>
+                        <div class="col-xs-12 action-block text-center">
+                            <input type="submit" class="btn btn-primary" value="Continue" id="btnContinue" name="btnContinue" disabled="disabled" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dyad--second dyad--stretch">
+                <div class="island island-transparent">
+                    
+<div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="offerbanner" data-page="services_moneytransfer" data-loaded="1"><div class="social-promo">
+    <div style="padding:0; display:block;" class="social-promo--block">
+        <div style="min-height: 0;" class="spec-offer-mt">
+            <img src="https://www.bossrevolution.com/Content/img/banners/mt-FirstFreeTxn/BR-MT-FirstFreeTxn333x325_Eng.jpg" style="border-radius: 4px;" class="hidden-xs hidden-sm">
+            <img src="https://www.bossrevolution.com/Content/img/banners/mt-FirstFreeTxn/BR-MT-FirstFreeTxn600x290_Eng.jpg" style="border-radius: 4px;" class="hidden-lg hidden-md">
+        </div>
     </div>
-</header>
-
-<div class="container">
-
-    <article class="island island-default money-transfer-carousel">
-
-        <h2 class="island--title">Money Transfer Benefits</h2>
-        <div id="money-transfer" class="carousel carousel-default slide" data-ride="carousel" data-interval="false">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#money-transfer" data-slide-to="0" class="active"></li>
-                <li data-target="#money-transfer" data-slide-to="1"></li>
-                <li data-target="#money-transfer" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="mediablock mediablock-sm-vertical">
-                        <div class="mediablock--primary text-center">
-                            <img src="<%= @getUrl("money-transfer/money-transfer-carousel-1.png") %>" alt="Benefit 1">
-                        </div>
-                        <div class="mediablock--secondary">
-                            <h3 class="item--title">With over 21,000 points of payment around the world, and&nbsp;more participating retailers added all the time, it’s easy to send money to your loved ones</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="mediablock mediablock-sm-vertical">
-                        <div class="mediablock--primary text-center">
-                            <img src="<%= @getUrl("money-transfer/money-transfer-carousel-2.png") %>" alt="Benefit 1">
-                        </div>
-                        <div class="mediablock--secondary">
-                            <h3 class="item--title">Choose the delivery method that is best for your transfer&nbsp;– bank pickup, deposit or home delivery</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="mediablock mediablock-sm-vertical">
-                        <div class="mediablock--primary text-center">
-                            <img src="<%= @getUrl("money-transfer/money-transfer-carousel-3.png") %>" alt="Benefit 1">
-                        </div>
-                        <div class="mediablock--secondary">
-                            <h3 class="item--title">Get a free call to let the recipient know the transfer is on&nbsp;its&nbsp;way*</h3>
-                        </div>
-                    </div>
+</div></div>
                 </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#money-transfer" role="button" data-slide="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-left"><use xlink:href="#i--slider-arrow-left"></use></svg>
-            </a>
-            <a class="right carousel-control" href="#money-transfer" role="button" data-slide="next">
-                <svg xmlns="http://www.w3.org/2000/svg" class="i i--slider-arrow-right"><use xlink:href="#i--slider-arrow-right"></use></svg>
-            </a>
-        </div>
-   
-    </article>
-
-    <article class="island island-default">
-
-        <div class="mediablock mediablock-sm-vertical mediablock-rtl money-transfer-logo">
-            <div class="mediablock--primary text-center">
-                <img src="<%= @getUrl("money-transfer/money-transfer-logo.png") %>" alt="Boss Revolution logo">
-            </div>
-            <div class="mediablock--secondary">
-                <h1>Visit your nearest participating <span class="brand-color">Boss&nbsp;Revolution</span>&nbsp;retailer to&nbsp;send&nbsp;money&nbsp;today</h1>
-            </div>
+        </article>
+    </div>
+</form>
+    <div class="countries countries-xs-collapse">
+        <div class="text-center">
+            <button data-target="#countries--list" data-toggle="collapse" class="collapse-trigger collapse-trigger-arrows collapsed" type="button">
+                <span>Money Transfer is available for the following countries:</span>
+                <svg class="i i--expand" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#i--expand" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+                <svg class="i i--collapse" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#i--collapse" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </button>
         </div>
 
-    </article>
+        <div id="countries--list" class="countries--list-wrapper collapse">
+            <div class="island island-default island-no-margin island-square-top">
+                <div class="countries--list">
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ar"></span>
+                                Argentina
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-bj"></span>
+                                Benin
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-bo"></span>
+                                Bolivia
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-br"></span>
+                                Brazil
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-bf"></span>
+                                Burkina Faso
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cm"></span>
+                                Cameroon
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cv"></span>
+                                Cape Verde
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-td"></span>
+                                Chad
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cn"></span>
+                                China
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-co"></span>
+                                Colombia
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-km"></span>
+                                Comoros
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cr"></span>
+                                Costa Rica
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cd"></span>
+                                Democratic Republic of the Congo
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-do"></span>
+                                Dominican Republic
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ec"></span>
+                                Ecuador
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-sv"></span>
+                                El Salvador
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-gq"></span>
+                                Equatorial Guinea
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-et"></span>
+                                Ethiopia
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ga"></span>
+                                Gabon
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-gh"></span>
+                                Ghana
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-gt"></span>
+                                Guatemala
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-gn"></span>
+                                Guinea
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-gw"></span>
+                                Guinea-Bissau
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ht"></span>
+                                Haiti
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-hn"></span>
+                                Honduras
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ci"></span>
+                                Ivory Coast
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ke"></span>
+                                Kenya
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-mg"></span>
+                                Madagascar
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ml"></span>
+                                Mali
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-mr"></span>
+                                Mauritania
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-mx"></span>
+                                Mexico
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ma"></span>
+                                Morocco
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ni"></span>
+                                Nicaragua
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ne"></span>
+                                Niger
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ng"></span>
+                                Nigeria
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-pa"></span>
+                                Panama
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-py"></span>
+                                Paraguay
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-pe"></span>
+                                Peru
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-cg"></span>
+                                Republic of the Congo
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-sl"></span>
+                                Sierra Leone
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-tg"></span>
+                                Togo
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-tn"></span>
+                                Tunisia
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-ug"></span>
+                                Uganda
+                            </li>
+                        </ul>
+                        <ul class="flags-list">
+                            <li>
+                                <span class="flag flag-uy"></span>
+                                Uruguay
+                            </li>
+                        </ul>
+                </div>
+                <div class="text-center">
+                    <button data-target="#countries--list" data-toggle="collapse" class="collapse-trigger collapse-trigger-cross" type="button">
+                        <svg class="i i--clear" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#i--clear" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                        </svg>
+                        <span>Collapse</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <article class="island island-default ">
+</article>
 
-        <p class="notice">
-            * For customers using Boss Revolution  to Go, call forwarding, Boss Revolution  mobile™ for Verizon, Boss Revolution  on 3, Boss Revolution ™ on au, and Boss Revolution  on Telkomsel, the following per minute rates and connection fees apply for the listed regions:  Australia (landline, Canberra and Sydney): €0.019 (connection fee (CF) €0.049), Australia mobile: €0.168 (CF €0.089), Bangladesh (landline and mobile): €0.032 (CF €0.089), Brazil landline: €0.046 (CF €0.089), Brazil Rio de Janeiro: €0.03 (CF €0.089), Brazil Sao Paolo: €0.023 (CF €0.089), Brazil mobile: €0.179 (CF €0.089), Colombia (landline (excl Lex), Armenia, Medellin, Pereira): €0.078 (CF €0.089), Colombia (Bogota, Barranquilla, Cali): €0.046 (CF €0.089), Colombia mobile: €0.086 (CF €0.089), Dominican Republic (landline): €0.066 (CF €0.089), Dominican Republic mobile: €0.111 (CF €0.089), France (landline, Paris): €0.019 (CF €0.049), France mobile: €0.169 (CF €0.089), Germany: €0.019 (CF €0.049), Germany mobile: €0.205 (CF €0.089), India: €0.069 (CF €0.089), Italy: €0.019 (CF €0.049), Italy mobile: €0.25 (CF €0.089), Korea, Republic of (landline, Seoul): €0.019 (CF €0.049), Korea, Republic of (mobile): €0.061 (CF €0.089) Nigeria landline: €0.13 (CF €0.089), Nigeria Lagos: €0.1 (CF €0.089), Nigeria mobile: €0.21 (CF €0.089), Pakistan: €0.102 (CF €0.089), Philippines (landline, Cebu, Manila): €0.161 (CF €0.089), Philippines mobile: €0.202 (CF €0.089), Poland (landline, Gdansk, Warsaw): €0.019 (CF €0.049), Poland mobile: €0.208 (CF €0.089), South Africa (landline, Cape Town, Johannesburg): €0.058 (CF €0.089), South Africa mobile: €0.195 (CF €0.089).
-        </p>
-        
-    </article>
+    <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="features" data-page="services_moneytransfer" data-loaded="1"><article class="island island-default" id="features">
+    <h1 class="island--title">Features</h1>
+    <div class="benefits benefits-type-services">
+        <div class="benefits--block">
+            <h3>Stay Informed</h3>
+            <p>Get alerts on the status of your order through your BOSS Revolution Account Center, by SMS or by email. You'll have peace of mind and know when the money is available.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Free Calling</h3>
+            <p>Get free international calling time with every transfer to let your recipient know that the money is on its way.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Convenience</h3>
+            <p>Send a transfer from your mobile phone, your computer, or at a BOSS Revolution retail location.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+    </div>
 
+    <div class="benefits benefits-type-services">
+        <div class="benefits--block">
+            <h3>Payment Options</h3>
+            <p>Pay with a bank account, cash or a credit/debit card.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Delivery Options</h3>
+            <p>Choose the delivery method that is best for your recipient &ndash; cash pickup, bank deposit or home delivery.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Worldwide</h3>
+            <p>Over 65,000 points of payment in over 40 countries in Latin America, Africa and Asia.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+<article class="island island-default" id="benefits">
+    <h1 class="island--title">Benefits</h1>
+
+    <div class="benefits benefits-type-services">
+        <div class="benefits--block">
+            <h3>Flexibility and Ease</h3>
+            <p>Our delivery options, payment options and customer support are designed to meet your needs here and your family's needs abroad.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Great Rates</h3>
+            <p>Our service features low transfer fees and competitive exchange rates.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="benefits--block">
+            <h3>Simple, Safe, Secure</h3>
+            <p>Send money to friends and family with confidence.</p>
+            <div class="plate plate-default-inset-revert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="i i--valid">
+                    <use xlink:href="#i--valid" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</article>
 </div>
+
+            <article class="island island-default">
+                <h2 class="island--title">Check Out More BOSS Revolution<sup>&reg;</sup> Services</h2>
+                <section class="more-items">
+                    <div class="more-items--row">
+                            <div class="more-items--block">
+        <a href="/en-us/services/international-mobile-topup" class="more-items--link">
+            <div class="plate plate-default-inset plate-large">
+                <svg class="i i--inter-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#i--inter-airtime-top-up" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+            <h3>International Mobile Top Up</h3>
+            <span>Simply, safely and instantly add funds to prepaid mobile phones abroad. Just tell us the phone number and the amount and we will do the rest.</span>
+        </a>
+    </div>
+
+                            <div class="more-items--block">
+        <a href="/en-us/services/call-me" class="more-items--link">
+            <div class="plate plate-default-inset plate-large">
+                <svg class="i i--call-me" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#i--call-me" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+                </svg>
+            </div>
+            <h3>Call Me</h3>
+            <span>Get a local number in your home country, so your friends and family can call you as if you were next door.</span>
+        </a>
+    </div>
+
+                            <div class="more-items--block">
+        <a href="/en-us/services/domestic-mobile-topup" class="more-items--link">
+            <div class="plate plate-default-inset plate-large">
+                <svg class="i i--domestic-airtime-top-up" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#i--domestic-airtime-top-up"/>
+                    </svg>
+            </div>
+            <h3>Domestic Mobile Top&nbsp;Up</h3>
+            <span>Conveniently recharge any prepaid mobile phone in the United States.</span>
+        </a>
+    </div>
+
+                    </div>
+                </section>
+                <div class="offset-v-top-sm clearfix text-right">
+                    <a href="/en-us/services"><strong class="h4">See All BOSS Revolution Services »</strong></a>
+                </div>
+            </article>
+
+            <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="disclaimers" data-page="services_moneytransfer" data-loaded="1"><article class="island island-default" id="got-covers">
+    <h1 class="island--title">We've Got You Covered</h1>
+    <p>Your security and trust are of the highest importance to us. We work hard to protect all of your personal information and to ensure that you can feel confident knowing that your money is safe with BOSS Revolution.</p>
+    <p>And we offer a money-back guarantee that your money will be received or we’ll refund your transaction in full.</p>
+    <p>Be sure to read our <a target="_blank" href="/en-us/security-page">tips</a> to make sure that you don’t fall victim to fraud.</p>
+</article>
+<article class="island island-default notice">
+    <p>Spring Fever Special Offer Terms: Fee promotion valid only for certain money transfers made online at bossrevolution.com or through the Boss Revolution Android App from March 17 through June 30, 2016. See website for details, including list of eligible destination countries serviced by IDT Payment. Promotional fee varies by destination, amount transferred and method of payment. Standard service fees apply to all other money transfers. IDT Payment reserves the right to modify or discontinue the promotion at any time without prior notice. Available only where IDT Payment is licensed.</p>
+    <p>Boss Revolution money transfer products and payment services are offered and serviced by IDT Payment Services, Inc., a licensed money transmitter (“IDT Payment”). IDT Payment may make money when it changes your dollars into foreign currency. Access to money transfer products and services may be limited, delayed or unavailable during periods of peak demand, market volatility, system upgrades or maintenance, or communication system problems. Transfer of funds may be delayed or unavailable based on certain transaction conditions, including amount sent, destination country, currency availability, regulatory issues, identification requirements and Agent location hours. Additional restrictions may apply. See <a target="_blank" href="/Content/pdf/TermsofUse_RegulatedProducts.pdf">terms</a> or Agent for details. For each person-to-person international money transfer transaction sent with IDT Payment through Boss Revolution, we will deposit a minimum of $.30 in the sender’s Boss Revolution account for free. The amount of the free balance depends on the destination country of the money transfer transaction. This promotional balance can be used to call any destination serviced by Boss Revolution. If the sender does not have a Boss Revolution account, one will be created for them with an opening balance of $1. Boss Revolution service subject to terms and conditions. Visit <a href="https://www.bossrevolution.com/en-us/">bossrevolution.com</a> for complete terms, current rates and additional information. Boss Revolution service provided by IDT Domestic Telecom, Inc. All rights reserved.</p>
+    <p><a target="_blank" href="/Content/pdf/Privacy_Notice_for_Money_Transfers.pdf">Privacy notice for Money Transfer</a></p>
+    <p>Texas Consumers <a target="_blank" href="/Content/pdf/Money_Transfer_Texas_Consumers.pdf">Click Here</a></p>
+    <p><a target="_blank" href="/Content/pdf/BossRevolutionIDTPS_State_Disclousures.pdf">State Licenses and Disclosures</a></p>
+</article>
+</div>
+
+        </div>
+    </div>

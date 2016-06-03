@@ -1,0 +1,199 @@
+
+.b_ServicesMoneyTransfer .header-promo canvas,
+.b_ServicesMoneyTransfer .header-promo .blur{
+    margin-top: 110px;
+}
+
+
+.btn-opt {   
+    background: #068544; /* Old browsers */
+    background: -moz-linear-gradient(top, #5ec92a 0%, #3fb133 47%, #068544 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5ec92a 0%,#3fb133 47%,#068544 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5ec92a 0%,#3fb133 47%,#068544 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 4px;
+    border:0;
+}
+
+.b_ServicesMoneyTransfer {
+    .header-promo .header-promo--mt {
+        background-image: url(../img/money-transfer/mt-services-lg.png);
+        background-size:100%;
+        background-color: rgba(0, 0, 0, 0.65) !important;
+        background-position: 50% center;
+        background-repeat: no-repeat;    
+        padding-bottom: 10px;
+        min-width:468px;
+        min-height:357px;
+        position: absolute;
+        z-index:5;
+        padding: 40px 40px 10px 40px;
+        bottom: 40px;
+        border-radius:5px;
+        h1 {
+            margin: 0 0 50px 0;
+        }
+        h2.hidden-sm {
+            margin-top: -20px;
+        }
+    }
+    .social-promo .social-promo--block .spec-offer-mt {
+        display: block;
+    }
+}
+
+.mt-promo {
+    position: absolute; 
+    text-align:center; 
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 0 2px #000;    
+}
+
+
+
+.mt-header-image-sm,
+.mt-header-image-xs {
+    display: none;   
+}
+.mt-mobile-promo {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .b_ServicesMoneyTransfer img.blur {
+        display: block;
+    }    
+}
+@media screen and (max-width: 769px) {
+    .b_ServicesMoneyTransfer img.blur {
+        display: none;
+    }
+    .mt-header-image-sm {
+        display: block;        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mt-header-image-sm {
+        display: none;
+    }
+    .mt-header-image-xs {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header-promo--mt{
+        display: none;
+    }
+    .mt-promo {
+        position: static;
+        background: #fff;
+        padding: 10px 20px;
+        text-shadow: none;
+        color:#333;
+        font-weight: normal;
+    }
+    .mt-promo a {
+        text-decoration: none;
+        color: #00a5e6;
+    }
+
+    .mt-mobile-promo {
+        display: block;
+        background: #333;
+        padding: 35px 40px 15px 40px;
+        min-width:0;
+        position: relative;
+        border-radius:0;
+        h2 {
+            margin-top: 35px;
+        }
+    }
+
+    .mt-small {
+        position:absolute;
+        top: -430px;
+        left: 0;
+        padding:0 40px;
+        width: 100%;
+        span {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            a{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 30%;
+                width: 100%;        
+                text-indent: -10000px;
+                outline: none;
+            }
+        }
+        img {
+            border-radius: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .mt-small {
+        top: -300px;
+        padding:0 20px;
+    }
+    .mt-mobile-promo {        
+        padding: 130px 20px 15px 20px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+     .mt-small {
+        top: 100px;
+       
+    }
+    .mt-mobile-promo {
+        position: static;
+        padding: 170px 20px 15px 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+     .mt-small {
+        top: 100px;
+    }
+    .mt-mobile-promo {
+        position: static;
+        padding-top:130px;
+    }
+}
+.mt-notice{
+    background: rgba(255, 255, 255, 0.17) none repeat scroll 0 0;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+.mt-state-specifi-disclosure p {
+    margin-top: 1em;
+}
+
+/*country page fix*/
+#country-service .mt-header-block{display: none !important;}
+.country-page-text{display: none;}
+#country-service .country-page-text{display: block;}
+
+/*MT myaccout page fix*/
+.b_MoneyTransferMTIndex .btn-opt{max-width: 368px; margin: auto}
+.b_MoneyTransferMTIndex .country-page-text{display: block;}
+.b_MoneyTransferMTIndex .mt-header-block{display: none;}
+.b_MoneyTransferMTIndex .island--header .offset-v-top-sm.h4{display: none;}
+.myacc-block{display: none}
+.b_MoneyTransferMTIndex .island--header .myacc-block {display: block}
