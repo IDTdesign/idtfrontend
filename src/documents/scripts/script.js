@@ -99,40 +99,46 @@
         $("html").addClass("ios");
     }
 
-    var img = $('.blur');
-    if (img) {
-    // blur default settings
-        if ($(window).width() >600) {
 
-            var params = {};
 
-                params.callBack = function () {
-                    $('canvas').addClass('visible')
-                };
+    /*blur init for header image*/
+	if ($(window).width() > 600) {
 
-                if (img.data('gradient_width')) {
-                    params.gradient_width = img.data('gradient_width');
-                }
-                if (img.data('blur_width')) {
-                    params.blur_width = img.data('blur_width');
-                }
-                if (img.data('blur_radius')) {
-                    params.blur_radius = img.data('blur_radius');
-                }
-                if (img.data('vertical_gradient')) {
-                    params.vertical_gradient = img.data('vertical_gradient');
-                }
-                if (img.data('blur_page')) {
-                    params.blur_page = img.data('blur_page');
-                }
-                if (img.data('blur_page_alfa')) {
-                    params.blur_page_alfa = img.data('blur_page_alfa');
-                }
-                $(img).alfablur(params);
-        } else {
-            $('.blur').attr('src', $('.blur').data('src'));
-        }
-    }
+	    var img = $('.blur'),
+	        params = {};
+
+	        params.callBack = function () {
+                $('canvas').addClass('visible')
+	        }
+	       
+	        if (img.data('gradient_width')) {
+	            params.gradient_width = img.data('gradient_width');
+	        }
+
+	        if (img.data('blur_width')) {
+	            params.blur_width = img.data('blur_width');
+	        }
+
+	        if (img.data('blur_radius')) {
+	            params.blur_radius = img.data('blur_radius');
+	        }
+
+	        if (img.data('vertical_gradient')) {
+	            params.vertical_gradient = img.data('vertical_gradient');
+	        }
+
+            if (img.data('blur_page')) {
+                params.blur_page = img.data('blur_page');
+            }
+
+            if (img.data('blur_page_alfa')) {
+                params.blur_page_alfa = img.data('blur_page_alfa');
+            }
+
+            $(img).alfablur(params);	   
+	} else {
+	    $('.blur').attr('src', $('.blur').data('src'));	    
+	}
 
     // Popover for titles
     if ($('.island--title-popover-trigger').length > 0) {

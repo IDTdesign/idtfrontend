@@ -39,6 +39,7 @@ Plugin.prototype.createDom = function () {
 	        canv = '<canvas></canvas><canvas id="blur"></canvas><canvas id="pageBlur"></canvas>';
 	    }
 	    var canvases = $(canv).prependTo(this.options.wrapper);
+	    this.options.css='',
 		this.options.canvas = canvases[0],
 		this.options.canvas2 = canvases[1],
 		this.options.canvas3 = canvases[2],
@@ -57,7 +58,7 @@ Plugin.prototype.createDom = function () {
 				if (self.options.blur_page) {
 					self.blurPage();					
 				}
-				//console.log(self);
+				$('body').append('<style type=text/css>' + self.options.css + '</style>');
 			},10);
 };
 
@@ -121,9 +122,9 @@ Plugin.prototype.createBlurBG = function () {
 
 	}
 	$(o.canvas2).hide();
-	$(self.options.wrapper).css({'background-image':'url('+o.canvas2.toDataURL("image/png")+')','background-size': '2560px ' + o.canvas.height+'px'});
-
-	
+	self.options.css = self.options.css + ".horizontal_blur{background-image: url(" + o.canvas2.toDataURL('image/png') + ");background-size: 2560px " + o.canvas.height + "px;}";	
+	$(self.options.wrapper).addClass('horizontal_blur');
+   	
 
 };
 Plugin.prototype.makeAlfa = function () {
@@ -204,9 +205,8 @@ Plugin.prototype.blurPage = function () {
             datapx[i + 3] = this.options.blured_page_alfa;
         }
         ctx3.putImageData(data, 0, 0);
-
-		$(this.options.blur_page).css({'background-image':'url('+canv3.toDataURL("image/png")+')'});			
-		
+        this.options.css = this.options.css + '.pageBlurImage{background-image:url(' + canv3.toDataURL("image/png") + ')}';
+        $(this.options.blur_page).addClass('pageBlurImage');		
 };
 
 $.fn[pluginName] = function ( options ) {
