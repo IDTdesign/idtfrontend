@@ -62,6 +62,16 @@ module.exports = (grunt) ->
           sourceMapFilename: 'out/styles/bossrevolution.css.map'
         files:
           'out/styles/bossrevolution.css': 'src/raw/styles/bossrevolution.css.less'
+      compileBossLanding:
+        options:
+          compress: true
+          strictMath: true
+          sourceMap: true
+          outputSourceFiles: true
+          sourceMapURL: 'bossrevolution-landing.css.map'
+          sourceMapFilename: 'out/styles/bossrevolution-landing.css.map'
+        files:
+          'out/styles/bossrevolution-landing.css': 'src/raw/styles/bossrevolution-landing.css.less'
       compileBootstrap:
         options:
           compress: true
@@ -72,6 +82,16 @@ module.exports = (grunt) ->
           sourceMapFilename: 'out/styles/bootstrap.css.map'
         files:
           'out/styles/bootstrap.css': 'src/raw/styles/bootstrap.css.less'
+      compileBootstrapLanding:
+        options:
+          compress: true
+          strictMath: true
+          sourceMap: true
+          outputSourceFiles: true
+          sourceMapURL: 'bootstrap.css.map'
+          sourceMapFilename: 'out/styles/bootstrap-landing.css.map'
+        files:
+          'out/styles/bootstrap-landing.css': 'src/raw/styles/bootstrap-landing.css.less'
       compileBsTheme:
         options:
           compress: true

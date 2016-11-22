@@ -14,6 +14,12 @@ title: "idtfrontend - index"
 
 <div class="container">
     <article class="island island-default">
+        <h1 class="island--title">Landing pages</h1>
+            <ul>
+                <li><a href="<%= @getUrl('/templates/philippines-money-transfer.html') %>">Philipines</a></li>
+                <li><a href="<%= @getUrl('/templates/philippines-money-transfer.html') %>">Philipines</a></li>
+                <li><a href="<%= @getUrl('/templates/philippines-money-transfer.html') %>">Philipines</a></li>
+            </ul>
         <h1 class="island--title">Documentation</h1>
         <ul>
             <li><a href="<%= @getUrl('/docs/logo.html') %>">Logo</a></li>

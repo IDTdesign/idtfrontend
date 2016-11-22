@@ -34,6 +34,12 @@ docpadConfig = {
         '/styles/bossrevolution.css'
       ]
 
+      landing: [
+        '/styles/bootstrap-landing.css'
+        '/styles/bootstrap-theme.css'        
+        '/styles/bossrevolution-landing.css'
+      ]
+
 # The JavaScript files for the site.
       scripts: [
         '/vendor/bootstrap/js/bootstrap.min.js'

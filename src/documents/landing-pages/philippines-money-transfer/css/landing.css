@@ -1,0 +1,132 @@
+.allpage{ box-shadow: none; }
+.header-promo-landing-mt {
+	background-image: url(../images/0fee.png);        
+	background-size: 100%;
+	background-color: rgba(0,0,0,0.65) !important;
+	background-position: 50% 128px;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	width: 455px;
+	min-height: 357px;
+	position: absolute;
+	z-index: 5;
+	padding: 20px 40px 10px 40px;
+	top: 160px;
+	border-radius: 5px;
+}
+.es-US .header-promo-landing-mt {
+	background-image: url(../images/0fee_es.png); 
+}
+.allpage-header {
+	padding-top: 50px;
+	height: 687px;
+}
+.header-promo-landing-mt .header-block {
+	padding-top: 210px;
+}
+
+.allpage--body {
+	padding-top: 35px;
+}
+.es-US .allpage--body {
+	padding-top: 55px;
+}
+.small-text {
+	font-size: 12px;
+}
+
+.b_block {
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+@media (max-width: 1100px){
+	.allpage--body {
+		padding-top: 75px;
+	}
+	.es-US .allpage--body {
+		padding-top: 95px;
+	}
+
+	.header-promo-landing-mt {
+		width: 390px
+	}
+	.header-promo-landing-mt h2{
+		font-size: 20px;
+	}
+	.header-promo-landing-mt .header-block {
+		padding-top: 180px;
+	}
+	.small-text {
+		font-size: 10px;
+	}
+	.allpage-header {
+		height: auto;
+	}
+}
+
+@media (max-width: 1000px){
+	.header-promo-landing-mt {
+		left: 50%;
+		top: 80px;
+		margin-left: -240px;
+	}	
+}
+
+@media (max-width: 800px){
+	.header-promo-landing-mt {
+		left: 50%;
+		top: 80px;
+		margin-left: -240px;
+	}
+	.allpage--body {
+		padding-top: 160px;
+		background: linear-gradient(0deg, #fff, #fff 90%, #a3a3a4);
+	}
+	.es-US .allpage--body {
+		padding-top: 180px;
+	}
+}
+
+
+@media (max-width: 600px){
+	.plate {
+		display: none;
+	}
+	.header-promo-landing-mt .header-block {
+		padding-top: 160px;
+	}
+	.header-promo-landing-mt {
+		background-position: 50% 60px;
+	}
+	.blur.blur {
+		display: none;
+	}
+	.allpage-header{
+		background: url(../images/header.jpg) 70% 50% no-repeat;
+		height: 400px;
+	}
+	.allpage--body {
+		padding-top: 400px;		
+	}
+	.es-US .allpage--body {
+		padding-top: 420px;
+	}
+	.header-promo-landing-mt {
+		background-color: rgba(0,0,0,0.55) !important;
+		position: absolute;
+		top: 85%;
+		width: 80%;
+		left: 10%;
+		margin: 0;
+	}	
+}
+
+@media (max-width: 350px){
+	.header-promo-landing-mt {
+		background-position: 50% 85px;
+	}
+	.btn{
+		white-space: normal !important;
+	}
+}
