@@ -8,28 +8,21 @@ pageClass: "b_ServicesMoneyTransfer en-US"
 <!-- Section Header -->
     <header class="header-promo horizontal_blur">
         <img data-blur_page="body" data-src="<%= @getUrl("/img/money-transfer2.jpg") %>" alt="" data-blur_width="5" data-vertical_gradient="0" class="blur">
-        <img src="<%= @getUrl("/img/money-transfer2-md.jpg") %>" class="mt-header-image-sm">
-        <img src="<%= @getUrl("/img/money-transfer2-xs.jpg") %>" class="mt-header-image-xs">
-
+        
         <div class="container header-promo--inner">
             <section class="header-promo--mt">
                 <h2 class="hidden-sm hidden-xs">Online Money Transfer</h2>
+
                 <div class="plate plate-default-inset">
-                    <svg class="i i--money-transfer" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#i--money-transfer"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="i i--money-transfer">
+                        <use xlink:href="#i--money-transfer"></use>
                     </svg>
                 </div>
-                <a class="modal-video plate plate-transp" data-title="Money Transfer" target="_blank" href=" http://youtu.be/UvrZKAKwCsI"><svg class="i i-play-large" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#i--play"/></svg></a>
-                <div class="visible-lg visible-md visible-sm visible-xs" data-lang="en" data-size="any" data-zonename="header" data-page="services_moneytransfer" data-loaded="1">
-                    <div class="mt-header-block">
-                        <h1 class="text-center">YOUR FIRST ONLINE<br> MONEY TRANSFER<br> UP TO $300<br> IS <span class="brand-color">FREE</span></h1>
-                        <a href="#get-started" class="btn btn-opt btn-block">SEND MONEY NOW</a>
-                    </div>
-                    <div class="country-page-text">With one trusted brand for all of your needs to stay connected to your loved ones abroad, you can send money quickly and securely to friends and family around the world.
-                        <p class="offset-v-top-sm myacc-block">
-                            <a class="btn btn-opt btn-block" href="/en-us/services/money-transfer#get-started">SEND MONEY NOW</a>
-                        </p>
-                    </div>
+                <a href=" http://youtu.be/UvrZKAKwCsI" target="_blank" data-title="Money Transfer" class="modal-video plate plate-transp"><svg xmlns="http://www.w3.org/2000/svg" class="i i-play-large"><use xlink:href="#i--play"></use></svg></a>
+                <div class="mt-header-block">
+                    <h1 class="text-center">YOUR FIRST ONLINE<br> MONEY TRANSFER<br> UP TO $300<br> IS <span class="brand-color">FREE</span></h1>
+                    Additional transfers start at only $1.99
+                    <a class="btn btn-opt btn-block" href="#get-started">SEND MONEY NOW</a>  
                 </div>
             </section>
         </div>

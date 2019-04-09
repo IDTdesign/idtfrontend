@@ -19,11 +19,20 @@
 }
 
 .b_ServicesMoneyTransfer {
+
+    .mt-header-block {
+        text-align: center;
+        padding: 10px;
+        .btn {
+            margin-top: 5px;
+        }
+    }    
+
     .header-promo .header-promo--mt {
         background-image: url(../img/money-transfer/mt-services-lg.png);
         background-size:100%;
         background-color: rgba(0, 0, 0, 0.65) !important;
-        background-position: 50% center;
+        background-position: 50% 28px;
         background-repeat: no-repeat;    
         padding-bottom: 10px;
         min-width:468px;
@@ -37,7 +46,7 @@
             margin: 0 0 50px 0;
         }
         h2.hidden-sm {
-            margin-top: -20px;
+            margin-bottom: 0 0 20px 0;
         }
     }
     .social-promo .social-promo--block .spec-offer-mt {
@@ -63,116 +72,6 @@
 }
 .mt-mobile-promo {
     display: none;
-}
-
-@media screen and (max-width: 980px) {
-    .b_ServicesMoneyTransfer img.blur {
-        display: block;
-    }    
-}
-@media screen and (max-width: 769px) {
-    .b_ServicesMoneyTransfer img.blur {
-        display: none;
-    }
-    .mt-header-image-sm {
-        display: block;        
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .mt-header-image-sm {
-        display: none;
-    }
-    .mt-header-image-xs {
-        display: block;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-    .header-promo--mt{
-        display: none;
-    }
-    .mt-promo {
-        position: static;
-        background: #fff;
-        padding: 10px 20px;
-        text-shadow: none;
-        color:#333;
-        font-weight: normal;
-    }
-    .mt-promo a {
-        text-decoration: none;
-        color: #00a5e6;
-    }
-
-    .mt-mobile-promo {
-        display: block;
-        background: #333;
-        padding: 35px 40px 15px 40px;
-        min-width:0;
-        position: relative;
-        border-radius:0;
-        h2 {
-            margin-top: 35px;
-        }
-    }
-
-    .mt-small {
-        position:absolute;
-        top: -430px;
-        left: 0;
-        padding:0 40px;
-        width: 100%;
-        span {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            a{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 30%;
-                width: 100%;        
-                text-indent: -10000px;
-                outline: none;
-            }
-        }
-        img {
-            border-radius: 4px;
-        }
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .mt-small {
-        top: -300px;
-        padding:0 20px;
-    }
-    .mt-mobile-promo {        
-        padding: 130px 20px 15px 20px;
-    }
-}
-
-@media screen and (max-width: 555px) {
-     .mt-small {
-        top: 100px;
-       
-    }
-    .mt-mobile-promo {
-        position: static;
-        padding: 170px 20px 15px 20px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-     .mt-small {
-        top: 100px;
-    }
-    .mt-mobile-promo {
-        position: static;
-        padding-top:130px;
-    }
 }
 .mt-notice{
     background: rgba(255, 255, 255, 0.17) none repeat scroll 0 0;
