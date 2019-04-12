@@ -91,15 +91,11 @@ input[type=number] {
     1 - border
     2 - focus
     */
-    height: 45px;
+    height: 40px;
     padding: ((@padding-base-vertical)-8) ((@padding-base-horizontal)-8);
-    border-width: 2px;
-    border-color: #808080 #a7a7a7 #a7a7a7 #808080;
-    border-radius: 5px;
-    @form-control-shadow:
-        /* 1 */ inset 1px 1px 5px rgba(0, 0, 0, 0.15),
-        /* 2 */ 0 0 0 0 rgba(0, 128, 255, 0);
-    .box-shadow(@form-control-shadow);
+    border-width: 1px;
+    border-color: #808080;
+    border-radius: 0px;
     transition: all 0.2s;
     color: @gray-dark;
 

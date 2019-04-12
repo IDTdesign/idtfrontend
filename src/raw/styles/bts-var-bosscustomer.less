@@ -7,8 +7,8 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@ink: #FFF; //white
-@paper: rgba(0, 0, 0, 0.4); //transparent gray
+@ink: #000;
+@paper: #fff;
 
 
 @gray-darker:            #222222; // Almost Black
@@ -58,28 +58,28 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #eee;
 //** Global text color on `<body>`.
 @text-color:            @ink;
 
 //** Global textual link color. //@brand-alt
-@link-color:            lighten(@brand-alt-bright, 20%);
+@link-color:            #3899e9;
 //** Link hover color set via `darken()` function. //@brand-alt-bright
-@link-hover-color:      lighten(@brand-alt-bright, 28%);
+@link-hover-color:      lighten(#3899e9, 28%);
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", "Tex Gyre Heros", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Proxima Nova",ProximaNova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
-@font-family-arial:       Arial, "Helvetica Neue", Helvetica, sans-serif;
+@font-family-arial:       "Proxima Nova",ProximaNova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-larger:        ceil((@font-size-base * 1.14));   // ~16px
 @font-size-large:         ceil((@font-size-base * 1.25));   // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85));   // ~12px
@@ -93,7 +93,7 @@
 @font-size-h6:            ceil((@font-size-base * 0.85));   // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.5;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 

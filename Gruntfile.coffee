@@ -341,6 +341,7 @@ module.exports = (grunt) ->
         ]
       manan:
         files: [
+          '../BrCustomer/BrCustomerSite/Content/bootstrap.css': 'out/styles/bootstrap.css'
           '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css': 'out/styles/bossrevolution.css'
           '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css.map': 'out/styles/bossrevolution.css.map'
         ]
@@ -388,7 +389,7 @@ module.exports = (grunt) ->
   # Register our Grunt tasks.
   grunt.registerTask 'makesprites', ['svgstore', 'svg2string', 'replace:sprites']
   grunt.registerTask 'optimizeimg', ['svg2png:src', 'newer:imagemin:src']
-  grunt.registerTask 'preprocess',  ['makesprites', 'optimizeimg']
+  grunt.registerTask 'preprocess',  ['optimizeimg']
   grunt.registerTask 'prepare',     ['copy:main', 'concat:bootstrap', 'uglify', 'modernizr:dist']
   grunt.registerTask 'postprocess', ['less', 'autoprefixer:bossout']
   grunt.registerTask 'generate',    ['clean:out', 'shell:docpad', 'prepare', 'postprocess']
