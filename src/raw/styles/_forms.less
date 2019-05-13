@@ -37,7 +37,8 @@
 
 /* 1 - labels not bold by default (bootstrap override) */
 label {
-    font-weight: inherit; /* 1 */
+    font-weight: 600; /* 1 */
+    font-size: .875em;
 }
 
 /* 1 - fix for max-width override by site.css */
@@ -91,7 +92,7 @@ input[type=number] {
     1 - border
     2 - focus
     */
-    height: 40px;
+    height: 32px;
     padding: ((@padding-base-vertical)-8) ((@padding-base-horizontal)-8);
     border-width: 1px;
     border-color: #808080;
@@ -170,7 +171,7 @@ select.form-control-pure {
 
 .forms-default {
     label {
-        font-weight: bold;
+        font-weight: 600;
     }
 
     .btn {
