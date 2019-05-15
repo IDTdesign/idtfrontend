@@ -342,6 +342,7 @@ module.exports = (grunt) ->
       manan:
         files: [
           '../BrCustomer/BrCustomerSite/Content/bootstrap.css': 'out/styles/bootstrap.css'
+          '../BrCustomer/BrCustomerSite/Content/bootstrap-theme.css': 'out/styles/bootstrap-theme.css'
           '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css': 'out/styles/bossrevolution.css'
           '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css.map': 'out/styles/bossrevolution.css.map'
         ]

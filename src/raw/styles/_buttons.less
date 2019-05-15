@@ -41,8 +41,8 @@
     @default-text-transform: none;
     @default-pressed-bxsh: inset 0 1px 3px -1px rgba(0,0,0,0.40);
 
-    @purchase-render: false;
-    @purchase: purchase;
+    @purchase-render: true;
+    @purchase: success;
     @purchase-border-color: transparent;
     @purchase-background-color: #3bb14a;
     @purchase-background-color-hover: lighten(@purchase-background-color, 8%);
@@ -75,8 +75,8 @@
         // [1] - .125em approx. equal to a half of space between words. Required for spacing between buttons in a row.
         // [2] - Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
         display: inline-block;
-        margin-top: .125em; // [1]
-        margin-bottom: .125em; // [1]
+        //margin-top: .125em; // [1]
+        //margin-bottom: .125em; // [1]
         background-image: none; // [2]
         font-family: @btn-font-family;
         text-align: center;
