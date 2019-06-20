@@ -1150,7 +1150,6 @@
 
 .currNumber--container .currNumber {
     font-size: 22px;
-    color: #94cdff;
     padding-left: 7px;
 }
 
@@ -2788,12 +2787,6 @@
     padding: 5px 0 0 0;
 }
 
-.currNumber--container .currNumber {
-    font-size: 22px;
-    color: #94cdff;
-    padding-left: 7px;
-}
-
 @media screen and (max-width: 991px) {
 
     .add-number .setup_message {
@@ -4022,5 +4015,23 @@
 
     .free-call-badge:before {
         margin-right: 3px;
+    }
+}
+
+
+.nav-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+        flex-grow: 1;
+        margin: 4px;
+        border-radius: 3px;
+        border: 1px solid #e1e2e4;
+
+        .active {
+            color: #000;
+            font-weight: bold;  
+        }
     }
 }
