@@ -225,7 +225,7 @@ module.exports = (grunt) ->
     svg2string:
       icons:
         files:
-          'src/raw/icons/svg-icons.js': ['src/raw/icons/svg-defs.svg', 'src/raw/icons/svg-defs-colored.svg']
+          'src/raw/icons/svg-icons_v2.js': ['src/raw/icons/svg-defs.svg', 'src/raw/icons/svg-defs-colored.svg']
 
 # background-image svg and png sprites
     'svg-sprites':
@@ -341,10 +341,10 @@ module.exports = (grunt) ->
         ]
       manan:
         files: [
-          '../BrCustomer/BrCustomerSite/Content/bootstrap.css': 'out/styles/bootstrap.css'
-          '../BrCustomer/BrCustomerSite/Content/bootstrap-theme.css': 'out/styles/bootstrap-theme.css'
-          '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css': 'out/styles/bossrevolution.css'
-          '../BrCustomer/BrCustomerSite/Content/css/bossrevolution.css.map': 'out/styles/bossrevolution.css.map'
+          '../BrCustomer/BrCustomerSite/Content/bootstrap_v2.css': 'out/styles/bootstrap.css'
+          '../BrCustomer/BrCustomerSite/Content/bootstrap-theme_v2.css': 'out/styles/bootstrap-theme.css'
+          '../BrCustomer/BrCustomerSite/Content/css/bossrevolution_v2.css': 'out/styles/bossrevolution.css'
+          '../BrCustomer/BrCustomerSite/Content/css/bossrevolution_v2.css.map': 'out/styles/bossrevolution.css.map'
         ]
 
 # generate development
