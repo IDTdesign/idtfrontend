@@ -59,9 +59,9 @@ module.exports = (grunt) ->
           sourceMap: true
           outputSourceFiles: true
           sourceMapURL: 'bossrevolution.css.map'
-          sourceMapFilename: 'out/styles/bossrevolution.css.map'
+          sourceMapFilename: 'out/styles/bossrevolution_v2.css.map'
         files:
-          'out/styles/bossrevolution.css': 'src/raw/styles/bossrevolution.css.less'
+          'out/styles/bossrevolution_v2.css': 'src/raw/styles/bossrevolution.css.less'
       compileBossLanding:
         options:
           compress: true
