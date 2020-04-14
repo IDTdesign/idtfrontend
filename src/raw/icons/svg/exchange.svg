@@ -1,15 +1,23 @@
-<?xml version="1.0" standalone="no"?>
-<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="Icons.fw-exchange" viewBox="0 0 25 25" style="background-color:#ffffff00" version="1.1"
-	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-	x="0px" y="0px" width="25px" height="25px"
->
-	<g id="Layer%20138">
-		<g>
-			<path d="M 20.7043 19.0752 L 20.7043 15.4231 L 3.6765 15.4231 L 3.6765 19.0769 L 20.7043 19.0752 ZM 21.3235 5.9231 L 5.1471 5.9231 L 5.1471 9.5769 L 21.3235 9.5769 L 21.3235 5.9231 Z" fill="#ffffff"/>
-			<path d="M 0 7.769 L 7.3529 3 L 7.3529 12.5 L 0 7.769 Z" fill="#ffffff"/>
-			<path d="M 25 17.269 L 17.6471 12.5 L 17.6471 22 L 25 17.269 Z" fill="#ffffff"/>
-		</g>
-	</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="36px" viewBox="0 0 52 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M16.0006,23.9638 C15.8444,23.9611 15.6947,23.9005 15.5806,23.7937 L4.17063,12.373 C3.94312,12.1431 3.94312,11.7729 4.17063,11.543 L15.5806,0.132292 C15.8153,-0.0585648 16.1562,-0.0410608 16.3701,0.172821 C16.584,0.386703 16.6015,0.727684 16.4106,0.962343 L5.41063,11.963 L16.4106,22.9637 C16.5735,23.1321 16.6213,23.3809 16.5324,23.5977 C16.4435,23.8145 16.2348,23.9582 16.0006,23.9638 Z" id="path-qaz1"></path>
+        <path d="M16.0006,23.9638 C15.8444,23.9611 15.6947,23.9005 15.5806,23.7937 L4.17063,12.373 C3.94312,12.1431 3.94312,11.7729 4.17063,11.543 L15.5806,0.132292 C15.8153,-0.0585648 16.1562,-0.0410608 16.3701,0.172821 C16.584,0.386703 16.6015,0.727684 16.4106,0.962343 L5.41063,11.963 L16.4106,22.9637 C16.5735,23.1321 16.6213,23.3809 16.5324,23.5977 C16.4435,23.8145 16.2348,23.9582 16.0006,23.9638 Z" id="path-qaz3"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-arrow-back" transform="translate(0.000000, 6.000000)">
+            <mask id="mask-qaz2" fill="white">
+                <use xlink:href="#path-qaz1"></use>
+            </mask>
+            <use id="Path" fill="#000000" fill-rule="evenodd" xlink:href="#path-qaz1"></use>
+           
+        </g>
+        <g id="Icons-/-arrow-back" transform="translate(40.000000, 18.000000) rotate(-180.000000) translate(-40.000000, -18.000000) translate(28.000000, 6.000000)">
+            <mask id="mask-qaz4" fill="white">
+                <use xlink:href="#path-qaz3"></use>
+            </mask>
+            <use id="Path" fill="#000000" fill-rule="evenodd" xlink:href="#path-qaz3"></use>
+            
+        </g>
+    </g>
 </svg>
